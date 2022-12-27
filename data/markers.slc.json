@@ -1,0 +1,5107 @@
+[
+  {
+    "name": "Battery2_2",
+    "type": "Battery_C",
+    "area": "Crash",
+    "lng": 5293.1455078125,
+    "lat": 2392.26220703125,
+    "alt": -2175.332275390625
+  },
+  {
+    "name": "Battery3_2",
+    "type": "Battery_C",
+    "area": "Crash",
+    "lng": 22013.78515625,
+    "lat": 17276.697265625,
+    "alt": 2988.03125
+  },
+  {
+    "name": "Battery_2",
+    "type": "Battery_C",
+    "area": "Crash",
+    "lng": 47295.86328125,
+    "lat": -16234.357421875,
+    "alt": 357.40234375
+  },
+  {
+    "name": "Bones10",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34220.6171875,
+    "lat": -149.6056365966797,
+    "alt": -2725.9375
+  },
+  {
+    "name": "Bones11",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34344.34765625,
+    "lat": -116.11570739746094,
+    "alt": -2725.9375
+  },
+  {
+    "name": "Bones12",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34171.6328125,
+    "lat": -253.77647399902344,
+    "alt": -2724.787353515625
+  },
+  {
+    "name": "Bones13_47",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 45431.75390625,
+    "lat": -1311.6966552734375,
+    "alt": 969.927490234375
+  },
+  {
+    "name": "Bones14",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 47266.609375,
+    "lat": -10403.66015625,
+    "alt": 2350.568359375
+  },
+  {
+    "name": "Bones15",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 31949.126953125,
+    "lat": 3681.294677734375,
+    "alt": 972.2487182617188
+  },
+  {
+    "name": "Bones16_7",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 49234.42578125,
+    "lat": -5593.2392578125,
+    "alt": 9014.181640625
+  },
+  {
+    "name": "Bones17",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 49302.0546875,
+    "lat": -5688.10498046875,
+    "alt": 9004.15234375
+  },
+  {
+    "name": "Bones18",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41865.9140625,
+    "lat": -5950.1044921875,
+    "alt": 155.7168731689453
+  },
+  {
+    "name": "Bones19_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 31475.974609375,
+    "lat": -17775.88671875,
+    "alt": 89.07605743408203
+  },
+  {
+    "name": "Bones2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43892.828125,
+    "lat": -4110.5986328125,
+    "alt": 1506.66357421875
+  },
+  {
+    "name": "Bones20",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 31010.896484375,
+    "lat": -18130.330078125,
+    "alt": 78.5907211303711
+  },
+  {
+    "name": "Bones21",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 30437.060546875,
+    "lat": -17864.314453125,
+    "alt": 76.27151489257812
+  },
+  {
+    "name": "Bones22_13",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 54986.4921875,
+    "lat": -2049.638427734375,
+    "alt": 1029.072509765625
+  },
+  {
+    "name": "Bones23",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 33100.0,
+    "lat": 3539.99267578125,
+    "alt": 138.42745971679688
+  },
+  {
+    "name": "Bones24_3",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38918.25,
+    "lat": -7456.96533203125,
+    "alt": 1323.9644775390625
+  },
+  {
+    "name": "Bones25",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 33086.21875,
+    "lat": -4822.8876953125,
+    "alt": -1212.781005859375
+  },
+  {
+    "name": "Bones26",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 32759.939453125,
+    "lat": 4672.54833984375,
+    "alt": 2080.031982421875
+  },
+  {
+    "name": "Bones27_8",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 36462.76171875,
+    "lat": -9019.8896484375,
+    "alt": 2347.5361328125
+  },
+  {
+    "name": "Bones28_11",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 57307.85546875,
+    "lat": -478.39300537109375,
+    "alt": 3752.740234375
+  },
+  {
+    "name": "Bones29",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 56292.41015625,
+    "lat": -6263.19140625,
+    "alt": 2668.545654296875
+  },
+  {
+    "name": "Bones3",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38490.35546875,
+    "lat": -5662.7119140625,
+    "alt": 124.87124633789062
+  },
+  {
+    "name": "Bones30_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38537.10546875,
+    "lat": 4274.5205078125,
+    "alt": 212.58602905273438
+  },
+  {
+    "name": "Bones31",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38374.92578125,
+    "lat": 4234.3935546875,
+    "alt": 212.58602905273438
+  },
+  {
+    "name": "Bones32_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34892.2890625,
+    "lat": -12774.78125,
+    "alt": 66.749267578125
+  },
+  {
+    "name": "Bones33_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 33286.5859375,
+    "lat": -456.0349426269531,
+    "alt": 43.867279052734375
+  },
+  {
+    "name": "Bones34_5",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38052.8046875,
+    "lat": -4485.056640625,
+    "alt": 552.5346069335938
+  },
+  {
+    "name": "Bones35",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 32216.349609375,
+    "lat": -13958.5751953125,
+    "alt": 427.3511047363281
+  },
+  {
+    "name": "Bones36",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 35060.140625,
+    "lat": -15006.4580078125,
+    "alt": 962.1488647460938
+  },
+  {
+    "name": "Bones37_7",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38575.6875,
+    "lat": -8648.0390625,
+    "alt": 6629.0185546875
+  },
+  {
+    "name": "Bones38",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38385.51171875,
+    "lat": -8656.0390625,
+    "alt": 6593.77392578125
+  },
+  {
+    "name": "Bones39",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38469.53125,
+    "lat": -8849.76953125,
+    "alt": 6611.65673828125
+  },
+  {
+    "name": "Bones4",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 42996.1015625,
+    "lat": -14690.505859375,
+    "alt": 391.7675476074219
+  },
+  {
+    "name": "Bones40",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34381.99609375,
+    "lat": -13544.12109375,
+    "alt": -9.455583572387695
+  },
+  {
+    "name": "Bones41_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 42173.37109375,
+    "lat": 7987.58544921875,
+    "alt": -1573.748779296875
+  },
+  {
+    "name": "Bones42",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40215.33203125,
+    "lat": 8928.74609375,
+    "alt": 84.57614135742188
+  },
+  {
+    "name": "Bones43",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 42532.3515625,
+    "lat": 12130.2587890625,
+    "alt": 1402.398681640625
+  },
+  {
+    "name": "Bones44",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43645.7734375,
+    "lat": 13949.345703125,
+    "alt": 1499.60009765625
+  },
+  {
+    "name": "Bones45",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 46008.09375,
+    "lat": 7611.19677734375,
+    "alt": -1071.697265625
+  },
+  {
+    "name": "Bones46_9",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43510.76171875,
+    "lat": 3589.509033203125,
+    "alt": 1219.5264892578125
+  },
+  {
+    "name": "Bones47",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 44746.828125,
+    "lat": 3147.76953125,
+    "alt": 120.68899536132812
+  },
+  {
+    "name": "Bones48",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41013.23828125,
+    "lat": 8790.9765625,
+    "alt": 2193.900146484375
+  },
+  {
+    "name": "Bones49_14",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40705.65625,
+    "lat": 9819.681640625,
+    "alt": -1132.9864501953125
+  },
+  {
+    "name": "Bones50",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 45062.73046875,
+    "lat": 15861.1494140625,
+    "alt": -921.3925170898438
+  },
+  {
+    "name": "Bones51_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 35000.0,
+    "lat": -17977.62109375,
+    "alt": -327.337890625
+  },
+  {
+    "name": "Bones52",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 37613.96484375,
+    "lat": 2422.436279296875,
+    "alt": -1482.108642578125
+  },
+  {
+    "name": "Bones53_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41323.74609375,
+    "lat": 10156.8154296875,
+    "alt": -1101.2716064453125
+  },
+  {
+    "name": "Bones54_11",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 55476.98828125,
+    "lat": -18375.3515625,
+    "alt": 479.6265869140625
+  },
+  {
+    "name": "Bones55_19",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 48666.2578125,
+    "lat": -16841.048828125,
+    "alt": 296.1339416503906
+  },
+  {
+    "name": "Bones56_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 37607.98828125,
+    "lat": 239.42333984375,
+    "alt": -247.0533447265625
+  },
+  {
+    "name": "Bones57",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38215.20703125,
+    "lat": 7044.44580078125,
+    "alt": 1505.0391845703125
+  },
+  {
+    "name": "Bones58",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 54087.765625,
+    "lat": -19352.859375,
+    "alt": 3301.655517578125
+  },
+  {
+    "name": "Bones59_4",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41436.4296875,
+    "lat": -4174.5068359375,
+    "alt": 2018.9237060546875
+  },
+  {
+    "name": "Bones5_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 36701.21484375,
+    "lat": -5361.904296875,
+    "alt": 1171.123779296875
+  },
+  {
+    "name": "Bones6",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 37911.80078125,
+    "lat": 4377.2861328125,
+    "alt": -179.64154052734375
+  },
+  {
+    "name": "Bones60_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38468.8828125,
+    "lat": 735.093017578125,
+    "alt": -1040.8861083984375
+  },
+  {
+    "name": "Bones61_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40860.0,
+    "lat": -5720.0,
+    "alt": 3110.0
+  },
+  {
+    "name": "Bones62_5",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 45270.0,
+    "lat": -3290.000244140625,
+    "alt": -511.6294860839844
+  },
+  {
+    "name": "Bones63",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 45351.9921875,
+    "lat": -912.411865234375,
+    "alt": -313.7206115722656
+  },
+  {
+    "name": "Bones64_9",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 45402.19140625,
+    "lat": -2927.89794921875,
+    "alt": -1179.8323974609375
+  },
+  {
+    "name": "Bones65_12",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 44273.34765625,
+    "lat": -3766.46142578125,
+    "alt": -1177.8350830078125
+  },
+  {
+    "name": "Bones66",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 44245.41796875,
+    "lat": -4028.568359375,
+    "alt": -1177.8350830078125
+  },
+  {
+    "name": "Bones67_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43420.63671875,
+    "lat": -1486.40966796875,
+    "alt": -1434.0999755859375
+  },
+  {
+    "name": "Bones68_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 50158.1875,
+    "lat": -17968.94140625,
+    "alt": 1076.820556640625
+  },
+  {
+    "name": "Bones69",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 50053.55859375,
+    "lat": -17911.9375,
+    "alt": 1076.820556640625
+  },
+  {
+    "name": "Bones7",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 42084.58984375,
+    "lat": 2048.792724609375,
+    "alt": 129.3255615234375
+  },
+  {
+    "name": "Bones70_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 33155.15234375,
+    "lat": -2083.35205078125,
+    "alt": -2812.123046875
+  },
+  {
+    "name": "Bones71_3",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 28542.314453125,
+    "lat": -12996.564453125,
+    "alt": -538.6722412109375
+  },
+  {
+    "name": "Bones72_6",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 29447.173828125,
+    "lat": -13204.2822265625,
+    "alt": 481.64202880859375
+  },
+  {
+    "name": "Bones73_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 48763.38671875,
+    "lat": -12664.1943359375,
+    "alt": 2899.691162109375
+  },
+  {
+    "name": "Bones74",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 44831.53515625,
+    "lat": 15723.98828125,
+    "alt": 1499.60009765625
+  },
+  {
+    "name": "Bones75_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 36816.4453125,
+    "lat": -4797.37158203125,
+    "alt": -476.9456787109375
+  },
+  {
+    "name": "Bones76",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 36713.51171875,
+    "lat": -4720.90625,
+    "alt": -476.9456787109375
+  },
+  {
+    "name": "Bones77_6",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34950.6328125,
+    "lat": 6377.6591796875,
+    "alt": 2381.973388671875
+  },
+  {
+    "name": "Bones8",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43707.0625,
+    "lat": -7967.34375,
+    "alt": 197.48117065429688
+  },
+  {
+    "name": "Bones9_39",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34461.75,
+    "lat": -150.5360107421875,
+    "alt": -2725.9375
+  },
+  {
+    "name": "Bones_18",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40556.359375,
+    "lat": -8672.7578125,
+    "alt": 220.62033081054688
+  },
+  {
+    "name": "Scrap143_5",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 37941.7578125,
+    "lat": 6159.3291015625,
+    "alt": 1552.8486328125
+  },
+  {
+    "name": "Scrap155_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 51240.625,
+    "lat": 5327.9794921875,
+    "alt": 4549.00146484375
+  },
+  {
+    "name": "Scrap162_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 53595.703125,
+    "lat": -6238.96484375,
+    "alt": 2662.7109375
+  },
+  {
+    "name": "Scrap163_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 46380.87890625,
+    "lat": 2918.74951171875,
+    "alt": 2373.332763671875
+  },
+  {
+    "name": "Scrap167_8",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34516.8359375,
+    "lat": -4836.99951171875,
+    "alt": -1361.109619140625
+  },
+  {
+    "name": "Scrap168",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 44339.78125,
+    "lat": -8331.4814453125,
+    "alt": 228.75209045410156
+  },
+  {
+    "name": "Scrap170",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34630.5,
+    "lat": -4836.99951171875,
+    "alt": -1361.109619140625
+  },
+  {
+    "name": "Scrap171",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40189.6015625,
+    "lat": -3202.189208984375,
+    "alt": -658.3880004882812
+  },
+  {
+    "name": "Scrap172",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40025.6015625,
+    "lat": -3043.5234375,
+    "alt": -658.3880004882812
+  },
+  {
+    "name": "Scrap17_14",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34711.62890625,
+    "lat": 1329.4722900390625,
+    "alt": 121.60490417480469
+  },
+  {
+    "name": "Scrap18_17",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 34004.00390625,
+    "lat": 1323.3240966796875,
+    "alt": 1440.3948974609375
+  },
+  {
+    "name": "Scrap19_20",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 39196.015625,
+    "lat": 7831.55419921875,
+    "alt": 1983.60107421875
+  },
+  {
+    "name": "Scrap20_23",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40104.8046875,
+    "lat": -3130.635009765625,
+    "alt": -658.3880004882812
+  },
+  {
+    "name": "Scrap21",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41581.22265625,
+    "lat": -7969.7607421875,
+    "alt": 91.43305206298828
+  },
+  {
+    "name": "Scrap22",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 40380.59765625,
+    "lat": -6083.06396484375,
+    "alt": 1422.55615234375
+  },
+  {
+    "name": "Scrap36_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 39930.28515625,
+    "lat": -2937.679931640625,
+    "alt": 1011.3292236328125
+  },
+  {
+    "name": "Scrap58_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38067.375,
+    "lat": 4403.29345703125,
+    "alt": -621.3340454101562
+  },
+  {
+    "name": "Scrap5_2",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 36212.66796875,
+    "lat": 2810.005859375,
+    "alt": 600.6116943359375
+  },
+  {
+    "name": "Scrap61",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 43514.609375,
+    "lat": -8709.3408203125,
+    "alt": -112.49089813232422
+  },
+  {
+    "name": "Scrap84",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 41155.14453125,
+    "lat": -8973.2451171875,
+    "alt": 598.8403930664062
+  },
+  {
+    "name": "Scrap86",
+    "type": "Bones_C",
+    "area": "Crash",
+    "lng": 38979.2109375,
+    "lat": 4403.29345703125,
+    "alt": -621.3340454101562
+  },
+  {
+    "name": "BuyBelt_2",
+    "type": "BuyBelt_C",
+    "area": "Crash",
+    "cost": 555,
+    "lng": 43248.484375,
+    "lat": -225.03927612304688,
+    "alt": 107.03009033203125
+  },
+  {
+    "name": "BuyChestDetector2",
+    "type": "BuyChestDetector_C",
+    "area": "Crash",
+    "lng": -4284.46435546875,
+    "lat": -4688.083984375,
+    "alt": 712.9102172851562
+  },
+  {
+    "name": "BuyChestDetectorRadius_2",
+    "type": "BuyChestDetectorRadius_C",
+    "area": "Crash",
+    "cost": 32,
+    "lng": 254.60604858398438,
+    "lat": -2538.0517578125,
+    "alt": 129.81759643554688
+  },
+  {
+    "name": "BuyForceBeam2_2",
+    "type": "BuyForceBeam_C",
+    "area": "Crash",
+    "cost": 2499,
+    "lng": 38120.84765625,
+    "lat": 2804.151123046875,
+    "alt": -122.85015869140625
+  },
+  {
+    "name": "BuyForceBeam3_2",
+    "type": "BuyForceBeam_C",
+    "area": "Crash",
+    "cost": 555,
+    "lng": 41974.7890625,
+    "lat": 825.46630859375,
+    "alt": 122.74449920654297
+  },
+  {
+    "name": "BuyForceBeam_2",
+    "type": "BuyForceBeam_C",
+    "area": "Crash",
+    "lng": 31509.701171875,
+    "lat": -5359.8037109375,
+    "alt": 227.4062957763672
+  },
+  {
+    "name": "BuyForceBeamGold_2",
+    "type": "BuyForceBeamGold_C",
+    "area": "Crash",
+    "lng": 38394.421875,
+    "lat": 4109.8408203125,
+    "alt": -103.99259948730469
+  },
+  {
+    "name": "BuyForceBlock_2",
+    "type": "BuyForceBlock_C",
+    "area": "Crash",
+    "cost": 61,
+    "lng": 263.939453125,
+    "lat": -2524.9609375,
+    "alt": 129.1154022216797
+  },
+  {
+    "name": "BuyForceCubeStompJump_2",
+    "type": "BuyForceCubeStompJump_C",
+    "area": "Crash",
+    "lng": 5470.8994140625,
+    "lat": -12425.150390625,
+    "alt": 86.45620727539062
+  },
+  {
+    "name": "BuyGunAlt3_2",
+    "type": "BuyGunAlt_C",
+    "area": "Crash",
+    "cost": 555,
+    "lng": 44144.2578125,
+    "lat": -479.3745422363281,
+    "alt": 177.77708435058594
+  },
+  {
+    "name": "BuyGunAlt_2",
+    "type": "BuyGunAlt_C",
+    "area": "Crash",
+    "cost": 1999,
+    "lng": 38227.96484375,
+    "lat": 2830.557373046875,
+    "alt": -82.00233459472656
+  },
+  {
+    "name": "BuyHealthRegen_2",
+    "type": "BuyHealthRegen_C",
+    "area": "Crash",
+    "lng": 44827.1875,
+    "lat": 1839.059326171875,
+    "alt": 201.60897827148438
+  },
+  {
+    "name": "BuyJumpHeightPlus_2",
+    "type": "BuyJumpHeightPlus_C",
+    "area": "Crash",
+    "cost": 17,
+    "lng": 38291.27734375,
+    "lat": 2807.3642578125,
+    "alt": -111.86073303222656
+  },
+  {
+    "name": "BuySmashdown2_2",
+    "type": "BuySmashdown_C",
+    "area": "Crash",
+    "cost": 2000000,
+    "lng": 33841.76953125,
+    "lat": 861.5728149414062,
+    "alt": 126.90751647949219
+  },
+  {
+    "name": "BuySmashdown_2",
+    "type": "BuySmashdown_C",
+    "area": "Crash",
+    "lng": 43293.1875,
+    "lat": -849.02099609375,
+    "alt": 162.14474487304688
+  },
+  {
+    "name": "BuySpeedx2_2",
+    "type": "BuySpeedx2_C",
+    "area": "Crash",
+    "cost": 17,
+    "lng": 38441.92578125,
+    "lat": 2814.99609375,
+    "alt": -111.09630584716797
+  },
+  {
+    "name": "BuySword2_2",
+    "type": "BuySword2_C",
+    "area": "Crash",
+    "cost": 555,
+    "lng": 44884.0625,
+    "lat": 50.918731689453125,
+    "alt": 18.51580047607422
+  },
+  {
+    "name": "BuySword_2",
+    "type": "BuySwordDoorKnocker_C",
+    "area": "Crash",
+    "lng": -8325.376953125,
+    "lat": -15060.501953125,
+    "alt": -2048.79296875
+  },
+  {
+    "name": "BuySwordDoorKnocker_2",
+    "type": "BuySwordDoorKnocker_C",
+    "area": "Crash",
+    "cost": 999,
+    "lng": 38489.24609375,
+    "lat": 2805.856689453125,
+    "alt": -122.82959747314453
+  },
+  {
+    "name": "BuyTranslocator2_2",
+    "type": "BuyTranslocator_C",
+    "area": "Crash",
+    "lng": 43677.890625,
+    "lat": -14789.55078125,
+    "alt": 816.798583984375
+  },
+  {
+    "name": "BuyTranslocator_2",
+    "type": "BuyTranslocator_C",
+    "area": "Crash",
+    "cost": 2999,
+    "lng": 38368.72265625,
+    "lat": 2838.224853515625,
+    "alt": -122.61809539794922
+  },
+  {
+    "name": "BuyTranslocatorCoolDownHalf_2",
+    "type": "BuyTranslocatorCoolDownHalf_C",
+    "area": "Crash",
+    "cost": 20,
+    "lng": 365.24664306640625,
+    "lat": -2365.2314453125,
+    "alt": 133.19784545898438
+  },
+  {
+    "name": "BuyTranslocatorModule3",
+    "type": "BuyTranslocatorModule_C",
+    "area": "Crash",
+    "lng": -1379.014892578125,
+    "lat": -7564.2275390625,
+    "alt": -111.67979431152344
+  },
+  {
+    "name": "BuyTranslocatorWeight_2",
+    "type": "BuyTranslocatorWeight_C",
+    "area": "Crash",
+    "cost": 40,
+    "lng": 38116.25390625,
+    "lat": 2812.9853515625,
+    "alt": -107.90607452392578
+  },
+  {
+    "name": "Chest10",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyWalletx15_C",
+    "lng": -4490.00439453125,
+    "lat": 16094.1943359375,
+    "alt": 1179.5394287109375
+  },
+  {
+    "name": "Chest119_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyForceCubeBeam_C",
+    "lng": 55521.76171875,
+    "lat": -2214.8349609375,
+    "alt": 537.5179443359375
+  },
+  {
+    "name": "Chest11_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyShowHealthbar_C",
+    "lng": 37349.2265625,
+    "lat": 5446.6142578125,
+    "alt": -107.74044036865234
+  },
+  {
+    "name": "Chest12_5",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownRadius+_C",
+    "lng": 41877.31640625,
+    "lat": -7659.13525390625,
+    "alt": 219.0546875
+  },
+  {
+    "name": "Chest13_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+15_C",
+    "lng": -5264.703125,
+    "lat": 10272.833984375,
+    "alt": 1530.1470947265625
+  },
+  {
+    "name": "Chest14",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenMax15_C",
+    "lng": -5099.8310546875,
+    "lat": 10272.833984375,
+    "alt": 1534.45361328125
+  },
+  {
+    "name": "Chest15_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyNumberRising_C",
+    "lng": 5893.91650390625,
+    "lat": -711.4050903320312,
+    "alt": 95.51234436035156
+  },
+  {
+    "name": "Chest16_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunRefireRate50_C",
+    "lng": 40916.78125,
+    "lat": -6696.26416015625,
+    "alt": -622.9281005859375
+  },
+  {
+    "name": "Chest18_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+3_C",
+    "lng": 36309.80078125,
+    "lat": 2732.5478515625,
+    "alt": 686.169189453125
+  },
+  {
+    "name": "Chest20",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+3_C",
+    "lng": 37856.36328125,
+    "lat": 6158.10107421875,
+    "alt": 1580.4462890625
+  },
+  {
+    "name": "Chest21_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyTranslocatorDamagex3_C",
+    "lng": 7141.90185546875,
+    "lat": -3565.517578125,
+    "alt": -1515.2947998046875
+  },
+  {
+    "name": "Chest22",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunRefireRate50_C",
+    "lng": 3338.64013671875,
+    "lat": 2885.389892578125,
+    "alt": 719.2843017578125
+  },
+  {
+    "name": "Chest24",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenMax15_C",
+    "lng": 3302.072021484375,
+    "lat": 3120.079345703125,
+    "alt": 716.5054321289062
+  },
+  {
+    "name": "Chest25_6",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+3_C",
+    "lng": 44304.60546875,
+    "lat": -9030.11328125,
+    "alt": 258.0674743652344
+  },
+  {
+    "name": "Chest28_9",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+5_C",
+    "lng": 27868.373046875,
+    "lat": -14529.28125,
+    "alt": -507.9334716796875
+  },
+  {
+    "name": "Chest29_12",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+2_C",
+    "lng": 34281.875,
+    "lat": -13596.2919921875,
+    "alt": 16.556396484375
+  },
+  {
+    "name": "Chest2_5",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyWalletx2_C",
+    "lng": 47847.48046875,
+    "lat": -345.537109375,
+    "alt": 944.1328735351562
+  },
+  {
+    "name": "Chest30_15",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+5_C",
+    "lng": 39753.6015625,
+    "lat": -2695.05517578125,
+    "alt": 978.2976684570312
+  },
+  {
+    "name": "Chest31_18",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+5_C",
+    "lng": 48910.04296875,
+    "lat": -12675.3642578125,
+    "alt": 2925.927490234375
+  },
+  {
+    "name": "Chest32_21",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+1_C",
+    "lng": 43841.66796875,
+    "lat": -8638.0927734375,
+    "alt": 90.33992004394531
+  },
+  {
+    "name": "Chest33_24",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+3_C",
+    "lng": 32053.0703125,
+    "lat": 3458.637939453125,
+    "alt": 999.6883544921875
+  },
+  {
+    "name": "Chest34_27",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+1_C",
+    "lng": 45474.1484375,
+    "lat": -4111.29541015625,
+    "alt": -484.3470153808594
+  },
+  {
+    "name": "Chest35_30",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunAltDamagex2_C",
+    "lng": 34350.79296875,
+    "lat": -312.454345703125,
+    "alt": -2696.89990234375
+  },
+  {
+    "name": "Chest36_33",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunAltDamagex2_C",
+    "lng": 9948.3955078125,
+    "lat": -4616.7138671875,
+    "alt": -1516.2109375
+  },
+  {
+    "name": "Chest37_36",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunAltDamagex2_C",
+    "lng": -130.99945068359375,
+    "lat": 11243.51953125,
+    "alt": 3023.717529296875
+  },
+  {
+    "name": "Chest38_39",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunAltDamagex2_C",
+    "lng": -2339.823974609375,
+    "lat": 10751.73046875,
+    "alt": 1332.194580078125
+  },
+  {
+    "name": "Chest39_42",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+5_C",
+    "lng": 45006.79296875,
+    "lat": 16231.7138671875,
+    "alt": 1524.0516357421875
+  },
+  {
+    "name": "Chest3_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenMax15_C",
+    "lng": 23504.736328125,
+    "lat": -4660.42431640625,
+    "alt": -794.0892944335938
+  },
+  {
+    "name": "Chest40",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenMax5_C",
+    "lng": 43748.18359375,
+    "lat": 14051.2509765625,
+    "alt": 1524.0516357421875
+  },
+  {
+    "name": "Chest41_46",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenSpeed_C",
+    "lng": 45868.1484375,
+    "lat": 7627.6201171875,
+    "alt": -1044.4412841796875
+  },
+  {
+    "name": "Chest42_49",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealthRegenSpeed_C",
+    "lng": 55482.3828125,
+    "lat": -18660.33203125,
+    "alt": 972.832763671875
+  },
+  {
+    "name": "Chest43_52",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+2_C",
+    "lng": 40798.20703125,
+    "lat": 9741.689453125,
+    "alt": -1105.8056640625
+  },
+  {
+    "name": "Chest44_55",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+1_C",
+    "lng": 56186.50390625,
+    "lat": -6318.294921875,
+    "alt": 2695.764404296875
+  },
+  {
+    "name": "Chest45_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyTranslocatorDamagex3_C",
+    "lng": 30992.19140625,
+    "lat": -17753.068359375,
+    "alt": 114.38147735595703
+  },
+  {
+    "name": "Chest46_5",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyTranslocatorDamagex3_C",
+    "lng": 40648.38671875,
+    "lat": -8534.9931640625,
+    "alt": 244.9840087890625
+  },
+  {
+    "name": "Chest4_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuySmashdownDamage+3_C",
+    "lng": -9384.943359375,
+    "lat": 15697.39453125,
+    "alt": 2203.329345703125
+  },
+  {
+    "name": "Chest5_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGun1_C",
+    "lng": 38915.07421875,
+    "lat": 2977.30322265625,
+    "alt": -2236.359619140625
+  },
+  {
+    "name": "Chest6_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyHealth+15_C",
+    "lng": 3309.1591796875,
+    "lat": 2653.248291015625,
+    "alt": 732.0569458007812
+  },
+  {
+    "name": "Chest7_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyGunAlt_C",
+    "lng": 7699.14306640625,
+    "lat": 2459.70263671875,
+    "alt": -1165.341064453125
+  },
+  {
+    "name": "Chest8_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyWalletx15_C",
+    "lng": 9336.2060546875,
+    "lat": 6220.0068359375,
+    "alt": 2472.301513671875
+  },
+  {
+    "name": "Chest9_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyStats_C",
+    "lng": 25805.306640625,
+    "lat": 6084.83984375,
+    "alt": -1321.84765625
+  },
+  {
+    "name": "Chest_2",
+    "type": "Chest_C",
+    "area": "Crash",
+    "spawns": "BuyForceBeam_C",
+    "lng": 38385.80078125,
+    "lat": 4383.1689453125,
+    "alt": -2279.52880859375
+  },
+  {
+    "name": "Coin10_9",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 41874.1875,
+    "lat": -8265.380859375,
+    "alt": 555.439453125
+  },
+  {
+    "name": "Coin11_12",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 40540.98046875,
+    "lat": -8508.857421875,
+    "alt": 658.3890991210938
+  },
+  {
+    "name": "Coin12",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42993.265625,
+    "lat": 2746.59814453125,
+    "alt": 1221.8802490234375
+  },
+  {
+    "name": "Coin13",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 44224.859375,
+    "lat": -14371.3154296875,
+    "alt": 1682.6807861328125
+  },
+  {
+    "name": "Coin14_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1022.216064453125,
+    "lat": 11095.9345703125,
+    "alt": 2116.39892578125
+  },
+  {
+    "name": "Coin15",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1040.0557861328125,
+    "lat": 10991.798828125,
+    "alt": 2116.39892578125
+  },
+  {
+    "name": "Coin16",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43319.11328125,
+    "lat": -4286.35205078125,
+    "alt": 128.8662109375
+  },
+  {
+    "name": "Coin17",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43696.59765625,
+    "lat": -4342.7861328125,
+    "alt": 126.62286376953125
+  },
+  {
+    "name": "Coin18",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 44305.31640625,
+    "lat": -6036.3896484375,
+    "alt": 158.15684509277344
+  },
+  {
+    "name": "Coin19",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 38446.3515625,
+    "lat": 4143.1923828125,
+    "alt": 584.1189575195312
+  },
+  {
+    "name": "Coin20",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 38439.37890625,
+    "lat": 4312.8212890625,
+    "alt": 490.82928466796875
+  },
+  {
+    "name": "Coin21",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 38455.32421875,
+    "lat": 3925.759033203125,
+    "alt": 649.3693237304688
+  },
+  {
+    "name": "Coin23",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 44026.03125,
+    "lat": -14371.8935546875,
+    "alt": 1689.3519287109375
+  },
+  {
+    "name": "Coin25",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -894.3538818359375,
+    "lat": 10980.390625,
+    "alt": 2116.39892578125
+  },
+  {
+    "name": "Coin26",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -905.5567016601562,
+    "lat": 11060.6455078125,
+    "alt": 2116.39892578125
+  },
+  {
+    "name": "Coin27",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -892.5287475585938,
+    "lat": 10867.1904296875,
+    "alt": 2127.1318359375
+  },
+  {
+    "name": "Coin28",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 44063.85546875,
+    "lat": -10223.6748046875,
+    "alt": 1309.927978515625
+  },
+  {
+    "name": "Coin29_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 45028.64453125,
+    "lat": 1645.535888671875,
+    "alt": 153.44650268554688
+  },
+  {
+    "name": "Coin2_17",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42947.3203125,
+    "lat": 2046.6826171875,
+    "alt": 810.618408203125
+  },
+  {
+    "name": "Coin3",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42887.56640625,
+    "lat": 2519.1064453125,
+    "alt": 1221.8802490234375
+  },
+  {
+    "name": "Coin30",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 45121.7578125,
+    "lat": 1377.31787109375,
+    "alt": 136.94467163085938
+  },
+  {
+    "name": "Coin31_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 10280.0,
+    "lat": -3810.0,
+    "alt": 590.0
+  },
+  {
+    "name": "Coin32",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 10410.0,
+    "lat": -3810.0,
+    "alt": 600.0
+  },
+  {
+    "name": "Coin33",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 10550.0,
+    "lat": -3810.0,
+    "alt": 600.0
+  },
+  {
+    "name": "Coin36",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1040.6455078125,
+    "lat": 10867.1904296875,
+    "alt": 2127.1318359375
+  },
+  {
+    "name": "Coin37",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16914.689453125,
+    "lat": 17141.916015625,
+    "alt": 3096.8837890625
+  },
+  {
+    "name": "Coin38",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16914.689453125,
+    "lat": 17141.916015625,
+    "alt": 3184.737060546875
+  },
+  {
+    "name": "Coin39",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16914.689453125,
+    "lat": 17141.916015625,
+    "alt": 3268.43798828125
+  },
+  {
+    "name": "Coin4",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43855.86328125,
+    "lat": -10178.109375,
+    "alt": 1275.4951171875
+  },
+  {
+    "name": "Coin40",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16914.689453125,
+    "lat": 17141.916015625,
+    "alt": 3350.991455078125
+  },
+  {
+    "name": "Coin41",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 15539.3681640625,
+    "lat": 12498.9765625,
+    "alt": 4467.0537109375
+  },
+  {
+    "name": "Coin42",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16049.8349609375,
+    "lat": 12596.0517578125,
+    "alt": 4467.0537109375
+  },
+  {
+    "name": "Coin43",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 15896.927734375,
+    "lat": 12560.2529296875,
+    "alt": 4523.3984375
+  },
+  {
+    "name": "Coin44",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 15703.8095703125,
+    "lat": 12532.77734375,
+    "alt": 4523.3984375
+  },
+  {
+    "name": "Coin45",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7027.56103515625,
+    "lat": 13912.4736328125,
+    "alt": 3091.988037109375
+  },
+  {
+    "name": "Coin46",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7231.29052734375,
+    "lat": 14035.59375,
+    "alt": 3091.988037109375
+  },
+  {
+    "name": "Coin47",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7238.4306640625,
+    "lat": 13854.578125,
+    "alt": 3091.988037109375
+  },
+  {
+    "name": "Coin48",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7938.025390625,
+    "lat": 1887.872802734375,
+    "alt": 2153.7998046875
+  },
+  {
+    "name": "Coin49",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7609.583984375,
+    "lat": 3431.77587890625,
+    "alt": 2338.061767578125
+  },
+  {
+    "name": "Coin5",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43597.34765625,
+    "lat": -10289.7724609375,
+    "alt": 1309.927978515625
+  },
+  {
+    "name": "Coin50",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 8129.05419921875,
+    "lat": 754.7450561523438,
+    "alt": 1510.8870849609375
+  },
+  {
+    "name": "Coin51",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 9160.0,
+    "lat": 500.0,
+    "alt": 2870.0
+  },
+  {
+    "name": "Coin52",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16500.0,
+    "lat": -1350.0,
+    "alt": 2720.0
+  },
+  {
+    "name": "Coin53",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16500.0,
+    "lat": -920.0,
+    "alt": 2700.0
+  },
+  {
+    "name": "Coin54",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16320.0,
+    "lat": -1140.0,
+    "alt": 2740.0
+  },
+  {
+    "name": "Coin55",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 16710.0,
+    "lat": -1090.0,
+    "alt": 2670.0
+  },
+  {
+    "name": "Coin56",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -10290.0,
+    "lat": -4530.0,
+    "alt": 480.0
+  },
+  {
+    "name": "Coin57",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -10290.0,
+    "lat": -4700.0,
+    "alt": 480.0
+  },
+  {
+    "name": "Coin58",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -10290.0,
+    "lat": -3180.0,
+    "alt": 480.0
+  },
+  {
+    "name": "Coin59",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -10290.0,
+    "lat": -3350.0,
+    "alt": 480.0
+  },
+  {
+    "name": "Coin60",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -2180.0,
+    "lat": -8550.0,
+    "alt": 650.0
+  },
+  {
+    "name": "Coin61",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -2370.0,
+    "lat": -8550.0,
+    "alt": 650.0
+  },
+  {
+    "name": "Coin62",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -2370.0,
+    "lat": -8700.0,
+    "alt": 650.0
+  },
+  {
+    "name": "Coin63",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1800.0,
+    "lat": 4830.0,
+    "alt": 1900.0
+  },
+  {
+    "name": "Coin64",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1770.0,
+    "lat": 4780.0,
+    "alt": 1900.0
+  },
+  {
+    "name": "Coin65",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -1750.0,
+    "lat": 4740.0,
+    "alt": 1900.0
+  },
+  {
+    "name": "Coin66",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 680.0,
+    "lat": 2820.0,
+    "alt": 1290.0
+  },
+  {
+    "name": "Coin67",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 680.0,
+    "lat": 2730.0,
+    "alt": 1290.0
+  },
+  {
+    "name": "Coin68",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 680.0,
+    "lat": 2630.0,
+    "alt": 1290.0
+  },
+  {
+    "name": "Coin69",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 4220.0,
+    "lat": 2690.0,
+    "alt": 2370.0
+  },
+  {
+    "name": "Coin6_3",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43600.578125,
+    "lat": -17597.259765625,
+    "alt": 1432.9134521484375
+  },
+  {
+    "name": "Coin70",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 4220.0,
+    "lat": 2600.0,
+    "alt": 2370.0
+  },
+  {
+    "name": "Coin71",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -9580.0,
+    "lat": 14810.0,
+    "alt": 2150.0
+  },
+  {
+    "name": "Coin72",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -9590.0,
+    "lat": 15090.0,
+    "alt": 2150.0
+  },
+  {
+    "name": "Coin73",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -9570.0,
+    "lat": 15340.0,
+    "alt": 2150.0
+  },
+  {
+    "name": "Coin74",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -3900.0,
+    "lat": 11880.0,
+    "alt": 580.0
+  },
+  {
+    "name": "Coin75",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -3770.0,
+    "lat": 11860.0,
+    "alt": 580.0
+  },
+  {
+    "name": "Coin76",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -2110.0,
+    "lat": 13520.0,
+    "alt": 760.0
+  },
+  {
+    "name": "Coin77",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -2090.0,
+    "lat": 13720.0,
+    "alt": 760.0
+  },
+  {
+    "name": "Coin78",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 2113.689697265625,
+    "lat": 1051.40771484375,
+    "alt": 2070.0
+  },
+  {
+    "name": "Coin79",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 2640.068115234375,
+    "lat": 1051.40771484375,
+    "alt": 2070.0
+  },
+  {
+    "name": "Coin7_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42023.890625,
+    "lat": 2648.6259765625,
+    "alt": -1.5628128051757812
+  },
+  {
+    "name": "Coin80",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 2213.451171875,
+    "lat": 1051.0081787109375,
+    "alt": 2070.0
+  },
+  {
+    "name": "Coin81_54",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 4760.0,
+    "lat": -3380.0,
+    "alt": 790.0360717773438
+  },
+  {
+    "name": "Coin82",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 4680.0,
+    "lat": -3500.0,
+    "alt": 790.0360717773438
+  },
+  {
+    "name": "Coin83",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42003.60546875,
+    "lat": -14880.060546875,
+    "alt": 422.7973327636719
+  },
+  {
+    "name": "Coin84",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 41988.39453125,
+    "lat": -15137.2509765625,
+    "alt": 464.1658630371094
+  },
+  {
+    "name": "Coin85",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42172.0703125,
+    "lat": -14968.9521484375,
+    "alt": 464.1658630371094
+  },
+  {
+    "name": "Coin86",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43686.49609375,
+    "lat": -17597.259765625,
+    "alt": 1432.9134521484375
+  },
+  {
+    "name": "Coin87",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 43504.9140625,
+    "lat": -17597.259765625,
+    "alt": 1432.9134521484375
+  },
+  {
+    "name": "Coin88_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 26111.38671875,
+    "lat": -515.4964599609375,
+    "alt": 1759.6181640625
+  },
+  {
+    "name": "Coin89",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 47294.921875,
+    "lat": -15982.0419921875,
+    "alt": 729.474609375
+  },
+  {
+    "name": "Coin8_5",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 37841.0859375,
+    "lat": 6103.8447265625,
+    "alt": -117.94195556640625
+  },
+  {
+    "name": "Coin9",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 38615.859375,
+    "lat": 6108.4599609375,
+    "alt": -117.94195556640625
+  },
+  {
+    "name": "Coin90",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 10170.0,
+    "lat": -140.0,
+    "alt": 2880.0
+  },
+  {
+    "name": "Coin91_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 51356.5,
+    "lat": -15595.4580078125,
+    "alt": 364.3646240234375
+  },
+  {
+    "name": "Coin92",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 51356.5,
+    "lat": -15878.2216796875,
+    "alt": 516.0580444335938
+  },
+  {
+    "name": "Coin93_2",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": -65.34184265136719,
+    "lat": -9969.9013671875,
+    "alt": -794.531982421875
+  },
+  {
+    "name": "Coin94",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 5580.43994140625,
+    "lat": -11279.10546875,
+    "alt": -674.49951171875
+  },
+  {
+    "name": "Coin95",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 7539.30126953125,
+    "lat": -1913.284912109375,
+    "alt": 139.76304626464844
+  },
+  {
+    "name": "Coin96",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 1244.2454833984375,
+    "lat": -4459.52587890625,
+    "alt": 108.62197875976562
+  },
+  {
+    "name": "Coin_15",
+    "type": "Coin_C",
+    "area": "Crash",
+    "lng": 42947.3203125,
+    "lat": 2046.6826171875,
+    "alt": 705.6405029296875
+  },
+  {
+    "name": "CoinBig2",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 43765.93359375,
+    "lat": -6122.20751953125,
+    "alt": 1024.21826171875
+  },
+  {
+    "name": "CoinBig3",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 47639.35546875,
+    "lat": -2806.3203125,
+    "alt": 955.3057250976562
+  },
+  {
+    "name": "CoinBig4",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1877.7799072265625,
+    "lat": 609.5159912109375,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinBig5",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1948.0782470703125,
+    "lat": 561.275390625,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinBig6",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1947.4620361328125,
+    "lat": 787.4759521484375,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinBig7",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1906.5018310546875,
+    "lat": 351.2807922363281,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinBig8",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1826.5018310546875,
+    "lat": 451.2807922363281,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinBig_2",
+    "type": "CoinBig_C",
+    "area": "Crash",
+    "lng": 1877.7799072265625,
+    "lat": 829.0966796875,
+    "alt": 1620.15625
+  },
+  {
+    "name": "CoinRed10",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 31993.962890625,
+    "lat": 15552.7138671875,
+    "alt": 1013.812255859375
+  },
+  {
+    "name": "CoinRed11",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 46321.54296875,
+    "lat": 20052.18359375,
+    "alt": -413.2815246582031
+  },
+  {
+    "name": "CoinRed12_4",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 45484.6640625,
+    "lat": 17351.1328125,
+    "alt": 2796.22998046875
+  },
+  {
+    "name": "CoinRed13",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 37719.12109375,
+    "lat": 18266.1171875,
+    "alt": 3883.259033203125
+  },
+  {
+    "name": "CoinRed2",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 40312.02734375,
+    "lat": 16424.365234375,
+    "alt": -137.84567260742188
+  },
+  {
+    "name": "CoinRed3_16",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 42381.84375,
+    "lat": 19981.220703125,
+    "alt": 921.992431640625
+  },
+  {
+    "name": "CoinRed4",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 39737.96875,
+    "lat": 15089.3310546875,
+    "alt": 27.6005859375
+  },
+  {
+    "name": "CoinRed5",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 36617.546875,
+    "lat": 13747.4951171875,
+    "alt": 548.9619750976562
+  },
+  {
+    "name": "CoinRed6",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 39180.3203125,
+    "lat": 14256.9560546875,
+    "alt": 2838.971923828125
+  },
+  {
+    "name": "CoinRed7",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 37667.6171875,
+    "lat": 17850.91796875,
+    "alt": 876.9903564453125
+  },
+  {
+    "name": "CoinRed8",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 41203.30859375,
+    "lat": 16192.119140625,
+    "alt": 1341.298095703125
+  },
+  {
+    "name": "CoinRed9_12",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 38122.72265625,
+    "lat": 18164.4453125,
+    "alt": -1642.18798828125
+  },
+  {
+    "name": "CoinRed_2",
+    "type": "CoinRed_C",
+    "area": "Crash",
+    "lng": 39449.98046875,
+    "lat": 23014.38671875,
+    "alt": 746.592529296875
+  },
+  {
+    "name": "DestroyablePots10",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44043.4375,
+    "lat": -5096.443359375,
+    "alt": 129.1203155517578
+  },
+  {
+    "name": "DestroyablePots11",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41852.38671875,
+    "lat": -6101.0078125,
+    "alt": 131.1345672607422
+  },
+  {
+    "name": "DestroyablePots12",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41877.03515625,
+    "lat": -6026.8125,
+    "alt": 135.1933135986328
+  },
+  {
+    "name": "DestroyablePots13",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41784.734375,
+    "lat": -6146.07470703125,
+    "alt": 143.5320587158203
+  },
+  {
+    "name": "DestroyablePots14",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41828.828125,
+    "lat": -6166.56640625,
+    "alt": 132.7110595703125
+  },
+  {
+    "name": "DestroyablePots15",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 38704.421875,
+    "lat": -18.222373962402344,
+    "alt": 103.48106384277344
+  },
+  {
+    "name": "DestroyablePots16",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 38695.671875,
+    "lat": 77.80015563964844,
+    "alt": 103.43453979492188
+  },
+  {
+    "name": "DestroyablePots17",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 38596.09765625,
+    "lat": -78.81648254394531,
+    "alt": 103.33926391601562
+  },
+  {
+    "name": "DestroyablePots18",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 38640.19140625,
+    "lat": -99.30839538574219,
+    "alt": 103.48106384277344
+  },
+  {
+    "name": "DestroyablePots19_26",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44360.41796875,
+    "lat": -9366.712890625,
+    "alt": 610.6602783203125
+  },
+  {
+    "name": "DestroyablePots2",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43563.7109375,
+    "lat": -4975.46875,
+    "alt": 609.482421875
+  },
+  {
+    "name": "DestroyablePots20",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 42175.5625,
+    "lat": 2712.616455078125,
+    "alt": 111.67073059082031
+  },
+  {
+    "name": "DestroyablePots21",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41861.94140625,
+    "lat": 2707.447509765625,
+    "alt": 102.26692962646484
+  },
+  {
+    "name": "DestroyablePots22",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 42033.09375,
+    "lat": 2503.999267578125,
+    "alt": 115.1194839477539
+  },
+  {
+    "name": "DestroyablePots23",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44340.91796875,
+    "lat": -9308.2978515625,
+    "alt": 608.0128784179688
+  },
+  {
+    "name": "DestroyablePots24_32",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 40661.1796875,
+    "lat": -9022.4892578125,
+    "alt": 200.214111328125
+  },
+  {
+    "name": "DestroyablePots25_33",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 40626.69140625,
+    "lat": -9156.0302734375,
+    "alt": 200.356201171875
+  },
+  {
+    "name": "DestroyablePots26",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41665.2734375,
+    "lat": -5982.1513671875,
+    "alt": 884.716064453125
+  },
+  {
+    "name": "DestroyablePots27",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41873.1484375,
+    "lat": -6010.2431640625,
+    "alt": 884.6687622070312
+  },
+  {
+    "name": "DestroyablePots28",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 41410.21875,
+    "lat": -5914.078125,
+    "alt": 884.5747680664062
+  },
+  {
+    "name": "DestroyablePots29_39",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43299.5234375,
+    "lat": -14063.1357421875,
+    "alt": 367.49798583984375
+  },
+  {
+    "name": "DestroyablePots3",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43462.28515625,
+    "lat": -4992.65283203125,
+    "alt": 609.482421875
+  },
+  {
+    "name": "DestroyablePots30",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43310.19140625,
+    "lat": -14136.7734375,
+    "alt": 378.5403137207031
+  },
+  {
+    "name": "DestroyablePots31_2",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 714.6329345703125,
+    "lat": -13222.0888671875,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots32",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 675.59375,
+    "lat": -13348.837890625,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots33",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 681.5402221679688,
+    "lat": -13277.322265625,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots34",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 519.2688598632812,
+    "lat": -13413.580078125,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots35",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 602.2490844726562,
+    "lat": -13399.0634765625,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots36",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 546.74169921875,
+    "lat": -13325.728515625,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots37",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 622.4894409179688,
+    "lat": -13301.48828125,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots38",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 641.8064575195312,
+    "lat": -13224.1845703125,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots39",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 695.5365600585938,
+    "lat": -13150.787109375,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots4",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43502.2421875,
+    "lat": -5456.3701171875,
+    "alt": 609.482421875
+  },
+  {
+    "name": "DestroyablePots40",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1347.5179443359375,
+    "lat": -13300.1357421875,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots41",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1246.6644287109375,
+    "lat": -13229.1845703125,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots42",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1310.8607177734375,
+    "lat": -13242.609375,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots43",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1488.0787353515625,
+    "lat": -13266.4501953125,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots44",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1401.2548828125,
+    "lat": -13241.68359375,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots45",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1285.2501220703125,
+    "lat": -13166.0341796875,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots46",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1415.1187744140625,
+    "lat": -13148.791015625,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots47",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 1346.335205078125,
+    "lat": -13117.091796875,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots48",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 771.0462646484375,
+    "lat": -13174.701171875,
+    "alt": -703.1262817382812
+  },
+  {
+    "name": "DestroyablePots49",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -915.8556518554688,
+    "lat": -12050.345703125,
+    "alt": -794.9569702148438
+  },
+  {
+    "name": "DestroyablePots5",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43616.94921875,
+    "lat": -5020.142578125,
+    "alt": 14.075471878051758
+  },
+  {
+    "name": "DestroyablePots50",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -983.5042114257812,
+    "lat": -12143.5576171875,
+    "alt": -795.0029907226562
+  },
+  {
+    "name": "DestroyablePots51",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -976.7899780273438,
+    "lat": -12049.3984375,
+    "alt": -795.0988159179688
+  },
+  {
+    "name": "DestroyablePots52",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -1033.4544677734375,
+    "lat": -12076.68359375,
+    "alt": -795.0029296875
+  },
+  {
+    "name": "DestroyablePots53",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -1037.453369140625,
+    "lat": -11982.1142578125,
+    "alt": -795.0029296875
+  },
+  {
+    "name": "DestroyablePots54",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -962.7936401367188,
+    "lat": -11922.86328125,
+    "alt": -794.9569091796875
+  },
+  {
+    "name": "DestroyablePots55",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -411.6659240722656,
+    "lat": -12001.26171875,
+    "alt": -795.0987548828125
+  },
+  {
+    "name": "DestroyablePots56",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -335.8600769042969,
+    "lat": -12002.119140625,
+    "alt": -791.0940551757812
+  },
+  {
+    "name": "DestroyablePots57",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -264.42559814453125,
+    "lat": -11995.859375,
+    "alt": -795.0987548828125
+  },
+  {
+    "name": "DestroyablePots58",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -373.0803527832031,
+    "lat": -11938.111328125,
+    "alt": -793.3704223632812
+  },
+  {
+    "name": "DestroyablePots59",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": -887.2837524414062,
+    "lat": -11946.77734375,
+    "alt": -795.0029907226562
+  },
+  {
+    "name": "DestroyablePots6",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43624.18359375,
+    "lat": -4936.26953125,
+    "alt": 34.021705627441406
+  },
+  {
+    "name": "DestroyablePots60",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 2391.453125,
+    "lat": -12019.2138671875,
+    "alt": -795.0029907226562
+  },
+  {
+    "name": "DestroyablePots61",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 2458.474853515625,
+    "lat": -12041.3876953125,
+    "alt": -795.0988159179688
+  },
+  {
+    "name": "DestroyablePots62",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 2442.76953125,
+    "lat": -11980.4892578125,
+    "alt": -795.0029296875
+  },
+  {
+    "name": "DestroyablePots63",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 2256.62060546875,
+    "lat": -11858.0126953125,
+    "alt": -795.0987548828125
+  },
+  {
+    "name": "DestroyablePots64",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 2311.030029296875,
+    "lat": -11908.1767578125,
+    "alt": -793.3704223632812
+  },
+  {
+    "name": "DestroyablePots65",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 32460.29296875,
+    "lat": -12978.2470703125,
+    "alt": -2587.579345703125
+  },
+  {
+    "name": "DestroyablePots66",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 32396.068359375,
+    "lat": -13059.333984375,
+    "alt": -2588.86328125
+  },
+  {
+    "name": "DestroyablePots67_2",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44420.0,
+    "lat": -4170.0,
+    "alt": -340.0
+  },
+  {
+    "name": "DestroyablePots68",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5275.501953125,
+    "lat": -1463.9515380859375,
+    "alt": 38.474365234375
+  },
+  {
+    "name": "DestroyablePots69",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5416.7685546875,
+    "lat": -1199.8575439453125,
+    "alt": 38.474365234375
+  },
+  {
+    "name": "DestroyablePots7",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43562.6328125,
+    "lat": -4992.47314453125,
+    "alt": 14.075471878051758
+  },
+  {
+    "name": "DestroyablePots70",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5753.8134765625,
+    "lat": -1209.7694091796875,
+    "alt": 38.47442626953125
+  },
+  {
+    "name": "DestroyablePots71",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5259.19189453125,
+    "lat": -1398.378662109375,
+    "alt": 38.474365234375
+  },
+  {
+    "name": "DestroyablePots72",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5343.27490234375,
+    "lat": -1211.8885498046875,
+    "alt": 38.474365234375
+  },
+  {
+    "name": "DestroyablePots73",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 5719.51953125,
+    "lat": -1160.950927734375,
+    "alt": 38.474365234375
+  },
+  {
+    "name": "DestroyablePots74",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44500.0,
+    "lat": -4170.0,
+    "alt": -340.0
+  },
+  {
+    "name": "DestroyablePots75",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44460.0,
+    "lat": -4110.0,
+    "alt": -340.0
+  },
+  {
+    "name": "DestroyablePots8",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44078.18359375,
+    "lat": -5022.45556640625,
+    "alt": 129.2620849609375
+  },
+  {
+    "name": "DestroyablePots9",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 44102.83203125,
+    "lat": -4948.26025390625,
+    "alt": 129.21603393554688
+  },
+  {
+    "name": "DestroyablePots_2",
+    "type": "DestroyablePots_C",
+    "area": "Crash",
+    "lng": 43606.24609375,
+    "lat": -4843.65576171875,
+    "alt": 616.41357421875
+  },
+  {
+    "name": "EnemySpawner2_2",
+    "type": "EnemySpawner_C",
+    "area": "Crash",
+    "lng": 5694.181640625,
+    "lat": 14103.3193359375,
+    "alt": 2296.091796875
+  },
+  {
+    "name": "EnemySpawner3_2",
+    "type": "EnemySpawner_C",
+    "area": "Crash",
+    "lng": 26064.076171875,
+    "lat": -3765.50341796875,
+    "alt": 510.61920166015625
+  },
+  {
+    "name": "EnemySpawner_2",
+    "type": "EnemySpawner_C",
+    "area": "Crash",
+    "lng": 28681.9765625,
+    "lat": -5076.3310546875,
+    "alt": 160.28170776367188
+  },
+  {
+    "name": "Jumppad",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 29789.94921875,
+    "lat": -6613.53955078125,
+    "alt": 314.0312805175781
+  },
+  {
+    "name": "Jumppad10_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 6534.8583984375,
+    "lat": -1385.4345703125,
+    "alt": -2197.7900390625
+  },
+  {
+    "name": "Jumppad11",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": -1541.0750732421875,
+    "lat": 13251.494140625,
+    "alt": 2446.314208984375
+  },
+  {
+    "name": "Jumppad12",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 20978.654296875,
+    "lat": 18175.3828125,
+    "alt": 2475.537841796875
+  },
+  {
+    "name": "Jumppad13",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 18428.583984375,
+    "lat": 18012.55859375,
+    "alt": 2453.891845703125
+  },
+  {
+    "name": "Jumppad14",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 24611.232421875,
+    "lat": 13070.08984375,
+    "alt": 2693.482666015625
+  },
+  {
+    "name": "Jumppad15_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": -7020.0,
+    "lat": -9010.2333984375,
+    "alt": -3600.0
+  },
+  {
+    "name": "Jumppad16",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 54931.73046875,
+    "lat": -7875.74755859375,
+    "alt": -2646.472412109375
+  },
+  {
+    "name": "Jumppad17",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 66577.921875,
+    "lat": -3948.655517578125,
+    "alt": 13823.6962890625
+  },
+  {
+    "name": "Jumppad18",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 66591.890625,
+    "lat": -3629.166259765625,
+    "alt": 13825.9189453125
+  },
+  {
+    "name": "Jumppad19",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 66577.921875,
+    "lat": -3290.32763671875,
+    "alt": 13823.6962890625
+  },
+  {
+    "name": "Jumppad2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 39126.12109375,
+    "lat": -1808.9385986328125,
+    "alt": 170.0
+  },
+  {
+    "name": "Jumppad20",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 66594.578125,
+    "lat": -2951.379150390625,
+    "alt": 13826.35546875
+  },
+  {
+    "name": "Jumppad21",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 63789.046875,
+    "lat": -3948.655517578125,
+    "alt": 13585.060546875
+  },
+  {
+    "name": "Jumppad22_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 27284.443359375,
+    "lat": 5683.81103515625,
+    "alt": -1270.491455078125
+  },
+  {
+    "name": "Jumppad23_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 2340.3779296875,
+    "lat": -4425.12158203125,
+    "alt": 121.77313232421875
+  },
+  {
+    "name": "Jumppad24",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 4071.03125,
+    "lat": -4052.68701171875,
+    "alt": 121.77325439453125
+  },
+  {
+    "name": "Jumppad25",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": -2160.57275390625,
+    "lat": 14826.3271484375,
+    "alt": 2443.18408203125
+  },
+  {
+    "name": "Jumppad26",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 11691.7373046875,
+    "lat": 12107.671875,
+    "alt": 2231.88525390625
+  },
+  {
+    "name": "Jumppad27_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 34525.98828125,
+    "lat": -12423.8974609375,
+    "alt": -2613.38720703125
+  },
+  {
+    "name": "Jumppad28_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 44039.33984375,
+    "lat": 9177.7080078125,
+    "alt": -1066.8790283203125
+  },
+  {
+    "name": "Jumppad29",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 47008.97265625,
+    "lat": 11268.6533203125,
+    "alt": -1066.8790283203125
+  },
+  {
+    "name": "Jumppad3",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 42525.00390625,
+    "lat": -3956.05712890625,
+    "alt": 214.08114624023438
+  },
+  {
+    "name": "Jumppad30_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 32573.0859375,
+    "lat": 16228.5419921875,
+    "alt": -1579.750732421875
+  },
+  {
+    "name": "Jumppad31_5",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 41315.28515625,
+    "lat": 15561.904296875,
+    "alt": 987.3502197265625
+  },
+  {
+    "name": "Jumppad32_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 37332.078125,
+    "lat": 2896.1123046875,
+    "alt": -1362.333740234375
+  },
+  {
+    "name": "Jumppad33_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": -5109.95361328125,
+    "lat": -13869.802734375,
+    "alt": -721.353271484375
+  },
+  {
+    "name": "Jumppad34_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 44590.4140625,
+    "lat": -3081.643798828125,
+    "alt": 838.6304321289062
+  },
+  {
+    "name": "Jumppad35",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": -2412.840087890625,
+    "lat": -3077.98388671875,
+    "alt": 235.77540588378906
+  },
+  {
+    "name": "Jumppad36",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 36114.65234375,
+    "lat": -794.5431518554688,
+    "alt": 249.99810791015625
+  },
+  {
+    "name": "Jumppad37",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 41144.4609375,
+    "lat": -4056.656494140625,
+    "alt": 2129.56103515625
+  },
+  {
+    "name": "Jumppad4",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 39244.76171875,
+    "lat": 2255.711181640625,
+    "alt": 38.915157318115234
+  },
+  {
+    "name": "Jumppad5_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 36250.53515625,
+    "lat": -5472.81103515625,
+    "alt": 168.5164031982422
+  },
+  {
+    "name": "Jumppad6_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 55365.953125,
+    "lat": -5052.5986328125,
+    "alt": 2493.704345703125
+  },
+  {
+    "name": "Jumppad7",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 56069.578125,
+    "lat": -2145.9609375,
+    "alt": 2580.140869140625
+  },
+  {
+    "name": "Jumppad8_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 30731.83984375,
+    "lat": -2953.678466796875,
+    "alt": 320.1744689941406
+  },
+  {
+    "name": "Jumppad9",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 33504.6328125,
+    "lat": -9456.8095703125,
+    "alt": 797.7321166992188
+  },
+  {
+    "name": "Jumppad_2",
+    "type": "Jumppad_C",
+    "area": "Crash",
+    "lng": 35071.52734375,
+    "lat": -515.591796875,
+    "alt": 283.0026550292969
+  },
+  {
+    "name": "Jumppillow10",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 42976.78125,
+    "lat": 2070.45263671875,
+    "alt": 132.57846069335938
+  },
+  {
+    "name": "Jumppillow11",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 40570.66015625,
+    "lat": 5919.8720703125,
+    "alt": 203.79995727539062
+  },
+  {
+    "name": "Jumppillow12",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 45746.87109375,
+    "lat": 9157.4189453125,
+    "alt": -1048.7930908203125
+  },
+  {
+    "name": "Jumppillow13",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 45824.55078125,
+    "lat": 9689.0380859375,
+    "alt": -1048.7913818359375
+  },
+  {
+    "name": "Jumppillow14",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 45896.25,
+    "lat": 10210.0029296875,
+    "alt": -1048.7913818359375
+  },
+  {
+    "name": "Jumppillow15",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 46039.0625,
+    "lat": 11247.64453125,
+    "alt": -1048.79150390625
+  },
+  {
+    "name": "Jumppillow16",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 45966.88671875,
+    "lat": 10723.2236328125,
+    "alt": -1048.7913818359375
+  },
+  {
+    "name": "Jumppillow17",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 42436.53125,
+    "lat": -8476.5498046875,
+    "alt": 215.14834594726562
+  },
+  {
+    "name": "Jumppillow18_2",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 56802.52734375,
+    "lat": -17277.560546875,
+    "alt": 127.36249542236328
+  },
+  {
+    "name": "Jumppillow19",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 56829.1875,
+    "lat": -16500.49609375,
+    "alt": 507.12335205078125
+  },
+  {
+    "name": "Jumppillow2",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 39799.91015625,
+    "lat": 13106.28515625,
+    "alt": 14.439788818359375
+  },
+  {
+    "name": "Jumppillow20",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 56618.9140625,
+    "lat": -18043.287109375,
+    "alt": -159.06344604492188
+  },
+  {
+    "name": "Jumppillow22",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 56488.10546875,
+    "lat": -14758.828125,
+    "alt": 1569.51171875
+  },
+  {
+    "name": "Jumppillow23",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 56496.13671875,
+    "lat": -15516.4912109375,
+    "alt": 1064.53515625
+  },
+  {
+    "name": "Jumppillow3",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 38301.27734375,
+    "lat": 11307.9306640625,
+    "alt": -1642.3299560546875
+  },
+  {
+    "name": "Jumppillow4_15",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 44212.0,
+    "lat": -3759.906982421875,
+    "alt": 114.6814956665039
+  },
+  {
+    "name": "Jumppillow5_2",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 33443.43359375,
+    "lat": -11892.537109375,
+    "alt": -3048.995849609375
+  },
+  {
+    "name": "Jumppillow6_2",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 10078.7412109375,
+    "lat": 13034.2685546875,
+    "alt": 2180.049072265625
+  },
+  {
+    "name": "Jumppillow7_7",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 15550.6279296875,
+    "lat": 12515.83984375,
+    "alt": 3559.419677734375
+  },
+  {
+    "name": "Jumppillow8",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 12206.5859375,
+    "lat": 8017.927734375,
+    "alt": 1525.6116943359375
+  },
+  {
+    "name": "Jumppillow9",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 16132.7431640625,
+    "lat": 12624.20703125,
+    "alt": 3559.419677734375
+  },
+  {
+    "name": "Jumppillow_12",
+    "type": "Jumppillow_C",
+    "area": "Crash",
+    "lng": 42392.69140625,
+    "lat": -9033.876953125,
+    "alt": 753.028564453125
+  },
+  {
+    "name": "Key2_2",
+    "type": "Key_C",
+    "area": "Crash",
+    "lng": 4936.94287109375,
+    "lat": -7056.72216796875,
+    "alt": 92.7677993774414
+  },
+  {
+    "name": "Key_2",
+    "type": "Key_C",
+    "area": "Crash",
+    "lng": 44240.48828125,
+    "lat": -15759.7919921875,
+    "alt": 508.00042724609375
+  },
+  {
+    "name": "MinecraftBrick2",
+    "type": "MinecraftBrick_C",
+    "area": "Crash",
+    "lng": 53645.734375,
+    "lat": -8149.03662109375,
+    "alt": -1952.472412109375
+  },
+  {
+    "name": "PlayerStart_2",
+    "type": "PlayerStart",
+    "area": "Crash",
+    "lng": 44033.9609375,
+    "lat": 2199.20263671875,
+    "alt": 244.61087036132812
+  },
+  {
+    "name": "Plumbus10_29",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 5355.5166015625,
+    "lat": -1871.4521484375,
+    "alt": 120.90147399902344
+  },
+  {
+    "name": "Plumbus11_32",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 3222.91650390625,
+    "lat": -4841.056640625,
+    "alt": 132.29522705078125
+  },
+  {
+    "name": "Plumbus12_37",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 779.1497802734375,
+    "lat": -4670.1103515625,
+    "alt": 97.76542663574219
+  },
+  {
+    "name": "Plumbus13_40",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": -3665.85693359375,
+    "lat": -7577.17919921875,
+    "alt": 698.9577026367188
+  },
+  {
+    "name": "Plumbus14_43",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 3152.923583984375,
+    "lat": 470.7838439941406,
+    "alt": 765.53955078125
+  },
+  {
+    "name": "Plumbus15_46",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": -1144.7099609375,
+    "lat": 11601.431640625,
+    "alt": 2299.493408203125
+  },
+  {
+    "name": "Plumbus16_49",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 23594.56640625,
+    "lat": 15307.0263671875,
+    "alt": 2454.580322265625
+  },
+  {
+    "name": "Plumbus17_52",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 34086.48046875,
+    "lat": 911.489990234375,
+    "alt": 348.0354309082031
+  },
+  {
+    "name": "Plumbus18_55",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 38356.45703125,
+    "lat": 3899.6474609375,
+    "alt": -99.6976318359375
+  },
+  {
+    "name": "Plumbus19_58",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 41609.7578125,
+    "lat": -6001.7080078125,
+    "alt": 143.2898712158203
+  },
+  {
+    "name": "Plumbus20_61",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 44264.59765625,
+    "lat": -13897.9677734375,
+    "alt": 420.3805236816406
+  },
+  {
+    "name": "Plumbus21_64",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 56029.0703125,
+    "lat": -3343.921630859375,
+    "alt": 156.45584106445312
+  },
+  {
+    "name": "Plumbus2_5",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 4772.13720703125,
+    "lat": -11519.92578125,
+    "alt": -673.2060546875
+  },
+  {
+    "name": "Plumbus3_8",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 3135.884033203125,
+    "lat": -12194.9521484375,
+    "alt": -697.91015625
+  },
+  {
+    "name": "Plumbus4_11",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": -763.4119873046875,
+    "lat": -12012.5224609375,
+    "alt": -703.3779296875
+  },
+  {
+    "name": "Plumbus5_14",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 139.38406372070312,
+    "lat": -9987.53125,
+    "alt": -708.283447265625
+  },
+  {
+    "name": "Plumbus6_17",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": -5730.3681640625,
+    "lat": -16969.447265625,
+    "alt": -698.5722045898438
+  },
+  {
+    "name": "Plumbus7_20",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 5581.4755859375,
+    "lat": -11286.5947265625,
+    "alt": 111.14824676513672
+  },
+  {
+    "name": "Plumbus8_23",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 5155.2900390625,
+    "lat": -7318.75048828125,
+    "alt": 47.61590576171875
+  },
+  {
+    "name": "Plumbus9_26",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 6915.501953125,
+    "lat": -1832.45751953125,
+    "alt": 193.4142303466797
+  },
+  {
+    "name": "Plumbus_2",
+    "type": "Plumbus_C",
+    "area": "Crash",
+    "lng": 11464.244140625,
+    "lat": 12203.3779296875,
+    "alt": 1550.3951416015625
+  },
+  {
+    "name": "Scrap10",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -1815.270751953125,
+    "lat": -8221.6142578125,
+    "alt": -142.90443420410156
+  },
+  {
+    "name": "Scrap100",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -575.609619140625,
+    "lat": 11457.14453125,
+    "alt": 2167.60693359375
+  },
+  {
+    "name": "Scrap101",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -374.9576110839844,
+    "lat": 11457.14453125,
+    "alt": 2163.632568359375
+  },
+  {
+    "name": "Scrap102",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -192.5560760498047,
+    "lat": 11457.14453125,
+    "alt": 2164.749267578125
+  },
+  {
+    "name": "Scrap103",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -43.68223571777344,
+    "lat": 11457.14453125,
+    "alt": 2144.86865234375
+  },
+  {
+    "name": "Scrap104",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 282.27447509765625,
+    "lat": 11435.115234375,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap105",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 351.09130859375,
+    "lat": 11169.205078125,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap106",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 375.9341735839844,
+    "lat": 10909.806640625,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap107",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 494.2557678222656,
+    "lat": 10641.9521484375,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap108",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 589.7086181640625,
+    "lat": 10358.6767578125,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap109",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 675.726318359375,
+    "lat": 10137.7900390625,
+    "alt": 1319.8394775390625
+  },
+  {
+    "name": "Scrap11",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -1705.864990234375,
+    "lat": -8221.6142578125,
+    "alt": -142.90443420410156
+  },
+  {
+    "name": "Scrap110",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 1871.1904296875,
+    "lat": 22.779296875,
+    "alt": 1662.1610107421875
+  },
+  {
+    "name": "Scrap111",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2022.14404296875,
+    "lat": 22.779266357421875,
+    "alt": 1656.3974609375
+  },
+  {
+    "name": "Scrap112",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2172.187744140625,
+    "lat": 22.779266357421875,
+    "alt": 1577.7969970703125
+  },
+  {
+    "name": "Scrap113",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2447.31689453125,
+    "lat": 22.77923583984375,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap114",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2487.8515625,
+    "lat": -267.397216796875,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap115",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2489.232666015625,
+    "lat": -435.9817810058594,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap116",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2476.59375,
+    "lat": -621.5662841796875,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap117",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2441.4033203125,
+    "lat": -863.1929321289062,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap118",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2374.819091796875,
+    "lat": -1072.759033203125,
+    "alt": 764.508056640625
+  },
+  {
+    "name": "Scrap119",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 20879.244140625,
+    "lat": 17186.171875,
+    "alt": 2364.6455078125
+  },
+  {
+    "name": "Scrap12",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2289.45947265625,
+    "lat": -6581.0771484375,
+    "alt": 45.82538604736328
+  },
+  {
+    "name": "Scrap120",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 20646.869140625,
+    "lat": 17186.171875,
+    "alt": 2364.6455078125
+  },
+  {
+    "name": "Scrap121",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 20640.873046875,
+    "lat": 17053.173828125,
+    "alt": 2364.6455078125
+  },
+  {
+    "name": "Scrap122_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 4633.13232421875,
+    "lat": -5748.11865234375,
+    "alt": 79.46914672851562
+  },
+  {
+    "name": "Scrap123_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -6641.63427734375,
+    "lat": -11696.8193359375,
+    "alt": -287.2256774902344
+  },
+  {
+    "name": "Scrap124_7",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -7384.16650390625,
+    "lat": -11696.8193359375,
+    "alt": 407.41070556640625
+  },
+  {
+    "name": "Scrap125",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -9429.96875,
+    "lat": -11696.8193359375,
+    "alt": 407.41070556640625
+  },
+  {
+    "name": "Scrap126",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -7060.7197265625,
+    "lat": -11696.8193359375,
+    "alt": -287.2256774902344
+  },
+  {
+    "name": "Scrap127_12",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -4486.35107421875,
+    "lat": -9544.5703125,
+    "alt": -737.7513427734375
+  },
+  {
+    "name": "Scrap128_15",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22227.490234375,
+    "lat": 12964.533203125,
+    "alt": 4688.18359375
+  },
+  {
+    "name": "Scrap129_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 9823.640625,
+    "lat": -4310.10986328125,
+    "alt": -1521.8787841796875
+  },
+  {
+    "name": "Scrap13",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -1697.0970458984375,
+    "lat": -8369.984375,
+    "alt": -142.90443420410156
+  },
+  {
+    "name": "Scrap130",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 8727.8701171875,
+    "lat": -4574.25537109375,
+    "alt": -1521.8787841796875
+  },
+  {
+    "name": "Scrap131",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 8727.8701171875,
+    "lat": -5009.94970703125,
+    "alt": -1521.87890625
+  },
+  {
+    "name": "Scrap132_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -4653.45458984375,
+    "lat": -11808.3037109375,
+    "alt": -2090.3515625
+  },
+  {
+    "name": "Scrap133_5",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -11047.2333984375,
+    "lat": -11787.7236328125,
+    "alt": -1987.1134033203125
+  },
+  {
+    "name": "Scrap134",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10826.1533203125,
+    "lat": -11898.5400390625,
+    "alt": -1987.1029052734375
+  },
+  {
+    "name": "Scrap135",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10888.3115234375,
+    "lat": -11593.9052734375,
+    "alt": -1987.1085205078125
+  },
+  {
+    "name": "Scrap136",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -11047.2353515625,
+    "lat": -11561.82421875,
+    "alt": -1987.1075439453125
+  },
+  {
+    "name": "Scrap137",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10878.01953125,
+    "lat": -11819.0068359375,
+    "alt": -1987.0970458984375
+  },
+  {
+    "name": "Scrap138_16",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -9730.921875,
+    "lat": -4308.2705078125,
+    "alt": 565.6637573242188
+  },
+  {
+    "name": "Scrap139",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -11047.2373046875,
+    "lat": -11301.921875,
+    "alt": -1987.1019287109375
+  },
+  {
+    "name": "Scrap140",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10786.9931640625,
+    "lat": -11481.3330078125,
+    "alt": -1987.0916748046875
+  },
+  {
+    "name": "Scrap141",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10823.32421875,
+    "lat": -11301.9208984375,
+    "alt": -1987.0970458984375
+  },
+  {
+    "name": "Scrap142_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 12756.1279296875,
+    "lat": -1348.2691650390625,
+    "alt": 628.697265625
+  },
+  {
+    "name": "Scrap144_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15272.12109375,
+    "lat": 516.1641845703125,
+    "alt": 643.843505859375
+  },
+  {
+    "name": "Scrap145_5",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2979.663330078125,
+    "lat": -11526.984375,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap146",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2979.663330078125,
+    "lat": -11679.2353515625,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap147",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2979.663330078125,
+    "lat": -11838.4326171875,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap148",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2979.663330078125,
+    "lat": -11992.759765625,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap149",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2979.663330078125,
+    "lat": -12153.83984375,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap14_8",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3779.03466796875,
+    "lat": 13860.765625,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap150",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2817.633056640625,
+    "lat": -12153.83984375,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap151",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2817.633056640625,
+    "lat": -11993.46875,
+    "alt": -732.4990844726562
+  },
+  {
+    "name": "Scrap152",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2964.04736328125,
+    "lat": -11367.25,
+    "alt": -732.4990234375
+  },
+  {
+    "name": "Scrap153",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2816.23486328125,
+    "lat": -11350.767578125,
+    "alt": -732.4990234375
+  },
+  {
+    "name": "Scrap154",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2817.633056640625,
+    "lat": -11520.154296875,
+    "alt": -732.4990234375
+  },
+  {
+    "name": "Scrap156_9",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 980.0,
+    "lat": 2620.0,
+    "alt": 800.0
+  },
+  {
+    "name": "Scrap157",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10794.9501953125,
+    "lat": -11707.6982421875,
+    "alt": -1987.094482421875
+  },
+  {
+    "name": "Scrap158",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -10483.9833984375,
+    "lat": -11909.2001953125,
+    "alt": -2047.42626953125
+  },
+  {
+    "name": "Scrap159",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -7517.51806640625,
+    "lat": -4445.193359375,
+    "alt": -3449.296875
+  },
+  {
+    "name": "Scrap15_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 7571.9609375,
+    "lat": -1169.9375,
+    "alt": 74.51651000976562
+  },
+  {
+    "name": "Scrap160",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -7803.345703125,
+    "lat": -4445.193359375,
+    "alt": -3449.296875
+  },
+  {
+    "name": "Scrap161",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -9889.4140625,
+    "lat": -4344.953125,
+    "alt": 433.89166259765625
+  },
+  {
+    "name": "Scrap164_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5345.40380859375,
+    "lat": -7207.2509765625,
+    "alt": 566.4144897460938
+  },
+  {
+    "name": "Scrap165_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 26838.05859375,
+    "lat": 9431.3505859375,
+    "alt": 2329.026611328125
+  },
+  {
+    "name": "Scrap166_5",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5973.626953125,
+    "lat": 10596.7587890625,
+    "alt": 3030.794921875
+  },
+  {
+    "name": "Scrap169_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -4852.33056640625,
+    "lat": 15799.3525390625,
+    "alt": 1156.9554443359375
+  },
+  {
+    "name": "Scrap16_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 11573.2724609375,
+    "lat": -1857.1370849609375,
+    "alt": 3720.330322265625
+  },
+  {
+    "name": "Scrap173_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 17137.392578125,
+    "lat": 13848.81640625,
+    "alt": 1072.8060302734375
+  },
+  {
+    "name": "Scrap174",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 17029.552734375,
+    "lat": 13848.81640625,
+    "alt": 1072.8060302734375
+  },
+  {
+    "name": "Scrap175",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 17078.34765625,
+    "lat": 13763.9638671875,
+    "alt": 1072.8060302734375
+  },
+  {
+    "name": "Scrap176_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 12229.6767578125,
+    "lat": 16397.107421875,
+    "alt": 3861.775634765625
+  },
+  {
+    "name": "Scrap177_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24954.79296875,
+    "lat": 6113.7490234375,
+    "alt": -1350.866943359375
+  },
+  {
+    "name": "Scrap178",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 25042.90234375,
+    "lat": 5962.533203125,
+    "alt": -1344.60302734375
+  },
+  {
+    "name": "Scrap179",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24906.783203125,
+    "lat": 6011.43798828125,
+    "alt": -1351.070068359375
+  },
+  {
+    "name": "Scrap180",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24771.931640625,
+    "lat": 6059.55224609375,
+    "alt": -1365.494140625
+  },
+  {
+    "name": "Scrap181_9",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24850.38671875,
+    "lat": 6055.998046875,
+    "alt": -1351.070068359375
+  },
+  {
+    "name": "Scrap182_11",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24694.93359375,
+    "lat": 6097.8876953125,
+    "alt": -1329.55126953125
+  },
+  {
+    "name": "Scrap183",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24794.994140625,
+    "lat": 6175.54736328125,
+    "alt": -1334.7962646484375
+  },
+  {
+    "name": "Scrap184",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24874.048828125,
+    "lat": 6146.47314453125,
+    "alt": -1351.070068359375
+  },
+  {
+    "name": "Scrap185",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24590.658203125,
+    "lat": 6121.21533203125,
+    "alt": -1325.376220703125
+  },
+  {
+    "name": "Scrap186",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24676.642578125,
+    "lat": 6199.416015625,
+    "alt": -1311.6981201171875
+  },
+  {
+    "name": "Scrap187",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24341.51953125,
+    "lat": 6116.12255859375,
+    "alt": -1294.724609375
+  },
+  {
+    "name": "Scrap188",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24489.16796875,
+    "lat": 6145.0302734375,
+    "alt": -1289.858154296875
+  },
+  {
+    "name": "Scrap189",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 24580.283203125,
+    "lat": 6214.78369140625,
+    "alt": -1325.70068359375
+  },
+  {
+    "name": "Scrap190",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 25011.939453125,
+    "lat": 6064.02685546875,
+    "alt": -1344.60302734375
+  },
+  {
+    "name": "Scrap191",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -189.0397491455078,
+    "lat": -13662.732421875,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap192",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -189.0397491455078,
+    "lat": -13510.48046875,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap193",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -189.0380401611328,
+    "lat": -13351.28515625,
+    "alt": -750.3392944335938
+  },
+  {
+    "name": "Scrap194",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -189.0365753173828,
+    "lat": -13196.9560546875,
+    "alt": -750.3392333984375
+  },
+  {
+    "name": "Scrap195",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -189.0370635986328,
+    "lat": -13035.876953125,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap196",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -351.0686950683594,
+    "lat": -13035.87890625,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap197",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -351.0686950683594,
+    "lat": -13196.2470703125,
+    "alt": -750.3392333984375
+  },
+  {
+    "name": "Scrap198",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -204.6559600830078,
+    "lat": -13822.466796875,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap199",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -352.4661560058594,
+    "lat": -13838.9482421875,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap200",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -351.0696716308594,
+    "lat": -13669.5625,
+    "alt": -750.3394775390625
+  },
+  {
+    "name": "Scrap201",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3353.403076171875,
+    "lat": -11814.783203125,
+    "alt": 1033.2078857421875
+  },
+  {
+    "name": "Scrap202",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -5247.91748046875,
+    "lat": -12500.3251953125,
+    "alt": -2115.04443359375
+  },
+  {
+    "name": "Scrap203",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5224.171875,
+    "lat": -12397.5498046875,
+    "alt": -746.56103515625
+  },
+  {
+    "name": "Scrap204_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 614.4998779296875,
+    "lat": -5256.1015625,
+    "alt": 68.48103332519531
+  },
+  {
+    "name": "Scrap205",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -9664.611328125,
+    "lat": -9991.58984375,
+    "alt": -774.9380493164062
+  },
+  {
+    "name": "Scrap206",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3543.403076171875,
+    "lat": -11744.783203125,
+    "alt": 1673.2078857421875
+  },
+  {
+    "name": "Scrap207",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 4599.48486328125,
+    "lat": -6849.18701171875,
+    "alt": 565.8978271484375
+  },
+  {
+    "name": "Scrap208_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -6037.82421875,
+    "lat": -6262.3056640625,
+    "alt": 608.1080932617188
+  },
+  {
+    "name": "Scrap23_28",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2834.330322265625,
+    "lat": 308.14923095703125,
+    "alt": 2622.84423828125
+  },
+  {
+    "name": "Scrap24_31",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2702.100830078125,
+    "lat": 308.149169921875,
+    "alt": 2690.406005859375
+  },
+  {
+    "name": "Scrap25",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2597.05712890625,
+    "lat": 308.149169921875,
+    "alt": 2770.668212890625
+  },
+  {
+    "name": "Scrap26",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2510.18505859375,
+    "lat": 308.149169921875,
+    "alt": 2865.476318359375
+  },
+  {
+    "name": "Scrap27",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2384.7353515625,
+    "lat": 308.149169921875,
+    "alt": 2813.69384765625
+  },
+  {
+    "name": "Scrap28",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2261.306396484375,
+    "lat": 308.149169921875,
+    "alt": 2700.503662109375
+  },
+  {
+    "name": "Scrap29",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2162.31787109375,
+    "lat": 308.149169921875,
+    "alt": 2617.8779296875
+  },
+  {
+    "name": "Scrap2_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2498.455810546875,
+    "lat": -7801.32568359375,
+    "alt": -227.2357940673828
+  },
+  {
+    "name": "Scrap3",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2628.4521484375,
+    "lat": -7801.32568359375,
+    "alt": -188.73048400878906
+  },
+  {
+    "name": "Scrap30",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2051.416259765625,
+    "lat": 308.149169921875,
+    "alt": 2549.176025390625
+  },
+  {
+    "name": "Scrap31",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 1933.2109375,
+    "lat": 308.149169921875,
+    "alt": 2460.55810546875
+  },
+  {
+    "name": "Scrap32",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 1790.8863525390625,
+    "lat": 308.149169921875,
+    "alt": 2379.97802734375
+  },
+  {
+    "name": "Scrap33",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 280.4665832519531,
+    "lat": -1058.2542724609375,
+    "alt": 1053.9932861328125
+  },
+  {
+    "name": "Scrap34_43",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 7143.0830078125,
+    "lat": -3964.100341796875,
+    "alt": -1514.887939453125
+  },
+  {
+    "name": "Scrap35_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 11176.673828125,
+    "lat": -5413.72998046875,
+    "alt": 741.0178833007812
+  },
+  {
+    "name": "Scrap37_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -8898.76953125,
+    "lat": 15200.2919921875,
+    "alt": 2229.822265625
+  },
+  {
+    "name": "Scrap38_5",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2095.85595703125,
+    "lat": 10883.66015625,
+    "alt": 1322.43212890625
+  },
+  {
+    "name": "Scrap39",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3779.03466796875,
+    "lat": 13755.43359375,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap4",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2890.516845703125,
+    "lat": -7801.32568359375,
+    "alt": -171.7527618408203
+  },
+  {
+    "name": "Scrap40",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3779.03466796875,
+    "lat": 13655.662109375,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap41",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3779.03466796875,
+    "lat": 13539.3310546875,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap42",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3779.03466796875,
+    "lat": 13422.9384765625,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap43",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3681.147216796875,
+    "lat": 13860.765625,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap44",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3681.147216796875,
+    "lat": 13755.43359375,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap45",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3681.147216796875,
+    "lat": 13655.662109375,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap46",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3681.147216796875,
+    "lat": 13539.3310546875,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap47",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -3681.147216796875,
+    "lat": 13422.9384765625,
+    "alt": 2424.388916015625
+  },
+  {
+    "name": "Scrap48",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6148.03466796875,
+    "lat": -3510.07958984375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap49",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6148.03466796875,
+    "lat": -3615.41162109375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap50",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6148.03466796875,
+    "lat": -3715.18310546875,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap51",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6148.03466796875,
+    "lat": -3831.51318359375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap52",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6148.03466796875,
+    "lat": -3947.9052734375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap53",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6245.92138671875,
+    "lat": -3510.07958984375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap54",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6245.92138671875,
+    "lat": -3615.41162109375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap55",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6245.92138671875,
+    "lat": -3715.18310546875,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap56",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6245.92138671875,
+    "lat": -3831.51318359375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap57",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6245.92138671875,
+    "lat": -3947.9052734375,
+    "alt": 79.07122802734375
+  },
+  {
+    "name": "Scrap59_12",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 14592.33984375,
+    "lat": 13556.6240234375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap6",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2762.251953125,
+    "lat": -7781.25048828125,
+    "alt": -171.7527618408203
+  },
+  {
+    "name": "Scrap60_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 10819.6044921875,
+    "lat": 15402.3271484375,
+    "alt": 2995.134033203125
+  },
+  {
+    "name": "Scrap62",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 18045.353515625,
+    "lat": 11815.9697265625,
+    "alt": 3642.665283203125
+  },
+  {
+    "name": "Scrap63_6",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 993.1256103515625,
+    "lat": -4565.03173828125,
+    "alt": 142.7593994140625
+  },
+  {
+    "name": "Scrap64_12",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -773.7801513671875,
+    "lat": -10096.474609375,
+    "alt": 1322.013427734375
+  },
+  {
+    "name": "Scrap65",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 4853.525390625,
+    "lat": -5747.853515625,
+    "alt": 866.3677978515625
+  },
+  {
+    "name": "Scrap66",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22414.078125,
+    "lat": 15354.4013671875,
+    "alt": 2408.238525390625
+  },
+  {
+    "name": "Scrap67_16",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -14350.33984375,
+    "lat": 8137.14892578125,
+    "alt": 5417.27734375
+  },
+  {
+    "name": "Scrap68_9",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -6647.33984375,
+    "lat": -16730.66015625,
+    "alt": -721.5167846679688
+  },
+  {
+    "name": "Scrap69",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22160.9296875,
+    "lat": 15112.255859375,
+    "alt": 2408.238525390625
+  },
+  {
+    "name": "Scrap7",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2812.263427734375,
+    "lat": -6646.2939453125,
+    "alt": -171.7527618408203
+  },
+  {
+    "name": "Scrap70_21",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22410.376953125,
+    "lat": 15229.06640625,
+    "alt": 2508.094970703125
+  },
+  {
+    "name": "Scrap71",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 6624.8017578125,
+    "lat": 1077.1435546875,
+    "alt": 1154.5579833984375
+  },
+  {
+    "name": "Scrap72",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22165.95703125,
+    "lat": 15229.06640625,
+    "alt": 2508.094970703125
+  },
+  {
+    "name": "Scrap73",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 3010.502197265625,
+    "lat": -6614.41552734375,
+    "alt": 45.82538604736328
+  },
+  {
+    "name": "Scrap74",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22289.849609375,
+    "lat": 15354.4013671875,
+    "alt": 2508.094970703125
+  },
+  {
+    "name": "Scrap75_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 4601.37353515625,
+    "lat": -7220.58837890625,
+    "alt": 76.93856811523438
+  },
+  {
+    "name": "Scrap76_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 18002.13671875,
+    "lat": 7700.2822265625,
+    "alt": 2972.636962890625
+  },
+  {
+    "name": "Scrap77",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22284.93359375,
+    "lat": 15112.255859375,
+    "alt": 2508.094970703125
+  },
+  {
+    "name": "Scrap78",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 18321.765625,
+    "lat": 7678.8740234375,
+    "alt": 2972.636962890625
+  },
+  {
+    "name": "Scrap79_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5369.3193359375,
+    "lat": -575.479248046875,
+    "alt": 86.14332580566406
+  },
+  {
+    "name": "Scrap8",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -2667.8642578125,
+    "lat": -6619.84423828125,
+    "alt": -171.7527618408203
+  },
+  {
+    "name": "Scrap80",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22293.53125,
+    "lat": 15229.06640625,
+    "alt": 2612.846435546875
+  },
+  {
+    "name": "Scrap81",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5369.3193359375,
+    "lat": -436.58880615234375,
+    "alt": 86.14332580566406
+  },
+  {
+    "name": "Scrap82",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22165.95703125,
+    "lat": 15354.4013671875,
+    "alt": 2612.846435546875
+  },
+  {
+    "name": "Scrap83_6",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 5177.52001953125,
+    "lat": 435.7899475097656,
+    "alt": 75.24031829833984
+  },
+  {
+    "name": "Scrap85",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 22414.078125,
+    "lat": 15112.255859375,
+    "alt": 2612.846435546875
+  },
+  {
+    "name": "Scrap87_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -4595.0732421875,
+    "lat": -10320.671875,
+    "alt": -1114.902587890625
+  },
+  {
+    "name": "Scrap88",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 14592.33984375,
+    "lat": 13379.5771484375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap89",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 14592.33984375,
+    "lat": 13195.55859375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap9",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -1818.978515625,
+    "lat": -8396.033203125,
+    "alt": -142.90443420410156
+  },
+  {
+    "name": "Scrap90",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 14705.0830078125,
+    "lat": 12981.234375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap91",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 14935.18359375,
+    "lat": 12813.52734375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap92",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15238.169921875,
+    "lat": 12824.6865234375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap93",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2973.324462890625,
+    "lat": -300.0308532714844,
+    "alt": 876.5906372070312
+  },
+  {
+    "name": "Scrap94",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 2937.898193359375,
+    "lat": 129.4281768798828,
+    "alt": 876.5906372070312
+  },
+  {
+    "name": "Scrap95",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15415.216796875,
+    "lat": 12824.6865234375,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap96",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15599.234375,
+    "lat": 12824.685546875,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap97",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15813.55859375,
+    "lat": 12937.4296875,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap98",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 15981.2666015625,
+    "lat": 13167.529296875,
+    "alt": 3379.608154296875
+  },
+  {
+    "name": "Scrap99_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": -773.4924926757812,
+    "lat": 11457.14453125,
+    "alt": 2160.41259765625
+  },
+  {
+    "name": "Scrap_2",
+    "type": "Scrap_C",
+    "area": "Crash",
+    "lng": 20759.955078125,
+    "lat": 17186.171875,
+    "alt": 2364.6455078125
+  },
+  {
+    "name": "SpawnEnemy3_2",
+    "type": "SpawnEnemy3_C",
+    "area": "Crash",
+    "lng": 32305.591796875,
+    "lat": -5927.3896484375,
+    "alt": 1004.9834594726562
+  }
+]
