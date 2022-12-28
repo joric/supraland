@@ -208,7 +208,7 @@ function loadMap(mapId) {
   actions = []
   //actions.push(newAction({icon:'&#x1F517;', actions:{'Copy URL To Clipboard':'copy-url'}}));
   actions.push(newAction({icon:'&#x1F4C1;', actions:{'Copy Path To Clipboard':'copy-path', 'Upload File':'upload-save', 'Toggle Items':'toggle-items' }}));
-  let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
+  let toolbar = new L.Toolbar2.Control({actions: actions, position: 'topleft'}).addTo(map);
 
 
   document.querySelector('.copy-path').onclick = function(e) {
