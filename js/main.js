@@ -1,7 +1,7 @@
 var map = null;
 var mapId = '';
 var markedItems = {}
-var markedItemsShow = false;
+var markedItemsMode = 1;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -876,26 +876,23 @@ function loadMap(mapId) {
 //// UE4 Reader
 
 window.toggleFoundVisible = function (){
+  markedItemsMode = (markedItemsMode + 1) % 3;
 
-  var divs = document.querySelectorAll('img.marked');
-  [].forEach.call(divs, function(div) {
-
-      if (markedItemsShow) {
-        div.classList.add('found');
+  [].forEach.call(document.querySelectorAll('img.found'), function(div) {
+      if (markedItemsMode == 0) {
+        div.style.opacity = "0";
+      } else if (markedItemsMode == 1) {
+        div.style.opacity = "0.3";
       } else {
-        div.classList.remove('found');
+        div.style.opacity = "1";
       }
-
   });
-
-  markedItemsShow = !markedItemsShow;
 
 }
 
 window.markItemFound = function (id) {
   var divs = document.querySelectorAll('img[alt="' + id + '"]');
   [].forEach.call(divs, function(div) {
-    div.classList.add('marked');
     div.classList.add('found');
   });
   markedItems[id] = true;
@@ -927,7 +924,7 @@ window.loadSaveFile = function () {
 
     console.log(loadedSave);
 
-    let count = 0;
+    markedItemsMode = 1;
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
