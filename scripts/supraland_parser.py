@@ -1,4 +1,4 @@
-# (c) 2022 Joric
+# (c) 2022 Joric, https://github.com/joric/supraland
 # install UE4Parse module: python -m pip install git+https://github.com/MinshuG/pyUE4Parse.git
 # see https://github.com/MinshuG/pyUE4Parse/issues/9 about outer nodes
 
@@ -21,10 +21,10 @@ config = {
             'Map'
         ],
         'images': [
-            'T_Downscale0',
-            'T_Downscale1',
-            'T_Downscale2',
-            'T_Downscale3',
+            'Supraland/Content/Blueprints/PlayerMap/Textures/T_Downscale0',
+            'Supraland/Content/Blueprints/PlayerMap/Textures/T_Downscale1',
+            'Supraland/Content/Blueprints/PlayerMap/Textures/T_Downscale2',
+            'Supraland/Content/Blueprints/PlayerMap/Textures/T_Downscale3',
         ],
     },
     'slc': {
@@ -121,15 +121,9 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
     data = []
     assets = {}
 
-    def getVec(d,v=0):
-        return Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
-    def getRot(d,v=0):
-        return Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
-    def getQuat(d,v=0):
-        return Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
-
-    def repr(m):
-        return [','.join([str(x) for x in row]) for row in m]
+    getVec = lambda d,v=0: Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
+    getRot = lambda d,v=0: Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
+    getQuat = lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
 
     def parse_json(j, area):
         outer = {}
@@ -139,17 +133,15 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 outer[key] = o
 
         for i, o in enumerate(j):
-            #print('Object %d of %d, markers: %d' % (i, len(j), len(data)), end='\r')
-
             prop = o.get('Properties',{})
 
             if asset:=prop.get('WorldAsset',{}).get('AssetPathName'):
                 asset = asset.split('.').pop()
                 t = prop.get('LevelTransform',{})
-                quat = getQuat(t.get('Rotation'))
-                translate = getVec(t.get('Translation'))
-                matrix = Matrix.Translation(translate) @ quat.to_matrix().to_4x4()
-                assets[asset] = {'matrix': matrix, 'asset': t }
+                loc = getVec(t.get('Translation'))
+                rot = getQuat(t.get('Rotation'))
+                matrix = Matrix.Translation(loc) @ rot.to_matrix().to_4x4()
+                assets[asset] = matrix
 
             if not ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types)):
                 continue
@@ -161,8 +153,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             opt(data, 'cost', prop.get('Cost',0))
             opt(data, 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
 
-            #data[-1]['nodes'] = []
-
             vector = Vector((0,0,0))
 
             def f(r, k=''):
@@ -171,15 +161,11 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 p = r.get('Properties',{})
 
                 if p.get('RelativeLocation'):
-                    translate = getVec(p.get('RelativeLocation'))
-                    rotate = getRot(p.get('RelativeRotation'))
-                    scale = getVec(p.get('RelativeScale3D'),1)
-                    matrix = Matrix.Translation(translate) \
-                        @ Matrix.Rotation(rotate.x, 4, 'X') @ Matrix.Rotation(rotate.y, 4, 'Y') @ Matrix.Rotation(rotate.z, 4, 'Z') \
-                        @ Matrix.Scale(scale.x, 4, (1, 0, 0)) @ Matrix.Scale(scale.y, 4, (0, 1, 0)) @ Matrix.Scale(scale.z, 4, (0, 0, 1))
-
+                    loc = getVec(p.get('RelativeLocation'))
+                    rot = getRot(p.get('RelativeRotation'))
+                    sca = getVec(p.get('RelativeScale3D'), 1)
+                    matrix = Matrix.LocRotScale(loc, rot, sca)
                     vector = matrix @ vector
-                    #data[-1]['nodes'].append( { 'outerKey': k, 'transform': {'loc':p.get('RelativeLocation'), 'rot':p.get('RelativeRotation'),'scale':p.get('RelativeScale3D')}} )
 
                 for parent in ['RootObject', 'RootComponent', 'DefaultSceneRoot', 'AttachParent']:
                     node = p.get(parent,{})
@@ -190,14 +176,12 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             f(o)
 
             if area in assets:
-                matrix = assets[area]['matrix']
+                matrix = assets[area]
                 vector = matrix @ vector
-                #data[-1]['nodes'].append( {'asset': assets[area]['asset'] } )
 
             data[-1]['lng'] = vector.x
             data[-1]['lat'] = vector.y
             data[-1]['alt'] = vector.z
-
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')

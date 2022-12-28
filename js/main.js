@@ -7,63 +7,26 @@ var maps = {
   // data taken from the MapWorld* nodes
   'sl':  { 
       title: 'Supraland',
-      "MapWorldCenter": {
-        "X": 13000.0,
-        "Y": -2000.0,
-        "Z": 0.0
-      },
+      "MapWorldCenter": { "X": 13000.0, "Y": -2000.0, "Z": 0.0 },
       "MapWorldSize": 175000.0,
-      "MapWorldUpperLeft": {
-        "X": -74500.0,
-        "Y": -89500.0,
-        "Z": 0.0
-      },
-      "MapWorldLowerRight": {
-        "X": 100500.0,
-        "Y": 85500.0,
-        "Z": 0.0
-      },
+      "MapWorldUpperLeft": { "X": -74500.0, "Y": -89500.0, "Z": 0.0 },
+      "MapWorldLowerRight": { "X": 100500.0, "Y": 85500.0, "Z": 0.0 },
    },
 
   'slc': {
-    // can't get original data about this one
     title: 'Supraland Crash',
-      "MapWorldCenter": {
-        "X": 25991.0, // (45072-45040)/2
-        "Y": -16.0,   // -(71047-19065)/2
-        "Z": 0.0
-      },
+      "MapWorldCenter": { "X": 25991.0, "Y": -16.0, "Z": 0.0  },
       "MapWorldSize": 90112.0,
-      "MapWorldUpperLeft": {
-        "X": -19065.0,
-        "Y": -45040.0,
-        "Z": 0.0
-      },
-      "MapWorldLowerRight": {
-        "X": 71047.0,
-        "Y": 45072.0,
-        "Z": 0.0
-      },
+      "MapWorldUpperLeft": { "X": -19065.0, "Y": -45040.0, "Z": 0.0 },
+      "MapWorldLowerRight": { "X": 71047.0, "Y": 45072.0, "Z": 0.0 },
    },
 
   'siu': {
       title: 'Supraland Six Inches Under',
-      "MapWorldCenter": {
-        "X": 0.0,
-        "Y": -19000.0,
-        "Z": 10000.0
-      },
+      "MapWorldCenter": { "X": 0.0, "Y": -19000.0, "Z": 10000.0 },
       "MapWorldSize": 147456.0,
-      "MapWorldUpperLeft": {
-        "X": -73728.0,
-        "Y": -92728.0,
-        "Z": 10000.0
-      },
-      "MapWorldLowerRight": {
-        "X": 73728.0,
-        "Y": 54728.0,
-        "Z": 10000.0
-      },
+      "MapWorldUpperLeft": { "X": -73728.0, "Y": -92728.0, "Z": 10000.0 },
+      "MapWorldLowerRight": { "X": 73728.0, "Y": 54728.0, "Z": 10000.0 },
    },
 };
 
@@ -73,9 +36,6 @@ window.onload = function(event) {
 };
 
 function loadMap(mapId) {
-
-  console.log('loading map', mapId);
-
   localStorage.setItem('mapId', mapId);
 
   var mapSize = {width: 8192, height: 8192}
@@ -264,463 +224,24 @@ function loadMap(mapId) {
     window.toggleFoundVisible();
   }
 
-  function project(o) {
-
-    function toRad(x) {
-        return x / 180 * Math.PI;
-    }
-
-    function getVec(v) {
-      return v ? new THREE.Vector3(v['X'], v['Y'], v['Z']) : new THREE.Vector3(1,1,1);
-    }
-
-    function getRot(v) {
-      return new THREE.Vector3(toRad(v['Roll']), toRad(v['Pitch']), toRad(v['Yaw']));
-      //return new THREE.Vector3(toRad(v['Pitch']), toRad(v['Yaw']), toRad(v['Roll']));
-    }
-
-    v = new THREE.Vector3(0,0,0);
-    function apply_prop(v, d) {
-      p = getVec(d['RelativeLocation']);
-      r = getRot(d['RelativeRotation']);
-      s = getVec(d['RelativeScale3D']);
-      e = new THREE.Euler(r.x, r.y, r.z, 'XYZ');
-      q = new THREE.Quaternion().setFromEuler(e);
-      m = new THREE.Matrix4();
-      m.compose(p,q,s); // equivalent to translation -> rotation -> scale
-      v.applyMatrix4(m);
-      console.log(v);
-    }
-
-    function getQuat(v) {
-      return new THREE.Quaternion(v['X'],v['Y'],v['Z'],v['W']);
-    }
-
-    function apply_root(v, d) {
-      m = new THREE.Matrix4();
-      p = getVec(d['Translation']);
-      q = getQuat(d['Rotation']);
-      s = new THREE.Vector3(1,1,1);
-      m.compose(p,q,s);
-
-      console.log('before', v);
-
-      v.applyMatrix4(m);
-
-
-      console.log('after', v);
-
-      console.log('trans', p);
-      console.log('quat', q);
-
-
-      console.log(m);
-    }
-
-    var local = {
-      'RelativeLocation': {
-        'X': o.location_x,
-        'Y': o.location_y,
-        'Z': o.location_z,
-      },
-      'RelativeRotation': {
-        'Pitch': o.rotation_pitch ?? 0,
-        'Yaw': o.rotation_yaw ?? 0,
-        'Roll': o.rotation_roll ?? 0,
-      },
-      'RelativeScale': {
-        'X': o.scale_x ?? 1,
-        'Y': o.scale_y ?? 1,
-        'Z': o.scale_z ?? 1,
-      },
-    }
-
-    apply_prop(v, local);
-
-    if (o.area == 'DLC2_SecretLavaArea') {
-
-      if (['Chest3','Chest2_2', 'Bones_2'].includes(o.object_name)) {
-
-        pedestal = {
-          "RelativeLocation": {
-            "X": -1975.2234,
-            "Y": 2441.0225,
-            "Z": 1599.9995
-          },
-          "RelativeRotation": {
-            "Pitch": 0.0,
-            "Yaw": 89.99993,
-            "Roll": 0.0
-          },
-          "RelativeScale3D": {
-            "X": 0.9971247,
-            "Y": 0.9971248,
-            "Z": 0.49248013
-          }
-        }
-
-        fortress = {
-          "RelativeLocation": {
-            "X": 11637.441,
-            "Y": 12546.801,
-            "Z": 4227.0
-          },
-          "RelativeRotation": {
-            "Pitch": 0.0,
-            "Yaw": -81.99961,
-            "Roll": 0.0
-          },
-          "RelativeScale3D": {
-            "X": 1,
-            "Y": 1,
-            "Z": 1.
-          }
-        }
-
-        apply_prop(v,pedestal);
-        apply_prop(v,fortress);
-
-
-      } // end of chest2_2
-
-      world =  {
-        "Rotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.9999998807907104,
-          "W": -1.1920928955078125e-07
-        },
-        "Translation": {
-          "X": -2800.0,
-          "Y": 13200.0,
-          "Z": -2807.0
-        }
-      }
-
-      apply_root(v, world);
-
-    }
-
-
-//"BP_BoneDetector_2",BP_BoneDetector_C,-114.8317,292.1713,-18.49751,0,6.775909,0,0.005,0.005,0.005,,
-//"BuyChestDetectorRadius_2",BuyChestDetectorRadius_C,-114.8413,290.3628,-18.56413,0,-0.000164,0,0.005,0.005,0.005,,
-//"BuyStats_2",BuyStats_C,-114.8024,291.5964,-18.51431,0,-0.000164,0,0.005,0.005,0.005,,
-//"BuyUpgradeChestNum_2",BuyUpgradeChestNum_C,-114.623,290.9221,-18.44171,0,-0.000164,0,0.005,0.005,0.005,,
-    if (['BP_BoneDetector_2','BuyChestDetectorRadius_2', 'BuyStats_2', 'BuyUpgradeChestNum_2'].includes(o.object_name)) {
-
-        let d = {
-          "RelativeLocation": {
-            "X": -35050,
-            "Y": -80220,
-            "Z": 0
-          },
-          "RelativeRotation": {
-            "Pitch": 0,
-            "Yaw": 0,
-            "Roll": 0
-          },
-          "RelativeScale3D": {
-            "X": 1/0.005,
-            "Y": 1/0.005,
-            "Z": 1/0.005,
-          }
-        }
-
-        apply_prop(v,d);
-    }
-
-
-    if (o.object_name.startsWith('ChestAreaEnd')) {
-      let d = {
-        "RelativeLocation": {
-          "X": -35100,
-          "Y": -80220,
-          "Z": 0
-        },
-        "RelativeRotation": {
-          "Pitch": 0,
-          "Yaw": 0,
-          "Roll": 0
-        },
-        "RelativeScale3D": {
-          "X": 1/0.005,
-          "Y": 1/0.005,
-          "Z": 0.
-        }
-      }
-      apply_prop(v,d);
-    }
-
-    if (o.area == 'DLC2_FinalBoss') {
-
-      root = {
-        "Rotation": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.976296067237854,
-          "W": -0.21643954515457153
-        },
-        "Translation": {
-          "X": -10600.0,
-          "Y": -29900.0,
-          "Z": 565.0
-        }
-      }
-
-      let d = {
-        "RelativeLocation": {
-          "X": -37500,
-          "Y": -13550,
-          "Z": 0
-        },
-        "RelativeRotation": {
-          "Pitch": 0,
-          "Yaw": 0,
-          "Roll": 25,
-        },
-        "RelativeScale3D": {
-          "X": 1,
-          "Y": 1,
-          "Z": 1.
-        }
-      }
-      apply_root(v,root);
-    }
-
-    if (o.area == 'DLC2_PostRainbow') {
-
-      let d = {
-        "RelativeLocation": {
-          "X": -56666,
-          "Y": -42562,
-          "Z": 0
-        },
-        "RelativeRotation": {
-          "Pitch": 0,
-          "Yaw": 0,
-          "Roll": 142,
-        },
-        "RelativeScale3D": {
-          "X": 1,
-          "Y": 1,
-          "Z": 1.
-        }
-      }
-
-      apply_prop(v,d);
-    }
-
-
-    if (o.area == 'DLC2_Area0') {
-
-      root =  {
-        "Rotation": {
-          "X": -0.0,
-          "Y": 0.0,
-          "Z": -0.9238795638084412,
-          "W": 0.38268327713012695
-        },
-        "Translation": {
-          "X": 32500.0,
-          "Y": -5100.0,
-          "Z": 23000.0
-        }
-      }
-
-      apply_root(v, root);
-    }
-
-
-    x = v.x;
-    y = v.y;
-    z = v.z;
-
-    let lng = x;
-    let lat = y;
-
-    return [lat,lng];
-  }
-
   var layers = {};
   var classes = {};
 
-  function loadMarkersOld() {
-    chestIcon = L.icon({iconUrl: 'img/chest.png', iconSize: [32,32], iconAnchor: [16,16]});
+  function loadMarkersLegacy() {
     chestIconBig = L.icon({iconUrl: 'img/chest.png', iconSize: [64,64], iconAnchor: [32,32]});
-    chestIconGold = L.icon({iconUrl: 'img/chest_gold.png', iconSize: [32,32], iconAnchor: [16,16]});
-
-    var chests = 0;
-    var chests_total = 0;
-
-    filename = 'maps/' + mapId + '/markers/chests.csv';
+    filename = 'data/legacy/' + mapId + '/chests.csv';
     var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
       var chests = 0;
       for (o of results.data) {
         if (!o.x) {
           continue;
         }
-
         chests += 1;
-
         var layer = 'closedChest';
-
-        let lat = o.y;
-        let lng = o.x;
-
-        m = L.marker([lat, lng], {icon: chestIconBig, title: o.type, zIndexOffset: -100 }).addTo(layers[layer])
-        .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
-        //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
-        //.setPopupYouTube(o.ytVideo, o.ytStart, o.ytEnd)
-        ;
+        m = L.marker([o.y, o.x], {icon: chestIconBig, title: o.type, zIndexOffset: -100 }).addTo(layers[layer])
+        .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
       }
-      console.log('loaded ', filename, 'chests', chests);
     }});
-  }
-
-  function loadMarkersCSV() {
-
-    var chests = 0;
-    var chests_total = 0;
-
-    var filenames = [];
-
-    var icons = {};
-
-    if (mapId=='sl') {
-      filenames = [
-        'Map.csv',
-      ];
-    } else if (mapId=='slc') {
-      filenames = [
-        'Crash.csv',
-      ];
-    } else if (mapId=='siu') {
-      filenames = [
-        //'DLC2_Complete.csv',
-        //'DLC2_FinalBoss.csv',
-        'DLC2_SecretLavaArea.csv',
-        //'DLC2_PostRainbow.csv',
-        //'DLC2_Area0.csv',
-        //'DLC2_Area0_Below.csv',
-      ];
-    }
-
-    for (filename of filenames) {
-      var loadedCsv = Papa.parse('scripts/data_files/'+filename, { download: true, header: true, complete: function(results, filename) {
-        var chests = 0;
-        for (o of results.data) {
-
-          if (!o.object_class) {
-            continue;
-          }
-
-          if (o.object_name!='Chest2_2') {
-            continue;
-          }
-
-
-          let area = filename.split('/').pop().split('.')[0];
-
-          o = { area: area, ...o }; // spread operator
-
-          // adjust cordinates
-          let [lat, lng] = project(o);
-
-          o.lng = lng;
-          o.lat = lat;
-
-//"BP_BoneDetector_2",BP_BoneDetector_C,-114.8317,292.1713,-18.49751,0,6.775909,0,0.005,0.005,0.005,,
-//"BuyChestDetectorRadius_2",BuyChestDetectorRadius_C,-114.8413,290.3628,-18.56413,0,-0.000164,0,0.005,0.005,0.005,,
-//"BuyStats_2",BuyStats_C,-114.8024,291.5964,-18.51431,0,-0.000164,0,0.005,0.005,0.005,,
-//"BuyUpgradeChestNum_2",BuyUpgradeChestNum_C,-114.623,290.9221,-18.44171,0,-0.000164,0,0.005,0.005,0.005,,
-
-/*
-          if (o.object_class != 'BuyChestDetectorRadius_C') {
-            continue;
-          } else {
-            console.log(o);
-          }
-*/
-          if (c = classes[o.object_class]) {
-
-            
-
-            if (o.object_class.endsWith('Chest_C')) {
-              chests += 1;
-              chests_total += 1;
-
-              let icon = 'chest_gold';
-              let iconObj = icons[icon];
-              if (!iconObj) {
-                iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
-                icons[icon] = iconObj;
-              }
-
-              layer = 'closedChest';
-
-              L.marker([lat, lng], {icon: iconObj, title: o.object_name, zIndexOffset: 100 }).addTo(layers[layer])
-              .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
-              ;
-            }
-
-            if (o.object_class.startsWith('Buy') || o.object_class.startsWith('BP_Buy')
-              || o.object_class.startsWith('Purchase')
-              || o.object_class.startsWith('BP_Purchase')
-              || o.object_class.startsWith('BP_BoneDetector_C')
-              ) {
-              let icon = 'shop';
-              let iconObj = icons[icon];
-              if (!iconObj) {
-                iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
-                icons[icon] = iconObj;
-              }
-
-              layer = 'shop';
-
-              L.marker([lat, lng], {icon: iconObj, title: o.object_name, zIndexOffset: 100 }).addTo(layers[layer])
-              .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
-              ;
-            }
-
-            icon = c.icon;
-            layer = c.layer;
-
-            if (s = classes[o.spawns]) {
-              icon = s.icon;
-              layer = s.layer;
-              if (o.spawncount>1) {
-                icon = 'coinStash';
-              }
-            }
-
-            if (icon == '') {
-              icon = 'question_mark';
-            }
-
-            let iconObj = icons[icon];
-            if (!iconObj) {
-              iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
-              icons[icon] = iconObj;
-            }
-
-            if (!layers[layer]) {
-              layer = 'misc';
-            }
-
-            o.icon = icon;
-            o.layer = layer;
-
-            L.marker([lat, lng], {icon: iconObj, title: o.object_name, zIndexOffset: 100 }).addTo(layers[layer])
-            .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
-            //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
-            ;
-
-          }
-
-        }
-        console.log('loaded', filename, 'chests', chests, 'chests_total', chests_total);
-      }});
-    }
   }
 
   var icons = {};
@@ -733,15 +254,14 @@ function loadMap(mapId) {
     return iconObj;
   }
 
-  function loadMarkersNew() {
+  function loadMarkers() {
     fetch('data/markers.'+mapId+'.json')
       .then((response) => response.json())
       .then((j) => {
+        var chests = 0;
+        var chests_total = 0;
 
-      var chests = 0;
-      var chests_total = 0;
-
-      for (o of j) {
+        for (o of j) {
 
           if (c = classes[o.type]) {
 
@@ -787,41 +307,13 @@ function loadMap(mapId) {
               layer = 'misc';
             }
 
-            o.icon = icon;
-            o.layer = layer;
-
             L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.object_name, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
             .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
             ;
           }
-      }
-      });
-/*
-    filename = 'maps/' + mapId + '/markers/chests.csv';
-    var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
-      var chests = 0;
-      for (o of results.data) {
-        if (!o.x) {
-          continue;
         }
-
-        chests += 1;
-
-        var layer = 'closedChest';
-
-        let lat = o.y;
-        let lng = o.x;
-
-        m = L.marker([lat, lng], {icon: chestIconBig, title: o.type, zIndexOffset: -100 }).addTo(layers[layer])
-        .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
-        //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
-        //.setPopupYouTube(o.ytVideo, o.ytStart, o.ytEnd)
-        ;
-      }
-      console.log('loaded ', filename, 'chests', chests);
-    }});
-    */
+    });
   }
 
   function loadLayers() {
@@ -850,9 +342,8 @@ function loadMap(mapId) {
             classes[o.type] = o;
           }
 
-          //loadMarkersOld();
-          loadMarkersNew();
-          //loadMarkersCSV();
+          loadMarkersLegacy();
+          loadMarkers();
 
           layerControl.addTo(map); // triggers baselayerchange, so called in the end
 
@@ -1009,8 +500,6 @@ class UEReadHelper {
     return '{' + g.substr(0,8) + '-' + g.substr(8,4) + '-' + g.substr(12,4) + '-' + g.substr(16,4) + '-' + g.substr(20) + '}';
   }
 
-
-
   getInt8 () { var z = this.peekInt8(); this.pos +=1; return z };
   getUint8 () { var z = this.peekUint8(); this.pos +=1; return z };
   getInt16 () { var z = this.peekInt16(); this.pos +=2; return z };
@@ -1157,15 +646,9 @@ class UEReadHelper {
   }
 }
 
-
 window.putSavefileLocationOnClipboard = function() {
   var inputc = document.body.appendChild(document.createElement("input"));
-  inputc.value = "%LocalAppData%\\Supraland\\Saved\\SaveGames\\";
-
-  if (map.mapId == 'siu') {
-    inputc.value = "%LocalAppData%\\SupralandSIU\\Saved\\SaveGames\\";
-  }
-
+  inputc.value = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames\\';
   inputc.focus();
   inputc.select();
   document.execCommand('copy');
