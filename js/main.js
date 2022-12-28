@@ -122,19 +122,20 @@ function loadMap(mapId) {
     }
   });
 
-  function getIcon(icon) {
-    let iconObj = icons[icon];
-    if (!iconObj) {
-      iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
-      icons[icon] = iconObj;
-    }
-    return iconObj;
-  }
-
-
   function getIconSize(zoom) {
     let s = [16,16,24,32,32,32,48,48,64];
     return s[Math.round(Math.min(zoom,s.length-1))];
+  }
+
+  function getIcon(icon) {
+    let iconObj = icons[icon];
+    if (!iconObj) {
+      let s = getIconSize(map.getZoom());
+      let c = s >> 1;
+      iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [s,s], iconAnchor: [c,c]});
+      icons[icon] = iconObj;
+    }
+    return iconObj;
   }
 
   function resizeIcons() {
@@ -338,7 +339,9 @@ function loadMap(mapId) {
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
             ;
           }
-        }
+        } // end of loop
+
+        resizeIcons();
     });
   }
 
