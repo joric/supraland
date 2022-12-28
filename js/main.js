@@ -2,6 +2,11 @@ var map = null;
 var mapId = '';
 var markedItems = {}
 var markedItemsMode = 1;
+var layers = {};
+var classes = {};
+var icons = {};
+var baseMaps = {};
+var overlayMaps = {};
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -84,9 +89,6 @@ function loadMap(mapId) {
   // disable zoomControl above and use this to move zoom
   //L.control.zoom({ position: 'bottomright'}).addTo(map);
 
-  var baseMaps = {};
-  var overlayMaps = {};
-
   layerOptions = {
       tileSize: L.point(tileSize.x, tileSize.y),
       noWrap: true,
@@ -114,9 +116,42 @@ function loadMap(mapId) {
   });
 
   map.on('overlayadd', function(e) {
+    resizeIcons();
     for (id of Object.keys(markedItems)) {
       window.markItemFound(id);
     }
+  });
+
+  function getIcon(icon) {
+    let iconObj = icons[icon];
+    if (!iconObj) {
+      iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
+      icons[icon] = iconObj;
+    }
+    return iconObj;
+  }
+
+
+  function getIconSize(zoom) {
+    let s = [16,16,24,32,32,32,48,48,64];
+    return s[Math.round(Math.min(zoom,s.length-1))];
+  }
+
+  function resizeIcons() {
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.Marker) {
+          let icon = layer.getIcon();
+          let s = getIconSize(map.getZoom());
+          let c = s >> 1;
+          icon.options.iconSize = [s,s];
+          icon.options.iconAnchor = [c,c];
+          layer.setIcon(icon);
+        }
+     });
+  }
+
+  map.on('zoomend', function(e) {
+    resizeIcons();
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -228,9 +263,6 @@ function loadMap(mapId) {
     window.toggleFoundVisible();
   }
 
-  var layers = {};
-  var classes = {};
-
   function loadMarkersLegacy() {
     chestIconBig = L.icon({iconUrl: 'img/chest.png', iconSize: [64,64], iconAnchor: [32,32]});
     filename = 'data/legacy/' + mapId + '/chests.csv';
@@ -246,16 +278,6 @@ function loadMap(mapId) {
         .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
       }
     }});
-  }
-
-  var icons = {};
-  function getIcon(icon) {
-    let iconObj = icons[icon];
-    if (!iconObj) {
-      iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [32,32], iconAnchor: [16,16]});
-      icons[icon] = iconObj;
-    }
-    return iconObj;
   }
 
   function loadMarkers() {
@@ -659,4 +681,6 @@ window.putSavefileLocationOnClipboard = function() {
   inputc.parentNode.removeChild(inputc);
   alert('"'+inputc.value + '" copied to clipboard. Now you can click Upload File, and paste clipboard to the file dialog.');
 }
+
+
 
