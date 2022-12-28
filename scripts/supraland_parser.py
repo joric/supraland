@@ -91,9 +91,7 @@ marker_types = set([
   'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C'
 ])
 
-def export_levels(game, cache_dir):
-    path = config[game]['path']
-    prefix = config[game]['prefix']
+def init(game, path):
     logging.getLogger("UE4Parse").setLevel(logging.INFO)
     aeskeys = { FGuid(0,0,0,0): FAESKey('0x'+'0'*64), }
     gc.disable()
@@ -103,6 +101,10 @@ def export_levels(game, cache_dir):
     provider.load_localization("en")
     gc.enable()
 
+def export_levels(game, cache_dir):
+    path = config[game]['path']
+    prefix = config[game]['prefix']
+    init(game, path)
     for asset_name in config[game]['maps']:
         filename = os.path.join(cache_dir, asset_name) + '.json'
         if os.path.exists(filename):
@@ -129,12 +131,10 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
         outer = {}
         for o in j:
             if 'Outer' in o:
-                key = ':'.join((o['Name'],o['Type'],o['Outer']))
-                outer[key] = o
+                outer[':'.join((o['Name'],o['Type'],o['Outer']))] = o
 
         for i, o in enumerate(j):
             prop = o.get('Properties',{})
-
             if asset:=prop.get('WorldAsset',{}).get('AssetPathName'):
                 asset = asset.split('.').pop()
                 t = prop.get('LevelTransform',{})
@@ -144,7 +144,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 continue
 
             data.append({'name':o['Name'], 'type':o['Type'], 'area':area })
-
             optKey(data[-1], 'coins', prop.get('Coins',0))
             optKey(data[-1], 'cost', prop.get('Cost',0))
             optKey(data[-1], 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
@@ -153,7 +152,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             def f(r, k=''):
                 nonlocal vector
-
                 p = r.get('Properties',{})
 
                 if p.get('RelativeLocation'):
@@ -179,33 +177,22 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
         parse_json(json.load(open(path)), area)
 
     print('collected %d markers' % (len(data)))
-
     json_file = 'markers.' + game + '.json'
-
     print('writing "%s" ...' % json_file)
     json.dump(data, open(json_file,'w'), indent=2)
 
 def export_textures(game, cache_dir):
     path = config[game]['path']
-    logging.getLogger("UE4Parse").setLevel(logging.INFO)
-    aeskeys = { FGuid(0,0,0,0): FAESKey('0x'+'0'*64), }
-    gc.disable()
-    provider = DefaultFileProvider(path, VersionContainer(EUEVersion.GAME_UE4_27))
-    provider.initialize()
-    provider.submit_keys(aeskeys)
-    provider.load_localization("en")
-    gc.enable()
-
+    prefix = config[game]['prefix']
+    init(game, path)
     for package_path in config[game]['images']:
         base = os.path.basename(package_path)
         filename = os.path.join(cache_dir, base) + '.png'
-
         if os.path.exists(filename):
             print(filename, 'exists')
             continue
 
         print('writing "%s" ...' % filename)
-
         package = provider.try_load_package(package_path)
         if texture := package.find_export_of_type("Texture2D"):
             image = texture.decode()
