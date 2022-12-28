@@ -342,7 +342,7 @@ function loadMap(mapId) {
             classes[o.type] = o;
           }
 
-          loadMarkersLegacy();
+          //loadMarkersLegacy();
           loadMarkers();
 
           layerControl.addTo(map); // triggers baselayerchange, so called in the end
