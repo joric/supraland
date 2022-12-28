@@ -119,7 +119,6 @@ def export_levels(game, cache_dir):
                 json.dump(package_dict, f, indent=2)
 
 def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
-
     data = []
     assets = {}
     optKey = lambda d,k,v: v and d.__setitem__(k,v)
