@@ -91,7 +91,9 @@ marker_types = set([
   'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C'
 ])
 
-def init(game, path):
+def export_levels(game, cache_dir):
+    path = config[game]['path']
+    prefix = config[game]['prefix']
     logging.getLogger("UE4Parse").setLevel(logging.INFO)
     aeskeys = { FGuid(0,0,0,0): FAESKey('0x'+'0'*64), }
     gc.disable()
@@ -100,11 +102,6 @@ def init(game, path):
     provider.submit_keys(aeskeys)
     provider.load_localization("en")
     gc.enable()
-
-def export_levels(game, cache_dir):
-    path = config[game]['path']
-    prefix = config[game]['prefix']
-    init(game, path)
     for asset_name in config[game]['maps']:
         filename = os.path.join(cache_dir, asset_name) + '.json'
         if os.path.exists(filename):
@@ -183,7 +180,14 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 def export_textures(game, cache_dir):
     path = config[game]['path']
     prefix = config[game]['prefix']
-    init(game, path)
+    logging.getLogger("UE4Parse").setLevel(logging.INFO)
+    aeskeys = { FGuid(0,0,0,0): FAESKey('0x'+'0'*64), }
+    gc.disable()
+    provider = DefaultFileProvider(path, VersionContainer(EUEVersion.GAME_UE4_27))
+    provider.initialize()
+    provider.submit_keys(aeskeys)
+    provider.load_localization("en")
+    gc.enable()
     for package_path in config[game]['images']:
         base = os.path.basename(package_path)
         filename = os.path.join(cache_dir, base) + '.png'
