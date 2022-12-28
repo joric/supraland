@@ -75,6 +75,10 @@ function loadMap(mapId) {
     fadeAnimation: false,
     zoomControl: true,
     maxBounds: mapBounds, // elastic-y map bounds
+    fullscreenControl: true,
+    fullscreenControlOptions: {
+        position: 'topleft'
+    },
   });
 
   // disable zoomControl above and use this to move zoom
@@ -97,7 +101,7 @@ function loadMap(mapId) {
   };
 
   let layerControl = L.control.layers({}, {}, {
-    collapsed: false,
+    collapsed: true,
     position: 'topright',
   });
 
