@@ -251,19 +251,12 @@ function loadMap(mapId) {
     window.putSavefileLocationOnClipboard();
   }
 
-
-  //let file = $('input[type=file]')[0].files[0];
-  //$('input[type=file]')[0].value = null;
-
-
-  //let file = $('input[type=file]')[0].files[0];
-
   document.querySelector('#file').onchange = function(e) {
     window.loadSaveFile();
   }
 
-
   document.querySelector('.upload-save').onclick = function(e) {
+    document.querySelector('#file').value = null;
     document.querySelector('#file').click();
   }
 
