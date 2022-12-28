@@ -1,5 +1,7 @@
 var map = null;
 var mapId = '';
+var markedItems = {}
+var markedItemsShow = false;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -145,6 +147,12 @@ function loadMap(mapId) {
     map.off();
     map.remove();
     loadMap(e.layer.mapId);
+  });
+
+  map.on('overlayadd', function(e) {
+    for (id of Object.keys(markedItems)) {
+      window.markItemFound(id);
+    }
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -868,16 +876,20 @@ function loadMap(mapId) {
 //// UE4 Reader
 
 window.toggleFoundVisible = function (){
+
   var divs = document.querySelectorAll('img.marked');
   [].forEach.call(divs, function(div) {
-    if (div.classList.contains('marked')) {
-      if (div.classList.contains('found')) {
-        div.classList.remove('found');
-      } else {
+
+      if (markedItemsShow) {
         div.classList.add('found');
+      } else {
+        div.classList.remove('found');
       }
-    }
+
   });
+
+  markedItemsShow = !markedItemsShow;
+
 }
 
 window.markItemFound = function (id) {
@@ -886,6 +898,7 @@ window.markItemFound = function (id) {
     div.classList.add('marked');
     div.classList.add('found');
   });
+  markedItems[id] = true;
 }
 
 window.loadSaveFile = function () {
@@ -907,30 +920,39 @@ window.loadSaveFile = function () {
   }
 
   const reader = new FileReader();
+
   reader.onloadend = function(evt) {
-    result = evt.target.result;
-    window.loadedSave = new UESaveObject(result);
 
-    console.log(window.loadedSave);
+    let loadedSave = new UESaveObject(evt.target.result);
 
-    var theProps = Array("ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever");
-    var toProcess;
-    var el;
-    var i;
-    var x;
+    console.log(loadedSave);
 
-    for( i = 0; i < theProps.length; i++ ){
-      toProcess = loadedSave.Properties.find(function (x) { return x.name==theProps[i] }).value.value;
-      for( x = 0; x < toProcess.length; x++ ){
-        let el = toProcess[x].split(".").pop();
-        let area = toProcess[x].split("/").pop().split('.')[0];
-        let id = area + ':' + el;
-        if (id != "None" ){ markItemFound(id) };
+    let count = 0;
+
+    for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
+      for (o of loadedSave.Properties) {
+        if (o.name != section) {
+          continue;
+        }
+        for(x of o.value.value) {
+          let name = x.split(".").pop();
+          let area = x.split("/").pop().split('.')[0];
+          if (name != "None") {
+            markItemFound(area + ':' + name);
+          }
+        }
       }
     }
+
+    console.log('loaded', Object.keys(markedItems).length, 'items');
+
     ready = true;
+
   };
-  reader.readAsArrayBuffer(file);
+
+  if (file instanceof Blob) {
+    reader.readAsArrayBuffer(file);
+  }
 }
 
 
