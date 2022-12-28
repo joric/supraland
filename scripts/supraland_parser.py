@@ -120,10 +120,10 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
     data = []
     assets = {}
+    optKey = lambda d,k,v: v and d.__setitem__(k,v)
     getVec = lambda d,v=0: Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
     getRot = lambda d,v=0: Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
-    getQuat = lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
-    optKey = lambda d,key,value: value and d[-1].__setitem__(key,value)
+    getQuat= lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
 
     def parse_json(j, area):
         outer = {}
@@ -144,9 +144,10 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 continue
 
             data.append({'name':o['Name'], 'type':o['Type'], 'area':area })
-            optKey(data, 'coins', prop.get('Coins',0))
-            optKey(data, 'cost', prop.get('Cost',0))
-            optKey(data, 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
+
+            optKey(data[-1], 'coins', prop.get('Coins',0))
+            optKey(data[-1], 'cost', prop.get('Cost',0))
+            optKey(data[-1], 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
 
             vector = Vector((0,0,0))
 
@@ -156,9 +157,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 p = r.get('Properties',{})
 
                 if p.get('RelativeLocation'):
-                    matrix = Matrix.LocRotScale(getVec(p.get('RelativeLocation')),
-                        getRot(p.get('RelativeRotation')),
-                        getVec(p.get('RelativeScale3D'), 1))
+                    matrix = Matrix.LocRotScale(getVec(p.get('RelativeLocation')), getRot(p.get('RelativeRotation')), getVec(p.get('RelativeScale3D'), 1))
                     vector = matrix @ vector
 
                 for parent in ['RootObject', 'RootComponent', 'DefaultSceneRoot', 'AttachParent']:
@@ -172,9 +171,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             if area in assets:
                 vector = assets[area] @ vector
 
-            data[-1]['lng'] = vector.x
-            data[-1]['lat'] = vector.y
-            data[-1]['alt'] = vector.z
+            data[-1].update({'lat': vector.y, 'lng': vector.x, 'alt': vector.z})
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')
