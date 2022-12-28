@@ -77,7 +77,7 @@ function loadMap(mapId) {
     maxBounds: mapBounds, // elastic-y map bounds
     fullscreenControl: true,
     fullscreenControlOptions: {
-        position: 'topright'
+        position: 'topleft'
     },
   });
 
@@ -102,7 +102,7 @@ function loadMap(mapId) {
 
   let layerControl = L.control.layers({}, {}, {
     collapsed: true,
-    position: 'topleft',
+    position: 'topright',
   });
 
   map.on('baselayerchange', function(e) {
