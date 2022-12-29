@@ -1,5 +1,5 @@
 type,icon,layer
-BP_A3_StrengthQuest_C,shop,shop
+BP_A3_StrengthQuest_C,strong,misc
 BP_BoneDetector_C,shop,shop
 BP_BuyBeamElasticity_C,,upgrades
 BP_BuyBoomerAxe_C,,upgrades
@@ -51,7 +51,7 @@ BuyForceCubeStompGrave3_C,,upgrades
 BuyForceCubeStompJump_C,,upgrades
 BuyForceCubeStomp_C,,upgrades
 BuyGraveDetector_C,,upgrades
-BuyGun1_C,,upgrades
+BuyGun1_C,gun_red,upgrades
 BuyGunAltDamagex2_C,,upgrades
 BuyGunAlt_C,,upgrades
 BuyGunCoin_C,,upgrades
