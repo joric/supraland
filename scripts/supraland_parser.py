@@ -7,6 +7,7 @@ from UE4Parse.Provider import DefaultFileProvider, MappingProvider
 from UE4Parse.Versions import EUEVersion, VersionContainer
 from UE4Parse.Encryption import FAESKey
 from mathutils import *
+from math import *
 import logging, gc, json, gc, os, sys, csv, argparse, tempfile
 
 config = {
@@ -56,7 +57,7 @@ config = {
     },
 }
 
-marker_types = set([
+marker_types = {
   'BP_A3_StrengthQuest_C', 'BP_BoneDetector_C', 'BP_BuyBeamElasticity_C', 'BP_BuyBoomerAxe_C', 'BP_BuyBoomeraxeDistance_C',
   'BP_BuyBoomeraxePenetration_C', 'BP_BuyBoomeraxeThrowSpeed_C', 'BP_BuyFireGunAutoRecharge_C', 'BP_BuyGunCapacity+3shots_C',
   'BP_BuyGunDamage+100pct_C', 'BP_BuyGunDuration+2s_C', 'BP_BuyGunRechargeTime-50pct_C', 'BP_CookableMeat_C',
@@ -85,7 +86,7 @@ marker_types = set([
   'LotsOfCoins5_C', 'LotsofCoins200_C', 'MinecraftBrick_C', 'MoonTake_C', 'PlayerStart', 'Plumbus_C', 'Purchase_DiamondPickaxe_C',
   'Purchase_ForceBeam_C', 'Purchase_ForceCube_C', 'Purchase_IronPickaxe_C', 'Purchase_StonePickaxe_C', 'Purchase_WoodPickaxe_C',
   'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C'
-])
+}
 
 def export_levels(game, cache_dir):
     path = config[game]['path']
