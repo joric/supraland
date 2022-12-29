@@ -6,12 +6,8 @@ from UE4Parse.Assets.Objects.FGuid import FGuid
 from UE4Parse.Provider import DefaultFileProvider, MappingProvider
 from UE4Parse.Versions import EUEVersion, VersionContainer
 from UE4Parse.Encryption import FAESKey
-import logging, gc
-import json, gc, os, sys, csv
-import argparse
-from math import *
 from mathutils import *
-import tempfile
+import logging, gc, json, gc, os, sys, csv, argparse, tempfile
 
 config = {
     'sl': {
