@@ -2,7 +2,7 @@ id,name,background,defaultActive
 closedChest,Chests,,x
 shop,Shop,,x
 collectable,Collectables,,x
-upgrades,Upgrades,,
+upgrades,Upgrades,,x
 misc,Miscellaneous,,
 jumppads,Jump Pads,,
 coin,Coins,,
