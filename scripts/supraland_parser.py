@@ -138,6 +138,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             data.append({'name':o['Name'], 'type':o['Type'], 'area':area })
             optKey(data[-1], 'coins', prop.get('Coins',0))
+            optKey(data[-1], 'coins', prop.get('CoinsInGold',0))
             optKey(data[-1], 'cost', prop.get('Cost',0))
             optKey(data[-1], 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
 
