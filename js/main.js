@@ -5,8 +5,6 @@ var markedItemsMode = 1;
 var layers = {};
 var classes = {};
 var icons = {};
-var baseMaps = {};
-var overlayMaps = {};
 
 var maps = {
   // data taken from the MapWorld* nodes
