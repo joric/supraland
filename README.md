@@ -6,7 +6,7 @@ I did not do much, all credit goes to David Münnich and Supraland Games Communi
 
 ## Features
 
-* Supports all games (Supraland, Supraland Crash, Supraland Six Inches Under) and map position/zoom in URLs.
+* Supports all games (Supraland, Supraland Crash, Supraland Six Inches Under) and map position/zoom in URL.
 * Supports save file uploading to show/hide items you collected (or not collected yet) for all games.
 * Accurate and complete item map, ripped from data files (not crowdsourced, see [scripts](https://github.com/joric/supraland/tree/main/scripts) directory).
 
