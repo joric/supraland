@@ -4,15 +4,17 @@ Live map: https://joric.github.io/supraland
 
 I did not do much, all credit goes to David Münnich and Supraland Games Community.
 
+## Features
+
+* Supports all games (Supraland, Supraland Crash, Supraland Six Inches Under) and map position/zoom in URLs.
+* Supports save file uploading to show/hide items you collected (or not collected yet) for all games.
+* Accurate and complete item map, ripped from data files (not crowdsourced, see [scripts](https://github.com/joric/supraland/tree/main/scripts) directory).
+
 ## Assets
 
-Use FModel (https://fmodel.app) to extract assets (Settings - Game's Archive Directory - Paks).
-Export map to json: open pak, select Content/FirstPersonBP/Maps/mapname.umap, context menu - Save Properies.
-Same with textures (game maps are in Content/Blueprints/PlayerMap).
+FModel did not work for large maps, so I ended up using a wonderful [UE4Parse](https://github.com/MinshuG/pyUE4Parse) Python library by MountainFlash.
 
-FModel may not work for large maps, so I ended using a wonderful UE4Parse Python library (see scripts directory).
-
-The base map for DLC2 is DLC2_Complete.umap, it includes all other maps internally (look for "LevelTransform" keys).
+The base map for Six Inches Under is DLC2_Complete.umap, it includes all other submaps internally (look for "LevelTransform" keys).
 The base map size is also included in this umap (look for "MapWorldSize").
 
 Supraland Crash doesn't have a map in resources so it was captured in the game engine (not by me) in 2048x2048
