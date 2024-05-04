@@ -147,6 +147,14 @@ function loadMap(mapId) {
           layer.setIcon(icon);
         }
      });
+
+    // (hack) re-mark items that lost the "found" property after zoom
+    for (const[id,value] of Object.entries(markedItems)) {
+      var divs = document.querySelectorAll('img[alt="' + id + '"]');
+      [].forEach.call(divs, function(div) {
+        div.classList.add('found');
+      });
+    }
   }
 
   map.on('zoomend', function(e) {
@@ -398,7 +406,6 @@ window.toggleFoundVisible = function (){
         div.style.opacity = "1";
       }
   });
-
 }
 
 window.markItemFound = function (id) {
