@@ -286,6 +286,46 @@ function loadMap(mapId) {
     }});
   }
 
+  function onPopupOpen(e) {
+
+    let v = e.popup._source._latlng;
+    let x = v.lng, y = v.lat;
+    let type = e.popup._source.options.type;
+
+    let dist = Infinity;
+    let res = null;
+
+    filename = 'data/legacy/' + mapId + '/'+type+'.csv';
+    var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
+      var chests = 0;
+      for (o of results.data) {
+        if (!o.x) {
+          continue;
+        }
+
+        let d = Math.pow(  Math.pow(o.x-x, 2) + Math.pow(o.y-y, 2), 0.5);
+
+        if (d<dist) {
+          dist = d;
+          res = o;
+        }
+      }
+
+      if (dist<1000 && res.ytVideo)
+      {
+        console.log('onpopupopen: Youtube found, dist is: '+dist+' nearest object is: '+JSON.stringify(res));
+        let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+        let url = 'https://youtu.be/'+res.ytVideo+'&?t='+res.ytStart;
+        e.popup.setContent(text + '<br><br><a href="'+url+'" target=_blank>'+url+'</a>');
+      } else {
+        console.log('onpopupopen: No Youtube or too far, dist is: '+dist+' nearest object is: '+JSON.stringify(res));
+      }
+
+    }});
+
+  };
+
+
   function loadMarkers() {
     fetch('data/markers.'+mapId+'.json')
       .then((response) => response.json())
@@ -299,6 +339,8 @@ function loadMap(mapId) {
 
             let markerId = o.area + ':' + o.name;
 
+            let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+
             if (o.type.endsWith('Chest_C')) {
               chests += 1;
               chests_total += 1;
@@ -307,16 +349,18 @@ function loadMap(mapId) {
 
               layer = 'closedChest';
 
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-              .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+              .bindPopup(text)
+              .on('popupopen', onPopupOpen)
               ;
             }
 
             if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
               icon = 'shop';
               layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-              .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+              .bindPopup(text)
+              .on('popupopen', onPopupOpen)
               ;
             }
 
@@ -339,8 +383,9 @@ function loadMap(mapId) {
               layer = 'misc';
             }
 
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.object_name, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-            .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'))
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+            .bindPopup(text)
+            .on('popupopen', onPopupOpen)
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
             ;
           }
