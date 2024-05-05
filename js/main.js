@@ -1,6 +1,6 @@
 var map = null;
 var mapId = '';
-var markedItems = {}
+var markedItems = JSON.parse(localStorage.getItem('markedItems')) || {'sl':{},'slc':{},'siu':{}};
 var markedItemsMode = 1;
 var layers = {};
 var classes = {};
@@ -115,7 +115,7 @@ function loadMap(mapId) {
 
   map.on('overlayadd', function(e) {
     resizeIcons();
-    for (id of Object.keys(markedItems)) {
+    for (id of Object.keys(markedItems[mapId])) {
       window.markItemFound(id);
     }
   });
@@ -149,7 +149,7 @@ function loadMap(mapId) {
      });
 
     // (hack) re-mark items that lost the "found" property after zoom
-    for (const[id,value] of Object.entries(markedItems)) {
+    for (const[id,value] of Object.entries(markedItems[mapId])) {
       var divs = document.querySelectorAll('img[alt="' + id + '"]');
       [].forEach.call(divs, function(div) {
         div.classList.add('found');
@@ -413,7 +413,7 @@ window.markItemFound = function (id) {
   [].forEach.call(divs, function(div) {
     div.classList.add('found');
   });
-  markedItems[id] = true;
+  markedItems[mapId][id] = true;
 }
 
 window.loadSaveFile = function () {
@@ -459,7 +459,9 @@ window.loadSaveFile = function () {
       }
     }
 
-    console.log('loaded', Object.keys(markedItems).length, 'items');
+    console.log('loaded', Object.keys(markedItems[mapId]).length, 'items');
+
+    localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
     ready = true;
 
