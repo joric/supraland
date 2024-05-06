@@ -430,7 +430,7 @@ function loadMap(mapId) {
             marker: false, // no red circle
             initial: false, // search any substring
 
-            layer: L.featureGroup( [ layers['closedChest'], layers['shop'], layers['collectable'], layers['upgrades'] ]),
+            layer: L.featureGroup( [ layers['closedChest'], layers['shop'], layers['collectable'] ]),
 
         }).addTo(map);
 
