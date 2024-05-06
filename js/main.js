@@ -80,7 +80,7 @@ function loadMap(mapId) {
     maxBounds: mapBounds, // elastic-y map bounds
     fullscreenControl: true,
     fullscreenControlOptions: {
-        position: 'topleft'
+        position: 'bottomright'
     },
   });
 
@@ -139,7 +139,8 @@ function loadMap(mapId) {
   function resizeIcons() {
       map.eachLayer(function(layer) {
         if (layer instanceof L.Marker) {
-          let icon = layer.getIcon();
+          //let icon = layer.getIcon(); // undefined in 1.3
+          let icon = layer.options.icon;
           let s = getIconSize(map.getZoom());
           let c = s >> 1;
           icon.options.iconSize = [s,s];
@@ -250,7 +251,7 @@ function loadMap(mapId) {
 
   actions = []
   actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload .sav', actions:{'Copy Path To Clipboard':'copy-path', 'Upload File':'upload-save', 'Toggle Items':'toggle-items' }}));
-  let toolbar = new L.Toolbar2.Control({actions: actions, position: 'topleft'}).addTo(map);
+  let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
   document.querySelector('.copy-path').onclick = function(e) {
     window.putSavefileLocationOnClipboard();
@@ -334,12 +335,12 @@ function loadMap(mapId) {
         var chests_total = 0;
 
         for (o of j) {
-
           if (c = classes[o.type]) {
 
             let markerId = o.area + ':' + o.name;
 
             let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+            let title = o.name;
 
             if (o.type.endsWith('Chest_C')) {
               chests += 1;
@@ -349,7 +350,11 @@ function loadMap(mapId) {
 
               layer = 'closedChest';
 
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+              if (o.spawns) {
+                title = o.spawns;
+              }
+
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               ;
@@ -358,7 +363,7 @@ function loadMap(mapId) {
             if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
               icon = 'shop';
               layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               ;
@@ -383,7 +388,7 @@ function loadMap(mapId) {
               layer = 'misc';
             }
 
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: o.name, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
@@ -394,6 +399,8 @@ function loadMap(mapId) {
         resizeIcons();
     });
   }
+
+  searchLayers = [];
 
   function loadLayers() {
       filename = 'data/layers.csv';
@@ -409,7 +416,27 @@ function loadMap(mapId) {
           }
           layers[o.id] = layerObj;
           layerControl.addOverlay(layerObj, o.name);
+
+          searchLayers.push(layerObj);
         }
+
+
+        //console.log(layers);
+
+        searchControl = new L.Control.Search({
+            //layer: L.featureGroup(searchLayers),
+            //layer: layers['closedChest'],
+            //layer: searchLayers[0],
+            marker: false, // no red circle
+            initial: false, // search any substring
+
+            layer: L.featureGroup( [ layers['closedChest'], layers['shop'], layers['collectable'], layers['upgrades'] ]),
+
+        }).addTo(map);
+
+        searchControl.on("search:locationfound", function (e) {
+            if (e.layer._popup) e.layer.openPopup();
+        });
 
 
         filename = 'data/types.csv';
@@ -431,6 +458,18 @@ function loadMap(mapId) {
   }
 
   loadLayers();
+
+  window.addEventListener("keydown",function (e) {
+    //console.log(e);
+    if (e.code=='KeyF') {
+      if (e.ctrlKey) {
+        searchControl.expand(true);
+        e.preventDefault();
+      } else if (!e.target.id.startsWith('searchtext')) {
+        map.toggleFullscreen();
+      }
+    }
+  });
 
 } // end of loadmap
 
@@ -735,6 +774,3 @@ window.putSavefileLocationOnClipboard = function() {
   inputc.parentNode.removeChild(inputc);
   alert('"'+inputc.value + '" copied to clipboard. Now you can click Upload File, and paste clipboard to the file dialog.');
 }
-
-
-

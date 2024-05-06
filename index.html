@@ -12,20 +12,45 @@
 <meta property="og:title" content="Joric's Supraland" />
 <meta property="og:description" content="Joric's Supraland Interactive Map" />
 
-<link rel="stylesheet" href="css/leaflet.css"/>
+<link rel="stylesheet" href="css/leaflet.min.css"/>
 <link rel="stylesheet" href="css/leaflet.toolbar.min.css" />
 <link rel="stylesheet" href="css/L.Control.MousePosition.css" />
 <link rel="stylesheet" href="css/Control.FullScreen.css" />
 <link rel="stylesheet" href="css/main.css"/>
 
 <script src="js/lib/papaparse.min.js"></script>
-<script src="js/lib/leaflet.js"></script>
+<script src="js/lib/leaflet.min.js"></script>
 <script src="js/lib/leaflet.toolbar.min.js"></script>
 <script src="js/lib/L.TileLayer.Canvas.min.js"></script>
 <script src="js/lib/L.Control.MousePosition.js"></script>
 <script src="js/lib/Control.FullScreen.js"></script>
 <script src="js/lib/leaflet-hash.js"></script>
+
+<!-- leaflet-search -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@3.0.5/dist/leaflet-search.src.min.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet-search@3.0.5/dist/leaflet-search.src.min.js"></script>
+
+<!-- fuse -->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+
 <script src="js/main.js"></script>
+
+<style>
+.leaflet-control-search .search-input {
+  width: 240px;
+}
+
+.leaflet-control-search .search-tooltip {
+  width: 295px;
+  max-height: 207px;
+  margin-top: 2px;
+}
+
+.leaflet-control-search .search-tip {
+  margin: 1px;
+  border-radius: 1px;
+}
+</style>
 
 </head>
 <body>
