@@ -351,7 +351,7 @@ function loadMap(mapId) {
               layer = 'closedChest';
 
               if (o.spawns) {
-                title = o.spawns;
+                title = title + ' ('+o.spawns+')';
               }
 
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
