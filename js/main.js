@@ -76,16 +76,12 @@ function loadMap(mapId) {
   map = new L.Map('map', {
     crs: crs,
     fadeAnimation: false,
-    zoomControl: true,
     maxBounds: mapBounds, // elastic-y map bounds
-    fullscreenControl: true,
-    fullscreenControlOptions: {
-        position: 'bottomright'
-    },
+    zoomControl: false,
   });
 
-  // disable zoomControl above and use this to move zoom
-  //L.control.zoom({ position: 'bottomright'}).addTo(map);
+  L.control.zoom({ position: 'bottomright'}).addTo(map);
+  L.control.fullscreen({ position: 'bottomright', forceSeparateButton: true}).addTo(map);
 
   layerOptions = {
       tileSize: L.point(tileSize.x, tileSize.y),
