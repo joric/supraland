@@ -259,6 +259,7 @@ function loadMap(mapId) {
 
   document.querySelector('.upload-save').onclick = function(e) {
     document.querySelector('#file').value = null;
+    document.querySelector('#file').accept = '.sav';
     document.querySelector('#file').click();
   }
 
@@ -487,10 +488,16 @@ window.toggleFoundVisible = function (){
 
 window.markItemFound = function (id) {
   var divs = document.querySelectorAll('img[alt="' + id + '"]');
+  let count = 0;
   [].forEach.call(divs, function(div) {
     div.classList.add('found');
+    count += 1;
   });
-  markedItems[mapId][id] = true;
+
+  if (count>0) {
+    console.log('marked item:', id);
+    markedItems[mapId][id] = true;
+  }
 }
 
 window.loadSaveFile = function () {
@@ -521,6 +528,8 @@ window.loadSaveFile = function () {
 
     markedItemsMode = 1;
 
+    markedItems = {'sl':{},'slc':{},'siu':{}};
+
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
         if (o.name != section) {
@@ -536,7 +545,7 @@ window.loadSaveFile = function () {
       }
     }
 
-    console.log('loaded', Object.keys(markedItems[mapId]).length, 'items');
+    alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');
 
     localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
