@@ -504,14 +504,13 @@ function markItems() {
 }
 
 function unmarkItems() {
-  markedItems = {'sl':{},'slc':{},'siu':{}};
   for (const[id,value] of Object.entries(markedItems[mapId])) {
     var divs = document.querySelectorAll('img[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.remove('found');
     });
   }
-  resizeIcons();
+  markedItems = {'sl':{},'slc':{},'siu':{}};
 }
 
 window.loadSaveFile = function () {
