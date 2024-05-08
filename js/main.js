@@ -349,7 +349,7 @@ function loadMap(mapId) {
               if (o.spawns) {
                 title = title + ' ('+o.spawns+')';
               } else if (o.coins) {
-                title = title + ' ('+o.coins+' coins)';
+                title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
 
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
