@@ -208,7 +208,7 @@ function loadMap(mapId) {
   }
 
   actions = []
-  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Copy Path':'copy-path', 'Upload Save':'upload-save', 'Toggle Items':'toggle-items' }}));
+  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Copy Path':'copy-path', 'Load Game':'upload-save', 'Toggle Items':'toggle-items' }}));
   let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
   document.querySelector('.copy-path').onclick = function(e) {
@@ -390,7 +390,7 @@ function loadMap(mapId) {
             //layer: searchLayers[0],
             marker: false, // no red circle
             initial: false, // search any substring
-
+            firstTipSubmit: true,
             layer: L.featureGroup( [ layers['closedChest'], layers['shop'], layers['collectable'] ]),
 
         }).addTo(map);
