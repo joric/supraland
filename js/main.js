@@ -116,44 +116,6 @@ function loadMap(mapId) {
     }
   });
 
-  function getIconSize(zoom) {
-    let s = [16,16,24,32,32,32,48,48,64];
-    return s[Math.round(Math.min(zoom,s.length-1))];
-  }
-
-  function getIcon(icon) {
-    let iconObj = icons[icon];
-    if (!iconObj) {
-      let s = getIconSize(map.getZoom());
-      let c = s >> 1;
-      iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [s,s], iconAnchor: [c,c]});
-      icons[icon] = iconObj;
-    }
-    return iconObj;
-  }
-
-  function resizeIcons() {
-      map.eachLayer(function(layer) {
-        if (layer instanceof L.Marker) {
-          //let icon = layer.getIcon(); // undefined in 1.3
-          let icon = layer.options.icon;
-          let s = getIconSize(map.getZoom());
-          let c = s >> 1;
-          icon.options.iconSize = [s,s];
-          icon.options.iconAnchor = [c,c];
-          layer.setIcon(icon);
-        }
-     });
-
-    // (hack) re-mark items that lost the "found" property after zoom
-    for (const[id,value] of Object.entries(markedItems[mapId])) {
-      var divs = document.querySelectorAll('img[alt="' + id + '"]');
-      [].forEach.call(divs, function(div) {
-        div.classList.add('found');
-      });
-    }
-  }
-
   map.on('zoomend', function(e) {
     resizeIcons();
   });
@@ -500,6 +462,58 @@ window.markItemFound = function (id) {
   }
 }
 
+function getIconSize(zoom) {
+  let s = [16,16,24,32,32,32,48,48,64];
+  return s[Math.round(Math.min(zoom,s.length-1))];
+}
+
+function getIcon(icon) {
+  let iconObj = icons[icon];
+  if (!iconObj) {
+    let s = getIconSize(map.getZoom());
+    let c = s >> 1;
+    iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [s,s], iconAnchor: [c,c]});
+    icons[icon] = iconObj;
+  }
+  return iconObj;
+}
+
+function resizeIcons() {
+    map.eachLayer(function(layer) {
+      if (layer instanceof L.Marker) {
+        //let icon = layer.getIcon(); // undefined in 1.3
+        let icon = layer.options.icon;
+        let s = getIconSize(map.getZoom());
+        let c = s >> 1;
+        icon.options.iconSize = [s,s];
+        icon.options.iconAnchor = [c,c];
+        layer.setIcon(icon);
+      }
+   });
+
+  markItems();
+}
+
+function markItems() {
+  for (const[id,value] of Object.entries(markedItems[mapId])) {
+    var divs = document.querySelectorAll('img[alt="' + id + '"]');
+    [].forEach.call(divs, function(div) {
+      div.classList.add('found');
+    });
+  }
+}
+
+function unmarkItems() {
+  markedItems = {'sl':{},'slc':{},'siu':{}};
+  for (const[id,value] of Object.entries(markedItems[mapId])) {
+    var divs = document.querySelectorAll('img[alt="' + id + '"]');
+    [].forEach.call(divs, function(div) {
+      div.classList.remove('found');
+    });
+  }
+  resizeIcons();
+}
+
 window.loadSaveFile = function () {
   let file = document.querySelector('#file').files[0];
 
@@ -528,7 +542,7 @@ window.loadSaveFile = function () {
 
     markedItemsMode = 1;
 
-    markedItems = {'sl':{},'slc':{},'siu':{}};
+    unmarkItems();
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
@@ -545,7 +559,7 @@ window.loadSaveFile = function () {
       }
     }
 
-    alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');
+    setTimeout(function() {alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
 
     localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
