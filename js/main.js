@@ -576,5 +576,5 @@ window.putSavefileLocationOnClipboard = function() {
   inputc.select();
   document.execCommand('copy');
   inputc.parentNode.removeChild(inputc);
-  alert('"'+inputc.value + '" copied to clipboard. Click Load Game, paste path to the file dialog, press enter, and open the latest .sav file from there.');
+  alert('"'+inputc.value + '" copied to clipboard. Now you can click Load Game, paste path to the file dialog, press enter, and open the latest .sav file from there.');
 }
