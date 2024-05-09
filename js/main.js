@@ -560,7 +560,7 @@ window.loadSaveFile = function () {
 
     localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
-    //setTimeout(function() {alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
+    setTimeout(function() {alert('Marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
 
     ready = true;
   };
