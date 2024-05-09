@@ -1,6 +1,6 @@
 # (c) 2022 Joric, https://github.com/joric/supraland
 # install UE4Parse module: python -m pip install git+https://github.com/MinshuG/pyUE4Parse.git
-# install mathutils: pip install mathutils
+# install dependencies: pip install mathutils aes
 # see https://github.com/MinshuG/pyUE4Parse/issues/9 about outer nodes
 # see https://github.com/MinshuG/pyUE4Parse/issues/20 about python 3.12
 
