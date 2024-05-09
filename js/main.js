@@ -573,10 +573,10 @@ window.putSavefileLocationOnClipboard = function() {
   let location = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames';
 
   let text = 
-  'You can load the game save file (latest .sav) to mark collected items automatically. '+
+  'You can import the game save file (latest .sav) to mark the collected items automatically. '+
   'On Windows, the default save path for this game is "'+location+'". '+
-  'You can paste it into the file selection dialog and press Enter to navigate directly to the game save folder. '+
-  'Click OK to copy the file path to your clipboard.'
+  'Paste it into the file selection dialog and press Enter to navigate directly to the save folder. '+
+  'Click OK to copy the path to your clipboard. '
   ;
 
   if (confirm(text)) {
