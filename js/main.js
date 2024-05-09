@@ -572,8 +572,8 @@ window.loadSaveFile = function () {
 window.putSavefileLocationOnClipboard = function() {
   let location = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames\\';
 
-  let text = 'You can load a game save file to mark items that you have already collected.'+
-  ' If you click OK, the standard Windows save file location will be placed on your clipboard.'+
+  let text = 'You can load a standard game save file to mark items that you have already collected.'+
+  ' If you click OK, the default Windows save file location will be placed on your clipboard.'+
   ' You can then paste this into the file selection dialog and press Enter to automatically bring you to the game save folder.';
 
   if (confirm(text)) {
