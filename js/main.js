@@ -575,8 +575,9 @@ window.putSavefileLocationOnClipboard = function() {
   let text = 
   'To mark items you have collected, you can load the latest .sav file from the game save location. '+
   'On Windows, the default save path for this map is "'+location+'". '+
-  'Click OK to copy the file path to your clipboard. '+
-  'Then paste it into the file selection dialog and press Enter to navigate to the desired folder. ';
+  'Paste it into the file selection dialog and press Enter to navigate directly to the game save folder. '+
+  'Click OK to copy the file path to your clipboard.'
+  ;
 
   if (confirm(text)) {
     let inputc = document.body.appendChild(document.createElement("input"));
