@@ -539,8 +539,7 @@ window.loadSaveFile = function () {
     let loadedSave = new UESaveObject(evt.target.result);
 
     //console.log(loadedSave);
-
-    unmarkItems();
+    //unmarkItems();
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
