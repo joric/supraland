@@ -557,9 +557,9 @@ window.loadSaveFile = function () {
       }
     }
 
-    localStorage.setItem('markedItems', JSON.stringify(markedItems));
+    alert('Marked ' + Object.keys(markedItems[mapId]).length + ' items');
 
-    setTimeout(function() {alert('Marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
+    localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
     ready = true;
   };
