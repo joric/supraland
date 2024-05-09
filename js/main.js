@@ -570,11 +570,18 @@ window.loadSaveFile = function () {
 }
 
 window.putSavefileLocationOnClipboard = function() {
-  var inputc = document.body.appendChild(document.createElement("input"));
-  inputc.value = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames\\';
-  inputc.focus();
-  inputc.select();
-  document.execCommand('copy');
-  inputc.parentNode.removeChild(inputc);
-  alert('"'+inputc.value + '" copied to clipboard. Now you can click Load Game, paste path to the file dialog, press enter, and open the latest .sav file from there.');
+  let location = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames\\';
+
+  let text = 'You can load a game save file to mark items that you have already collected.'+
+  ' If you click OK, the standard Windows save file location will be placed on your clipboard.'+
+  ' You can then paste this into the file selection dialog and press Enter to automatically bring you to the game save folder.';
+
+  if (confirm(text)) {
+    let inputc = document.body.appendChild(document.createElement("input"));
+    inputc.value = location;
+    inputc.focus();
+    inputc.select();
+    document.execCommand('copy');
+    inputc.parentNode.removeChild(inputc);
+  }
 }
