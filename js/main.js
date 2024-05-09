@@ -1,7 +1,6 @@
 var map = null;
 var mapId = '';
 var markedItems = JSON.parse(localStorage.getItem('markedItems')) || {'sl':{},'slc':{},'siu':{}};
-var markedItemsMode = 1;
 var layers = {};
 var classes = {};
 var icons = {};
@@ -208,7 +207,7 @@ function loadMap(mapId) {
   }
 
   actions = []
-  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Copy Path':'copy-path', 'Load Game':'upload-save', 'Toggle Items':'toggle-items' }}));
+  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Copy Path':'copy-path', 'Load Game':'upload-save', 'Unmark All': 'unmark-items' }}));
   let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
   document.querySelector('.copy-path').onclick = function(e) {
@@ -225,8 +224,11 @@ function loadMap(mapId) {
     document.querySelector('#file').click();
   }
 
-  document.querySelector('.toggle-items').onclick = function(e) {
-    window.toggleFoundVisible();
+  document.querySelector('.unmark-items').onclick = function(e) {
+    if (confirm('Are you sure to unmark all items?')) {
+      unmarkItems();
+      localStorage.setItem('markedItems', JSON.stringify(markedItems));
+    }
   }
 
   function loadMarkersLegacy() {
@@ -247,13 +249,23 @@ function loadMap(mapId) {
   }
 
   function onPopupOpen(e) {
-
-    let v = e.popup._source._latlng;
-    let x = v.lng, y = v.lat;
+    let x = e.popup._source._latlng.lng;
+    let y = e.popup._source._latlng.lat;
     let type = e.popup._source.options.type;
+    let markerId = e.popup._source.options.alt;
 
     let dist = Infinity;
     let res = null;
+
+    let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+
+    let found = markedItems[mapId][markerId]==true
+
+    let value = found ? 'checked' : '';
+
+    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)\><label for="'+markerId+'">Found</label>';
+
+    e.popup.setContent(text);
 
     filename = 'data/legacy/' + mapId + '/'+type+'.csv';
     var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
@@ -271,20 +283,16 @@ function loadMap(mapId) {
         }
       }
 
-      if (dist<1000 && res.ytVideo)
-      {
-        console.log('onpopupopen: Youtube found, dist is: '+dist+' nearest object is: '+JSON.stringify(res));
-        let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+      if (dist<1000 && res.ytVideo) {
         let url = 'https://youtu.be/'+res.ytVideo+'&?t='+res.ytStart;
-        e.popup.setContent(text + '<br><br><a href="'+url+'" target=_blank>'+url+'</a>');
-      } else {
-        console.log('onpopupopen: No Youtube or too far, dist is: '+dist+' nearest object is: '+JSON.stringify(res));
+        text += '<br><br><a href="'+url+'" target=_blank>'+url+'</a>'
       }
+
+      e.popup.setContent(text);
 
     }});
 
   };
-
 
   function loadMarkers() {
     fetch('data/markers.'+mapId+'.json')
@@ -298,7 +306,7 @@ function loadMap(mapId) {
 
             let markerId = o.area + ':' + o.name;
 
-            let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+            let text = '';//JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
             let title = o.name;
 
             if (o.type.endsWith('Chest_C')) {
@@ -434,34 +442,6 @@ function loadMap(mapId) {
 
 } // end of loadmap
 
-window.toggleFoundVisible = function (){
-  markedItemsMode = (markedItemsMode + 1) % 3;
-
-  [].forEach.call(document.querySelectorAll('img.found'), function(div) {
-      if (markedItemsMode == 0) {
-        div.style.opacity = "0";
-      } else if (markedItemsMode == 1) {
-        div.style.opacity = "0.3";
-      } else {
-        div.style.opacity = "1";
-      }
-  });
-}
-
-window.markItemFound = function (id) {
-  var divs = document.querySelectorAll('img[alt="' + id + '"]');
-  let count = 0;
-  [].forEach.call(divs, function(div) {
-    div.classList.add('found');
-    count += 1;
-  });
-
-  if (count>0) {
-    console.log('marked item:', id);
-    markedItems[mapId][id] = true;
-  }
-}
-
 function getIconSize(zoom) {
   let s = [16,16,24,32,32,32,48,48,64];
   return s[Math.round(Math.min(zoom,s.length-1))];
@@ -492,6 +472,27 @@ function resizeIcons() {
    });
 
   markItems();
+}
+
+window.markItemFound = function (id, found=true, save=true) {
+  var divs = document.querySelectorAll('img[alt="' + id + '"]');
+  [].forEach.call(divs, function(div) {
+    if (found) {
+      div.classList.add('found');
+    } else {
+      div.classList.remove('found');
+    }
+  });
+
+  if (found) {
+    markedItems[mapId][id] = true;
+  } else {
+    delete markedItems[mapId][id];
+  }
+
+  if (save) {
+    localStorage.setItem('markedItems', JSON.stringify(markedItems));
+  }
 }
 
 function markItems() {
@@ -539,8 +540,6 @@ window.loadSaveFile = function () {
 
     console.log(loadedSave);
 
-    markedItemsMode = 1;
-
     unmarkItems();
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
@@ -553,18 +552,17 @@ window.loadSaveFile = function () {
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
-            markItemFound(area + ':' + name);
+            markItemFound(area + ':' + name, true, false);
           }
         }
       }
     }
 
-    setTimeout(function() {alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
-
     localStorage.setItem('markedItems', JSON.stringify(markedItems));
 
-    ready = true;
+    //setTimeout(function() {alert('marked ' + Object.keys(markedItems[mapId]).length + ' items');}, 100);
 
+    ready = true;
   };
 
   if (file instanceof Blob) {
