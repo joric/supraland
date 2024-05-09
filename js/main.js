@@ -511,7 +511,7 @@ function unmarkItems() {
       div.classList.remove('found');
     });
   }
-  markedItems = {'sl':{},'slc':{},'siu':{}};
+  markedItems[mapId]={};
 }
 
 window.loadSaveFile = function () {
