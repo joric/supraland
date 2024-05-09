@@ -194,9 +194,10 @@ def export_textures(game, cache_dir):
         if os.path.exists(filename):
             print(filename, 'exists')
             continue
-
         print('writing "%s" ...' % filename)
-        package = provider.try_load_package(package_path)
+        if not(package:=provider.try_load_package(package_path)):
+            print('texture package not found, install astc_decomp maybe?')
+            return
         if texture := package.find_export_of_type("Texture2D"):
             image = texture.decode()
             image.save(filename, "png")
