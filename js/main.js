@@ -549,6 +549,7 @@ window.loadSaveFile = function () {
           continue;
         }
         for(x of o.value.value) {
+          // map '/Game/FirstPersonBP/Maps/DLC2_Complete.DLC2_Complete:PersistentLevel.Coin442_41' to 'DLC2_Complete:Coin442_41'
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
