@@ -159,3 +159,4 @@ UpgradeHappiness_C,,
 ValveCarriable_C,valve,misc
 ValveSlot_C,valve,misc
 Valve_C,valve,misc
+HealingStation_C,health,shop
