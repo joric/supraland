@@ -18,7 +18,7 @@ set choice=3
 echo 1) Export levels
 echo 2) Export textures
 echo 3) Export markers (needs levels)
-echo 4) Generate tiles
+echo 4) Generate tiles (needs map.jpg)
 
 set /p choice=Enter your choice. Enter - default (%choice%): 
 
