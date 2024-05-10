@@ -6624,6 +6624,70 @@
     "alt": 1877.6624755859375
   },
   {
+    "name": "MatchBox10",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -50503.26171875,
+    "lng": 5276.640625,
+    "alt": 3261.0
+  },
+  {
+    "name": "MatchBox2_2",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -10553.8544921875,
+    "lng": 64542.41015625,
+    "alt": 4040.99072265625
+  },
+  {
+    "name": "MatchBox3",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -15910.62890625,
+    "lng": 44732.2421875,
+    "alt": 534.8974609375
+  },
+  {
+    "name": "MatchBox5_3",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -51768.52734375,
+    "lng": 53926.1328125,
+    "alt": 1200.14404296875
+  },
+  {
+    "name": "MatchBox6",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -27865.814453125,
+    "lng": 21521.609375,
+    "alt": -198.5026092529297
+  },
+  {
+    "name": "MatchBox7",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -22708.68359375,
+    "lng": 19968.435546875,
+    "alt": -212.3644561767578
+  },
+  {
+    "name": "MatchBox9",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": -24993.224609375,
+    "lng": 11115.7119140625,
+    "alt": -188.9579620361328
+  },
+  {
+    "name": "MatchBox_2",
+    "type": "MatchBox_C",
+    "area": "DLC2_Complete",
+    "lat": 16927.02734375,
+    "lng": 23145.572265625,
+    "alt": 3804.97314453125
+  },
+  {
     "name": "MinecraftBrick100",
     "type": "MinecraftBrick_C",
     "area": "DLC2_Complete",
@@ -10876,6 +10940,14 @@
     "alt": 3516.73046875
   },
   {
+    "name": "BossPuzzle3_MatchBox",
+    "type": "MatchBox_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22612.9609375,
+    "lng": -25665.376953125,
+    "alt": 7185.64599609375
+  },
+  {
     "name": "MinecraftBrick164",
     "type": "MinecraftBrick_C",
     "area": "DLC2_FinalBoss",
@@ -12131,6 +12203,14 @@
     "lat": 1964.4383544921875,
     "lng": -15567.2978515625,
     "alt": 1427.23388671875
+  },
+  {
+    "name": "MatchBox8_2",
+    "type": "MatchBox_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -1450.742431640625,
+    "lng": 8361.1279296875,
+    "alt": 672.199951171875
   },
   {
     "name": "MinecraftBrick100",
@@ -14024,6 +14104,14 @@
     "lat": 25024.05078125,
     "lng": 15319.908203125,
     "alt": 19551.0
+  },
+  {
+    "name": "MatchBox_2",
+    "type": "MatchBox_C",
+    "area": "DLC2_Menu",
+    "lat": -17846.330078125,
+    "lng": -1170.2490234375,
+    "alt": 3354.561767578125
   },
   {
     "name": "PlayerStart_1",
