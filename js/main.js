@@ -263,7 +263,7 @@ function loadMap(mapId) {
 
     let value = found ? 'checked' : '';
 
-    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)\><label for="'+markerId+'">Collected</label>';
+    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)\><label for="'+markerId+'">Empty</label>';
 
     e.popup.setContent(text);
 
