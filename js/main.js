@@ -476,6 +476,7 @@ function resizeIcons() {
 
 window.markItemFound = function (id, found=true, save=true) {
   var divs = document.querySelectorAll('img[alt="' + id + '"]');
+
   [].forEach.call(divs, function(div) {
     if (found) {
       div.classList.add('found');
