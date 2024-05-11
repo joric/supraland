@@ -121,7 +121,7 @@ BuyUpgradeGraveNum_C,,upgrades
 BuyWalletx15_C,,upgrades
 BuyWalletx2_C,,upgrades
 Chest_C,chest,closedChest
-CoinBig_C,coinStash,coin
+CoinBig_C,coin,coin
 CoinRed_C,coinRed,coin
 Coin_C,coin,coin
 DeadHero_C,,
