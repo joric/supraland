@@ -263,7 +263,8 @@ function loadMap(mapId) {
 
     let value = found ? 'checked' : '';
 
-    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Removed</label>';
+    // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
+    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
 
     e.popup.setContent(text);
 
