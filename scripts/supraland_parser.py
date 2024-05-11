@@ -145,6 +145,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'coins', prop.get('CoinsInGold',0))
             optKey(data[-1], 'cost', prop.get('Cost',0))
             optKey(data[-1], 'spawns', prop.get('Spawnthing',{}).get('ObjectName'))
+            optKey(data[-1], 'hits', prop.get('HitsToBreak',0))
+            optKey(data[-1], 'obsidian', prop.get('bObsidian',0))
 
             vector = Vector((0,0,0))
 
