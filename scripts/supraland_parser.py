@@ -127,8 +127,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
         outer = {}
         for o in j:
             if 'Outer' in o:
-                outer[':'.join((o['Name'],o['Type'],o['Outer']))] = o # 5e0e6f0
-                outer[':'.join((o['Name'],o['Outer']))] = o # 90e309b
+                outer[':'.join((o['Name'],o['Type'],o['Outer']))] = o # pyUE4Parse 5e0e6f0
+                outer[':'.join((o['Name'],o['Outer']))] = o # pyUE4Parse 90e309b
 
         for i, o in enumerate(j):
             prop = o.get('Properties',{})
