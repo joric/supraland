@@ -62,10 +62,7 @@ function loadMap(mapId) {
   }
 
   var p = maps[mapId];
-
   var scale = p.MapWorldSize / mapSize.width;
-  var mapScale   = {x: 1.0/scale, y: 1.0/scale};
-  var mapOrigin  = {x: -p.MapWorldUpperLeft.X * mapScale.x, y: -p.MapWorldUpperLeft.Y * mapScale.y};
   let [left,top,right,bottom] = [p.MapWorldUpperLeft.X, p.MapWorldUpperLeft.Y, p.MapWorldLowerRight.X, p.MapWorldLowerRight.Y];
   let extent = new maptalks.Extent(left, top, right, bottom);
 
