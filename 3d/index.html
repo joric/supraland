@@ -224,7 +224,7 @@ function loadMap(mapId) {
   map.setMenu(options);
   */
 
-  window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true);
+  // window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true); // enable default context menu
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
