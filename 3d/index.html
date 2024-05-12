@@ -8,7 +8,13 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 .container{width:100%;height:100%}
 </style>
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
+
+<script type="text/javascript" src="https://unpkg.com/three@0.138.0/build/three.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks.three/dist/maptalks.three.js"></script>
+
+<!--script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script-->
+
 <body>
 <div id="map" class="container"></div>
 <script>
@@ -19,6 +25,7 @@ let lineColor = markerColor;//'#888';
 let startPitch = 45;
 let startZoom = 3;
 let altitudeScale = 0.25;
+let drawMode = 0; // 0: pins  1: icons
 let map = null;
 
 let maps = {
@@ -109,7 +116,7 @@ function loadMap(mapId) {
     enableAltitude: true,
     drawAltitude : {
       lineWidth : 1.5,
-      lineColor : lineColor,
+      lineColor : '#ccc',//lineColor,
       //lineDasharray : [2, 2],
     },
   }).addTo(map);
@@ -125,7 +132,13 @@ function loadMap(mapId) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
         }
-        if (o.type.endsWith('Chest_C')) {
+
+        //icons = {'Chest_C':{icon:'chest', color:4 }, 'Bones_C': {icon:'bones', color:2} };
+
+        icons = {'Chest_C':{icon:'chest', color:4 }};
+
+
+        if (c = icons[o.type]) {
 
           /*
           // add shadow pin without altitude
@@ -140,30 +153,50 @@ function loadMap(mapId) {
           }).addTo(shadowLayer);
           */
 
-          // add pin symbol with altitude
-          let pin = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-            symbol: {
-              markerWidth: 77,
-              markerHeight: 75,
-              markerFill: markerColor,
-              //markerLineColor: 'white',
-              markerType: 'pin', //ellipse cross x diamond bar square triangle pin pie
-            } 
-          }).addTo(pinLayer);
+          if (drawMode==0) {
 
-          // add icon on top of the pin
-          let marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-            id: o.area+':'+o.name,
-            properties: {
-                name: o.name,
-            },
-            symbol: {
-              markerFile: '../img/chest.png',
-              markerWidth  : 32,
-              markerHeight : 32,
-              markerDy: -22,
-            }
-          }).addTo(iconLayer);
+            // add pin symbol with altitude
+            let pin = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
+              symbol: {
+                markerWidth: 77,
+                markerHeight: 75,
+                markerFill: markerColors[c.color],
+                //markerLineColor: 'white',
+                markerType: 'pin', //ellipse cross x diamond bar square triangle pin pie
+              } 
+            }).addTo(pinLayer);
+
+            // add icon on top of the pin
+            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
+              id: o.area+':'+o.name,
+              properties: {
+                  name: o.name,
+              },
+              symbol: {
+                markerFile: '../img/'+c.icon+'.png',
+                markerWidth  : 32,
+                markerHeight : 32,
+                markerDy: -22,
+              }
+            }).addTo(iconLayer);
+
+          } else {
+
+            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
+              id: o.area+':'+o.name,
+              properties: {
+                  name: o.name,
+              },
+              symbol: {
+                markerFile: '../img/'+c.icon+'.png',
+                markerWidth  : 32,
+                markerHeight : 32,
+              }
+            }).addTo(iconLayer);
+
+          }
+
+
 
           let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
 
