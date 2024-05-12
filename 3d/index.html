@@ -19,8 +19,11 @@ let lineColor = markerColor;//'#888';
 let startPitch = 45;
 let startZoom = 3;
 let altitudeScale = 0.25;
-let drawMode = 0; // 0: pins  1: icons
+let drawMode = 0; // 0: pins  1: just icons
 let map = null;
+
+icons = {'Chest_C':{icon:'chest', color:0 }, 'Bones_C': {icon:'bones', color:2}, 'Scrap_C': {icon:'scrap', color:4} };
+//icons = {'Chest_C':{icon:'chest', color:4 }};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -126,12 +129,6 @@ function loadMap(mapId) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
         }
-
-        //icons = {'Chest_C':{icon:'chest', color:4 }, 'Bones_C': {icon:'bones', color:2} };
-
-        icons = {'Chest_C':{icon:'chest', color:4 }};
-
-
         if (c = icons[o.type]) {
 
           /*
