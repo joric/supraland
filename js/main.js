@@ -578,7 +578,7 @@ window.putSavefileLocationOnClipboard = function() {
   'You can import the game save file (latest .sav) to mark the collected items automatically. '+
   '\n\nOn Windows, the default save path for this game is:\n"'+location+'". '+
   '\n\nClick OK to copy the path to your clipboard, then click Load File in the menu, '+
-  'paste the path into the file selection dialog and and press Enter to navigate directly to the save folder.'
+  'paste the path into the file selection dialog and press Enter to navigate directly to the save folder.'
   ;
 
   if (confirm(text)) {
