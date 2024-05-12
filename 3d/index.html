@@ -156,15 +156,15 @@ function loadMap(mapId) {
           }).addTo(marker);
 
           marker.setInfoWindow({
-            'title'     : o.name,
-            'content'   : text,
+            title     : o.name,
+            content   : text,
 
             // 'autoPan': true,
             // 'width': 300,
             // 'minHeight': 120,
             // 'custom': false,
             //'autoOpenOn' : 'click',  //set to null if not to open when clicking on marker
-            //'autoCloseOn' : 'click'
+            autoCloseOn : 'click',
           });
           marker.addTo(markerLayer);
         }
@@ -196,8 +196,6 @@ function loadMap(mapId) {
     */
   }
 
-  map.oncontextmenu = null;
-
   var toolbar = new maptalks.control.Toolbar({
     'position' : 'top-left',
     items: [
@@ -214,6 +212,26 @@ function loadMap(mapId) {
   };
 
   //map.fitExtent(extent); // commented out - too small, it fits in zoom 4
+
+  /*
+  // context menu
+  var options = {
+    'items'  : [
+          {item: 'Copy Map View URL', click: function () { alert('Location copied.'); }},
+      //'-',{item: 'item2', click: function () { alert('Click item2'); }}
+    ]
+  };
+  map.setMenu(options);
+  */
+
+  window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true);
+
+  [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
+    if (div.innerText==mapId) {
+      div.style.background = '#6a97d9';
+      div.style.color = '#fff';
+    }
+  });
 }
 
 window.onload = function(event) {
