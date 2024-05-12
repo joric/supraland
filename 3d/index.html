@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joric's Supraland - Maptalks</title>
+<style type="text/css">
+html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
+.container{width:100%;height:100%}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
+<script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<body>
+<div id="map" class="container"></div>
+<script>
+
+let markerColors = ['#48a1c2','#419869','#f4bd76','#e4e1d6','#88cf78'];
+let markerColor = markerColors[4];
+let lineColor = markerColor;//'#888';
+let startPitch = 60;
+let startZoom = 3;
+
+let maps = {
+  // data taken from the MapWorld* nodes
+  'sl':  { 
+      title: 'Supraland',
+      "MapWorldCenter": { "X": 13000.0, "Y": -2000.0, "Z": 0.0 },
+      "MapWorldSize": 175000.0,
+      "MapWorldUpperLeft": { "X": -74500.0, "Y": -89500.0, "Z": 0.0 },
+      "MapWorldLowerRight": { "X": 100500.0, "Y": 85500.0, "Z": 0.0 },
+  },
+
+  'slc': {
+    title: 'Supraland Crash',
+      "MapWorldCenter": { "X": 25991.0, "Y": -16.0, "Z": 0.0  },
+      "MapWorldSize": 90112.0,
+      "MapWorldUpperLeft": { "X": -19065.0, "Y": -45040.0, "Z": 0.0 },
+      "MapWorldLowerRight": { "X": 71047.0, "Y": 45072.0, "Z": 0.0 },
+  },
+
+  'siu': {
+      title: 'Supraland Six Inches Under',
+      "MapWorldCenter": { "X": 0.0, "Y": -19000.0, "Z": 10000.0 },
+      "MapWorldSize": 147456.0,
+      "MapWorldUpperLeft": { "X": -73728.0, "Y": -92728.0, "Z": 10000.0 },
+      "MapWorldLowerRight": { "X": 73728.0, "Y": 54728.0, "Z": 10000.0 },
+  },
+};
+
+var map;
+
+function loadMap(mapId) {
+  location.hash = mapId;
+
+  document.querySelector('#map').style.backgroundColor = mapId=='siu' ? '#141414' : '#000';
+  var mapSize = {width: 8192, height: 8192}
+  var tileSize   = {x: 512, y: 512};
+  var tileMaxSet = 4;
+  var mapMinResolution = Math.pow(2, tileMaxSet);
+
+  if (map) {
+    map.remove();
+  }
+
+  var p = maps[mapId];
+
+  var scale = p.MapWorldSize / mapSize.width;
+  var mapScale   = {x: 1.0/scale, y: 1.0/scale};
+  var mapOrigin  = {x: -p.MapWorldUpperLeft.X * mapScale.x, y: -p.MapWorldUpperLeft.Y * mapScale.y};
+  let [left,top,right,bottom] = [p.MapWorldUpperLeft.X, p.MapWorldUpperLeft.Y, p.MapWorldLowerRight.X, p.MapWorldLowerRight.Y];
+  let extent = new maptalks.Extent(left, top, right, bottom);
+
+  map = new maptalks.Map('map', {
+    zoom: startZoom,
+    pitch: startPitch,
+    center: [p.MapWorldCenter.X, p.MapWorldCenter.Y],
+    spatialReference : {
+      projection : 'identity',
+      resolutions : [
+        32*scale, 16*scale, 8*scale, 4*scale, 2*scale, 1*scale, 0.5*scale, 0.25*scale,
+      ],
+      fullExtent : {
+        top:  top,
+        left: left,
+        bottom: bottom,
+        right: right,
+      }
+    },
+    baseLayer: new maptalks.TileLayer('base', {
+      maxAvailableZoom: 4,
+      urlTemplate: '../tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
+      repeatWorld: false,
+      tileSystem: [1, -1, left, top],
+      attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
+    }),
+    seamlessZoom: true,
+    doubleClickZoom: false,
+    zoomControl: {
+      'position'  : 'top-right',
+      'zoomLevel' : false,
+    },
+    compassControl: {
+      position: 'bottom-right',
+    },
+  });
+
+  markerLayer = new maptalks.VectorLayer('vector', {
+    enableAltitude: true,        // enable altitude
+    defaultIconSize: [100,100], // does not work ?
+    //debug: true,
+    drawAltitude : {
+      lineWidth : 2,
+      lineColor : lineColor,
+      //lineDasharray : [10, 5, 5],
+    }
+  }).addTo(map);
+
+  fetch('../data/markers.'+mapId+'.json')
+    .then((response) => response.json())
+    .then((j) => {
+      for (o of j) {
+        if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
+          continue;
+        }
+        if (o.type.endsWith('Chest_C')) {
+          var marker = new maptalks.Marker([o.lng, o.lat, o.alt*0.25],{
+            id : o.area+':'+o.name,
+            'symbol' : [
+              {
+                //'markerFile'  : 'foo.png',
+                markerWidth: 77,
+                markerHeight: 75,
+                markerFill: markerColor,
+                //markerLineColor: 'white',
+                markerType: 'pin', //ellipse cross x diamond bar square triangle pin pie
+              },
+              {
+                markerFile: '../img/chest.png',
+                markerWidth  : 32,
+                markerHeight : 32,
+                markerDy: -22,
+              }
+            ],
+
+            ltitude: false,
+
+            properties : {
+                name : o.name,
+            },
+          });
+
+          let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+
+          const tooltip = new maptalks.ui.ToolTip(o.name, {
+              content: 'hello',
+              //showTimeout: 0
+          }).addTo(marker);
+
+          marker.setInfoWindow({
+            'title'     : o.name,
+            'content'   : text,
+
+            // 'autoPan': true,
+            // 'width': 300,
+            // 'minHeight': 120,
+            // 'custom': false,
+            //'autoOpenOn' : 'click',  //set to null if not to open when clicking on marker
+            //'autoCloseOn' : 'click'
+          });
+          marker.addTo(markerLayer);
+        }
+      }
+   });
+
+
+  map.on('resize moving moveend zooming zoomend rotate rotateend dragrotating dragrotateend viewchange', function(e){
+     //console.log(e);
+     //markerLayer.setAltitude( map.getPitch()==0 ? 0 : 100);
+     //markerLayer.enableAltitude = false;
+  });
+
+  //update();
+
+  function update() {
+    /*
+    var projection = map.getProjection();
+    var center = map.getCenter(),
+      prj = projection.project(center),
+      containerPoint = map.coordinateToContainerPoint(center).round();
+
+    document.getElementById('coordinate').innerHTML = '<div>' + [
+      'Center : [' + center.x.toFixed(5) + ', ' + center.y.toFixed(5) + ']',
+      'Projected Coordinate : [' + prj.x.toFixed(5) + ', ' + prj.y.toFixed(5) + ']',
+      'ContainerPoint is the screen position in px from northwest of the map container.',
+      'ContainerPoint : [' + containerPoint.x + ', ' + containerPoint.y + ']'
+    ].join('<br>') + '</div>';
+    */
+  }
+
+  map.oncontextmenu = null;
+
+  var toolbar = new maptalks.control.Toolbar({
+    'position' : 'top-left',
+    items: [
+      { item : 'sl', click : function() { loadMap('sl'); }},
+      { item : 'slc', click : function() { loadMap('slc'); }},
+      { item : 'siu', click : function() { loadMap('siu'); }},
+    ]
+  }).addTo(map);
+
+  document.querySelector('.maptalks-compass').onclick = function(e) {
+    if (map.getBearing()==0) {
+      map.animateTo({ pitch: map.getPitch()==0 ? 60 : 0 });
+    }
+  };
+
+  //map.fitExtent(extent); // commented out - too small, it fits in zoom 4
+}
+
+window.onload = function(event) {
+  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
+  loadMap(mapId);
+};
+
+
+</script>
+</body>
+</html>
