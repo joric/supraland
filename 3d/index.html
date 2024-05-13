@@ -19,7 +19,7 @@ let lineColor = markerColor;//'#888';
 let startPitch = 45;
 let startZoom = 3;
 let altitudeScale = 0.25;
-let drawMode = 0; // 0: pins  1: just icons
+let drawMode = 2; // 0: pins and icons (separate layers),  1: just icons, 2: compound markers
 let map = null;
 
 icons = {'Chest_C':{icon:'chest', color:0 }, 'Bones_C': {icon:'bones', color:2}, 'Scrap_C': {icon:'scrap', color:4} };
@@ -105,12 +105,9 @@ function loadMap(mapId) {
     },
   });
 
-  let shadowLayer = new maptalks.VectorLayer('shadow', {
+  let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: true,
-  }).addTo(map);
-
-  let pinLayer = new maptalks.VectorLayer('vector', {
-    enableAltitude: true,
+    sortByDistanceToCamera: true,
     drawAltitude : {
       lineWidth : 1.5,
       lineColor : '#ccc',//lineColor,
@@ -120,7 +117,17 @@ function loadMap(mapId) {
 
   let iconLayer = new maptalks.VectorLayer('icons', {
     enableAltitude: true,
+    sortByDistanceToCamera: true,
   }).addTo(map);
+
+  if (drawMode!=1) {
+    iconLayer.setOptions({
+      drawAltitude: {
+        lineWidth : 1.5,
+        lineColor : '#ccc',
+      },
+    })
+  }
 
   fetch('../data/markers.'+mapId+'.json')
     .then((response) => response.json())
@@ -130,19 +137,6 @@ function loadMap(mapId) {
           continue;
         }
         if (c = icons[o.type]) {
-
-          /*
-          // add shadow pin without altitude
-          let shadow = new maptalks.Marker([o.lng, o.lat],{
-            symbol: {
-              markerWidth: 4,
-              markerHeight: 4,
-              markerFill: markerColor,
-              markerLineColor: markerColor,
-              markerType: 'ellipse', //ellipse cross x diamond bar square triangle pin pie
-            } 
-          }).addTo(shadowLayer);
-          */
 
           if (drawMode==0) {
 
@@ -155,7 +149,7 @@ function loadMap(mapId) {
                 //markerLineColor: 'white',
                 markerType: 'pin', //ellipse cross x diamond bar square triangle pin pie
               } 
-            }).addTo(pinLayer);
+            }).addTo(vectorLayer);
 
             // add icon on top of the pin
             var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
@@ -171,7 +165,7 @@ function loadMap(mapId) {
               }
             }).addTo(iconLayer);
 
-          } else {
+          } else if (drawMode==1) {
 
             var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
               id: o.area+':'+o.name,
@@ -185,9 +179,28 @@ function loadMap(mapId) {
               }
             }).addTo(iconLayer);
 
+          } else {
+            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
+              id: o.area+':'+o.name,
+              properties: {
+                  name: o.name,
+              },
+              symbol: [
+                {
+                  markerWidth: 75,
+                  markerHeight: 75,
+                  markerFill: markerColors[c.color],
+                  markerType: 'pin',
+                },
+                {
+                  markerFile: '../img/'+c.icon+'.png',
+                  markerWidth  : 32,
+                  markerHeight : 32,
+                  markerDy: -22,
+                },
+              ],
+            }).addTo(vectorLayer);
           }
-
-
 
           let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
 
@@ -210,11 +223,13 @@ function loadMap(mapId) {
    });
 
 
+  /*
   map.on('resize moving moveend zooming zoomend rotate rotateend dragrotating dragrotateend viewchange', function(e){
      //console.log(e);
-     //markerLayer.setAltitude( map.getPitch()==0 ? 0 : 100);
-     //markerLayer.enableAltitude = false;
+     //vectorLayer.setAltitude( map.getPitch()==0 ? 0 : 100);
+     //vectorLayer.enableAltitude = false;
   });
+  */
 
   //update();
 
@@ -246,8 +261,17 @@ function loadMap(mapId) {
   document.querySelector('.maptalks-compass').onclick = function(e) {
     if (map.getBearing()==0) {
       map.animateTo({ pitch: map.getPitch()==0 ? 60 : 0 });
+      vectorLayer.setOptions({
+        enableAltitude: map.getPitch()==0,
+      });
     }
   };
+
+  map.on('rotate viewchange', function(e) {
+    vectorLayer.setOptions({
+      enableAltitude: map.getPitch()!=0,
+    });
+  });
 
   //map.fitExtent(extent); // commented out - too small, it fits in zoom 4
 
@@ -281,3 +305,4 @@ window.onload = function(event) {
 </script>
 </body>
 </html>
+
