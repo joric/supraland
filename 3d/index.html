@@ -13,17 +13,14 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <div id="map" class="container"></div>
 <script>
 
-let markerColors = ['#48a1c2','#419869','#f4bd76','#e4e1d6','#88cf78'];
-let markerColor = markerColors[4];
-let lineColor = markerColor;//'#888';
 let startPitch = 45;
-let startZoom = 3;
-let altitudeScale = 0.25;
-let drawMode = 2; // 0: pins and icons (separate layers),  1: just icons, 2: compound markers
+let startZoom = 2;
+let heightFactor = 0.25;
 let map = null;
 
-icons = {'Chest_C':{icon:'chest', color:0 }, 'Bones_C': {icon:'bones', color:2}, 'Scrap_C': {icon:'scrap', color:4} };
-//icons = {'Chest_C':{icon:'chest', color:4 }};
+let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#e4e1d6'];
+let lineColor = '#888';
+let icons = {'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap'};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -52,6 +49,37 @@ let maps = {
   },
 };
 
+function markerSymbol(o, shadow=false) {
+  if (shadow) {
+    return [
+      {
+        markerWidth: 75,
+        markerHeight: 75,
+        markerFill: '#000',
+        markerType: 'pin',//'ellipse',
+      },
+    ];
+  }
+
+  icon = icons[o.type];
+  color = markerColors[Object.keys(icons).indexOf(o.type)];
+
+  return [
+    {
+      markerWidth: 75,
+      markerHeight: 75,
+      markerFill: color,
+      markerType: 'pin',
+    },
+    {
+      markerFile: '../img/'+icon+'.png',
+      markerWidth  : 32,
+      markerHeight : 32,
+      markerDy: -22,
+    },
+  ];
+}
+
 function loadMap(mapId) {
   location.hash = mapId;
 
@@ -70,64 +98,51 @@ function loadMap(mapId) {
   map = new maptalks.Map('map', {
     zoom: startZoom,
     pitch: startPitch,
+    heightFactor: heightFactor,
     center: [p.MapWorldCenter.X, p.MapWorldCenter.Y],
     spatialReference : {
       projection : 'identity',
-      resolutions : (function() {
-        const res = [];
-        for (let i=32; i>0.125; i/=2) {
-          res.push(i*scale);
-        }
-        return res;
+      resolutions : ( function() {
+        const r = [];
+        for (let i=32; i>0.125; i/=2) { r.push(i*scale); }
+        return r;
       })(),
-      fullExtent : {
-        top:  top,
-        left: left,
-        bottom: bottom,
-        right: right,
-      }
+      fullExtent : { top: top, left: left, bottom: bottom, right: right },
     },
     baseLayer: new maptalks.TileLayer('base', {
       maxAvailableZoom: 4,
       urlTemplate: '../tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
       repeatWorld: false,
-      tileSystem: [1, -1, left, top],
+      tileSystem: [ 1, -1, left, top ],
       attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
     }),
     seamlessZoom: true,
     doubleClickZoom: true,
     zoomControl: {
-      'position'  : 'top-right',
-      'zoomLevel' : false,
+      position  : 'top-right',
+      zoomLevel : false,
     },
     compassControl: {
       position: 'bottom-right',
     },
   });
 
+  let shadowLayer = new maptalks.VectorLayer('shadow', {
+    enableAltitude: true,
+    sortByDistanceToCamera: true,
+    opacity: 0.25,
+  }).addTo(map);
+
   let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: true,
     sortByDistanceToCamera: true,
+    /*
     drawAltitude : {
       lineWidth : 1.5,
-      lineColor : '#ccc',//lineColor,
-      //lineDasharray : [2, 2],
+      lineColor : '#ccc',
     },
+    */
   }).addTo(map);
-
-  let iconLayer = new maptalks.VectorLayer('icons', {
-    enableAltitude: true,
-    sortByDistanceToCamera: true,
-  }).addTo(map);
-
-  if (drawMode!=1) {
-    iconLayer.setOptions({
-      drawAltitude: {
-        lineWidth : 1.5,
-        lineColor : '#ccc',
-      },
-    })
-  }
 
   fetch('../data/markers.'+mapId+'.json')
     .then((response) => response.json())
@@ -136,118 +151,31 @@ function loadMap(mapId) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
         }
-        if (c = icons[o.type]) {
+        if (icon = icons[o.type]) {
+          var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
+            id: o.area+':'+o.name,
+            properties: {name: o.name},
+            symbol: markerSymbol(o),
+          }).addTo(vectorLayer);
 
-          if (drawMode==0) {
-
-            // add pin symbol with altitude
-            let pin = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-              symbol: {
-                markerWidth: 77,
-                markerHeight: 75,
-                markerFill: markerColors[c.color],
-                //markerLineColor: 'white',
-                markerType: 'pin', //ellipse cross x diamond bar square triangle pin pie
-              } 
-            }).addTo(vectorLayer);
-
-            // add icon on top of the pin
-            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-              id: o.area+':'+o.name,
-              properties: {
-                  name: o.name,
-              },
-              symbol: {
-                markerFile: '../img/'+c.icon+'.png',
-                markerWidth  : 32,
-                markerHeight : 32,
-                markerDy: -22,
-              }
-            }).addTo(iconLayer);
-
-          } else if (drawMode==1) {
-
-            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-              id: o.area+':'+o.name,
-              properties: {
-                  name: o.name,
-              },
-              symbol: {
-                markerFile: '../img/'+c.icon+'.png',
-                markerWidth  : 32,
-                markerHeight : 32,
-              }
-            }).addTo(iconLayer);
-
-          } else {
-            var marker = new maptalks.Marker([o.lng, o.lat, o.alt * altitudeScale],{
-              id: o.area+':'+o.name,
-              properties: {
-                  name: o.name,
-              },
-              symbol: [
-                {
-                  markerWidth: 75,
-                  markerHeight: 75,
-                  markerFill: markerColors[c.color],
-                  markerType: 'pin',
-                },
-                {
-                  markerFile: '../img/'+c.icon+'.png',
-                  markerWidth  : 32,
-                  markerHeight : 32,
-                  markerDy: -22,
-                },
-              ],
-            }).addTo(vectorLayer);
-          }
-
-          let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-
-          const tooltip = new maptalks.ui.ToolTip(o.name, {
-              content: 'hello',
-          }).addTo(marker);
+          new maptalks.ui.ToolTip(o.name,{}).addTo(marker);
 
           marker.setInfoWindow({
             title     : o.name,
-            content   : text,
-            // 'autoPan': true,
-            // 'width': 300,
-            // 'minHeight': 120,
-            // 'custom': false,
-            //'autoOpenOn' : 'click',  //set to null if not to open when clicking on marker
+            content   : JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'),
+            autoPan: true,
             autoCloseOn : 'click',
           });
+
+          new maptalks.Marker([o.lng, o.lat],{
+            cursor: 'arrow',
+            symbol: markerSymbol(o, true),
+          })
+          .addTo(shadowLayer);
+
         }
       }
    });
-
-
-  /*
-  map.on('resize moving moveend zooming zoomend rotate rotateend dragrotating dragrotateend viewchange', function(e){
-     //console.log(e);
-     //vectorLayer.setAltitude( map.getPitch()==0 ? 0 : 100);
-     //vectorLayer.enableAltitude = false;
-  });
-  */
-
-  //update();
-
-  function update() {
-    /*
-    var projection = map.getProjection();
-    var center = map.getCenter(),
-      prj = projection.project(center),
-      containerPoint = map.coordinateToContainerPoint(center).round();
-
-    document.getElementById('coordinate').innerHTML = '<div>' + [
-      'Center : [' + center.x.toFixed(5) + ', ' + center.y.toFixed(5) + ']',
-      'Projected Coordinate : [' + prj.x.toFixed(5) + ', ' + prj.y.toFixed(5) + ']',
-      'ContainerPoint is the screen position in px from northwest of the map container.',
-      'ContainerPoint : [' + containerPoint.x + ', ' + containerPoint.y + ']'
-    ].join('<br>') + '</div>';
-    */
-  }
 
   var toolbar = new maptalks.control.Toolbar({
     'position' : 'top-left',
@@ -258,35 +186,36 @@ function loadMap(mapId) {
     ]
   }).addTo(map);
 
-  document.querySelector('.maptalks-compass').onclick = function(e) {
-    if (map.getBearing()==0) {
-      map.animateTo({ pitch: map.getPitch()==0 ? 60 : 0 });
-      vectorLayer.setOptions({
-        enableAltitude: map.getPitch()==0,
-      });
-    }
-  };
+  function copyToClipboard(s) {
+    let c = document.body.appendChild(document.createElement("input"));
+    c.value = s;
+    c.focus();
+    c.select();
+    document.execCommand('copy');
+    c.parentNode.removeChild(c);
+  }
 
-  map.on('rotate viewchange', function(e) {
-    vectorLayer.setOptions({
-      enableAltitude: map.getPitch()!=0,
-    });
-  });
-
-  //map.fitExtent(extent); // commented out - too small, it fits in zoom 4
-
-  /*
   // context menu
   var options = {
     'items'  : [
-          {item: 'Copy Map View URL', click: function () { alert('Location copied.'); }},
+      {
+        item: 'Copy Map View URL',
+        click: function () { let v = map.getView();
+          copyToClipboard(window.location.href.replace(/#.*$/,'')+'#'+mapId+
+            '/'+[v.center[0],v.center[1],v.zoom,v.pitch,v.bearing].join('/'));
+        }
+      },
       //'-',{item: 'item2', click: function () { alert('Click item2'); }}
     ]
   };
   map.setMenu(options);
-  */
 
-  // window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true); // enable default context menu
+
+  document.querySelector('.maptalks-compass').onclick = function(e) {
+    if (map.getBearing()==0) {
+      map.animateTo({ pitch: map.getPitch()==0 ? 60 : 0 });
+    }
+  };
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
