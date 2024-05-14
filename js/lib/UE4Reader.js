@@ -204,20 +204,7 @@ class UEReadHelper {
                     break;
                   case "Transform":
                     let p = this.pos;
-
                     /*
-                    '\t\x00\x00\x00
-                    Rotation\x00\x0F\x00\x00\x00
-                    StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00
-                    Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€\x00\x00\x00\x00ó\x045¿ò\x045?\f\x00\x00\x00
-                    Translation\x00\x0F\x00\x00\x00
-                    StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00
-                    Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00AJ\x90Fb(¯Æ€\x1ApÂ\x05\x00\x00\x00
-                    None'
-                    */
-
-                    /*
-
                     \x09\x00\x00\x00Rotation\x00
                     \x0F\x00\x00\x00StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00
                     \x05\x00\x00\x00Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x00\x00\x00\x00\xf3\x04\x35\xbf\xf2\x04\x35\x3f
@@ -225,30 +212,7 @@ class UEReadHelper {
                     \x0F\x00\x00\x00StructProperty\x00\x0c\x00\x00\x00\x00\x00\x00\x00
                     \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x41\x4a\x90\x46\x62\x28\xaf\xc6\x80\x1a\x70\xc2
                     \x05\x00\x00\x00None
-
                     */
-
-                    /*
-
-                    00 00 00 00 00 00 00 00 09 00 00 00 52 6f 74 61 74 69 6f 6e 00 0f 00 00 00 53 74 72 75 63 74 50 72 6f 70
-                                                         R  o  t  a  t  i  o  n                 S  t  r  u  c  t  P  r  o  p
-
-                    65 72 74 79 00 10 00 00 00 00 00 00 00 05 00 00 00 51 75 61 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-                     e  r  t  y                                         Q  u  a  t                                          
-
-                    00 00 00 00 00 00 00 80 00 00 00 00 f3 04 35 bf f2 04 35 3f 0c 00 00 00 54 72 61 6e 73 6c 61 74 69 6f 6e
-                                                               5           5  ?              T  r  a  n  s  l  a  t  i  o  n
-
-                    00 0f 00 00 00 53 74 72 75 63 74 50 72 6f 70 65 72 74 79 00 0c 00 00 00 00 00 00 00 07 00 00 00 56 65 63
-                                    S  t  r  u  c  t  P  r  o  p  e  r  t  y                                         V  e  c
-
-                    74 6f 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41 4a 90 46 62 28 af c6 80 1a 70 c2 05   
-                     t  o  r                                                        A  J     F  b  (              p         
-
-                    */
-
-                    // weird vector values. scaled/rotated?
-
                     let t = this.getString(); //Rotation
                     this.pos += 0;
                     t = this.getString(); // StructProperty
