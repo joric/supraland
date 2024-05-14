@@ -376,6 +376,12 @@ function loadMap(mapId) {
               playerStart = [o.lat, o.lng, o.alt];
               playerMarker = L.marker([o.lat, o.lng], {zIndexOffset: 10000, draggable: true })
               .bindPopup()
+              .on('moveend', function(e) {
+                let marker = e.target;
+                let t = marker.getLatLng();
+                localData[mapId].playerPosition = [t.lat, t.lng, 0];
+                localStorage.setItem(localDataName, JSON.stringify(localData));
+              })
               .on('popupopen', function(e) {
                   let marker = e.target;
                   let t = marker.getLatLng();

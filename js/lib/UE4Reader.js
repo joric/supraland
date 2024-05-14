@@ -193,6 +193,68 @@ class UEReadHelper {
                     retVal.b = this.getFloat32();
                     retVal.a = this.getFloat32();
                     break;
+                  case "Transform":
+                    let p = this.pos;
+
+                    /*
+                    '\t\x00\x00\x00
+                    Rotation\x00\x0F\x00\x00\x00
+                    StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00
+                    Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€\x00\x00\x00\x00ó\x045¿ò\x045?\f\x00\x00\x00
+                    Translation\x00\x0F\x00\x00\x00
+                    StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00
+                    Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00AJ\x90Fb(¯Æ€\x1ApÂ\x05\x00\x00\x00
+                    None'
+                    */
+
+                    /*
+
+                    StructProperty\x00 \x10\x00\x00\x00 \x00\x00\x00\x00 \x05\x00\x00\x00
+
+                    Vector\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00AJ\x90Fb(¯Æ€\x1ApÂ\x05\x00\x00\x00
+                    */
+
+
+                    if (typeof require !== 'undefined' && require.main === module) {
+
+                      let t = this.getString(); //Rotation
+                      let value = 0;
+                      this.pos += 0;
+                      console.log('type', t, 'value', value);
+
+                      t = this.getString(); // StructProperty
+                      this.pos += 8;
+                      console.log('type', t, 'value', value);
+
+                      t = this.getString(); // Quat
+                      this.pos += 33;
+                      console.log('type', t, 'value', value);
+
+                      t = this.getString(); // Translation
+                      this.pos += 0;
+                      console.log('type', t, 'value', value);
+
+                      t = this.getString(); // StructProperty
+                      this.pos += 8;
+                      console.log('type', t, 'value', value);
+
+                      t = this.getString(); // Vector
+                      //this.pos += 0;
+
+                      let v = [];
+
+                      for (let i=0; i<8; i++) {
+                        v.push(this.getFloat32());
+                      }
+
+                      console.log('type', t, 'value', v);
+
+                    }
+
+                    this.pos = p - 8;
+                    retVal.value = this.getString64Custom(overlen);
+
+                    break;
       default:
         retVal.name = type;
         if( type.endsWith("Property") ) { 
@@ -257,7 +319,8 @@ window.loadSaveFile = function () {
 */
 
 if (typeof require !== 'undefined' && require.main === module) {
-  fname = 'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav'
+  //fname = 'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav'
+  fname = 'C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav'
   require('fs').readFile(fname, (err, buf) => {
     if (err) {
       console.log(err);
