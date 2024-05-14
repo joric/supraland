@@ -145,13 +145,6 @@ class UEReadHelper {
         break;
       case "StructProperty":
         let iType = this.getString();
-        /*
-        console.log('type',iType);
-        let p = this.pos;
-        let s = this.getString64Custom(100);
-        console.log(s);
-        this.pos = p;
-        */
         let iId = this.getGuid();
         tCheck = this.getInt8(); //if not=0 then something's wrong.  tbi
         retVal = this.getNestedValueByType(iType, overlen);
