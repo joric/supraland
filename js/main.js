@@ -40,6 +40,10 @@ window.onload = function(event) {
   loadMap();
 };
 
+function saveSettings() {
+  localStorage.setItem(localDataName, JSON.stringify(localData));
+}
+
 function loadMap() {
   localStorage.setItem('mapId', mapId);
 
@@ -50,6 +54,13 @@ function loadMap() {
     }
     if (!localData[id].markedItems) {
       localData[id].markedItems = {};
+    }
+    if (!localData[id].activeLayers) {
+      localData[id].activeLayers = {'closedChest':true, 'shop':true, 'collectable':true};
+      if (id=='sl') {
+        localData[id].activeLayers['pads']=true;
+        localData[id].activeLayers['pipes']=true;
+      }
     }
   }
 
@@ -123,11 +134,30 @@ function loadMap() {
     loadMap();
   });
 
+  function updateSearch() {
+    let searchLayers = [];
+    for (id of Object.keys(localData[mapId].markedItems)) {
+      searchLayers.push(layers[id]);
+    }
+    searchControl.setLayer(L.featureGroup(searchLayers));
+  }
+
   map.on('overlayadd', function(e) {
     resizeIcons();
     for (id of Object.keys(localData[mapId].markedItems)) {
       window.markItemFound(id);
     }
+    localData[mapId].activeLayers[e.layer.id] = true;
+    //console.log(localData[mapId].activeLayers);
+    //updateSearch();
+    saveSettings();
+  });
+
+  map.on('overlayremove', function(e) {
+    delete localData[mapId].activeLayers[e.layer.id];
+    //console.log(localData[mapId].activeLayers);
+    //updateSearch();
+    saveSettings();
   });
 
   map.on('zoomend', function(e) {
@@ -148,7 +178,13 @@ function loadMap() {
 
   if (mapId == 'sl') {
     for (const [id, title] of Object.entries({'pipes':'Pipes', 'pads':'Pads'})) {
-      var layer = L.tileLayer.canvas(tilesDir+'/'+id+'/{z}/{x}/{y}.png', layerOptions).addTo(map);
+      var layer = L.tileLayer.canvas(tilesDir+'/'+id+'/{z}/{x}/{y}.png', layerOptions);//.addTo(map);
+      layer.id = id;
+
+      if (localData[mapId].activeLayers[id]) {
+        layer.addTo(map);
+      }
+
       layerControl.addOverlay(layer, title);
     }
   }
@@ -242,7 +278,7 @@ function loadMap() {
   document.querySelector('.unmark-items').onclick = function(e) {
     if (confirm('Are you sure to unmark all items?')) {
       unmarkItems();
-      localStorage.setItem(localDataName, JSON.stringify(localData));
+      saveSettings();
     }
   }
 
@@ -391,7 +427,7 @@ function loadMap() {
                 let marker = e.target;
                 let t = marker.getLatLng();
                 localData[mapId].playerPosition = [t.lat, t.lng, 0];
-                localStorage.setItem(localDataName, JSON.stringify(localData));
+                saveSettings();
               })
               .on('popupopen', function(e) {
                   let marker = e.target;
@@ -422,11 +458,12 @@ function loadMap() {
     });
   }
 
-  searchLayers = [];
-
   function loadLayers() {
       playerMarker = null;
       filename = 'data/layers.csv';
+
+      let searchLayers = [];
+      let inactiveLayers = [];
 
       var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
         for (o of results.data) {
@@ -434,16 +471,20 @@ function loadMap() {
             continue;
           }
           let layerObj = L.layerGroup();
-          if (o.defaultActive) {
+          layerObj.id = o.id;
+
+          if (localData[mapId].activeLayers[o.id]) {
             layerObj.addTo(map);
+          } else {
+            inactiveLayers.push(layerObj);
           }
+
           layers[o.id] = layerObj;
           layerControl.addOverlay(layerObj, o.name);
 
           searchLayers.push(layerObj);
         }
 
-        //console.log(layers);
 
         searchControl = new L.Control.Search({
             //layer: L.featureGroup(searchLayers),
@@ -452,12 +493,17 @@ function loadMap() {
             marker: false, // no red circle
             initial: false, // search any substring
             firstTipSubmit: true,
-            layer: L.featureGroup( [ layers['closedChest'], layers['shop'], layers['collectable'] ]),
-
+            layer: L.featureGroup( searchLayers ),
         }).addTo(map);
+
+        for (layer of inactiveLayers) { layer.remove(); }
+
+        //console.log(layers);
 
         searchControl.on("search:locationfound", function (e) {
             if (e.layer._popup) e.layer.openPopup();
+            //console.log(e.target._leaflet_id);
+            //TODO: show layer by marker
         });
 
 
@@ -546,7 +592,7 @@ window.markItemFound = function (id, found=true, save=true) {
   }
 
   if (save) {
-    localStorage.setItem(localDataName, JSON.stringify(localData));
+    saveSettings();
   }
 }
 
@@ -637,7 +683,7 @@ window.loadSaveFile = function () {
     //alert('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
     console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
 
-    localStorage.setItem(localDataName, JSON.stringify(localData));
+    saveSettings();
 
     ready = true;
   };
