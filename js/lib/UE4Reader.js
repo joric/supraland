@@ -213,7 +213,7 @@ class UEReadHelper {
                     this.pos += 8;
 
                     t = this.getString(); // Quat
-                    this.pos += 17;
+                    this.pos += 17; // padding
                     retVal.rotation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32(), w: this.getFloat32()}
 
                     t = this.getString(); // Translation
@@ -223,7 +223,7 @@ class UEReadHelper {
                     this.pos += 8;
 
                     t = this.getString(); // Vector
-                    this.pos += 17;
+                    this.pos += 17; // padding
                     retVal.translation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32()}
 
                     this.pos = p - 8
