@@ -213,8 +213,9 @@ class UEReadHelper {
                     \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x41\x4a\x90\x46\x62\x28\xaf\xc6\x80\x1a\x70\xc2
                     \x05\x00\x00\x00None
                     */
-                    let t = this.getString(); //Rotation
+                    let t = this.getString(); // Rotation
                     this.pos += 0;
+
                     t = this.getString(); // StructProperty
                     this.pos += 8;
 
