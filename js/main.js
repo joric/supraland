@@ -421,13 +421,15 @@ function loadMap() {
 
             if (o.type == 'PlayerStart' && !playerMarker) {
               playerStart = [o.lat, o.lng, o.alt];
-              playerMarker = L.marker([o.lat, o.lng], {zIndexOffset: 10000, draggable: true })
+              playerMarker = L.marker([o.lat, o.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(o.lat)+', '+Math.round(o.lng) })
               .bindPopup()
               .on('moveend', function(e) {
                 let marker = e.target;
                 let t = marker.getLatLng();
                 localData[mapId].playerPosition = [t.lat, t.lng, 0];
                 saveSettings();
+                console.log(e);
+                e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
               })
               .on('popupopen', function(e) {
                   let marker = e.target;
