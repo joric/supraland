@@ -263,6 +263,12 @@ function loadMap() {
     }});
   }
 
+  function onContextMenu(e) {
+    let markerId = e.target.options.alt;
+    let found = localData[mapId].markedItems[markerId]==true;
+    markItemFound(markerId, !found);
+  }
+
   function onPopupOpen(e) {
     let x = e.popup._source._latlng.lng;
     let y = e.popup._source._latlng.lat;
@@ -342,6 +348,7 @@ function loadMap() {
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
+              .on('contextmenu',onContextMenu)
               ;
             }
 
@@ -351,6 +358,7 @@ function loadMap() {
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
+              .on('contextmenu',onContextMenu)
               ;
             }
 
@@ -396,6 +404,7 @@ function loadMap() {
             L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
+            .on('contextmenu',onContextMenu)
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
             ;
           }
