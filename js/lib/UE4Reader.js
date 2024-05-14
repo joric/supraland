@@ -209,51 +209,100 @@ class UEReadHelper {
 
                     /*
 
-                    StructProperty\x00 \x10\x00\x00\x00 \x00\x00\x00\x00 \x05\x00\x00\x00
+                    \x09\x00\x00\x00Rotation\x00
+                    \x0F\x00\x00\x00StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00
+                    \x05\x00\x00\x00Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x00\x00\x00\x00\xf3\x04\x35\xbf\xf2\x04\x35\x3f
+                    \x0c\x00\x00\x00Translation\x00
+                    \x0F\x00\x00\x00StructProperty\x00\x0c\x00\x00\x00\x00\x00\x00\x00
+                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x41\x4a\x90\x46\x62\x28\xaf\xc6\x80\x1a\x70\xc2
+                    \x05\x00\x00\x00None
 
-                    Vector\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00\x00\x00\x00 \x00AJ\x90Fb(¯Æ€\x1ApÂ\x05\x00\x00\x00
                     */
 
+                    /*
+
+                    00 00 00 00 00 00 00 00 09 00 00 00 52 6f 74 61 74 69 6f 6e 00 0f 00 00 00 53 74 72 75 63 74 50 72 6f 70
+                                                         R  o  t  a  t  i  o  n                 S  t  r  u  c  t  P  r  o  p
+
+                    65 72 74 79 00 10 00 00 00 00 00 00 00 05 00 00 00 51 75 61 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+                     e  r  t  y                                         Q  u  a  t                                          
+
+                    00 00 00 00 00 00 00 80 00 00 00 00 f3 04 35 bf f2 04 35 3f 0c 00 00 00 54 72 61 6e 73 6c 61 74 69 6f 6e
+                                                               5           5  ?              T  r  a  n  s  l  a  t  i  o  n
+
+                    00 0f 00 00 00 53 74 72 75 63 74 50 72 6f 70 65 72 74 79 00 0c 00 00 00 00 00 00 00 07 00 00 00 56 65 63
+                                    S  t  r  u  c  t  P  r  o  p  e  r  t  y                                         V  e  c
+
+                    74 6f 72 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 41 4a 90 46 62 28 af c6 80 1a 70 c2 05   
+                     t  o  r                                                        A  J     F  b  (              p         
+
+                    */
+
+                    // weird vector values. scaled/rotated?
 
                     if (typeof require !== 'undefined' && require.main === module) {
+                      let v = 0;
 
                       let t = this.getString(); //Rotation
-                      let value = 0;
                       this.pos += 0;
-                      console.log('type', t, 'value', value);
+                      console.log('type', t, 'value', v);
 
                       t = this.getString(); // StructProperty
                       this.pos += 8;
-                      console.log('type', t, 'value', value);
+                      console.log('type', t, 'value', v);
 
                       t = this.getString(); // Quat
                       this.pos += 33;
-                      console.log('type', t, 'value', value);
+                      console.log('type', t, 'value', v);
 
                       t = this.getString(); // Translation
                       this.pos += 0;
-                      console.log('type', t, 'value', value);
+                      console.log('type', t, 'value', v);
 
                       t = this.getString(); // StructProperty
                       this.pos += 8;
-                      console.log('type', t, 'value', value);
+                      console.log('type', t, 'value', v);
 
                       t = this.getString(); // Vector
                       //this.pos += 0;
 
-                      let v = [];
-
+                      v = [];
                       for (let i=0; i<8; i++) {
                         v.push(this.getFloat32());
                       }
 
                       console.log('type', t, 'value', v);
 
+/*
+                    this.pos = p - 8;
+
+                    let out = [];
+                    for (let i=0; i<overlen; i++) {
+                      out.push(this.getInt8());
                     }
 
-                    this.pos = p - 8;
+                    function b(byte) {
+                      return ( (byte & 0xFF).toString(16) ).padStart(2,'0') + ' '
+                    }
+
+                    function s(byte) {
+                      return (byte>32 && byte<128 ? (String.fromCharCode(byte) ).padStart(2,' ') : '  ') + ' '
+                    }
+
+
+                    console.log(Array.from(out, function(byte) {return b(byte) }).join(''));
+                    console.log(Array.from(out, function(byte) {return s(byte) }).join(''));
+*/
+
+                    this.pos = p - 8
                     retVal.value = this.getString64Custom(overlen);
 
+
+                    } // end of node.js
+                    else {
+                      this.pos = p - 8;
+                      retVal.value = this.getString64Custom(overlen);
+                    }
                     break;
       default:
         retVal.name = type;
