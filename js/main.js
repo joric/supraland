@@ -37,10 +37,10 @@ var maps = {
 
 window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || localStorage.getItem('mapId') || 'sl';
-  loadMap(mapId);
+  loadMap();
 };
 
-function loadMap(mapId) {
+function loadMap() {
   localStorage.setItem('mapId', mapId);
 
   for (id in maps) {
@@ -118,7 +118,9 @@ function loadMap(mapId) {
     location.hash = '';
     map.off();
     map.remove();
-    loadMap(e.layer.mapId);
+    playerMarker = null;
+    mapId = e.layer.mapId;
+    loadMap();
   });
 
   map.on('overlayadd', function(e) {
@@ -399,6 +401,13 @@ function loadMap(mapId) {
           }
         } // end of loop
 
+        let p = localData[mapId].playerPosition;
+        if (p && playerMarker) {
+          var latlng = new L.LatLng(p[0], p[1]);
+          //console.log('setting player position from storage', mapId, latlng);
+          playerMarker.setLatLng(latlng);
+        }
+
         resizeIcons();
     });
   }
@@ -473,7 +482,6 @@ function loadMap(mapId) {
       }
     }
   });
-
 } // end of loadmap
 
 function getIconSize(zoom) {
@@ -539,11 +547,6 @@ function markItems() {
       div.classList.add('found');
     });
   }
-
-  let p = localData[mapId].playerPosition;
-  if (p && playerMarker) {
-    playerMarker.setLatLng(new L.LatLng(p[0], p[1]));
-  }
 }
 
 function unmarkItems() {
@@ -605,12 +608,16 @@ window.loadSaveFile = function () {
 
     for (o of loadedSave.Properties) {
       if (o.name == 'Player Position' && playerMarker) {
-        if (o.value.type=='Vector') {
-          playerMarker.setLatLng(new L.LatLng(o.value.y, o.value.x));
-          localData[mapId].playerPosition = [o.value.y, o.value.x, o.value.z];
-        } else if (o.value.type=='Transform' && o.value.translation) { // SIU
-          playerMarker.setLatLng(new L.LatLng(o.value.translation.y, o.value.translation.x));
-          localData[mapId].playerPosition = [o.value.translation.y, o.value.translation.x, o.value.translation.z];
+        let c = [0,0,0]
+        let p = o.value;
+        if (o.value.type=='Vector' || o.value.type=='Transform') {
+          if (o.value.translation) {
+            p = o.value.translation;
+          }
+          var latlng = new L.LatLng(p.y, p.x);
+          //console.log('setting player position from file', mapId, latlng);
+          playerMarker.setLatLng(latlng);
+          localData[mapId].playerPosition = [p.y, p.x, p.z];
         } else {
           console.log('cannot load player position from', JSON.stringify(o));
         }
