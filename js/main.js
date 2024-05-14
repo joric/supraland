@@ -267,6 +267,7 @@ function loadMap() {
     let markerId = e.target.options.alt;
     let found = localData[mapId].markedItems[markerId]==true;
     markItemFound(markerId, !found);
+    e.target.closePopup();
   }
 
   function onPopupOpen(e) {
