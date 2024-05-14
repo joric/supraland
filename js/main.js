@@ -620,8 +620,8 @@ window.loadSaveFile = function () {
         let c = [0,0,0]
         let p = o.value;
         if (o.value.type=='Vector' || o.value.type=='Transform') {
-          if (o.value.Translation) {
-            p = o.value.Translation;
+          if (o.value.translation) {
+            p = o.value.translation;
           }
           var latlng = new L.LatLng(p.y, p.x);
           //console.log('setting player position from file', mapId, latlng);
