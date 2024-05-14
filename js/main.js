@@ -372,17 +372,17 @@ function loadMap(mapId) {
               layer = 'misc';
             }
 
-            if (o.type == 'PlayerStart') {
+            if (o.type == 'PlayerStart' && !playerMarker) {
               playerStart = [o.lat, o.lng, o.alt];
               playerMarker = L.marker([o.lat, o.lng], {zIndexOffset: 10000, draggable: true })
-                  .bindPopup()
-                  .on('popupopen', function(e) {
-                      let marker = e.target;
-                      let t = marker.getLatLng();
-                      t = {name:'playerPosition', lat:Math.round(t.lat), lng:Math.round(t.lng)};
-                      marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
-                      marker.openPopup();
-                  }).addTo(map)
+              .bindPopup()
+              .on('popupopen', function(e) {
+                  let marker = e.target;
+                  let t = marker.getLatLng();
+                  t = {name:'playerPosition', lat:Math.round(t.lat), lng:Math.round(t.lng)};
+                  marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
+                  marker.openPopup();
+              }).addTo(map)
             }
 
             L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
@@ -400,6 +400,7 @@ function loadMap(mapId) {
   searchLayers = [];
 
   function loadLayers() {
+      playerMarker = null;
       filename = 'data/layers.csv';
 
       var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
