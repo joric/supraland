@@ -604,10 +604,13 @@ window.loadSaveFile = function () {
     }
 
     for (o of loadedSave.Properties) {
-      if (o.name == 'Player Position') {
-        if (o.value.type=='Vector' && playerMarker) {
+      if (o.name == 'Player Position' && playerMarker) {
+        if (o.value.type=='Vector') {
           playerMarker.setLatLng(new L.LatLng(o.value.y, o.value.x));
           localData[mapId].playerPosition = [o.value.y, o.value.x, o.value.z];
+        } else if (o.value.type=='Transform' && o.value.translation) { // SIU
+          playerMarker.setLatLng(new L.LatLng(o.value.translation.y, o.value.translation.x));
+          localData[mapId].playerPosition = [o.value.translation.y, o.value.translation.x, o.value.translation.z];
         } else {
           console.log('cannot load player position from', JSON.stringify(o));
         }

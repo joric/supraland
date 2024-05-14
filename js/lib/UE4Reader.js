@@ -1,5 +1,7 @@
 ///////////////////////////////////////
 //// UE4 Reader
+//// (c) 2022 LewisPattJr (initial version, https://github.com/SupraGamesCommunity/map-sl/commit/5c2daddbf)
+//// (c) 2024 joric/github (transform node)
 
 class UESaveObject {
   constructor(binstr) {
@@ -143,6 +145,13 @@ class UEReadHelper {
         break;
       case "StructProperty":
         let iType = this.getString();
+        /*
+        console.log('type',iType);
+        let p = this.pos;
+        let s = this.getString64Custom(100);
+        console.log(s);
+        this.pos = p;
+        */
         let iId = this.getGuid();
         tCheck = this.getInt8(); //if not=0 then something's wrong.  tbi
         retVal = this.getNestedValueByType(iType, overlen);
@@ -240,69 +249,27 @@ class UEReadHelper {
 
                     // weird vector values. scaled/rotated?
 
-                    if (typeof require !== 'undefined' && require.main === module) {
-                      let v = 0;
+                    let t = this.getString(); //Rotation
+                    this.pos += 0;
+                    t = this.getString(); // StructProperty
+                    this.pos += 8;
 
-                      let t = this.getString(); //Rotation
-                      this.pos += 0;
-                      console.log('type', t, 'value', v);
+                    t = this.getString(); // Quat
+                    this.pos += 17;
+                    retVal.rotation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32(), w: this.getFloat32()}
 
-                      t = this.getString(); // StructProperty
-                      this.pos += 8;
-                      console.log('type', t, 'value', v);
+                    t = this.getString(); // Translation
+                    this.pos += 0;
 
-                      t = this.getString(); // Quat
-                      this.pos += 33;
-                      console.log('type', t, 'value', v);
+                    t = this.getString(); // StructProperty
+                    this.pos += 8;
 
-                      t = this.getString(); // Translation
-                      this.pos += 0;
-                      console.log('type', t, 'value', v);
-
-                      t = this.getString(); // StructProperty
-                      this.pos += 8;
-                      console.log('type', t, 'value', v);
-
-                      t = this.getString(); // Vector
-                      //this.pos += 0;
-
-                      v = [];
-                      for (let i=0; i<8; i++) {
-                        v.push(this.getFloat32());
-                      }
-
-                      console.log('type', t, 'value', v);
-
-/*
-                    this.pos = p - 8;
-
-                    let out = [];
-                    for (let i=0; i<overlen; i++) {
-                      out.push(this.getInt8());
-                    }
-
-                    function b(byte) {
-                      return ( (byte & 0xFF).toString(16) ).padStart(2,'0') + ' '
-                    }
-
-                    function s(byte) {
-                      return (byte>32 && byte<128 ? (String.fromCharCode(byte) ).padStart(2,' ') : '  ') + ' '
-                    }
-
-
-                    console.log(Array.from(out, function(byte) {return b(byte) }).join(''));
-                    console.log(Array.from(out, function(byte) {return s(byte) }).join(''));
-*/
+                    t = this.getString(); // Vector
+                    this.pos += 17;
+                    retVal.translation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32()}
 
                     this.pos = p - 8
-                    retVal.value = this.getString64Custom(overlen);
-
-
-                    } // end of node.js
-                    else {
-                      this.pos = p - 8;
-                      retVal.value = this.getString64Custom(overlen);
-                    }
+                    this.getString64Custom(overlen);
                     break;
       default:
         retVal.name = type;
@@ -368,8 +335,8 @@ window.loadSaveFile = function () {
 */
 
 if (typeof require !== 'undefined' && require.main === module) {
-  //fname = 'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav'
-  fname = 'C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav'
+  fname = 'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav';
+  fname = 'C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav';
   require('fs').readFile(fname, (err, buf) => {
     if (err) {
       console.log(err);
