@@ -17,6 +17,7 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 let startPitch = 45;
 let startZoom = 3;
 let heightFactor = 0.25;
+let drawAltitude = false;
 let map = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
@@ -63,33 +64,49 @@ let maps = {
   },
 };
 
-function markerSymbol(o, shadow=false) {
+function markerSymbol1(o, shadow=false) {
   if (shadow) {
     return [
-    /*
       {
         markerWidth: 32,
         markerHeight: 32,
         markerFill: '#000',
-        //markerType: 'pin',
         markerType: 'ellipse',
-      },
-      */
+      }
     ];
   }
   return [
-    /*
+    {
+      markerFile: 'img/'+icon+'.png',
+      markerWidth  : 32,
+      markerHeight : 32,
+    },
+  ];
+}
+
+function markerSymbol(o, shadow=false) {
+  if (shadow) {
+    return [
+      {
+        markerWidth: 75,
+        markerHeight: 75,
+        markerFill: '#000',
+        markerType: 'pin',
+      },
+    ];
+  }
+  return [
     {
       markerWidth: 75,
       markerHeight: 75,
       markerFill: colors[icon],
       markerType: 'pin',
-    },*/
+    },
     {
       markerFile: 'img/'+icon+'.png',
       markerWidth  : 32,
       markerHeight : 32,
-      //markerDy: -22,
+      markerDy: -22,
     },
   ];
 }
@@ -155,11 +172,16 @@ function loadMap(mapId) {
   let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: true,
     sortByDistanceToCamera: true,
-    drawAltitude : {
-      lineWidth : 2,
-      lineColor : '#888',
-    },
   }).addTo(map);
+
+  if (drawAltitude) {
+    vectorLayer.setOptions({
+      drawAltitude : {
+        lineWidth : 2,
+        lineColor : '#888',
+      },
+    })
+  }
 
   fetch('data/markers.'+mapId+'.json')
     .then((response) => response.json())
