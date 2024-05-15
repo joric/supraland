@@ -3,7 +3,7 @@
 * Live map: https://joric.github.io/supraland
 * Experimental 3d map: https://joric.github.io/supraland/3d
 
-I did not do much, all credit goes to David Münnich and Supraland Games Community.
+I didn't do much, all credit goes to [David Münnich](http://www.david-m.org) and [Supra Games Community](https://github.com/supragamescommunity).
 
 ## Features
 
