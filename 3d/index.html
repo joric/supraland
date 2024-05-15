@@ -230,16 +230,29 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
   loadMap(mapId);
 
-  let keys = {};
+  let x = y = p = b = 0;
+  let step = 25;
+  let opt = {duration: 1};
+
+  function update(timestep) {
+    if (!map.isAnimating()) {
+      if (x || y) map.panBy([x*step, y*step], opt);
+      //if (p) map.setPitch(map.getPitch()+p*5);
+      if (b) map.setBearing(map.getBearing()+b*step/10);
+    }
+    window.requestAnimationFrame(update);
+  }
 
   window.addEventListener('keyup', (e) => {
-    keys[e.code] = false;
+    if (e.code=='KeyW') y = 0;
+    if (e.code=='KeyA') x = 0;
+    if (e.code=='KeyS') y = 0;
+    if (e.code=='KeyD') x = 0;
+    if (e.code=='KeyQ') b = 0;
+    if (e.code=='KeyE') b = 0;
   });
 
   window.addEventListener("keydown",function (e) {
-    //console.log(e);
-    keys[e.code] = true;
-
     if (e.code=='KeyF') {
       if (e.ctrlKey) {
         //searchControl.expand(true);
@@ -255,24 +268,15 @@ window.onload = function(event) {
       }
     }
 
-    let x = y = p = b = 0;
-    let step = 50;
-    let opt = {duration: 1};
-
-    if (keys['KeyW']) y = 1;
-    if (keys['KeyA']) x = 1;
-    if (keys['KeyS']) y = -1;
-    if (keys['KeyD']) x = -1;
-    if (keys['KeyQ']) b = 1;
-    if (keys['KeyE']) b = -1;
-
-    if (!map.isAnimating()) {
-      if (x || y) map.panBy([x*step, y*step], opt);
-      //if (p) map.setPitch(map.getPitch()+p*5);
-      if (b) map.setBearing(map.getBearing()+b*step/10);
-    }
-
+    if (e.code=='KeyW') y = 1;
+    if (e.code=='KeyA') x = 1;
+    if (e.code=='KeyS') y = -1;
+    if (e.code=='KeyD') x = -1;
+    if (e.code=='KeyQ') b = 1;
+    if (e.code=='KeyE') b = -1;
   });
+
+  window.requestAnimationFrame(update);
 };
 
 </script>
