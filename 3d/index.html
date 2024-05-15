@@ -23,6 +23,7 @@ let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766'
 let lineColor = '#888';
 let icons = {'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap',
   'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano'};
+let colors={};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -66,7 +67,7 @@ function markerSymbol(o, shadow=false) {
   let icon = icons[o.type];
   let i = Object.keys(icons).indexOf(o.type);
   let n = Object.keys(icons).length;
-  let color = markerColors[ i % n ];
+  let color = colors[icon];//markerColors[ i % n ];
 
   return [
     {
@@ -236,7 +237,26 @@ function loadMap(mapId) {
 
 window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
-  loadMap(mapId);
+
+  const ctx = document.createElement('canvas').getContext('2d',{ willReadFrequently: true });
+  function getDominantColor(imageObject) {
+    ctx.drawImage(imageObject, 0, 0, 1, 1);
+    const i = ctx.getImageData(0, 0, 1, 1).data;
+    return("#"+((1<<24)+(i[0]<<16)+(i[1]<<8)+i[2]).toString(16).slice(1));
+  }
+
+  for (key of Object.keys(icons)) {
+    const image = new Image();
+    image.id = icons[key];
+    image.onload = function() {
+      ctx.drawImage(image,0,0,100,100);
+      colors[image.id] = getDominantColor(image);
+      if (Object.keys(icons).length == Object.keys(colors).length) {
+        loadMap(mapId);
+      }
+    };
+    image.src = 'img/'+icons[key]+'.png';
+  }
 
   let keys = {
     KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],
