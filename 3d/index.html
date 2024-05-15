@@ -232,7 +232,7 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
   loadMap(mapId);
 
-  let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1],KeyR:['z',1],KeyF:['z',-1]};
+  let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1],KeyR:['z',1],KeyF:['z',-1],KeyZ:['p',-1],KeyC:['p',1]};
   let flags = {};
 
   function update(timestep) {
@@ -247,6 +247,7 @@ window.onload = function(event) {
       }
       (v.x || v.y) && map.panBy([(v.x||0)*step, (v.y||0)*step], {duration: 1});
       v.b && map.setBearing(map.getBearing()+v.b*step/10);
+      v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
       v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     }
     window.requestAnimationFrame(update);
