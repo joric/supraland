@@ -14,7 +14,7 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <script>
 
 let startPitch = 45;
-let startZoom = 2;
+let startZoom = 4;
 let heightFactor = 0.25;
 let map = null;
 
@@ -214,7 +214,7 @@ function loadMap(mapId) {
 
   document.querySelector('.maptalks-compass').onclick = function(e) {
     if (map.getBearing()==0) {
-      map.animateTo({ pitch: map.getPitch()==0 ? 60 : 0 });
+      map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
     }
   };
 
@@ -229,8 +229,51 @@ function loadMap(mapId) {
 window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
   loadMap(mapId);
-};
 
+  let keys = {};
+
+  window.addEventListener('keyup', (e) => {
+    keys[e.code] = false;
+  });
+
+  window.addEventListener("keydown",function (e) {
+    //console.log(e);
+    keys[e.code] = true;
+
+    if (e.code=='KeyF') {
+      if (e.ctrlKey) {
+        //searchControl.expand(true);
+        //e.preventDefault();
+      } else if (!e.target.id.startsWith('searchtext')) {
+        //map.toggleFullscreen();
+      }
+    } else if(e.code=='KeyR') {
+      if (map.getBearing()!=0) {
+        map.animateTo({ bearing: 0 });
+      } else {
+        map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
+      }
+    }
+
+    let x = y = p = b = 0;
+    let step = 50;
+    let opt = {duration: 1};
+
+    if (keys['KeyW']) y = 1;
+    if (keys['KeyA']) x = 1;
+    if (keys['KeyS']) y = -1;
+    if (keys['KeyD']) x = -1;
+    if (keys['KeyQ']) b = 1;
+    if (keys['KeyE']) b = -1;
+
+    if (!map.isAnimating()) {
+      if (x || y) map.panBy([x*step, y*step], opt);
+      //if (p) map.setPitch(map.getPitch()+p*5);
+      if (b) map.setBearing(map.getBearing()+b*step/10);
+    }
+
+  });
+};
 
 </script>
 </body>
