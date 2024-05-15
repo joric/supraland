@@ -25,7 +25,15 @@ let colors = {};
 let items = {
   'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap',
   'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
-  'Coin_C':'coin'
+  //'Coin_C':'coin'
+};
+
+let bindings = {
+  KeyA:['x',+1],KeyD:['x',-1],
+  KeyW:['y',+1],KeyS:['y',-1],
+  KeyQ:['b',+1],KeyE:['b',-1],
+  KeyT:['z',+1],KeyG:['z',-1],
+  KeyZ:['p',+1],KeyX:['p',-1],
 };
 
 let maps = {
@@ -58,32 +66,30 @@ let maps = {
 function markerSymbol(o, shadow=false) {
   if (shadow) {
     return [
+    /*
       {
-        markerWidth: 75,
-        markerHeight: 75,
+        markerWidth: 32,
+        markerHeight: 32,
         markerFill: '#000',
-        markerType: 'pin',//'ellipse',
+        //markerType: 'pin',
+        markerType: 'ellipse',
       },
+      */
     ];
   }
-
-  let icon = items[o.type];
-  let i = Object.keys(items).indexOf(o.type);
-  let n = Object.keys(items).length;
-  let color = colors[icon];//markerColors[ i % n ];
-
   return [
+    /*
     {
       markerWidth: 75,
       markerHeight: 75,
-      markerFill: color,
+      markerFill: colors[icon],
       markerType: 'pin',
-    },
+    },*/
     {
       markerFile: 'img/'+icon+'.png',
       markerWidth  : 32,
       markerHeight : 32,
-      markerDy: -22,
+      //markerDy: -22,
     },
   ];
 }
@@ -149,12 +155,10 @@ function loadMap(mapId) {
   let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: true,
     sortByDistanceToCamera: true,
-    /*
     drawAltitude : {
-      lineWidth : 1.5,
-      lineColor : '#ccc',
+      lineWidth : 2,
+      lineColor : '#888',
     },
-    */
   }).addTo(map);
 
   fetch('data/markers.'+mapId+'.json')
@@ -264,14 +268,6 @@ window.onload = function(event) {
     image.src = 'img/'+items[key]+'.png';
   }
 
-  let bindings = {
-    KeyA:['x',+1],KeyD:['x',-1],
-    KeyW:['y',+1],KeyS:['y',-1],
-    KeyQ:['b',+1],KeyE:['b',-1],
-    KeyR:['z',+1],KeyF:['z',-1],
-    KeyT:['p',+1],KeyG:['p',-1],
-  };
-
   let flags = {};
 
   function update(timestep) {
@@ -302,7 +298,7 @@ window.onload = function(event) {
       } else if (!e.target.id.startsWith('searchtext')) {
         //map.toggleFullscreen();
       }
-    } else if(e.code=='KeyX') {
+    } else if(e.code=='KeyR') {
       if (map.getBearing()!=0) {
         map.animateTo({ bearing: 0 });
       } else {
