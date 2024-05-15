@@ -204,6 +204,7 @@ function loadMap(mapId) {
             content   : JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'),
             autoPan: true,
             autoCloseOn : 'click',
+            dy: 22,
           });
 
           new maptalks.Marker([o.lng, o.lat],{
@@ -256,7 +257,7 @@ function loadMap(mapId) {
     }
   };
 
-  //document.querySelector('.maptalks-compass').title = 'Click to reset (key X)';
+  //document.querySelector('.maptalks-compass').title = 'Click to reset (key R)';
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
