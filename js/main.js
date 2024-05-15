@@ -421,14 +421,17 @@ function loadMap() {
 
             if (o.type == 'PlayerStart' && !playerMarker) {
               playerStart = [o.lat, o.lng, o.alt];
-              playerMarker = L.marker([o.lat, o.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(o.lat)+', '+Math.round(o.lng) })
+              let t = new L.LatLng(o.lat, o.lng);
+              if (p = localData[mapId].playerPosition) {
+                t = new L.LatLng(p[0], p[1]);
+              }
+              playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng) })
               .bindPopup()
               .on('moveend', function(e) {
                 let marker = e.target;
                 let t = marker.getLatLng();
                 localData[mapId].playerPosition = [t.lat, t.lng, 0];
                 saveSettings();
-                console.log(e);
                 e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
               })
               .on('popupopen', function(e) {
@@ -448,14 +451,6 @@ function loadMap() {
             ;
           }
         } // end of loop
-
-        let p = localData[mapId].playerPosition;
-        if (p && playerMarker) {
-          var latlng = new L.LatLng(p[0], p[1]);
-          //console.log('setting player position from storage', mapId, latlng);
-          playerMarker.setLatLng(latlng);
-        }
-
         resizeIcons();
     });
   }

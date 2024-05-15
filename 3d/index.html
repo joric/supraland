@@ -21,21 +21,12 @@ let map = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
-let icons = {
+let colors = {};
+let items = {
   'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap',
   'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
-  //'Coin_C':'coin'
+  'Coin_C':'coin'
 };
-
-let keys = {
-  KeyA:['x',+1],KeyD:['x',-1],
-  KeyS:['y',-1],KeyW:['y',+1],
-  KeyQ:['b',+1],KeyE:['b',-1],
-  KeyR:['z',+1],KeyF:['z',-1],
-  KeyZ:['p',-1],KeyC:['p',+1]
-};
-
-let colors={};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -76,9 +67,9 @@ function markerSymbol(o, shadow=false) {
     ];
   }
 
-  let icon = icons[o.type];
-  let i = Object.keys(icons).indexOf(o.type);
-  let n = Object.keys(icons).length;
+  let icon = items[o.type];
+  let i = Object.keys(items).indexOf(o.type);
+  let n = Object.keys(items).length;
   let color = colors[icon];//markerColors[ i % n ];
 
   return [
@@ -173,7 +164,7 @@ function loadMap(mapId) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
         }
-        if (icon = icons[o.type]) {
+        if (icon = items[o.type]) {
           var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
             id: o.area+':'+o.name,
             properties: {name: o.name},
@@ -239,7 +230,7 @@ function loadMap(mapId) {
     }
   };
 
-  document.querySelector('.maptalks-compass').title = 'Click to reset (key X)';
+  //document.querySelector('.maptalks-compass').title = 'Click to reset (key X)';
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
@@ -260,27 +251,35 @@ window.onload = function(event) {
     return "#"+((1<<24)+(c[0]<<16)+(c[1]<<8)+c[2]).toString(16).slice(1);
   }
 
-  for (key of Object.keys(icons)) {
+  for (key of Object.keys(items)) {
     const image = new Image();
-    image.id = icons[key];
+    image.id = items[key];
     image.onload = function() {
       ctx.drawImage(image,0,0,100,100);
       colors[image.id] = getDominantColor(image, 1.5);
-      if (Object.keys(icons).length == Object.keys(colors).length) {
+      if (Object.keys(items).length == Object.keys(colors).length) {
         loadMap(mapId);
       }
     };
-    image.src = 'img/'+icons[key]+'.png';
+    image.src = 'img/'+items[key]+'.png';
   }
+
+  let bindings = {
+    KeyA:['x',+1],KeyD:['x',-1],
+    KeyW:['y',+1],KeyS:['y',-1],
+    KeyQ:['b',+1],KeyE:['b',-1],
+    KeyR:['z',+1],KeyF:['z',-1],
+    KeyT:['p',+1],KeyG:['p',-1],
+  };
 
   let flags = {};
 
   function update(timestep) {
     let step = 25;
     let v = {};
-    for (key of Object.keys(keys)) {
+    for (key of Object.keys(bindings)) {
       if (flags[key]) {
-        let [dir, step] = keys[key];
+        let [dir, step] = bindings[key];
         v[dir] = (v[dir]||0) + step;
       }
     }
@@ -309,7 +308,7 @@ window.onload = function(event) {
       } else {
         map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
       }
-    } else if(e.code=='KeyV') {
+    } else if(e.code=='KeyC') {
       map.panTo(center);
     }
     flags[e.code] = true;
