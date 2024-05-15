@@ -230,26 +230,24 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
   loadMap(mapId);
 
-  let x = y = p = b = 0;
-  let step = 25;
-  let opt = {duration: 1};
+  let move = {};
+  let keys = {'KeyW':['y',1],'KeyA':['x',1],'KeyS':['y',-1],'KeyD':['x',-1],'KeyQ':['b',1],'KeyE':['b',-1]};
 
   function update(timestep) {
+    let step = 25;
     if (!map.isAnimating()) {
-      if (x || y) map.panBy([x*step, y*step], opt);
-      //if (p) map.setPitch(map.getPitch()+p*5);
-      if (b) map.setBearing(map.getBearing()+b*step/10);
+      (move.x || move.y) && map.panBy([(move.x||0)*step, (move.y||0)*step], {duration: 1});
+      move.b && map.setBearing(map.getBearing()+move.b*step/10);
     }
     window.requestAnimationFrame(update);
   }
 
   window.addEventListener('keyup', (e) => {
-    if (e.code=='KeyW') y = 0;
-    if (e.code=='KeyA') x = 0;
-    if (e.code=='KeyS') y = 0;
-    if (e.code=='KeyD') x = 0;
-    if (e.code=='KeyQ') b = 0;
-    if (e.code=='KeyE') b = 0;
+    for (key of Object.keys(keys)) {
+      if (t = keys[e.code]) {
+        move[t[0]] = 0;
+      }
+    }
   });
 
   window.addEventListener("keydown",function (e) {
@@ -267,13 +265,9 @@ window.onload = function(event) {
         map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
       }
     }
-
-    if (e.code=='KeyW') y = 1;
-    if (e.code=='KeyA') x = 1;
-    if (e.code=='KeyS') y = -1;
-    if (e.code=='KeyD') x = -1;
-    if (e.code=='KeyQ') b = 1;
-    if (e.code=='KeyE') b = -1;
+    if (t=keys[e.code]) {
+      move[t[0]] = t[1];
+    }
   });
 
   window.requestAnimationFrame(update);
