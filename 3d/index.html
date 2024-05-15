@@ -218,6 +218,8 @@ function loadMap(mapId) {
     }
   };
 
+  document.querySelector('.maptalks-compass').title = 'Click to change pitch (key X)';
+
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
       div.style.background = '#6a97d9';
@@ -227,26 +229,25 @@ function loadMap(mapId) {
 }
 
 window.onload = function(event) {
-  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
+  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
   loadMap(mapId);
 
-  let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1]};
+  let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1],KeyR:['z',1],KeyF:['z',-1]};
   let flags = {};
 
   function update(timestep) {
     let step = 25;
     if (!map.isAnimating()) {
       let v = {};
-
       for (key of Object.keys(keys)) {
         if (flags[key]) {
           let [dir, step] = keys[key];
           v[dir] = (v[dir]||0) + step;
         }
       }
-
       (v.x || v.y) && map.panBy([(v.x||0)*step, (v.y||0)*step], {duration: 1});
       v.b && map.setBearing(map.getBearing()+v.b*step/10);
+      v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     }
     window.requestAnimationFrame(update);
   }
@@ -263,7 +264,7 @@ window.onload = function(event) {
       } else if (!e.target.id.startsWith('searchtext')) {
         //map.toggleFullscreen();
       }
-    } else if(e.code=='KeyR') {
+    } else if(e.code=='KeyX') {
       if (map.getBearing()!=0) {
         map.animateTo({ bearing: 0 });
       } else {
