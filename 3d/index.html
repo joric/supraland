@@ -21,8 +21,20 @@ let map = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
-let icons = {'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap',
-  'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano'};
+let icons = {
+  'Chest_C':'chest','BP_EngagementCup_Base_C':'trophy','Bones_C':'bones', 'Scrap_C':'scrap',
+  'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
+  //'Coin_C':'coin'
+};
+
+let keys = {
+  KeyA:['x',+1],KeyD:['x',-1],
+  KeyS:['y',-1],KeyW:['y',+1],
+  KeyQ:['b',+1],KeyE:['b',-1],
+  KeyR:['z',+1],KeyF:['z',-1],
+  KeyZ:['p',-1],KeyC:['p',+1]
+};
+
 let colors={};
 
 let maps = {
@@ -127,11 +139,13 @@ function loadMap(mapId) {
     seamlessZoom: true,
     doubleClickZoom: true,
     zoomControl: {
+      //position  : 'bottom-right',
       position  : 'top-right',
       zoomLevel : false,
     },
     compassControl: {
-      position: 'bottom-right',
+      //position: {right:20, bottom: 90},
+      position  : 'bottom-right',
     },
   });
 
@@ -225,7 +239,7 @@ function loadMap(mapId) {
     }
   };
 
-  document.querySelector('.maptalks-compass').title = 'Click to reset (key R)';
+  document.querySelector('.maptalks-compass').title = 'Click to reset (key X)';
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
@@ -239,10 +253,11 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
 
   const ctx = document.createElement('canvas').getContext('2d',{ willReadFrequently: true });
-  function getDominantColor(imageObject) {
+  function getDominantColor(imageObject, amp) {
     ctx.drawImage(imageObject, 0, 0, 1, 1);
-    const i = ctx.getImageData(0, 0, 1, 1).data;
-    return("#"+((1<<24)+(i[0]<<16)+(i[1]<<8)+i[2]).toString(16).slice(1));
+    const c = ctx.getImageData(0, 0, 1, 1).data;
+    for (let i=0; i<3; i++) c[i] = Math.round(Math.min(255,c[i]*amp));
+    return "#"+((1<<24)+(c[0]<<16)+(c[1]<<8)+c[2]).toString(16).slice(1);
   }
 
   for (key of Object.keys(icons)) {
@@ -250,7 +265,7 @@ window.onload = function(event) {
     image.id = icons[key];
     image.onload = function() {
       ctx.drawImage(image,0,0,100,100);
-      colors[image.id] = getDominantColor(image);
+      colors[image.id] = getDominantColor(image, 1.5);
       if (Object.keys(icons).length == Object.keys(colors).length) {
         loadMap(mapId);
       }
@@ -258,29 +273,21 @@ window.onload = function(event) {
     image.src = 'img/'+icons[key]+'.png';
   }
 
-  let keys = {
-    KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],
-    KeyQ:['b',1],KeyE:['b',-1],
-    KeyT:['z',1],KeyG:['z',-1],
-    KeyZ:['p',-1],KeyX:['p',1]
-  };
   let flags = {};
 
   function update(timestep) {
     let step = 25;
-    if (!map.isAnimating()) {
-      let v = {};
-      for (key of Object.keys(keys)) {
-        if (flags[key]) {
-          let [dir, step] = keys[key];
-          v[dir] = (v[dir]||0) + step;
-        }
+    let v = {};
+    for (key of Object.keys(keys)) {
+      if (flags[key]) {
+        let [dir, step] = keys[key];
+        v[dir] = (v[dir]||0) + step;
       }
-      (v.x || v.y) && map.panBy([(v.x||0)*step, (v.y||0)*step], {duration: 1});
-      v.b && map.setBearing(map.getBearing()+v.b*step/10);
-      v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
-      v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     }
+    (v.x || v.y) && map.panBy([(v.x||0)*step, (v.y||0)*step], {duration: 1});
+    v.b && map.setBearing(map.getBearing()+v.b*step/10);
+    v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
+    v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     window.requestAnimationFrame(update);
   }
 
@@ -296,13 +303,13 @@ window.onload = function(event) {
       } else if (!e.target.id.startsWith('searchtext')) {
         //map.toggleFullscreen();
       }
-    } else if(e.code=='KeyR') {
+    } else if(e.code=='KeyX') {
       if (map.getBearing()!=0) {
         map.animateTo({ bearing: 0 });
       } else {
         map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
       }
-    } else if(e.code=='KeyC') {
+    } else if(e.code=='KeyV') {
       map.panTo(center);
     }
     flags[e.code] = true;
