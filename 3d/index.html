@@ -230,24 +230,29 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'siu';
   loadMap(mapId);
 
-  let move = {};
   let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1]};
+  let flags = {};
 
   function update(timestep) {
     let step = 25;
     if (!map.isAnimating()) {
-      (move.x || move.y) && map.panBy([(move.x||0)*step, (move.y||0)*step], {duration: 1});
-      move.b && map.setBearing(map.getBearing()+move.b*step/10);
+      let v = {};
+
+      for (key of Object.keys(keys)) {
+        if (flags[key]) {
+          let [dir, step] = keys[key];
+          v[dir] = (v[dir]||0) + step;
+        }
+      }
+
+      (v.x || v.y) && map.panBy([(v.x||0)*step, (v.y||0)*step], {duration: 1});
+      v.b && map.setBearing(map.getBearing()+v.b*step/10);
     }
     window.requestAnimationFrame(update);
   }
 
   window.addEventListener('keyup', (e) => {
-    for (key of Object.keys(keys)) {
-      if (t = keys[e.code]) {
-        move[t[0]] = 0;
-      }
-    }
+    delete flags[e.code];
   });
 
   window.addEventListener("keydown",function (e) {
@@ -265,9 +270,7 @@ window.onload = function(event) {
         map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
       }
     }
-    if (t=keys[e.code]) {
-      move[t[0]] = t[1];
-    }
+    flags[e.code] = true;
   });
 
   window.requestAnimationFrame(update);
