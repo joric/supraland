@@ -472,6 +472,13 @@ function loadMap() {
           if (!o.id) {
             continue;
           }
+          if (o.id=='pipes' || o.id=='pads') {
+            continue;
+          }
+          if (o.id=='graves' && mapId!='sl') {
+            continue;
+          }
+
           let layerObj = L.layerGroup();
           layerObj.id = o.id;
 
