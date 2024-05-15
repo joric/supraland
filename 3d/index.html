@@ -95,13 +95,15 @@ function loadMap(mapId) {
   let scale = p.MapWorldSize / mapSize.width;
   let [left,top,right,bottom] = [p.MapWorldUpperLeft.X, p.MapWorldUpperLeft.Y, p.MapWorldLowerRight.X, p.MapWorldLowerRight.Y];
   let extent = new maptalks.Extent(left, top, right, bottom);
+  center = [p.MapWorldCenter.X, p.MapWorldCenter.Y];
 
   map = new maptalks.Map('map', {
     zoom: startZoom,
     pitch: startPitch,
     heightFactor: heightFactor,
-    center: [p.MapWorldCenter.X, p.MapWorldCenter.Y],
-    maxExtent: extent, // very glitchy
+    center: center,
+    maxExtent: extent,
+    maxPitch: 80,
     spatialReference : {
       projection : 'identity',
       resolutions : ( function() {
@@ -154,6 +156,7 @@ function loadMap(mapId) {
           continue;
         }
         if (icon = icons[o.type]) {
+
           var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
             id: o.area+':'+o.name,
             properties: {name: o.name},
@@ -219,7 +222,7 @@ function loadMap(mapId) {
     }
   };
 
-  document.querySelector('.maptalks-compass').title = 'Click to change pitch (key X)';
+  document.querySelector('.maptalks-compass').title = 'Click to reset (key R)';
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
@@ -233,7 +236,12 @@ window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
   loadMap(mapId);
 
-  let keys = {KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],KeyQ:['b',1],KeyE:['b',-1],KeyR:['z',1],KeyF:['z',-1],KeyZ:['p',-1],KeyC:['p',1]};
+  let keys = {
+    KeyW:['y',1],KeyA:['x',1],KeyS:['y',-1],KeyD:['x',-1],
+    KeyQ:['b',1],KeyE:['b',-1],
+    KeyT:['z',1],KeyG:['z',-1],
+    KeyZ:['p',-1],KeyX:['p',1]
+  };
   let flags = {};
 
   function update(timestep) {
@@ -266,12 +274,14 @@ window.onload = function(event) {
       } else if (!e.target.id.startsWith('searchtext')) {
         //map.toggleFullscreen();
       }
-    } else if(e.code=='KeyX') {
+    } else if(e.code=='KeyR') {
       if (map.getBearing()!=0) {
         map.animateTo({ bearing: 0 });
       } else {
         map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
       }
+    } else if(e.code=='KeyC') {
+      map.panTo(center);
     }
     flags[e.code] = true;
   });
