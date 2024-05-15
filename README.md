@@ -23,6 +23,9 @@ Supraland Crash doesn't have a map in resources so it was captured in the game e
 and then upscaled to 8192x8192. It's probably possible to upscale other maps as well, say to 32768x32768 (4x) with something
 like [Upscayl](https://upscayl.github.io) but it's quite slow and the size will be 16x (~256 megs for 3 maps).
 
+## License
+
+This project is an unlicensed public domain, feel free to copy, sell and modify.
 
 ## References
 
