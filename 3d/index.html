@@ -9,6 +9,7 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 </style>
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<base href="../"></base>
 <body>
 <div id="map" class="container"></div>
 <script>
@@ -72,7 +73,7 @@ function markerSymbol(o, shadow=false) {
       markerType: 'pin',
     },
     {
-      markerFile: '../img/'+icon+'.png',
+      markerFile: 'img/'+icon+'.png',
       markerWidth  : 32,
       markerHeight : 32,
       markerDy: -22,
@@ -112,7 +113,7 @@ function loadMap(mapId) {
     },
     baseLayer: new maptalks.TileLayer('base', {
       maxAvailableZoom: 4,
-      urlTemplate: '../tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
+      urlTemplate: 'tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
       repeatWorld: false,
       tileSystem: [ 1, -1, left, top ],
       attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
@@ -145,7 +146,7 @@ function loadMap(mapId) {
     */
   }).addTo(map);
 
-  fetch('../data/markers.'+mapId+'.json')
+  fetch('data/markers.'+mapId+'.json')
     .then((response) => response.json())
     .then((j) => {
       for (o of j) {
