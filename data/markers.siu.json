@@ -6624,6 +6624,22 @@
     "alt": 1877.6624755859375
   },
   {
+    "name": "Lift1_2",
+    "type": "Lift1_C",
+    "area": "DLC2_Complete",
+    "lat": -28958.625,
+    "lng": 17963.0625,
+    "alt": -2434.26953125
+  },
+  {
+    "name": "Lift2",
+    "type": "Lift1_C",
+    "area": "DLC2_Complete",
+    "lat": -48438.828125,
+    "lng": 52036.6484375,
+    "alt": 1984.3919677734375
+  },
+  {
     "name": "MatchBox10",
     "type": "MatchBox_C",
     "area": "DLC2_Complete",
@@ -10334,6 +10350,174 @@
     "alt": 7669.580078125
   },
   {
+    "name": "A1FastTravelPipeCap",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": 15560.884765625,
+    "lng": 20652.861328125,
+    "alt": 3572.840087890625
+  },
+  {
+    "name": "A1FastTravelPipeCap2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -32586.25390625,
+    "lng": 17408.404296875,
+    "alt": 379.67572021484375
+  },
+  {
+    "name": "A2FastTravelPipeCap",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -7363.88330078125,
+    "lng": 61197.86328125,
+    "alt": 4666.0
+  },
+  {
+    "name": "A2FastTravelPipeCap2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -32588.25390625,
+    "lng": 17980.796875,
+    "alt": 382.5982666015625
+  },
+  {
+    "name": "A3FastTravelPipeCap",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -43396.73046875,
+    "lng": 8937.830078125,
+    "alt": 2463.414306640625
+  },
+  {
+    "name": "A3FastTravelPipeCap3",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -32586.25390625,
+    "lng": 18539.6328125,
+    "alt": 381.9172668457031
+  },
+  {
+    "name": "A4FastTravelPipeCap",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -60099.109375,
+    "lng": 57716.53125,
+    "alt": 1278.751220703125
+  },
+  {
+    "name": "A4FastTravelPipeCap4",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -32586.25390625,
+    "lng": 19086.947265625,
+    "alt": 380.5115661621094
+  },
+  {
+    "name": "A4SmallWallPipeCap_BeachSide",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -48333.3828125,
+    "lng": 42753.484375,
+    "alt": 1487.4796142578125
+  },
+  {
+    "name": "A4SmallWallPipeCap_CubeSide",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -48088.921875,
+    "lng": 42462.2578125,
+    "alt": -53.9244384765625
+  },
+  {
+    "name": "A5FastTravelPipe_ExitCombatFinale",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -31964.537109375,
+    "lng": 20148.083984375,
+    "alt": 287.7752990722656
+  },
+  {
+    "name": "A5FastTravelPipeCap1",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -42555.07421875,
+    "lng": 21526.291015625,
+    "alt": 3507.08544921875
+  },
+  {
+    "name": "A5FastTravelPipeCap5",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -32586.25390625,
+    "lng": 19641.314453125,
+    "alt": 380.9241027832031
+  },
+  {
+    "name": "PipeCap10_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -13410.740234375,
+    "lng": 4797.03271484375,
+    "alt": 2301.41357421875
+  },
+  {
+    "name": "PipeCap13",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -7682.0380859375,
+    "lng": 5404.517578125,
+    "alt": 1181.64208984375
+  },
+  {
+    "name": "PipeCap14",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": 12369.5380859375,
+    "lng": 20962.060546875,
+    "alt": 3910.046875
+  },
+  {
+    "name": "PipeCap2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -13181.89453125,
+    "lng": 56968.3984375,
+    "alt": 786.9484252929688
+  },
+  {
+    "name": "PipeCap4_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -537.02880859375,
+    "lng": 37337.58203125,
+    "alt": 2679.68896484375
+  },
+  {
+    "name": "PipeCap8_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -11687.453125,
+    "lng": 32508.5625,
+    "alt": -98.70347595214844
+  },
+  {
+    "name": "PipeCap9_5",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": 13195.0986328125,
+    "lng": 22501.416015625,
+    "alt": 3545.837890625
+  },
+  {
+    "name": "PipeCap_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Complete",
+    "lat": -14990.53515625,
+    "lng": 58759.33984375,
+    "alt": 790.1314086914062
+  },
+  {
     "name": "PlayerStart_1",
     "type": "PlayerStart",
     "area": "DLC2_Complete",
@@ -11413,6 +11597,14 @@
     "alt": 2429.64697265625
   },
   {
+    "name": "PipeCap12_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20071.126953125,
+    "lng": -30054.828125,
+    "alt": 7161.45068359375
+  },
+  {
     "name": "BuyQuintupleJump",
     "type": "BuyQuintupleJump_C",
     "area": "DLC2_Area0",
@@ -11437,6 +11629,14 @@
     "lat": -284105.0,
     "lng": 621.0,
     "alt": 9564.8876953125
+  },
+  {
+    "name": "PipeCap10_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_Area0",
+    "lat": -284028.03125,
+    "lng": -2240.900146484375,
+    "alt": 9974.640625
   },
   {
     "name": "Plumbus2_9",
@@ -13711,6 +13911,38 @@
     "alt": 1997.17236328125
   },
   {
+    "name": "Area1_SecretArea_TeleportPipeCap1",
+    "type": "PipeCap_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 3305.47607421875,
+    "lng": -280.1111755371094,
+    "alt": 797.051025390625
+  },
+  {
+    "name": "PipeCap11",
+    "type": "PipeCap_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2748.60791015625,
+    "lng": -964.6672973632812,
+    "alt": 2625.2578125
+  },
+  {
+    "name": "PipeCap_FastTravelLavaToBeam1",
+    "type": "PipeCap_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2676.927734375,
+    "lng": 9448.2138671875,
+    "alt": -7585.2919921875
+  },
+  {
+    "name": "PipeCap_FastTravelLavaToBeam2",
+    "type": "PipeCap_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -22388.76171875,
+    "lng": 16856.8203125,
+    "alt": -2829.70068359375
+  },
+  {
     "name": "ValveCarriable_2",
     "type": "ValveCarriable_C",
     "area": "DLC2_SecretLavaArea",
@@ -14635,6 +14867,22 @@
     "lat": -40265.375,
     "lng": -61236.3515625,
     "alt": 11472.673828125
+  },
+  {
+    "name": "PipeCap2_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43132.2578125,
+    "lng": -70574.84375,
+    "alt": 5762.4091796875
+  },
+  {
+    "name": "PipeCap_2",
+    "type": "PipeCap_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42775.58984375,
+    "lng": -52996.9140625,
+    "alt": 5645.86767578125
   },
   {
     "name": "BP_PurchaseSpeedx2_2",
