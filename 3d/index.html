@@ -18,6 +18,8 @@ let startPitch = 45;
 let startZoom = 3;
 let heightFactor = 0.25;
 let drawAltitude = false;
+let drawShadow = true;
+let markerSymbol = markerSymbol2
 let map = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
@@ -34,7 +36,7 @@ let bindings = {
   KeyW:['y',+1],KeyS:['y',-1],
   KeyQ:['b',+1],KeyE:['b',-1],
   KeyT:['z',+1],KeyG:['z',-1],
-  KeyZ:['p',+1],KeyX:['p',-1],
+  KeyX:['p',+1],KeyZ:['p',-1],
 };
 
 let maps = {
@@ -84,7 +86,7 @@ function markerSymbol1(o, shadow=false) {
   ];
 }
 
-function markerSymbol(o, shadow=false) {
+function markerSymbol2(o, shadow=false) {
   if (shadow) {
     return [
       {
@@ -207,11 +209,13 @@ function loadMap(mapId) {
             dy: 22,
           });
 
-          new maptalks.Marker([o.lng, o.lat],{
-            cursor: 'arrow',
-            symbol: markerSymbol(o, true),
-          })
-          .addTo(shadowLayer);
+          if (drawShadow) {
+            new maptalks.Marker([o.lng, o.lat],{
+              cursor: 'arrow',
+              symbol: markerSymbol(o, true),
+            })
+            .addTo(shadowLayer);
+          }
 
         }
       }
