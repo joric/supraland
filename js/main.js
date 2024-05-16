@@ -114,7 +114,7 @@ function loadMap() {
       keepBuffer: 16,
       maxNativeZoom: 4,
       nativeZooms: [0, 1, 2, 3, 4],
-      edgeBufferTiles: 2,
+      edgeBufferTiles: 3,
       bounds: mapBounds,
       attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
   };
