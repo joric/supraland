@@ -164,3 +164,5 @@ MatchBox_C,gun_upgrade,misc
 EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
+PipeCap_C,question_mark,jumppads
+Lift1_C,question_mark,jumppads

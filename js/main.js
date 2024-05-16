@@ -353,6 +353,8 @@ function loadMap() {
 
   };
 
+  var polylines = []
+
   function loadMarkers() {
     fetch('data/markers.'+mapId+'.json')
       .then((response) => response.json())
@@ -449,10 +451,40 @@ function loadMap() {
             .on('contextmenu',onContextMenu)
             //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
             ;
+
+            /*
+            if (o.type == 'Jumppad_C') {
+
+              if (r = o.rotation) {
+
+                let x1 = o.lng;
+                let y1 = o.lat;
+
+                console.log(o);
+
+                let rx = r.x
+                let ry = r.y;
+                let rz = r.z;
+
+                let len = 5000;
+
+                if (o.relative_velocity) {
+                  //len = o.relative_velocity * 5;
+                }
+
+                x2 = x1 + len * Math.cos(ry);
+                y2 = y1 + len * Math.sin(ry);
+
+                var polyline = L.polyline([[y1,x1],[y2,x2]], {color: 'cyan'}).addTo(map);
+              }
+            } */
+
+
           }
         } // end of loop
         resizeIcons();
     });
+
   }
 
   function loadLayers() {
