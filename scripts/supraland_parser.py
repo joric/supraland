@@ -147,13 +147,11 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                     pipes[ b ] = a
 
             if o['Type'] in ('PipesystemNewDLC_C'):
-                if 'Pipe' in p and 'OtherPipe' in p:
-                    a = p['Pipe']['Outer']
+                if 'PipeCap' in p and 'OtherPipe' in p:
+                    a = p['PipeCap']['ObjectName']
                     b = p['OtherPipe']['ObjectName']
                     pipes[ a ] = b
                     pipes[ b ] = a
-
-
 
         for o in j:
             if not ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types)):
@@ -196,8 +194,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 if v:=p.get('Velocity'):
                     data[-1].update({'velocity': getXYZ(getVec(v))})
                 data[-1].update({'rotation': getXYZ(matrix.to_euler())})
-
-        print(pipes)
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')
