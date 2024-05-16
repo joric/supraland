@@ -11,7 +11,7 @@ Notes:
 * Jumppad_C - has Velocity/RelativeVelocity but no "target", angles seem inaccurate (uses spline path?)
 * PipeCap_C - pipe teleporters, same as jumppad.
 * Lift1_C - vertical lifts
-* Coin_C - there's no such entity as coin stash, only big coins and chests
+* Coin_C - small/big coins and chests, there's no such entity as "coin stash"
 
 '''
 
