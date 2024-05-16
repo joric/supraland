@@ -5,13 +5,13 @@ install dependencies: pip install mathutils aes
 see https://github.com/MinshuG/pyUE4Parse/issues/9 about outer nodes
 see https://github.com/MinshuG/pyUE4Parse/issues/20 about python 3.12
 
-Notes:
+Entities:
 
 * MinecraftBrick_C - exports HitsToBreak, bObsidian. Need to export/support BrickType.
 * Jumppad_C - has Velocity/RelativeVelocity but no "target", angles seem inaccurate (uses spline path?)
 * PipeCap_C - pipe teleporters, same as jumppad.
 * Lift1_C - vertical lifts
-* Coin_C - small/big coins and chests, there's no such entity as "coin stash"
+* Coin_C - note there's no such entity as "coin stash", only small/big coins and chest spawns
 
 '''
 
