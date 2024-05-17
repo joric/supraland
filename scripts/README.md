@@ -3,6 +3,14 @@
 This is based on [UE4Parse](https://github.com/MinshuG/pyUE4Parse.git) json output format.
 Current version is pyUE4Parse commit 90e309b.
 
+### Images
+
+You can just export everything in FModel, right click on Materials, "Save Folder's Packages Textures".
+
+* SupralandSIU/Content/Materials/HUDItems.
+* SupralandSIU/Content/Blueprints/PlayerMap/Textures
+* SupralandSIU/Content/Blueprints/Levelobjects
+
 ### Transforms
 
 SIU introduces areas, each area has its own world matrix. you have to transform objects accordingly.
@@ -21,6 +29,31 @@ Properties for all STU areas (i.e. names/transforms) are stored in the base area
 ### Jumppads
 
 Could not figure out how they work just yet. Rotation doesn't seem to match the direction.
+
+Looks like there's no target point. Properties are:
+
+```json
+  {
+    "Type": "Jumppad_C",
+    "Name": "Jumppad96",
+    "Outer": "PersistentLevel",
+    "Properties": {
+      "Velocity": {
+        "X": 4800.0,
+        "Y": 250.0,
+        "Z": 3500.0
+      },
+      "RelativeVelocity": 8700.0,
+      "AllowTranslocator": false,
+      "PreviewPathTime": 15.0,
+      "CenterActor": true,
+      "Is Activated?": true,
+      "DisableMovementInAir": false,
+    }
+  }
+```
+
+
 
 ### Pipes
 
@@ -61,4 +94,6 @@ Example (PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe):
 
 Some pipes (e.g. "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_3" do not have "other pipe")
 They are initialized in pipe system builders, `PipeSystemBuilder_C` (not supported yet).
+
+
 

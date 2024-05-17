@@ -165,6 +165,6 @@ EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
 Lift1_C,question_mark,misc
-PipeCap_C,gun_red,pipesys
-PipesystemNew_C,gun_yellow,pipesys
-PipesystemNewDLC_C,gun_yellow_wood,pipesys
+PipeCap_C,pipe_red,pipesys
+PipesystemNew_C,pipe_green,pipesys
+PipesystemNewDLC_C,pipe_blue,pipesys
