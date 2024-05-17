@@ -20,7 +20,7 @@ BP_PurchaseHealth+1_C,health,upgrades
 BP_PurchaseJumpHeightPlus_C,double_jump,upgrades
 BP_PurchaseSpeedx2_C,speed,upgrades
 BP_Purchase_Crouch_C,,upgrades
-BP_Purchase_FasterPickaxe_C,,
+BP_Purchase_FasterPickaxe_C,boomeraxe_range,upgrades
 BP_Purchase_Pickaxe_Range+_C,boomeraxe_range,upgrades
 BP_Purchase_TranslocatorCooldown_C,translocator_cooldown,upgrades
 BP_TrophyDetector_C,,upgrades
