@@ -14,14 +14,15 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <div id="map" class="container"></div>
 <script>
 
-let startPitch = 60;
 let startZoom = 3;
 let heightFactor = 0.25;
+let startPitch = 60;
 let enableAltitude = true;
 let drawAltitude = true;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let map = null;
+let pitch = startPitch;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
@@ -135,7 +136,7 @@ function loadMap(mapId) {
 
   map = new maptalks.Map('map', {
     zoom: startZoom,
-    pitch: startPitch,
+    pitch: pitch,
     heightFactor: heightFactor,
     center: center,
     maxExtent: extent,
@@ -323,6 +324,7 @@ window.onload = function(event) {
     v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
     v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     window.requestAnimationFrame(update);
+    pitch = map.getPitch();
   }
 
   window.addEventListener('keyup', (e) => {

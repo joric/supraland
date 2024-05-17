@@ -63,7 +63,8 @@
     "lat": -23188.537109375,
     "lng": 21730.326171875,
     "alt": 3066.00439453125,
-    "cost": 15
+    "cost": 15,
+    "price_type": "scrap"
   },
   {
     "name": "BP_BuyGunDamage+100pct_2",
@@ -275,7 +276,8 @@
     "lat": -22837.6796875,
     "lng": 21392.783203125,
     "alt": 3065.90185546875,
-    "cost": 6
+    "cost": 6,
+    "price_type": "bones"
   },
   {
     "name": "BuyUpgradeChestNum_2",

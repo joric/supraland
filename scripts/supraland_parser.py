@@ -94,6 +94,11 @@ marker_types = {
   'PipesystemNew_C','PipesystemNewDLC_C'
 }
 
+price_types = {
+    'EPriceType::NewEnumerator5':'scrap',
+    'EPriceType::NewEnumerator6':'bones',
+}
+
 def export_levels(game, cache_dir):
     path = config[game]['path']
     prefix = config[game]['prefix']
@@ -181,6 +186,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'hits', p.get('HitsToBreak',0))
             optKey(data[-1], 'obsidian', p.get('bObsidian',0))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
+            optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
+
 
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity',0))
