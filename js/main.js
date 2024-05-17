@@ -475,6 +475,19 @@ function loadMap() {
               let x2 = x1 - x;
               let y2 = y1 - y;
 
+              // some pre-defined targets for fitting (Supraland only)
+              let targets = {'Jumppad2_49':[-6997,13855], 'Jumppad_266':[-28995,3398], 'Jumppad79':[-11571,12819]};
+
+              let color = 'cyan';
+              let key = o.name;
+              if (o.area == 'Map' && targets[key]) {
+                color = 'lightcyan';
+                y3 = targets[key][0];
+                x3 = targets[key][1];
+                L.polyline([[y1,x1],[y3,x3]], {title:' ', color: 'lightcyan'}).addTo(layers['jumppads']);
+              }
+
+
               // need to add title as a single space (leaflet search issue)
               L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
             }

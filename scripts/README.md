@@ -55,6 +55,40 @@ If you take direction from matrix (column 3) you instantly get proper launcher o
 I'm not sure how to account for velocity, it doesn't seem to affect direction.
 Some jumppads don't have compound velocity, oddly Jumppad63/Supraland doesn't have any velocity at all.
 
+Not sure how red and blue launchers are different, it's not about controls.
+The first Supraland launchpad right after the village gates is blue but doesn't allow strafing.
+
+This is red one and blue one accordingly:
+
+```json
+   "name": "Jumppad79",
+      "Velocity": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1650.0
+      },
+      "RelativeVelocity": 1000.0,
+      "Material": {
+        "ObjectName": "MaterialInstanceDynamic_0",
+      }
+
+   "name": "Jumppad266",
+      "Velocity": {
+        "X": -2400.0,
+        "Y": -5200.0,
+        "Z": 2100.0
+      },
+      "RelativeVelocity": 5600.0,
+      "AllowStomp": true,
+      "PreviewPath": true,
+      "PreviewPathTime": 6.0,
+      "Material": {
+        "ObjectName": "MaterialInstanceDynamic_0",
+        }
+
+```
+
+
 ### Pipes
 
 Pipe teleports use `PipesystemNew_C` and PipesystemNewDLC_C classes.
