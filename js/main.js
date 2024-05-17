@@ -457,11 +457,12 @@ function loadMap() {
               let y = o.direction.y;
               let z = o.direction.z;
 
-              let h = o.relative_velocity || 1000
+              let k = 5.0;
+              let h = o.relative_velocity || 1000;
 
-              x *= h
-              y *= h
-              z *= h
+              x *= k*h;
+              y *= k*h;
+              z *= k*h;
 
               /*
               if (o.velocity) {
