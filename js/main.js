@@ -113,7 +113,7 @@ function loadMap() {
       keepBuffer: 16,
       maxNativeZoom: 4,
       nativeZooms: [0, 1, 2, 3, 4],
-      edgeBufferTiles: 3,
+      edgeBufferTiles: 2,
       bounds: mapBounds,
       attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
   };
@@ -449,23 +449,70 @@ function loadMap() {
 
           if (o.type == 'Jumppad_C') {
             if (r = o.rotation) {
+
+              function rotate(x,y,z, pitch, roll, yaw) {
+                var cosa = Math.cos(yaw);
+                var sina = Math.sin(yaw);
+
+                var cosb = Math.cos(pitch);
+                var sinb = Math.sin(pitch);
+
+                var cosc = Math.cos(roll);
+                var sinc = Math.sin(roll);
+
+                var Axx = cosa*cosb;
+                var Axy = cosa*sinb*sinc - sina*cosc;
+                var Axz = cosa*sinb*cosc + sina*sinc;
+
+                var Ayx = sina*cosb;
+                var Ayy = sina*sinb*sinc + cosa*cosc;
+                var Ayz = sina*sinb*cosc - cosa*sinc;
+
+                var Azx = -sinb;
+                var Azy = cosb*sinc;
+                var Azz = cosb*cosc;
+
+                var px = x;
+                var py = y;
+                var pz = z;
+
+                x = Axx*px + Axy*py + Axz*pz;
+                y = Ayx*px + Ayy*py + Ayz*pz;
+                z = Azx*px + Azy*py + Azz*pz;
+
+                return [x,y,z];
+              }
+
               let x1 = o.lng;
               let y1 = o.lat;
 
-              let rx = r.x
-              let ry = r.y;
-              let rz = r.z;
+              let pitch = r.x;
+              let yaw = r.y;
+              let roll = r.z;
 
-              let len = 5000;
+              let h = 10000;
 
               if (o.relative_velocity) {
-                //len = o.relative_velocity * 5;
+                h = o.relative_velocity;
               }
 
-              let a = rz + 3.14/2;
+              let x = 0;
+              let y = h;
+              let z = 0;
 
-              x2 = x1 + len * Math.cos(a);
-              y2 = y1 + len * Math.sin(a);
+              if (o.velocity) {
+                x += o.velocity.x;
+                y += o.velocity.y;
+                z += o.velocity.z;
+              }
+
+
+
+              [x,y,z] = rotate(x,y,z, pitch, yaw, roll);
+
+              x2 = x1+x;
+              y2 = y1+y;
+
 
               // need to add title as a single space (leaflet search issue)
               L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);

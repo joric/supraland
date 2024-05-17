@@ -14,12 +14,13 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <div id="map" class="container"></div>
 <script>
 
-let startPitch = 45;
+let startPitch = 60;
 let startZoom = 3;
 let heightFactor = 0.25;
-let drawAltitude = false;
-let drawShadow = true;
-let markerSymbol = markerSymbol2
+let enableAltitude = true;
+let drawAltitude = true;
+let drawShadow = false;
+let markerSymbol = markerSymbol1;
 let map = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
@@ -30,8 +31,8 @@ let items = {
   //'Scrap_C':'scrap',
   //'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin'
-  //'Jumppad_C':'map',
-  'PipesystemNew_C':'gun_yellow'
+  'Jumppad_C':'map',
+  //'PipesystemNew_C':'gun_yellow'
 };
 
 let bindings = {
@@ -169,13 +170,13 @@ function loadMap(mapId) {
   });
 
   let shadowLayer = new maptalks.VectorLayer('shadow', {
-    enableAltitude: true,
+    enableAltitude: enableAltitude,
     sortByDistanceToCamera: true,
     opacity: 0.25,
   }).addTo(map);
 
   let vectorLayer = new maptalks.VectorLayer('vector', {
-    enableAltitude: true,
+    enableAltitude: enableAltitude,
     sortByDistanceToCamera: true,
   }).addTo(map);
 
@@ -306,13 +307,13 @@ window.onload = function(event) {
     image.src = 'img/'+items[key]+'.png';
   }
 
-  let flags = {};
+  let pressed = {};
 
   function update(timestep) {
     let step = 25;
     let v = {};
     for (key of Object.keys(bindings)) {
-      if (flags[key]) {
+      if (pressed[key]) {
         let [dir, step] = bindings[key];
         v[dir] = (v[dir]||0) + step;
       }
@@ -325,23 +326,26 @@ window.onload = function(event) {
   }
 
   window.addEventListener('keyup', (e) => {
-    delete flags[e.code];
+    delete pressed[e.code];
   });
 
   window.addEventListener("keydown",function (e) {
-    if (e.code=='KeyF') {
-      if (e.ctrlKey) {
-        //searchControl.expand(true);
-        //e.preventDefault();
-      } else if (!e.target.id.startsWith('searchtext')) {
-        //map.toggleFullscreen();
-      }
-    } else if(e.code=='KeyR') {
-      resetPitch();
-    } else if(e.code=='KeyC') {
-      map.panTo(center);
+    //console.log(e.code);
+    pressed[e.code] = true;
+    switch (e.code) {
+      case 'KeyF':
+        if (e.ctrlKey) {
+          //e.preventDefault();
+        } else if (!e.target.id.startsWith('searchtext')) {
+          //map.toggleFullscreen();
+        }
+        break;
+      case 'KeyR': resetPitch(); break;
+      case 'KeyC': map.panTo(center); break;
+      case 'Digit1': loadMap('sl'); break;
+      case 'Digit2': loadMap('slc'); break;
+      case 'Digit3': loadMap('siu'); break;
     }
-    flags[e.code] = true;
   });
 
   window.requestAnimationFrame(update);
