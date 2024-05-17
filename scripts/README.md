@@ -1,6 +1,12 @@
 ## Scripts
 
-Note that local area transforms for SIU are originally stored in the base area, DLC2_Complete.
+This is based on [UE4Parse](https://github.com/MinshuG/pyUE4Parse.git) json output format.
+Current version is pyUE4Parse commit 90e309b.
+
+### Transforms
+
+SIU introduces areas, each area has its own world matrix. you have to transform objects accordingly.
+Properties for all STU areas (i.e. names/transforms) are stored in the base area, DLC2_Complete.
 
 ### Misc
 
@@ -18,7 +24,8 @@ Could not figure out how they work just yet. Rotation doesn't seem to match the 
 
 ### Pipes
 
-Pipe teleports use PipesystemNew_C and PipesystemNewDLC_C classes. Example:
+Pipe teleports use `PipesystemNew_C` and PipesystemNewDLC_C classes.
+Example (PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe):
 
 ```json
   {
@@ -38,9 +45,7 @@ Pipe teleports use PipesystemNew_C and PipesystemNewDLC_C classes. Example:
 	}
 ```
 
-PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe.
-
-"OtherPipe" may also be "otherPipeInOtherLevel", e.g.
+"OtherPipe" may be substituted with "otherPipeInOtherLevel", e.g.
 
 ```json
     "Type": "PipesystemNewDLC_C",
@@ -53,4 +58,7 @@ PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe.
       },
     }
 ```
+
+Some pipes (e.g. "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_3" do not have "other pipe")
+They are initialized in pipe system builders, `PipeSystemBuilder_C` (not supported yet).
 
