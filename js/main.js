@@ -439,7 +439,7 @@ function loadMap() {
           }
 
           // collect objects for the 2-nd pass
-          objects[o.name] = o;
+          objects[o.area + ':' + o.name] = o;
 
         } // end of loop
 
@@ -470,11 +470,15 @@ function loadMap() {
               // need to add title as a single space (leaflet search issue)
               L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
             }
-          } else if (o.other_pipe) {
+          }
+
+          // pipes
+          if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
               L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'lawngreen'}).addTo(layers['pipesys']);
             }
           }
+
         } // end of 2-nd pass
 
         resizeIcons();

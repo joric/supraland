@@ -141,8 +141,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 outer[':'.join((o['Name'],o['Outer']))] = o # pyUE4Parse 90e309b
 
             if o['Type'] in ('PipesystemNew_C','PipesystemNewDLC_C') and 'Pipe' in p and ('OtherPipe' in p or 'otherPipeInOtherLevel' in p):
-                a = p['Pipe']['Outer']
-                b = p.get('OtherPipe',{}).get('ObjectName') or p['otherPipeInOtherLevel']['SubPathString'].split('.').pop()
+                a = ':'.join((area, p['Pipe']['Outer']))
+                b = ':'.join((t['AssetPathName'].split('.').pop(),t['SubPathString'].split('.').pop()) if (t:=p.get('otherPipeInOtherLevel')) else (area, p['OtherPipe']['ObjectName']))
                 pipes[ a ] = b
                 pipes[ b ] = a
 
@@ -180,7 +180,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
             optKey(data[-1], 'hits', p.get('HitsToBreak',0))
             optKey(data[-1], 'obsidian', p.get('bObsidian',0))
-            optKey(data[-1], 'other_pipe', pipes.get(o['Name']))
+            optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
 
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity',0))
