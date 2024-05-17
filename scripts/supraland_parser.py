@@ -89,7 +89,8 @@ marker_types = {
   'Purchase_ForceBeam_C', 'Purchase_ForceCube_C', 'Purchase_IronPickaxe_C', 'Purchase_StonePickaxe_C', 'Purchase_WoodPickaxe_C',
   'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
   'HealingStation_C','MatchBox_C','EnemySpawn1_C','EnemySpawn2_C','EnemySpawn3_C',
-  'PipeCap_C','Lift1_C',
+  'PipeCap_C',
+  'Lift1_C',
   'PipesystemNew_C','PipesystemNewDLC_C'
 }
 
@@ -139,19 +140,11 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 outer[':'.join((o['Name'],o['Type'],o['Outer']))] = o # pyUE4Parse 5e0e6f0
                 outer[':'.join((o['Name'],o['Outer']))] = o # pyUE4Parse 90e309b
 
-            if o['Type'] in ('PipesystemNew_C'):
-                if 'Pipe' in p and 'OtherPipe' in p:
-                    a = p['Pipe']['Outer']
-                    b = p['OtherPipe']['ObjectName']
-                    pipes[ a ] = b
-                    pipes[ b ] = a
-
-            if o['Type'] in ('PipesystemNewDLC_C'):
-                if 'PipeCap' in p and 'OtherPipe' in p:
-                    a = p['PipeCap']['ObjectName']
-                    b = p['OtherPipe']['ObjectName']
-                    pipes[ a ] = b
-                    pipes[ b ] = a
+            if o['Type'] in ('PipesystemNew_C','PipesystemNewDLC_C') and 'Pipe' in p and ('OtherPipe' in p or 'otherPipeInOtherLevel' in p):
+                a = p['Pipe']['Outer']
+                b = p.get('OtherPipe',{}).get('ObjectName') or p['otherPipeInOtherLevel']['SubPathString'].split('.').pop()
+                pipes[ a ] = b
+                pipes[ b ] = a
 
         for o in j:
             if not ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types)):

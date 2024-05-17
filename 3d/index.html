@@ -257,7 +257,6 @@ function loadMap(mapId) {
   };
   map.setMenu(options);
 
-
   document.querySelector('.maptalks-compass').onclick = function(e) {
     if (map.getBearing()==0) {
       map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
@@ -272,6 +271,15 @@ function loadMap(mapId) {
       div.style.color = '#fff';
     }
   });
+}
+
+function resetPitch(e) {
+  if (map.isAnimating()) return;
+  if (map.getBearing()!=0) {
+    map.animateTo({ bearing: 0 });
+  } else {
+    map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
+  }
 }
 
 window.onload = function(event) {
@@ -329,11 +337,7 @@ window.onload = function(event) {
         //map.toggleFullscreen();
       }
     } else if(e.code=='KeyR') {
-      if (map.getBearing()!=0) {
-        map.animateTo({ bearing: 0 });
-      } else {
-        map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
-      }
+      resetPitch();
     } else if(e.code=='KeyC') {
       map.panTo(center);
     }

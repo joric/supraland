@@ -13536,7 +13536,8 @@
     "area": "Map",
     "lat": -31372.689453125,
     "lng": -32894.3515625,
-    "alt": 716.6857299804688
+    "alt": 716.6857299804688,
+    "other_pipe": "PipesystemNewDLC_2"
   },
   {
     "name": "PipesystemNewDLC_2",
@@ -13544,7 +13545,8 @@
     "area": "Map",
     "lat": -32069.55859375,
     "lng": -32344.66796875,
-    "alt": -1682.9599609375
+    "alt": -1682.9599609375,
+    "other_pipe": "PipesystemNewDLC2"
   },
   {
     "name": "PlayerStart_2",

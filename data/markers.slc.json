@@ -3939,7 +3939,8 @@
     "area": "Crash",
     "lat": 16600.419921875,
     "lng": 22102.123046875,
-    "alt": 2474.070068359375
+    "alt": 2474.070068359375,
+    "other_pipe": "PipesystemNewDLC_2"
   },
   {
     "name": "PipesystemNewDLC3",
@@ -3947,7 +3948,8 @@
     "area": "Crash",
     "lat": 16668.33984375,
     "lng": 21291.962890625,
-    "alt": 2474.070068359375
+    "alt": 2474.070068359375,
+    "other_pipe": "PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC4",
@@ -3955,7 +3957,8 @@
     "area": "Crash",
     "lat": 16668.33984375,
     "lng": 21663.66015625,
-    "alt": 2474.070068359375
+    "alt": 2474.070068359375,
+    "other_pipe": "PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC5",
@@ -3963,7 +3966,8 @@
     "area": "Crash",
     "lat": 16668.33984375,
     "lng": 22034.736328125,
-    "alt": 2474.070068359375
+    "alt": 2474.070068359375,
+    "other_pipe": "PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC6_2",
@@ -3971,7 +3975,8 @@
     "area": "Crash",
     "lat": -5072.5244140625,
     "lng": -992.0934448242188,
-    "alt": 110.49958801269531
+    "alt": 110.49958801269531,
+    "other_pipe": "PipesystemNewDLC6_2"
   },
   {
     "name": "PipesystemNewDLC7",
@@ -3979,7 +3984,8 @@
     "area": "Crash",
     "lat": -5217.47998046875,
     "lng": -990.3453979492188,
-    "alt": 502.5618896484375
+    "alt": 502.5618896484375,
+    "other_pipe": "PipesystemNewDLC8"
   },
   {
     "name": "PipesystemNewDLC8",
@@ -3987,7 +3993,8 @@
     "area": "Crash",
     "lat": -5549.33935546875,
     "lng": -1985.43017578125,
-    "alt": 3029.458740234375
+    "alt": 3029.458740234375,
+    "other_pipe": "PipesystemNewDLC7"
   },
   {
     "name": "PipesystemNewDLC_2",
@@ -3995,7 +4002,8 @@
     "area": "Crash",
     "lat": 16730.67578125,
     "lng": 20609.82421875,
-    "alt": 2474.070068359375
+    "alt": 2474.070068359375,
+    "other_pipe": "PipesystemNewDLC2"
   },
   {
     "name": "PlayerStart_2",

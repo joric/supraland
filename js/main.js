@@ -88,7 +88,6 @@ function loadMap() {
   var mapScale   = {x: 1.0/m, y: 1.0/m};
   var mapOrigin  = {x: -w.MapWorldUpperLeft.X * mapScale.x, y: -w.MapWorldUpperLeft.Y * mapScale.y};
 
-
   // Create a coordinate system for the map
   var crs = L.CRS.Simple;
   crs.transformation = new L.Transformation(mapScale.x, mapOrigin.x, mapScale.y, mapOrigin.y);
@@ -351,6 +350,19 @@ function loadMap() {
 
         objects = {};
         for (o of j) {
+
+          // skip markers out of bounds (e.g. "PipesystemNew_AboveSewer" in DLC2_Area0)
+          let [[top,left],[bottom,right]] = mapBounds;
+          if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
+            continue;
+          }
+
+          // skip PipeCap_C (decorative) until we find a reliable link to the pipe system
+          if (o.type == 'PipeCap_C') {
+            continue;
+          }
+
+          // check if class is in the types list
           if (c = classes[o.type]) {
             let markerId = o.area + ':' + o.name;
             let text = ''; // set it later in onPopupOpen

@@ -31,12 +31,26 @@ Pipe teleports use PipesystemNew_C and PipesystemNewDLC_C classes. Example:
         ...
           }
         }
-      "PipeCap": {
-        "ObjectName": "PipeCap11"
+      "Pipe": {
+        "Outer": "PipeCap11"
         ...
       }
 	}
 ```
 
 PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe.
+
+"OtherPipe" may also be "otherPipeInOtherLevel", e.g.
+
+```json
+    "Type": "PipesystemNewDLC_C",
+    "Name": "Area1_FastTravelPipe",
+    "Outer": "PersistentLevel",
+    "Properties": {
+      "otherPipeInOtherLevel": {
+        "AssetPathName": "/Game/FirstPersonBP/Maps/DLC2_Complete.DLC2_Complete",
+        "SubPathString": "PersistentLevel.PipeToArea1"
+      },
+    }
+```
 
