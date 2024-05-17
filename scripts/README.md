@@ -28,8 +28,6 @@ Properties for all STU areas (i.e. names/transforms) are stored in the base area
 
 ### Jumppads
 
-Could not figure out how they work just yet. Rotation doesn't seem to match the direction.
-
 Looks like there's no target point. Properties are:
 
 ```json
@@ -53,7 +51,9 @@ Looks like there's no target point. Properties are:
   }
 ```
 
-
+If you take direction from matrix (column 3) you instantly get proper launcher orientation.
+I'm not sure how to account for velocity, it doesn't seem to affect direction.
+Some jumppads don't have compound velocity, oddly Jumppad63/Supraland doesn't have any velocity at all.
 
 ### Pipes
 

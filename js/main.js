@@ -448,71 +448,31 @@ function loadMap() {
           o = objects[name];
 
           if (o.type == 'Jumppad_C') {
-            if (r = o.rotation) {
-
-              function rotate(x,y,z, pitch, roll, yaw) {
-                var cosa = Math.cos(yaw);
-                var sina = Math.sin(yaw);
-
-                var cosb = Math.cos(pitch);
-                var sinb = Math.sin(pitch);
-
-                var cosc = Math.cos(roll);
-                var sinc = Math.sin(roll);
-
-                var Axx = cosa*cosb;
-                var Axy = cosa*sinb*sinc - sina*cosc;
-                var Axz = cosa*sinb*cosc + sina*sinc;
-
-                var Ayx = sina*cosb;
-                var Ayy = sina*sinb*sinc + cosa*cosc;
-                var Ayz = sina*sinb*cosc - cosa*sinc;
-
-                var Azx = -sinb;
-                var Azy = cosb*sinc;
-                var Azz = cosb*cosc;
-
-                var px = x;
-                var py = y;
-                var pz = z;
-
-                x = Axx*px + Axy*py + Axz*pz;
-                y = Ayx*px + Ayy*py + Ayz*pz;
-                z = Azx*px + Azy*py + Azz*pz;
-
-                return [x,y,z];
-              }
+            if (r = o.direction) {
 
               let x1 = o.lng;
               let y1 = o.lat;
 
-              let pitch = r.x;
-              let yaw = r.y;
-              let roll = r.z;
+              let x = o.direction.x;
+              let y = o.direction.y;
+              let z = o.direction.z;
 
-              let h = 10000;
+              let h = o.relative_velocity || 1000
 
-              if (o.relative_velocity) {
-                h = o.relative_velocity;
-              }
+              x *= h
+              y *= h
+              z *= h
 
-              let x = 0;
-              let y = h;
-              let z = 0;
-
+              /*
               if (o.velocity) {
-                x += o.velocity.x;
-                y += o.velocity.y;
-                z += o.velocity.z;
-              }
+                x *= o.velocity.x;
+                y *= o.velocity.y;
+                z *= o.velocity.z;
+              } else 
+              */
 
-
-
-              [x,y,z] = rotate(x,y,z, pitch, yaw, roll);
-
-              x2 = x1+x;
-              y2 = y1+y;
-
+              let x2 = x1 - x;
+              let y2 = y1 - y;
 
               // need to add title as a single space (leaflet search issue)
               L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
