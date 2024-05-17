@@ -137,7 +137,7 @@ function loadMap() {
   function updateSearch() {
     let searchLayers = [];
     for (id of Object.keys(localData[mapId].activeLayers)) {
-      if (localData[mapId].activeLayers[id]) {
+      if (localData[mapId].activeLayers[id] && layers[id]) {
         searchLayers.push(layers[id]);
       }
     }
@@ -309,49 +309,42 @@ function loadMap() {
   function onPopupOpen(e) {
     let x = e.popup._source._latlng.lng;
     let y = e.popup._source._latlng.lat;
-    let type = e.popup._source.options.type;
+    let lookup = e.popup._source.options.lookup;
     let markerId = e.popup._source.options.alt;
 
     let dist = Infinity;
     let res = null;
 
     let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-
     let found = localData[mapId].markedItems[markerId]==true
-
     let value = found ? 'checked' : '';
 
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
     text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
-
     e.popup.setContent(text);
 
-    filename = 'data/legacy/' + mapId + '/'+type+'.csv';
-    var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
-      var chests = 0;
-      for (o of results.data) {
-        if (!o.x) {
-          continue;
+    if (['chests', 'collectables', 'shops'].indexOf(lookup) >=0) {
+      filename = 'data/legacy/' + mapId + '/'+lookup+'.csv';
+      var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
+        var chests = 0;
+        for (o of results.data) {
+          if (!o.x) {
+            continue;
+          }
+          let d = Math.pow(  Math.pow(o.x-x, 2) + Math.pow(o.y-y, 2), 0.5);
+          if (d<dist) {
+            dist = d;
+            res = o;
+          }
         }
-
-        let d = Math.pow(  Math.pow(o.x-x, 2) + Math.pow(o.y-y, 2), 0.5);
-
-        if (d<dist) {
-          dist = d;
-          res = o;
+        if (dist<1000 && res.ytVideo) {
+          let url = 'https://youtu.be/'+res.ytVideo+'&?t='+res.ytStart;
+          text += '<br><br><a href="'+url+'" target=_blank>'+url+'</a>'
         }
-      }
-
-      if (dist<1000 && res.ytVideo) {
-        let url = 'https://youtu.be/'+res.ytVideo+'&?t='+res.ytStart;
-        text += '<br><br><a href="'+url+'" target=_blank>'+url+'</a>'
-      }
-
-      e.popup.setContent(text);
-
-    }});
-
-  };
+        e.popup.setContent(text);
+      }});
+    }
+  }
 
   function loadMarkers() {
     fetch('data/markers.'+mapId+'.json')
@@ -364,68 +357,28 @@ function loadMap() {
 
         for (o of j) {
           if (c = classes[o.type]) {
-
             let markerId = o.area + ':' + o.name;
-
             let text = '';//JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
             let title = o.name;
+            let icon = c.icon;
+            let layer = c.layer;
+            let lookup = ''; // fetch youtube links from this file
 
             if (o.type.endsWith('Chest_C')) {
               chests += 1;
               chests_total += 1;
-
-              let icon = 'chest';
-              let layer = 'closedChest';
-
+              icon = 'chest';
+              layer = 'closedChest';
+              lookup = 'chests';
               if (o.spawns) {
                 title = title + ' ('+o.spawns+')';
               } else if (o.coins) {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
-
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'chests', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-              .bindPopup(text)
-              .on('popupopen', onPopupOpen)
-              .on('contextmenu',onContextMenu)
-              ;
             } else if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
               icon = 'shop';
               layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-              .bindPopup(text)
-              .on('popupopen', onPopupOpen)
-              .on('contextmenu',onContextMenu)
-              ;
-            } else  {
-              icon = c.icon;
-              layer = c.layer;
-
-              if (s = classes[o.spawns]) {
-                icon = s.icon;
-                layer = s.layer;
-                if (o.spawncount>1) {
-                  icon = 'coinStash';
-                }
-              }
-
-              if (icon == '') {
-                icon = 'question_mark';
-              }
-
-              if (!layers[layer]) {
-                layer = 'misc';
-              }
-
-              // the rest of the markers go to layer specified in types list
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: layer, o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-              .bindPopup(text)
-              .on('popupopen', onPopupOpen)
-              .on('contextmenu',onContextMenu)
-              //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
-              ;
-            }
-
-            if (o.type == 'PlayerStart' && !playerMarker) {
+            } else if (o.type == 'PlayerStart' && !playerMarker) {
               playerStart = [o.lat, o.lng, o.alt];
               let t = new L.LatLng(o.lat, o.lng);
               if (p = localData[mapId].playerPosition) {
@@ -448,8 +401,23 @@ function loadMap() {
                   marker.openPopup();
               }).addTo(map)
             }
+
+            if (!icon) {
+              icon = 'question_mark';
+            }
+            if (!layers[layer]) {
+              layer = 'misc';
+            }
+
+            // finally, add marker
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, lookup:lookup, zIndexOffset: 100, alt: markerId, o:o }).addTo(layers[layer])
+            .bindPopup(text)
+            .on('popupopen', onPopupOpen)
+            .on('contextmenu',onContextMenu)
+            ;
           }
 
+          // collect objects for the 2-nd pass
           objects[o.name] = o;
 
         } // end of loop
