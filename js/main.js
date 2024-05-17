@@ -136,8 +136,10 @@ function loadMap() {
 
   function updateSearch() {
     let searchLayers = [];
-    for (id of Object.keys(localData[mapId].markedItems)) {
-      searchLayers.push(layers[id]);
+    for (id of Object.keys(localData[mapId].activeLayers)) {
+      if (localData[mapId].activeLayers[id]) {
+        searchLayers.push(layers[id]);
+      }
     }
     searchControl.setLayer(L.featureGroup(searchLayers));
   }
@@ -149,14 +151,14 @@ function loadMap() {
     }
     localData[mapId].activeLayers[e.layer.id] = true;
     //console.log(localData[mapId].activeLayers);
-    //updateSearch();
+    updateSearch();
     saveSettings();
   });
 
   map.on('overlayremove', function(e) {
     delete localData[mapId].activeLayers[e.layer.id];
     //console.log(localData[mapId].activeLayers);
-    //updateSearch();
+    updateSearch();
     saveSettings();
   });
 
@@ -373,8 +375,7 @@ function loadMap() {
               chests_total += 1;
 
               let icon = 'chest';
-
-              layer = 'closedChest';
+              let layer = 'closedChest';
 
               if (o.spawns) {
                 title = title + ' ('+o.spawns+')';
@@ -387,9 +388,7 @@ function loadMap() {
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
               ;
-            }
-
-            if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
+            } else if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
               icon = 'shop';
               layer = 'shop';
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'shops', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
@@ -397,26 +396,33 @@ function loadMap() {
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
               ;
-            }
+            } else  {
+              icon = c.icon;
+              layer = c.layer;
 
-
-            icon = c.icon;
-            layer = c.layer;
-
-            if (s = classes[o.spawns]) {
-              icon = s.icon;
-              layer = s.layer;
-              if (o.spawncount>1) {
-                icon = 'coinStash';
+              if (s = classes[o.spawns]) {
+                icon = s.icon;
+                layer = s.layer;
+                if (o.spawncount>1) {
+                  icon = 'coinStash';
+                }
               }
-            }
 
-            if (icon == '') {
-              icon = 'question_mark';
-            }
+              if (icon == '') {
+                icon = 'question_mark';
+              }
 
-            if (!layers[layer]) {
-              layer = 'misc';
+              if (!layers[layer]) {
+                layer = 'misc';
+              }
+
+              // the rest of the markers go to layer specified in types list
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: layer, o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
+              .bindPopup(text)
+              .on('popupopen', onPopupOpen)
+              .on('contextmenu',onContextMenu)
+              //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
+              ;
             }
 
             if (o.type == 'PlayerStart' && !playerMarker) {
@@ -442,20 +448,13 @@ function loadMap() {
                   marker.openPopup();
               }).addTo(map)
             }
-
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, type: 'collectables', o:o, zIndexOffset: 100, alt: markerId }).addTo(layers[layer])
-            .bindPopup(text)
-            .on('popupopen', onPopupOpen)
-            .on('contextmenu',onContextMenu)
-            //.bindTooltip(function (e) { return String(e.options.title);}, {permanent: true, opacity: 1.0})
-            ;
           }
 
           objects[o.name] = o;
 
         } // end of loop
 
-        // second pass (pads and pipes)
+        // 2-nd pass (pads and pipes)
         for (name of Object.keys(objects)) {
           o = objects[name];
 
@@ -479,16 +478,15 @@ function loadMap() {
               x2 = x1 + len * Math.cos(a);
               y2 = y1 + len * Math.sin(a);
 
-              L.polyline([[y1,x1],[y2,x2]], {color: 'cyan'}).addTo(layers['jumppads']);
+              // need to add title as a single space (leaflet search issue)
+              L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
             }
-          }
-
-          if  (o.other_pipe) {
+          } else if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {color: 'lawngreen'}).addTo(layers['pipecaps']);
+              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'lawngreen'}).addTo(layers['pipesys']);
             }
           }
-        }
+        } // end of 2-nd pass
 
         resizeIcons();
     });
