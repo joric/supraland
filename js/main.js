@@ -353,11 +353,12 @@ function loadMap() {
         for (o of j) {
           if (c = classes[o.type]) {
             let markerId = o.area + ':' + o.name;
-            let text = '';//JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+            let text = ''; // set it later in onPopupOpen
             let title = o.name;
-            let icon = c.icon;
-            let layer = c.layer;
-            let lookup = ''; // fetch youtube links from this file
+            let defaultIcon = 'question_mark';
+            let defaultLayer = 'misc';
+            let icon = c.icon || defaultIcon;
+            let layer = layers[c.layer] ? c.layer : defaultLayer;
 
             if (o.type.endsWith('Chest_C')) {
               icon = 'chest';
@@ -367,13 +368,6 @@ function loadMap() {
               } else if (o.coins) {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
-            }
-
-            if (!icon) {
-              icon = 'question_mark';
-            }
-            if (!layers[layer]) {
-              layer = 'misc';
             }
 
             // all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns. 
@@ -396,14 +390,8 @@ function loadMap() {
 
             // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
             if (s = classes[o.spawns]) {
-              let icon = s.icon;
-              let layer = s.layer;
-              if (!layers[layer]) {
-                layer = 'misc';
-              }
-              if (!icon) {
-                icon = 'question_mark';
-              }
+              let icon = s.icon || defaultIcon;
+              let layer = layers[s.layer] ? s.layer : defaultLayer;
               L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: markerId, o:o }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
