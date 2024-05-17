@@ -367,9 +367,6 @@ function loadMap() {
               } else if (o.coins) {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
-            } else if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
-              icon = 'shop';
-              layer = 'shop';
             }
 
             if (!icon) {
@@ -379,7 +376,18 @@ function loadMap() {
               layer = 'misc';
             }
 
-            // finally, add marker
+            // all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns. 
+            if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
+              let icon = 'shop';
+              let layer = 'shop';
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: markerId, o:o }).addTo(layers[layer])
+              .bindPopup(text)
+              .on('popupopen', onPopupOpen)
+              .on('contextmenu',onContextMenu)
+              ;
+            }
+
+            // finally, add marker (base marker goes in the middle)
             L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: markerId, o:o }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
@@ -388,8 +396,8 @@ function loadMap() {
 
             // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
             if (s = classes[o.spawns]) {
-              icon = s.icon;
-              layer = s.layer;
+              let icon = s.icon;
+              let layer = s.layer;
               if (!layers[layer]) {
                 layer = 'misc';
               }
