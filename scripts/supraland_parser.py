@@ -181,12 +181,13 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'hits', p.get('HitsToBreak',0))
             optKey(data[-1], 'obsidian', p.get('bObsidian',0))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
-            optKey(data[-1], 'disable_controls', p.get('DisableMovementInAir',0))
 
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity',0))
                 optKey(data[-1], 'velocity', (v:=p.get('Velocity'))and getXYZ(getVec(v)))
                 data[-1].update({'direction': {'x':matrix[0][2],'y':matrix[1][2],'z':matrix[2][2]}})
+                if p.get('DisableMovementInAir')==False:
+                    data[-1].update({'enable_controls': True})
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')
