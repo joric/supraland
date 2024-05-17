@@ -309,7 +309,6 @@ function loadMap() {
   function onPopupOpen(e) {
     let x = e.popup._source._latlng.lng;
     let y = e.popup._source._latlng.lat;
-    let lookup = e.popup._source.options.lookup;
     let markerId = e.popup._source.options.alt;
 
     let dist = Infinity;
@@ -323,8 +322,8 @@ function loadMap() {
     text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
     e.popup.setContent(text);
 
-    if (['chests', 'collectables', 'shops'].indexOf(lookup) >=0) {
-      filename = 'data/legacy/' + mapId + '/'+lookup+'.csv';
+    for (const lookup of ['chests.csv', 'collectables.csv', 'shops.csv']) {
+      filename = 'data/legacy/' + mapId + '/'+lookup;
       var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
         var chests = 0;
         for (o of results.data) {
@@ -339,9 +338,8 @@ function loadMap() {
         }
         if (dist<1000 && res.ytVideo) {
           let url = 'https://youtu.be/'+res.ytVideo+'&?t='+res.ytStart;
-          text += '<br><br><a href="'+url+'" target=_blank>'+url+'</a>'
+          e.popup.setContent(text + '<br><br><a href="'+url+'" target=_blank>'+url+'</a>');
         }
-        e.popup.setContent(text);
       }});
     }
   }
@@ -350,11 +348,8 @@ function loadMap() {
     fetch('data/markers.'+mapId+'.json')
       .then((response) => response.json())
       .then((j) => {
-        var chests = 0;
-        var chests_total = 0;
 
         objects = {};
-
         for (o of j) {
           if (c = classes[o.type]) {
             let markerId = o.area + ':' + o.name;
@@ -365,11 +360,8 @@ function loadMap() {
             let lookup = ''; // fetch youtube links from this file
 
             if (o.type.endsWith('Chest_C')) {
-              chests += 1;
-              chests_total += 1;
               icon = 'chest';
               layer = 'closedChest';
-              lookup = 'chests';
               if (o.spawns) {
                 title = title + ' ('+o.spawns+')';
               } else if (o.coins) {
@@ -378,28 +370,6 @@ function loadMap() {
             } else if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase') || o.type.startsWith('BP_BoneDetector_C')) {
               icon = 'shop';
               layer = 'shop';
-            } else if (o.type == 'PlayerStart' && !playerMarker) {
-              playerStart = [o.lat, o.lng, o.alt];
-              let t = new L.LatLng(o.lat, o.lng);
-              if (p = localData[mapId].playerPosition) {
-                t = new L.LatLng(p[0], p[1]);
-              }
-              playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng) })
-              .bindPopup()
-              .on('moveend', function(e) {
-                let marker = e.target;
-                let t = marker.getLatLng();
-                localData[mapId].playerPosition = [t.lat, t.lng, 0];
-                saveSettings();
-                e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
-              })
-              .on('popupopen', function(e) {
-                  let marker = e.target;
-                  let t = marker.getLatLng();
-                  t = {name:'playerPosition', lat:Math.round(t.lat), lng:Math.round(t.lng)};
-                  marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
-                  marker.openPopup();
-              }).addTo(map)
             }
 
             if (!icon) {
@@ -410,11 +380,54 @@ function loadMap() {
             }
 
             // finally, add marker
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, lookup:lookup, zIndexOffset: 100, alt: markerId, o:o }).addTo(layers[layer])
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: markerId, o:o }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
             .on('contextmenu',onContextMenu)
             ;
+
+            // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
+            if (s = classes[o.spawns]) {
+              icon = s.icon;
+              layer = s.layer;
+              if (!layers[layer]) {
+                layer = 'misc';
+              }
+              if (!icon) {
+                icon = 'question_mark';
+              }
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: markerId, o:o }).addTo(layers[layer])
+              .bindPopup(text)
+              .on('popupopen', onPopupOpen)
+              .on('contextmenu',onContextMenu)
+              ;
+            }
+
+          } // end of all items that have types entry
+
+          // add dynamic player marker on top of PlayerStart icon
+          if (o.type == 'PlayerStart' && !playerMarker) {
+            playerStart = [o.lat, o.lng, o.alt];
+            let t = new L.LatLng(o.lat, o.lng);
+            if (p = localData[mapId].playerPosition) {
+              t = new L.LatLng(p[0], p[1]);
+            }
+            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng) })
+            .bindPopup()
+            .on('moveend', function(e) {
+              let marker = e.target;
+              let t = marker.getLatLng();
+              localData[mapId].playerPosition = [t.lat, t.lng, 0];
+              saveSettings();
+              e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
+            })
+            .on('popupopen', function(e) {
+                let marker = e.target;
+                let t = marker.getLatLng();
+                t = {name:'playerPosition', lat:Math.round(t.lat), lng:Math.round(t.lng)};
+                marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
+                marker.openPopup();
+            }).addTo(map)
           }
 
           // collect objects for the 2-nd pass
