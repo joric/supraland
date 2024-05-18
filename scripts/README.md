@@ -28,7 +28,11 @@ Properties for all STU areas (i.e. names/transforms) are stored in the base area
 
 ### Jumppads
 
-Looks like there's no target point. Properties are:
+I've checked the map around some of the notable landing points, there's nothing indicating target points at all.
+My guess is jump pads show a parabola curve in editor so you can adjust the landing point visually
+(varying velocity parameters of the pad) but there's no explicit target.
+
+Properties are:
 
 ```json
   {

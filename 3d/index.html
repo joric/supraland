@@ -7,22 +7,30 @@
 html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 .container{width:100%;height:100%}
 </style>
+
+<!-- maptalks -->
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+
+<!-- font awesome  -->
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /-->
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script-->
+
 <base href="../"></base>
 <body>
 <div id="map" class="container"></div>
 <script>
 
-let startZoom = 3;
-let heightFactor = 0.25;
-let startPitch = 60;
+let heightFactor = 0.5;
+let startPitch = 0;
+let defaultZoom = 3;
+let defaultPitch = 45;
 let enableAltitude = true;
 let drawAltitude = true;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let map = null;
-let pitch = startPitch;
+let view = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
@@ -118,6 +126,35 @@ function markerSymbol2(o, shadow=false) {
   ];
 }
 
+// see https://github.com/FortAwesome/font-awesome-less/blob/master/assets/stylesheets/font-awesome/variables.less
+function fontAwesomeLookup(fa) {
+  switch(fa) {
+    case 'globe': return '\uf0ac';
+    case 'map': return '\uf279';
+    default: return '\uf0ac';
+  }
+}
+
+function markerSymbol3(o, shadow=false) {
+  return [
+    {
+      markerWidth: 85,
+      markerHeight: 85,
+      markerFill: 'royalblue',//colors[icon],
+      markerType: 'pin',
+    },
+    {
+      textFaceName: 'fontAwesome',
+      textName: fontAwesomeLookup('map'),
+      textSize: 28,
+      textFill: 'white',
+      //textVerticalAlignment: 'top',
+      textDy: -44,
+      textDx: -3,
+    },
+  ];
+}
+
 function loadMap(mapId) {
   location.hash = mapId;
 
@@ -135,19 +172,15 @@ function loadMap(mapId) {
   center = [p.MapWorldCenter.X, p.MapWorldCenter.Y];
 
   map = new maptalks.Map('map', {
-    zoom: startZoom,
-    pitch: pitch,
+    zoom: defaultZoom,
+    pitch: startPitch,
     heightFactor: heightFactor,
     center: center,
     maxExtent: extent,
     maxPitch: 80,
     spatialReference : {
       projection : 'identity',
-      resolutions : ( function() {
-        const r = [];
-        for (let i=32; i>0.125; i/=2) { r.push(i*scale); }
-        return r;
-      })(),
+      resolutions: [32,16,8,4,2,1,1/2,1/4].map(x=>x*scale),
       fullExtent : { top: top, left: left, bottom: bottom, right: right },
     },
     baseLayer: new maptalks.TileLayer('base', {
@@ -185,7 +218,7 @@ function loadMap(mapId) {
     vectorLayer.setOptions({
       drawAltitude : {
         lineWidth : 2,
-        lineColor : '#888',
+        lineColor : '#fff',
       },
     })
   }
@@ -198,11 +231,63 @@ function loadMap(mapId) {
           continue;
         }
         if (icon = items[o.type]) {
+
           var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
             id: o.area+':'+o.name,
             properties: {name: o.name},
             symbol: markerSymbol(o),
           }).addTo(vectorLayer);
+
+          if (o.type == 'Jumppad_C') {
+            if (r = o.direction) {
+
+              let x1 = o.lng;
+              let y1 = o.lat;
+              let x = o.direction.x;
+              let y = o.direction.y;
+              let z = o.direction.z;
+              let k = o.relative_velocity || 1000;
+
+              k = 0.00088 * Math.pow(k,2);
+
+              x *= k;
+              y *= k;
+              z *= k;
+
+              let x2 = x1 - x;
+              let y2 = y1 - y;
+              // some pre-defined targets for fitting (Supraland only)
+              let targets = {'Jumppad2_49':[-6997,13855], 'Jumppad_266':[-28995,3398], 'Jumppad79':[-11571,12819]};
+
+              let color = 'cyan';
+              let key = o.name;
+              if (o.area == 'Map' && targets[key]) {
+                color = 'lightcyan';
+                y3 = targets[key][0];
+                x3 = targets[key][1];
+               // L.polyline([[y1,x1],[y3,x3]], {title:' ', color: 'lightcyan'}).addTo(layers['jumppads']);
+              }
+              // need to add title as a single space (leaflet search issue)
+              //L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
+
+              var line = new maptalks.LineString(
+                [
+                  [x1,y1],
+                  [x2,y2]
+                ],
+                {
+                  symbol:{
+                    'lineColor' : '#fff',
+                    'lineWidth' : 1.5,
+                  }
+                }
+              ).addTo(vectorLayer);
+
+              //----------
+            }
+          } // end of jumppad
+
+
 
           new maptalks.ui.ToolTip(o.name,{}).addTo(marker);
 
@@ -221,7 +306,6 @@ function loadMap(mapId) {
             })
             .addTo(shadowLayer);
           }
-
         }
       }
    });
@@ -242,6 +326,7 @@ function loadMap(mapId) {
     c.select();
     document.execCommand('copy');
     c.parentNode.removeChild(c);
+    console.log('copied to clipboard:', s);
   }
 
   // context menu
@@ -249,9 +334,12 @@ function loadMap(mapId) {
     'items'  : [
       {
         item: 'Copy Map View URL',
-        click: function () { let v = map.getView();
-          copyToClipboard(window.location.href.replace(/#.*$/,'')+'#'+mapId+
-            '/'+[v.center[0],v.center[1],v.zoom,v.pitch,v.bearing].join('/'));
+        click: function () {
+          let base = window.location.href.replace(/#.*$/,'');
+          let v = map.getView();
+          let p = {m:mapId, z:v.zoom, c:v.center, p:v.pitch, b:v.bearing};
+          let url = base +'#' + Object.entries(p).map(e=>e.join('=')).join('&');
+          copyToClipboard(url);
         }
       },
       //'-',{item: 'item2', click: function () { alert('Click item2'); }}
@@ -259,13 +347,14 @@ function loadMap(mapId) {
   };
   map.setMenu(options);
 
+  document.querySelector('.maptalks-compass').title = 'Click to reset (key R)';
   document.querySelector('.maptalks-compass').onclick = function(e) {
     if (map.getBearing()==0) {
-      map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
+      map.animateTo({ pitch: map.getPitch()==0 ? defaultPitch : 0 });
     }
   };
 
-  //document.querySelector('.maptalks-compass').title = 'Click to reset (key R)';
+  //window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true); // enable default context menu
 
   [].forEach.call(document.querySelectorAll('.maptalks-toolbar-hx > li'), function(div) {
     if (div.innerText==mapId) {
@@ -273,6 +362,8 @@ function loadMap(mapId) {
       div.style.color = '#fff';
     }
   });
+
+  //view && map.setView(view);
 }
 
 function resetPitch(e) {
@@ -280,7 +371,7 @@ function resetPitch(e) {
   if (map.getBearing()!=0) {
     map.animateTo({ bearing: 0 });
   } else {
-    map.animateTo({ pitch: map.getPitch()==0 ? startPitch : 0 });
+    map.animateTo({ pitch: map.getPitch()==0 ? defaultPitch : 0 });
   }
 }
 
@@ -295,6 +386,7 @@ window.onload = function(event) {
     return "#"+((1<<24)+(c[0]<<16)+(c[1]<<8)+c[2]).toString(16).slice(1);
   }
 
+  // preload all colors and load map
   for (key of Object.keys(items)) {
     const image = new Image();
     image.id = items[key];
@@ -308,9 +400,11 @@ window.onload = function(event) {
     image.src = 'img/'+items[key]+'.png';
   }
 
+
   let pressed = {};
 
   function update(timestep) {
+    if (!map) return;
     let step = 25;
     let v = {};
     for (key of Object.keys(bindings)) {
@@ -324,7 +418,7 @@ window.onload = function(event) {
     v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
     v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     window.requestAnimationFrame(update);
-    pitch = map.getPitch();
+    view = map.getView();
   }
 
   window.addEventListener('keyup', (e) => {
@@ -351,7 +445,10 @@ window.onload = function(event) {
   });
 
   window.requestAnimationFrame(update);
-};
+
+  // redraw (need font awesome)
+  //setTimeout(function(){map.setPitch(map.getPitch()+0.01);},1000);
+}
 
 </script>
 </body>
