@@ -307,7 +307,7 @@ function loadMap(mapId) {
               let y = o.lat;
               let z = o.alt;
 
-              let dt = 0.25;
+              let dt = 0.5;
               let g = 9.8;
               let m = 92;
 
@@ -341,7 +341,8 @@ function loadMap(mapId) {
                   }
                 ).addTo(vectorLayer);
 
-                if (z<0) break;
+                if (o.alt>0 && z<0) break;
+                if (o.alt<0 && z<o.alt) break;
 
                 x1 = x2;
                 y1 = y2;
