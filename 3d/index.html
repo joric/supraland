@@ -175,11 +175,12 @@ function loadMap(mapId) {
 
 
 //file:///D:/Projects/github/supraland/trunk/3d/index.html#m=sl&z=4.081319246565431&c=20678.4798518,-8191.99171941&p=53.25000000000013&b=56.399999999999295
-
+/*
   center = [20678.4798518,-8191.99171941];
   defaultZoom = 4.081319246565431;
   startPitch = 53.25000000000013;
   defaultBearing = 56.399999999999295;
+*/
 
   map = new maptalks.Map('map', {
     zoom: defaultZoom,
@@ -296,13 +297,19 @@ function loadMap(mapId) {
               let vy = -o.direction.y * k;
               let vz = o.direction.z * k;
 
+              if (o.velocity) {
+                vx = o.velocity.x;
+                vy = o.velocity.y;
+                vz = o.velocity.z;
+              }
+
               let x = o.lng;
               let y = o.lat;
               let z = o.alt;
 
               let dt = 0.25;
               let g = 9.8;
-              let m = 133;
+              let m = 92;
 
               x1=x;
               y1=y;
