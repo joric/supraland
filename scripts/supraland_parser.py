@@ -186,11 +186,12 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
-
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity',0))
                 optKey(data[-1], 'velocity', (v:=p.get('Velocity'))and getXYZ(getVec(v)))
-                data[-1].update({'direction': {'x':matrix[0][2],'y':matrix[1][2],'z':matrix[2][2]}})
+                d = Vector((matrix[0][2],matrix[1][2],matrix[2][2]));
+                d.normalize()
+                data[-1].update({'direction': getXYZ(d)})
                 if p.get('DisableMovementInAir')==False:
                     data[-1].update({'enable_controls': True})
 

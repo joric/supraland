@@ -21,12 +21,13 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <div id="map" class="container"></div>
 <script>
 
-let heightFactor = 0.5;
+let heightFactor = 1;
 let startPitch = 0;
 let defaultZoom = 3;
 let defaultPitch = 45;
+let defaultBearing = 0;
 let enableAltitude = true;
-let drawAltitude = true;
+let drawAltitude = false;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let map = null;
@@ -95,6 +96,7 @@ function markerSymbol1(o, shadow=false) {
       markerFile: 'img/'+icon+'.png',
       markerWidth  : 32,
       markerHeight : 32,
+      markerDy: 16,
     },
   ];
 }
@@ -171,16 +173,25 @@ function loadMap(mapId) {
   let extent = new maptalks.Extent(left, top, right, bottom);
   center = [p.MapWorldCenter.X, p.MapWorldCenter.Y];
 
+
+//file:///D:/Projects/github/supraland/trunk/3d/index.html#m=sl&z=4.081319246565431&c=20678.4798518,-8191.99171941&p=53.25000000000013&b=56.399999999999295
+
+  center = [20678.4798518,-8191.99171941];
+  defaultZoom = 4.081319246565431;
+  startPitch = 53.25000000000013;
+  defaultBearing = 56.399999999999295;
+
   map = new maptalks.Map('map', {
     zoom: defaultZoom,
     pitch: startPitch,
+    bearing: defaultBearing,
     heightFactor: heightFactor,
     center: center,
     maxExtent: extent,
     maxPitch: 80,
     spatialReference : {
       projection : 'identity',
-      resolutions: [32,16,8,4,2,1,1/2,1/4].map(x=>x*scale),
+      resolutions: [32,16,8,4,2,1,1/2,1/4,1/8].map(x=>x*scale),
       fullExtent : { top: top, left: left, bottom: bottom, right: right },
     },
     baseLayer: new maptalks.TileLayer('base', {
@@ -217,7 +228,7 @@ function loadMap(mapId) {
   if (drawAltitude) {
     vectorLayer.setOptions({
       drawAltitude : {
-        lineWidth : 2,
+        lineWidth : 1,
         lineColor : '#fff',
       },
     })
@@ -238,11 +249,13 @@ function loadMap(mapId) {
             symbol: markerSymbol(o),
           }).addTo(vectorLayer);
 
-          if (o.type == 'Jumppad_C') {
+          if (o.type == 'Jumppad_C') {// && o.name=='Jumppad2_49') {
             if (r = o.direction) {
 
               let x1 = o.lng;
               let y1 = o.lat;
+              let z1 = o.alt;
+              /*
               let x = o.direction.x;
               let y = o.direction.y;
               let z = o.direction.z;
@@ -256,6 +269,10 @@ function loadMap(mapId) {
 
               let x2 = x1 - x;
               let y2 = y1 - y;
+              let z2 = z1 + z;
+              */
+
+              /*
               // some pre-defined targets for fitting (Supraland only)
               let targets = {'Jumppad2_49':[-6997,13855], 'Jumppad_266':[-28995,3398], 'Jumppad79':[-11571,12819]};
 
@@ -269,19 +286,61 @@ function loadMap(mapId) {
               }
               // need to add title as a single space (leaflet search issue)
               //L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
+              */
 
-              var line = new maptalks.LineString(
-                [
-                  [x1,y1],
-                  [x2,y2]
-                ],
-                {
-                  symbol:{
-                    'lineColor' : '#fff',
-                    'lineWidth' : 1.5,
+              // solve over time
+
+              let k = o.relative_velocity || 1000;
+
+              let vx = -o.direction.x * k;
+              let vy = -o.direction.y * k;
+              let vz = o.direction.z * k;
+
+              let x = o.lng;
+              let y = o.lat;
+              let z = o.alt;
+
+              let dt = 0.25;
+              let g = 9.8;
+              let m = 133;
+
+              x1=x;
+              y1=y;
+              z1=z;
+
+              let x2=y2=z2=0;
+
+              for (let t=0; t<10; t+=dt) {
+
+                vz -= g * m * dt;
+                x += vx * dt;
+                y += vy * dt;
+                z += vz * dt;
+
+                x2 = x;
+                y2 = y;
+                z2 = z;
+
+                var line = new maptalks.LineString(
+                  [
+                    [x1,y1,z1],
+                    [x2,y2,z2]
+                  ],
+                  {
+                    symbol:{
+                      'lineColor' : 'cyan',
+                      'lineWidth' : 2,
+                    }
                   }
-                }
-              ).addTo(vectorLayer);
+                ).addTo(vectorLayer);
+
+                if (z<0) break;
+
+                x1 = x2;
+                y1 = y2;
+                z1 = z2;
+
+              }
 
               //----------
             }
