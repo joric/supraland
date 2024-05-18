@@ -59,7 +59,7 @@ BuyGunComboDamage+25_C,gun_damage,upgrades
 BuyGunCriticalDamageChance_C,gun_damage,upgrades
 BuyGunCriticalDamage_C,gun_damage,upgrades
 BuyGunDamage+15_C,gun_damage,upgrades
-BuyGunDamage+1_C,gun_damage,
+BuyGunDamage+1_C,gun_damage,upgrades
 BuyGunDamage+5_C,gun_damage,upgrades
 BuyGunHoly1_C,gun_upgrade,upgrades
 BuyGunHoly2_C,gun_upgrade,upgrades
