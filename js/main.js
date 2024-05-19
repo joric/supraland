@@ -449,6 +449,7 @@ function loadMap() {
 
           if (o.type == 'Jumppad_C') {
             if (r = o.direction) {
+              let color = 'magenta';
 
               let x1 = o.lng;
               let y1 = o.lat;
@@ -461,6 +462,7 @@ function loadMap() {
               let vz = o.direction.z * k;
 
               if (o.velocity) {
+                color = 'cyan';
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
@@ -492,7 +494,7 @@ function loadMap() {
               let z2 = z;
 
               // need to add title as a single space (leaflet search issue)
-              L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
+              L.polyline([[y1,x1],[y2,x2]], {title:' ', color: color}).addTo(layers['jumppads']);
             }
           }
 

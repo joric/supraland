@@ -42,7 +42,7 @@ let items = {
   //'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin'
   'Jumppad_C':'map',
-  '_JumppadTarget_C':'bones',
+  '_JumppadTarget_C':'question_mark',
   //'PipesystemNew_C':'gun_yellow'
 };
 
@@ -246,6 +246,7 @@ function loadMap(mapId) {
           if (o.type == 'Jumppad_C') {// && o.name=='Jumppad2_49') {
 
             if (r = o.direction) {
+              let color = 'magenta';
               let x1 = o.lng;
               let y1 = o.lat;
               let z1 = o.alt;
@@ -257,6 +258,7 @@ function loadMap(mapId) {
               let vz = o.direction.z * k;
 
               if (o.velocity) {
+                color = 'cyan';
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
@@ -294,7 +296,7 @@ function loadMap(mapId) {
                   ],
                   {
                     symbol:{
-                      'lineColor' : 'cyan',
+                      'lineColor' : color,
                       'lineWidth' : 2,
                     }
                   }

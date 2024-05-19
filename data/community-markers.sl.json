@@ -25,5 +25,14 @@
     "lng": 12819,
     "alt": 73,
     "parent":"Map:Jumppad2_266"
+  },
+  {
+    "name": "Jumppad43_2_Target",
+    "type": "_JumppadTarget_C",
+    "area": "Map",
+    "lat": -8817,
+    "lng": 58413,
+    "alt": 6091,
+    "parent":"Map:Jumppad43_2"
   }
 ]
