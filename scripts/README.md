@@ -16,16 +16,6 @@ You can just export everything in FModel, right click on Materials, "Save Folder
 SIU introduces areas, each area has its own world matrix. you have to transform objects accordingly.
 Properties for all STU areas (i.e. names/transforms) are stored in the base area, DLC2_Complete.
 
-### Misc
-
-* Jumppad_C - has Velocity/RelativeVelocity but no "target", angles seem inaccurate (uses spline path?)
-* PipeCap_C - (pipe teleports) can't find any connection between them
-* TeleportObjectVolume_C - looks like it's mostly used for destroying objects
-* TriggerVolume_C - many of them, multi-purpose
-* MinecraftBrick_C - exports HitsToBreak, bObsidian. Need to export/support BrickType.
-* Lift1_C - vertical lifts
-* Coin_C - note there's no such entity as "coin stash", only small/big coins and chest spawns
-
 ### Jumppads
 
 I've checked the map around some of the notable landing points, there's nothing indicating target points at all.
@@ -190,5 +180,14 @@ Example (PipeCap11 and Secret_TeleportPipe1 are the ends of the pipe):
 Some pipes (e.g. "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_3" do not have "other pipe")
 They are initialized in pipe system builders, `PipeSystemBuilder_C` (not supported yet).
 
+### Misc
 
+* TriggerVolume_C - many of them, multi-purpose
+* MinecraftBrick_C - exports HitsToBreak, bObsidian. Need to export/support BrickType.
+* Lift1_C - vertical lifts
+* Coin_C - note there's no such entity as "coin stash", only small/big coins and chest spawns
 
+### References
+
+* https://github.com/joric/supraland
+* https://github.com/MinshuG/pyUE4Parse
