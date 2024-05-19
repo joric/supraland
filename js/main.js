@@ -474,7 +474,7 @@ function loadMap() {
 
               let dt = 0.5;
               let g = 9.8;
-              let m = 92;
+              let m = 95;
 
               x1=x;
               y1=y;
