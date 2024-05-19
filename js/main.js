@@ -480,7 +480,7 @@ function loadMap() {
               y1=y;
               z1=z;
 
-              for (let t=0; t<10; t+=dt) {
+              for (let t=0; t<20; t+=dt) {
                 vz -= g * m * dt;
                 x += vx * dt;
                 y += vy * dt;
