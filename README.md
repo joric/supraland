@@ -1,8 +1,8 @@
 # Supraland
 
-* Live map: https://joric.github.io/supraland
+Please read wiki for details: https://github.com/joric/supraland/wiki
 
-Read wiki for details: https://github.com/joric/supraland/wiki
+* Live map: https://joric.github.io/supraland
 
 ## Features
 

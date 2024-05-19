@@ -1,8 +1,6 @@
 # (c) 2022-2024 Joric, https://github.com/joric/supraland
 # install UE4Parse module: pip install git+https://github.com/joric/pyUE4Parse.git
 # install dependencies: pip install mathutils aes
-# see https://github.com/MinshuG/pyUE4Parse/issues/9 about outer nodes
-# see https://github.com/MinshuG/pyUE4Parse/issues/20 about python 3.12
 # see wiki for more info https://github.com/joric/supraland/wiki
 
 from UE4Parse.Assets.Objects.FGuid import FGuid
