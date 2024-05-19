@@ -18,13 +18,13 @@
     "parent":"Map:Jumppad2_266"
   },
   {
-    "name": "Jumppad2_266_Target",
+    "name": "Jumppad79_Target",
     "type": "_JumppadTarget_C",
     "area": "Map",
     "lat": -11571,
     "lng": 12819,
-    "alt": 73,
-    "parent":"Map:Jumppad2_266"
+    "alt": 400,
+    "parent":"Map:Jumppad79"
   },
   {
     "name": "Jumppad43_2_Target",
@@ -32,7 +32,7 @@
     "area": "Map",
     "lat": -8817,
     "lng": 58413,
-    "alt": 6091,
+    "alt": 10000,
     "parent":"Map:Jumppad43_2"
   }
 ]

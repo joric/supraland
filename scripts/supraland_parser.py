@@ -195,6 +195,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 optKey(data[-1], 'allow_stomp', p.get('AllowStomp'))
                 optKey(data[-1], 'disable_movement', p.get('DisableMovementInAir'))
                 optKey(data[-1], 'allow_relative_velocity', p.get('RelativeVelocity?'))
+                optKey(data[-1], 'center_actor', p.get('CenterActor'))
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')
