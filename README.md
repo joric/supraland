@@ -1,7 +1,8 @@
 # Supraland
 
 * Live map: https://joric.github.io/supraland
-* Wiki (please read): https://github.com/joric/supraland/wiki
+
+Read wiki for details: https://github.com/joric/supraland/wiki
 
 ## Features
 
@@ -24,8 +25,6 @@ like [Upscayl](https://upscayl.github.io) but it's quite slow and the size will 
 ## License
 
 This project is public domain, feel free to copy, sell and modify but make sure it's okay with [David Münnich](http://www.david-m.org) and [Supra Games Community](https://github.com/supragamescommunity).
-
-* Read wiki for details: https://github.com/joric/supraland/wiki
 
 ## References
 
