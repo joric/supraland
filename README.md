@@ -29,7 +29,7 @@ like [Upscayl](https://upscayl.github.io) but it's quite slow and the size will 
 
 I didn't do much, all credit goes to [David Münnich](http://www.david-m.org) and [Supra Games Community](https://github.com/supragamescommunity).
 
-This project is public domain, feel free to copy, sell and modify.
+This project is public domain, feel free to copy, sell and modify but make sure it sits well with those guys.
 
 ## References
 
