@@ -174,15 +174,6 @@ function loadMap(mapId) {
   let extent = new maptalks.Extent(left, top, right, bottom);
   center = [p.MapWorldCenter.X, p.MapWorldCenter.Y];
 
-
-//file:///D:/Projects/github/supraland/trunk/3d/index.html#m=sl&z=4.081319246565431&c=20678.4798518,-8191.99171941&p=53.25000000000013&b=56.399999999999295
-/*
-  center = [20678.4798518,-8191.99171941];
-  defaultZoom = 4.081319246565431;
-  startPitch = 53.25000000000013;
-  defaultBearing = 56.399999999999295;
-*/
-
   map = new maptalks.Map('map', {
     zoom: defaultZoom,
     pitch: startPitch,
@@ -236,18 +227,10 @@ function loadMap(mapId) {
     })
   }
 
-  fetch('data/markers.'+mapId+'.json')
+  for (const fname of ['markers','community-markers'])
+    fetch('data/'+fname+'.'+mapId+'.json')
     .then((response) => response.json())
     .then((j) => {
-
-      // add some pre-defined jump pad targets (Supraland only)
-      let targets = {'Jumppad2_49':[-6997,13855,-446], 'Jumppad_266':[-29081,3350,-266], 'Jumppad79':[-11571,12819,73]};
-      for (const[s,v] of Object.entries(targets)){
-        if (mapId=='sl') {
-          j.push({type:'_JumppadTarget_C', name:s + '_Target', lat:v[0],lng:v[1],alt:v[2]})
-        }
-      }
-
       for (o of j) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
@@ -256,7 +239,6 @@ function loadMap(mapId) {
         if (icon = items[o.type]) {
 
           var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
-            id: o.area+':'+o.name,
             properties: {name: o.name},
             symbol: markerSymbol(icon),
           }).addTo(vectorLayer);
