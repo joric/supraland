@@ -169,3 +169,4 @@ PipeCap_C,pipe_red,pipesys
 PipesystemNew_C,pipe_green,pipesys
 PipesystemNewDLC_C,pipe_blue,pipesys
 Shell_C,shell,collectable
+_JumppadTarget_C,bones,jumppads

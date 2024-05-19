@@ -344,10 +344,10 @@ function loadMap() {
   }
 
   function loadMarkers() {
-    fetch('data/markers.'+mapId+'.json')
+    for (const fname of ['markers','community-markers'])
+    fetch('data/'+fname+'.'+mapId+'.json')
       .then((response) => response.json())
       .then((j) => {
-
         objects = {};
         for (o of j) {
 
@@ -452,41 +452,44 @@ function loadMap() {
 
               let x1 = o.lng;
               let y1 = o.lat;
+              let z1 = o.alt;
 
-              let x = o.direction.x;
-              let y = o.direction.y;
-              let z = o.direction.z;
+              let k = o.relative_velocity || 1000;
 
-              let k = 5.0;
-              let h = o.relative_velocity || 1000;
+              let vx = -o.direction.x * k;
+              let vy = -o.direction.y * k;
+              let vz = o.direction.z * k;
 
-              x *= k*h;
-              y *= k*h;
-              z *= k*h;
-
-              /*
               if (o.velocity) {
-                x *= o.velocity.x;
-                y *= o.velocity.y;
-                z *= o.velocity.z;
-              } else 
-              */
-
-              let x2 = x1 - x;
-              let y2 = y1 - y;
-
-              // some pre-defined targets for fitting (Supraland only)
-              let targets = {'Jumppad2_49':[-6997,13855], 'Jumppad_266':[-28995,3398], 'Jumppad79':[-11571,12819]};
-
-              let color = 'cyan';
-              let key = o.name;
-              if (o.area == 'Map' && targets[key]) {
-                color = 'lightcyan';
-                y3 = targets[key][0];
-                x3 = targets[key][1];
-                L.polyline([[y1,x1],[y3,x3]], {title:' ', color: 'lightcyan'}).addTo(layers['jumppads']);
+                vx = o.velocity.x;
+                vy = o.velocity.y;
+                vz = o.velocity.z;
               }
 
+              let x = o.lng;
+              let y = o.lat;
+              let z = o.alt;
+
+              let dt = 0.5;
+              let g = 9.8;
+              let m = 92;
+
+              x1=x;
+              y1=y;
+              z1=z;
+
+              for (let t=0; t<10; t+=dt) {
+                vz -= g * m * dt;
+                x += vx * dt;
+                y += vy * dt;
+                z += vz * dt;
+                if (o.alt>0 && z<0) break;
+                if (o.alt<0 && z<o.alt) break;
+              }
+
+              let x2 = x;
+              let y2 = y;
+              let z2 = z;
 
               // need to add title as a single space (leaflet search issue)
               L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);

@@ -240,8 +240,8 @@ function loadMap(mapId) {
     .then((response) => response.json())
     .then((j) => {
 
-      // add some pre-defined targets for fitting (Supraland only)
-      let targets = {'Jumppad2_49':[-6997,13855,-446], 'Jumppad_266':[-28695,3398,-266], 'Jumppad79':[-11571,12819,73]};
+      // add some pre-defined jump pad targets (Supraland only)
+      let targets = {'Jumppad2_49':[-6997,13855,-446], 'Jumppad_266':[-29081,3350,-266], 'Jumppad79':[-11571,12819,73]};
       for (const[s,v] of Object.entries(targets)){
         if (mapId=='sl') {
           j.push({type:'_JumppadTarget_C', name:s + '_Target', lat:v[0],lng:v[1],alt:v[2]})
@@ -268,7 +268,6 @@ function loadMap(mapId) {
               let y1 = o.lat;
               let z1 = o.alt;
 
-              // solve over time
               let k = o.relative_velocity || 1000;
 
               let vx = -o.direction.x * k;
@@ -327,8 +326,6 @@ function loadMap(mapId) {
                 z1 = z2;
 
               }
-
-              //----------
             }
           } // end of jumppad
 
