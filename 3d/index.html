@@ -27,7 +27,7 @@ let defaultZoom = 3;
 let defaultPitch = 45;
 let defaultBearing = 0;
 let enableAltitude = true;
-let drawAltitude = false;
+let drawAltitude = true;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let map = null;
@@ -42,6 +42,7 @@ let items = {
   //'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin'
   'Jumppad_C':'map',
+  'Bones_C':'bones',
   //'PipesystemNew_C':'gun_yellow'
 };
 
@@ -80,7 +81,7 @@ let maps = {
   },
 };
 
-function markerSymbol1(o, shadow=false) {
+function markerSymbol1(icon, shadow=false) {
   if (shadow) {
     return [
       {
@@ -101,7 +102,7 @@ function markerSymbol1(o, shadow=false) {
   ];
 }
 
-function markerSymbol2(o, shadow=false) {
+function markerSymbol2(icon, shadow=false) {
   if (shadow) {
     return [
       {
@@ -137,7 +138,7 @@ function fontAwesomeLookup(fa) {
   }
 }
 
-function markerSymbol3(o, shadow=false) {
+function markerSymbol3(icon, shadow=false) {
   return [
     {
       markerWidth: 85,
@@ -238,59 +239,36 @@ function loadMap(mapId) {
   fetch('data/markers.'+mapId+'.json')
     .then((response) => response.json())
     .then((j) => {
+
+      // add some pre-defined targets for fitting (Supraland only)
+      let targets = {'Jumppad2_49':[-6997,13855,-446], 'Jumppad_266':[-28695,3398,-266], 'Jumppad79':[-11571,12819,73]};
+      for (const[s,v] of Object.entries(targets)){
+        if (mapId=='sl') {
+          j.push({type:'Bones_C', name:s + '_Target', lat:v[0],lng:v[1],alt:v[2]})
+        }
+      }
+
       for (o of j) {
         if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
           continue;
         }
+
         if (icon = items[o.type]) {
 
           var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
             id: o.area+':'+o.name,
             properties: {name: o.name},
-            symbol: markerSymbol(o),
+            symbol: markerSymbol(icon),
           }).addTo(vectorLayer);
 
           if (o.type == 'Jumppad_C') {// && o.name=='Jumppad2_49') {
-            if (r = o.direction) {
 
+            if (r = o.direction) {
               let x1 = o.lng;
               let y1 = o.lat;
               let z1 = o.alt;
-              /*
-              let x = o.direction.x;
-              let y = o.direction.y;
-              let z = o.direction.z;
-              let k = o.relative_velocity || 1000;
-
-              k = 0.00088 * Math.pow(k,2);
-
-              x *= k;
-              y *= k;
-              z *= k;
-
-              let x2 = x1 - x;
-              let y2 = y1 - y;
-              let z2 = z1 + z;
-              */
-
-              /*
-              // some pre-defined targets for fitting (Supraland only)
-              let targets = {'Jumppad2_49':[-6997,13855], 'Jumppad_266':[-28995,3398], 'Jumppad79':[-11571,12819]};
-
-              let color = 'cyan';
-              let key = o.name;
-              if (o.area == 'Map' && targets[key]) {
-                color = 'lightcyan';
-                y3 = targets[key][0];
-                x3 = targets[key][1];
-               // L.polyline([[y1,x1],[y3,x3]], {title:' ', color: 'lightcyan'}).addTo(layers['jumppads']);
-              }
-              // need to add title as a single space (leaflet search issue)
-              //L.polyline([[y1,x1],[y2,x2]], {title:' ', color: 'cyan'}).addTo(layers['jumppads']);
-              */
 
               // solve over time
-
               let k = o.relative_velocity || 1000;
 
               let vx = -o.direction.x * k;
@@ -355,7 +333,6 @@ function loadMap(mapId) {
           } // end of jumppad
 
 
-
           new maptalks.ui.ToolTip(o.name,{}).addTo(marker);
 
           marker.setInfoWindow({
@@ -369,7 +346,7 @@ function loadMap(mapId) {
           if (drawShadow) {
             new maptalks.Marker([o.lng, o.lat],{
               cursor: 'arrow',
-              symbol: markerSymbol(o, true),
+              symbol: markerSymbol(o.icon, true),
             })
             .addTo(shadowLayer);
           }
