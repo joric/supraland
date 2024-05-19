@@ -124,7 +124,7 @@ def export_levels(game, cache_dir):
 def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
     data = []
     areas = {}
-    optKey = lambda d,k,v: v and d.__setitem__(k,v)
+    optKey = lambda d,k,v: v is not None and d.__setitem__(k,v)
     getVec = lambda d,v=0: Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
     getRot = lambda d,v=0: Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
     getQuat= lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
@@ -177,23 +177,24 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             data[-1].update({'lat': v.y, 'lng': v.x, 'alt': v.z})
 
             p = o.get('Properties',{})
-            optKey(data[-1], 'coins', p.get('Coins',0))
-            optKey(data[-1], 'coins', p.get('CoinsInGold',0))
-            optKey(data[-1], 'cost', p.get('Cost',0))
+            optKey(data[-1], 'coins', p.get('Coins'))
+            optKey(data[-1], 'coins', p.get('CoinsInGold'))
+            optKey(data[-1], 'cost', p.get('Cost'))
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
-            optKey(data[-1], 'hits', p.get('HitsToBreak',0))
-            optKey(data[-1], 'obsidian', p.get('bObsidian',0))
+            optKey(data[-1], 'hits', p.get('HitsToBreak'))
+            optKey(data[-1], 'obsidian', p.get('bObsidian'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
             if o['Type'] in ('Jumppad_C'):
-                optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity',0))
+                optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity'))
                 optKey(data[-1], 'velocity', (v:=p.get('Velocity'))and getXYZ(getVec(v)))
                 d = Vector((matrix[0][2],matrix[1][2],matrix[2][2]));
                 d.normalize()
                 data[-1].update({'direction': getXYZ(d)})
-                if p.get('DisableMovementInAir')==False:
-                    data[-1].update({'enable_controls': True})
+                optKey(data[-1], 'allow_stomp', p.get('AllowStomp'))
+                optKey(data[-1], 'disable_movement', p.get('DisableMovementInAir'))
+                optKey(data[-1], 'allow_relative_velocity', p.get('RelativeVelocity?'))
 
     for area in config[game]['maps']:
         path = os.path.join(cache_dir, area + '.json')

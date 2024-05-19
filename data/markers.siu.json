@@ -213,7 +213,8 @@
     "area": "DLC2_Complete",
     "lat": -7222.57421875,
     "lng": 60659.140625,
-    "alt": 4136.0
+    "alt": 4136.0,
+    "cost": 0
   },
   {
     "name": "BuyChestDetectorRadius_2",
@@ -6331,7 +6332,7 @@
       "y": 0.573577344417572,
       "z": 0.8191515207290649
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad12",
@@ -6429,7 +6430,7 @@
       "y": -0.3143821656703949,
       "z": 0.9396960735321045
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad19_2",
@@ -6444,7 +6445,8 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "allow_stomp": true,
+    "disable_movement": false
   },
   {
     "name": "Jumppad20",
@@ -6515,7 +6517,7 @@
       "y": -0.134441539645195,
       "z": 0.9235073328018188
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad25",
@@ -6529,7 +6531,7 @@
       "y": 0.03792191669344902,
       "z": 0.8397007584571838
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad26",
@@ -6544,7 +6546,7 @@
       "y": 0.26321423053741455,
       "z": 0.7214186191558838
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad27",
@@ -6558,7 +6560,7 @@
       "y": 0.6790565252304077,
       "z": 0.7214187383651733
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad28",
@@ -6572,7 +6574,7 @@
       "y": -0.6801573634147644,
       "z": 0.721419095993042
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad29",
@@ -6683,7 +6685,8 @@
       "x": 0.27481475472450256,
       "y": 0.2957473397254944,
       "z": 0.9148827195167542
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad7",
@@ -6697,7 +6700,8 @@
       "x": -0.3815585672855377,
       "y": -0.21282678842544556,
       "z": 0.8995097875595093
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad8",
@@ -6711,7 +6715,8 @@
       "x": -0.20777089893817902,
       "y": -0.6934918165206909,
       "z": 0.6898553967475891
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad9",
@@ -13513,7 +13518,8 @@
       "y": 0.2483799159526825,
       "z": 0.2755940556526184
     },
-    "enable_controls": true
+    "allow_stomp": true,
+    "disable_movement": false
   },
   {
     "name": "Jumppad2_2",
@@ -13527,7 +13533,8 @@
       "x": 0.18187639117240906,
       "y": 0.4657635986804962,
       "z": 0.8660169243812561
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "MatchBox8_2",
@@ -15628,7 +15635,8 @@
       "y": -0.47589102387428284,
       "z": 0.6344125866889954
     },
-    "enable_controls": true
+    "allow_stomp": true,
+    "disable_movement": false
   },
   {
     "name": "Jumppad3_5",
@@ -15642,7 +15650,8 @@
       "y": 0.5529000759124756,
       "z": 0.7409725785255432
     },
-    "enable_controls": true
+    "allow_stomp": true,
+    "disable_movement": false
   },
   {
     "name": "Jumppad_2",
@@ -15656,7 +15665,8 @@
       "y": 0.3177516460418701,
       "z": 0.9396669268608093
     },
-    "enable_controls": true
+    "allow_stomp": true,
+    "disable_movement": false
   },
   {
     "name": "MinecraftBrick3",

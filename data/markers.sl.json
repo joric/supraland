@@ -10387,7 +10387,8 @@
       "x": -3.725104988916428e-06,
       "y": 0.9239068627357483,
       "z": 0.3826174736022949
-    }
+    },
+    "allow_relative_velocity": false
   },
   {
     "name": "Jumppad16",
@@ -10426,7 +10427,7 @@
       "y": 2.1022908640588867e-06,
       "z": 2.9877819542889483e-05
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad18",
@@ -10446,7 +10447,7 @@
       "y": 9.399895475326048e-07,
       "z": 0.2902831435203552
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad19",
@@ -10466,7 +10467,7 @@
       "y": 0.2902851402759552,
       "z": 0.9569401741027832
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad20_2",
@@ -10567,7 +10568,8 @@
       "x": -0.7084013819694519,
       "y": -0.21719563007354736,
       "z": 0.671560525894165
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad27_1960",
@@ -10587,7 +10589,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad28_8720",
@@ -10605,7 +10607,8 @@
       "x": -3.2395048492617207e-06,
       "y": 1.0,
       "z": -4.371138828673793e-08
-    }
+    },
+    "allow_relative_velocity": false
   },
   {
     "name": "Jumppad29_13926",
@@ -10638,7 +10641,9 @@
       "x": -0.3633880317211151,
       "y": -0.723253071308136,
       "z": 0.587242841720581
-    }
+    },
+    "allow_stomp": true,
+    "allow_relative_velocity": false
   },
   {
     "name": "Jumppad30_17845",
@@ -10667,7 +10672,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad32_9265",
@@ -10709,7 +10714,7 @@
       "y": -0.6360566020011902,
       "z": 0.7716423869132996
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad35",
@@ -10723,7 +10728,8 @@
       "x": 0.721126914024353,
       "y": 0.26081740856170654,
       "z": 0.641833484172821
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad36_6503",
@@ -10738,7 +10744,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad37_8255",
@@ -10800,7 +10806,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad40_8816",
@@ -10848,7 +10854,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad43_2",
@@ -10863,7 +10869,7 @@
       "y": 0.0,
       "z": 0.8819214105606079
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad44",
@@ -10937,7 +10943,8 @@
       "x": 0.0,
       "y": 0.0,
       "z": 1.0
-    }
+    },
+    "allow_relative_velocity": false
   },
   {
     "name": "Jumppad49_2147",
@@ -10952,7 +10959,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad4_1222",
@@ -10972,7 +10979,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad50",
@@ -11000,7 +11007,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad52",
@@ -11029,7 +11036,7 @@
       "y": -0.7143462896347046,
       "z": 0.6997923851013184
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad54_1487",
@@ -11099,7 +11106,7 @@
       "y": 0.04287060350179672,
       "z": 0.7071119546890259
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad59_1564",
@@ -11133,7 +11140,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad6",
@@ -11153,7 +11160,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad60",
@@ -11296,7 +11303,8 @@
       "x": 0.6438025832176208,
       "y": -0.28576943278312683,
       "z": 0.7098268270492554
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad70",
@@ -11460,7 +11468,8 @@
       "x": -0.561651349067688,
       "y": 0.22305326163768768,
       "z": 0.7967402338981628
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Jumppad80",
@@ -11680,7 +11689,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad95",
@@ -11747,7 +11756,7 @@
       "y": 0.0,
       "z": 1.0
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad99",
@@ -11762,7 +11771,7 @@
       "y": 0.0,
       "z": 0.9885662794113159
     },
-    "enable_controls": true
+    "disable_movement": false
   },
   {
     "name": "Jumppad9_1454",
@@ -11795,7 +11804,8 @@
       "x": 0.37756744027137756,
       "y": 0.8290273547172546,
       "z": 0.4125003218650818
-    }
+    },
+    "allow_stomp": true
   },
   {
     "name": "Key10_5",

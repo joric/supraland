@@ -461,7 +461,7 @@ function loadMap() {
               let vy = -o.direction.y * k;
               let vz = o.direction.z * k;
 
-              if (o.velocity) {
+              if (o.velocity && o.allow_stomp) {
                 color = 'cyan';
                 vx = o.velocity.x;
                 vy = o.velocity.y;

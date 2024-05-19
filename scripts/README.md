@@ -55,8 +55,7 @@ Properties are:
   }
 ```
 
-If you take direction from matrix (column 3) you instantly get proper launcher orientation.
-I'm not sure how to account for velocity, it doesn't seem to affect direction.
+You can get proper launcher direction from its matrix (column 3).
 Some jumppads don't have compound velocity, oddly Jumppad63/Supraland doesn't have any velocity at all.
 
 Not sure how red and blue launchers are different, it's not about controls.
@@ -92,6 +91,62 @@ This is red one and blue one accordingly:
 
 ```
 
+There are two types: _DavidM: the legacy stuff uses a 3d velocity, the newer ones a direction and velocity._ ([discord](https://discord.com/channels/411867412045103104/569634940329787452/1241407899436322876))
+
+Here are some examples, the choice of vector and scalar is looked up in the Supraland community map (it shows jump targets).
+
+Jumppad2_49 (uses vector velocity):
+
+```json
+      "RelativeVelocity?": false,
+      "Velocity": {
+        "X": 2550.0,
+        "Y": 5200.0,
+        "Z": 2100.0
+      },
+      "RelativeVelocity": 6000.0,
+      "AllowStomp": true,
+      "PreviewPath": true,
+      "PreviewPathTime": 6.0,
+```
+
+Jumppad97 (uses scalar velocity):
+
+```json
+      "Velocity": {
+        "X": 4800.0,
+        "Y": 250.0,
+        "Z": 3500.0
+      },
+      "RelativeVelocity": 8700.0,
+      "AllowTranslocator": false,
+      "PreviewPath": true,
+      "PreviewPathTime": 15.0,
+```
+
+Jumppad_266 (uses vector velocity):
+
+```json
+      "Velocity": {
+        "X": -2400.0,
+        "Y": -5200.0,
+        "Z": 2100.0
+      },
+      "RelativeVelocity": 5600.0,
+      "AllowStomp": true,
+      "PreviewPath": true,
+      "PreviewPathTime": 6.0,
+```
+
+The `RelativeVelocity?` flag doesn't seem to matter (there are pads that use vector without that, e.g. Jumppad_266).
+
+Need investigating, why Jumppad97 uses scalar, but Jumppad_266 uses vector, there must be a version flag or something.
+
+For now it seems that the only property indicating legacy pad is `AllowStomp`.
+
+The underscore in the name is not it (e.g. `Jumppad8` is vector, `Jumppad90` is scalar).
+
+I mark legacy with cyan (3d velocity), newer ones with magenta (scalar velocity).
 
 ### Pipes
 
