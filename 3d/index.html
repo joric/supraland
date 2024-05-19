@@ -42,7 +42,7 @@ let items = {
   //'EnemySpawn1_C':'grave_wood','EnemySpawn2_C':'grave_stone','EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin'
   'Jumppad_C':'map',
-  'Bones_C':'bones',
+  '_JumppadTarget_C':'bones',
   //'PipesystemNew_C':'gun_yellow'
 };
 
@@ -244,7 +244,7 @@ function loadMap(mapId) {
       let targets = {'Jumppad2_49':[-6997,13855,-446], 'Jumppad_266':[-28695,3398,-266], 'Jumppad79':[-11571,12819,73]};
       for (const[s,v] of Object.entries(targets)){
         if (mapId=='sl') {
-          j.push({type:'Bones_C', name:s + '_Target', lat:v[0],lng:v[1],alt:v[2]})
+          j.push({type:'_JumppadTarget_C', name:s + '_Target', lat:v[0],lng:v[1],alt:v[2]})
         }
       }
 
