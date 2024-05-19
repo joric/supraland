@@ -11,7 +11,7 @@
 
 ## License
 
-This project is public domain. See [project's wiki](https://github.com/joric/supraland/wiki) for details.
+This project is public domain, feel free to copy, sell and modify. See [project's wiki](https://github.com/joric/supraland/wiki) for details.
 
 ## References
 
