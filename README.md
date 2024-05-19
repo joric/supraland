@@ -28,6 +28,7 @@ This project is public domain, feel free to copy, sell and modify. See project w
 
 ## References
 
+* https://github.com/joric/supraland/wiki
 * https://github.com/supragamescommunity
 * https://github.com/MinshuG/pyUE4Parse
 * https://github.com/Leaflet/Leaflet
