@@ -31,7 +31,6 @@ let drawAltitude = true;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let map = null;
-let view = null;
 
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
@@ -387,8 +386,6 @@ function loadMap(mapId) {
       div.style.color = '#fff';
     }
   });
-
-  //view && map.setView(view);
 }
 
 function resetPitch(e) {
@@ -429,7 +426,6 @@ window.onload = function(event) {
   let pressed = {};
 
   function update(timestep) {
-    if (!map) return;
     let step = 25;
     let v = {};
     for (key of Object.keys(bindings)) {
@@ -443,7 +439,6 @@ window.onload = function(event) {
     v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
     v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     window.requestAnimationFrame(update);
-    view = map.getView();
   }
 
   window.addEventListener('keyup', (e) => {
