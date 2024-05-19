@@ -148,6 +148,8 @@ The underscore in the name is not it (e.g. `Jumppad8` is vector, `Jumppad90` is 
 
 I mark legacy with cyan (3d velocity), newer ones with magenta (scalar velocity).
 
+TODO: Investigate `Jumppad92` and `Jumppad21_2`, why they pointed down.
+
 ### Pipes
 
 Pipe teleports use `PipesystemNew_C` and PipesystemNewDLC_C classes.
