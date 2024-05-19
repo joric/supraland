@@ -3,7 +3,9 @@
 * Live map: https://joric.github.io/supraland
 * Experimental 3d map: https://joric.github.io/supraland/3d
 
-I didn't do much, all credit goes to [David Münnich](http://www.david-m.org) and [Supra Games Community](https://github.com/supragamescommunity).
+Please read wiki for more info:
+
+* https://github.com/joric/supraland/wiki
 
 ## Features
 
@@ -25,7 +27,9 @@ like [Upscayl](https://upscayl.github.io) but it's quite slow and the size will 
 
 ## License
 
-This project is an unlicensed public domain, feel free to copy, sell and modify.
+I didn't do much, all credit goes to [David Münnich](http://www.david-m.org) and [Supra Games Community](https://github.com/supragamescommunity).
+
+This project is public domain, feel free to copy, sell and modify.
 
 ## References
 
