@@ -1,7 +1,6 @@
 # Supraland
 
 * Live map: https://joric.github.io/supraland
-* Experimental 3d map: https://joric.github.io/supraland/3d
 * Wiki (please read): https://github.com/joric/supraland/wiki
 
 ## Features
