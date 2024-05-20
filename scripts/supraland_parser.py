@@ -270,7 +270,7 @@ def calc_targets(data):
           e = Vector((x,y,z))
 
           #print([round(v,2) for v in [x,y,z]], 'h', round(h,2), 'nearest triangle', [ data[data_indices[j]]['name']+':'+str([round(x,2)for x in points[j]]) for j in indices])
-          if (e-s).length>1000 and last_z>z and h>z: # only check on decline
+          if (e-s).length>250 and last_z>z and h>z: # only check on decline
             break
 
           last_z = z
