@@ -447,54 +447,15 @@ function loadMap() {
         for (name of Object.keys(objects)) {
           o = objects[name];
 
-          if (o.type == 'Jumppad_C') {
+          if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
               let color = 'magenta';
-
-              let x1 = o.lng;
-              let y1 = o.lat;
-              let z1 = o.alt;
-
-              let k = o.relative_velocity || 1000;
-
-              let vx = -o.direction.x * k;
-              let vy = -o.direction.y * k;
-              let vz = o.direction.z * k;
-
               if (o.velocity && o.allow_stomp) {
                 color = 'cyan';
-                vx = o.velocity.x;
-                vy = o.velocity.y;
-                vz = o.velocity.z;
               }
-
-              let x = o.lng;
-              let y = o.lat;
-              let z = o.alt;
-
-              let dt = 0.5;
-              let g = 9.8;
-              let m = 95;
-
-              x1=x;
-              y1=y;
-              z1=z;
-
-              for (let t=0; t<20; t+=dt) {
-                vz -= g * m * dt;
-                x += vx * dt;
-                y += vy * dt;
-                z += vz * dt;
-                if (o.alt>0 && z<0) break;
-                if (o.alt<0 && z<o.alt) break;
-              }
-
-              let x2 = x;
-              let y2 = y;
-              let z2 = z;
 
               // need to add title as a single space (leaflet search issue)
-              L.polyline([[y1,x1],[y2,x2]], {title:' ', color: color}).addTo(layers['jumppads']);
+              L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads']);
             }
           }
 
