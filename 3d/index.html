@@ -286,9 +286,8 @@ function loadMap(mapId) {
                 points.push({x:x,y:y,z:z})
 
                 if (last_z>z) {
-                  if (o.dist) {
-                    let dist = Math.sqrt( (x-x0)*(x-x0) + (y-y0)*(y-y0) );
-                    if (dist > o.dist) break;
+                  if (o.target) {
+                    if (o.target.z>z) break;
                   } else {
                     if (o.alt>0 && z<0) break;
                     if (o.alt<0 && z<o.alt) break;
