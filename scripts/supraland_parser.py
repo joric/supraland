@@ -263,14 +263,13 @@ def calc_targets(data):
           query_point = [x,y,z]
           _, indices = tree.query([query_point], k=3)
           indices = indices[0]
-
           triangle = [points[j] for j in indices]
-
           h = get_z(x,y,triangle)
-          e = Vector((x,y,z))
+
+          dist = (Vector((x,y,z))-s).length
 
           #print([round(v,2) for v in [x,y,z]], 'h', round(h,2), 'nearest triangle', [ data[data_indices[j]]['name']+':'+str([round(x,2)for x in points[j]]) for j in indices])
-          if (e-s).length>250 and last_z>z and h>z: # only check on decline
+          if dist>250 and last_z>z and h>z: # only check on decline
             break
 
           last_z = z
