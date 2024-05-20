@@ -219,7 +219,8 @@ def calc_targets(data):
     # traces parabolic path and find z of an intersection with a plane defined by 3 closest points
 
     #allowed_points = lambda o: True # not recommended, bugs with coins, etc.
-    allowed_points = lambda o: o['type'] in ('Jumppad_C') # jump pads only
+    allowed_points = lambda o: o['type'] not in ('Coin_C') # testing
+    #allowed_points = lambda o: o['type'] in ('Jumppad_C') # jump pads only
 
     points = [(o['lng'], o['lat'], o['alt']) for o in data if allowed_points(o)]
     data_indices = [i for i,o in enumerate(data) if allowed_points(o)]
@@ -251,7 +252,7 @@ def calc_targets(data):
         h = 0
         t = 0
         last_z = z
-
+        s = Vector((x,y,z))
         while t<20:
           vz -= g * m * dt
           x += vx * dt
@@ -266,9 +267,10 @@ def calc_targets(data):
           triangle = [points[j] for j in indices]
 
           h = get_z(x,y,triangle)
+          e = Vector((x,y,z))
 
           #print([round(v,2) for v in [x,y,z]], 'h', round(h,2), 'nearest triangle', [ data[data_indices[j]]['name']+':'+str([round(x,2)for x in points[j]]) for j in indices])
-          if last_z>z and h>z: # only check on decline
+          if (e-s).length>1000 and last_z>z and h>z: # only check on decline
             break
 
           last_z = z
