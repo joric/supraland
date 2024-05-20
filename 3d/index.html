@@ -52,11 +52,12 @@ let items = {
 };
 
 let icons = {
-  'map':['person-running','deepskyblue','red' ],
-  'chest':['toolbox','peru'],
-  'trophy':['trophy','darkgoldenrod'],
-  'bones':['skull-crossbones','goldenrod'],
-  'pipe-green':['circle-chevron-right',markerColors[3]],
+  'map':       {icon: 'circle-chevron-up',   color: 'deepskyblue'},
+  'map2':      {icon: 'circle-chevron-up',   color: 'red'},
+  'chest':     {icon: 'toolbox',             color: 'sienna'},
+  'trophy':    {icon: 'trophy',              color: 'darkgoldenrod'},
+  'bones':     {icon: 'skull-crossbones',    color: 'goldenrod'},
+  'pipe-green':{icon: 'circle-chevron-down', color: 'yellowgreen'},
 };
 
 let bindings = {
@@ -145,7 +146,8 @@ function markerSymbol2(icon, shadow=false) {
 function markerSymbol3(icon, shadow=false) {
   let d = 48;
 
-  let [iconName,color] = icons[icon];
+  let iconName = icons[icon].icon;
+  let color = icons[icon].color;
 
   //console.log(m.abstract);
   let [w1,h1,[s1],c1,p1] = FontAwesome.icon({ iconName: 'location-pin' }).icon;
@@ -259,15 +261,9 @@ function loadMap(mapId) {
 
         if (icon = items[o.type]) {
 
-          var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
-            properties: {name: o.name},
-            symbol: markerSymbol(icon),
-          }).addTo(vectorLayer);
-
           if (o.type == 'Jumppad_C') {// && o.name=='Jumppad2_49') {
 
             if (r = o.direction) {
-              let color = icons[icon][1]
               let x1 = o.lng;
               let y1 = o.lat;
               let z1 = o.alt;
@@ -278,11 +274,12 @@ function loadMap(mapId) {
               let vy = -o.direction.y * k;
               let vz = o.direction.z * k;
 
+              icon = 'map2';
               if (o.velocity && o.allow_stomp) {
-                color = icons[icon][2];
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
+                icon = 'map';
               }
 
               let x = x0 = o.lng;
@@ -316,6 +313,8 @@ function loadMap(mapId) {
                 last_z = z;
               }
 
+              let color = icons[icon].color;
+
               //console.log('before',points.length);
               points = simplify(points, 5);
               //console.log('after',points.length);
@@ -326,6 +325,10 @@ function loadMap(mapId) {
             }
           } // end of jumppad
 
+          var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
+            properties: {name: o.name},
+            symbol: markerSymbol(icon),
+          }).addTo(vectorLayer);
 
           new maptalks.ui.ToolTip(o.name,{}).addTo(marker);
 
@@ -352,7 +355,7 @@ function loadMap(mapId) {
         let o = objects[name];
         if (o.other_pipe) {
           let icon = items[o.type];
-          let color = icons[icon][1];
+          let color = icons[icon].color;
           if (p = objects[o.other_pipe]) {
             let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
             //new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: 2, lineDasharray:[10,5,5]}}).addTo(lineLayer);
