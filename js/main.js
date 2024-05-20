@@ -7,6 +7,7 @@ var classes = {};
 var icons = {};
 var playerStart;
 var playerMarker;
+var reloading;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -124,13 +125,15 @@ function loadMap() {
   });
 
   map.on('baselayerchange', function(e) {
+    id = e.layer.mapId;
     localStorage.setItem(mapId, location.hash);
     location.hash = '';
     map.off();
     map.remove();
+    map = null;
     playerMarker = null;
-    mapId = e.layer.mapId;
-    loadMap();
+    mapId = id
+    loadMap(id);
   });
 
   function updateSearch() {
@@ -549,17 +552,31 @@ function loadMap() {
 
   loadLayers();
 
+  function reloadMap(id) {
+    if (!reloading) {
+      reloading = true;
+      map.fireEvent('baselayerchange',{layer:{mapId:id}});
+      setTimeout(function(){ reloading = false; }, 250);
+    }
+  }
+
   window.addEventListener("keydown",function (e) {
-    //console.log(e);
-    if (e.code=='KeyF') {
-      if (e.ctrlKey) {
-        searchControl.expand(true);
-        e.preventDefault();
-      } else if (!e.target.id.startsWith('searchtext')) {
-        map.toggleFullscreen();
-      }
+    //console.log(e.code);
+    switch (e.code) {
+      case 'KeyF':
+        if (e.ctrlKey) {
+          searchControl.expand(true);
+          e.preventDefault();
+        } else if (!e.target.id.startsWith('searchtext')) {
+          map.toggleFullscreen();
+        }
+        break;
+      case 'Digit1': reloadMap('sl'); break;
+      case 'Digit2': reloadMap('slc'); break;
+      case 'Digit3': reloadMap('siu'); break;
     }
   });
+
 } // end of loadmap
 
 function getIconSize(zoom) {
