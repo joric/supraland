@@ -433,7 +433,7 @@ function loadMap() {
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
               let color = 'red';
-              if (o.velocity && o.allow_stomp) {
+              if ((o.velocity && o.allow_stomp) || o.disable_movement==false) {
                 color = 'dodgerblue';
               }
 

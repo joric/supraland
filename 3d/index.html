@@ -45,7 +45,7 @@ let items = {
   'Bones_C':'bones',
   'PipesystemNew_C':'pipe_green',
   'PipesystemNewDLC_C':'pipe_green',
-  //'Scrap_C':'scrap',
+  'Scrap_C':'scrap',
   //'EnemySpawn1_C':'grave_wood', 'EnemySpawn2_C':'grave_stone', 'EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin',
   'Jumppad_C':'map',
@@ -59,14 +59,14 @@ let icons = {
   'map':           {icon: 'circle-chevron-up',   color: 'dodgerblue'},
   'map2':          {icon: 'circle-chevron-up',   color: 'red'},
   'chest':         {icon: 'toolbox',             color: 'grey'},
-  'trophy':        {icon: 'trophy',              color: 'darkgoldenrod'},
-  'bones':         {icon: 'skull-crossbones',    color: 'peru'},
+  'trophy':        {icon: 'trophy',              color: 'peru'},
+  'bones':         {icon: 'skull-crossbones',    color: 'goldenrod'},
   'pipe_green':    {icon: 'circle-chevron-down', color: 'yellowgreen'},
   'grave_wood':    {icon: 'cross',               color: 'sienna'},
-  'grave_stone':   {icon: 'cross',               color: 'grey'},
+  'grave_stone':   {icon: 'cross',               color: 'dimgrey'},
   'grave_volcano': {icon: 'cross',               color: 'tomato'},
   'coin':          {icon: 'coins',               color: 'orange'},
-  'scrap':         {icon: 'gear',                color: 'darkgrey'},
+  'scrap':         {icon: 'gear',                color: 'darkcyan'},
   'barrel_red':    {icon: 'prescription-bottle', color: 'maroon'},
   'barrel_gold':   {icon: 'prescription-bottle', color: 'chocolate'},
 };
@@ -285,7 +285,7 @@ function loadMap(mapId) {
               let vz = o.direction.z * k;
 
               icon = 'map2';
-              if (o.velocity && o.allow_stomp) {
+              if ((o.velocity && o.allow_stomp) || disable_movement==false) {
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
