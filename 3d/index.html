@@ -43,32 +43,32 @@ let items = {
   'Chest_C':'chest',
   'BP_EngagementCup_Base_C':'trophy',
   'Bones_C':'bones',
-  'PipesystemNew_C':'pipe-green',
-  'PipesystemNewDLC_C':'pipe-green',
+  'PipesystemNew_C':'pipe_green',
+  'PipesystemNewDLC_C':'pipe_green',
   //'Scrap_C':'scrap',
   //'EnemySpawn1_C':'grave_wood', 'EnemySpawn2_C':'grave_stone', 'EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin',
   'Jumppad_C':'map',
   //'_JumppadTarget_C':'question_mark',
   'BarrelRed_C':'barrel_red',
-  'BarrelColor_C': 'barrel',
-  'BarrelClosed_Blueprint_C': 'barrel',
+  'BarrelColor_C': 'barrel_gold',
+  'BarrelClosed_Blueprint_C': 'barrel_gold',
 };
 
 let icons = {
   'map':           {icon: 'circle-chevron-up',   color: 'dodgerblue'},
   'map2':          {icon: 'circle-chevron-up',   color: 'red'},
-  'chest':         {icon: 'toolbox',             color: 'lightseagreen'},
+  'chest':         {icon: 'toolbox',             color: 'grey'},
   'trophy':        {icon: 'trophy',              color: 'darkgoldenrod'},
   'bones':         {icon: 'skull-crossbones',    color: 'peru'},
-  'pipe-green':    {icon: 'circle-chevron-down', color: 'yellowgreen'},
+  'pipe_green':    {icon: 'circle-chevron-down', color: 'yellowgreen'},
   'grave_wood':    {icon: 'cross',               color: 'sienna'},
   'grave_stone':   {icon: 'cross',               color: 'grey'},
   'grave_volcano': {icon: 'cross',               color: 'tomato'},
   'coin':          {icon: 'coins',               color: 'orange'},
   'scrap':         {icon: 'gear',                color: 'darkgrey'},
   'barrel_red':    {icon: 'prescription-bottle', color: 'maroon'},
-  'barrel':        {icon: 'prescription-bottle', color: 'chocolate'},
+  'barrel_gold':   {icon: 'prescription-bottle', color: 'chocolate'},
 };
 
 let bindings = {
@@ -445,7 +445,33 @@ function resetPitch(e) {
 window.onload = function(event) {
   mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || 'sl';
 
-  loadMap(mapId);
+  const ctx = document.createElement('canvas').getContext('2d',{ willReadFrequently: true });
+  function getDominantColor(imageObject, amp) {
+    ctx.drawImage(imageObject, 0, 0, 1, 1);
+    const c = ctx.getImageData(0, 0, 1, 1).data;
+    for (let i=0; i<3; i++) c[i] = Math.round(Math.min(255,c[i]*amp));
+    return "#"+((1<<24)+(c[0]<<16)+(c[1]<<8)+c[2]).toString(16).slice(1);
+  }
+
+  // preload all colors and load map
+  for (key of Object.keys(items)) {
+    const image = new Image();
+    image.param = items[key];
+    image.onload = function(e) {
+      ctx.drawImage(image,0,0,100,100);
+      colors[image.param] = getDominantColor(image, 1.25);
+      if (Object.keys(items).length >= Object.keys(colors).length) {
+        loadMap(mapId);
+      }
+    };
+    image.onerror = function() {
+      colors[image.param] = '#888';
+      if (Object.keys(items).length >= Object.keys(colors).length) {
+        loadMap(mapId);
+      }
+    };
+    image.src = 'img/'+items[key]+'.png';
+  }
 
   let pressed = {};
 

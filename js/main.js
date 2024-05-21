@@ -432,9 +432,9 @@ function loadMap() {
 
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
-              let color = 'magenta';
+              let color = 'red';
               if (o.velocity && o.allow_stomp) {
-                color = 'cyan';
+                color = 'dodgerblue';
               }
 
               // need to add title as a single space (leaflet search issue)
@@ -445,7 +445,7 @@ function loadMap() {
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'lawngreen'}).addTo(layers['pipesys']);
+              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys']);
             }
           }
 
@@ -672,7 +672,7 @@ window.loadSaveFile = function () {
 
     let loadedSave = new UESaveObject(evt.target.result);
 
-    //console.log(loadedSave);
+    console.log(loadedSave);
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
