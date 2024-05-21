@@ -1,5 +1,61 @@
 [
   {
+    "name": "BarrelClosed2_2",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -34131.1015625,
+    "lng": -159.8877716064453,
+    "alt": -204.43402099609375
+  },
+  {
+    "name": "BarrelClosed_Blueprint2_3",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -27574.43359375,
+    "lng": -1309.867919921875,
+    "alt": 176.28269958496094
+  },
+  {
+    "name": "BarrelClosed_Blueprint3_5",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -29564.505859375,
+    "lng": 5266.79931640625,
+    "alt": -664.8930053710938
+  },
+  {
+    "name": "BarrelClosed_Blueprint4",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -41142.09765625,
+    "lng": 5686.2705078125,
+    "alt": -281.11181640625
+  },
+  {
+    "name": "BarrelClosed_Blueprint5_2",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -59467.0,
+    "lng": -8312.0,
+    "alt": 835.03466796875
+  },
+  {
+    "name": "BarrelClosed_Blueprint6",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -40321.04296875,
+    "lng": -2233.955810546875,
+    "alt": 565.8482055664062
+  },
+  {
+    "name": "BarrelClosed_Blueprint_2",
+    "type": "BarrelClosed_Blueprint_C",
+    "area": "Map",
+    "lat": -30025.544921875,
+    "lng": 1280.9561767578125,
+    "alt": 647.5388793945312
+  },
+  {
     "name": "BarrelColor_2",
     "type": "BarrelColor_C",
     "area": "Map",
@@ -10319,9 +10375,9 @@
       "z": 0.6402158737182617
     },
     "target": {
-      "x": 5651.219149325714,
-      "y": -38906.42928252577,
-      "z": -182.5885865436502
+      "x": 5657.503906729744,
+      "y": -38916.58778590619,
+      "z": -173.6446433799692
     }
   },
   {

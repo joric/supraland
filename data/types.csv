@@ -24,8 +24,9 @@ BP_Purchase_FasterPickaxe_C,boomeraxe_range,upgrades
 BP_Purchase_Pickaxe_Range+_C,boomeraxe_range,upgrades
 BP_Purchase_TranslocatorCooldown_C,translocator_cooldown,upgrades
 BP_TrophyDetector_C,,upgrades
-BarrelColor_C,,
-BarrelRed_C,barrel_red,
+BarrelColor_C,,collectable
+BarrelRed_C,barrel_red,collectable
+BarrelClosed_Blueprint_C,barrel_gold,collectable
 Battery_C,,
 Bones_C,bones,collectable
 BuyArmor1_C,armor,upgrades

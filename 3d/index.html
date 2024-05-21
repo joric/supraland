@@ -50,6 +50,9 @@ let items = {
   //'Coin_C':'coin',
   'Jumppad_C':'map',
   //'_JumppadTarget_C':'question_mark',
+  'BarrelRed_C':'barrel_red',
+  'BarrelColor_C': 'barrel',
+  'BarrelClosed_Blueprint_C': 'barrel',
 };
 
 let icons = {
@@ -64,6 +67,8 @@ let icons = {
   'grave_volcano': {icon: 'cross',               color: 'tomato'},
   'coin':          {icon: 'coins',               color: 'orange'},
   'scrap':         {icon: 'gear',                color: 'darkgrey'},
+  'barrel_red':    {icon: 'prescription-bottle', color: 'maroon'},
+  'barrel':        {icon: 'prescription-bottle', color: 'chocolate'},
 };
 
 let bindings = {
@@ -154,7 +159,13 @@ function markerSymbol3(icon, shadow=false) {
   let iconName = icons[icon].icon;
   let color = icons[icon].color;
   let [w1,h1,[s1],c1,p1] = FontAwesome.icon({ iconName: 'location-pin' }).icon;
-  let [w2,h2,[s2],c2,p2] = FontAwesome.icon({ iconName: iconName }).icon;
+
+  if (!(t = FontAwesome.icon({ iconName: iconName }))) {
+    t = FontAwesome.icon({ iconName: 'question' });
+  }
+
+  let [w2,h2,[s2],c2,p2] = t.icon;
+
   let dx = 64 + (512-w2)/4;
   let dy = 64 + (512-h2)/4;
   let path = [
@@ -315,7 +326,7 @@ function loadMap(mapId) {
               let color = icons[icon].color;
 
               //console.log('before',points.length);
-              points = simplify(points, 5);
+              points = simplify(points, 10);
               //console.log('after',points.length);
 
               if (points.length>1) {
