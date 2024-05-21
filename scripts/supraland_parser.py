@@ -182,6 +182,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'coins', p.get('Coins'))
             optKey(data[-1], 'coins', p.get('CoinsInGold'))
             optKey(data[-1], 'cost', p.get('Cost'))
+            optKey(data[-1], 'value', p.get('Value'))
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
             optKey(data[-1], 'hits', p.get('HitsToBreak'))
             optKey(data[-1], 'obsidian', p.get('bObsidian'))
