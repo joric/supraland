@@ -290,7 +290,7 @@ function loadMap(mapId) {
                 vz = o.velocity.z;
               }
 
-              icon = ((o.velocity && o.allow_stomp) || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
+              icon = (o.allow_stomp || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
 
               let x = x0 = o.lng;
               let y = y0 = o.lat;

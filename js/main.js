@@ -432,7 +432,7 @@ function loadMap() {
 
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
-              let color = ((o.velocity && o.allow_stomp) || o.disable_movement==false) ? 'dodgerblue' : 'red';
+              let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               // need to add title as a single space (leaflet search issue)
               L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads']);
