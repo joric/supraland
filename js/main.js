@@ -369,7 +369,7 @@ function loadMap() {
             if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
               let icon = 'shop';
               let layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: markerId, o:o }).addTo(layers[layer])
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
@@ -377,7 +377,7 @@ function loadMap() {
             }
 
             // finally, add marker (base marker goes in the middle)
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: markerId, o:o }).addTo(layers[layer])
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
             .on('contextmenu',onContextMenu)
@@ -387,7 +387,7 @@ function loadMap() {
             if (s = classes[o.spawns]) {
               let icon = s.icon || defaultIcon;
               let layer = layers[s.layer] ? s.layer : defaultLayer;
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: markerId, o:o }).addTo(layers[layer])
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
@@ -528,12 +528,11 @@ function loadMap() {
         */
 
         searchControl.on('search:locationfound', function (e) {
-            if (e.layer._popup) e.layer.openPopup();
-            //console.log(e.target._leaflet_id);
-            //TODO: show layer by marker
+            if (e.layer._popup) {
+              layers[e.layer.options.layer].addTo(map);
+              e.layer.openPopup();
+            }
         });
-
-
 
         filename = 'data/types.csv';
         Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
