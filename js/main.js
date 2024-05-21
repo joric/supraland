@@ -1,13 +1,14 @@
-var map = null;
-var mapId = '';
-var localDataName = 'jorics_supraland';
-var localData = JSON.parse(localStorage.getItem(localDataName)) || {};
-var layers = {};
-var classes = {};
-var icons = {};
-var playerStart;
-var playerMarker;
-var reloading;
+let map = null;
+let mapId = '';
+let localDataName = 'jorics_supraland';
+let localData = JSON.parse(localStorage.getItem(localDataName)) || {};
+let layers = {};
+let classes = {};
+let icons = {};
+let playerStart;
+let playerMarker;
+let reloading;
+let searchText='';
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -136,36 +137,15 @@ function loadMap() {
     loadMap(id);
   });
 
-  function updateSearch() {
-    let searchLayers = [];
-    for (id of Object.keys(localData[mapId].activeLayers)) {
-      if (localData[mapId].activeLayers[id] && layers[id]) {
-        searchLayers.push(layers[id]);
-      }
-    }
-    searchControl.setLayer(L.featureGroup(searchLayers));
-  }
-
   map.on('overlayadd', function(e) {
-    resizeIcons();
-    for (id of Object.keys(localData[mapId].markedItems)) {
-      window.markItemFound(id);
-    }
+    markItems();
     localData[mapId].activeLayers[e.layer.id] = true;
-    //console.log(localData[mapId].activeLayers);
-    updateSearch();
     saveSettings();
   });
 
   map.on('overlayremove', function(e) {
     delete localData[mapId].activeLayers[e.layer.id];
-    //console.log(localData[mapId].activeLayers);
-    updateSearch();
     saveSettings();
-  });
-
-  map.on('zoomend', function(e) {
-    resizeIcons();
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -471,17 +451,17 @@ function loadMap() {
 
         } // end of 2-nd pass
 
-        resizeIcons();
+        markItems();
     });
-
   }
 
   function loadLayers() {
       playerMarker = null;
       filename = 'data/layers.csv';
 
-      let searchLayers = [];
+      let activeLayers = [];
       let inactiveLayers = [];
+      let searchLayers = [];
 
       var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
         for (o of results.data) {
@@ -500,36 +480,59 @@ function loadMap() {
 
           if (localData[mapId].activeLayers[o.id]) {
             layerObj.addTo(map);
+            activeLayers.push(layerObj);
           } else {
             inactiveLayers.push(layerObj);
           }
 
           layers[o.id] = layerObj;
           layerControl.addOverlay(layerObj, o.name);
-
           searchLayers.push(layerObj);
         }
 
-
         searchControl = new L.Control.Search({
-            //layer: L.featureGroup(searchLayers),
-            //layer: layers['closedChest'],
-            //layer: searchLayers[0],
+            layer: L.featureGroup(searchLayers),
             marker: false, // no red circle
             initial: false, // search any substring
-            firstTipSubmit: true,
-            layer: L.featureGroup( searchLayers ),
+            firstTipSubmit: true, // use first autosuggest
+            autoCollapse: true,
+            tipAutoSubmit: true, //auto map panTo when click on tooltip
         }).addTo(map);
 
-        for (layer of inactiveLayers) { layer.remove(); }
+        // search reveals all layers, hide all inactive layers right away
+        for (layerObj of inactiveLayers) {
+          map.removeLayer(layerObj);
+        }
 
-        //console.log(layers);
+        //searchControl._handleSubmit = function(){};
 
-        searchControl.on("search:locationfound", function (e) {
+        /*
+        document.querySelector('.search-cancel').addEventListener('click',function (e) {
+          console.log('cancel clicked');
+        });
+
+        document.querySelector('input[type=text]').addEventListener('keydown',function (e) {
+            if (e.code == 'Enter') {
+              console.log('handle enter here');
+              searchText = document.querySelector('input[type=text]').value;
+              searchControl.collapse();
+              e.preventDefault();
+            } 
+        })
+
+        searchControl.on('search:expanded', function(e) {
+          if (searchText!='') {
+            searchControl.searchText(searchText);
+          }
+        });
+        */
+
+        searchControl.on('search:locationfound', function (e) {
             if (e.layer._popup) e.layer.openPopup();
             //console.log(e.target._leaflet_id);
             //TODO: show layer by marker
         });
+
 
 
         filename = 'data/types.csv';
@@ -562,12 +565,17 @@ function loadMap() {
 
   window.addEventListener("keydown",function (e) {
     //console.log(e.code);
+
+    if (e.target.id.startsWith('searchtext')) {
+      return;
+    }
+
     switch (e.code) {
       case 'KeyF':
         if (e.ctrlKey) {
           searchControl.expand(true);
           e.preventDefault();
-        } else if (!e.target.id.startsWith('searchtext')) {
+        } else {
           map.toggleFullscreen();
         }
         break;
@@ -575,12 +583,13 @@ function loadMap() {
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
     }
+
   });
 
 } // end of loadmap
 
 function getIconSize(zoom) {
-  let s = [16,16,24,32,32,32,48,48,64];
+  let s = [32];
   return s[Math.round(Math.min(zoom,s.length-1))];
 }
 
@@ -593,24 +602,6 @@ function getIcon(icon) {
     icons[icon] = iconObj;
   }
   return iconObj;
-}
-
-function resizeIcons() {
-    map.eachLayer(function(layer) {
-      if (layer instanceof L.Marker) {
-        //let icon = layer.getIcon(); // undefined in 1.3
-        let icon = layer.options.icon;
-        if (icon.options.iconUrl!='marker-icon.png') {
-          let s = getIconSize(map.getZoom());
-          let c = s >> 1;
-          icon.options.iconSize = [s,s];
-          icon.options.iconAnchor = [c,c];
-          layer.setIcon(icon);
-        }
-      }
-   });
-
-  markItems();
 }
 
 window.markItemFound = function (id, found=true, save=true) {
@@ -683,7 +674,6 @@ window.loadSaveFile = function () {
     let loadedSave = new UESaveObject(evt.target.result);
 
     //console.log(loadedSave);
-    //unmarkItems();
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
