@@ -285,7 +285,7 @@ function loadMap(mapId) {
               let vz = o.direction.z * k;
 
               icon = 'map2';
-              if ((o.velocity && o.allow_stomp) || disable_movement==false) {
+              if ((o.velocity && o.allow_stomp) || o.disable_movement==false) {
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
