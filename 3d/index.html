@@ -56,8 +56,8 @@ let items = {
 };
 
 let icons = {
-  'map':           {icon: 'circle-chevron-up',   color: 'dodgerblue'},
-  'map2':          {icon: 'circle-chevron-up',   color: 'red'},
+  'jumppad_blue':  {icon: 'circle-chevron-up',   color: 'dodgerblue'},
+  'jumppad_red':   {icon: 'circle-chevron-up',   color: 'red'},
   'chest':         {icon: 'toolbox',             color: 'grey'},
   'trophy':        {icon: 'trophy',              color: 'peru'},
   'bones':         {icon: 'skull-crossbones',    color: 'goldenrod'},
@@ -284,13 +284,13 @@ function loadMap(mapId) {
               let vy = -o.direction.y * k;
               let vz = o.direction.z * k;
 
-              icon = 'map2';
-              if ((o.velocity && o.allow_stomp) || o.disable_movement==false) {
+              if (o.velocity && o.allow_stomp) {
                 vx = o.velocity.x;
                 vy = o.velocity.y;
                 vz = o.velocity.z;
-                icon = 'map';
               }
+
+              icon = ((o.velocity && o.allow_stomp) || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
 
               let x = x0 = o.lng;
               let y = y0 = o.lat;
