@@ -534,7 +534,7 @@ function loadMap() {
               for (const [k,o] of Object.entries(records)) {
                 settings.searchFilter[o.layer.options.alt] = true;
               }
-              if (Object.keys(records).length==1) {
+              if (Object.keys(records).length>0) {
                 submitItem(Object.keys(records)[0]);
               }
             }
@@ -571,11 +571,6 @@ function loadMap() {
 
           document.querySelector('input.search-input').addEventListener('keydown', function(e) {
             settings.searchText = document.querySelector('input.search-input').value;
-
-            //if (!settings.SearchText) {
-            //  clearFilter();
-            //}
-
             addSearchCallbacks();
           });
 
