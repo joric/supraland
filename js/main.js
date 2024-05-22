@@ -534,9 +534,17 @@ function loadMap() {
               for (const [k,o] of Object.entries(records)) {
                 settings.searchFilter[o.layer.options.alt] = true;
               }
-              if (Object.keys(records).length>0) {
-                submitItem(Object.keys(records)[0]);
+              count = Object.keys(records).length;
+              if (count>0) {
+                let text = Object.keys(records)[0];
+                if (count==1) {
+                  submitItem(text);
+                } else {
+                  let o = records[text];
+                  layers[o.layer.options.layer].addTo(map);
+                }
               }
+
             }
             saveSettings();
             markItems();
