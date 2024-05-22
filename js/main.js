@@ -48,9 +48,7 @@ function saveSettings() {
 }
 
 function clearFilter() {
-  console.log('filter cleared');
   settings.searchText = '';
-  settings.searchFilter = {};
   saveSettings();
   markItems();
 }
@@ -68,9 +66,6 @@ function loadMap() {
     }
     if (!localData[id].searchText) {
       localData[id].searchText = '';
-    }
-    if (!localData[id].searchFilter) {
-      localData[id].searchFilter = {};
     }
     if (!localData[id].activeLayers) {
       localData[id].activeLayers = {'closedChest':true, 'shop':true, 'collectable':true};
@@ -530,23 +525,19 @@ function loadMap() {
           }
 
           function applyFilter() {
-            let records = searchControl._filterData(settings.searchText, searchControl._recordsCache);
-            settings.searchFilter = {};
+            // need fixing an issue with brackets (submitting a fullname from keyboard doesn't work)
+            let records = searchControl._recordsCache = searchControl._filterData(settings.searchText, searchControl._recordsFromLayer());
             if (records && Object.keys(records).length>0) {
-              for (const [k,o] of Object.entries(records)) {
-                settings.searchFilter[o.layer.options.alt] = true;
-              }
               count = Object.keys(records).length;
               if (count>0) {
                 let text = Object.keys(records)[0];
-                if (count>=1) { // ==1 popup if we found 1 item, >=1 always show popup at first item
+                if (count==1) { // ==1 popup if we found 1 item, >=1 always show popup at first item
                   submitItem(text);
                 } else {
                   let o = records[text];
                   layers[o.layer.options.layer].addTo(map);
                 }
               }
-
             }
             saveSettings();
             markItems();
@@ -581,6 +572,7 @@ function loadMap() {
 
           document.querySelector('input.search-input').addEventListener('keydown', function(e) {
             settings.searchText = document.querySelector('input.search-input').value;
+            //console.log(e, settings.searchText);
             addSearchCallbacks();
           });
 
@@ -621,6 +613,8 @@ function loadMap() {
               e.layer.openPopup();
             }
         });
+
+        markItems();
 
         filename = 'data/types.csv';
         Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
@@ -714,7 +708,6 @@ window.markItemFound = function (id, found=true, save=true) {
 }
 
 function markItems() {
-
   for (const[id,value] of Object.entries(settings.markedItems)) {
     var divs = document.querySelectorAll('img[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
@@ -722,11 +715,22 @@ function markItems() {
     });
   }
 
-  let unfiltered = Object.keys(settings.searchFilter).length==0;
+  // filter by settings.searchText
+
+  if (Object.keys(searchControl._recordsCache).length==0) {
+    searchControl._recordsCache = searchControl._filterData(settings.searchText,searchControl._recordsFromLayer());
+  }
+
+  let records = searchControl._recordsCache;
+  let unfiltered = Object.keys(records).length==0;
+  let lookup = {}
+  for (const o of Object.values(records)) {
+    lookup[o.layer.options.alt] = true;
+  }
 
   var divs = document.querySelectorAll('img.leaflet-marker-icon ');
   [].forEach.call(divs, function(div) {
-    div.style.visibility = settings.searchFilter[div.alt] || unfiltered ? 'visible' : 'hidden';
+    div.style.visibility =  unfiltered || lookup[div.alt] ? 'visible' : 'hidden';
   });
 }
 
