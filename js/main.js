@@ -9,6 +9,7 @@ let playerStart;
 let playerMarker;
 let reloading;
 let searchText='';
+var experimentalSearch = true;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -95,12 +96,16 @@ function loadMap() {
   crs.transformation = new L.Transformation(mapScale.x, mapOrigin.x, mapScale.y, mapOrigin.y);
   crs.scale = function (zoom) { return Math.pow(2, zoom) / mapMinResolution; };
   crs.zoom = function (scale) { return Math.log(scale * mapMinResolution) / Math.LN2; };
+  let gap = w.MapWorldSize/4;
 
   //Create the map
   map = new L.Map('map', {
     crs: crs,
     fadeAnimation: false,
-    maxBounds: mapBounds, // elastic-y map bounds
+    maxBounds: [
+      [ w.MapWorldUpperLeft.Y - gap, w.MapWorldUpperLeft.X - gap ],
+      [ w.MapWorldLowerRight.Y + gap, w.MapWorldLowerRight.X + gap ]
+    ],
     zoomControl: false,
   });
 
@@ -486,42 +491,78 @@ function loadMap() {
           searchLayers.push(layerObj);
         }
 
-        searchControl = new L.Control.Search({
-            layer: L.featureGroup(searchLayers),
-            marker: false, // no red circle
-            initial: false, // search any substring
-            firstTipSubmit: true, // use first autosuggest
-            autoCollapse: true,
-            tipAutoSubmit: true, //auto map panTo when click on tooltip
-        }).addTo(map);
+        if (experimentalSearch) {
+
+          searchControl = new L.Control.Search({
+              layer: L.featureGroup(searchLayers),
+              marker: false, // no red circle
+              initial: false, // search any substring
+              firstTipSubmit: false, // use first autosuggest
+              autoCollapse: false,
+              tipAutoSubmit: false, //auto map panTo when click on tooltip
+              tooltipLimit: -1,
+          }).addTo(map);
+
+          searchControl._handleSubmit = function(){
+            searchControl.searchText(searchText);
+            console.log('handling enter key, unimplemented. Supposed to filter markers by ', searchControl._recordsCache);
+            searchControl.collapse();
+          };
+
+          searchControl.on('search:expanded', function (e) {
+            document.querySelector('input.search-input').value = searchText;
+            searchControl.searchText(searchText);
+            addSearchCallbacks();
+          });
+
+          document.querySelector('.search-cancel').addEventListener('click',function (e) {
+            console.log('cancel clicked');
+            searchText = '';
+          });
+
+          document.querySelector('input.search-input').addEventListener('keydown', function(e) {
+            addSearchCallbacks();
+          });
+
+          // add click callbacks to search dropdown list items
+          function addSearchCallbacks(){
+            setTimeout(function() {
+              searchText = document.querySelector('input.search-input').value;
+              let divs = document.querySelectorAll('.search-tip');
+              [].forEach.call(divs, function(div) {
+                div.addEventListener('click', function (e) {
+                  let text = e.target.innerText;
+                  const loc = searchControl._getLocation(text)
+                  if (loc) {
+                    searchControl.showLocation(loc, text);
+                    searchControl.fire('search:locationfound', {
+                      latlng: loc,
+                      text: text,
+                      layer: loc.layer ? loc.layer : null
+                    })
+                  }
+                  e.preventDefault();
+                })
+              })
+            }, 1500)
+          }
+
+        } else { // legacy search
+
+          searchControl = new L.Control.Search({
+              layer: L.featureGroup(searchLayers),
+              marker: false, // no red circle
+              initial: false, // search any substring
+              firstTipSubmit: true, // use first autosuggest
+              autoCollapse: true,
+              tipAutoSubmit: true, //auto map panTo when click on tooltip
+          }).addTo(map);
+        }
 
         // search reveals all layers, hide all inactive layers right away
         for (layerObj of inactiveLayers) {
           map.removeLayer(layerObj);
         }
-
-        //searchControl._handleSubmit = function(){};
-
-        /*
-        document.querySelector('.search-cancel').addEventListener('click',function (e) {
-          console.log('cancel clicked');
-        });
-
-        document.querySelector('input[type=text]').addEventListener('keydown',function (e) {
-            if (e.code == 'Enter') {
-              console.log('handle enter here');
-              searchText = document.querySelector('input[type=text]').value;
-              searchControl.collapse();
-              e.preventDefault();
-            } 
-        })
-
-        searchControl.on('search:expanded', function(e) {
-          if (searchText!='') {
-            searchControl.searchText(searchText);
-          }
-        });
-        */
 
         searchControl.on('search:locationfound', function (e) {
             if (e.layer._popup) {
