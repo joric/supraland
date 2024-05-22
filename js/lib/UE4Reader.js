@@ -195,65 +195,21 @@ class UEReadHelper {
                     retVal.b = this.getFloat32();
                     retVal.a = this.getFloat32();
                     break;
+                  case "Quat":
+                    retVal.x = this.getFloat32();
+                    retVal.y = this.getFloat32();
+                    retVal.z = this.getFloat32();
+                    retVal.w = this.getFloat32();
+                    break;
                   case "Transform":
-                    let p = this.pos;
-                    /*
-                    \x09\x00\x00\x00Rotation\x00
-                    \x0F\x00\x00\x00StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00
-                    \x05\x00\x00\x00Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x00\x00\x00\x00\xf3\x04\x35\xbf\xf2\x04\x35\x3f
-                    \x0c\x00\x00\x00Translation\x00
-                    \x0F\x00\x00\x00StructProperty\x00\x0c\x00\x00\x00\x00\x00\x00\x00
-                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x41\x4a\x90\x46\x62\x28\xaf\xc6\x80\x1a\x70\xc2
-                    \x05\x00\x00\x00None
-                    */
-
-                    /*
-                    // new version (since 1.2.3349, throws exception)
-                    \t\x00\x00\x00Rotation\x00
-                    \x0F\x00\x00\x00StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00
-                    \x05\x00\x00\x00Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€)â†>ëôv?
-                    \f\x00\x00\x00Translation\x00
-                    \x0F\x00\x00\x00StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00
-                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00JèYÇAÎ$ÇÜ¼\x19F
-                    \b\x00\x00\x00Scale3D\x00
-                    \x0F\x00\x00\x00StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00
-                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€?üÿ\x7F?üÿ\x7F?
-                    \x05\x00\x00\x00None
-                    */
-
-                    try {
-                      let t = this.getString(); // Rotation
-                      this.pos += 0;
-
-                      t = this.getString(); // StructProperty
-                      this.pos += 8;
-
-                      t = this.getString(); // Quat
-                      this.pos += 17; // padding
-                      retVal.rotation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32(), w: this.getFloat32()}
-
-                      t = this.getString(); // Translation
-                      this.pos += 0;
-
-                      t = this.getString(); // StructProperty
-                      this.pos += 8;
-
-                      t = this.getString(); // Vector
-                      this.pos += 17; // padding
-                      retVal.translation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32()}
-                    } catch (e) {
-                      this.pos = p - 8
-                      let s = this.getString64Custom(overlen);
-                      console.log('error reading player position',e,'at', s);
-                      delete retVal.rotation;
-                      delete retVal.translation;
-                      this.pos = p - 8
-                      retVal.value = this.getString64Custom(overlen);
+                    retVal = {}
+                    while (true) {
+                      let prop = this.getNextProperty();
+                      if (prop.name=="None") {
+                        break;
+                      }
+                      retVal[prop.name] = prop;
                     }
-
-                    this.pos = p - 8
-                    this.getString64Custom(overlen);
-
                     break;
       default:
         retVal.name = type;
@@ -321,6 +277,10 @@ window.loadSaveFile = function () {
 if (typeof require !== 'undefined' && require.main === module) {
   fname = 'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav';
   fname = 'C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav';
+  fname = 'SixInchesSave1.good.sav';
+  fname = 'SixInchesSave1.bad.sav';
+  //fname = 'CrashSave1.sav';
+  //fname = 'Save1.sav';
   require('fs').readFile(fname, (err, buf) => {
     if (err) {
       console.log(err);

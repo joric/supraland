@@ -690,19 +690,20 @@ window.loadSaveFile = function () {
       if (o.name == 'Player Position' && playerMarker) {
         let c = [0,0,0]
         let p = o.value;
-        if (o.value.type=='Vector' || o.value.type=='Transform') {
-          if (o.value.translation) {
-            p = o.value.translation;
-          }
-          //console.log('setting player position from file', mapId, latlng);
-          if (p.x && p.y) {
-            var latlng = new L.LatLng(p.y, p.x);
-            playerMarker.setLatLng(latlng);
-            localData[mapId].playerPosition = [p.y, p.x, p.z];
-          }
+
+        if (o.value.type=='Transform' && o.value['Translation']) {
+          p = o.value['Translation'].value;
+        }
+
+        if (p && p.x && p.y) {
+          var latlng = new L.LatLng(p.y, p.x);
+          console.log('setting player position from file', mapId, latlng);
+          playerMarker.setLatLng(latlng);
+          localData[mapId].playerPosition = [p.y, p.x, p.z];
         } else {
           console.log('cannot load player position from', JSON.stringify(o));
         }
+
       }
     }
 
