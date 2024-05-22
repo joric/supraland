@@ -8,8 +8,8 @@ let icons = {};
 let playerStart;
 let playerMarker;
 let reloading;
-let searchText='';
-var experimentalSearch = true;
+let settings;
+let experimentalSearch = true;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -58,6 +58,12 @@ function loadMap() {
     if (!localData[id].markedItems) {
       localData[id].markedItems = {};
     }
+    if (!localData[id].searchText) {
+      localData[id].searchText = '';
+    }
+    if (!localData[id].searchFilter) {
+      localData[id].searchFilter = {};
+    }
     if (!localData[id].activeLayers) {
       localData[id].activeLayers = {'closedChest':true, 'shop':true, 'collectable':true};
       if (id=='sl') {
@@ -66,6 +72,8 @@ function loadMap() {
       }
     }
   }
+
+  settings = localData[mapId];
 
   var mapSize = {width: 8192, height: 8192}
   var tileSize   = {x: 512, y: 512};
@@ -142,14 +150,13 @@ function loadMap() {
   });
 
   map.on('overlayadd', function(e) {
-    markItems();
-    localData[mapId].activeLayers[e.layer.id] = true;
-    saveSettings();
+    settings.activeLayers[e.layer.id] = true;
+    clearFilter();
   });
 
   map.on('overlayremove', function(e) {
-    delete localData[mapId].activeLayers[e.layer.id];
-    saveSettings();
+    delete settings.activeLayers[e.layer.id];
+    clearFilter();
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -168,7 +175,7 @@ function loadMap() {
     for (const [id, title] of Object.entries({'pipes':'Pipes', 'pads':'Pads'})) {
       var layer =  L.tileLayer.canvas(tilesDir+'/'+id+'/{z}/{x}/{y}.png', layerOptions);
       layer.id = id;
-      if (localData[mapId].activeLayers[id]) {
+      if (settings.activeLayers[id]) {
         layer.addTo(map);
       }
       layerControl.addOverlay(layer, title);
@@ -288,7 +295,7 @@ function loadMap() {
 
   function onContextMenu(e) {
     let markerId = e.target.options.alt;
-    let found = localData[mapId].markedItems[markerId]==true;
+    let found = settings.markedItems[markerId]==true;
     markItemFound(markerId, !found);
     e.target.closePopup();
   }
@@ -302,7 +309,7 @@ function loadMap() {
     let res = null;
 
     let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-    let found = localData[mapId].markedItems[markerId]==true
+    let found = settings.markedItems[markerId]==true
     let value = found ? 'checked' : '';
 
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
@@ -405,7 +412,7 @@ function loadMap() {
           if (o.type == 'PlayerStart' && !playerMarker) {
             playerStart = [o.lat, o.lng, o.alt];
             let t = new L.LatLng(o.lat, o.lng);
-            if (p = localData[mapId].playerPosition) {
+            if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
             playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng) })
@@ -413,7 +420,7 @@ function loadMap() {
             .on('moveend', function(e) {
               let marker = e.target;
               let t = marker.getLatLng();
-              localData[mapId].playerPosition = [t.lat, t.lng, 0];
+              settings.playerPosition = [t.lat, t.lng, 0];
               saveSettings();
               e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
             })
@@ -480,7 +487,7 @@ function loadMap() {
           let layerObj = L.layerGroup();
           layerObj.id = o.id;
 
-          if (localData[mapId].activeLayers[o.id]) {
+          if (settings.activeLayers[o.id]) {
             layerObj.addTo(map);
             activeLayers.push(layerObj);
           } else {
@@ -505,13 +512,34 @@ function loadMap() {
           }).addTo(map);
 
           searchControl._handleSubmit = function(){
-            let records = searchControl._filterData(searchText, searchControl._recordsCache);
-            console.log('handling enter key, unimplemented. Supposed to filter markers by ', records);
+            let records = searchControl._filterData(settings.searchText, searchControl._recordsCache);
+
+            // we got a list of records, use them as a filter
+            settings.searchFilter = {};
             if (records && Object.keys(records).length>0) {
-              submitItem(Object.keys(records)[0]);
+              for (const [k,o] of Object.entries(records)) {
+                settings.searchFilter[o.layer.options.alt] = true;
+              }
+              if (Object.keys(records).length==1) {
+                submitItem(Object.keys(records)[0]);
+              }
             }
             searchControl.collapse();
+
+            //console.log('applying filter', settings.searchFilter);
+
+            saveSettings();
+            markItems();
+
           };
+
+          function clearFilter() {
+            console.log('filter cleared');
+            settings.searchText = '';
+            settings.searchFilter = {};
+            saveSettings();
+            markItems();
+          }
 
           function submitItem(text) {
             const loc = searchControl._getLocation(text)
@@ -526,18 +554,22 @@ function loadMap() {
           }
 
           searchControl.on('search:expanded', function (e) {
-            document.querySelector('input.search-input').value = searchText;
-            searchControl.searchText(searchText);
+            document.querySelector('input.search-input').value = settings.searchText;
+            searchControl.searchText(settings.searchText);
             addSearchCallbacks();
           });
 
           document.querySelector('.search-cancel').addEventListener('click',function (e) {
-            console.log('cancel clicked');
-            searchText = '';
+            clearFilter();
           });
 
           document.querySelector('input.search-input').addEventListener('keydown', function(e) {
-            searchText = document.querySelector('input.search-input').value;
+            settings.searchText = document.querySelector('input.search-input').value;
+
+            //if (!settings.SearchText) {
+            //  clearFilter();
+            //}
+
             addSearchCallbacks();
           });
 
@@ -660,9 +692,9 @@ window.markItemFound = function (id, found=true, save=true) {
   });
 
   if (found) {
-    localData[mapId].markedItems[id] = true;
+    settings.markedItems[id] = true;
   } else {
-    delete localData[mapId].markedItems[id];
+    delete settings.markedItems[id];
   }
 
   if (save) {
@@ -671,23 +703,31 @@ window.markItemFound = function (id, found=true, save=true) {
 }
 
 function markItems() {
-  for (const[id,value] of Object.entries(localData[mapId].markedItems)) {
+
+  for (const[id,value] of Object.entries(settings.markedItems)) {
     var divs = document.querySelectorAll('img[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.add('found');
     });
   }
+
+  let unfiltered = Object.keys(settings.searchFilter).length==0;
+
+  var divs = document.querySelectorAll('img.leaflet-marker-icon ');
+  [].forEach.call(divs, function(div) {
+    div.style.visibility = settings.searchFilter[div.alt] || unfiltered ? 'visible' : 'hidden';
+  });
 }
 
 function unmarkItems() {
-  for (const[id,value] of Object.entries(localData[mapId].markedItems)) {
+  for (const[id,value] of Object.entries(settings.markedItems)) {
     var divs = document.querySelectorAll('img[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.remove('found');
     });
   }
-  localData[mapId].markedItems={};
-  localData[mapId].playerPosition = playerStart;
+  settings.markedItems={};
+  settings.playerPosition = playerStart;
   if (playerMarker) {
     playerMarker.setLatLng(new L.LatLng(playerStart[0], playerStart[1]));
   }
@@ -755,7 +795,7 @@ window.loadSaveFile = function () {
           var latlng = new L.LatLng(p.y, p.x);
           //console.log('setting player position from file', mapId, latlng);
           playerMarker.setLatLng(latlng);
-          localData[mapId].playerPosition = [p.y, p.x, p.z];
+          settings.playerPosition = [p.y, p.x, p.z];
         } else {
           console.log('cannot load player position from', JSON.stringify(o));
         }
@@ -763,8 +803,8 @@ window.loadSaveFile = function () {
       }
     }
 
-    setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(localData[mapId].markedItems).length + ' items')},250);
-    //console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
+    setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(settings.markedItems).length + ' items')},250);
+    //console.log('Marked ' + Object.keys(settings.markedItems).length + ' items');
 
     saveSettings();
 
