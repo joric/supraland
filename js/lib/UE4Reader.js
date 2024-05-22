@@ -201,20 +201,15 @@ class UEReadHelper {
                     retVal.z = this.getFloat32();
                     retVal.w = this.getFloat32();
                     break;
-                  case "Transform":
-                    var p;
-                    while ((p = this.getNextProperty()).name != "None") {
-                      retVal[p.name] = p;
-                    }
-                    break;
       default:
         retVal.name = type;
         if( type.endsWith("Property") ) { 
           retVal.value = this.getValueByType(this.getString());
         } else {
-          //console.log("nested property type not explicitly handled: " + type);
-          this.pos -= 8;
-          retVal.value = this.getString64Custom(overlen);
+          var p;
+          while ((p = this.getNextProperty()).name != "None") {
+            retVal[p.name] = p;
+          }
         }
         break;
     }
