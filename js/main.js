@@ -763,7 +763,7 @@ window.loadSaveFile = function () {
       }
     }
 
-    alert('Loaded successfully. Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
+    setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(localData[mapId].markedItems).length + ' items')},250);
     //console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
 
     saveSettings();
