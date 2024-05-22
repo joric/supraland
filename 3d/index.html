@@ -25,7 +25,7 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <script>
 
 let heightFactor = 0.25;
-let startPitch = 45;
+let startPitch = 0;
 let defaultZoom = 4;
 let defaultPitch = 45;
 let defaultBearing = 0;
@@ -166,12 +166,15 @@ function markerSymbol3(icon, shadow=false) {
 
   let [w2,h2,[s2],c2,p2] = t.icon;
 
+  let bgcolor = color;
+  let fgcolor = 'white';
+
   let dx = 64 + (512-w2)/4;
   let dy = 64 + (512-h2)/4;
   let path = [
     {path:p1, fill: 'black'},
-    {transform: 'matrix(0.976,0,0,0.976,5,5)', path: p1, fill: color},
-    {transform: 'matrix(0.5,0,0,0.5,'+dx+','+dy+')', path:p2, fill: 'white'}
+    {transform: 'matrix(0.976,0,0,0.976,5,5)', path: p1, fill: bgcolor },
+    {transform: 'matrix(0.5,0,0,0.5,'+dx+','+dy+')', path:p2, fill: fgcolor }
   ];
   return {
     markerType: 'path',
@@ -244,11 +247,13 @@ function loadMap(mapId) {
   let lineLayer = new maptalks.VectorLayer('lines', {
     enableAltitude: enableAltitude,
     sortByDistanceToCamera: true,
+    forceRenderOnMoving: true,
   }).addTo(map);
 
   let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: enableAltitude,
     sortByDistanceToCamera: true,
+    forceRenderOnMoving: true,
   }).addTo(map);
 
   if (drawAltitude) {
@@ -431,6 +436,12 @@ function loadMap(mapId) {
       div.style.color = '#fff';
     }
   });
+
+  map.on('viewchange', function(e) {
+      vectorLayer.setOptions({enableAltitude: map.getPitch()!=0});
+      lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
+  });
+
 }
 
 function resetPitch(e) {
@@ -515,6 +526,7 @@ window.onload = function(event) {
   });
 
   window.requestAnimationFrame(update);
+
 
   // redraw (need font awesome)
   //setTimeout(function(){map.setPitch(map.getPitch()+0.01);},1000);

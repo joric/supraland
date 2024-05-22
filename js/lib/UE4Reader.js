@@ -202,13 +202,9 @@ class UEReadHelper {
                     retVal.w = this.getFloat32();
                     break;
                   case "Transform":
-                    retVal = {}
-                    while (true) {
-                      let prop = this.getNextProperty();
-                      if (prop.name=="None") {
-                        break;
-                      }
-                      retVal[prop.name] = prop;
+                    var p;
+                    while ((p = this.getNextProperty()).name !='None') {
+                      retVal[p.name] = p;
                     }
                     break;
       default:
