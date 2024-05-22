@@ -266,7 +266,6 @@ function loadMap() {
     if (confirm('Are you sure to unmark all items?')) {
       unmarkItems();
       saveSettings();
-      document.querySelector('.leaflet-toolbar-1').style.display = 'none';
     }
   }
 
