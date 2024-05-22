@@ -709,7 +709,7 @@ window.loadSaveFile = function () {
 
     let loadedSave = new UESaveObject(evt.target.result);
 
-    console.log(loadedSave);
+    //console.log(loadedSave);
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
@@ -738,7 +738,7 @@ window.loadSaveFile = function () {
 
         if (p && p.x && p.y) {
           var latlng = new L.LatLng(p.y, p.x);
-          console.log('setting player position from file', mapId, latlng);
+          //console.log('setting player position from file', mapId, latlng);
           playerMarker.setLatLng(latlng);
           localData[mapId].playerPosition = [p.y, p.x, p.z];
         } else {
