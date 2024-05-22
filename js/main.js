@@ -521,13 +521,13 @@ function loadMap() {
           });
 
           document.querySelector('input.search-input').addEventListener('keydown', function(e) {
+            searchText = document.querySelector('input.search-input').value;
             addSearchCallbacks();
           });
 
           // add click callbacks to search dropdown list items
           function addSearchCallbacks(){
             setTimeout(function() {
-              searchText = document.querySelector('input.search-input').value;
               let divs = document.querySelectorAll('.search-tip');
               [].forEach.call(divs, function(div) {
                 div.addEventListener('click', function (e) {
