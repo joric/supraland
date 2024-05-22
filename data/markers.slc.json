@@ -3864,6 +3864,30 @@
     "alt": -1570.205078125
   },
   {
+    "name": "MetalBall2_2",
+    "type": "MetalBall_C",
+    "area": "Crash",
+    "lat": -10273.7021484375,
+    "lng": 64264.26953125,
+    "alt": 13686.951171875
+  },
+  {
+    "name": "MetalBall3",
+    "type": "MetalBall_C",
+    "area": "Crash",
+    "lat": -9816.8466796875,
+    "lng": 66092.9453125,
+    "alt": 14900.5029296875
+  },
+  {
+    "name": "MetalBall_2",
+    "type": "MetalBall_C",
+    "area": "Crash",
+    "lat": -8482.6787109375,
+    "lng": -1492.9405517578125,
+    "alt": -157.65203857421875
+  },
+  {
     "name": "MinecraftBrick2",
     "type": "MinecraftBrick_C",
     "area": "Crash",

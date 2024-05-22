@@ -6327,9 +6327,9 @@
       "z": 0.6944271326065063
     },
     "target": {
-      "x": 19347.878546328982,
-      "y": 9195.261910551104,
-      "z": 3489.64771475899
+      "x": 19335.497182283085,
+      "y": 9170.682769031017,
+      "z": 3510.2893096138646
     }
   },
   {
@@ -6486,9 +6486,9 @@
       "z": 0.9396960735321045
     },
     "target": {
-      "x": 2238.965150296688,
-      "y": -47363.71435558796,
-      "z": 2161.8641441269206
+      "x": 2198.5651235580444,
+      "y": -47269.39970588684,
+      "z": 1894.9484661865545
     }
   },
   {
@@ -6788,9 +6788,9 @@
       "z": 0.7071056962013245
     },
     "target": {
-      "x": 18179.29322230816,
-      "y": 6098.022018432617,
-      "z": 3132.964723952491
+      "x": 18175.134678065777,
+      "y": 6140.244194030762,
+      "z": 3176.376582180412
     }
   },
   {
@@ -7087,6 +7087,94 @@
     "lat": 16927.02734375,
     "lng": 23145.572265625,
     "alt": 3804.97314453125
+  },
+  {
+    "name": "MetalBall2",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": 8612.2197265625,
+    "lng": 16841.919921875,
+    "alt": 3324.004150390625
+  },
+  {
+    "name": "MetalBall3",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": 5295.80029296875,
+    "lng": 17379.9296875,
+    "alt": 3272.438232421875
+  },
+  {
+    "name": "MetalBall4",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": 5403.28466796875,
+    "lng": 17547.296875,
+    "alt": 3270.337646484375
+  },
+  {
+    "name": "MetalBall5_2",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": 10129.42578125,
+    "lng": 29205.951171875,
+    "alt": 3352.87646484375
+  },
+  {
+    "name": "MetalBall7_2",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": 15505.8818359375,
+    "lng": 21873.923828125,
+    "alt": 3155.722900390625
+  },
+  {
+    "name": "MetalBall_BankChaosObject10",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -47056.7890625,
+    "lng": 2008.4112548828125,
+    "alt": 1881.5350341796875
+  },
+  {
+    "name": "MetalBall_BankChaosObject11",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -47127.03125,
+    "lng": 2027.042724609375,
+    "alt": 1905.9041748046875
+  },
+  {
+    "name": "MetalBall_BankChaosObject12",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -46771.01953125,
+    "lng": 2064.150634765625,
+    "alt": 1881.5350341796875
+  },
+  {
+    "name": "MetalBall_BankChaosObject4",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -46719.953125,
+    "lng": 1956.9573974609375,
+    "alt": 1877.6976318359375
+  },
+  {
+    "name": "MetalBall_BankChaosObject5",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -47096.35546875,
+    "lng": 1961.00341796875,
+    "alt": 1877.69775390625
+  },
+  {
+    "name": "MetalBall_BankChaosObject9",
+    "type": "MetalBall_C",
+    "area": "DLC2_Complete",
+    "lat": -46367.515625,
+    "lng": 2036.376953125,
+    "alt": 1896.056396484375
   },
   {
     "name": "MinecraftBrick100",
@@ -15892,6 +15980,14 @@
       "y": -39173.06231355667,
       "z": 11058.234597976876
     }
+  },
+  {
+    "name": "MetalBall_2",
+    "type": "MetalBall_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -49780.01953125,
+    "lng": -44579.65234375,
+    "alt": 5663.71484375
   },
   {
     "name": "MinecraftBrick3",
