@@ -209,7 +209,16 @@ class UEReadHelper {
 
                     /*
                     // new version (since 1.2.3349, throws exception)
-                    \f\u0000\u0000\u0000Translation\u0000\u000f\u0000\u0000\u0000StructProperty\u0000\f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000Vector\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\nCOÇ6G\u001aÇ\u0014P©E\b\u0000\u0000\u0000Scale3D\u0000\u000f\u0000\u0000\u0000StructProperty\u0000\f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000Vector\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000€?üÿ?üÿ?\u0005\u0000\u0000\u0000None
+                    \t\x00\x00\x00Rotation\x00
+                    \x0F\x00\x00\x00StructProperty\x00\x10\x00\x00\x00\x00\x00\x00\x00
+                    \x05\x00\x00\x00Quat\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€)â†>ëôv?
+                    \f\x00\x00\x00Translation\x00
+                    \x0F\x00\x00\x00StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00
+                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00JèYÇAÎ$ÇÜ¼\x19F
+                    \b\x00\x00\x00Scale3D\x00
+                    \x0F\x00\x00\x00StructProperty\x00\f\x00\x00\x00\x00\x00\x00\x00
+                    \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00€?üÿ\x7F?üÿ\x7F?
+                    \x05\x00\x00\x00None
                     */
 
                     try {
