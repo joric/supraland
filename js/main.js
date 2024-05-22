@@ -749,8 +749,8 @@ window.loadSaveFile = function () {
       }
     }
 
-    //alert('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
-    console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
+    alert('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
+    //console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
 
     saveSettings();
 
