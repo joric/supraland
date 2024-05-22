@@ -259,6 +259,7 @@ function loadMap() {
     document.querySelector('#file').value = null;
     document.querySelector('#file').accept = '.sav';
     document.querySelector('#file').click();
+    document.querySelector('.leaflet-toolbar-1').style.display = 'none';
   }
 
   document.querySelector('.unmark-items').onclick = function(e) {
@@ -266,6 +267,7 @@ function loadMap() {
       unmarkItems();
       saveSettings();
     }
+    document.querySelector('.leaflet-toolbar-1').style.display = 'none';
   }
 
   function loadMarkersLegacy() {
