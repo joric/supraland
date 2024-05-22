@@ -537,7 +537,7 @@ function loadMap() {
               count = Object.keys(records).length;
               if (count>0) {
                 let text = Object.keys(records)[0];
-                if (count==1) {
+                if (count>1) { // ==1 popup if we found 1 item, >1 always show popup at first item
                   submitItem(text);
                 } else {
                   let o = records[text];
