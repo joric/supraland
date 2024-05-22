@@ -385,6 +385,8 @@ function loadMap() {
               } else if (o.coins) {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
+            } else {
+              title = title + ' ('+o.type+')';
             }
 
             // all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns. 
