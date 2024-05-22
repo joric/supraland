@@ -694,10 +694,12 @@ window.loadSaveFile = function () {
           if (o.value.translation) {
             p = o.value.translation;
           }
-          var latlng = new L.LatLng(p.y, p.x);
           //console.log('setting player position from file', mapId, latlng);
-          playerMarker.setLatLng(latlng);
-          localData[mapId].playerPosition = [p.y, p.x, p.z];
+          if (p.x && p.y) {
+            var latlng = new L.LatLng(p.y, p.x);
+            playerMarker.setLatLng(latlng);
+            localData[mapId].playerPosition = [p.y, p.x, p.z];
+          }
         } else {
           console.log('cannot load player position from', JSON.stringify(o));
         }

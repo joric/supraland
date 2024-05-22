@@ -206,28 +206,45 @@ class UEReadHelper {
                     \x07\x00\x00\x00Vector\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x41\x4a\x90\x46\x62\x28\xaf\xc6\x80\x1a\x70\xc2
                     \x05\x00\x00\x00None
                     */
-                    let t = this.getString(); // Rotation
-                    this.pos += 0;
 
-                    t = this.getString(); // StructProperty
-                    this.pos += 8;
+                    /*
+                    // new version (since 1.2.3349, throws exception)
+                    \f\u0000\u0000\u0000Translation\u0000\u000f\u0000\u0000\u0000StructProperty\u0000\f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000Vector\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\nCOÇ6G\u001aÇ\u0014P©E\b\u0000\u0000\u0000Scale3D\u0000\u000f\u0000\u0000\u0000StructProperty\u0000\f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007\u0000\u0000\u0000Vector\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000€?üÿ?üÿ?\u0005\u0000\u0000\u0000None
+                    */
 
-                    t = this.getString(); // Quat
-                    this.pos += 17; // padding
-                    retVal.rotation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32(), w: this.getFloat32()}
+                    try {
+                      let t = this.getString(); // Rotation
+                      this.pos += 0;
 
-                    t = this.getString(); // Translation
-                    this.pos += 0;
+                      t = this.getString(); // StructProperty
+                      this.pos += 8;
 
-                    t = this.getString(); // StructProperty
-                    this.pos += 8;
+                      t = this.getString(); // Quat
+                      this.pos += 17; // padding
+                      retVal.rotation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32(), w: this.getFloat32()}
 
-                    t = this.getString(); // Vector
-                    this.pos += 17; // padding
-                    retVal.translation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32()}
+                      t = this.getString(); // Translation
+                      this.pos += 0;
+
+                      t = this.getString(); // StructProperty
+                      this.pos += 8;
+
+                      t = this.getString(); // Vector
+                      this.pos += 17; // padding
+                      retVal.translation = {x: this.getFloat32(), y: this.getFloat32(), z: this.getFloat32()}
+                    } catch (e) {
+                      this.pos = p - 8
+                      let s = this.getString64Custom(overlen);
+                      console.log('error reading player position',e,'at', s);
+                      delete retVal.rotation;
+                      delete retVal.translation;
+                      this.pos = p - 8
+                      retVal.value = this.getString64Custom(overlen);
+                    }
 
                     this.pos = p - 8
                     this.getString64Custom(overlen);
+
                     break;
       default:
         retVal.name = type;
