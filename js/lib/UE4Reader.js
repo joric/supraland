@@ -272,22 +272,21 @@ window.loadSaveFile = function () {
 
 if (typeof require !== 'undefined' && require.main === module) {
   for (fname of [
-    'C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav',
-    'C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav',
-    'SixInchesSave1.good.sav',
-    'SixInchesSave1.bad.sav']) {
-    require('fs').readFile(fname, (err, buf) => {
-      if (err) {
-        console.log(err);
-      } else {
-        let loadedSave = new UESaveObject(buf.buffer);
-        //require('fs').writeFileSync('save.json', JSON.stringify(loadedSave,null,2));
-        for (o of loadedSave.Properties) {
-          if (o.name == 'Player Position') {
-            console.log(o);
-          }
+    "C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\Save1.sav",
+    "C:\\Users\\user\\AppData\\Local\\Supraland\\Saved\\SaveGames\\CrashSave1.sav",
+    "C:\\Users\\user\\AppData\\Local\\SupralandSIU\\Saved\\SaveGames\\SixInchesSave1.sav",
+  ])
+  require('fs').readFile(fname, (err, buf) => {
+    if (err) {
+      console.log(err);
+    } else {
+      let loadedSave = new UESaveObject(buf.buffer);
+      //require('fs').writeFileSync('save.json', JSON.stringify(loadedSave,null,2));
+      for (o of loadedSave.Properties) {
+        if (o.name == 'Player Position') {
+          console.log(JSON.stringify(o, null, 2));
         }
       }
-    })
-  }
+    }
+  })
 }
