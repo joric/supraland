@@ -708,7 +708,14 @@ window.loadSaveFile = function () {
 
   reader.onloadend = function(evt) {
 
-    let loadedSave = new UESaveObject(evt.target.result);
+    let loadedSave;
+    try {
+      loadedSave = new UESaveObject(evt.target.result);
+    } catch(e) {
+      console.log(e);
+      alert('Could not load file, incompatible format.');
+      return;
+    }
 
     //console.log(loadedSave);
 
@@ -749,7 +756,7 @@ window.loadSaveFile = function () {
       }
     }
 
-    alert('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
+    alert('Loaded successfully. Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
     //console.log('Marked ' + Object.keys(localData[mapId].markedItems).length + ' items');
 
     saveSettings();
