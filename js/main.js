@@ -47,6 +47,14 @@ function saveSettings() {
   localStorage.setItem(localDataName, JSON.stringify(localData));
 }
 
+function clearFilter() {
+  console.log('filter cleared');
+  settings.searchText = '';
+  settings.searchFilter = {};
+  saveSettings();
+  markItems();
+}
+
 function loadMap() {
   localStorage.setItem('mapId', mapId);
 
@@ -151,12 +159,14 @@ function loadMap() {
 
   map.on('overlayadd', function(e) {
     settings.activeLayers[e.layer.id] = true;
-    clearFilter();
+    markItems();
+    saveSettings();
   });
 
   map.on('overlayremove', function(e) {
     delete settings.activeLayers[e.layer.id];
-    clearFilter();
+    markItems();
+    saveSettings();
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -512,9 +522,13 @@ function loadMap() {
           }).addTo(map);
 
           searchControl._handleSubmit = function(){
-            let records = searchControl._filterData(settings.searchText, searchControl._recordsCache);
+            map.closePopup();
+            searchControl.collapse();
+            applyFilter();
+          }
 
-            // we got a list of records, use them as a filter
+          function applyFilter() {
+            let records = searchControl._filterData(settings.searchText, searchControl._recordsCache);
             settings.searchFilter = {};
             if (records && Object.keys(records).length>0) {
               for (const [k,o] of Object.entries(records)) {
@@ -524,19 +538,6 @@ function loadMap() {
                 submitItem(Object.keys(records)[0]);
               }
             }
-            searchControl.collapse();
-
-            //console.log('applying filter', settings.searchFilter);
-
-            saveSettings();
-            markItems();
-
-          };
-
-          function clearFilter() {
-            console.log('filter cleared');
-            settings.searchText = '';
-            settings.searchFilter = {};
             saveSettings();
             markItems();
           }
@@ -551,6 +552,11 @@ function loadMap() {
                 layer: loc.layer ? loc.layer : null
               })
             }
+          }
+
+          function clickItem(text) {
+            applyFilter();
+            submitItem(text);
           }
 
           searchControl.on('search:expanded', function (e) {
@@ -580,7 +586,7 @@ function loadMap() {
               [].forEach.call(divs, function(div) {
                 div.addEventListener('click', function (e) {
                   let text = e.target.innerText;
-                  submitItem(text);
+                  clickItem(text);
                   e.preventDefault();
                 })
               })
