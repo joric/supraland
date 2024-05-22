@@ -505,10 +505,25 @@ function loadMap() {
           }).addTo(map);
 
           searchControl._handleSubmit = function(){
-            searchControl.searchText(searchText);
-            console.log('handling enter key, unimplemented. Supposed to filter markers by ', searchControl._recordsCache);
+            let records = searchControl._filterData(searchText, searchControl._recordsCache);
+            console.log('handling enter key, unimplemented. Supposed to filter markers by ', records);
+            if (records && Object.keys(records).length>0) {
+              submitItem(Object.keys(records)[0]);
+            }
             searchControl.collapse();
           };
+
+          function submitItem(text) {
+            const loc = searchControl._getLocation(text)
+            if (loc) {
+              searchControl.showLocation(loc, text);
+              searchControl.fire('search:locationfound', {
+                latlng: loc,
+                text: text,
+                layer: loc.layer ? loc.layer : null
+              })
+            }
+          }
 
           searchControl.on('search:expanded', function (e) {
             document.querySelector('input.search-input').value = searchText;
@@ -533,15 +548,7 @@ function loadMap() {
               [].forEach.call(divs, function(div) {
                 div.addEventListener('click', function (e) {
                   let text = e.target.innerText;
-                  const loc = searchControl._getLocation(text)
-                  if (loc) {
-                    searchControl.showLocation(loc, text);
-                    searchControl.fire('search:locationfound', {
-                      latlng: loc,
-                      text: text,
-                      layer: loc.layer ? loc.layer : null
-                    })
-                  }
+                  submitItem(text);
                   e.preventDefault();
                 })
               })
