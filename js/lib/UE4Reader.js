@@ -203,7 +203,7 @@ class UEReadHelper {
                     break;
                   case "Transform":
                     var p;
-                    while ((p = this.getNextProperty()).name !='None') {
+                    while ((p = this.getNextProperty()).name != "None") {
                       retVal[p.name] = p;
                     }
                     break;
