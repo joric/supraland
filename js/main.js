@@ -231,15 +231,6 @@ function loadMap() {
       addHooks: function() { this.myAction.disable(); }
     });
 
-    var Cancel = ImmediateSubAction.extend({
-        options: {
-            toolbarIcon: {
-                html: '&times;',
-                tooltip: 'Cancel'
-            }
-        }
-    });
-
     subActions = []
 
     for (const [title, className] of Object.entries(conf.actions)) {
@@ -258,8 +249,6 @@ function loadMap() {
           });
         subActions.push(a);
     }
-
-    subActions.push(Cancel);
 
     return L.Toolbar2.Action.extend({
         options: {
@@ -281,6 +270,11 @@ function loadMap() {
       div.style.display = 'none';
     });
   }
+
+  map.on('click', function(e) {
+    closeToolbar();
+  });
+
 
   actions.push(newAction({icon:'&#x1F517;', tooltip:'Share', actions:{'Copy View URL':'copy-link' }}));
   actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Load Game':'upload-save', 'Copy Path':'copy-path', 'Unmark All': 'unmark-items' }}));
