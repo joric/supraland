@@ -377,8 +377,9 @@ function loadMap() {
 
             // can't have duplicate titles in search
             while (titles[title]) {
-              title += '_';
+              title += '(2)';
             }
+
             titles[title] = title;
 
             if (o.type.endsWith('Chest_C')) {
