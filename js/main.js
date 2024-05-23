@@ -282,7 +282,7 @@ function loadMap() {
     });
   }
 
-  actions.push(newAction({icon:'&#x1F517;', tooltip:'Share', actions:{'Copy Location URL':'copy-link' }}));
+  actions.push(newAction({icon:'&#x1F517;', tooltip:'Share', actions:{'Copy View URL':'copy-link' }}));
   actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Load Game':'upload-save', 'Copy Path':'copy-path', 'Unmark All': 'unmark-items' }}));
   let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
