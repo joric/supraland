@@ -748,24 +748,21 @@ function markItems() {
     });
   }
 
-  // filter by settings.searchText
-  if (Object.keys(searchControl._recordsCache).length == 0) {
-    searchControl._recordsCache = searchControl._filterData(settings.searchText,searchControl._recordsFromLayer());
+  // filter by settings.searchText. caching is unreliable, just perform a full search here
+  let records = {};
+  if (settings.searchText != '') {
+    records = searchControl._filterData(settings.searchText, searchControl._recordsFromLayer());
   }
-
-  let records = settings.searchText.length>0 ? searchControl._recordsCache : {};
-  let unfiltered = Object.keys(records).length==0;
 
   let lookup = {}
   for (const o of Object.values(records)) {
     lookup[o.layer.options.alt] = true;
   }
 
-  var divs = document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive');
-  [].forEach.call(divs, function(div) {
+  [].forEach.call(document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive'), function(div) {
     if (div.alt!='playerMarker') {
       let alt = div.getAttribute('alt');
-      if (unfiltered || lookup[alt]) {
+      if (Object.keys(records).length==0 || lookup[alt]) {
         div.classList.remove('hidden');
       } else {
         div.classList.add('hidden');
