@@ -385,8 +385,8 @@ function loadMap() {
             let layer = layers[c.layer] ? c.layer : defaultLayer;
 
             // can't have duplicate titles in search
-            while (titles[title]) {
-              title += ' (2)';
+            if (titles[title]) {
+              title += ' ('+o.area+')';
             }
 
             titles[title] = title;
@@ -473,8 +473,8 @@ function loadMap() {
             if (r = o.direction) {
               let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
-              // need to add title as a single space (leaflet search issue)
-              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:alt, alt:alt, color: color}).addTo(layers['jumppads']);
+              // need to add title as a single space (leaflet search issue), but not the full title so it doesn't appear in search
+              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers['jumppads']);
               line._path && line._path.setAttribute('alt', alt);
             }
           }
@@ -482,7 +482,7 @@ function loadMap() {
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:alt, alt:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
               line._path && line._path.setAttribute('alt', alt);
             }
           }
