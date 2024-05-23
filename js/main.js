@@ -50,6 +50,13 @@ function clearFilter() {
   markItems();
 }
 
+function getViewLink() {
+  let base = window.location.href.replace(/#.*$/,'');
+  let vars = {mapId:mapId, lat:Math.round(map.getCenter().lat), lng:Math.round(map.getCenter().lng), zoom:map.getZoom()};
+  let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
+  return '<a href="'+url+'" onclick="return false">Map URL</a>';
+}
+
 function loadMap() {
   for (id in maps) {
     var title = maps[id].title;
@@ -150,6 +157,15 @@ function loadMap() {
     settings.zoom = map.getZoom();
     saveSettings();
   });
+
+  /*
+  map.on('click', function(e) {
+    var popup = L.popup()
+    .setLatLng(e.latlng)
+    .setContent(getViewLink())
+    .openOn(map);
+  });
+  */
 
   map.on('baselayerchange', function(e) {
     id = e.layer.mapId;
@@ -324,20 +340,20 @@ function loadMap() {
 
     let dist = Infinity;
     let res = null;
-
     let o = e.popup._source.options.o;
-
-    let base = window.location.href.replace(/#.*$/,'');
-    let vars = {mapId:mapId, lat:map.getCenter().lat, lng:map.getCenter().lng, zoom:map.getZoom()};
-    let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 
     let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
     let found = settings.markedItems[markerId]==true
     let value = found ? 'checked' : '';
 
+    let base = window.location.href.replace(/#.*$/,'');
+    let vars = {mapId:mapId, lat:Math.round(map.getCenter().lat), lng:Math.round(map.getCenter().lng), zoom:map.getZoom()};
+    let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
+    let a = '<a href="'+url+'" onclick="return false">Map URL</a>';
+
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
-    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>'
-    +' &nbsp;&nbsp;&nbsp;&nbsp; <a href="'+url+'" onclick="return false">Map URL</a>';
+    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
+    text += ' &nbsp;&nbsp; ' + getViewLink();
     e.popup.setContent(text);
 
     for (const lookup of ['chests.csv', 'collectables.csv', 'shops.csv']) {
