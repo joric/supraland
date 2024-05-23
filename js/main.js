@@ -348,8 +348,11 @@ function loadMap() {
     fetch('data/'+fname+'.'+mapId+'.json')
       .then((response) => response.json())
       .then((j) => {
-        objects = {};
+        let objects = {};
+        let titles = {};
         for (o of j) {
+
+          let alt = o.area + ':' + o.name;
 
           // skip markers out of bounds (e.g. "PipesystemNew_AboveSewer" in DLC2_Area0)
           let [[top,left],[bottom,right]] = mapBounds;
@@ -364,13 +367,19 @@ function loadMap() {
 
           // check if class is in the types list
           if (c = classes[o.type]) {
-            let markerId = o.area + ':' + o.name;
             let text = ''; // set it later in onPopupOpen
+
             let title = o.name;
             let defaultIcon = 'question_mark';
             let defaultLayer = 'misc';
             let icon = c.icon || defaultIcon;
             let layer = layers[c.layer] ? c.layer : defaultLayer;
+
+            // can't have duplicate titles in search
+            while (titles[title]) {
+              title += '_';
+            }
+            titles[title] = title;
 
             if (o.type.endsWith('Chest_C')) {
               icon = 'chest';
@@ -388,7 +397,7 @@ function loadMap() {
             if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
               let icon = 'shop';
               let layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layer:layer }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
@@ -396,7 +405,7 @@ function loadMap() {
             }
 
             // finally, add marker (base marker goes in the middle)
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layer:layer }).addTo(layers[layer])
             .bindPopup(text)
             .on('popupopen', onPopupOpen)
             .on('contextmenu',onContextMenu)
@@ -406,7 +415,7 @@ function loadMap() {
             if (s = classes[o.spawns]) {
               let icon = s.icon || defaultIcon;
               let layer = layers[s.layer] ? s.layer : defaultLayer;
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: markerId, o:o, layer:layer }).addTo(layers[layer])
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 1000, alt: alt, o:o, layer:layer }).addTo(layers[layer])
               .bindPopup(text)
               .on('popupopen', onPopupOpen)
               .on('contextmenu',onContextMenu)
@@ -422,7 +431,7 @@ function loadMap() {
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
-            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng) })
+            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
             .bindPopup()
             .on('moveend', function(e) {
               let marker = e.target;
@@ -441,7 +450,7 @@ function loadMap() {
           }
 
           // collect objects for the 2-nd pass
-          objects[o.area + ':' + o.name] = o;
+          objects[alt] = o;
 
         } // end of loop
 
@@ -455,17 +464,23 @@ function loadMap() {
               let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               // need to add title as a single space (leaflet search issue)
-              L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads'])._path.setAttribute('alt', alt);
+              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads']);
+              if (line._path) {
+                line._path.setAttribute('alt', alt);
+              }
             }
           }
 
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys'])._path.setAttribute('alt', alt);
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys']);
+              if (line._path) {
+                line._path.setAttribute('alt', alt);
+              }
             }
           }
-
+         
         } // end of 2-nd pass
 
         markItems();
@@ -742,10 +757,13 @@ function markItems() {
 
   var divs = document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive');
   [].forEach.call(divs, function(div) {
-    if (unfiltered || lookup[div.getAttribute('alt')]) {
-      div.classList.remove('hidden');
-    } else {
-      div.classList.add('hidden');
+    if (div.alt!='playerMarker') {
+      let alt = div.getAttribute('alt');
+      if (unfiltered || lookup[alt]) {
+        div.classList.remove('hidden');
+      } else {
+        div.classList.add('hidden');
+      }
     }
   });
 }
