@@ -738,7 +738,11 @@ function markItems() {
 
   var divs = document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive');
   [].forEach.call(divs, function(div) {
-    div.style.visibility =  unfiltered || lookup[div.getAttribute('alt')] ? 'visible' : 'hidden';
+    if (unfiltered || lookup[div.getAttribute('alt')]) {
+      div.classList.remove('hidden');
+    } else {
+      div.classList.add('hidden');
+    }
   });
 }
 
