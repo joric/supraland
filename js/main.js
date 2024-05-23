@@ -739,13 +739,13 @@ function markItems() {
   }
 
   // filter by settings.searchText
-
-  if (Object.keys(searchControl._recordsCache).length==0) {
+  if (Object.keys(searchControl._recordsCache).length == 0) {
     searchControl._recordsCache = searchControl._filterData(settings.searchText,searchControl._recordsFromLayer());
   }
 
-  let records = searchControl._recordsCache;
+  let records = settings.searchText.length>0 ? searchControl._recordsCache : {};
   let unfiltered = Object.keys(records).length==0;
+
   let lookup = {}
   for (const o of Object.values(records)) {
     lookup[o.layer.options.alt] = true;
