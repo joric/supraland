@@ -151,7 +151,7 @@ function loadMap() {
     position: 'topright',
   });
 
-  map.on('moveend', function(e) {
+  map.on('moveend zoomend', function(e) {
     settings.center = map.getCenter();
     settings.zoom = map.getZoom();
     saveSettings();
