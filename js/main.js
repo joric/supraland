@@ -78,8 +78,6 @@ function loadMap() {
     }
   }
 
-  console.log(param);
-
   localData.mapId = mapId;
   saveSettings();
 
