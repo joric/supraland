@@ -11,6 +11,7 @@ let reloading;
 let settings;
 let experimentalSearch = true;
 let mapCenter;
+let param = {};
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -69,6 +70,8 @@ function loadMap() {
       }
     }
   }
+
+  console.log(param);
 
   localData.mapId = mapId;
   saveSettings();
@@ -203,7 +206,9 @@ function loadMap() {
 
   L.control.mousePosition().addTo(map);
 
-  if (settings.center && settings.zoom) {
+  if (param.lat && param.lng && param.zoom) {
+    map.setView([param.lat, param.lng], param.zoom);
+  } else if (settings.center && settings.zoom) {
     map.setView(settings.center, settings.zoom);
   } else {
     map.fitBounds(mapBounds);
@@ -320,12 +325,19 @@ function loadMap() {
     let dist = Infinity;
     let res = null;
 
-    let text = JSON.stringify(e.popup._source.options.o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+    let o = e.popup._source.options.o;
+
+    let base = window.location.href.replace(/#.*$/,'');
+    let vars = {mapId:mapId, lat:map.getCenter().lat, lng:map.getCenter().lng, zoom:map.getZoom()};
+    let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
+
+    let text = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
     let found = settings.markedItems[markerId]==true
     let value = found ? 'checked' : '';
 
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
-    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
+    text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>'
+    +' &nbsp;&nbsp;&nbsp;&nbsp; <a href="'+url+'" onclick="return false">Map URL</a>';
     e.popup.setContent(text);
 
     for (const lookup of ['chests.csv', 'collectables.csv', 'shops.csv']) {
@@ -835,30 +847,36 @@ window.loadSaveFile = function () {
   }
 }
 
+function copyToClipboard(text) {
+  let input = document.body.appendChild(document.createElement("input"));
+  input.value = text;
+  input.focus();
+  input.select();
+  document.execCommand('copy');
+  input.parentNode.removeChild(input);
+}
+
 window.putSavefileLocationOnClipboard = function() {
   let location = '%LocalAppData%\\Supraland'+(map.mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames';
-
-  let text = 
-  'This map allows you to import the game save file (latest .sav) to mark the collected items automatically. '+
-  'On Windows, the default save path for this game is "'+location+'". '+
-  'Click OK to copy the path to your clipboard.'
-  ;
-
+  let text = 'This map allows you to import the game save file (latest .sav) to mark the collected items automatically. '+
+    'On Windows, the default save path for this game is "'+location+'". Click OK to copy the path to your clipboard.';
   if (confirm(text)) {
-    let inputc = document.body.appendChild(document.createElement("input"));
-    inputc.value = location;
-    inputc.focus();
-    inputc.select();
-    document.execCommand('copy');
-    inputc.parentNode.removeChild(inputc);
+    copyToClipboard(text);
   }
 }
 
 window.onload = function(event) {
-  // clear location hash, just in case
+  if (location.hash.length>1) {
+    for (const s of location.hash.slice(1).split('&')) {
+      let [k,v] = s.split('=');
+      param[k] = v;
+    }
+  }
+
+  // clear location hash
   history.pushState('', document.title, window.location.pathname + window.location.search);
 
-  mapId = localData.mapId || 'sl';
+  mapId = param.mapId || localData.mapId || 'sl';
 
   loadMap();
 
