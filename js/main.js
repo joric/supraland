@@ -668,6 +668,10 @@ function loadMap() {
           map.toggleFullscreen();
         }
         break;
+      case 'Slash':
+        searchControl.expand(true);
+        e.preventDefault();
+        break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
