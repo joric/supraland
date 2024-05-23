@@ -749,20 +749,17 @@ function markItems() {
   }
 
   // filter by settings.searchText. caching is unreliable, just perform a full search here
-  let records = {};
-  if (settings.searchText != '') {
-    records = searchControl._filterData(settings.searchText, searchControl._recordsFromLayer());
-  }
-
   let lookup = {}
-  for (const o of Object.values(records)) {
-    lookup[o.layer.options.alt] = true;
+  if (settings.searchText != '') {
+    for (const o of Object.values(searchControl._filterData(settings.searchText, searchControl._recordsFromLayer()))) {
+      lookup[o.layer.options.alt] = true;
+    }
   }
 
   [].forEach.call(document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive'), function(div) {
     if (div.alt!='playerMarker') {
       let alt = div.getAttribute('alt');
-      if (Object.keys(records).length==0 || lookup[alt]) {
+      if (Object.keys(lookup).length==0 || lookup[alt]) {
         div.classList.remove('hidden');
       } else {
         div.classList.add('hidden');
