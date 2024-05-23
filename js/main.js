@@ -154,12 +154,21 @@ function loadMap() {
 
   map.on('overlayadd', function(e) {
     settings.activeLayers[e.layer.id] = true;
+
+    // set alt for polylines (attributes are not populated to paths)
+    for (const m of Object.values(layers[e.layer.id]._layers)) {
+      if (p = m._path) {
+        p.setAttribute('alt', m.options.alt);
+      }
+    }
+
     markItems();
     saveSettings();
   });
 
   map.on('overlayremove', function(e) {
     delete settings.activeLayers[e.layer.id];
+
     markItems();
     saveSettings();
   });
@@ -465,16 +474,16 @@ function loadMap() {
               let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               // need to add title as a single space (leaflet search issue)
-              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:alt, color: color}).addTo(layers['jumppads']);
-              setTimeout(function(line, alt){if (line._path) {line._path.setAttribute('alt', alt)}}, 500, line, alt);
+              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:alt, alt:alt, color: color}).addTo(layers['jumppads']);
+              line._path && line._path.setAttribute('alt', alt);
             }
           }
 
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
-              setTimeout(function(line, alt){if (line._path) {line._path.setAttribute('alt', alt)}}, 500, line, alt);
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:alt, alt:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
+              line._path && line._path.setAttribute('alt', alt);
             }
           }
          
