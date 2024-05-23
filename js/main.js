@@ -11,6 +11,7 @@ let reloading;
 let settings;
 let experimentalSearch = true;
 let mapZoom = 4;
+let mapBounds;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -92,7 +93,7 @@ function loadMap() {
   w.MapWorldLowerRight.X -= 1;
   w.MapWorldLowerRight.Y -= 1;
 
-  var mapBounds = [
+  mapBounds = [
     [ w.MapWorldUpperLeft.Y, w.MapWorldUpperLeft.X ],
     [ w.MapWorldLowerRight.Y, w.MapWorldLowerRight.X ]
   ];
@@ -874,7 +875,7 @@ window.onload = function(event) {
   let pressed = {};
 
   function update(timestep) {
-    let step = 25;
+    let step = 100;
     let v = {};
     for (key of Object.keys(bindings)) {
       if (pressed[key]) {
@@ -913,6 +914,7 @@ window.onload = function(event) {
         searchControl.expand(true);
         e.preventDefault();
         break;
+      case 'KeyR': map.fitBounds(mapBounds); break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
