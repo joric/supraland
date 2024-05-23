@@ -10,8 +10,7 @@ let playerMarker;
 let reloading;
 let settings;
 let experimentalSearch = true;
-let mapZoom = 4;
-let mapBounds;
+let mapCenter;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -85,37 +84,40 @@ function loadMap() {
 
   document.querySelector('#map').style.backgroundColor = mapId=='siu' ? '#141414' : '#000';
 
-  var w = maps[mapId];
+  var p = maps[mapId];
 
   // fixes 404 errors
-  w.MapWorldUpperLeft.X  += 1;
-  w.MapWorldUpperLeft.Y += 1;
-  w.MapWorldLowerRight.X -= 1;
-  w.MapWorldLowerRight.Y -= 1;
+  p.MapWorldUpperLeft.X  += 1;
+  p.MapWorldUpperLeft.Y += 1;
+  p.MapWorldLowerRight.X -= 1;
+  p.MapWorldLowerRight.Y -= 1;
 
   mapBounds = [
-    [ w.MapWorldUpperLeft.Y, w.MapWorldUpperLeft.X ],
-    [ w.MapWorldLowerRight.Y, w.MapWorldLowerRight.X ]
+    [ p.MapWorldUpperLeft.Y, p.MapWorldUpperLeft.X ],
+    [ p.MapWorldLowerRight.Y, p.MapWorldLowerRight.X ]
   ];
 
-  var m = w.MapWorldSize / mapSize.width;
+  var m = p.MapWorldSize / mapSize.width;
   var mapScale   = {x: 1.0/m, y: 1.0/m};
-  var mapOrigin  = {x: -w.MapWorldUpperLeft.X * mapScale.x, y: -w.MapWorldUpperLeft.Y * mapScale.y};
+  var mapOrigin  = {x: -p.MapWorldUpperLeft.X * mapScale.x, y: -p.MapWorldUpperLeft.Y * mapScale.y};
 
   // Create a coordinate system for the map
   var crs = L.CRS.Simple;
   crs.transformation = new L.Transformation(mapScale.x, mapOrigin.x, mapScale.y, mapOrigin.y);
   crs.scale = function (zoom) { return Math.pow(2, zoom) / mapMinResolution; };
   crs.zoom = function (scale) { return Math.log(scale * mapMinResolution) / Math.LN2; };
-  let gap = w.MapWorldSize/2;
+
+  mapCenter = [p.MapWorldCenter.Y, p.MapWorldCenter.X];
+
+  let gap = p.MapWorldSize/2;
 
   //Create the map
   map = new L.Map('map', {
     crs: crs,
     fadeAnimation: false,
     maxBounds: [
-      [ w.MapWorldUpperLeft.Y - gap, w.MapWorldUpperLeft.X - gap ],
-      [ w.MapWorldLowerRight.Y + gap, w.MapWorldLowerRight.X + gap ]
+      [ p.MapWorldUpperLeft.Y - gap, p.MapWorldUpperLeft.X - gap ],
+      [ p.MapWorldLowerRight.Y + gap, p.MapWorldLowerRight.X + gap ]
     ],
     zoomControl: false,
   });
@@ -174,10 +176,6 @@ function loadMap() {
     delete settings.activeLayers[e.layer.id];
     markItems();
     saveSettings();
-  });
-
-  map.on('zoomend', function(e) {
-    mapZoom = e.target._zoom;
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -867,9 +865,7 @@ window.onload = function(event) {
   let bindings = {
     KeyA:['x',+1],KeyD:['x',-1],
     KeyW:['y',+1],KeyS:['y',-1],
-    KeyQ:['b',+1],KeyE:['b',-1],
     KeyT:['z',+1],KeyG:['z',-1],
-    KeyX:['p',+1],KeyZ:['p',-1],
   };
 
   let pressed = {};
@@ -884,8 +880,6 @@ window.onload = function(event) {
       }
     }
     (v.x || v.y) && map.panBy([(-v.x||0)*step, (-v.y||0)*step], {animation: false});
-    //v.b && map.setBearing(map.getBearing()+v.b*step/10);
-    //v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
     //v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
     window.requestAnimationFrame(update);
   }
@@ -894,7 +888,6 @@ window.onload = function(event) {
     delete pressed[e.code];
   });
 
-  let step = 256;
   window.addEventListener("keydown",function (e) {
     //console.log(e.code);
     if (e.target.id.startsWith('searchtext')) {
@@ -914,14 +907,10 @@ window.onload = function(event) {
         searchControl.expand(true);
         e.preventDefault();
         break;
-      case 'KeyR': map.fitBounds(mapBounds); break;
+      case 'KeyR': map.flyTo(mapCenter); break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
-      /*case 'KeyA': map.panBy([-step,0]); break;
-      case 'KeyD': map.panBy([step,0]); break;
-      case 'KeyW': map.panBy([0,-step]); break;
-      case 'KeyS': map.panBy([0,step]); break; */
       case 'KeyT': map.zoomIn(1); break;
       case 'KeyG': map.zoomOut(1); break;
     }
