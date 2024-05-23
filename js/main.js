@@ -467,7 +467,7 @@ function loadMap() {
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
-            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: true, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
+            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
             .bindPopup()
             .on('moveend', function(e) {
               let marker = e.target;
