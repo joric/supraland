@@ -382,8 +382,8 @@ function loadMap() {
             let layer = layers[c.layer] ? c.layer : defaultLayer;
 
             // can't have duplicate titles in search
-            while (titles[title]) {
-              title += '_';
+            if (titles[title]) {
+              title = o.area + ':' + o.name;
             }
 
             titles[title] = title;
