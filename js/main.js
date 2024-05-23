@@ -925,7 +925,7 @@ window.onload = function(event) {
         searchControl.expand(true);
         e.preventDefault();
         break;
-      case 'KeyR': map.flyTo(mapCenter); break;
+      case 'KeyR': if (!e.ctrlKey) map.flyTo(mapCenter); break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
