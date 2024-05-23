@@ -377,7 +377,7 @@ function loadMap() {
 
             // can't have duplicate titles in search
             while (titles[title]) {
-              title += '(2)';
+              title += ' (2)';
             }
 
             titles[title] = title;
