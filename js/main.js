@@ -464,20 +464,16 @@ function loadMap() {
               let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               // need to add title as a single space (leaflet search issue)
-              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads']);
-              if (line._path) {
-                line._path.setAttribute('alt', alt);
-              }
+              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:alt, color: color}).addTo(layers['jumppads']);
+              setTimeout(function(line, alt){if (line._path) {line._path.setAttribute('alt', alt)}}, 500, line, alt);
             }
           }
 
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys']);
-              if (line._path) {
-                line._path.setAttribute('alt', alt);
-              }
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
+              setTimeout(function(line, alt){if (line._path) {line._path.setAttribute('alt', alt)}}, 500, line, alt);
             }
           }
          
