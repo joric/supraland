@@ -386,7 +386,7 @@ function loadMap() {
 
             // can't have duplicate titles in search
             if (titles[title]) {
-              title += ' ('+o.area+')';
+              title = o.area+':'+o.name;
             }
 
             titles[title] = title;
