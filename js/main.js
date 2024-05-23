@@ -10,6 +10,7 @@ let playerMarker;
 let reloading;
 let settings;
 let experimentalSearch = true;
+let mapZoom = 4;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -36,11 +37,6 @@ var maps = {
       "MapWorldUpperLeft": { "X": -73728.0, "Y": -92728.0, "Z": 10000.0 },
       "MapWorldLowerRight": { "X": 73728.0, "Y": 54728.0, "Z": 10000.0 },
    },
-};
-
-window.onload = function(event) {
-  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || localStorage.getItem('mapId') || 'sl';
-  loadMap();
 };
 
 function saveSettings() {
@@ -154,23 +150,24 @@ function loadMap() {
 
   map.on('overlayadd', function(e) {
     settings.activeLayers[e.layer.id] = true;
-
     // set alt for polylines (attributes are not populated to paths)
     for (const m of Object.values(layers[e.layer.id]._layers)) {
       if (p = m._path) {
         p.setAttribute('alt', m.options.alt);
       }
     }
-
     markItems();
     saveSettings();
   });
 
   map.on('overlayremove', function(e) {
     delete settings.activeLayers[e.layer.id];
-
     markItems();
     saveSettings();
+  });
+
+  map.on('zoomend', function(e) {
+    mapZoom = e.target._zoom;
   });
 
   tilesDir = 'tiles/'+mapId;
@@ -664,43 +661,15 @@ function loadMap() {
   }
 
   loadLayers();
-
-  function reloadMap(id) {
-    if (!reloading) {
-      reloading = true;
-      map.fireEvent('baselayerchange',{layer:{mapId:id}});
-      setTimeout(function(){ reloading = false; }, 250);
-    }
-  }
-
-  window.addEventListener("keydown",function (e) {
-    //console.log(e.code);
-
-    if (e.target.id.startsWith('searchtext')) {
-      return;
-    }
-
-    switch (e.code) {
-      case 'KeyF':
-        if (e.ctrlKey) {
-          searchControl.expand(true);
-          e.preventDefault();
-        } else {
-          map.toggleFullscreen();
-        }
-        break;
-      case 'Slash':
-        searchControl.expand(true);
-        e.preventDefault();
-        break;
-      case 'Digit1': reloadMap('sl'); break;
-      case 'Digit2': reloadMap('slc'); break;
-      case 'Digit3': reloadMap('siu'); break;
-    }
-
-  });
-
 } // end of loadmap
+
+function reloadMap(id) {
+  if (!reloading) {
+    reloading = true;
+    map.fireEvent('baselayerchange',{layer:{mapId:id}});
+    setTimeout(function(){ reloading = false; }, 250);
+  }
+}
 
 function getIconSize(zoom) {
   let s = [32];
@@ -882,4 +851,40 @@ window.putSavefileLocationOnClipboard = function() {
     document.execCommand('copy');
     inputc.parentNode.removeChild(inputc);
   }
+}
+
+window.onload = function(event) {
+  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || localStorage.getItem('mapId') || 'sl';
+  loadMap();
+
+  let step = 256;
+  window.addEventListener("keydown",function (e) {
+    //console.log(e.code);
+    if (e.target.id.startsWith('searchtext')) {
+      return;
+    }
+    switch (e.code) {
+      case 'KeyF':
+        if (e.ctrlKey) {
+          searchControl.expand(true);
+          e.preventDefault();
+        } else {
+          map.toggleFullscreen();
+        }
+        break;
+      case 'Slash':
+        searchControl.expand(true);
+        e.preventDefault();
+        break;
+      case 'Digit1': reloadMap('sl'); break;
+      case 'Digit2': reloadMap('slc'); break;
+      case 'Digit3': reloadMap('siu'); break;
+      case 'KeyA': map.panBy([-step,0]); break;
+      case 'KeyD': map.panBy([step,0]); break;
+      case 'KeyW': map.panBy([0,-step]); break;
+      case 'KeyS': map.panBy([0,step]); break;
+      case 'KeyT': map.zoomIn(1); break;
+      case 'KeyG': map.zoomOut(1); break;
+    }
+  });
 }
