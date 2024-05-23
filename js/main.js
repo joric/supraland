@@ -50,9 +50,10 @@ function clearFilter() {
   markItems();
 }
 
-function getViewLink() {
+function getViewLink(latlng) {
   let base = window.location.href.replace(/#.*$/,'');
-  let vars = {mapId:mapId, lat:Math.round(map.getCenter().lat), lng:Math.round(map.getCenter().lng), zoom:map.getZoom()};
+  let p = latlng || map.getCenter();
+  let vars = {mapId:mapId, lat:Math.round(p.lat), lng:Math.round(p.lng), zoom:map.getZoom()};
   let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
   return '<a href="'+url+'" onclick="return false">Map URL</a>';
 }
@@ -351,7 +352,7 @@ function loadMap() {
 
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
     text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
-    text += ' &nbsp;&nbsp; ' + getViewLink();
+    text += ' &nbsp;&nbsp; ' + getViewLink(e.popup._source._latlng);
     e.popup.setContent(text);
 
     for (const lookup of ['chests.csv', 'collectables.csv', 'shops.csv']) {
