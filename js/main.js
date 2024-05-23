@@ -856,6 +856,8 @@ window.putSavefileLocationOnClipboard = function() {
 }
 
 window.onload = function(event) {
+  // clear location hash, just in case
+  history.pushState('', document.title, window.location.pathname + window.location.search);
 
   mapId = localData.mapId || 'sl';
 
