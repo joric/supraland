@@ -447,21 +447,22 @@ function loadMap() {
 
         // 2-nd pass (pads and pipes)
         for (name of Object.keys(objects)) {
-          o = objects[name];
+          let o = objects[name];
+          let alt = o.area + ':' + o.name
 
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
               let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               // need to add title as a single space (leaflet search issue)
-              L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads']);
+              L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', color: color}).addTo(layers['jumppads'])._path.setAttribute('alt', alt);
             }
           }
 
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys']);
+              L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', color: 'yellowgreen'}).addTo(layers['pipesys'])._path.setAttribute('alt', alt);
             }
           }
 
@@ -561,18 +562,25 @@ function loadMap() {
           }
 
           searchControl.on('search:expanded', function (e) {
-            document.querySelector('input.search-input').value = settings.searchText;
-            searchControl.searchText(settings.searchText);
-            addSearchCallbacks();
+            let input = document.querySelector('input.search-input');
+            input.value = settings.searchText;
+            if (settings.searchText) {
+              input.focus();
+              input.select();
+              searchControl.searchText(settings.searchText);
+              addSearchCallbacks();
+            }
           });
 
           document.querySelector('.search-cancel').addEventListener('click',function (e) {
             clearFilter();
           });
 
-          document.querySelector('input.search-input').addEventListener('keydown', function(e) {
+          document.querySelector('input.search-input').addEventListener('input', function(e) {
             settings.searchText = document.querySelector('input.search-input').value;
-            //console.log(e, settings.searchText);
+            if (!settings.searchText) {
+              //markItems(); // show everything without pressing enter
+            }
             addSearchCallbacks();
           });
 
@@ -709,7 +717,7 @@ window.markItemFound = function (id, found=true, save=true) {
 
 function markItems() {
   for (const[id,value] of Object.entries(settings.markedItems)) {
-    var divs = document.querySelectorAll('img[alt="' + id + '"]');
+    var divs = document.querySelectorAll('*[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.add('found');
     });
@@ -728,9 +736,9 @@ function markItems() {
     lookup[o.layer.options.alt] = true;
   }
 
-  var divs = document.querySelectorAll('img.leaflet-marker-icon ');
+  var divs = document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive');
   [].forEach.call(divs, function(div) {
-    div.style.visibility =  unfiltered || lookup[div.alt] ? 'visible' : 'hidden';
+    div.style.visibility =  unfiltered || lookup[div.getAttribute('alt')] ? 'visible' : 'hidden';
   });
 }
 
