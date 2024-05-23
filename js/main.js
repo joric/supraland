@@ -229,6 +229,8 @@ function loadMap() {
     map.fitBounds(mapBounds);
   }
 
+  param = {};
+
   function newAction(conf) {
     var ImmediateSubAction = L.Toolbar2.Action.extend({
       initialize: function(map, myAction) {
