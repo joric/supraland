@@ -50,12 +50,11 @@ function clearFilter() {
   markItems();
 }
 
-function getViewLink(latlng) {
+function getViewURL() {
   let base = window.location.href.replace(/#.*$/,'');
-  let p = latlng || map.getCenter();
+  let p = map.getCenter();
   let vars = {mapId:mapId, lat:Math.round(p.lat), lng:Math.round(p.lng), zoom:map.getZoom()};
-  let url = base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
-  return '<a href="'+url+'" onclick="return false">Map URL</a>';
+  return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
 function loadMap() {
@@ -156,15 +155,6 @@ function loadMap() {
     settings.zoom = map.getZoom();
     saveSettings();
   });
-
-  /*
-  map.on('click', function(e) {
-    var popup = L.popup()
-    .setLatLng(e.latlng)
-    .setContent(getViewLink())
-    .openOn(map);
-  });
-  */
 
   map.on('baselayerchange', function(e) {
     id = e.layer.mapId;
@@ -285,16 +275,30 @@ function loadMap() {
   }
 
   actions = []
-  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Instructions':'copy-path', 'Load Game':'upload-save', 'Unmark All': 'unmark-items' }}));
+
+  function closeToolbar() {
+    [].forEach.call(document.querySelectorAll('.leaflet-toolbar-1'), function(div) {
+      div.style.display = 'none';
+    });
+  }
+
+  actions.push(newAction({icon:'&#x1F517;', tooltip:'Share', actions:{'Copy Location URL':'copy-link' }}));
+  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Copy Path':'copy-path', 'Load Game':'upload-save', 'Unmark All': 'unmark-items' }}));
   let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
+  document.querySelector('.copy-link').onclick = function(e) {
+    copyToClipboard(getViewURL());
+    closeToolbar();
+  }
+
   document.querySelector('.copy-path').onclick = function(e) {
-    window.putSavefileLocationOnClipboard();
+    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
+    closeToolbar();
   }
 
   document.querySelector('#file').onchange = function(e) {
     window.loadSaveFile();
-    document.querySelector('.leaflet-toolbar-1').style.display = 'none';
+    closeToolbar();
   }
 
   document.querySelector('.upload-save').onclick = function(e) {
@@ -304,6 +308,7 @@ function loadMap() {
   }
 
   document.querySelector('.unmark-items').onclick = function(e) {
+    closeToolbar();
     if (confirm('Are you sure to unmark all items?')) {
       unmarkItems();
       saveSettings();
@@ -354,7 +359,6 @@ function loadMap() {
 
     // it's not "found" but rather "removed" (e.g. BuySword2_2 in the beginning of Crash DLC)
     text += '<br><br><input type="checkbox" id="'+markerId+'" '+value+' onclick=markItemFound("'+markerId+'",this.checked)><label for="'+markerId+'">Found</label>';
-    text += ' &nbsp;&nbsp; ' + getViewLink(e.popup._source._latlng);
     e.popup.setContent(text);
 
     for (const lookup of ['chests.csv', 'collectables.csv', 'shops.csv']) {
@@ -871,15 +875,6 @@ function copyToClipboard(text) {
   input.select();
   document.execCommand('copy');
   input.parentNode.removeChild(input);
-}
-
-window.putSavefileLocationOnClipboard = function() {
-  let location = '%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames';
-  let text = 'This map allows you to import the game save file (latest .sav) to mark the collected items automatically. '+
-    'On Windows, the default save path for this game is "'+location+'". Click OK to copy the path to your clipboard.';
-  if (confirm(text)) {
-    copyToClipboard(location);
-  }
 }
 
 window.onload = function(event) {
