@@ -848,8 +848,8 @@ window.loadSaveFile = function () {
       }
     }
 
-    setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(settings.markedItems).length + ' items')},250);
-    //console.log('Marked ' + Object.keys(settings.markedItems).length + ' items');
+    //setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(settings.markedItems).length + ' items')},250);
+    console.log('Marked ' + Object.keys(settings.markedItems).length + ' items');
 
     saveSettings();
 
