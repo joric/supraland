@@ -287,21 +287,22 @@ function loadMap() {
   let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
 
   document.querySelector('.copy-link').onclick = function(e) {
-    copyToClipboard(getViewURL());
     closeToolbar();
+    copyToClipboard(getViewURL());
   }
 
   document.querySelector('.copy-path').onclick = function(e) {
-    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
     closeToolbar();
+    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
   }
 
   document.querySelector('#file').onchange = function(e) {
-    window.loadSaveFile();
     closeToolbar();
+    window.loadSaveFile();
   }
 
   document.querySelector('.upload-save').onclick = function(e) {
+    closeToolbar();
     document.querySelector('#file').value = null;
     document.querySelector('#file').accept = '.sav';
     document.querySelector('#file').click();
