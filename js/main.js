@@ -1,6 +1,6 @@
 let map = null;
 let mapId = '';
-let localDataName = 'jorics_supraland';
+let localDataName = 'joricsSupraland1';
 let localData = JSON.parse(localStorage.getItem(localDataName)) || {};
 let layers = {};
 let classes = {};
@@ -50,8 +50,6 @@ function clearFilter() {
 }
 
 function loadMap() {
-  localStorage.setItem('mapId', mapId);
-
   for (id in maps) {
     var title = maps[id].title;
     if (!localData[id]) {
@@ -72,7 +70,12 @@ function loadMap() {
     }
   }
 
+  localData.mapId = mapId;
+  saveSettings();
+
   settings = localData[mapId];
+
+  //console.log(localData);
 
   var mapSize = {width: 8192, height: 8192}
   var tileSize   = {x: 512, y: 512};
@@ -103,7 +106,7 @@ function loadMap() {
   crs.transformation = new L.Transformation(mapScale.x, mapOrigin.x, mapScale.y, mapOrigin.y);
   crs.scale = function (zoom) { return Math.pow(2, zoom) / mapMinResolution; };
   crs.zoom = function (scale) { return Math.log(scale * mapMinResolution) / Math.LN2; };
-  let gap = w.MapWorldSize/4;
+  let gap = w.MapWorldSize/2;
 
   //Create the map
   map = new L.Map('map', {
@@ -136,9 +139,15 @@ function loadMap() {
     position: 'topright',
   });
 
+  map.on('moveend', function(e) {
+    settings.center = map.getCenter();
+    settings.zoom = map.getZoom();
+    saveSettings();
+  });
+
   map.on('baselayerchange', function(e) {
     id = e.layer.mapId;
-    localStorage.setItem(mapId, location.hash);
+    //localStorage.setItem(mapId, location.hash);
     location.hash = '';
     map.off();
     map.remove();
@@ -195,18 +204,11 @@ function loadMap() {
 
   L.control.mousePosition().addTo(map);
 
-  map.fitBounds(mapBounds);
-
-  if (location.hash == '') {
-      location.hash = localStorage.getItem(mapId);
+  if (settings.center && settings.zoom) {
+    map.setView(settings.center, settings.zoom);
+  } else {
+    map.fitBounds(mapBounds);
   }
-
-  var hash = new L.Hash(map);
-
-  map.mapId = mapId; // for hash plugin to add mapId
-
-
-  window.mapref = map;
 
   function newAction(conf) {
     var ImmediateSubAction = L.Toolbar2.Action.extend({
@@ -854,8 +856,40 @@ window.putSavefileLocationOnClipboard = function() {
 }
 
 window.onload = function(event) {
-  mapId = Object.keys(maps).find(id=>location.hash.endsWith(id)) || localStorage.getItem('mapId') || 'sl';
+
+  mapId = localData.mapId || 'sl';
+
   loadMap();
+
+  let bindings = {
+    KeyA:['x',+1],KeyD:['x',-1],
+    KeyW:['y',+1],KeyS:['y',-1],
+    KeyQ:['b',+1],KeyE:['b',-1],
+    KeyT:['z',+1],KeyG:['z',-1],
+    KeyX:['p',+1],KeyZ:['p',-1],
+  };
+
+  let pressed = {};
+
+  function update(timestep) {
+    let step = 25;
+    let v = {};
+    for (key of Object.keys(bindings)) {
+      if (pressed[key]) {
+        let [dir, step] = bindings[key];
+        v[dir] = (v[dir]||0) + step;
+      }
+    }
+    (v.x || v.y) && map.panBy([(-v.x||0)*step, (-v.y||0)*step], {animation: false});
+    //v.b && map.setBearing(map.getBearing()+v.b*step/10);
+    //v.p && map.setPitch(map.getPitch()+v.p*step/10, {duration: 1});
+    //v.z && map.setZoom(map.getZoom()+v.z/16, {duration: 1});
+    window.requestAnimationFrame(update);
+  }
+
+  window.addEventListener('keyup', (e) => {
+    delete pressed[e.code];
+  });
 
   let step = 256;
   window.addEventListener("keydown",function (e) {
@@ -863,6 +897,7 @@ window.onload = function(event) {
     if (e.target.id.startsWith('searchtext')) {
       return;
     }
+    pressed[e.code] = true;
     switch (e.code) {
       case 'KeyF':
         if (e.ctrlKey) {
@@ -879,12 +914,14 @@ window.onload = function(event) {
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
-      case 'KeyA': map.panBy([-step,0]); break;
+      /*case 'KeyA': map.panBy([-step,0]); break;
       case 'KeyD': map.panBy([step,0]); break;
       case 'KeyW': map.panBy([0,-step]); break;
-      case 'KeyS': map.panBy([0,step]); break;
+      case 'KeyS': map.panBy([0,step]); break; */
       case 'KeyT': map.zoomIn(1); break;
       case 'KeyG': map.zoomOut(1); break;
     }
   });
+
+  window.requestAnimationFrame(update);
 }
