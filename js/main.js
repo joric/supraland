@@ -1054,7 +1054,7 @@ window.onload = function(event) {
         searchControl.expand(true);
         e.preventDefault();
         break;
-      case 'KeyR':if (!e.ctrlKey) map.flyTo(playerMarker ? playerMarker._latlng : mapCenter); break;
+      case 'Key‘':if (!e.ctrlKey) map.flyTo(playerMarker ? playerMarker._latlng : mapCenter); break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
