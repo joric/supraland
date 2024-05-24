@@ -12,6 +12,7 @@ let settings;
 let experimentalSearch = true;
 let mapCenter;
 let param = {};
+let restrictCollapse = false;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -545,9 +546,8 @@ function loadMap() {
               collapsed: true, // can't set to expanded here, need events
           }).addTo(map);
 
-          // maybe allow collapse? pretty annoying without that
+          if (restrictCollapse) {
 
-          /*
           searchControl.collapse = function() {
             // never collapse with text
             //console.log('firing collapse');
@@ -588,7 +588,8 @@ function loadMap() {
 
           // doesn't add collapse on start
           map.off('dragstart click', searchControl.collapse, searchControl);
-          */
+
+          }//restrict collapse
 
           // select on focus
           searchControl._input.addEventListener('focus', function() {
@@ -597,10 +598,19 @@ function loadMap() {
 
           if (settings.searchText != '') {
             searchControl._input.value = settings.searchText;
-            searchControl.expand();
+
+            if (restrictCollapse) {
+              searchControl.expand();
+            }
+
             searchControl._cancel.style.display = 'block';
             searchControl._input.focus();
-            searchControl.searchText(settings.searchText);
+
+            if (restrictCollapse) {
+              searchControl.searchText(settings.searchText);
+            } else {
+              markItems();
+            }
           }
 
           searchControl._handleSubmit = function(){
