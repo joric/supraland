@@ -285,7 +285,7 @@ function loadMap() {
                   }
                 }),
                 subAction.extend({
-                  options:{toolbarIcon:{html:'UnmarkAll', tooltip: 'Unmark all items'}},
+                  options:{toolbarIcon:{html:'Unmark All', tooltip: 'Unmark all items'}},
                   addHooks: function () { 
                     if (confirm('Are you sure to unmark all items?')) {
                       unmarkItems();
