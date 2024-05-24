@@ -249,7 +249,7 @@ function loadMap() {
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
-                  options:{toolbarIcon:{html:'Copy View URL', tooltip: 'Copies View URL to Clipboard'}},
+                  options:{toolbarIcon:{html:'Copy Map View URL', tooltip: 'Copies View URL to Clipboard'}},
                   addHooks:function() {
                     copyToClipboard(getViewURL());
                     subAction.prototype.addHooks.call(this); // closes sub-action
