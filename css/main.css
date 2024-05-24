@@ -17,3 +17,9 @@ html, body, #map { width:100%; height:100%; margin:0; padding:0; z-index: 1; bac
   margin: 1px;
   border-radius: 1px;
 }
+
+.leaflet-control-toolbar .leaflet-toolbar-1>li>.leaflet-toolbar-icon {
+  //background-color:#f4f4f4;
+  //color: #333;
+}
+

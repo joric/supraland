@@ -213,118 +213,95 @@ function loadMap() {
 
   if (param.lat && param.lng && param.zoom) {
     map.setView([param.lat, param.lng], param.zoom);
+    param = {};
   } else if (settings.center && settings.zoom) {
     map.setView(settings.center, settings.zoom);
   } else {
     map.fitBounds(mapBounds);
   }
 
-  param = {};
-
-  function newAction(conf) {
-    var ImmediateSubAction = L.Toolbar2.Action.extend({
-      initialize: function(map, myAction) {
-          this.map = map;
-          this.myAction = myAction;
-          L.Toolbar2.Action.prototype.initialize.call(this);
-      },
-      addHooks: function() { this.myAction.disable(); }
-    });
-
-    subActions = []
-
-    for (const [title, className] of Object.entries(conf.actions)) {
-          a = ImmediateSubAction.extend({
-              options: {
-                  toolbarIcon: {
-                      html: title, //'<img src="img/'+title+'.png"/>',
-                      tooltip: title,
-                      className: className,
-                  },
-              },
-              addHooks: function() {
-                //typeof func === 'function' ? func() : function(){}
-                //this.myAction.disable();
-              }
-          });
-        subActions.push(a);
-    }
-
-    return L.Toolbar2.Action.extend({
-        options: {
-            toolbarIcon: {
-                html: conf.icon,
-                tooltip: conf.tooltip,
-            },
-            subToolbar: new L.Toolbar2({ 
-                actions: subActions
-            })
-        }
-    });
+  function copyToClipboard(text) {
+    let input = document.body.appendChild(document.createElement("input"));
+    input.value = text;
+    input.focus();
+    input.select();
+    document.execCommand('copy');
+    input.parentNode.removeChild(input);
+    console.log(text + ' copied to clipboard');
   }
 
-  actions = []
-
-  function closeToolbar() {
-    [].forEach.call(document.querySelectorAll('.leaflet-toolbar-1'), function(div) {
-      div.style.display = 'none';
-    });
-  }
-
-  map.on('click', function(e) {
-    closeToolbar();
+  let subAction = L.Toolbar2.Action.extend({
+    initialize:function(map,myAction){this.map=map;this.myAction=myAction;L.Toolbar2.Action.prototype.initialize.call(this);},
+    addHooks:function(){ this.myAction.disable(); }
   });
 
-
-  actions.push(newAction({icon:'&#x1F517;', tooltip:'Share', actions:{'Copy View URL':'copy-link' }}));
-  actions.push(newAction({icon:'&#x1F4C1;', tooltip:'Upload Save File', actions:{'Load Game':'upload-save', 'Copy Path':'copy-path', 'Unmark All': 'unmark-items' }}));
-  let toolbar = new L.Toolbar2.Control({actions: actions, position: 'bottomleft'}).addTo(map);
-
-  document.querySelector('.copy-link').onclick = function(e) {
-    closeToolbar();
-    copyToClipboard(getViewURL());
-  }
-
-  document.querySelector('.copy-path').onclick = function(e) {
-    closeToolbar();
-    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
-  }
+  new L.Toolbar2.Control({
+      position: 'bottomleft',
+      actions: [
+        // share button
+        L.Toolbar2.Action.extend({
+          options: {
+            toolbarIcon: { html: '&#x1F517;', tooltip: 'Share' },
+            subToolbar: new L.Toolbar2({ 
+              actions: [
+                subAction.extend({
+                  options:{toolbarIcon:{html:'Copy View URL', tooltip: 'Copies View URL to Clipboard'}},
+                  addHooks:function() {
+                    copyToClipboard(getViewURL());
+                    subAction.prototype.addHooks.call(this); // closes sub-action
+                  }
+                }),
+                subAction.extend({
+                  options:{toolbarIcon:{html:'&times;', tooltip: 'Close'}}
+                }),
+              ],
+            })
+          }
+        }),
+        // load game button
+        L.Toolbar2.Action.extend({
+          options: {
+            toolbarIcon: { html: '&#x1F4C1;', tooltip: 'Upload' },
+            subToolbar: new L.Toolbar2({ 
+              actions: [
+                subAction.extend({
+                  options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items'}},
+                  addHooks: function () {
+                    document.querySelector('#file').value = null;
+                    document.querySelector('#file').accept = '.sav';
+                    document.querySelector('#file').click();
+                    subAction.prototype.addHooks.call(this);
+                  }
+                }),
+                subAction.extend({
+                  options:{toolbarIcon:{html:'Copy Path', tooltip: 'Copy save file directory path to clipboard'}},
+                  addHooks:function() {
+                    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
+                    subAction.prototype.addHooks.call(this);
+                  }
+                }),
+                subAction.extend({
+                  options:{toolbarIcon:{html:'UnmarkAll', tooltip: 'Unmark all items'}},
+                  addHooks: function () { 
+                    if (confirm('Are you sure to unmark all items?')) {
+                      unmarkItems();
+                      saveSettings();
+                    }
+                    subAction.prototype.addHooks.call(this);
+                  }
+                }),
+                subAction.extend({
+                  options:{toolbarIcon:{html:'&times;', tooltip: 'Close'}}
+                }),
+              ],
+            })
+          }
+        }),
+      ],
+  }).addTo(map);
 
   document.querySelector('#file').onchange = function(e) {
-    closeToolbar();
-    window.loadSaveFile();
-  }
-
-  document.querySelector('.upload-save').onclick = function(e) {
-    closeToolbar();
-    document.querySelector('#file').value = null;
-    document.querySelector('#file').accept = '.sav';
-    document.querySelector('#file').click();
-  }
-
-  document.querySelector('.unmark-items').onclick = function(e) {
-    closeToolbar();
-    if (confirm('Are you sure to unmark all items?')) {
-      unmarkItems();
-      saveSettings();
-    }
-  }
-
-  function loadMarkersLegacy() {
-    chestIconBig = L.icon({iconUrl: 'img/chest.png', iconSize: [64,64], iconAnchor: [32,32]});
-    filename = 'data/legacy/' + mapId + '/chests.csv';
-    var loadedCsv = Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
-      var chests = 0;
-      for (o of results.data) {
-        if (!o.x) {
-          continue;
-        }
-        chests += 1;
-        var layer = 'closedChest';
-        m = L.marker([o.y, o.x], {icon: chestIconBig, title: o.type, zIndexOffset: -100 }).addTo(layers[layer])
-        .bindPopup(JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
-      }
-    }});
+    loadSaveFile();
   }
 
   function onContextMenu(e) {
@@ -861,15 +838,6 @@ window.loadSaveFile = function () {
   if (file instanceof Blob) {
     reader.readAsArrayBuffer(file);
   }
-}
-
-function copyToClipboard(text) {
-  let input = document.body.appendChild(document.createElement("input"));
-  input.value = text;
-  input.focus();
-  input.select();
-  document.execCommand('copy');
-  input.parentNode.removeChild(input);
 }
 
 window.onload = function(event) {
