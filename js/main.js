@@ -398,12 +398,12 @@ function loadMap() {
               icon = 'chest';
               layer = 'closedChest';
               if (o.spawns) {
-                title = title + ' ['+o.spawns+']';
+                title = title + ' ('+o.spawns+')';
               } else if (o.coins) {
-                title = title + ' ['+o.coins+' coin'+(o.coins>1?'s':'')+']';
+                title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
             } else {
-              title = title + ' ('+o.type+')';
+              title = title + ' of '+o.type;
             }
 
             // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
