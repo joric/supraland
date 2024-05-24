@@ -24,12 +24,12 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 <div id="map" class="container"></div>
 <script>
 
-let heightFactor = 0.25;
+let heightFactor = 0.5;
 let startPitch = 0;
 let defaultZoom = 4;
 let defaultPitch = 45;
 let defaultBearing = 0;
-let enableAltitude = true;
+let enableAltitude = false;
 let drawAltitude = true;
 let drawShadow = false;
 let markerSymbol = markerSymbol3;
@@ -107,11 +107,13 @@ let maps = {
 };
 
 function markerSymbol1(icon, shadow=false) {
+  let size = 48;
+
   if (shadow) {
     return [
       {
-        markerWidth: 32,
-        markerHeight: 32,
+        markerWidth: size,
+        markerHeight: size,
         markerFill: '#000',
         markerType: 'ellipse',
       }
@@ -120,9 +122,9 @@ function markerSymbol1(icon, shadow=false) {
   return [
     {
       markerFile: 'img/'+icon+'.png',
-      markerWidth  : 32,
-      markerHeight : 32,
-      markerDy: 16,
+      markerWidth  : size,
+      markerHeight : size,
+      markerDy: size/2,
     },
   ];
 }
