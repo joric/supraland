@@ -190,7 +190,7 @@ function loadMap() {
   tilesDir = 'tiles/'+mapId;
 
   // L.tileLayer.canvas() is much faster than L.tileLayer() but requires a L.TileLayer.Canvas plugin
-  let baseLayer = L.tileLayer(tilesDir+'/base/{z}/{x}/{y}.jpg', layerOptions).addTo(map);
+  let baseLayer = L.tileLayer.canvas(tilesDir+'/base/{z}/{x}/{y}.jpg', layerOptions).addTo(map);
 
   for (id in maps) {
     var title = maps[id].title;
