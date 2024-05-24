@@ -620,11 +620,16 @@ function loadMap() {
             this._input.select();
             map.closePopup();
 
+
             if ((velocity === 1) && (this._tooltip.currentSelection >= (searchTips.length - 1))) { // If at end of list.
-              L.DomUtil.addClass(searchTips[this._tooltip.currentSelection], 'search-tip-select')
+              //L.DomUtil.addClass(searchTips[this._tooltip.currentSelection], 'search-tip-select')
+              this._tooltip.currentSelection = -1; // joric - circular navigation
+
             } else if ((velocity === -1) && (this._tooltip.currentSelection <= 0)) { // Going back up to the search box.
-              this._tooltip.currentSelection = -1
-            } else if (this._tooltip.style.display !== 'none') {
+              this._tooltip.currentSelection = searchTips.length; // joric - circular navigation
+            }
+
+            if (this._tooltip.style.display !== 'none') {
               this._tooltip.currentSelection += velocity
 
               L.DomUtil.addClass(searchTips[this._tooltip.currentSelection], 'search-tip-select')
