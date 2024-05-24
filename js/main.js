@@ -12,7 +12,7 @@ let settings;
 let experimentalSearch = true;
 let mapCenter;
 let param = {};
-let restrictSearchCollapse = true;
+let restrictSearchCollapse = false;
 
 var maps = {
   // data taken from the MapWorld* nodes
