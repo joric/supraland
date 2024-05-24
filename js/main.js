@@ -545,6 +545,9 @@ function loadMap() {
               collapsed: true, // can't set to expanded here, need events
           }).addTo(map);
 
+          // maybe allow collapse? pretty annoying without that
+
+          /*
           searchControl.collapse = function() {
             // never collapse with text
             //console.log('firing collapse');
@@ -585,6 +588,7 @@ function loadMap() {
 
           // doesn't add collapse on start
           map.off('dragstart click', searchControl.collapse, searchControl);
+          */
 
           // select on focus
           searchControl._input.addEventListener('focus', function() {
