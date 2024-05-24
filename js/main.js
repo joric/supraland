@@ -12,7 +12,7 @@ let settings;
 let experimentalSearch = true;
 let mapCenter;
 let param = {};
-let restrictCollapse = false;
+let restrictSearchCollapse = true;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -547,7 +547,7 @@ function loadMap() {
               collapsed: true, // can't set to expanded here, need events
           }).addTo(map);
 
-          if (restrictCollapse) {
+          if (restrictSearchCollapse) {
 
           searchControl.collapse = function() {
             // never collapse with text
@@ -598,7 +598,7 @@ function loadMap() {
           });
 
           if (settings.searchText != '') {
-            if (restrictCollapse) {
+            if (restrictSearchCollapse) {
               searchControl._input.value = settings.searchText;
               searchControl.expand();
               searchControl._cancel.style.display = 'block';
