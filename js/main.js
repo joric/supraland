@@ -598,16 +598,11 @@ function loadMap() {
           });
 
           if (settings.searchText != '') {
-            searchControl._input.value = settings.searchText;
-
             if (restrictCollapse) {
+              searchControl._input.value = settings.searchText;
               searchControl.expand();
-            }
-
-            searchControl._cancel.style.display = 'block';
-            searchControl._input.focus();
-
-            if (restrictCollapse) {
+              searchControl._cancel.style.display = 'block';
+              searchControl._input.focus();
               searchControl.searchText(settings.searchText);
             } else {
               markItems();
