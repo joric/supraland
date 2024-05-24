@@ -230,6 +230,10 @@ function loadMap() {
     console.log(text + ' copied to clipboard');
   }
 
+  document.querySelector('#file').onchange = function(e) {
+    loadSaveFile();
+  }
+
   let subAction = L.Toolbar2.Action.extend({
     initialize:function(map,myAction){this.map=map;this.myAction=myAction;L.Toolbar2.Action.prototype.initialize.call(this);},
     addHooks:function(){ this.myAction.disable(); }
@@ -241,7 +245,7 @@ function loadMap() {
         // share button
         L.Toolbar2.Action.extend({
           options: {
-            toolbarIcon: { html: '&#x1F517;', tooltip: 'Share' },
+            toolbarIcon:{html: '&#x1F517;', tooltip: 'Share'},
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
@@ -261,7 +265,7 @@ function loadMap() {
         // load game button
         L.Toolbar2.Action.extend({
           options: {
-            toolbarIcon: { html: '&#x1F4C1;', tooltip: 'Upload' },
+            toolbarIcon:{html: '&#x1F4C1;', tooltip: 'Upload'},
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
@@ -299,10 +303,6 @@ function loadMap() {
         }),
       ],
   }).addTo(map);
-
-  document.querySelector('#file').onchange = function(e) {
-    loadSaveFile();
-  }
 
   function onContextMenu(e) {
     let markerId = e.target.options.alt;
