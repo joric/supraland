@@ -172,6 +172,7 @@ function loadMap() {
   map.on('overlayadd', function(e) {
     settings.activeLayers[e.layer.id] = true;
     // set alt for polylines (attributes are not populated to paths)
+    if (layers[e.layer.id])
     for (const m of Object.values(layers[e.layer.id]._layers)) {
       if (p = m._path) {
         p.setAttribute('alt', m.options.alt);
