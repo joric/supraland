@@ -647,7 +647,7 @@ function getIcon(icon) {
 }
 
 window.markItemFound = function (id, found=true, save=true) {
-  var divs = document.querySelectorAll('img[alt="' + id + '"]');
+  var divs = document.querySelectorAll('*[alt="' + id + '"]');
 
   [].forEach.call(divs, function(div) {
     if (found) {
@@ -700,7 +700,7 @@ function markItems() {
 
 function unmarkItems() {
   for (const[id,value] of Object.entries(settings.markedItems)) {
-    var divs = document.querySelectorAll('img[alt="' + id + '"]');
+    var divs = document.querySelectorAll('*[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.remove('found');
     });
@@ -755,6 +755,12 @@ window.loadSaveFile = function () {
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
+
+            // do not mark jumppads and pipes for now
+            if (name.contains('Jumppad') || name.contains('Pipesystem')) {
+              continue;
+            }
+
             markItemFound(area + ':' + name, true, false);
           }
         }
