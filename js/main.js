@@ -9,10 +9,8 @@ let playerStart;
 let playerMarker;
 let reloading;
 let settings;
-let experimentalSearch = true;
 let mapCenter;
-let param = {};
-let restrictSearchCollapse = false;
+let mapParam = {};
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -213,9 +211,9 @@ function loadMap() {
 
   L.control.mousePosition().addTo(map);
 
-  if (param.lat && param.lng && param.zoom) {
-    map.setView([param.lat, param.lng], param.zoom);
-    param = {};
+  if (mapParam.lat && mapParam.lng && mapParam.zoom) {
+    map.setView([mapParam.lat, mapParam.lng], mapParam.zoom);
+    mapParam = {};
   } else if (settings.center && settings.zoom) {
     map.setView(settings.center, settings.zoom);
   } else {
@@ -534,274 +532,74 @@ function loadMap() {
           searchLayers.push(layerObj);
         }
 
-        if (experimentalSearch) {
+        // search
+        searchControl = new L.Control.Search({
+            layer: L.featureGroup(searchLayers),
+            marker: false, // no red circle
+            initial: false, // search any substring
+            firstTipSubmit: false, // use first autosuggest
+            autoCollapse: false,
+            tipAutoSubmit: false, //auto map panTo when click on tooltip
+            tooltipLimit: -1,
+        }).addTo(map);
 
-          searchControl = new L.Control.Search({
-              layer: L.featureGroup(searchLayers),
-              marker: false, // no red circle
-              initial: false, // search any substring
-              firstTipSubmit: false, // use first autosuggest
-              autoCollapse: false,
-              tipAutoSubmit: true, //auto map panTo when click on tooltip
-              tooltipLimit: -1,
-              collapsed: true, // can't set to expanded here, need events
-          }).addTo(map);
-
-          if (restrictSearchCollapse) {
-
-          searchControl.collapse = function() {
-            // never collapse with text
-            //console.log('firing collapse');
-            if (this._input.value != '') {
-              return this;
-            }
-            this._hideTooltip()
-            this.cancel()
-            this._alert.style.display = 'none'
-            this._input.blur()
-            if (this.options.collapsed) {
-              this._input.style.display = 'none'
-              this._cancel.style.display = 'none'
-              L.DomUtil.removeClass(this._container, 'search-exp')
-              if (this.options.hideMarkerOnCollapse) {
-                this._map.removeLayer(this._markerSearch)
-              }
-              this._map.off('dragstart click', this.collapse, this)
-            }
-            this.fire('search:collapsed')
-            return this
-          }
-
-          searchControl.expand = function (toggle) {
-
-            //console.log('firing expand');
-
-            toggle = typeof toggle === 'boolean' ? toggle : true
-            this._input.style.display = 'block'
-            L.DomUtil.addClass(this._container, 'search-exp')
-            if (toggle !== false) {
-              this._input.focus()
-              this._map.on('dragstart click', this.collapse, this)
-            }
-            this.fire('search:expanded')
-            return this
-          };
-
-          // doesn't add collapse on start
-          map.off('dragstart click', searchControl.collapse, searchControl);
-
-          }//restrict collapse
-
-          // select on focus
-          searchControl._input.addEventListener('focus', function() {
-            searchControl._input.select();
-          });
-
-          if (settings.searchText != '') {
-            if (restrictSearchCollapse) {
-              searchControl._input.value = settings.searchText;
-              searchControl.expand();
-              searchControl._cancel.style.display = 'block';
-              searchControl._input.focus();
-              searchControl.searchText(settings.searchText);
-            } else {
-              markItems();
-            }
-          }
-
-          searchControl._handleSubmit = function(){
-            //map.closePopup();
-
-            if (searchControl._input.value=='') {
-              searchControl.collapse();
-            }
-            //applyFilter();
-            //searchControl._input.select();
-          }
-
-          searchControl._handleArrowSelect =  function (velocity) {
-            const searchTips = this._tooltip.hasChildNodes() ? this._tooltip.childNodes : []
-
-            for (let i = 0; i < searchTips.length; i++) {
-              L.DomUtil.removeClass(searchTips[i], 'search-tip-select')
-            }
-
-            // always mark input
-            this._input.select();
-            map.closePopup();
-
-
-            if ((velocity === 1) && (this._tooltip.currentSelection >= (searchTips.length - 1))) { // If at end of list.
-              //L.DomUtil.addClass(searchTips[this._tooltip.currentSelection], 'search-tip-select')
-              this._tooltip.currentSelection = -1; // joric - circular navigation
-
-            } else if ((velocity === -1) && (this._tooltip.currentSelection <= 0)) { // Going back up to the search box.
-              this._tooltip.currentSelection = searchTips.length; // joric - circular navigation
-            }
-
-            if (this._tooltip.style.display !== 'none') {
-              this._tooltip.currentSelection += velocity
-
-              L.DomUtil.addClass(searchTips[this._tooltip.currentSelection], 'search-tip-select')
-
-              // do not replace input text
-              //this._input.value = searchTips[this._tooltip.currentSelection]._text
-
-              // scroll:
-              const tipOffsetTop = searchTips[this._tooltip.currentSelection].offsetTop
-
-              if (tipOffsetTop + searchTips[this._tooltip.currentSelection].clientHeight >= this._tooltip.scrollTop + this._tooltip.clientHeight) {
-                this._tooltip.scrollTop = tipOffsetTop - this._tooltip.clientHeight + searchTips[this._tooltip.currentSelection].clientHeight
-              } else if (tipOffsetTop <= this._tooltip.scrollTop) {
-                this._tooltip.scrollTop = tipOffsetTop
-              }
-
-
-              clickItem(searchTips[this._tooltip.currentSelection]._text);
-
-            }
-          }
-
-          searchControl._createTip = function (text, val) { // val is object in recordCache, usually is Latlng
-            let tip
-
-            // reveal layers on creating tips
-            if (val.layer) {
-              layers[val.layer.options.layerId].addTo(map);
-            }
-
-            if (this.options.buildTip) {
-              tip = this.options.buildTip.call(ctrl, text, val) // custom tip node or html string
-              if (typeof tip === 'string') {
-                const tmpNode = L.DomUtil.create('div')
-                tmpNode.innerHTML = tip
-                tip = tmpNode.firstChild
-              }
-            } else {
-              tip = L.DomUtil.create('li', '')
-              tip.innerHTML = text
-            }
-            L.DomUtil.addClass(tip, 'search-tip')
-            tip._text = text // value replaced in this._input and used by _autoType
-            if (this.options.tipAutoSubmit) {
-              L.DomEvent
-                .disableClickPropagation(tip)
-                .on(tip, 'click', L.DomEvent.stop, this)
-                .on(tip, 'click', function (e) {
-                  clickItem(text);
-                }, this)
-            }
-            return tip
-          };
-
-          searchControl.showTooltip = function (records) {
-            this._countertips = 0
-            this._tooltip.innerHTML = ''
-            this._tooltip.currentSelection = -1 // inizialized for _handleArrowSelect()
-            if (this.options.tooltipLimit) {
-              for (const key in records) { // fill tooltip
-                if (this._countertips === this.options.tooltipLimit) {
-                  break
-                }
-                this._countertips++
-                this._tooltip.appendChild(this._createTip(key, records[key]))
-              }
-            }
-
-            if (this._countertips > 0) {
-              this._tooltip.style.display = 'block'
-
-              if (this._autoTypeTmp) {
-                this._autoType()
-              }
-
-              this._autoTypeTmp = this.options.autoType// reset default value
-            } else {
-              this._hideTooltip()
-            }
-
-            this._tooltip.scrollTop = 0
-
-            map.closePopup();
-            settings.searchText = this._input.value;
-            markItems();
-
-            if (settings.searchText != '') {
-              let c = [];
-              for (const o of Object.values(searchControl._filterData(settings.searchText, searchControl._recordsFromLayer()))) {
-                //lookup[o.layer.options.alt] = true;
-                c.push([o.lat, o.lng]);
-              }
-              var bounds = new L.LatLngBounds(c);
-              if (bounds) {
-                //map.fitBounds(bounds); // too much action, maybe do optional
-              }
-            }
-
-            return this._countertips
-          };
-
-          function clickItem(text) {
-            const loc = searchControl._getLocation(text)
-            if (loc) {
-              map.panTo(loc);
-              if (loc.layer._popup) {
-                // reveal layers on click
-                //layers[loc.layer.options.layerId].addTo(map);
-                loc.layer.openPopup();
-              }
-            }
-          }
-
-          searchControl.on('search:expanded', function (e) {
-            let input = document.querySelector('input.search-input');
-            input.value = settings.searchText;
-            if (settings.searchText) {
-              //input.focus();
-              //input.select();
-              searchControl.searchText(settings.searchText);
-              //addSearchCallbacks();
-            }
-          });
-
-          document.querySelector('.search-cancel').addEventListener('click',function (e) {
-            clearFilter();
-          });
-
-          searchControl._input.addEventListener('input', function(e) {
-            if (this.value == '') {
-              clearFilter();
-              //console.log('cleared');
-            }
-          });
-
-
-        } else { // legacy search
-
-          searchControl = new L.Control.Search({
-              layer: L.featureGroup(searchLayers),
-              marker: false, // no red circle
-              initial: false, // search any substring
-              firstTipSubmit: true, // use first autosuggest
-              autoCollapse: true,
-              tipAutoSubmit: true, //auto map panTo when click on tooltip
-          }).addTo(map);
-        }
-
-        // search reveals all layers, hide all inactive layers right away
+        // workaround: search reveals all layers, hide all inactive layers
         for (layerObj of inactiveLayers) {
           map.removeLayer(layerObj);
         }
 
+        // filter items by saved query value
+        markItems();
+
+        searchControl._handleSubmit = function(){
+          settings.searchText = this._input.value;
+          searchControl.collapse();
+          map.closePopup();
+          saveSettings();
+          markItems();
+        }
+
+        document.querySelector('.search-cancel').addEventListener('click', clearFilter);
+        searchControl._input.addEventListener('focus', function(e) { setTimeout(function(){searchControl._input.select();},1); } );
+        searchControl._input.addEventListener('input', addSearchCallbacks);
+
+        // item clicked in a dropdown list
+        function clickItem(text, collapse=false) {
+          if (loc = searchControl._getLocation(text)) {
+            searchControl.showLocation(loc, text);
+            searchControl.fire('search:locationfound', { latlng: loc, text: text, layer:loc.layer });
+            collapse && searchControl.collapse();
+          }
+        }
+
+        // add click callbacks to dropdown list after input events, wait 1500 ms so it could reload items
+        function addSearchCallbacks(){
+          setTimeout(function() {
+            let divs = document.querySelectorAll('.search-tip');
+            [].forEach.call(divs, function(div) {
+              div.addEventListener('click', function (e) { clickItem(e.target.innerText); e.preventDefault(); })
+              div.addEventListener('dblclick', function (e) { clickItem(e.target.innerText, true); e.preventDefault(); })
+            })
+          }, 1500)
+        }
+
+        // fired after search control focused on the item
         searchControl.on('search:locationfound', function (e) {
             if (e.layer._popup) {
-              layers[e.layer.options.layer].addTo(map);
+              layers[e.layer.options.layerId].addTo(map);
               e.layer.openPopup();
             }
         });
 
-        markItems();
+        // fired when input control is expanded (not the dropdown list)
+        searchControl.on('search:expanded', function (e) {
+          searchControl._input.value = settings.searchText;
+          searchControl.searchText(settings.searchText);
+          addSearchCallbacks();
+        });
+        // end of search
 
+        // parse types
         filename = 'data/types.csv';
         Papa.parse(filename, { download: true, header: true, complete: function(results, filename) {
           for (o of results.data) {
@@ -879,7 +677,7 @@ function markItems() {
 
   // filter by settings.searchText. caching is unreliable, just perform a full search here
   let lookup = {}
-  if (settings.searchText != '') {
+  if (settings.searchText) {
     for (const o of Object.values(searchControl._filterData(settings.searchText, searchControl._recordsFromLayer()))) {
       lookup[o.layer.options.alt] = true;
     }
@@ -888,7 +686,7 @@ function markItems() {
   [].forEach.call(document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive'), function(div) {
     if (div.alt!='playerMarker') {
       let alt = div.getAttribute('alt');
-      if (Object.keys(lookup).length==0 || lookup[alt]) {
+      if (!settings.searchText || lookup[alt]) {
         div.classList.remove('hidden');
       } else {
         div.classList.add('hidden');
@@ -998,14 +796,14 @@ window.onload = function(event) {
   if (location.hash.length>1) {
     for (const s of location.hash.slice(1).split('&')) {
       let [k,v] = s.split('=');
-      param[k] = v;
+      mapParam[k] = v;
     }
   }
 
   // clear location hash
   history.pushState('', document.title, window.location.pathname + window.location.search);
 
-  mapId = param.mapId || localData.mapId || 'sl';
+  mapId = mapParam.mapId || localData.mapId || 'sl';
 
   loadMap();
 
