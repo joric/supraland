@@ -62,22 +62,7 @@ let items = {
   'BarrelRed_C':'barrel_red',
   'BarrelColor_C': 'barrel_gold',
   'BarrelClosed_Blueprint_C': 'barrel_gold',
-};
-
-let icons = {
-  'map':           {icon: 'circle-chevron-up',   color: 'dodgerblue'},
-  'jumppad':       {icon: 'circle-chevron-up',   color: 'red'},
-  'chest':         {icon: 'toolbox',             color: 'grey'},
-  'trophy':        {icon: 'trophy',              color: 'peru'},
-  'bones':         {icon: 'skull-crossbones',    color: 'goldenrod'},
-  'pipe':          {icon: 'circle-chevron-down', color: 'yellowgreen'},
-  'grave_wood':    {icon: 'cross',               color: 'sienna'},
-  'grave_stone':   {icon: 'cross',               color: 'dimgrey'},
-  'grave_volcano': {icon: 'cross',               color: 'tomato'},
-  'coin':          {icon: 'coins',               color: 'orange'},
-  'scrap':         {icon: 'gear',                color: 'darkcyan'},
-  'barrel_red':    {icon: 'prescription-bottle', color: 'maroon'},
-  'barrel_gold':   {icon: 'prescription-bottle', color: 'chocolate'},
+  'Plumbus_C' : 'plumbus',
 };
 
 let bindings = {
@@ -116,7 +101,7 @@ let maps = {
 };
 
 function getIconSize(zoom) {
-  return Math.max(32,Math.min(64,zoom*32/4));
+  return Math.max(32,Math.min(64,zoom*32/5));
 }
 
 function markerSymbol1(icon, shadow=false) {
@@ -137,7 +122,6 @@ function markerSymbol1(icon, shadow=false) {
       markerFile: 'img/'+icon+'.png',
       markerWidth  : size,
       markerHeight : size,
-      markerDy: size/2,
     },
   ];
 }
@@ -157,7 +141,7 @@ function markerSymbol2(icon, shadow=false) {
     {
       markerWidth: 75,
       markerHeight: 75,
-      markerFill: colors[icon],
+      markerFill: colors[icon] ? colors[icon] : '#888',
       markerType: 'pin',
     },
     {
@@ -169,43 +153,6 @@ function markerSymbol2(icon, shadow=false) {
   ];
 }
 
-function markerSymbol3(icon, shadow=false) {
-  let d = 48;
-  let iconName = icons[icon].icon;
-  let color = icons[icon].color;
-  let [w1,h1,[s1],c1,p1] = FontAwesome.icon({ iconName: 'location-pin' }).icon;
-
-  if (!(t = FontAwesome.icon({ iconName: iconName }))) {
-    t = FontAwesome.icon({ iconName: 'circle-question' });
-  }
-
-  let [w2,h2,[s2],c2,p2] = t.icon;
-
-  let bgcolor = color;
-  let fgcolor = 'white';
-
-  let k = 0.4;
-
-  let dx = (w1-w2*k)/2;
-  let dy = (h1-h2*k)/2 - h1*0.125;
-
-  let path = [
-    {path:p1, fill: 'black'},
-    {transform: 'matrix(0.976,0,0,0.976,5,5)', path: p1, fill: bgcolor },
-    {transform: 'matrix('+k+',0,0,'+k+','+dx+','+dy+')', path:p2, fill: fgcolor }
-  ];
-  return {
-    markerType: 'path',
-    markerPath : path,
-    markerPathWidth : w1,
-    markerPathHeight : h1,
-    markerLineColor : 12,
-    markerWidth: w1*d/512,
-    markerHeight: h1*d/512,
-    markerDy : 0,
-    markerDx : 0
-  };
-}
 
 function loadMap(mapId) {
   location.hash = mapId;
@@ -476,7 +423,7 @@ function loadMap(mapId) {
     let s = getIconSize(e.to ? e.to : e.from);
     [].forEach.call(vectorLayer._geoList, function(g) {
       if (g._jsonType=='Marker') {
-        g.updateSymbol([{markerWidth:s, markerHeight: s, markerDy: s/2}]);
+        g.updateSymbol([{markerWidth:s, markerHeight: s}]);
       }
     });
   });

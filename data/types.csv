@@ -145,7 +145,7 @@ LotsofCoins200_C,coinStash,coin
 MinecraftBrick_C,brick,misc
 MoonTake_C,moon_green,collectable
 PlayerStart,awesome,misc
-Plumbus_C,,misc
+Plumbus_C,plumbus,misc
 Purchase_DiamondPickaxe_C,pickaxe_diamond,upgrades
 Purchase_ForceBeam_C,beam,upgrades
 Purchase_ForceCube_C,force_cube,upgrades
