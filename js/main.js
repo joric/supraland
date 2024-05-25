@@ -541,7 +541,7 @@ function loadMap() {
             autoCollapse: false,
             tipAutoSubmit: false, //auto map panTo when click on tooltip
             tooltipLimit: -1,
-            textPlaceholder: 'Search (Enter to set items filter)',
+            textPlaceholder: 'Search (Enter to save search phrase)',
         }).addTo(map);
 
         // workaround: search reveals all layers, hide all inactive layers
