@@ -173,4 +173,4 @@ Shell_C,shell,collectable
 MetalBall_C,,
 Supraball_C,,
 Trash_C,,
-DeadHero_C,hero_placeholder,misc
+DeadHero_C,hero_placeholder,collectable
