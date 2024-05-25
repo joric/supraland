@@ -393,7 +393,6 @@ function loadMap() {
             }
 
             titles[title] = title;
-            title = title + ' of ' + o.type;
 
             if (o.type.endsWith('Chest_C')) {
               icon = 'chest';
@@ -404,6 +403,8 @@ function loadMap() {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
             }
+
+            title = title + ' of ' + o.type;
 
             // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
             if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
