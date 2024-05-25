@@ -13,7 +13,7 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 
 <link rel="stylesheet" href="https://unpkg.com/maptalks/dist/maptalks.css">
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script-->
 
 <!--
 <link href="maptalks.css" rel="stylesheet" >
@@ -28,17 +28,21 @@ html,body{margin:0px;height:100%;width:100%; font-family:sans-serif;}
 
 let heightFactor = 0.5;
 let startPitch = 0;
+let enableAltitude = false;
+let autoAltitude = false;
+let drawAltitude = true;
+let drawShadow = false;
+let markerSymbol = markerSymbol1;
+let iconSize = 48;
+let lineWidth = 3;
+//let lineDasharray = [10,5];
+let lineDasharray = null;
+
 let defaultZoom = 4;
 let defaultPitch = 45;
 let defaultBearing = 0;
-let enableAltitude = true;
-let drawAltitude = true;
-let drawShadow = false;
-let markerSymbol = markerSymbol3;
 let symbolCache = {};
-let lineWidth = 3;
 let map = null;
-
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
 let colors = {};
@@ -46,12 +50,12 @@ let items = {
   'Chest_C':'chest',
   'BP_EngagementCup_Base_C':'trophy',
   'Bones_C':'bones',
-  'PipesystemNew_C':'pipe_green',
-  'PipesystemNewDLC_C':'pipe_green',
+  'PipesystemNew_C':'pipe',
+  'PipesystemNewDLC_C':'pipe',
   'Scrap_C':'scrap',
-  //'EnemySpawn1_C':'grave_wood', 'EnemySpawn2_C':'grave_stone', 'EnemySpawn3_C':'grave_volcano',
+  'EnemySpawn1_C':'grave_wood', 'EnemySpawn2_C':'grave_stone', 'EnemySpawn3_C':'grave_volcano',
   //'Coin_C':'coin',
-  'Jumppad_C':'map',
+  'Jumppad_C':'jumppad',
   //'_JumppadTarget_C':'question_mark',
   'BarrelRed_C':'barrel_red',
   'BarrelColor_C': 'barrel_gold',
@@ -59,8 +63,8 @@ let items = {
 };
 
 let icons = {
-  'jumppad_blue':  {icon: 'circle-chevron-up',   color: 'dodgerblue'},
-  'jumppad_red':   {icon: 'circle-chevron-up',   color: 'red'},
+  'map':           {icon: 'circle-chevron-up',   color: 'dodgerblue'},
+  'jumppad':       {icon: 'circle-chevron-up',   color: 'red'},
   'chest':         {icon: 'toolbox',             color: 'grey'},
   'trophy':        {icon: 'trophy',              color: 'peru'},
   'bones':         {icon: 'skull-crossbones',    color: 'goldenrod'},
@@ -110,7 +114,7 @@ let maps = {
 };
 
 function markerSymbol1(icon, shadow=false) {
-  let size = 48;
+  let size = iconSize;
 
   if (shadow) {
     return [
@@ -304,7 +308,7 @@ function loadMap(mapId) {
                 vz = o.velocity.z;
               }
 
-              icon = (o.allow_stomp || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
+              //icon = (o.allow_stomp || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
 
               let x = x0 = o.lng;
               let y = y0 = o.lat;
@@ -344,7 +348,8 @@ function loadMap(mapId) {
               //console.log('after',points.length);
 
               if (points.length>1) {
-                new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+                // jumppad curve
+                new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
               }
             }
           } // end of jumppad
@@ -386,8 +391,11 @@ function loadMap(mapId) {
           let color = icons[icon].color;
           if (p = objects[o.other_pipe]) {
             let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
-            //new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: 2, lineDasharray:[10,5,5]}}).addTo(lineLayer);
-            new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+
+            // pipe curve
+            new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
+            // new maptalks.ArcCurve(points,{arcDegree : 20, symbol: {lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer); // rendering issue, https://github.com/maptalks/maptalks.js/issues/2337
+
           }
         }
       }
@@ -447,8 +455,10 @@ function loadMap(mapId) {
   });
 
   map.on('viewchange', function(e) {
-      //vectorLayer.setOptions({enableAltitude: map.getPitch()!=0});
-      //lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
+    if (autoAltitude) {
+      vectorLayer.setOptions({enableAltitude: map.getPitch()!=0});
+      lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
+    }
   });
 
 }

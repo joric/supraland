@@ -132,7 +132,7 @@ Enemyspawner2_C,,
 ExplodingBattery_C,,
 GoldBlock_C,,
 GoldNugget_C,,
-Jumppad_C,map,jumppads
+Jumppad_C,jumppad,jumppads
 Jumppillow_C,,
 Key_C,,
 KeycardColor_C,,
@@ -166,9 +166,9 @@ EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
 Lift1_C,question_mark,misc
-PipeCap_C,pipe_red,pipesys
-PipesystemNew_C,pipe_green,pipesys
-PipesystemNewDLC_C,pipe_blue,pipesys
+PipeCap_C,pipe,pipesys
+PipesystemNew_C,pipe,pipesys
+PipesystemNewDLC_C,pipe,pipesys
 Shell_C,shell,collectable
 MetalBall_C,,
 Supraball_C,,
