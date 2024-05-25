@@ -757,7 +757,7 @@ window.loadSaveFile = function () {
           if (name != "None") {
 
             // do not mark jumppads and pipes for now
-            if (name.contains('Jumppad') || name.contains('Pipesystem')) {
+            if (name.includes('Jumppad') || name.includes('Pipesystem')) {
               continue;
             }
 
