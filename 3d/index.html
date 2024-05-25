@@ -30,7 +30,8 @@ let heightFactor = 0.5;
 let startPitch = 0;
 let enableAltitude = true;
 let autoAltitude = false;
-let drawAltitude = true;
+let drawMarkerAltitude = true;
+let drawCurveAltitude = false;
 let drawShadow = false;
 let markerSymbol = markerSymbol1;
 let iconSize = 48;
@@ -271,8 +272,11 @@ function loadMap(mapId) {
     forceRenderOnRotating: true,
   }).addTo(map);
 
-  if (drawAltitude) {
+  if (drawMarkerAltitude) {
     vectorLayer.setOptions({drawAltitude : {lineWidth : lineWidth, lineColor : '#888', lineOpacity: 1.0 }});
+  }
+  if (drawCurveAltitude) {
+    lineLayer.setOptions({drawAltitude : {lineWidth : lineWidth, lineColor : '#888', lineOpacity: 1.0 }});
   }
 
   for (const fname of ['markers','custom-markers'])
@@ -345,6 +349,9 @@ function loadMap(mapId) {
               //console.log('before',points.length);
               points = simplify(points, 10);
               //console.log('after',points.length);
+
+              // built-in simplify does not work, see https://github.com/maptalks/maptalks.js/issues/2331
+              // new maptalks.LineString(points,{arrowStyle:arrowStyle, enableSimplify: true, simplifyTolerance: 20, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
 
               if (points.length>1) {
                 // jumppad curve
