@@ -115,8 +115,12 @@ let maps = {
   },
 };
 
+function getIconSize(zoom) {
+  return Math.max(32,Math.min(64,zoom*32/4));
+}
+
 function markerSymbol1(icon, shadow=false) {
-  let size = iconSize;
+  let size = getIconSize(map.getZoom());
 
   if (shadow) {
     return [
@@ -465,6 +469,16 @@ function loadMap(mapId) {
       vectorLayer.setOptions({enableAltitude: map.getPitch()!=0});
       lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
     }
+  });
+
+   // need all 3 events because of animation
+  map.on('zooming zoomstart zoomend', function(e) {
+    let s = getIconSize(e.to ? e.to : e.from);
+    [].forEach.call(vectorLayer._geoList, function(g) {
+      if (g._jsonType=='Marker') {
+        g.updateSymbol([{markerWidth:s, markerHeight: s, markerDy: s/2}]);
+      }
+    });
   });
 
 }
