@@ -393,6 +393,7 @@ function loadMap() {
             }
 
             titles[title] = title;
+            title = title + ' of ' + o.type;
 
             if (o.type.endsWith('Chest_C')) {
               icon = 'chest';
@@ -402,8 +403,6 @@ function loadMap() {
               } else if (o.coins) {
                 title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
               }
-            } else {
-              title = title + ' of '+o.type;
             }
 
             // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
@@ -586,6 +585,7 @@ function loadMap() {
         // fired after search control focused on the item
         searchControl.on('search:locationfound', function (e) {
             if (e.layer._popup) {
+              // reveal layer on click
               layers[e.layer.options.layerId].addTo(map);
               e.layer.openPopup();
             }
@@ -680,6 +680,8 @@ function markItems() {
   if (settings.searchText) {
     for (const o of Object.values(searchControl._filterData(settings.searchText, searchControl._recordsFromLayer()))) {
       lookup[o.layer.options.alt] = true;
+      // reveal layers on filter
+      layers[o.layer.options.layerId].addTo(map);
     }
   }
 
