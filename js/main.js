@@ -554,14 +554,14 @@ function loadMap() {
 
         searchControl._handleSubmit = function(){
           settings.searchText = this._input.value;
-          searchControl.collapse();
           map.closePopup();
           saveSettings();
           markItems();
+          this._input.select();
         }
 
         document.querySelector('.search-cancel').addEventListener('click', clearFilter);
-        searchControl._input.addEventListener('focus', function(e) { setTimeout(function(){searchControl._input.select();},1); } );
+        searchControl._input.addEventListener('focus', function(e) { setTimeout(function(e){ e.target.select(); },50,e); } );
         searchControl._input.addEventListener('input', addSearchCallbacks);
 
         // item clicked in a dropdown list
