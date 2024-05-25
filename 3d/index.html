@@ -37,6 +37,7 @@ let iconSize = 48;
 let lineWidth = 3;
 //let lineDasharray = [10,5];
 let lineDasharray = null;
+let arrowStyle = [2,3];
 
 let defaultZoom = 4;
 let defaultPitch = 45;
@@ -308,7 +309,7 @@ function loadMap(mapId) {
                 vz = o.velocity.z;
               }
 
-              //icon = (o.allow_stomp || o.disable_movement==false) ? 'jumppad_blue' : 'jumppad_red';
+              let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
 
               let x = x0 = o.lng;
               let y = y0 = o.lat;
@@ -341,15 +342,13 @@ function loadMap(mapId) {
                 last_z = z;
               }
 
-              let color = icons[icon].color;
-
               //console.log('before',points.length);
               points = simplify(points, 10);
               //console.log('after',points.length);
 
               if (points.length>1) {
                 // jumppad curve
-                new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
+                new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
               }
             }
           } // end of jumppad
@@ -393,7 +392,7 @@ function loadMap(mapId) {
             let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
 
             // pipe curve
-            new maptalks.LineString(points,{symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
+            new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
             // new maptalks.ArcCurve(points,{arcDegree : 20, symbol: {lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer); // rendering issue, https://github.com/maptalks/maptalks.js/issues/2337
 
           }
