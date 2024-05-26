@@ -407,11 +407,7 @@ function loadMap() {
             objects[alt] = o;
 
             if ({'Jumppad_C':1,'PipesystemNew_C':1,'PipesystemNewDLC_C':1}[o.type]) {
-
-              let color = getMarkerColor(o);
-              L.circleMarker([o.lat, o.lng], {radius: 4, fillOpacity: 1, color: color, fillColor: color, title: title, o:o, alt: alt})
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-
+              // add these markers in 2nd pass for z-index to work
             } else {
 
               if (o.type.endsWith('Chest_C')) {
@@ -476,29 +472,41 @@ function loadMap() {
 
         } // end of loop
 
-        // 2-nd pass (pads and pipes)
+        // pass 2 (pads and pipe markers)
+        // need to add shadows / investigate issue with shadows, they should be drawn in order
+        // there's no stroke property for lines, so it needs thicker shadow lines
         for (name of Object.keys(objects)) {
+
           let o = objects[name];
           let alt = o.area + ':' + o.name
           let color = getMarkerColor(o);
+          let layer = 'jumppads';
+          let text = '';
 
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
               // need to add title as a single space (leaflet search issue), but not the full title so it doesn't appear in search
-              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers['jumppads']);
+              L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+
+              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
               line._path && line._path.setAttribute('alt', alt);
             }
           }
 
           // pipes
           if (o.other_pipe) {
+            let layer = 'pipesys';
             if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: color}).addTo(layers['pipesys']);
+              L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
               line._path && line._path.setAttribute('alt', alt);
             }
           }
-         
-        } // end of 2-nd pass
+
+        } // end of pass 2
+
 
         markItems();
     });
