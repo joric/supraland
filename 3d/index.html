@@ -122,6 +122,7 @@ function markerSymbol1(icon, shadow=false) {
       markerFile: 'img/'+icon+'.png',
       markerWidth  : size,
       markerHeight : size,
+      markerDy: size/2,
     },
   ];
 }
@@ -422,7 +423,7 @@ function loadMap(mapId) {
     let s = getIconSize(e.to ? e.to : e.from);
     [].forEach.call(vectorLayer._geoList, function(g) {
       if (g._jsonType=='Marker') {
-        g.updateSymbol([{markerWidth:s, markerHeight: s}]);
+        g.updateSymbol([{markerWidth:s, markerHeight: s, markerDy: s/2}]);
       }
     });
   });
