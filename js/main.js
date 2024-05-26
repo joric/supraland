@@ -887,4 +887,6 @@ window.onload = function(event) {
   });
 
   window.requestAnimationFrame(update);
+
+  window.addEventListener('contextmenu', function(e) { e.stopPropagation() }, true); // enable default context menu
 }
