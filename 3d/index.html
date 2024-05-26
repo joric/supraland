@@ -344,8 +344,7 @@ function loadMap(mapId) {
       for (name of Object.keys(objects)) {
         let o = objects[name];
         if (o.other_pipe) {
-          let icon = items[o.type];
-          let color = icons[icon].color;
+          let color = 'yellowgreen';
           if (p = objects[o.other_pipe]) {
             let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
 
