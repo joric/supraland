@@ -43,7 +43,6 @@ let arrowStyle = [2,3];
 let defaultZoom = 4;
 let defaultPitch = 45;
 let defaultBearing = 0;
-let symbolCache = {};
 let map = null;
 let markerColors = ['#48a1c2','#f4bd76','#419869','#88cf78','#988','#877','#766','#e4e1d6'];
 let lineColor = '#888';
@@ -217,6 +216,13 @@ function loadMap(mapId) {
     forceRenderOnRotating: true,
   }).addTo(map);
 
+  let pipeLayer = new maptalks.VectorLayer('pipes', {
+    enableAltitude: enableAltitude,
+    sortByDistanceToCamera: true,
+    forceRenderOnMoving: true,
+    forceRenderOnRotating: true,
+  }).addTo(map);
+
   let vectorLayer = new maptalks.VectorLayer('vector', {
     enableAltitude: enableAltitude,
     sortByDistanceToCamera: true,
@@ -230,6 +236,19 @@ function loadMap(mapId) {
   if (drawCurveAltitude) {
     lineLayer.setOptions({drawAltitude : {lineWidth : lineWidth, lineColor : '#888', lineOpacity: 1.0 }});
   }
+
+  function getMarkerColor(o) {
+    if (o.type == 'Jumppad_C') {
+      return (o.allow_stomp || o.disable_movement==false) ? 'deepskyblue' : 'red';
+    } else if (o.other_pipe) {
+      return 'yellowgreen';
+    }
+    return '#888';
+  }
+
+  // Mouse Coordinate
+  !function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("maptalks")):"function"==typeof define&&define.amd?define(["exports","maptalks"],t):t(e.maptalks=e.maptalks||{},e.maptalks)}(this,function(e,t){"use strict";function o(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):function(e,t){for(var o=Object.getOwnPropertyNames(t),n=0;n<o.length;n++){var r=o[n],i=Object.getOwnPropertyDescriptor(t,r);i&&i.configurable&&void 0===e[r]&&Object.defineProperty(e,r,i)}}(e,t))}var n=function(e){function t(){return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,t),function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}(this,e.apply(this,arguments))}return o(t,e),t.prototype.buildOn=function(e){var t=document.createElement("div");return Object.assign(t.style,this.options.style),t},t.prototype.onAdd=function(){this._map.on("mousemove",this.onMouseMove,this)},t.prototype.onMouseMove=function(e){var t=e.coordinate,o=t.x,n=t.y,r=this.options.precision;this._controlDom.innerText=o.toFixed(r)+" : "+n.toFixed(r)},t.prototype.onRemove=function(){this._map.off("mouseover",this.onMouseOver)},t}(t.control.Control);n.mergeOptions({position:{bottom:0,right:0},precision:5,style:{padding:"0 5px",backgroundColor:"rgba(255,255,255,0.7)",fontSize:"13px"}}),e.MouseCoordinate=n,Object.defineProperty(e,"__esModule",{value:!0}),"undefined"!=typeof console&&console.log("maptalks.mouseCoordinate v0.1.0, requires maptalks@>=0.36.0.")});
+  var mouseCoordinate = new maptalks.MouseCoordinate().addTo(map)
 
   for (const fname of ['markers','custom-markers'])
     fetch('data/'+fname+'.'+mapId+'.json')
@@ -246,80 +265,34 @@ function loadMap(mapId) {
 
         if (icon = items[o.type]) {
 
-          if (o.type == 'Jumppad_C') {// && o.name=='Jumppad2_49') {
+          objects[o.area + ':' + o.name] = o;
 
-            if (r = o.direction) {
-              let x1 = o.lng;
-              let y1 = o.lat;
-              let z1 = o.alt;
+          let color = getMarkerColor(o);
 
-              let k = o.relative_velocity || 1000;
+          var marker;
 
-              let vx = -o.direction.x * k;
-              let vy = -o.direction.y * k;
-              let vz = o.direction.z * k;
+          if ({'Jumppad_C':1,'PipesystemNew_C':1,'PipesystemNewDLC_C':1}[o.type]) {
 
-              if (o.velocity && o.allow_stomp) {
-                vx = o.velocity.x;
-                vy = o.velocity.y;
-                vz = o.velocity.z;
-              }
+            marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
+              properties: {name: o.name},
+              symbol : {
+                  markerType : 'ellipse',
+                  markerWidth : 10,
+                  markerHeight : 10,
+                  markerFill: color,
+                  markerLineWidth: 0,
+              },
+            }).addTo(lineLayer);
 
-              let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
+          } else {
 
-              let x = x0 = o.lng;
-              let y = y0 = o.lat;
-              let z = z0 = o.alt;
+            marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
+              properties: {name: o.name},
+              symbol: markerSymbol(icon),
+            }).addTo(vectorLayer);
 
-              let dt = 0.01;
-              let g = 9.8;
-              let m = 95;
-
-              let last_z = z;
-              let points = []
-              points.push({x:x,y:y,z:z})
-
-              for (let t=0;t<20;t+=dt) {
-                vz -= g * m * dt;
-                x += vx * dt;
-                y += vy * dt;
-                z += vz * dt;
-
-                points.push({x:x,y:y,z:z})
-
-                if (last_z>z) {
-                  if (o.target) {
-                    if (o.target.z>z) break;
-                  } else {
-                    if (o.alt>0 && z<0) break;
-                    if (o.alt<0 && z<o.alt) break;
-                  }
-                }
-                last_z = z;
-              }
-
-              //console.log('before',points.length);
-              points = simplify(points, 10);
-              //console.log('after',points.length);
-
-              // built-in simplify does not work, see https://github.com/maptalks/maptalks.js/issues/2331
-              // new maptalks.LineString(points,{arrowStyle:arrowStyle, enableSimplify: true, simplifyTolerance: 20, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
-
-              if (points.length>1) {
-                // jumppad curve
-                new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
-              }
-            }
-          } // end of jumppad
-
-          if (!symbolCache.hasOwnProperty(icon)) {
-            symbolCache[icon] = markerSymbol(icon);
           }
 
-          var marker = new maptalks.Marker([o.lng, o.lat, o.alt],{
-            properties: {name: o.name},
-            symbol: symbolCache[icon],
-          }).addTo(vectorLayer);
 
           new maptalks.ui.ToolTip(o.name,{}).addTo(marker);
 
@@ -339,23 +312,91 @@ function loadMap(mapId) {
             .addTo(shadowLayer);
           }
         }
-        objects[o.area + ':' + o.name] = o;
       }
 
+      // 2nd pass, do the vector layer stuff
       for (name of Object.keys(objects)) {
         let o = objects[name];
-        if (o.other_pipe) {
-          let color = 'yellowgreen';
-          if (p = objects[o.other_pipe]) {
-            let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
 
-            // pipe curve
-            new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
-            // new maptalks.ArcCurve(points,{arcDegree : 20, symbol: {lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer); // rendering issue, https://github.com/maptalks/maptalks.js/issues/2337
+        if (o.type == 'Jumppad_C') {
+          if (r = o.direction) {
+            let x1 = o.lng;
+            let y1 = o.lat;
+            let z1 = o.alt;
 
+            let k = o.relative_velocity || 1000;
+
+            let vx = -o.direction.x * k;
+            let vy = -o.direction.y * k;
+            let vz = o.direction.z * k;
+
+            if (o.velocity && o.allow_stomp) {
+              vx = o.velocity.x;
+              vy = o.velocity.y;
+              vz = o.velocity.z;
+            }
+
+            let color = getMarkerColor(o);
+
+            let x = x0 = o.lng;
+            let y = y0 = o.lat;
+            let z = z0 = o.alt;
+
+            let dt = 0.01;
+            let g = 9.8;
+            let m = 95;
+
+            let last_z = z;
+            let points = []
+            points.push({x:x,y:y,z:z})
+
+            for (let t=0;t<20;t+=dt) {
+              vz -= g * m * dt;
+              x += vx * dt;
+              y += vy * dt;
+              z += vz * dt;
+
+              points.push({x:x,y:y,z:z})
+
+              if (last_z>z) {
+                if (o.target) {
+                  if (o.target.z>z) break;
+                } else {
+                  if (o.alt>0 && z<0) break;
+                  if (o.alt<0 && z<o.alt) break;
+                }
+              }
+              last_z = z;
+            }
+
+            //console.log('before',points.length);
+            points = simplify(points, 10);
+            //console.log('after',points.length);
+
+            // built-in simplify does not work, see https://github.com/maptalks/maptalks.js/issues/2331
+            // new maptalks.LineString(points,{arrowStyle:arrowStyle, enableSimplify: true, simplifyTolerance: 20, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
+
+            if (points.length>1) {
+              // jumppad curve
+              new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer);
+            }
           }
         }
-      }
+
+        // pipes
+        if (o.other_pipe) {
+          let color = getMarkerColor(o);
+          if (p = objects[o.other_pipe]) {
+            let points = [[o.lng, o.lat, o.alt],[p.lng, p.lat, p.alt]];
+            // pipe curve
+            new maptalks.LineString(points,{arrowStyle:arrowStyle, symbol:{lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(pipeLayer);
+            // new maptalks.ArcCurve(points,{arcDegree : 20, symbol: {lineColor: color, lineWidth: lineWidth, lineDasharray: lineDasharray}}).addTo(lineLayer); // rendering issue, https://github.com/maptalks/maptalks.js/issues/2337
+          }
+        }
+
+      } // end of 2nd pass
+
+
    });
 
   var toolbar = new maptalks.control.Toolbar({
@@ -418,7 +459,7 @@ function loadMap(mapId) {
     }
   });
 
-   // need all 3 events because of animation
+  // need all 3 events because of animation
   map.on('zooming zoomstart zoomend', function(e) {
     let s = getIconSize(e.to ? e.to : e.from);
     [].forEach.call(vectorLayer._geoList, function(g) {

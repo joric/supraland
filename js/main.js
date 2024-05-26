@@ -355,6 +355,15 @@ function loadMap() {
     }
   }
 
+  function getMarkerColor(o) {
+    if (o.type == 'Jumppad_C') {
+      return (o.allow_stomp || o.disable_movement==false) ? 'deepskyblue' : 'red';
+    } else if (o.other_pipe) {
+      return 'yellowgreen';
+    }
+    return '#888';
+  }
+
   function loadMarkers() {
     for (const fname of ['markers','custom-markers'])
     fetch('data/'+fname+'.'+mapId+'.json')
@@ -394,48 +403,50 @@ function loadMap() {
 
             titles[title] = title;
 
-            if (o.type.endsWith('Chest_C')) {
-              icon = 'chest';
-              layer = 'closedChest';
-              if (o.spawns) {
-                title = title + ' ('+o.spawns+')';
-              } else if (o.coins) {
-                title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
+            // collect objects for the 2-nd pass
+            objects[alt] = o;
+
+            if ({'Jumppad_C':1,'PipesystemNew_C':1,'PipesystemNewDLC_C':1}[o.type]) {
+
+              let color = getMarkerColor(o);
+              L.circleMarker([o.lat, o.lng], {radius: 4, fillOpacity: 1, color: color, fillColor: color, title: title, o:o, alt: alt})
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+
+            } else {
+
+              if (o.type.endsWith('Chest_C')) {
+                icon = 'chest';
+                layer = 'closedChest';
+                if (o.spawns) {
+                  title = title + ' ('+o.spawns+')';
+                } else if (o.coins) {
+                  title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
+                }
+              }
+
+              title = title + ' of ' + o.type;
+
+              // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
+              if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
+                let icon = 'shop';
+                let layer = 'shop';
+                L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
+                  .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+              }
+
+              // finally, add marker (base marker goes in the middle)
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer })
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+
+              // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
+              // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
+              if (s = classes[o.spawns]) {
+                let icon = s.icon || defaultIcon;
+                let layer = layers[s.layer] ? s.layer : defaultLayer;
+                L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer })
+                  .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
               }
             }
-
-            title = title + ' of ' + o.type;
-
-            // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
-            if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
-              let icon = 'shop';
-              let layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer }).addTo(layers[layer])
-              .bindPopup(text)
-              .on('popupopen', onPopupOpen)
-              .on('contextmenu',onContextMenu)
-              ;
-            }
-
-            // finally, add marker (base marker goes in the middle)
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer }).addTo(layers[layer])
-            .bindPopup(text)
-            .on('popupopen', onPopupOpen)
-            .on('contextmenu',onContextMenu)
-            ;
-
-            // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
-            // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
-            if (s = classes[o.spawns]) {
-              let icon = s.icon || defaultIcon;
-              let layer = layers[s.layer] ? s.layer : defaultLayer;
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer }).addTo(layers[layer])
-              .bindPopup(text)
-              .on('popupopen', onPopupOpen)
-              .on('contextmenu',onContextMenu)
-              ;
-            }
-
           } // end of all items that have types entry
 
           // add dynamic player marker on top of PlayerStart icon
@@ -463,20 +474,16 @@ function loadMap() {
             }).addTo(map)
           }
 
-          // collect objects for the 2-nd pass
-          objects[alt] = o;
-
         } // end of loop
 
         // 2-nd pass (pads and pipes)
         for (name of Object.keys(objects)) {
           let o = objects[name];
           let alt = o.area + ':' + o.name
+          let color = getMarkerColor(o);
 
           if (o.type == 'Jumppad_C' && o.target) {
             if (r = o.direction) {
-              let color = (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
-
               // need to add title as a single space (leaflet search issue), but not the full title so it doesn't appear in search
               let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers['jumppads']);
               line._path && line._path.setAttribute('alt', alt);
@@ -486,7 +493,7 @@ function loadMap() {
           // pipes
           if (o.other_pipe) {
             if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: 'yellowgreen'}).addTo(layers['pipesys']);
+              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: color}).addTo(layers['pipesys']);
               line._path && line._path.setAttribute('alt', alt);
             }
           }
