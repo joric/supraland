@@ -433,16 +433,11 @@ function loadMap() {
                 }
               }
 
-              // marker
-              let line = L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-              line._path && line._path.setAttribute('alt', alt);
-
               // pad line
               if (o.type == 'Jumppad_C' && o.target) {
                 let layer = 'jumppads';
                 if (r = o.direction) {
-                  let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
+                  let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
                   line._path && line._path.setAttribute('alt', alt);
                 }
               }
@@ -458,10 +453,15 @@ function loadMap() {
                     alt = b.area + ':' + b.name;
                   }
 
-                  let line = L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
+                  let line = L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
                   line._path && line._path.setAttribute('alt', alt);
                 }
               }
+
+              // marker
+              let line = L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+              line._path && line._path.setAttribute('alt', alt);
 
             } else {
 
@@ -713,7 +713,7 @@ function markItems() {
     }
   }
 
-  [].forEach.call(document.querySelectorAll('img.leaflet-marker-icon, path.leaflet-interactive'), function(div) {
+  [].forEach.call(document.querySelectorAll('img.leaflet-marker-icon, path'), function(div) {
     if (div.alt!='playerMarker') {
       let alt = div.getAttribute('alt');
       if (!settings.searchText || lookup[alt]) {
