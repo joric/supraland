@@ -269,18 +269,18 @@ function loadMap() {
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
-                  options:{toolbarIcon:{html:'Copy Path', tooltip: 'Copy save file directory path to clipboard'}},
-                  addHooks:function() {
-                    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
-                    subAction.prototype.addHooks.call(this);
-                  }
-                }),
-                subAction.extend({
                   options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items'}},
                   addHooks: function () {
                     document.querySelector('#file').value = null;
                     document.querySelector('#file').accept = '.sav';
                     document.querySelector('#file').click();
+                    subAction.prototype.addHooks.call(this);
+                  }
+                }),
+                subAction.extend({
+                  options:{toolbarIcon:{html:'Copy Path', tooltip: 'Copy save file directory path to clipboard'}},
+                  addHooks:function() {
+                    copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
                     subAction.prototype.addHooks.call(this);
                   }
                 }),
