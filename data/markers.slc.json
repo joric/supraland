@@ -1015,6 +1015,14 @@
     "cost": 40
   },
   {
+    "name": "CarryPipe_2",
+    "type": "CarryPipe_C",
+    "area": "Crash",
+    "lat": -7719.48388671875,
+    "lng": -8246.865234375,
+    "alt": 1476.575927734375
+  },
+  {
     "name": "Chest10",
     "type": "Chest_C",
     "area": "Crash",
@@ -4066,7 +4074,8 @@
     "lat": -6993.09423828125,
     "lng": 54857.61328125,
     "alt": 336.3084411621094,
-    "other_pipe": "Crash:PipesystemNew22_5"
+    "other_pipe": "Crash:PipesystemNew22_5",
+    "nearest_cap": "Crash:PipeCap5_5"
   },
   {
     "name": "PipesystemNew22_5",
@@ -5928,6 +5937,62 @@
     "lat": 17186.171875,
     "lng": 20759.955078125,
     "alt": 2364.6455078125
+  },
+  {
+    "name": "pipe_01_12",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -4597.53369140625,
+    "lng": -990.7726440429688,
+    "alt": 110.33354187011719
+  },
+  {
+    "name": "pipe_01_28",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -8678.3310546875,
+    "lng": -3017.785888671875,
+    "alt": 1564.1729736328125
+  },
+  {
+    "name": "pipe_01_36",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -5074.8662109375,
+    "lng": -990.7734985351562,
+    "alt": 108.88186645507812
+  },
+  {
+    "name": "pipe_01_37",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -5619.73876953125,
+    "lng": -3626.2060546875,
+    "alt": 1106.5291748046875
+  },
+  {
+    "name": "pipe_01_39",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -4742.16455078125,
+    "lng": -990.7734375,
+    "alt": 503.1427001953125
+  },
+  {
+    "name": "pipe_01_41",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -715.271728515625,
+    "lng": -2559.101806640625,
+    "alt": 197.83518981933594
+  },
+  {
+    "name": "pipe_01_42",
+    "type": "SnappyPipe_C",
+    "area": "Crash",
+    "lat": -368.6036071777344,
+    "lng": -1856.426513671875,
+    "alt": 165.453125
   },
   {
     "name": "SpawnEnemy3_2",

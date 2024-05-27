@@ -13635,7 +13635,8 @@
     "area": "Map",
     "lat": 37942.97265625,
     "lng": -19348.22265625,
-    "alt": 844.5838012695312
+    "alt": 844.5838012695312,
+    "other_cap": "Map:PipeCap14"
   },
   {
     "name": "PipeCap14",
@@ -13643,7 +13644,8 @@
     "area": "Map",
     "lat": 33291.49609375,
     "lng": -11313.72265625,
-    "alt": 956.9715576171875
+    "alt": 956.9715576171875,
+    "other_cap": "Map:PipeCap13"
   },
   {
     "name": "PipeCap15",
@@ -13651,7 +13653,8 @@
     "area": "Map",
     "lat": 1001.8740234375,
     "lng": -9021.7041015625,
-    "alt": 1174.731201171875
+    "alt": 1174.731201171875,
+    "other_cap": "Map:PipeCap16"
   },
   {
     "name": "PipeCap16",
@@ -13659,7 +13662,8 @@
     "area": "Map",
     "lat": -222.67648315429688,
     "lng": -15564.5390625,
-    "alt": 704.6788940429688
+    "alt": 704.6788940429688,
+    "other_cap": "Map:PipeCap15"
   },
   {
     "name": "PipeCap17",
@@ -13667,7 +13671,8 @@
     "area": "Map",
     "lat": 6075.8603515625,
     "lng": -3303.66259765625,
-    "alt": 588.470703125
+    "alt": 588.470703125,
+    "other_cap": "Map:PipeCap18"
   },
   {
     "name": "PipeCap18",
@@ -13675,7 +13680,8 @@
     "area": "Map",
     "lat": 13997.0615234375,
     "lng": -2818.434814453125,
-    "alt": 1306.0714111328125
+    "alt": 1306.0714111328125,
+    "other_cap": "Map:PipeCap17"
   },
   {
     "name": "PipeCap19",
@@ -13683,7 +13689,8 @@
     "area": "Map",
     "lat": 41645.7265625,
     "lng": -61356.796875,
-    "alt": 886.5266723632812
+    "alt": 886.5266723632812,
+    "other_cap": "Map:PipeCap20"
   },
   {
     "name": "PipeCap20",
@@ -13691,7 +13698,8 @@
     "area": "Map",
     "lat": 57765.93359375,
     "lng": -62132.546875,
-    "alt": 784.0267944335938
+    "alt": 784.0267944335938,
+    "other_cap": "Map:PipeCap19"
   },
   {
     "name": "PipeCap21_2",
@@ -13707,7 +13715,8 @@
     "area": "Map",
     "lat": -2637.1669921875,
     "lng": 69839.4296875,
-    "alt": 5770.134765625
+    "alt": 5770.134765625,
+    "other_cap": "Map:PipeCap23"
   },
   {
     "name": "PipeCap23",
@@ -13715,7 +13724,8 @@
     "area": "Map",
     "lat": -7998.51953125,
     "lng": 64554.55859375,
-    "alt": 5894.67822265625
+    "alt": 5894.67822265625,
+    "other_cap": "Map:PipeCap22"
   },
   {
     "name": "PipeCap24_2",
@@ -13723,7 +13733,8 @@
     "area": "Map",
     "lat": -1527.0,
     "lng": 83212.0,
-    "alt": 5054.0
+    "alt": 5054.0,
+    "other_cap": "Map:PipeCap25"
   },
   {
     "name": "PipeCap25",
@@ -13731,7 +13742,8 @@
     "area": "Map",
     "lat": -4143.443359375,
     "lng": 82687.203125,
-    "alt": 5737.39208984375
+    "alt": 5737.39208984375,
+    "other_cap": "Map:PipeCap24_2"
   },
   {
     "name": "PipeCap26",
@@ -13739,7 +13751,8 @@
     "area": "Map",
     "lat": 4864.4716796875,
     "lng": 81016.7421875,
-    "alt": 6852.99365234375
+    "alt": 6852.99365234375,
+    "other_cap": "Map:PipeCap27"
   },
   {
     "name": "PipeCap27",
@@ -13747,7 +13760,8 @@
     "area": "Map",
     "lat": 25510.626953125,
     "lng": 43074.0859375,
-    "alt": 1720.2435302734375
+    "alt": 1720.2435302734375,
+    "other_cap": "Map:PipeCap30"
   },
   {
     "name": "PipeCap28",
@@ -13755,7 +13769,8 @@
     "area": "Map",
     "lat": 13392.2333984375,
     "lng": -43471.80078125,
-    "alt": 1401.84619140625
+    "alt": 1401.84619140625,
+    "other_cap": "Map:PipeCap29"
   },
   {
     "name": "PipeCap29",
@@ -13763,7 +13778,8 @@
     "area": "Map",
     "lat": 13383.0361328125,
     "lng": -14577.3984375,
-    "alt": 1073.6905517578125
+    "alt": 1073.6905517578125,
+    "other_cap": "Map:PipeCap28"
   },
   {
     "name": "PipeCap2_2783",
@@ -13771,7 +13787,8 @@
     "area": "Map",
     "lat": -11445.072265625,
     "lng": 3485.644287109375,
-    "alt": 902.7562866210938
+    "alt": 902.7562866210938,
+    "other_cap": "Map:PipeCap_572"
   },
   {
     "name": "PipeCap30",
@@ -13779,7 +13796,8 @@
     "area": "Map",
     "lat": 32369.4140625,
     "lng": 70454.5,
-    "alt": 3420.647216796875
+    "alt": 3420.647216796875,
+    "other_cap": "Map:PipeCap27"
   },
   {
     "name": "PipeCap3_9330",
@@ -13795,7 +13813,8 @@
     "area": "Map",
     "lat": -16393.21875,
     "lng": -8139.65673828125,
-    "alt": -153.00547790527344
+    "alt": -153.00547790527344,
+    "other_cap": "Map:PipeCap5"
   },
   {
     "name": "PipeCap5",
@@ -13803,7 +13822,8 @@
     "area": "Map",
     "lat": -11821.9716796875,
     "lng": -10401.720703125,
-    "alt": -748.558837890625
+    "alt": -748.558837890625,
+    "other_cap": "Map:PipeCap4"
   },
   {
     "name": "PipeCap6_10455",
@@ -13827,7 +13847,16 @@
     "area": "Map",
     "lat": -11445.072265625,
     "lng": 58.13136672973633,
-    "alt": 820.5833129882812
+    "alt": 820.5833129882812,
+    "other_cap": "Map:PipeCap2_2783"
+  },
+  {
+    "name": "Pipesystem3_14392",
+    "type": "Pipesystem_C",
+    "area": "Map",
+    "lat": -7862.16552734375,
+    "lng": 15787.1259765625,
+    "alt": -3728.4326171875
   },
   {
     "name": "PipesystemNew10",
@@ -13944,7 +13973,8 @@
     "lat": -11441.89453125,
     "lng": 2661.948974609375,
     "alt": 737.302490234375,
-    "other_pipe": "Map:PipesystemNew22"
+    "other_pipe": "Map:PipesystemNew22",
+    "nearest_cap": "Map:PipeCap2_2783"
   },
   {
     "name": "PipesystemNew22",
@@ -13953,7 +13983,8 @@
     "lat": -11442.0263671875,
     "lng": 884.7308959960938,
     "alt": 661.5625,
-    "other_pipe": "Map:PipesystemNew21_1352"
+    "other_pipe": "Map:PipesystemNew21_1352",
+    "nearest_cap": "Map:PipeCap_572"
   },
   {
     "name": "PipesystemNew23",
@@ -13962,7 +13993,8 @@
     "lat": -16392.2890625,
     "lng": -8966.6103515625,
     "alt": -318.3667907714844,
-    "other_pipe": "Map:PipesystemNew24"
+    "other_pipe": "Map:PipesystemNew24",
+    "nearest_cap": "Map:PipeCap4"
   },
   {
     "name": "PipesystemNew24",
@@ -13971,7 +14003,8 @@
     "lat": -11988.1201171875,
     "lng": -9591.1025390625,
     "alt": -905.7933959960938,
-    "other_pipe": "Map:PipesystemNew23"
+    "other_pipe": "Map:PipesystemNew23",
+    "nearest_cap": "Map:PipeCap5"
   },
   {
     "name": "PipesystemNew25_14338",
@@ -14007,7 +14040,8 @@
     "lat": -7291.01025390625,
     "lng": 11730.39453125,
     "alt": -297.354248046875,
-    "other_pipe": "Map:PipesystemNew27"
+    "other_pipe": "Map:PipesystemNew27",
+    "nearest_cap": "Map:PipeCap11"
   },
   {
     "name": "PipesystemNew29",
@@ -14016,7 +14050,8 @@
     "lat": 42850.54296875,
     "lng": -31249.998046875,
     "alt": 663.28564453125,
-    "other_pipe": "Map:PipesystemNew30"
+    "other_pipe": "Map:PipesystemNew30",
+    "nearest_cap": "Map:PipeCap12"
   },
   {
     "name": "PipesystemNew30",
@@ -14043,7 +14078,8 @@
     "lat": 37145.75390625,
     "lng": -19066.091796875,
     "alt": 861.8736572265625,
-    "other_pipe": "Map:PipesystemNew33"
+    "other_pipe": "Map:PipesystemNew33",
+    "nearest_cap": "Map:PipeCap13"
   },
   {
     "name": "PipesystemNew33",
@@ -14052,7 +14088,8 @@
     "lat": 34021.78125,
     "lng": -11706.99609375,
     "alt": 791.1838989257812,
-    "other_pipe": "Map:PipesystemNew32"
+    "other_pipe": "Map:PipesystemNew32",
+    "nearest_cap": "Map:PipeCap14"
   },
   {
     "name": "PipesystemNew34",
@@ -14061,7 +14098,8 @@
     "lat": 879.0299682617188,
     "lng": -9787.6318359375,
     "alt": 852.052490234375,
-    "other_pipe": "Map:PipesystemNew35"
+    "other_pipe": "Map:PipesystemNew35",
+    "nearest_cap": "Map:PipeCap15"
   },
   {
     "name": "PipesystemNew35",
@@ -14070,7 +14108,8 @@
     "lat": 582.1702270507812,
     "lng": -15350.435546875,
     "alt": 594.0664672851562,
-    "other_pipe": "Map:PipesystemNew34"
+    "other_pipe": "Map:PipesystemNew34",
+    "nearest_cap": "Map:PipeCap16"
   },
   {
     "name": "PipesystemNew36",
@@ -14079,7 +14118,8 @@
     "lat": 6841.78759765625,
     "lng": -3426.50634765625,
     "alt": 265.7921447753906,
-    "other_pipe": "Map:PipesystemNew37"
+    "other_pipe": "Map:PipesystemNew37",
+    "nearest_cap": "Map:PipeCap17"
   },
   {
     "name": "PipesystemNew37",
@@ -14088,7 +14128,8 @@
     "lat": 13192.2138671875,
     "lng": -3032.54052734375,
     "alt": 1195.4588623046875,
-    "other_pipe": "Map:PipesystemNew36"
+    "other_pipe": "Map:PipesystemNew36",
+    "nearest_cap": "Map:PipeCap18"
   },
   {
     "name": "PipesystemNew38",
@@ -14097,7 +14138,8 @@
     "lat": -34030.0,
     "lng": -2077.0,
     "alt": -853.0,
-    "other_pipe": "Map:PipesystemNew39"
+    "other_pipe": "Map:PipesystemNew39",
+    "nearest_cap": "Map:PipeCap10_2"
   },
   {
     "name": "PipesystemNew39",
@@ -14133,7 +14175,8 @@
     "lat": 42457.390625,
     "lng": -61393.34765625,
     "alt": 672.6939086914062,
-    "other_pipe": "Map:PipesystemNew41"
+    "other_pipe": "Map:PipesystemNew41",
+    "nearest_cap": "Map:PipeCap19"
   },
   {
     "name": "PipesystemNew41",
@@ -14142,7 +14185,8 @@
     "lat": 57324.1328125,
     "lng": -61436.3984375,
     "alt": 622.5835571289062,
-    "other_pipe": "Map:PipesystemNew40"
+    "other_pipe": "Map:PipesystemNew40",
+    "nearest_cap": "Map:PipeCap20"
   },
   {
     "name": "PipesystemNew42",
@@ -14169,7 +14213,8 @@
     "lat": -1817.0162353515625,
     "lng": 69885.34375,
     "alt": 5593.80419921875,
-    "other_pipe": "Map:PipesystemNew47"
+    "other_pipe": "Map:PipesystemNew47",
+    "nearest_cap": "Map:PipeCap22"
   },
   {
     "name": "PipesystemNew45_2",
@@ -14178,7 +14223,8 @@
     "lat": -2521.0,
     "lng": 83210.0,
     "alt": 4854.525390625,
-    "other_pipe": "Map:PipesystemNew46"
+    "other_pipe": "Map:PipesystemNew46",
+    "nearest_cap": "Map:PipeCap24_2"
   },
   {
     "name": "PipesystemNew46",
@@ -14187,7 +14233,8 @@
     "lat": -3297.68603515625,
     "lng": 82735.65625,
     "alt": 5773.17431640625,
-    "other_pipe": "Map:PipesystemNew45_2"
+    "other_pipe": "Map:PipesystemNew45_2",
+    "nearest_cap": "Map:PipeCap25"
   },
   {
     "name": "PipesystemNew47",
@@ -14196,7 +14243,8 @@
     "lat": -8342.90234375,
     "lng": 63801.08984375,
     "alt": 5754.9111328125,
-    "other_pipe": "Map:PipesystemNew44"
+    "other_pipe": "Map:PipesystemNew44",
+    "nearest_cap": "Map:PipeCap23"
   },
   {
     "name": "PipesystemNew48",
@@ -14205,7 +14253,8 @@
     "lat": 5497.263671875,
     "lng": 80249.3203125,
     "alt": 6656.8330078125,
-    "other_pipe": "Map:PipesystemNew49"
+    "other_pipe": "Map:PipesystemNew49",
+    "nearest_cap": "Map:PipeCap26"
   },
   {
     "name": "PipesystemNew49",
@@ -14214,7 +14263,8 @@
     "lat": 24648.08203125,
     "lng": 43441.53515625,
     "alt": 1334.4451904296875,
-    "other_pipe": "Map:PipesystemNew54"
+    "other_pipe": "Map:PipesystemNew54",
+    "nearest_cap": "Map:PipeCap27"
   },
   {
     "name": "PipesystemNew50",
@@ -14241,7 +14291,8 @@
     "lat": 13389.0546875,
     "lng": -42648.11328125,
     "alt": 1236.392333984375,
-    "other_pipe": "Map:PipesystemNew53"
+    "other_pipe": "Map:PipesystemNew53",
+    "nearest_cap": "Map:PipeCap28"
   },
   {
     "name": "PipesystemNew53",
@@ -14250,7 +14301,8 @@
     "lat": 13386.21484375,
     "lng": -15401.0888671875,
     "alt": 908.2366943359375,
-    "other_pipe": "Map:PipesystemNew52"
+    "other_pipe": "Map:PipesystemNew52",
+    "nearest_cap": "Map:PipeCap29"
   },
   {
     "name": "PipesystemNew54",
@@ -14259,7 +14311,8 @@
     "lat": 31564.310546875,
     "lng": 69891.2421875,
     "alt": 3170.859375,
-    "other_pipe": "Map:PipesystemNew49"
+    "other_pipe": "Map:PipesystemNew49",
+    "nearest_cap": "Map:PipeCap30"
   },
   {
     "name": "PipesystemNew5_822",

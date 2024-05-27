@@ -91,6 +91,7 @@ marker_types = {
   'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
   'HealingStation_C','MatchBox_C','EnemySpawn1_C','EnemySpawn2_C','EnemySpawn3_C','PipeCap_C','Lift1_C','PipesystemNew_C',
   'PipesystemNewDLC_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C', 'Supraball_C','Trash_C','KeyLock_C',
+  'SnappyPipe_C','CarryPipe_C','Pipesystem_C'
 }
 
 price_types = {
@@ -207,14 +208,64 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
         print('loading "%s" ...' % path)
         parse_json(json.load(open(path)), area)
 
-    calc_targets(data)
+    calc_pads(data)
+    calc_pipes(data)
 
     print('collected %d markers' % (len(data)))
     json_file = 'markers.' + game + '.json'
     print('writing "%s" ...' % json_file)
     json.dump(data, open(json_file,'w'), indent=2)
 
-def calc_targets(data):
+def calc_pipes(data):
+    # I could not find hierarchy connection between pipe caps and pipe systems
+    # so I decided to search for the nearest pipe cap
+    # It should work fine most of the time
+    allowed_points = lambda o: o['type'] in ('PipeCap_C')
+    points = [(o['lng'], o['lat'], o['alt']) for o in data if allowed_points(o)]
+    data_indices = [i for i,o in enumerate(data) if allowed_points(o)]
+    print('collected', len(points), 'pipe caps, calculating links...')
+    tree = KDTree(points)
+
+    pipes = {}
+    lookup = {}
+    cap_indices = {}
+
+    # update pipe system, find nearest caps
+    for i,o in enumerate(data):
+        if o['type'] not in ('PipesystemNew_C','PipesystemNewDLC_C'):
+            continue
+        x,y,z = o['lng'],o['lat'],o['alt']
+
+        query_point = [x,y,z]
+        _, indices = tree.query([query_point], k=3)
+        indices = indices[0]
+        j = data_indices[indices[0]]
+        p = data[j]
+        dist = (Vector((x,y,z))-Vector((p['lng'], p['lat'], p['alt']))).length
+        if dist<=1500:
+            nearest_cap = p['area'] + ':' + p['name']
+            cap_indices[nearest_cap] = j
+            data[i].update({'nearest_cap':nearest_cap})
+            a = o['area'] + ':' + o['name']
+            lookup[a] = o
+
+    # update caps with cross-references
+    # not all pipes have caps, unfortunately
+    # some only have level geometry that's not in the classes
+    for i,o in enumerate(data):
+        if o['type'] not in ('PipesystemNew_C','PipesystemNewDLC_C'):
+            continue
+        # get nearest cap, get other pipe, update other pipe's cap
+        if 'nearest_cap' in o and 'other_pipe' in o:
+            if nearest_cap := o.get('nearest_cap'):
+                if other_pipe := o.get('other_pipe'):
+                    if p:=lookup.get(other_pipe):
+                        if other_cap := p.get('nearest_cap'):
+                            if j := cap_indices.get(nearest_cap):
+                                data[j].update({'other_cap': other_cap})
+
+
+def calc_pads(data):
     # calculates target altitude from the jump pad's velocity data
     # builds 3d terrain from selected points (uses jump pad locations by default)
     # traces parabolic path and find z of an intersection with a plane defined by 3 closest points

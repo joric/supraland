@@ -358,7 +358,7 @@ function loadMap() {
   function getMarkerColor(o) {
     if (o.type == 'Jumppad_C') {
       return (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
-    } else if (o.other_pipe) {
+    } else if (o.type.startsWith('Pipe')) {
       return 'yellowgreen';
     }
     return '#888';
@@ -371,9 +371,14 @@ function loadMap() {
       .then((j) => {
         let objects = {};
         let titles = {};
-        for (o of j) {
 
-          let alt = o.area + ':' + o.name;
+        // collect objects for cross-references
+        for (o of j) {
+          let id = o.area + ':' + o.name;
+          objects[id] = o;
+        }
+
+        for (const[id,o] of Object.entries(objects)) {
 
           // skip markers out of bounds (e.g. "PipesystemNew_AboveSewer" in DLC2_Area0)
           let [[top,left],[bottom,right]] = mapBounds;
@@ -381,15 +386,11 @@ function loadMap() {
             continue;
           }
 
-          // skip PipeCap_C (decorative) until we find a reliable link to the pipe system
-          if (o.type == 'PipeCap_C') {
-            continue;
-          }
-
           // check if class is in the types list
           if (c = classes[o.type]) {
             let text = ''; // set it later in onPopupOpen
 
+            let alt = id;
             let title = o.name;
             let defaultIcon = 'question_mark';
             let defaultLayer = 'misc';
@@ -404,16 +405,49 @@ function loadMap() {
 
             titles[title] = title;
 
-            // collect objects for the 2-nd pass
-            objects[alt] = o;
 
-            if ({'Jumppad_C':1,'PipesystemNew_C':1,'PipesystemNewDLC_C':1}[o.type]) {
-              // add these markers in 2nd pass for z-index to work
+            if ( o.type == 'Jumppad_C' || o.type.startsWith('Pipesystem') ) {
 
-              let layer = o.type == 'Jumppad_C' ? 'jumppads' : 'pipesys';
-              let line = L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
+              let a = o; // start object
+
+              if (o.type.startsWith('Pipesystem')) {
+                if (o.nearest_cap) {
+                  a = objects[o.nearest_cap];
+                  alt = a.area + ':' + a.name;
+                } else {
+                  alt = ''; // only mark pipes that have caps
+                }
+              }
+
+              // marker
+              let line = L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
                 .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
               line._path && line._path.setAttribute('alt', alt);
+
+              // pad line
+              if (o.type == 'Jumppad_C' && o.target) {
+                let layer = 'jumppads';
+                if (r = o.direction) {
+                  let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
+                  line._path && line._path.setAttribute('alt', alt);
+                }
+              }
+
+              // pipe line
+              if (o.type.startsWith('Pipesystem')) {
+                let layer = 'pipecaps';
+
+                if (b = objects[o.other_pipe]) {
+
+                  if (b.nearest_cap) {
+                    b = objects[b.nearest_cap];
+                    alt = b.area + ':' + b.name;
+                  }
+
+                  let line = L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
+                  line._path && line._path.setAttribute('alt', alt);
+                }
+              }
 
             } else {
 
@@ -476,36 +510,7 @@ function loadMap() {
                 marker.openPopup();
             }).addTo(map)
           }
-
-        } // end of loop
-
-        // pass 2 (pads and pipes)
-        // need to add shadows / investigate issue with shadows, they should be drawn in order
-        // there's no stroke property for lines, so it needs thicker shadow lines
-        // need to add title as a single space, so leaflet-search doesn't crash and it doesn't appear in search
-        for (const[name,o] of Object.entries(objects)) {
-          let alt = o.area + ':' + o.name
-          let color = getMarkerColor(o);
-
-          if (o.type == 'Jumppad_C' && o.target) {
-            let layer = 'jumppads';
-            if (r = o.direction) {
-              let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
-              line._path && line._path.setAttribute('alt', alt);
-            }
-          }
-
-          // pipes
-          if (o.other_pipe) {
-            let layer = 'pipesys';
-            if (p = objects[o.other_pipe]) {
-              let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
-              line._path && line._path.setAttribute('alt', alt);
-            }
-          }
-
-        } // end of pass 2
-
+        } // end of main loop
 
         markItems();
     });
@@ -770,14 +775,6 @@ window.loadSaveFile = function () {
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
-
-            // do not mark jumppads and pipes for now
-            if (name.includes('Jumppad') || name.includes('Pipesystem')) {
-              //continue; // let's try inverting css rules for paths so activated are brighter
-
-              console.log('activating', area +':' + name);
-            }
-
             markItemFound(area + ':' + name, true, false);
           }
         }
