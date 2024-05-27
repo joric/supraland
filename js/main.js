@@ -386,17 +386,24 @@ function loadMap() {
             continue;
           }
 
-          // check if class is in the types list
-          if (c = classes[o.type]) {
-            let text = ''; // set it later in onPopupOpen
+          function hidden(type) {
+            return ['Jumppillow_C','EnemySpawner_C','PipeCap_C'].includes(type);
+          }
 
+          // check if class is in the types list
+          if (!hidden(o.type)) {
+            let c = classes[o.type];
+            let text = ''; // set it later in onPopupOpen
             let alt = id;
             let title = o.name;
             let defaultIcon = 'question_mark';
             let defaultLayer = 'misc';
-            let icon = c.icon || defaultIcon;
-            let layer = layers[c.layer] ? c.layer : defaultLayer;
+            let icon = c && c.icon || defaultIcon;
+            let layer = c && c.layer || defaultLayer;
             let color = getMarkerColor(o);
+            if (!layers[layer]) {
+              layer = defaultLayer;
+            }
 
             // can't have duplicate titles in search
             if (titles[title]) {
@@ -404,7 +411,6 @@ function loadMap() {
             }
 
             titles[title] = title;
-
 
             if ( o.type == 'Jumppad_C' || o.type.startsWith('Pipesystem') ) {
 

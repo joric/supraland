@@ -61,38 +61,32 @@ config = {
 }
 
 marker_types = {
-  'BP_A3_StrengthQuest_C', 'BP_BoneDetector_C', 'BP_BuyBeamElasticity_C', 'BP_BuyBoomerAxe_C', 'BP_BuyBoomeraxeDistance_C',
-  'BP_BuyBoomeraxePenetration_C', 'BP_BuyBoomeraxeThrowSpeed_C', 'BP_BuyFireGunAutoRecharge_C', 'BP_BuyGunCapacity+3shots_C',
-  'BP_BuyGunDamage+100pct_C', 'BP_BuyGunDuration+2s_C', 'BP_BuyGunRechargeTime-50pct_C', 'BP_CookableMeat_C',
-  'BP_DoubleHealthLoot_C', 'BP_EngagementCup_Base_C', 'BP_MonsterChest_C', 'BP_PickaxeDamage+1_C', 'BP_PurchaseHealth+1_C',
-  'BP_PurchaseJumpHeightPlus_C', 'BP_PurchaseSpeedx2_C', 'BP_Purchase_Crouch_C', 'BP_Purchase_FasterPickaxe_C',
-  'BP_Purchase_Pickaxe_Range+_C', 'BP_Purchase_TranslocatorCooldown_C', 'BP_TrophyDetector_C', 'BarrelColor_C', 'BarrelRed_C',
-  'Battery_C', 'Bones_C', 'BuyArmor1_C', 'BuyBeltRepel_C', 'BuyBelt_C', 'BuyBelt_DLC2_C', 'BuyBrokenPipeDetector_C',
-  'BuyChestDetectorRadius_C', 'BuyChestDetector_C', 'BuyCoinMagnet_C', 'BuyCritChance+5_C', 'BuyCrystal_C', 'BuyDoubleJump_C',
-  'BuyElectricGun_C', 'BuyEnemiesLoot_C', 'BuyFireGun_C', 'BuyForceBeamGold_C', 'BuyForceBeam_C', 'BuyForceBlockTelefrag_C',
-  'BuyForceBlock_C', 'BuyForceCubeBeam_C', 'BuyForceCubeStompGrave3_C', 'BuyForceCubeStompJump_C', 'BuyForceCubeStomp_C',
-  'BuyGraveDetector_C', 'BuyGun1_C', 'BuyGunAltDamagex2_C', 'BuyGunAlt_C', 'BuyGunCoin_C', 'BuyGunComboDamage+25_C',
-  'BuyGunCriticalDamageChance_C', 'BuyGunCriticalDamage_C', 'BuyGunDamage+15_C', 'BuyGunDamage+1_C', 'BuyGunDamage+5_C',
-  'BuyGunHoly1_C', 'BuyGunHoly2_C', 'BuyGunRefillSpeed+66_C', 'BuyGunRefireRate50_C', 'BuyGunSpeedx2_C', 'BuyGunSplashDamage_C',
-  'BuyHealth+15_C', 'BuyHealth+2_C', 'BuyHealth+5_C', 'BuyHealthRegenMax+1_C', 'BuyHealthRegenMax10_C', 'BuyHealthRegenMax15_C',
-  'BuyHealthRegenMax5_C', 'BuyHealthRegenSpeed_C', 'BuyHealthRegen_C', 'BuyHeartLuck_C', 'BuyJumpHeightPlus_C', 'BuyJumpIncrease_C',
-  'BuyMoreLoot_C', 'BuyNumberRising_C', 'BuyQuintupleJump_C', 'BuyShieldBreaker_C', 'BuyShowHealthbar_C', 'BuyShowProgress_C',
-  'BuySilentFeet_C', 'BuySmashdownDamage+100_C', 'BuySmashdownDamage+1_C', 'BuySmashdownDamage+33_C', 'BuySmashdownDamage+3_C',
-  'BuySmashdownRadius+5_C', 'BuySmashdownRadius+_C', 'BuySmashdown_C', 'BuySpeedx15_C', 'BuySpeedx2_C', 'BuyStats_C', 'BuySword2_C',
-  'BuySwordCriticalDamageChance_C', 'BuySwordCriticalDamage_C', 'BuySwordDamage+02_C', 'BuySwordDamage+1_C', 'BuySwordDamage+3_C',
-  'BuySwordDoorKnocker_C', 'BuySwordHoly1_C', 'BuySwordHoly2_C', 'BuySwordRange25_C', 'BuySwordRefireRate-33_C', 'BuySword_C',
-  'BuyTranslocatorCoolDownHalf_C', 'BuyTranslocatorDamagex3_C', 'BuyTranslocatorModule_C', 'BuyTranslocatorShotForce_C',
-  'BuyTranslocatorWeight_C', 'BuyTranslocator_C', 'BuyTranslocator_Fake_C', 'BuyTripleJump_C', 'BuyUpgradeChestNum_C',
-  'BuyUpgradeGraveNum_C', 'BuyWalletx15_C', 'BuyWalletx2_C', 'Chest_C', 'CoinBig_C', 'CoinRed_C', 'Coin_C', 'DeadHero_C',
-  'DestroyablePots_C', 'EnemySpawner_C', 'Enemyspawner2_C', 'ExplodingBattery_C', 'GoldBlock_C', 'GoldNugget_C', 'Jumppad_C',
-  'Jumppillow_C', 'Key_C', 'KeycardColor_C', 'LotsOfCoins10_C', 'LotsOfCoins15_C', 'LotsOfCoins30_C', 'LotsOfCoins50_C',
-  'LotsOfCoins5_C', 'LotsofCoins200_C', 'MinecraftBrick_C', 'MoonTake_C', 'PlayerStart', 'Plumbus_C', 'Purchase_DiamondPickaxe_C',
-  'Purchase_ForceBeam_C', 'Purchase_ForceCube_C', 'Purchase_IronPickaxe_C', 'Purchase_StonePickaxe_C', 'Purchase_WoodPickaxe_C',
-  'Scrap_C', 'SlumBurningQuest_C', 'SpawnEnemy3_C', 'Stone_C', 'UpgradeHappiness_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
-  'HealingStation_C','MatchBox_C','EnemySpawn1_C','EnemySpawn2_C','EnemySpawn3_C','PipeCap_C','Lift1_C','PipesystemNew_C',
-  'PipesystemNewDLC_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C', 'Supraball_C','Trash_C','KeyLock_C',
-  'SnappyPipe_C','CarryPipe_C','Pipesystem_C'
+  'PlayerStart','Jumppad_C','Bones_C','Chest_C'
+  'BP_A3_StrengthQuest_C',
+  'BarrelColor_C', 'BarrelRed_C','Battery_C', 'Lift1_C', 'DeadHero_C',
+  'ExplodingBattery_C', 'GoldBlock_C', 'GoldNugget_C', 'Jumppillow_C', 
+  'MoonTake_C', 'Plumbus_C',
+  'SlumBurningQuest_C', 'Stone_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
+  'MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C', 'Supraball_C','Trash_C',
+  'Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','TalkingSpeaker_C'
+  # slc
+  'Scrap_C',
+  # siu
+  'MinecraftBrick_C', 'HealingStation_C', 'BP_EngagementCup_Base_C',
 }
+
+starts_with = {
+    'Pipesystem','Buy','BP_Buy','BP_Purchase','Purchase','Upgrade','Button','SmallButton','Coin',
+    'LightTrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key'
+}
+
+ends_with = {
+    'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C'
+}
+
+contains = {
+}
+
 
 price_types = {
     'EPriceType::NewEnumerator5':'scrap',
@@ -153,7 +147,14 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 pipes[ b ] = a
 
         for o in j:
-            if not ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types)):
+            allowed_items = (
+                ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types))
+                or any(o['Type'].startswith(s) for s in starts_with)
+                or any(o['Type'].endswith(s) for s in ends_with)
+                or any(o['Type'].contains(s) for s in contains)
+            )
+
+            if not allowed_items:
                 continue
 
             def get_matrix(o, matrix=Matrix.Identity(4)):
@@ -163,10 +164,11 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
                 for parent in ['RootObject', 'RootComponent', 'DefaultSceneRoot', 'AttachParent']:
                     node = p.get(parent,{})
-                    if ref := node.get('OuterIndex',{}).get('ObjectName'):
-                        key = ':'.join((node.get('ObjectName',''),ref))
-                        if key in outer:
-                            return get_matrix(outer[key], matrix)
+                    if type(node) is dict:
+                        if ref := node.get('OuterIndex',{}).get('ObjectName'):
+                            key = ':'.join((node.get('ObjectName',''),ref))
+                            if key in outer:
+                                return get_matrix(outer[key], matrix)
 
                 return matrix
 
@@ -189,6 +191,19 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'obsidian', p.get('bObsidian'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
+
+
+            res = []
+            for section in ('Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate'):
+                if actors := p.get(section):
+                    if type(actors) is dict:
+                        actors = [actors]
+                    for a in actors:
+                        if type(a) is dict:
+                            if 'OuterIndex' in a and 'ObjectName' in a:
+                                res.append(':'.join((a['OuterIndex']['Outer'],a['ObjectName'])))
+                    optKey(data[-1], 'actors', res)
+
 
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity'))

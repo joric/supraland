@@ -1,5 +1,176 @@
 [
   {
+    "name": "BallButton10_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -8816.89453125,
+    "lng": 69417.859375,
+    "alt": 5212.9287109375,
+    "actors": [
+      "Map:DoorStone3_2"
+    ]
+  },
+  {
+    "name": "BallButton11_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 25364.8671875,
+    "lng": 53504.20703125,
+    "alt": 1507.3446044921875,
+    "actors": [
+      "Map:Door137_2",
+      "Map:Door138",
+      "Map:TutorialButtons34"
+    ]
+  },
+  {
+    "name": "BallButton12",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 25089.384765625,
+    "lng": 48131.09375,
+    "alt": 1250.61865234375,
+    "actors": [
+      "Map:Door138"
+    ]
+  },
+  {
+    "name": "BallButton13_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 9591.6337890625,
+    "lng": 52187.56640625,
+    "alt": 3283.4970703125,
+    "actors": [
+      "Map:Killvolume5",
+      "Map:TutorialButtons35",
+      "Map:PlayerForceLook24_2"
+    ]
+  },
+  {
+    "name": "BallButton14",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 25561.923828125,
+    "lng": 55467.16796875,
+    "alt": 1530.7967529296875,
+    "actors": [
+      "Map:Door139_2",
+      "Map:TutorialButtons36"
+    ]
+  },
+  {
+    "name": "BallButton15",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -8979.1201171875,
+    "lng": 66469.1953125,
+    "alt": 5454.47021484375,
+    "actors": [
+      "Map:TeslaCoil31"
+    ]
+  },
+  {
+    "name": "BallButton2_3626",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -43144.05078125,
+    "lng": -21110.548828125,
+    "alt": -71.87918853759766,
+    "actors": [
+      "Map:Jumppad34_2191"
+    ]
+  },
+  {
+    "name": "BallButton3_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -45569.3359375,
+    "lng": -33820.51953125,
+    "alt": -570.5507202148438,
+    "actors": [
+      "Map:Door108"
+    ]
+  },
+  {
+    "name": "BallButton4_637",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -42160.625,
+    "lng": -48487.78125,
+    "alt": -1767.9593505859375,
+    "actors": [
+      "Map:DoorPhysical4_1133"
+    ]
+  },
+  {
+    "name": "BallButton5",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -41572.16015625,
+    "lng": -51456.17578125,
+    "alt": -1706.6500244140625,
+    "actors": [
+      "Map:DoorPhysical5"
+    ]
+  },
+  {
+    "name": "BallButton6_2071",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -51418.125,
+    "lng": -55362.0390625,
+    "alt": -799.037353515625,
+    "actors": [
+      "Map:Door57"
+    ]
+  },
+  {
+    "name": "BallButton8_852",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 43219.3203125,
+    "lng": -7350.13330078125,
+    "alt": 257.8887939453125,
+    "actors": [
+      "Map:Door75_962"
+    ]
+  },
+  {
+    "name": "BallButton9_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 32418.9375,
+    "lng": 72922.65625,
+    "alt": 2998.89990234375,
+    "actors": [
+      "Map:DoorInverted2_2"
+    ]
+  },
+  {
+    "name": "BallButton_377",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": -45863.41796875,
+    "lng": -41499.5546875,
+    "alt": -2450.98095703125,
+    "actors": [
+      "Map:Door46",
+      "Map:Door45"
+    ]
+  },
+  {
+    "name": "ButtonFloor6_2",
+    "type": "BallButton_C",
+    "area": "Map",
+    "lat": 9732.541015625,
+    "lng": 42639.5234375,
+    "alt": 3866.272216796875,
+    "actors": [
+      "Map:PipeCap7_2"
+    ]
+  },
+  {
     "name": "BarrelClosed2_2",
     "type": "BarrelClosed_Blueprint_C",
     "area": "Map",
@@ -158,6 +329,887 @@
     "lat": 21380.775390625,
     "lng": 21727.806640625,
     "alt": 836.525390625
+  },
+  {
+    "name": "BigButton11_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -23362.412109375,
+    "lng": -30401.47265625,
+    "alt": -1182.1170654296875,
+    "actors": [
+      "Map:Door18_9038"
+    ]
+  },
+  {
+    "name": "BigButton13_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 38619.98828125,
+    "lng": 80885.8671875,
+    "alt": 1646.912353515625,
+    "actors": [
+      "Map:SupraballCanon12"
+    ]
+  },
+  {
+    "name": "BigButton15_1598",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 32178.67578125,
+    "lng": 8537.7890625,
+    "alt": -1110.844482421875,
+    "actors": [
+      "Map:Jumppad49_2147"
+    ]
+  },
+  {
+    "name": "BigButton16_5616",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -28170.943359375,
+    "lng": -1583.5634765625,
+    "alt": 95.01557922363281,
+    "actors": [
+      "Map:Jumppad33_1894"
+    ]
+  },
+  {
+    "name": "BigButton18_26904",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -30638.8515625,
+    "lng": 21837.6640625,
+    "alt": -1423.592529296875,
+    "actors": [
+      "Map:Jumppad36_6503"
+    ]
+  },
+  {
+    "name": "BigButton19_29021",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -336.6234436035156,
+    "lng": 8884.736328125,
+    "alt": 75.33381652832031,
+    "actors": [
+      "Map:Door43"
+    ]
+  },
+  {
+    "name": "BigButton20",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -48.749908447265625,
+    "lng": 8499.3359375,
+    "alt": 196.9061737060547,
+    "actors": [
+      "Map:DoorInverted_612"
+    ]
+  },
+  {
+    "name": "BigButton21",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -2741.143310546875,
+    "lng": 47832.34375,
+    "alt": 3141.174560546875,
+    "actors": [
+      "Map:Jumppad84"
+    ]
+  },
+  {
+    "name": "BigButton22_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 9986.361328125,
+    "lng": 47797.25390625,
+    "alt": 3486.6455078125,
+    "actors": [
+      "Map:Door120"
+    ]
+  },
+  {
+    "name": "BigButton24_3628",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -28169.291015625,
+    "lng": -38455.234375,
+    "alt": 529.8975219726562,
+    "actors": [
+      "Map:Jumppad29_13926"
+    ]
+  },
+  {
+    "name": "BigButton25_1850",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 28763.751953125,
+    "lng": -7122.0244140625,
+    "alt": 255.56216430664062,
+    "actors": [
+      "Map:Door32_1562"
+    ]
+  },
+  {
+    "name": "BigButton26_3603",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 53358.46875,
+    "lng": -42742.41015625,
+    "alt": 1017.8441162109375,
+    "actors": [
+      "Map:Lift13_1871",
+      "Map:WifiwafeE14"
+    ]
+  },
+  {
+    "name": "BigButton27_1892",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -22352.40234375,
+    "lng": -2177.0654296875,
+    "alt": -2286.020263671875,
+    "actors": [
+      "Map:Door80_2060"
+    ]
+  },
+  {
+    "name": "BigButton28_884",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 14860.0,
+    "lng": 13520.0,
+    "alt": 940.0,
+    "actors": [
+      "Map:Jumppad63"
+    ]
+  },
+  {
+    "name": "BigButton30",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 13670.0,
+    "lng": 11500.0,
+    "alt": 1800.0,
+    "actors": [
+      "Map:Jumppad62_2279"
+    ]
+  },
+  {
+    "name": "BigButton31_1332",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 61254.9296875,
+    "lng": -42836.16796875,
+    "alt": 1030.55908203125,
+    "actors": [
+      "Map:Jumppad71_9499"
+    ]
+  },
+  {
+    "name": "BigButton32_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 11962.5087890625,
+    "lng": 22543.673828125,
+    "alt": 424.0427551269531,
+    "actors": [
+      "Map:RingColorer6"
+    ]
+  },
+  {
+    "name": "BigButton33",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 9011.4599609375,
+    "lng": 48173.38671875,
+    "alt": 3486.6455078125,
+    "actors": [
+      "Map:Door119"
+    ]
+  },
+  {
+    "name": "BigButton35_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -29.0,
+    "lng": 82499.0,
+    "alt": 4728.0,
+    "actors": [
+      "Map:PlayerForceLook20_2",
+      "Map:Enemy9_2",
+      "Map:Enemy10",
+      "Map:MusicChangeVolume43"
+    ]
+  },
+  {
+    "name": "BigButton37_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 14289.9287109375,
+    "lng": -45653.55078125,
+    "alt": 963.3680419921875,
+    "actors": [
+      "Map:Jumppad92"
+    ]
+  },
+  {
+    "name": "BigButton38",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 15660.9716796875,
+    "lng": -45653.55078125,
+    "alt": 963.3680419921875,
+    "actors": [
+      "Map:Jumppad21_2"
+    ]
+  },
+  {
+    "name": "BigButton39_2",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 13099.775390625,
+    "lng": 43012.67578125,
+    "alt": 3064.68310546875,
+    "actors": [
+      "Map:FallingWaterTrigger_2"
+    ]
+  },
+  {
+    "name": "BigButton3_1248",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -20960.0,
+    "lng": 23870.0,
+    "alt": -420.0,
+    "actors": [
+      "Map:Door2_785"
+    ]
+  },
+  {
+    "name": "BigButton40",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -21498.41796875,
+    "lng": -24959.326171875,
+    "alt": -365.0561828613281,
+    "actors": [
+      "Map:Door136"
+    ]
+  },
+  {
+    "name": "BigButton41",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -24604.0390625,
+    "lng": 20165.41015625,
+    "alt": 1773.6258544921875,
+    "actors": [
+      "Map:WoodBlockLift_2"
+    ]
+  },
+  {
+    "name": "BigButton42",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -22524.56640625,
+    "lng": -26533.63671875,
+    "alt": -27.4727783203125,
+    "actors": [
+      "Map:Door136"
+    ]
+  },
+  {
+    "name": "BigButton4_6882",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -27434.544921875,
+    "lng": 21890.7265625,
+    "alt": 93.40695190429688,
+    "actors": [
+      "Map:Door4_642"
+    ]
+  },
+  {
+    "name": "BigButton5_14361",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -23634.9140625,
+    "lng": 1991.0528564453125,
+    "alt": -2331.45751953125,
+    "actors": [
+      "Map:Door3_892"
+    ]
+  },
+  {
+    "name": "BigButton6_3068",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -39618.8203125,
+    "lng": -5552.8984375,
+    "alt": 559.6793823242188,
+    "actors": [
+      "Map:Door9"
+    ]
+  },
+  {
+    "name": "BigButton7_13333",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": 1240.0,
+    "lng": 10601.3349609375,
+    "alt": 1412.5916748046875,
+    "actors": [
+      "Map:Door7_6018"
+    ]
+  },
+  {
+    "name": "BigButton8_2466",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -38910.15234375,
+    "lng": 4990.20947265625,
+    "alt": -236.68487548828125,
+    "actors": [
+      "Map:Jumppad11_1342",
+      "Map:ShowTJBarrelGuy"
+    ]
+  },
+  {
+    "name": "BigButton9_408",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -11878.3798828125,
+    "lng": -24060.861328125,
+    "alt": -1803.5438232421875,
+    "actors": [
+      "Map:Jumppad15_762"
+    ]
+  },
+  {
+    "name": "BigButton_617",
+    "type": "BigButton_C",
+    "area": "Map",
+    "lat": -27745.798828125,
+    "lng": 6584.30517578125,
+    "alt": 326.87774658203125,
+    "actors": [
+      "Map:Jumppad3_522",
+      "Map:Jumppad6"
+    ]
+  },
+  {
+    "name": "Button10_1374",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -1085.3699951171875,
+    "lng": 12050.3759765625,
+    "alt": 916.7136840820312
+  },
+  {
+    "name": "Button11",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -47239.4140625,
+    "lng": -10720.1630859375,
+    "alt": 231.55264282226562
+  },
+  {
+    "name": "Button12",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -22836.88671875,
+    "lng": -36828.89453125,
+    "alt": 505.8309020996094
+  },
+  {
+    "name": "Button13_1692",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -48827.73046875,
+    "lng": -49871.59375,
+    "alt": -820.4249877929688
+  },
+  {
+    "name": "Button14",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -46158.18359375,
+    "lng": -54845.1171875,
+    "alt": -820.4249877929688
+  },
+  {
+    "name": "Button15_1162",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -27973.6875,
+    "lng": 3613.947265625,
+    "alt": 1486.5235595703125
+  },
+  {
+    "name": "Button16",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40297.78515625,
+    "lng": -52432.7109375,
+    "alt": -375.1980285644531
+  },
+  {
+    "name": "Button17_1652",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -5212.15576171875,
+    "lng": -34315.83984375,
+    "alt": 1356.215576171875
+  },
+  {
+    "name": "Button18_1092",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 15988.83203125,
+    "lng": -12106.5859375,
+    "alt": 890.292724609375
+  },
+  {
+    "name": "Button19",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 22251.015625,
+    "lng": 6046.3125,
+    "alt": 1680.460205078125
+  },
+  {
+    "name": "Button20",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24136.185546875,
+    "lng": -27307.365234375,
+    "alt": 441.3703308105469
+  },
+  {
+    "name": "Button21",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24992.064453125,
+    "lng": -26838.220703125,
+    "alt": 441.370849609375
+  },
+  {
+    "name": "Button22",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24215.18359375,
+    "lng": -26653.091796875,
+    "alt": 441.3712158203125
+  },
+  {
+    "name": "Button23",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24730.671875,
+    "lng": -27540.9609375,
+    "alt": 441.37066650390625
+  },
+  {
+    "name": "Button24_792",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 16492.03125,
+    "lng": 10197.814453125,
+    "alt": 30.0
+  },
+  {
+    "name": "Button25_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 37569.73046875,
+    "lng": -60315.7109375,
+    "alt": 877.3623657226562
+  },
+  {
+    "name": "Button26_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 33189.0,
+    "lng": 26345.0,
+    "alt": 1166.0
+  },
+  {
+    "name": "Button27",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24921.0,
+    "lng": 26727.0,
+    "alt": 1390.0
+  },
+  {
+    "name": "Button28",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 24540.0,
+    "lng": 25062.0,
+    "alt": 1052.0
+  },
+  {
+    "name": "Button29",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40463.7109375,
+    "lng": -25099.982421875,
+    "alt": 417.6410217285156
+  },
+  {
+    "name": "Button2_800",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -27731.822265625,
+    "lng": 23350.0,
+    "alt": 5950.0
+  },
+  {
+    "name": "Button30",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40463.7109375,
+    "lng": -26042.3046875,
+    "alt": 417.6410217285156
+  },
+  {
+    "name": "Button31",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40789.73046875,
+    "lng": -25591.244140625,
+    "alt": 417.6413269042969
+  },
+  {
+    "name": "Button32",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40105.3203125,
+    "lng": -25591.244140625,
+    "alt": 417.6387023925781
+  },
+  {
+    "name": "Button33_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -17469.6953125,
+    "lng": 42007.40234375,
+    "alt": 1730.24658203125
+  },
+  {
+    "name": "Button34",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -19662.939453125,
+    "lng": 42391.05859375,
+    "alt": 1242.6968994140625
+  },
+  {
+    "name": "Button36",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40127.2890625,
+    "lng": -28656.234375,
+    "alt": -199.8069305419922
+  },
+  {
+    "name": "Button37_4",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 33204.21484375,
+    "lng": 66938.1328125,
+    "alt": 2074.27685546875
+  },
+  {
+    "name": "Button38",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -40598.93359375,
+    "lng": -285.75537109375,
+    "alt": 760.21923828125
+  },
+  {
+    "name": "Button39_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 17904.875,
+    "lng": -47957.64453125,
+    "alt": 1242.2900390625
+  },
+  {
+    "name": "Button3_524",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -17899.6796875,
+    "lng": 15899.197265625,
+    "alt": -1015.5895385742188
+  },
+  {
+    "name": "Button40",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 16742.828125,
+    "lng": -43187.6328125,
+    "alt": 1242.2900390625
+  },
+  {
+    "name": "Button41",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 17918.8046875,
+    "lng": -45647.71875,
+    "alt": 1327.675048828125
+  },
+  {
+    "name": "Button42",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 19479.43359375,
+    "lng": -44083.0703125,
+    "alt": 1070.54052734375
+  },
+  {
+    "name": "Button43",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 19510.576171875,
+    "lng": -43144.92578125,
+    "alt": 1070.541015625
+  },
+  {
+    "name": "Button44",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 19970.279296875,
+    "lng": -43607.35546875,
+    "alt": 1070.540771484375
+  },
+  {
+    "name": "Button45",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 19000.205078125,
+    "lng": -43600.359375,
+    "alt": 1070.5401611328125
+  },
+  {
+    "name": "Button46_15",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 15125.1728515625,
+    "lng": -14668.455078125,
+    "alt": 996.3755493164062
+  },
+  {
+    "name": "Button47",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -22546.017578125,
+    "lng": 19419.611328125,
+    "alt": 198.7828826904297
+  },
+  {
+    "name": "Button48",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 38229.45703125,
+    "lng": -37251.1796875,
+    "alt": -2947.07958984375
+  },
+  {
+    "name": "Button49",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 38667.53125,
+    "lng": -37254.80078125,
+    "alt": -2947.0791015625
+  },
+  {
+    "name": "Button4_1004",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -29445.748046875,
+    "lng": 21546.16796875,
+    "alt": 658.1005859375
+  },
+  {
+    "name": "Button50",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 38430.40625,
+    "lng": -37025.49609375,
+    "alt": -2947.0791015625
+  },
+  {
+    "name": "Button51",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 38522.4453125,
+    "lng": -37521.21875,
+    "alt": -2947.07958984375
+  },
+  {
+    "name": "Button52",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 8084.17578125,
+    "lng": 21026.265625,
+    "alt": 603.7318115234375
+  },
+  {
+    "name": "Button53_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -10130.6533203125,
+    "lng": -34617.375,
+    "alt": 992.7142333984375
+  },
+  {
+    "name": "Button54_2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -2088.216796875,
+    "lng": -18392.90234375,
+    "alt": -2216.609619140625
+  },
+  {
+    "name": "Button5_512",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -39728.25390625,
+    "lng": -27643.025390625,
+    "alt": -974.18359375
+  },
+  {
+    "name": "Button6",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -38210.33984375,
+    "lng": -27264.013671875,
+    "alt": -744.18359375
+  },
+  {
+    "name": "Button7_17968",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 1519.5106201171875,
+    "lng": -3747.490478515625,
+    "alt": 51.71641540527344
+  },
+  {
+    "name": "Button8",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -33263.609375,
+    "lng": -38701.43359375,
+    "alt": 1712.9996337890625
+  },
+  {
+    "name": "Button9_1322",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -37557.93359375,
+    "lng": -2035.75537109375,
+    "alt": 1559.21923828125
+  },
+  {
+    "name": "Button_702",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": -7154.4267578125,
+    "lng": 14598.154296875,
+    "alt": 465.5191345214844
+  },
+  {
+    "name": "ProjectileShooter2",
+    "type": "Button_C",
+    "area": "Map",
+    "lat": 44993.765625,
+    "lng": -39767.2109375,
+    "alt": 539.0682983398438
+  },
+  {
+    "name": "BigButton36_2",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": -7797.56689453125,
+    "lng": 66405.4375,
+    "alt": 5339.54541015625,
+    "actors": [
+      "Map:Jumppad20_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor2",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": 1069.8564453125,
+    "lng": -7281.1826171875,
+    "alt": -380.9202880859375,
+    "actors": [
+      "Map:Door41"
+    ]
+  },
+  {
+    "name": "ButtonFloor3",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": 772.4598388671875,
+    "lng": -9445.259765625,
+    "alt": -173.43673706054688,
+    "actors": [
+      "Map:Door40_2895"
+    ]
+  },
+  {
+    "name": "ButtonFloor4_2",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": 44873.7578125,
+    "lng": -63050.53125,
+    "alt": 428.8101501464844,
+    "actors": [
+      "Map:Jumppad64_1993",
+      "Map:Jumppad65",
+      "Map:Jumppad66"
+    ]
+  },
+  {
+    "name": "ButtonFloor5_5",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": 46377.1640625,
+    "lng": -62180.6484375,
+    "alt": -670.61279296875,
+    "actors": [
+      "Map:Jumppad98_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor7_2",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": -19933.884765625,
+    "lng": 45944.83984375,
+    "alt": 1139.865234375,
+    "actors": [
+      "Map:Jumppad70",
+      "Map:Glowline72_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor_3",
+    "type": "ButtonFloor_C",
+    "area": "Map",
+    "lat": 1063.748046875,
+    "lng": -7668.73876953125,
+    "alt": -182.69088745117188,
+    "actors": [
+      "Map:Door40_2895"
+    ]
   },
   {
     "name": "BuyBelt2_2",
@@ -645,7 +1697,10 @@
     "area": "Map",
     "lat": -17035.396484375,
     "lng": 22532.78515625,
-    "alt": 1523.2869873046875
+    "alt": 1523.2869873046875,
+    "actors": [
+      "Map:Door94"
+    ]
   },
   {
     "name": "Chest100_2221",
@@ -8131,6 +9186,1206 @@
     "alt": 163.25143432617188
   },
   {
+    "name": "Door10",
+    "type": "Door2_C",
+    "area": "Map",
+    "lat": -19855.802734375,
+    "lng": 26874.95703125,
+    "alt": 360.7960205078125
+  },
+  {
+    "name": "Door35_938",
+    "type": "Door2_C",
+    "area": "Map",
+    "lat": -33939.0859375,
+    "lng": -22758.623046875,
+    "alt": -1426.9039306640625
+  },
+  {
+    "name": "Door5_3724",
+    "type": "Door2_C",
+    "area": "Map",
+    "lat": -13262.8193359375,
+    "lng": 26082.05078125,
+    "alt": -370.0
+  },
+  {
+    "name": "Door100",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 21380.486328125,
+    "lng": 29107.8203125,
+    "alt": 780.0584716796875
+  },
+  {
+    "name": "Door101",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 25738.43359375,
+    "lng": 24355.232421875,
+    "alt": 752.0584716796875
+  },
+  {
+    "name": "Door103",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 20860.62109375,
+    "lng": 24141.478515625,
+    "alt": 1342.0584716796875
+  },
+  {
+    "name": "Door105",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 33198.62109375,
+    "lng": 27129.478515625,
+    "alt": 1119.0584716796875
+  },
+  {
+    "name": "Door106",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -40350.90625,
+    "lng": -25070.107421875,
+    "alt": -1133.0888671875
+  },
+  {
+    "name": "Door109_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 38683.49609375,
+    "lng": 26538.267578125,
+    "alt": 2849.572509765625
+  },
+  {
+    "name": "Door110",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 38691.1875,
+    "lng": 25894.26953125,
+    "alt": 2849.572509765625
+  },
+  {
+    "name": "Door111_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -17305.79296875,
+    "lng": 44544.66796875,
+    "alt": 1169.57763671875
+  },
+  {
+    "name": "Door112",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -20259.341796875,
+    "lng": 44398.80859375,
+    "alt": 1151.5748291015625
+  },
+  {
+    "name": "Door113",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -19829.203125,
+    "lng": 44398.80859375,
+    "alt": 1151.5748291015625
+  },
+  {
+    "name": "Door114",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -40495.6796875,
+    "lng": -28640.2890625,
+    "alt": -296.96630859375
+  },
+  {
+    "name": "Door121_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 3622.973876953125,
+    "lng": 41555.6015625,
+    "alt": 2419.8740234375
+  },
+  {
+    "name": "Door123",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 15992.65625,
+    "lng": 39032.79296875,
+    "alt": 3061.693603515625
+  },
+  {
+    "name": "Door124",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 27021.6640625,
+    "lng": 42802.69921875,
+    "alt": 1244.514404296875
+  },
+  {
+    "name": "Door126",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 20153.5546875,
+    "lng": -7411.01708984375,
+    "alt": 521.001953125
+  },
+  {
+    "name": "Door127",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 19701.537109375,
+    "lng": -7349.70458984375,
+    "alt": 521.001953125
+  },
+  {
+    "name": "Door12_378",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -8501.29296875,
+    "lng": -18054.708984375,
+    "alt": -1808.1246337890625
+  },
+  {
+    "name": "Door131",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -34841.609375,
+    "lng": -3094.256103515625,
+    "alt": -34.21672821044922
+  },
+  {
+    "name": "Door132_3",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 18024.869140625,
+    "lng": -44041.4921875,
+    "alt": 961.6699829101562
+  },
+  {
+    "name": "Door134_4",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 39904.5,
+    "lng": -35274.953125,
+    "alt": -3058.09228515625
+  },
+  {
+    "name": "Door135",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 38470.484375,
+    "lng": -37490.0859375,
+    "alt": -3058.09228515625
+  },
+  {
+    "name": "Door137_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 25537.181640625,
+    "lng": 53828.4921875,
+    "alt": 1543.0572509765625
+  },
+  {
+    "name": "Door138",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 25549.70703125,
+    "lng": 50355.9296875,
+    "alt": 1280.35546875
+  },
+  {
+    "name": "Door139_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 27314.15234375,
+    "lng": 57297.49609375,
+    "alt": 1531.2889404296875
+  },
+  {
+    "name": "Door15_4541",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -14489.4599609375,
+    "lng": -28551.416015625,
+    "alt": -2268.653076171875
+  },
+  {
+    "name": "Door17_20588",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -19810.130859375,
+    "lng": -31165.41015625,
+    "alt": -1133.0888671875
+  },
+  {
+    "name": "Door19",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -21550.130859375,
+    "lng": -31505.41015625,
+    "alt": -1133.0888671875
+  },
+  {
+    "name": "Door20",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -8681.4931640625,
+    "lng": -21140.0625,
+    "alt": -1787.348388671875
+  },
+  {
+    "name": "Door21_1024",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -20722.970703125,
+    "lng": -16518.83203125,
+    "alt": -226.9263916015625
+  },
+  {
+    "name": "Door22",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -25469.12109375,
+    "lng": -35389.41015625,
+    "alt": -1065.6522216796875
+  },
+  {
+    "name": "Door23",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -38639.8046875,
+    "lng": -24082.544921875,
+    "alt": -1133.0888671875
+  },
+  {
+    "name": "Door24",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -12154.5458984375,
+    "lng": -24305.556640625,
+    "alt": -1827.3638916015625
+  },
+  {
+    "name": "Door25",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -11698.38671875,
+    "lng": -24305.583984375,
+    "alt": -1827.3638916015625
+  },
+  {
+    "name": "Door27_1724",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -39992.37109375,
+    "lng": -27246.39453125,
+    "alt": -1129.9051513671875
+  },
+  {
+    "name": "Door28",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -39992.37109375,
+    "lng": -26671.8828125,
+    "alt": -1129.9051513671875
+  },
+  {
+    "name": "Door30",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -40272.484375,
+    "lng": -28635.380859375,
+    "alt": -1133.0888671875
+  },
+  {
+    "name": "Door31",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -37701.23828125,
+    "lng": -27072.171875,
+    "alt": -934.5492553710938
+  },
+  {
+    "name": "Door33_968",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -37625.71484375,
+    "lng": -2003.4188232421875,
+    "alt": 63.38672637939453
+  },
+  {
+    "name": "Door34",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -36579.0,
+    "lng": 1077.913330078125,
+    "alt": -183.67868041992188
+  },
+  {
+    "name": "Door36",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -39603.5703125,
+    "lng": -543.4708251953125,
+    "alt": 333.1756896972656
+  },
+  {
+    "name": "Door37",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -39606.296875,
+    "lng": -1032.7318115234375,
+    "alt": 333.1756896972656
+  },
+  {
+    "name": "Door38_1990",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -1392.6865234375,
+    "lng": -15403.9658203125,
+    "alt": -993.7944946289062
+  },
+  {
+    "name": "Door39",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -47446.9765625,
+    "lng": -12239.7626953125,
+    "alt": -212.5242919921875
+  },
+  {
+    "name": "Door45",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -46209.09375,
+    "lng": -43783.5390625,
+    "alt": -2390.45654296875
+  },
+  {
+    "name": "Door46",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -45628.53125,
+    "lng": -43783.5390625,
+    "alt": -2390.45654296875
+  },
+  {
+    "name": "Door48",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -30751.890625,
+    "lng": -17277.328125,
+    "alt": -1170.187255859375
+  },
+  {
+    "name": "Door49",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -31231.48828125,
+    "lng": -17597.787109375,
+    "alt": -1170.187255859375
+  },
+  {
+    "name": "Door50_17728",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -48976.65234375,
+    "lng": -52625.7109375,
+    "alt": -943.7315063476562
+  },
+  {
+    "name": "Door51",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -46166.37890625,
+    "lng": -47356.1015625,
+    "alt": -1695.916259765625
+  },
+  {
+    "name": "Door52",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -45275.375,
+    "lng": -47354.640625,
+    "alt": -1695.916259765625
+  },
+  {
+    "name": "Door53_40161",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -49069.5625,
+    "lng": -49117.3828125,
+    "alt": -441.76678466796875
+  },
+  {
+    "name": "Door54_44574",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -8504.1357421875,
+    "lng": 9388.7119140625,
+    "alt": -361.8368835449219
+  },
+  {
+    "name": "Door55",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -9082.6689453125,
+    "lng": 9874.12890625,
+    "alt": -362.71990966796875
+  },
+  {
+    "name": "Door57",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -51602.19140625,
+    "lng": -56113.62109375,
+    "alt": -809.4969482421875
+  },
+  {
+    "name": "Door61",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 674.034423828125,
+    "lng": -8364.3291015625,
+    "alt": -210.18565368652344
+  },
+  {
+    "name": "Door62",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 1443.9117431640625,
+    "lng": -8363.060546875,
+    "alt": -210.18565368652344
+  },
+  {
+    "name": "Door64",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -12791.626953125,
+    "lng": -6530.357421875,
+    "alt": 61.34508514404297
+  },
+  {
+    "name": "Door65",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -12335.7744140625,
+    "lng": -6547.0654296875,
+    "alt": 61.34508514404297
+  },
+  {
+    "name": "Door66",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -32727.63671875,
+    "lng": -556.8678588867188,
+    "alt": -131.03753662109375
+  },
+  {
+    "name": "Door77_1486",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 38854.109375,
+    "lng": -41711.02734375,
+    "alt": 398.43865966796875
+  },
+  {
+    "name": "Door80_2060",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -21860.345703125,
+    "lng": -1695.750244140625,
+    "alt": -2148.703125
+  },
+  {
+    "name": "Door82",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 39794.63671875,
+    "lng": -61287.31640625,
+    "alt": 497.0512390136719
+  },
+  {
+    "name": "Door83_2663",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 54823.78515625,
+    "lng": -67709.734375,
+    "alt": 590.4878540039062
+  },
+  {
+    "name": "Door85_2564",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 51322.3671875,
+    "lng": -68713.359375,
+    "alt": 669.659912109375
+  },
+  {
+    "name": "Door87",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -23097.36328125,
+    "lng": 27097.544921875,
+    "alt": 441.35113525390625
+  },
+  {
+    "name": "Door88",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -23549.3828125,
+    "lng": 27158.85546875,
+    "alt": 441.35113525390625
+  },
+  {
+    "name": "Door89",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 59514.96875,
+    "lng": -54738.1953125,
+    "alt": 499.69708251953125
+  },
+  {
+    "name": "Door90",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -29375.39453125,
+    "lng": 18502.564453125,
+    "alt": -142.76129150390625
+  },
+  {
+    "name": "Door91",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -29784.634765625,
+    "lng": 18701.99609375,
+    "alt": -136.5741424560547
+  },
+  {
+    "name": "Door95_2",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 29803.62109375,
+    "lng": 30090.478515625,
+    "alt": 766.0584716796875
+  },
+  {
+    "name": "Door96",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 21413.16015625,
+    "lng": 21177.865234375,
+    "alt": 1344.0584716796875
+  },
+  {
+    "name": "Door97",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": 19878.833984375,
+    "lng": 29735.880859375,
+    "alt": 1001.925048828125
+  },
+  {
+    "name": "Door98",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -40650.6484375,
+    "lng": -543.4708251953125,
+    "alt": 333.1744384765625
+  },
+  {
+    "name": "Door99",
+    "type": "Door3_C",
+    "area": "Map",
+    "lat": -40653.375,
+    "lng": -1032.7318115234375,
+    "alt": 333.1744384765625
+  },
+  {
+    "name": "Door102",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 24597.79296875,
+    "lng": 25919.94921875,
+    "alt": 657.3916625976562
+  },
+  {
+    "name": "Door104",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 33682.6171875,
+    "lng": 26327.94921875,
+    "alt": 2817.3916015625
+  },
+  {
+    "name": "Door107",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 35948.69921875,
+    "lng": 26229.25,
+    "alt": 2813.095458984375
+  },
+  {
+    "name": "Door108",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -45153.83984375,
+    "lng": -35014.0546875,
+    "alt": -764.3771362304688
+  },
+  {
+    "name": "Door115_2",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 4224.68701171875,
+    "lng": 454.23223876953125,
+    "alt": -84.02062225341797
+  },
+  {
+    "name": "Door116_2",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 5165.29052734375,
+    "lng": 51630.68359375,
+    "alt": 4132.44384765625
+  },
+  {
+    "name": "Door118_2",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 4166.7958984375,
+    "lng": 39818.28125,
+    "alt": 1352.6732177734375
+  },
+  {
+    "name": "Door119",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 10415.83203125,
+    "lng": 50275.3984375,
+    "alt": 3057.381103515625
+  },
+  {
+    "name": "Door11_1002",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -28997.3125,
+    "lng": 21914.236328125,
+    "alt": 282.348876953125
+  },
+  {
+    "name": "Door120",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 10565.7314453125,
+    "lng": 50637.14453125,
+    "alt": 3057.381103515625
+  },
+  {
+    "name": "Door122",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 6214.2890625,
+    "lng": 44778.7109375,
+    "alt": 3030.177978515625
+  },
+  {
+    "name": "Door133_5",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 19477.86328125,
+    "lng": -44760.6953125,
+    "alt": 960.0953979492188
+  },
+  {
+    "name": "Door136",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -22449.96875,
+    "lng": -25810.09765625,
+    "alt": -82.4363021850586
+  },
+  {
+    "name": "Door13_2872",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -9873.4697265625,
+    "lng": -18811.966796875,
+    "alt": -1824.6885986328125
+  },
+  {
+    "name": "Door14_2635",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -17662.99609375,
+    "lng": -26015.6796875,
+    "alt": -427.1076965332031
+  },
+  {
+    "name": "Door16",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -16983.982421875,
+    "lng": -30926.95703125,
+    "alt": -668.172119140625
+  },
+  {
+    "name": "Door18_9038",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -22826.736328125,
+    "lng": -26373.4609375,
+    "alt": -397.312744140625
+  },
+  {
+    "name": "Door26_1922",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -31130.0,
+    "lng": -38570.0,
+    "alt": 450.0
+  },
+  {
+    "name": "Door32_1562",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 29508.29296875,
+    "lng": -7990.35009765625,
+    "alt": 455.19622802734375
+  },
+  {
+    "name": "Door43",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 1176.3939208984375,
+    "lng": 9200.58203125,
+    "alt": -180.84190368652344
+  },
+  {
+    "name": "Door44_1342",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -29437.671875,
+    "lng": -30086.71875,
+    "alt": -348.2218017578125
+  },
+  {
+    "name": "Door47_4805",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -44753.625,
+    "lng": -40346.16015625,
+    "alt": -2457.953857421875
+  },
+  {
+    "name": "Door4_642",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -28071.17578125,
+    "lng": 22871.876953125,
+    "alt": 4748.6484375
+  },
+  {
+    "name": "Door56_1892",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -48298.2578125,
+    "lng": -54862.91015625,
+    "alt": -1789.76416015625
+  },
+  {
+    "name": "Door58_3595",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -46032.41015625,
+    "lng": -48995.609375,
+    "alt": -69.17755126953125
+  },
+  {
+    "name": "Door59",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -47337.84765625,
+    "lng": -51190.6484375,
+    "alt": -93.34693908691406
+  },
+  {
+    "name": "Door60",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -43237.3828125,
+    "lng": -52741.83203125,
+    "alt": -99.50715637207031
+  },
+  {
+    "name": "Door63_2172",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -12169.982421875,
+    "lng": 20368.4921875,
+    "alt": 2285.248046875
+  },
+  {
+    "name": "Door67",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -44933.79296875,
+    "lng": -50072.3125,
+    "alt": 1828.3935546875
+  },
+  {
+    "name": "Door70_8284",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 23834.09765625,
+    "lng": -26622.96875,
+    "alt": 674.5197143554688
+  },
+  {
+    "name": "Door71",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 23834.09765625,
+    "lng": -27568.2890625,
+    "alt": 674.5197143554688
+  },
+  {
+    "name": "Door74",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 45650.52734375,
+    "lng": -23192.044921875,
+    "alt": 184.70516967773438
+  },
+  {
+    "name": "Door75_962",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 42825.046875,
+    "lng": -7248.1533203125,
+    "alt": 265.9757995605469
+  },
+  {
+    "name": "Door76",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 39864.0,
+    "lng": -49020.0,
+    "alt": 474.0
+  },
+  {
+    "name": "Door78",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 55299.26171875,
+    "lng": -44975.71875,
+    "alt": 706.8555908203125
+  },
+  {
+    "name": "Door79",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 31013.025390625,
+    "lng": -15499.9775390625,
+    "alt": -2182.55908203125
+  },
+  {
+    "name": "Door7_6018",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -30.0,
+    "lng": 10355.0,
+    "alt": -90.0
+  },
+  {
+    "name": "Door81_812",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 15068.8916015625,
+    "lng": 10101.671875,
+    "alt": 1755.0
+  },
+  {
+    "name": "Door84_1012",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 59138.24609375,
+    "lng": -39808.578125,
+    "alt": 1361.6207275390625
+  },
+  {
+    "name": "Door86_1182",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -14027.2919921875,
+    "lng": -29188.1953125,
+    "alt": -2290.000244140625
+  },
+  {
+    "name": "Door8_1092",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -34454.87890625,
+    "lng": 802.7193603515625,
+    "alt": -444.5531311035156
+  },
+  {
+    "name": "Door9",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -39431.1015625,
+    "lng": -2772.929443359375,
+    "alt": 551.0742797851562
+  },
+  {
+    "name": "Door92_2",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -43599.0,
+    "lng": -60700.0,
+    "alt": 355.0
+  },
+  {
+    "name": "Door93",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 15759.65234375,
+    "lng": 21718.611328125,
+    "alt": 735.3916625976562
+  },
+  {
+    "name": "Door94",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -17249.248046875,
+    "lng": 21998.474609375,
+    "alt": 1545.64404296875
+  },
+  {
+    "name": "DoorPhysical3_925",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": -33117.34765625,
+    "lng": -37667.00390625,
+    "alt": 345.1063232421875
+  },
+  {
+    "name": "DoorPhysical6_2",
+    "type": "Door_C",
+    "area": "Map",
+    "lat": 44156.92578125,
+    "lng": -41984.6015625,
+    "alt": 342.0060119628906
+  },
+  {
+    "name": "DoorInverted2_2",
+    "type": "DoorInverted_C",
+    "area": "Map",
+    "lat": 32446.587890625,
+    "lng": 77347.703125,
+    "alt": 2305.65673828125
+  },
+  {
+    "name": "DoorInverted_612",
+    "type": "DoorInverted_C",
+    "area": "Map",
+    "lat": 1182.281494140625,
+    "lng": 7548.7861328125,
+    "alt": -30.48113250732422
+  },
+  {
+    "name": "Door40_2895",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": 1061.4619140625,
+    "lng": -9236.111328125,
+    "alt": -165.08685302734375
+  },
+  {
+    "name": "Door41",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": 1061.4613037109375,
+    "lng": -9900.2216796875,
+    "alt": -165.08685302734375
+  },
+  {
+    "name": "Door68_1032",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": 24863.12890625,
+    "lng": -23818.806640625,
+    "alt": 395.5328369140625
+  },
+  {
+    "name": "Door72",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": 29606.625,
+    "lng": -22394.51953125,
+    "alt": 372.64739990234375
+  },
+  {
+    "name": "DoorPhysical2_1520",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": -24617.115234375,
+    "lng": 10305.4501953125,
+    "alt": -561.3275146484375
+  },
+  {
+    "name": "DoorPhysical4_1133",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": -42078.140625,
+    "lng": -49997.5625,
+    "alt": -1769.7645263671875
+  },
+  {
+    "name": "DoorPhysical5",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": -41442.0625,
+    "lng": -50009.953125,
+    "alt": -1769.7645263671875
+  },
+  {
+    "name": "DoorPhysical_1520",
+    "type": "DoorPhysical_C",
+    "area": "Map",
+    "lat": -35239.73046875,
+    "lng": 15677.0009765625,
+    "alt": -423.10333251953125
+  },
+  {
+    "name": "Door117",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -6839.091796875,
+    "lng": 47153.52734375,
+    "alt": 5564.58251953125
+  },
+  {
+    "name": "Door125",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 18445.029296875,
+    "lng": 38702.3515625,
+    "alt": 2724.159423828125
+  },
+  {
+    "name": "Door128",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 28261.7109375,
+    "lng": 37085.95703125,
+    "alt": 1060.26220703125
+  },
+  {
+    "name": "Door129",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 26778.5703125,
+    "lng": 47389.8828125,
+    "alt": 1240.027099609375
+  },
+  {
+    "name": "Door130",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 37452.97265625,
+    "lng": 63946.765625,
+    "alt": 1570.90576171875
+  },
+  {
+    "name": "Door29",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -22758.767578125,
+    "lng": 19601.712890625,
+    "alt": -810.4617309570312
+  },
+  {
+    "name": "Door2_785",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -21903.9140625,
+    "lng": 23544.4296875,
+    "alt": -634.0047607421875
+  },
+  {
+    "name": "Door3_892",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -24814.14453125,
+    "lng": 860.1800537109375,
+    "alt": -1794.8714599609375
+  },
+  {
+    "name": "Door69",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 31420.0625,
+    "lng": -26497.087890625,
+    "alt": 203.69461059570312
+  },
+  {
+    "name": "Door6_3665",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -5582.728515625,
+    "lng": 14355.388671875,
+    "alt": -377.3016052246094
+  },
+  {
+    "name": "Door_1496",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -15901.271484375,
+    "lng": 16453.044921875,
+    "alt": -800.8499145507812
+  },
+  {
+    "name": "DoorStone",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 14557.734375,
+    "lng": 50177.02734375,
+    "alt": 5013.6142578125
+  },
+  {
+    "name": "DoorStone2_2",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -3788.93701171875,
+    "lng": -31790.1953125,
+    "alt": -1592.56494140625
+  },
+  {
+    "name": "DoorStone3_2",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -9892.5341796875,
+    "lng": 69275.4453125,
+    "alt": 5326.9140625
+  },
+  {
+    "name": "DoorStone4_2",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": -59140.0,
+    "lng": -6386.0,
+    "alt": 1098.0
+  },
+  {
+    "name": "DoorStone5",
+    "type": "DoorStone_C",
+    "area": "Map",
+    "lat": 12231.7099609375,
+    "lng": 50800.04296875,
+    "alt": 4987.630859375
+  },
+  {
     "name": "EnemySpawn10",
     "type": "EnemySpawn1_C",
     "area": "Map",
@@ -9715,14 +11970,6 @@
     "alt": 3050.86865234375
   },
   {
-    "name": "Enemyspawner22_326",
-    "type": "Enemyspawner2_C",
-    "area": "Map",
-    "lat": 25599.638671875,
-    "lng": 8283.0595703125,
-    "alt": 270.0713806152344
-  },
-  {
     "name": "EnemySpawner10_2395",
     "type": "EnemySpawner_C",
     "area": "Map",
@@ -10375,9 +12622,9 @@
       "z": 0.6402158737182617
     },
     "target": {
-      "x": 5657.503906729744,
-      "y": -38916.58778590619,
-      "z": -173.6446433799692
+      "x": 5613.510604901536,
+      "y": -38845.47826224328,
+      "z": -238.20734552573606
     }
   },
   {
@@ -10399,9 +12646,9 @@
       "z": 0.9431526064872742
     },
     "target": {
-      "x": -17320.215690978657,
+      "x": -17501.456217273866,
       "y": -930.0,
-      "z": -316.4962809691864
+      "z": -282.5446498445319
     }
   },
   {
@@ -10547,9 +12794,9 @@
       "z": 0.2902831435203552
     },
     "target": {
-      "x": -29419.08377444744,
-      "y": -24097.6467204856,
-      "z": -1262.827368506718
+      "x": -29354.011802077293,
+      "y": -24097.64678440489,
+      "z": -1295.0379147473336
     }
   },
   {
@@ -10590,9 +12837,9 @@
       "z": 0.6343763470649719
     },
     "target": {
-      "x": 68052.08928442001,
-      "y": -8528.672685027122,
-      "z": 5639.679007600021
+      "x": 68418.419039011,
+      "y": -8256.982695162296,
+      "z": 5288.898252368356
     }
   },
   {
@@ -10670,9 +12917,9 @@
       "z": 0.8626556992530823
     },
     "target": {
-      "x": -2780.804866194725,
-      "y": -37142.92451930046,
-      "z": 140.45714042097174
+      "x": -4602.082819983363,
+      "y": -36177.457874149084,
+      "z": 2602.375538115008
     }
   },
   {
@@ -10689,9 +12936,9 @@
       "z": 0.8363482356071472
     },
     "target": {
-      "x": -28404.865583360195,
-      "y": -21842.896361351013,
-      "z": -396.8633765619088
+      "x": -27928.550280958414,
+      "y": -22130.522253513336,
+      "z": 393.0824642968308
     }
   },
   {
@@ -10777,9 +13024,9 @@
       "z": 0.9961946606636047
     },
     "target": {
-      "x": -38761.02941080928,
+      "x": -38703.50655555725,
       "y": -28636.791015625,
-      "z": 790.703758630768
+      "z": 1274.0626825927852
     }
   },
   {
@@ -10803,9 +13050,9 @@
       "z": 0.587242841720581
     },
     "target": {
-      "x": 14174.116455078125,
-      "y": -6334.595703125,
-      "z": -412.4176581542537
+      "x": 13842.616455078125,
+      "y": -7010.595703125,
+      "z": -139.57235815425605
     }
   },
   {
@@ -10822,9 +13069,9 @@
       "z": 0.8660255670547485
     },
     "target": {
-      "x": -38812.99794781208,
+      "x": -38790.9979609251,
       "y": -27850.0,
-      "z": 508.4249547390184
+      "z": 528.5073297886092
     }
   },
   {
@@ -10844,7 +13091,7 @@
     "target": {
       "x": -26690.0,
       "y": -37780.0,
-      "z": -2214.6990999999766
+      "z": -1064.616799999986
     }
   },
   {
@@ -10941,7 +13188,7 @@
     "target": {
       "x": 21452.93359375,
       "y": -29110.439453125,
-      "z": -1253.1171450195043
+      "z": 517.9343549804789
     }
   },
   {
@@ -10958,9 +13205,9 @@
       "z": 0.9332842230796814
     },
     "target": {
-      "x": -35063.05581340194,
+      "x": -35117.10618287325,
       "y": -42703.7109375,
-      "z": -384.4408475635677
+      "z": -509.22347199007453
     }
   },
   {
@@ -10978,8 +13225,8 @@
     },
     "target": {
       "x": -30735.97265625,
-      "y": -27225.838724285364,
-      "z": -374.2200508589564
+      "y": -27346.5808390975,
+      "z": -947.4008389520417
     }
   },
   {
@@ -10996,9 +13243,9 @@
       "z": 0.5555700659751892
     },
     "target": {
-      "x": -21328.21129488945,
+      "x": -21228.43492913246,
       "y": 24302.015625,
-      "z": 328.34455302088406
+      "z": 397.41594510386085
     }
   },
   {
@@ -11040,9 +13287,9 @@
       "z": 0.9876883029937744
     },
     "target": {
-      "x": -49049.939574196935,
+      "x": -49064.487979114056,
       "y": -43213.19921875,
-      "z": -1816.7892989558975
+      "z": -1723.4684111343192
     }
   },
   {
@@ -11104,9 +13351,9 @@
       "z": 0.8819214105606079
     },
     "target": {
-      "x": 53058.89120221138,
+      "x": 53901.51240311563,
       "y": -8406.546875,
-      "z": 3745.1517534165446
+      "z": 5553.367732039441
     }
   },
   {
@@ -11365,9 +13612,9 @@
       "z": 0.7730777859687805
     },
     "target": {
-      "x": -21102.26878774166,
-      "y": 39693.708543896675,
-      "z": 458.42793633310873
+      "x": -21178.73493564129,
+      "y": 39612.368862748146,
+      "z": 586.3978460026024
     }
   },
   {
@@ -11384,9 +13631,9 @@
       "z": 0.4713999330997467
     },
     "target": {
-      "x": -49686.893314003944,
-      "y": 43702.59603627026,
-      "z": 1596.420433898651
+      "x": -52525.28615784645,
+      "y": 43982.165563613176,
+      "z": 461.34011754324115
     }
   },
   {
@@ -11643,8 +13890,8 @@
     },
     "target": {
       "x": -54670.35546875,
-      "y": 59191.96137857437,
-      "z": 475.78452554175607
+      "y": 55021.40585947037,
+      "z": 1940.9635697914669
     }
   },
   {
@@ -11705,9 +13952,9 @@
       "z": 0.6715624928474426
     },
     "target": {
-      "x": 35246.97740972042,
-      "y": -12868.01860153675,
-      "z": 2449.927464349979
+      "x": 35009.78808373213,
+      "y": -12709.534176886082,
+      "z": 2249.6822240962465
     }
   },
   {
@@ -11763,9 +14010,9 @@
       "z": 0.5556705594062805
     },
     "target": {
-      "x": -17679.93062222004,
-      "y": 42517.91158500314,
-      "z": 1842.9532280607932
+      "x": -16695.794615745544,
+      "y": 42321.7116458416,
+      "z": 1196.8411932641804
     }
   },
   {
@@ -11820,9 +14067,9 @@
       "z": 0.9396926164627075
     },
     "target": {
-      "x": 10316.13715171814,
+      "x": 10801.805770397186,
       "y": 13696.99609375,
-      "z": 581.2321345367786
+      "z": 1791.7571191597235
     }
   },
   {
@@ -11839,9 +14086,9 @@
       "z": 0.8819221258163452
     },
     "target": {
-      "x": 27560.355031117797,
-      "y": 17308.699919457475,
-      "z": 1012.7992196280585
+      "x": 27676.553924530745,
+      "y": 17308.69931983258,
+      "z": 809.194823641789
     }
   },
   {
@@ -11858,9 +14105,9 @@
       "z": 0.9263435006141663
     },
     "target": {
-      "x": 24774.50183135271,
-      "y": 19976.329248815775,
-      "z": 1550.7554990400383
+      "x": 24666.300565823913,
+      "y": 19896.797363512218,
+      "z": 1176.788557008991
     }
   },
   {
@@ -11908,9 +14155,9 @@
       "z": 0.7967402338981628
     },
     "target": {
-      "x": 14177.965576171875,
-      "y": -1760.705810546875,
-      "z": 354.58982780769503
+      "x": 13992.965576171875,
+      "y": -1700.705810546875,
+      "z": 621.5523278076926
     }
   },
   {
@@ -11951,9 +14198,9 @@
       "z": 0.5555751323699951
     },
     "target": {
-      "x": 44255.960845947266,
-      "y": -19271.404158115387,
-      "z": 1227.5441238670585
+      "x": 44344.04602050781,
+      "y": -19359.69951057434,
+      "z": 1142.3693937225585
     }
   },
   {
@@ -11989,9 +14236,9 @@
       "z": 0.6715636253356934
     },
     "target": {
-      "x": 45851.88113066554,
-      "y": 27370.369576513767,
-      "z": 1315.4689009877934
+      "x": 36041.61628997326,
+      "y": 20513.77322602272,
+      "z": 8016.902079127584
     }
   },
   {
@@ -12084,9 +14331,9 @@
       "z": 0.743868350982666
     },
     "target": {
-      "x": 46541.82166618109,
-      "y": -4005.533917427063,
-      "z": 5582.3722496208475
+      "x": 45644.04311862588,
+      "y": -4654.460177898407,
+      "z": 4992.063641374623
     }
   },
   {
@@ -12104,9 +14351,9 @@
       "z": 0.4912676215171814
     },
     "target": {
-      "x": 6794.652552497709,
-      "y": 1702.5156688839197,
-      "z": 551.5368821662834
+      "x": 6152.411850786533,
+      "y": 1822.4522175192833,
+      "z": -7.053074933675568
     }
   },
   {
@@ -12123,9 +14370,9 @@
       "z": 0.6424130201339722
     },
     "target": {
-      "x": 49943.471661150455,
-      "y": -6262.996726483107,
-      "z": 4424.819972030226
+      "x": 48705.69941371679,
+      "y": -6053.9830704033375,
+      "z": 5329.60254505077
     }
   },
   {
@@ -12223,9 +14470,9 @@
       "z": 0.9396926760673523
     },
     "target": {
-      "x": 52470.099179029465,
-      "y": 15046.359789282084,
-      "z": 3065.429590034942
+      "x": 51013.84814763069,
+      "y": 14656.147283166647,
+      "z": 6175.754273930021
     }
   },
   {
@@ -12313,9 +14560,9 @@
       "z": 0.9885662794113159
     },
     "target": {
-      "x": -41482.41270005051,
+      "x": -41106.114731141366,
       "y": 43552.6171875,
-      "z": -416.1020586741677
+      "z": 594.3409007480819
     }
   },
   {
@@ -12357,9 +14604,9 @@
       "z": 0.4125003218650818
     },
     "target": {
-      "x": 3599.556640625,
-      "y": -28251.44287109375,
-      "z": 319.04645068362805
+      "x": 4175.556640625,
+      "y": -27003.44287109375,
+      "z": 705.4548506836243
     }
   },
   {
@@ -12635,12 +14882,81 @@
     "alt": -1711.3721923828125
   },
   {
+    "name": "KeycardReader12",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": 57570.91796875,
+    "lng": -61281.640625,
+    "alt": 541.7359619140625
+  },
+  {
+    "name": "KeycardReader2_2",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -43897.0,
+    "lng": -61058.0,
+    "alt": 475.0
+  },
+  {
+    "name": "KeycardReader3_1586",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": 57770.6171875,
+    "lng": -55380.84375,
+    "alt": 541.7359619140625
+  },
+  {
+    "name": "KeycardReader4",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -13256.3134765625,
+    "lng": -26448.40234375,
+    "alt": -2261.8076171875
+  },
+  {
+    "name": "KeycardReader5",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -8437.67578125,
+    "lng": -21124.634765625,
+    "alt": -1629.0853271484375
+  },
+  {
+    "name": "KeycardReader8",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -11595.6611328125,
+    "lng": -24313.416015625,
+    "alt": -1713.5528564453125
+  },
+  {
+    "name": "KeycardReader9_494",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -14860.8115234375,
+    "lng": -28524.42578125,
+    "alt": -2211.447265625
+  },
+  {
+    "name": "KeycardReader_1298",
+    "type": "KeycardReader_C",
+    "area": "Map",
+    "lat": -14098.568359375,
+    "lng": -28880.326171875,
+    "alt": -2118.72998046875
+  },
+  {
     "name": "KeyLock10_5",
     "type": "KeyLock_C",
     "area": "Map",
     "lat": 5952.1123046875,
     "lng": 45256.65234375,
-    "alt": 3162.4150390625
+    "alt": 3162.4150390625,
+    "actors": [
+      "Map:Door122",
+      "Map:RedGuyEvent13",
+      "Map:Door121_2"
+    ]
   },
   {
     "name": "KeyLock2_7829",
@@ -12648,7 +14964,11 @@
     "area": "Map",
     "lat": -45725.00390625,
     "lng": -47311.93359375,
-    "alt": -1582.00634765625
+    "alt": -1582.00634765625,
+    "actors": [
+      "Map:Door51",
+      "Map:Door52"
+    ]
   },
   {
     "name": "KeyLock3_9592",
@@ -12656,7 +14976,11 @@
     "area": "Map",
     "lat": -8811.59765625,
     "lng": 9598.15234375,
-    "alt": -298.76690673828125
+    "alt": -298.76690673828125,
+    "actors": [
+      "Map:Door54_44574",
+      "Map:Door55"
+    ]
   },
   {
     "name": "KeyLock4",
@@ -12664,7 +14988,11 @@
     "area": "Map",
     "lat": 1054.2125244140625,
     "lng": -8316.0087890625,
-    "alt": -10.224693298339844
+    "alt": -10.224693298339844,
+    "actors": [
+      "Map:Door61",
+      "Map:Door62"
+    ]
   },
   {
     "name": "KeyLock5_642",
@@ -12672,7 +15000,11 @@
     "area": "Map",
     "lat": -11785.298828125,
     "lng": -73.65043640136719,
-    "alt": 549.6107788085938
+    "alt": 549.6107788085938,
+    "actors": [
+      "Map:Jumppad46_2543",
+      "Map:Jumppad47"
+    ]
   },
   {
     "name": "KeyLock6_982",
@@ -12680,7 +15012,10 @@
     "area": "Map",
     "lat": 38660.98828125,
     "lng": -41958.35546875,
-    "alt": 541.7852783203125
+    "alt": 541.7852783203125,
+    "actors": [
+      "Map:Door77_1486"
+    ]
   },
   {
     "name": "KeyLock7_712",
@@ -12688,7 +15023,10 @@
     "area": "Map",
     "lat": 51297.73828125,
     "lng": -68837.9921875,
-    "alt": 757.3856201171875
+    "alt": 757.3856201171875,
+    "actors": [
+      "Map:Door85_2564"
+    ]
   },
   {
     "name": "KeyLock8_2",
@@ -12696,7 +15034,10 @@
     "area": "Map",
     "lat": 21538.0,
     "lng": 29145.0,
-    "alt": 887.0
+    "alt": 887.0,
+    "actors": [
+      "Map:Door100"
+    ]
   },
   {
     "name": "KeyLock9_2",
@@ -12704,7 +15045,10 @@
     "area": "Map",
     "lat": 3786.408447265625,
     "lng": 41571.51953125,
-    "alt": 2213.6748046875
+    "alt": 2213.6748046875,
+    "actors": [
+      "Map:Door121_2"
+    ]
   },
   {
     "name": "KeyLock_302",
@@ -12712,7 +15056,245 @@
     "area": "Map",
     "lat": -48924.08203125,
     "lng": -52271.16796875,
-    "alt": -786.6761474609375
+    "alt": -786.6761474609375,
+    "actors": [
+      "Map:Door50_17728"
+    ]
+  },
+  {
+    "name": "Lever10_518",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 10960.796875,
+    "lng": 15770.8388671875,
+    "alt": 1065.02783203125,
+    "actors": [
+      "Map:crate_planks_separated_Crate_plank02_mesh105_600"
+    ]
+  },
+  {
+    "name": "Lever11_578",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 30523.814453125,
+    "lng": -8600.70703125,
+    "alt": 457.4151611328125,
+    "actors": [
+      "Map:Red_brick_2201"
+    ]
+  },
+  {
+    "name": "Lever12",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 27587.953125,
+    "lng": -7944.5595703125,
+    "alt": 454.62420654296875,
+    "actors": [
+      "Map:Red_brick_2150"
+    ]
+  },
+  {
+    "name": "Lever13_1190",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 40538.15234375,
+    "lng": -17579.796875,
+    "alt": 776.2465209960938,
+    "actors": [
+      "Map:wall_227"
+    ]
+  },
+  {
+    "name": "Lever14_1070",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -1308.751953125,
+    "lng": -16134.8671875,
+    "alt": 139.660888671875,
+    "actors": [
+      "Map:PipeCap16",
+      "Map:PipeCap15"
+    ]
+  },
+  {
+    "name": "Lever15_1370",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 13700.0,
+    "lng": 10990.0,
+    "alt": 1800.0,
+    "actors": [
+      "Map:Stump86"
+    ]
+  },
+  {
+    "name": "Lever16_977",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 56790.69921875,
+    "lng": -53648.515625,
+    "alt": 2325.16357421875,
+    "actors": [
+      "Map:Red_brick_3509"
+    ]
+  },
+  {
+    "name": "Lever17_1640",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 36741.91015625,
+    "lng": -47552.078125,
+    "alt": 724.4636840820312,
+    "actors": [
+      "Map:Red_brick_2781",
+      "Map:Door76"
+    ]
+  },
+  {
+    "name": "Lever18_769",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 54480.1640625,
+    "lng": -36060.39453125,
+    "alt": 502.3856201171875,
+    "actors": [
+      "Map:Red_brick_3606"
+    ]
+  },
+  {
+    "name": "Lever19",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 15083.1376953125,
+    "lng": -2748.10546875,
+    "alt": 717.4254150390625,
+    "actors": [
+      "Map:PipeCap18",
+      "Map:PipeCap17"
+    ]
+  },
+  {
+    "name": "Lever20_2",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 18974.416015625,
+    "lng": 29034.275390625,
+    "alt": 809.7323608398438,
+    "actors": [
+      "Map:Volcanic_Rock_1657"
+    ]
+  },
+  {
+    "name": "Lever21",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": 21885.416015625,
+    "lng": 28316.275390625,
+    "alt": 1341.732421875,
+    "actors": [
+      "Map:Volcanic_Rock_1768"
+    ]
+  },
+  {
+    "name": "Lever2_5725",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -17767.24609375,
+    "lng": 10322.1611328125,
+    "alt": -95.31005859375,
+    "actors": [
+      "Map:WoodenPart2_2"
+    ]
+  },
+  {
+    "name": "Lever3_1070",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -31690.380859375,
+    "lng": 21921.654296875,
+    "alt": 58.21269226074219,
+    "actors": [
+      "Map:Red_brick_158"
+    ]
+  },
+  {
+    "name": "Lever4_2501",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -38340.3203125,
+    "lng": 555.980224609375,
+    "alt": 339.87109375,
+    "actors": [
+      "Map:Fence5"
+    ]
+  },
+  {
+    "name": "Lever5_986",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -50232.68359375,
+    "lng": -55146.10546875,
+    "alt": -1652.9439697265625,
+    "actors": [
+      "Map:Brick2393"
+    ]
+  },
+  {
+    "name": "Lever6_2",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -22221.095703125,
+    "lng": 46581.95703125,
+    "alt": 3325.129150390625,
+    "actors": [
+      "Map:MovingSteelBeam"
+    ]
+  },
+  {
+    "name": "Lever7_1730",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -29536.0859375,
+    "lng": 22610.97265625,
+    "alt": 833.112060546875,
+    "actors": [
+      "Map:Stump88"
+    ]
+  },
+  {
+    "name": "Lever8_4819",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -48383.8828125,
+    "lng": -52445.5,
+    "alt": 1337.6453857421875,
+    "actors": [
+      "Map:Brick2611"
+    ]
+  },
+  {
+    "name": "Lever9_1622",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -43539.1328125,
+    "lng": -53953.4921875,
+    "alt": -219.15725708007812,
+    "actors": [
+      "Map:Metalset1_SteelPoleRound7_8"
+    ]
+  },
+  {
+    "name": "Lever_194",
+    "type": "Lever_C",
+    "area": "Map",
+    "lat": -21341.318359375,
+    "lng": 7112.92529296875,
+    "alt": 969.1436157226562,
+    "actors": [
+      "Map:LegoDoor",
+      "Map:RedGuyEvent2_569"
+    ]
   },
   {
     "name": "Lift10",
@@ -13604,6 +16186,28 @@
     "lat": 1775.76806640625,
     "lng": 9566.3232421875,
     "alt": 921.8713989257812
+  },
+  {
+    "name": "PedestalButton2_2",
+    "type": "PedestalButton_C",
+    "area": "Map",
+    "lat": 43700.3203125,
+    "lng": -64201.8671875,
+    "alt": -971.1793823242188,
+    "actors": [
+      "Map:RingRusty14"
+    ]
+  },
+  {
+    "name": "PedestalButton_2",
+    "type": "PedestalButton_C",
+    "area": "Map",
+    "lat": -8124.349609375,
+    "lng": 75364.4296875,
+    "alt": 5390.45947265625,
+    "actors": [
+      "Map:Sponge13_2"
+    ]
   },
   {
     "name": "PipeCap10_2",
@@ -14809,6 +17413,54 @@
     "lat": -39925.67578125,
     "lng": -16159.7578125,
     "alt": -1302.1866455078125
+  },
+  {
+    "name": "SwingingDoor2_2",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": 19527.5,
+    "lng": 20301.568359375,
+    "alt": 1346.6202392578125
+  },
+  {
+    "name": "SwingingDoor3_5",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": -41279.4296875,
+    "lng": -58018.74609375,
+    "alt": -2196.376953125
+  },
+  {
+    "name": "SwingingDoor4_2",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": 42425.72265625,
+    "lng": -40658.6171875,
+    "alt": 534.54296875
+  },
+  {
+    "name": "SwingingDoor5_8",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": 44014.4453125,
+    "lng": -63345.88671875,
+    "alt": -641.029541015625
+  },
+  {
+    "name": "SwingingDoor6_4",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": 44937.41015625,
+    "lng": -40456.90234375,
+    "alt": 777.009765625
+  },
+  {
+    "name": "SwingingDoor_2",
+    "type": "SwingingDoor_C",
+    "area": "Map",
+    "lat": 37657.1015625,
+    "lng": -20153.84375,
+    "alt": 781.0437622070312
   },
   {
     "name": "UpgradeHappiness2_2",

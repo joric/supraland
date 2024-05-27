@@ -1,5 +1,69 @@
 [
   {
+    "name": "BallButton",
+    "type": "BallButton_C",
+    "area": "DLC2_Complete",
+    "lat": -57945.18359375,
+    "lng": 56204.41015625,
+    "alt": 4406.310546875,
+    "actors": [
+      "DLC2_Complete:Glowline67_2"
+    ]
+  },
+  {
+    "name": "BallButton2",
+    "type": "BallButton_C",
+    "area": "DLC2_Complete",
+    "lat": -50491.75390625,
+    "lng": 52167.03125,
+    "alt": 464.793701171875,
+    "actors": [
+      "DLC2_Complete:Jumppad16",
+      "DLC2_Complete:Glowline57"
+    ]
+  },
+  {
+    "name": "BallButton3_2",
+    "type": "BallButton_C",
+    "area": "DLC2_Complete",
+    "lat": -45890.19921875,
+    "lng": 44969.796875,
+    "alt": 769.1431274414062,
+    "actors": [
+      "DLC2_Complete:Glowline109_2"
+    ]
+  },
+  {
+    "name": "BallButton4_2",
+    "type": "BallButton_C",
+    "area": "DLC2_Complete",
+    "lat": -2737.76611328125,
+    "lng": -58926.28515625,
+    "alt": 6820.4248046875,
+    "actors": [
+      "DLC2_Complete:Glowline139_4"
+    ]
+  },
+  {
+    "name": "BallButton5_2",
+    "type": "BallButton_C",
+    "area": "DLC2_Complete",
+    "lat": 6046.8515625,
+    "lng": -58583.98046875,
+    "alt": 1246.7735595703125,
+    "actors": [
+      "DLC2_Complete:Glowline141_2"
+    ]
+  },
+  {
+    "name": "BatteryExplosionDetector_2",
+    "type": "BatteryExplosionDetector_C",
+    "area": "DLC2_Complete",
+    "lat": -58149.9375,
+    "lng": 53001.484375,
+    "alt": 875.645751953125
+  },
+  {
     "name": "Bones2",
     "type": "Bones_C",
     "area": "DLC2_Complete",
@@ -38,14 +102,6 @@
     "lat": 2999.83837890625,
     "lng": 18522.703125,
     "alt": 4653.763671875
-  },
-  {
-    "name": "BP_A3_StrengthQuest_2",
-    "type": "BP_A3_StrengthQuest_C",
-    "area": "DLC2_Complete",
-    "lat": -43490.41015625,
-    "lng": -6546.513671875,
-    "alt": 2595.6064453125
   },
   {
     "name": "BP_BoneDetector_2",
@@ -132,6 +188,30 @@
     "alt": 4165.99609375
   },
   {
+    "name": "BP_ElevatorDoor2",
+    "type": "BP_ElevatorDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -21725.19140625,
+    "lng": -73171.234375,
+    "alt": 2395.82421875
+  },
+  {
+    "name": "BP_ElevatorDoor_2",
+    "type": "BP_ElevatorDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -44174.05859375,
+    "lng": 20106.28515625,
+    "alt": 3064.625
+  },
+  {
+    "name": "BP_Fix_A4_CombatArenaDoor_2",
+    "type": "BP_Fix_A4_CombatArenaDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -39740.0,
+    "lng": 33075.0,
+    "alt": 10.0
+  },
+  {
     "name": "BP_MonsterChest2_2",
     "type": "BP_MonsterChest_C",
     "area": "DLC2_Complete",
@@ -206,6 +286,461 @@
     "lat": -49300.0,
     "lng": -61380.0,
     "alt": 10070.0
+  },
+  {
+    "name": "ButtonFloor-FatNPC2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -47705.51953125,
+    "lng": -6.793715953826904,
+    "alt": 3265.543701171875,
+    "actors": [
+      "DLC2_Complete:Glowline133"
+    ]
+  },
+  {
+    "name": "ButtonFloor11_7",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -13531.57421875,
+    "lng": 55461.53515625,
+    "alt": 456.56219482421875,
+    "actors": [
+      "DLC2_Complete:Glowline80_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor12",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -54853.6328125,
+    "lng": 56879.890625,
+    "alt": 457.311279296875,
+    "actors": [
+      "DLC2_Complete:MoveMesh2_2",
+      "DLC2_Complete:Glowline41"
+    ]
+  },
+  {
+    "name": "ButtonFloor13",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -54246.45703125,
+    "lng": 56912.84765625,
+    "alt": 4339.16064453125,
+    "actors": [
+      "DLC2_Complete:DoorLego_2",
+      "DLC2_Complete:Glowline56"
+    ]
+  },
+  {
+    "name": "ButtonFloor14",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -44801.83984375,
+    "lng": 51324.2890625,
+    "alt": 1903.3919677734375,
+    "actors": [
+      "DLC2_Complete:DoorInverted3_3",
+      "DLC2_Complete:DoorInverted4",
+      "DLC2_Complete:DoorInverted5",
+      "DLC2_Complete:SignalInverter4",
+      "DLC2_Complete:Glowline51",
+      "DLC2_Complete:DoorInverted10_2",
+      "DLC2_Complete:Glowline107"
+    ]
+  },
+  {
+    "name": "ButtonFloor15",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -48448.203125,
+    "lng": 52027.265625,
+    "alt": 3185.39208984375,
+    "actors": [
+      "DLC2_Complete:Door34",
+      "DLC2_Complete:Glowline82"
+    ]
+  },
+  {
+    "name": "ButtonFloor16",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -45938.80859375,
+    "lng": 39874.14453125,
+    "alt": 871.0582275390625,
+    "actors": [
+      "DLC2_Complete:MoveMesh5",
+      "DLC2_Complete:Glowline61"
+    ]
+  },
+  {
+    "name": "ButtonFloor17_8797",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -46958.078125,
+    "lng": 44538.59375,
+    "alt": 752.3919677734375,
+    "actors": [
+      "DLC2_Complete:Jumppad30_2",
+      "DLC2_Complete:Glowline108_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor18",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -61027.3515625,
+    "lng": 48627.52734375,
+    "alt": 252.6885986328125,
+    "actors": [
+      "DLC2_Complete:RampArea7",
+      "DLC2_Complete:Glowline73"
+    ]
+  },
+  {
+    "name": "ButtonFloor19",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -47705.5234375,
+    "lng": -783.9344482421875,
+    "alt": 3264.465576171875,
+    "actors": [
+      "DLC2_Complete:Glowline132"
+    ]
+  },
+  {
+    "name": "ButtonFloor20",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -48915.171875,
+    "lng": 54269.49609375,
+    "alt": 1899.688232421875,
+    "actors": [
+      "DLC2_Complete:DoorInverted6",
+      "DLC2_Complete:Door40",
+      "DLC2_Complete:DoorInverted7",
+      "DLC2_Complete:Glowline69",
+      "DLC2_Complete:Glowline70",
+      "DLC2_Complete:Glowline71"
+    ]
+  },
+  {
+    "name": "ButtonFloor21",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -14936.9189453125,
+    "lng": -57327.4609375,
+    "alt": 10673.400390625,
+    "actors": [
+      "DLC2_Complete:Glowline115"
+    ]
+  },
+  {
+    "name": "ButtonFloor22",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -9821.26953125,
+    "lng": -58246.1640625,
+    "alt": 8252.22265625,
+    "actors": [
+      "DLC2_Complete:Glowline114"
+    ]
+  },
+  {
+    "name": "ButtonFloor23",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -5429.21142578125,
+    "lng": -46161.9453125,
+    "alt": 8258.677734375,
+    "actors": [
+      "DLC2_Complete:Glowline116"
+    ]
+  },
+  {
+    "name": "ButtonFloor24_6100",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -10382.8505859375,
+    "lng": 55441.80859375,
+    "alt": 457.0,
+    "actors": [
+      "DLC2_Complete:MoveMesh18_2",
+      "DLC2_Complete:Glowline11"
+    ]
+  },
+  {
+    "name": "ButtonFloor25",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -22553.19140625,
+    "lng": 20208.427734375,
+    "alt": 1867.7869873046875,
+    "actors": [
+      "DLC2_Complete:Glowline7_2",
+      "DLC2_Complete:Door63_1"
+    ]
+  },
+  {
+    "name": "ButtonFloor26_6103",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -8312.263671875,
+    "lng": 62087.359375,
+    "alt": 414.0,
+    "actors": [
+      "DLC2_Complete:Glowline10"
+    ]
+  },
+  {
+    "name": "ButtonFloor27_8796",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": 5436.916015625,
+    "lng": -56796.73828125,
+    "alt": 1852.55322265625,
+    "actors": [
+      "DLC2_Complete:Glowline140_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor2_5",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -15678.0498046875,
+    "lng": 57937.83203125,
+    "alt": 429.43939208984375,
+    "actors": [
+      "DLC2_Complete:Glowline13",
+      "DLC2_Complete:PipeCap_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor3_1",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -15136.0673828125,
+    "lng": 61236.5546875,
+    "alt": 1247.4632568359375,
+    "actors": [
+      "DLC2_Complete:Glowline14_6"
+    ]
+  },
+  {
+    "name": "ButtonFloor4_2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -8443.95703125,
+    "lng": 60879.45703125,
+    "alt": 416.1670227050781,
+    "actors": [
+      "DLC2_Complete:Glowline16",
+      "DLC2_Complete:Glowline15"
+    ]
+  },
+  {
+    "name": "ButtonFloor5",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -10139.3388671875,
+    "lng": 62757.96875,
+    "alt": 413.0,
+    "actors": [
+      "DLC2_Complete:Door14",
+      "DLC2_Complete:Glowline79_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor6",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -14866.97265625,
+    "lng": 60902.03515625,
+    "alt": 429.43939208984375,
+    "actors": [
+      "DLC2_Complete:Glowline127_5"
+    ]
+  },
+  {
+    "name": "ButtonFloor7",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -39299.9296875,
+    "lng": -4829.150390625,
+    "alt": 1804.862060546875,
+    "actors": [
+      "DLC2_Complete:Glowline8_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor8_2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -46267.83203125,
+    "lng": 44519.6484375,
+    "alt": 113.3919677734375,
+    "actors": [
+      "DLC2_Complete:Glowline54_10"
+    ]
+  },
+  {
+    "name": "ButtonFloor9",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -42713.89453125,
+    "lng": -6100.939453125,
+    "alt": 2499.52734375,
+    "actors": [
+      "DLC2_Complete:Glowline28"
+    ]
+  },
+  {
+    "name": "ButtonFloor_2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": 19706.345703125,
+    "lng": 20397.435546875,
+    "alt": 3077.958740234375,
+    "actors": [
+      "DLC2_Complete:Glowline95_2"
+    ]
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_1147",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -36486.97265625,
+    "lng": 15846.412109375,
+    "alt": 2212.987548828125
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_1560",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -42663.59375,
+    "lng": 8899.5283203125,
+    "alt": 1881.3597412109375
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_2107",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -21426.66015625,
+    "lng": 32141.333984375,
+    "alt": -571.8511962890625
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_2707",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -9247.4814453125,
+    "lng": 60509.9375,
+    "alt": 4185.54248046875
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_3508",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -48634.15234375,
+    "lng": 37124.09765625,
+    "alt": -528.1012573242188
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_3737",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -59063.32421875,
+    "lng": 57628.36328125,
+    "alt": 876.9898071289062
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_378",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -15904.810546875,
+    "lng": 21700.32421875,
+    "alt": 512.699951171875
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_4617",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -30248.953125,
+    "lng": 22006.912109375,
+    "alt": 3107.3056640625
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_5215",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": 4524.21240234375,
+    "lng": 31310.2109375,
+    "alt": 4131.1064453125
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_5622",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -31574.693359375,
+    "lng": 16975.8359375,
+    "alt": -63.4862060546875
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_6029",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -14149.3154296875,
+    "lng": 39948.52734375,
+    "alt": 4089.94580078125
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_6705",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": 2509.00439453125,
+    "lng": 22889.623046875,
+    "alt": 3280.296142578125
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_7814",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -22946.064453125,
+    "lng": 22226.9296875,
+    "alt": 1486.14990234375
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_8142",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -14054.6884765625,
+    "lng": 52124.515625,
+    "alt": 578.587890625
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_8619",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -33786.87109375,
+    "lng": 29124.43359375,
+    "alt": -60.01104736328125
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_8704",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": -48147.10546875,
+    "lng": 1621.6630859375,
+    "alt": 1899.662109375
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_8868",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_Complete",
+    "lat": 1536.3089599609375,
+    "lng": -57961.47265625,
+    "alt": 8361.7314453125
   },
   {
     "name": "BuyBrokenPipeDetector_2",
@@ -6081,6 +6616,1014 @@
     "alt": 3176.125244140625
   },
   {
+    "name": "Door23",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -41999.98828125,
+    "lng": 3266.08056640625,
+    "alt": 1785.0
+  },
+  {
+    "name": "Door24",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -44340.2109375,
+    "lng": -888.1235961914062,
+    "alt": 1788.560302734375
+  },
+  {
+    "name": "Door29_2",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -41840.41015625,
+    "lng": 34549.02734375,
+    "alt": -148.0
+  },
+  {
+    "name": "Door42",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -29731.703125,
+    "lng": 20746.556640625,
+    "alt": -189.96975708007812
+  },
+  {
+    "name": "Door43",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -24419.78515625,
+    "lng": 20002.458984375,
+    "alt": -189.99989318847656
+  },
+  {
+    "name": "Door45",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -23582.98828125,
+    "lng": 16224.8232421875,
+    "alt": -190.00552368164062
+  },
+  {
+    "name": "Door59",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -24134.328125,
+    "lng": 17359.08984375,
+    "alt": 369.46392822265625
+  },
+  {
+    "name": "Door60",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -29439.150390625,
+    "lng": 16837.97265625,
+    "alt": -174.81690979003906
+  },
+  {
+    "name": "Door63_1",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -23399.736328125,
+    "lng": 21204.779296875,
+    "alt": 1358.5970458984375
+  },
+  {
+    "name": "Door64",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -31075.884765625,
+    "lng": 21355.55078125,
+    "alt": 1368.5726318359375
+  },
+  {
+    "name": "Door66",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -40614.36328125,
+    "lng": 8707.5263671875,
+    "alt": 1751.0
+  },
+  {
+    "name": "Door81",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -45959.70703125,
+    "lng": 2621.1474609375,
+    "alt": 1754.9993896484375
+  },
+  {
+    "name": "Door82",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -45959.70703125,
+    "lng": 3145.056640625,
+    "alt": 1754.9993896484375
+  },
+  {
+    "name": "PrintingPressDoor",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -39360.01171875,
+    "lng": 4273.95166015625,
+    "alt": 1776.392578125
+  },
+  {
+    "name": "PrintingPressDoor6",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -48393.7109375,
+    "lng": 2497.65478515625,
+    "alt": 1776.392578125
+  },
+  {
+    "name": "PrintingPressDoor7",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -49109.65625,
+    "lng": 3972.358642578125,
+    "alt": 1777.80322265625
+  },
+  {
+    "name": "PrintingPressDoor8",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -51105.08203125,
+    "lng": 749.010498046875,
+    "alt": 1804.52099609375
+  },
+  {
+    "name": "PrintingPressDoor9",
+    "type": "Door3_C",
+    "area": "DLC2_Complete",
+    "lat": -50048.4140625,
+    "lng": 4122.708984375,
+    "alt": 2716.578369140625
+  },
+  {
+    "name": "A4_PreventReturnDoor",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -39977.16796875,
+    "lng": 33289.6328125,
+    "alt": -162.39273071289062
+  },
+  {
+    "name": "Door10",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 4078.95654296875,
+    "lng": 22976.232421875,
+    "alt": 3175.9169921875
+  },
+  {
+    "name": "Door11",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -8696.66796875,
+    "lng": 61646.1796875,
+    "alt": 430.0
+  },
+  {
+    "name": "Door12",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -15195.318359375,
+    "lng": 62473.234375,
+    "alt": 1260.0
+  },
+  {
+    "name": "Door13",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -10053.7783203125,
+    "lng": 57627.94140625,
+    "alt": 429.999755859375
+  },
+  {
+    "name": "Door14",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -10445.6357421875,
+    "lng": 62126.890625,
+    "alt": 426.6930847167969
+  },
+  {
+    "name": "Door17",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -51979.1953125,
+    "lng": 3947.465576171875,
+    "alt": 1765.0
+  },
+  {
+    "name": "Door21",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -42670.0078125,
+    "lng": 3976.028076171875,
+    "alt": 1775.0
+  },
+  {
+    "name": "Door27_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -56288.2265625,
+    "lng": 59469.1796875,
+    "alt": 827.57275390625
+  },
+  {
+    "name": "Door28",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 1919.9566650390625,
+    "lng": 37507.84375,
+    "alt": 2334.32861328125
+  },
+  {
+    "name": "Door2_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -43431.0,
+    "lng": -5817.6357421875,
+    "alt": 2516.0
+  },
+  {
+    "name": "Door30",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47263.6171875,
+    "lng": 1499.7320556640625,
+    "alt": 1765.000244140625
+  },
+  {
+    "name": "Door31_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -13252.0302734375,
+    "lng": 58770.12890625,
+    "alt": 454.06219482421875
+  },
+  {
+    "name": "Door32",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 3845.076171875,
+    "lng": 35948.39453125,
+    "alt": 3082.530029296875
+  },
+  {
+    "name": "Door33",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -34042.734375,
+    "lng": 30271.216796875,
+    "alt": -235.56643676757812
+  },
+  {
+    "name": "Door34",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47589.53125,
+    "lng": 51458.890625,
+    "alt": 1908.3919677734375
+  },
+  {
+    "name": "Door36",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47245.203125,
+    "lng": 46620.1015625,
+    "alt": 1296.3939208984375
+  },
+  {
+    "name": "Door37",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47870.03125,
+    "lng": 52179.0546875,
+    "alt": 1887.3919677734375
+  },
+  {
+    "name": "Door38",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -50746.16796875,
+    "lng": 41626.99609375,
+    "alt": 236.39208984375
+  },
+  {
+    "name": "Door3_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -49432.828125,
+    "lng": 41587.6484375,
+    "alt": 236.3919677734375
+  },
+  {
+    "name": "Door4",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 2994.3984375,
+    "lng": 11299.919921875,
+    "alt": 3079.77734375
+  },
+  {
+    "name": "Door40",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -48442.0234375,
+    "lng": 54587.3671875,
+    "alt": 1898.003173828125
+  },
+  {
+    "name": "Door41",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -48788.54296875,
+    "lng": 54812.765625,
+    "alt": 2425.09228515625
+  },
+  {
+    "name": "Door44_5",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -16304.748046875,
+    "lng": 45204.16015625,
+    "alt": 491.5870361328125
+  },
+  {
+    "name": "Door46",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -30989.529296875,
+    "lng": 18486.2578125,
+    "alt": -225.7982177734375
+  },
+  {
+    "name": "Door47",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -12407.3828125,
+    "lng": 55657.515625,
+    "alt": 1076.7496337890625
+  },
+  {
+    "name": "Door48_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -30080.2265625,
+    "lng": 24766.119140625,
+    "alt": 1959.0
+  },
+  {
+    "name": "Door49_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -36530.859375,
+    "lng": 14696.103515625,
+    "alt": 2095.99462890625
+  },
+  {
+    "name": "Door5",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 2524.99462890625,
+    "lng": 20303.86328125,
+    "alt": 2989.917236328125
+  },
+  {
+    "name": "Door50",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 4766.80908203125,
+    "lng": 18889.99609375,
+    "alt": 3108.076904296875
+  },
+  {
+    "name": "Door51_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -26980.380859375,
+    "lng": 21470.119140625,
+    "alt": -158.72586059570312
+  },
+  {
+    "name": "Door52_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -30324.0,
+    "lng": 26477.0,
+    "alt": 2052.0
+  },
+  {
+    "name": "Door53",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -30374.443359375,
+    "lng": 26537.11328125,
+    "alt": 2052.0
+  },
+  {
+    "name": "Door54",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -41041.4609375,
+    "lng": 10140.9189453125,
+    "alt": 2055.63232421875
+  },
+  {
+    "name": "Door55",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -48209.30859375,
+    "lng": 54142.4296875,
+    "alt": 1898.003173828125
+  },
+  {
+    "name": "Door56",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -31997.25,
+    "lng": 28373.76953125,
+    "alt": -222.37901306152344
+  },
+  {
+    "name": "Door57",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 19485.626953125,
+    "lng": 19901.6484375,
+    "alt": 3091.51318359375
+  },
+  {
+    "name": "Door6",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -14539.9306640625,
+    "lng": 61141.05859375,
+    "alt": 2017.8280029296875
+  },
+  {
+    "name": "Door61_3",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -28071.19921875,
+    "lng": 25914.9296875,
+    "alt": -56.081024169921875
+  },
+  {
+    "name": "Door62",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 1355.6878662109375,
+    "lng": 9572.201171875,
+    "alt": 3200.802001953125
+  },
+  {
+    "name": "Door65",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -4491.70458984375,
+    "lng": 18393.283203125,
+    "alt": 4119.03857421875
+  },
+  {
+    "name": "Door67",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -27722.6796875,
+    "lng": 4626.26611328125,
+    "alt": 1129.2943115234375
+  },
+  {
+    "name": "Door68",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -26816.68359375,
+    "lng": -348.32745361328125,
+    "alt": 1065.91015625
+  },
+  {
+    "name": "Door69",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -39897.9609375,
+    "lng": 33208.35546875,
+    "alt": -162.39260864257812
+  },
+  {
+    "name": "Door7",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -12044.0234375,
+    "lng": 58271.4140625,
+    "alt": 1251.61572265625
+  },
+  {
+    "name": "Door70",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -55872.6171875,
+    "lng": 64871.6796875,
+    "alt": 621.9130249023438
+  },
+  {
+    "name": "Door71",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -52368.6484375,
+    "lng": 47171.2734375,
+    "alt": 424.59423828125
+  },
+  {
+    "name": "Door72",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -19875.9296875,
+    "lng": 36699.18359375,
+    "alt": 3833.993408203125
+  },
+  {
+    "name": "Door73",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -14816.46484375,
+    "lng": 39844.19921875,
+    "alt": 3941.48681640625
+  },
+  {
+    "name": "Door75",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -9174.66796875,
+    "lng": 61175.1796875,
+    "alt": 430.0
+  },
+  {
+    "name": "Door76",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47234.86328125,
+    "lng": -911.4496459960938,
+    "alt": 1762.9151611328125
+  },
+  {
+    "name": "Door77",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -50422.62109375,
+    "lng": 760.13916015625,
+    "alt": 1765.0
+  },
+  {
+    "name": "Door78",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47332.39453125,
+    "lng": -379.5649108886719,
+    "alt": 3243.9931640625
+  },
+  {
+    "name": "Door79",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -47210.11328125,
+    "lng": 1499.731201171875,
+    "alt": 1765.000244140625
+  },
+  {
+    "name": "Door8",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -9111.01953125,
+    "lng": 59957.9609375,
+    "alt": 3407.328369140625
+  },
+  {
+    "name": "Door9_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -8842.76953125,
+    "lng": 59689.88671875,
+    "alt": 430.0
+  },
+  {
+    "name": "Door_2",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": 11956.4375,
+    "lng": 27661.9765625,
+    "alt": 3932.0
+  },
+  {
+    "name": "Door_Race",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -25032.84375,
+    "lng": 50100.109375,
+    "alt": 2928.615478515625
+  },
+  {
+    "name": "DoorInverted9_5",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -36334.7109375,
+    "lng": 6480.240234375,
+    "alt": 1758.5294189453125
+  },
+  {
+    "name": "DoorStone7",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -56441.5,
+    "lng": 54356.2109375,
+    "alt": 2644.8037109375
+  },
+  {
+    "name": "DoorSus",
+    "type": "Door_C",
+    "area": "DLC2_Complete",
+    "lat": -32892.859375,
+    "lng": 29192.556640625,
+    "alt": -235.56643676757812
+  },
+  {
+    "name": "DoorAnna10",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -46374.90234375,
+    "lng": 50212.9453125,
+    "alt": 1881.3919677734375
+  },
+  {
+    "name": "DoorAnna11_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -43552.4453125,
+    "lng": 34985.94140625,
+    "alt": 442.3324279785156
+  },
+  {
+    "name": "DoorAnna12",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -26589.140625,
+    "lng": 20094.6015625,
+    "alt": -2484.142822265625
+  },
+  {
+    "name": "DoorAnna13_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -20188.08984375,
+    "lng": 21801.501953125,
+    "alt": -121.0
+  },
+  {
+    "name": "DoorAnna14_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -31751.57421875,
+    "lng": 18288.947265625,
+    "alt": 1359.071533203125
+  },
+  {
+    "name": "DoorAnna15",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -26597.53515625,
+    "lng": 21146.65234375,
+    "alt": 1350.6864013671875
+  },
+  {
+    "name": "DoorAnna17",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -30909.466796875,
+    "lng": 18438.189453125,
+    "alt": 2947.2294921875
+  },
+  {
+    "name": "DoorAnna18_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -43417.90234375,
+    "lng": 50530.4921875,
+    "alt": 1953.3919677734375
+  },
+  {
+    "name": "DoorAnna19",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -56201.96484375,
+    "lng": 53142.203125,
+    "alt": 493.94805908203125
+  },
+  {
+    "name": "DoorAnna2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -40886.30078125,
+    "lng": 397.1480712890625,
+    "alt": 1777.0
+  },
+  {
+    "name": "DoorAnna20",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -20418.41015625,
+    "lng": 13485.70703125,
+    "alt": -169.4905242919922
+  },
+  {
+    "name": "DoorAnna21",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -46521.86328125,
+    "lng": -1593.3048095703125,
+    "alt": 3261.53955078125
+  },
+  {
+    "name": "DoorAnna4_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -28168.91796875,
+    "lng": 16032.69140625,
+    "alt": -211.0
+  },
+  {
+    "name": "DoorAnna6_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -48475.5703125,
+    "lng": 45208.0546875,
+    "alt": 372.0
+  },
+  {
+    "name": "DoorAnna7",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -54877.6484375,
+    "lng": 52633.96875,
+    "alt": 1001.9237060546875
+  },
+  {
+    "name": "DoorAnna8_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -20228.533203125,
+    "lng": 13520.916015625,
+    "alt": -169.4905242919922
+  },
+  {
+    "name": "DoorAnna9",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -54614.171875,
+    "lng": 52861.0,
+    "alt": 1001.9237060546875
+  },
+  {
+    "name": "DoorAnna_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Complete",
+    "lat": -40844.0,
+    "lng": -1839.81689453125,
+    "alt": 1777.0
+  },
+  {
+    "name": "Door80",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -51505.046875,
+    "lng": -1082.681640625,
+    "alt": 1765.0
+  },
+  {
+    "name": "Door_MagnetBeltPath",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -22761.140625,
+    "lng": 32568.529296875,
+    "alt": 795.9964599609375
+  },
+  {
+    "name": "DoorInverted10_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -43185.8671875,
+    "lng": 51119.0859375,
+    "alt": 1922.3084716796875
+  },
+  {
+    "name": "DoorInverted11",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -47113.23828125,
+    "lng": 5457.78955078125,
+    "alt": 1765.5106201171875
+  },
+  {
+    "name": "DoorInverted12",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -47264.7109375,
+    "lng": 2887.645751953125,
+    "alt": 3264.0
+  },
+  {
+    "name": "DoorInverted13",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -47113.23828125,
+    "lng": 5455.947265625,
+    "alt": 1764.0281982421875
+  },
+  {
+    "name": "DoorInverted14_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -47041.1015625,
+    "lng": 45712.9921875,
+    "alt": 119.3919677734375
+  },
+  {
+    "name": "DoorInverted15_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": 366.8122863769531,
+    "lng": -58279.5859375,
+    "alt": 8097.8876953125
+  },
+  {
+    "name": "DoorInverted16",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": 1382.2998046875,
+    "lng": -58735.390625,
+    "alt": 1206.8673095703125
+  },
+  {
+    "name": "DoorInverted2_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -43705.30078125,
+    "lng": -899.452880859375,
+    "alt": 2404.25
+  },
+  {
+    "name": "DoorInverted3_3",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -44942.26171875,
+    "lng": 52389.79296875,
+    "alt": 1933.3919677734375
+  },
+  {
+    "name": "DoorInverted4",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -44252.85546875,
+    "lng": 52390.6484375,
+    "alt": 1933.3919677734375
+  },
+  {
+    "name": "DoorInverted5",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -43441.68359375,
+    "lng": 51439.4921875,
+    "alt": 1933.3919677734375
+  },
+  {
+    "name": "DoorInverted6",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -48447.2890625,
+    "lng": 53783.0078125,
+    "alt": 1882.085693359375
+  },
+  {
+    "name": "DoorInverted7",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -48838.23828125,
+    "lng": 54824.19921875,
+    "alt": 1883.357421875
+  },
+  {
+    "name": "DoorInverted8_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_Complete",
+    "lat": -6978.3095703125,
+    "lng": -49191.65625,
+    "alt": 7995.59326171875
+  },
+  {
+    "name": "DoorLego2",
+    "type": "DoorLego_C",
+    "area": "DLC2_Complete",
+    "lat": -5344.49169921875,
+    "lng": -43100.5,
+    "alt": 9070.7861328125
+  },
+  {
+    "name": "DoorLego3_2",
+    "type": "DoorLego_C",
+    "area": "DLC2_Complete",
+    "lat": -11900.578125,
+    "lng": 39876.3984375,
+    "alt": 839.3283081054688
+  },
+  {
+    "name": "DoorLego4_2",
+    "type": "DoorLego_C",
+    "area": "DLC2_Complete",
+    "lat": -24670.9140625,
+    "lng": 22273.421875,
+    "alt": 1299.7144775390625
+  },
+  {
+    "name": "DoorLego_2",
+    "type": "DoorLego_C",
+    "area": "DLC2_Complete",
+    "lat": -55967.0703125,
+    "lng": 55670.5859375,
+    "alt": 5635.62548828125
+  },
+  {
+    "name": "DoorStone10_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -63051.08203125,
+    "lng": 57289.83984375,
+    "alt": 4402.00537109375
+  },
+  {
+    "name": "DoorStone2",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -38128.97265625,
+    "lng": 436.35888671875,
+    "alt": 1774.5968017578125
+  },
+  {
+    "name": "DoorStone3",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -34023.04296875,
+    "lng": 20756.978515625,
+    "alt": 3813.618896484375
+  },
+  {
+    "name": "DoorStone4_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -36866.19921875,
+    "lng": 21206.2890625,
+    "alt": 3607.400390625
+  },
+  {
+    "name": "DoorStone5",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -37456.97265625,
+    "lng": 3065.35888671875,
+    "alt": 3244.0
+  },
+  {
+    "name": "DoorStone6",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -50592.78125,
+    "lng": 56277.73046875,
+    "alt": 474.403076171875
+  },
+  {
+    "name": "DoorStone8",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -36786.609375,
+    "lng": 20356.125,
+    "alt": 3622.0390625
+  },
+  {
+    "name": "DoorStone9_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -23307.369140625,
+    "lng": 37498.77734375,
+    "alt": 5149.1767578125
+  },
+  {
+    "name": "DoorStone_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_Complete",
+    "lat": -15431.25,
+    "lng": 47748.89453125,
+    "alt": 409.68878173828125
+  },
+  {
     "name": "BankElectricityPuzzle_1_ExplodingBattery",
     "type": "ExplodingBattery_C",
     "area": "DLC2_Complete",
@@ -6313,6 +7856,78 @@
     "alt": 512.699951171875
   },
   {
+    "name": "JailDoor10_2",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": 8144.7060546875,
+    "lng": 28349.39453125,
+    "alt": 3706.699462890625
+  },
+  {
+    "name": "JailDoor2",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -41772.29296875,
+    "lng": -730.89794921875,
+    "alt": 1775.544677734375
+  },
+  {
+    "name": "JailDoor3",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -41231.28515625,
+    "lng": -1329.853515625,
+    "alt": 1777.0
+  },
+  {
+    "name": "JailDoor5",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -43979.921875,
+    "lng": -1192.9296875,
+    "alt": 2404.0
+  },
+  {
+    "name": "JailDoor6",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -43427.921875,
+    "lng": -1181.8074951171875,
+    "alt": 2401.0439453125
+  },
+  {
+    "name": "JailDoor7",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -40297.29296875,
+    "lng": -732.8974609375,
+    "alt": 1778.0
+  },
+  {
+    "name": "JailDoor8",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -40634.29296875,
+    "lng": -192.94287109375,
+    "alt": 1777.0
+  },
+  {
+    "name": "JailDoor9",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -40422.29296875,
+    "lng": 354.1031799316406,
+    "alt": 1778.0
+  },
+  {
+    "name": "JailDoor_2",
+    "type": "JailDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -41231.29296875,
+    "lng": -192.90625,
+    "alt": 1777.0
+  },
+  {
     "name": "Jumppad10_2",
     "type": "Jumppad_C",
     "area": "DLC2_Complete",
@@ -6327,9 +7942,9 @@
       "z": 0.6944271326065063
     },
     "target": {
-      "x": 19335.497182283085,
-      "y": 9170.682769031017,
-      "z": 3510.2893096138646
+      "x": 19397.404002512572,
+      "y": 9293.578476631454,
+      "z": 3403.3573353394895
     }
   },
   {
@@ -6348,8 +7963,8 @@
     },
     "target": {
       "x": 5635.47119140625,
-      "y": -44303.63264977932,
-      "z": 1589.8731900638618
+      "y": -44252.01068878174,
+      "z": 1681.2158531982457
     }
   },
   {
@@ -6385,9 +8000,9 @@
       "z": 0.7071056962013245
     },
     "target": {
-      "x": 24617.094984054565,
-      "y": 8674.514058023691,
-      "z": 4540.004267306476
+      "x": 24000.63108444214,
+      "y": 6951.853013575077,
+      "z": 3917.8517562274124
     }
   },
   {
@@ -6405,9 +8020,9 @@
       "z": 0.9976105690002441
     },
     "target": {
-      "x": 54061.24699479193,
-      "y": -57326.78069284212,
-      "z": 3601.7018955005583
+      "x": 54059.11207359494,
+      "y": -57326.26488622767,
+      "z": 3632.829624840237
     }
   },
   {
@@ -6425,9 +8040,9 @@
       "z": 0.9917336106300354
     },
     "target": {
-      "x": 54261.81032140202,
-      "y": -57202.7776847324,
-      "z": 3953.985726467659
+      "x": 54257.07365687583,
+      "y": -57209.263392641384,
+      "z": 3989.94711954647
     }
   },
   {
@@ -6445,9 +8060,9 @@
       "z": 0.8896797895431519
     },
     "target": {
-      "x": 51801.31693811715,
-      "y": -46123.552421569824,
-      "z": 2908.1887915344732
+      "x": 51801.98554170411,
+      "y": -46082.46520662308,
+      "z": 2858.1061725933573
     }
   },
   {
@@ -6465,9 +8080,9 @@
       "z": 0.9877210259437561
     },
     "target": {
-      "x": 52994.349503214034,
-      "y": -56989.6037546274,
-      "z": 3565.0580261931395
+      "x": 52991.66101304759,
+      "y": -56922.40829971002,
+      "z": 3363.8518379013385
     }
   },
   {
@@ -6486,9 +8101,9 @@
       "z": 0.9396960735321045
     },
     "target": {
-      "x": 2198.5651235580444,
-      "y": -47269.39970588684,
-      "z": 1894.9484661865545
+      "x": 2731.8454765081406,
+      "y": -48514.353081941605,
+      "z": 3731.5427149994
     }
   },
   {
@@ -6528,9 +8143,9 @@
       "z": 0.9550187587738037
     },
     "target": {
-      "x": 39873.756947132846,
-      "y": -46466.597437460056,
-      "z": 1932.8017180061202
+      "x": 39901.280423110555,
+      "y": -46469.21609445719,
+      "z": 1952.3172051563138
     }
   },
   {
@@ -6568,9 +8183,9 @@
       "z": 0.9696907997131348
     },
     "target": {
-      "x": 41658.67184346914,
-      "y": -62158.04871118069,
-      "z": 3278.348175628725
+      "x": 41651.37831030786,
+      "y": -62140.441386312246,
+      "z": 3202.60345800635
     }
   },
   {
@@ -6609,9 +8224,9 @@
       "z": 0.9235073328018188
     },
     "target": {
-      "x": 28519.85577940941,
-      "y": -38501.094922184944,
-      "z": -524.8851619125118
+      "x": 28721.035100221634,
+      "y": -38576.38218438625,
+      "z": 8.11873171846559
     }
   },
   {
@@ -6629,9 +8244,9 @@
       "z": 0.8397007584571838
     },
     "target": {
-      "x": 34097.54020631313,
-      "y": -36846.203995890915,
-      "z": 646.3811492376374
+      "x": 34227.5538867712,
+      "y": -36837.10273588449,
+      "z": 899.5533672079121
     }
   },
   {
@@ -6670,9 +8285,9 @@
       "z": 0.7214187383651733
     },
     "target": {
-      "x": 63904.4281861186,
-      "y": -52484.66501760483,
-      "z": 672.9271773948685
+      "x": 63893.56548637152,
+      "y": -52538.98953962326,
+      "z": 612.5898764640826
     }
   },
   {
@@ -6690,9 +8305,9 @@
       "z": 0.721419095993042
     },
     "target": {
-      "x": 62643.20736885071,
-      "y": -57577.02018260956,
-      "z": 717.8947058898941
+      "x": 62658.82602214813,
+      "y": -57495.40129899979,
+      "z": 627.3887974090595
     }
   },
   {
@@ -6730,9 +8345,9 @@
       "z": 0.9436719417572021
     },
     "target": {
-      "x": 18841.28582378858,
-      "y": -31372.52878073309,
-      "z": 895.196052414775
+      "x": 18599.33094822298,
+      "y": -30417.124521495163,
+      "z": 2933.026640364014
     }
   },
   {
@@ -6788,9 +8403,9 @@
       "z": 0.7071056962013245
     },
     "target": {
-      "x": 18175.134678065777,
-      "y": 6140.244194030762,
-      "z": 3176.376582180412
+      "x": 18180.332858368754,
+      "y": 6087.466474533081,
+      "z": 3121.879009395511
     }
   },
   {
@@ -6808,9 +8423,9 @@
       "z": 0.9659260511398315
     },
     "target": {
-      "x": 60495.93175059557,
-      "y": -8385.961599886417,
-      "z": 4153.789464250992
+      "x": 60484.95093977451,
+      "y": -8396.942240834236,
+      "z": 4178.786001182602
     }
   },
   {
@@ -6828,9 +8443,9 @@
       "z": 0.8686047196388245
     },
     "target": {
-      "x": 32019.669505923986,
-      "y": 6666.717540316284,
-      "z": 4123.012299667081
+      "x": 32195.752611726522,
+      "y": 6695.263719551265,
+      "z": 3900.5711987370587
     }
   },
   {
@@ -6849,9 +8464,9 @@
       "z": 0.9148827195167542
     },
     "target": {
-      "x": 57710.70083680749,
-      "y": -22866.370423734188,
-      "z": 743.1278466430424
+      "x": 58732.187280118465,
+      "y": -21767.077561974525,
+      "z": 3295.7882781992407
     }
   },
   {
@@ -6870,9 +8485,9 @@
       "z": 0.8995097875595093
     },
     "target": {
-      "x": 63602.20726430416,
-      "y": -11320.908670663834,
-      "z": 4039.7229648476355
+      "x": 63615.94337272644,
+      "y": -11313.246906280518,
+      "z": 4019.969317199778
     }
   },
   {
@@ -6911,9 +8526,9 @@
       "z": 0.9659258723258972
     },
     "target": {
-      "x": 62644.06191012263,
-      "y": -15654.22088265419,
-      "z": 499.20435025970227
+      "x": 62759.359944969416,
+      "y": -15538.92316699028,
+      "z": 1026.584150694383
     }
   },
   {
@@ -6931,9 +8546,9 @@
       "z": 0.6909903883934021
     },
     "target": {
-      "x": 11818.95966720581,
-      "y": 3161.7459330558777,
-      "z": 3102.1741649475243
+      "x": 11790.072445392609,
+      "y": 3163.0029285550117,
+      "z": 3072.9296804832607
     }
   },
   {
@@ -7009,12 +8624,398 @@
     "alt": 1877.6624755859375
   },
   {
+    "name": "KeycardReader2_2",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -25352.3671875,
+    "lng": 22298.849609375,
+    "alt": 1502.5069580078125
+  },
+  {
+    "name": "KeycardReader3",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -40684.125,
+    "lng": -622.4583740234375,
+    "alt": 1940.0
+  },
+  {
+    "name": "KeycardReader4_2",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -41404.10546875,
+    "lng": 10096.009765625,
+    "alt": 2191.429443359375
+  },
+  {
+    "name": "KeycardReader5_2",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -47326.62890625,
+    "lng": 5409.0322265625,
+    "alt": 1900.51416015625
+  },
+  {
+    "name": "KeycardReader6_8",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -46460.3203125,
+    "lng": 4002.134765625,
+    "alt": 3114.1103515625
+  },
+  {
+    "name": "KeycardReader7",
+    "type": "KeycardReader_C",
+    "area": "DLC2_Complete",
+    "lat": -42925.65234375,
+    "lng": 3937.3720703125,
+    "alt": 1902.881103515625
+  },
+  {
     "name": "KeyLock8_2",
     "type": "KeyLock_C",
     "area": "DLC2_Complete",
     "lat": -52353.9921875,
     "lng": 47191.03125,
-    "alt": 529.594482421875
+    "alt": 529.594482421875,
+    "actors": [
+      "DLC2_Complete:Door71"
+    ]
+  },
+  {
+    "name": "KeyLockPlastic10_5",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": 5973.7802734375,
+    "lng": 17726.09765625,
+    "alt": 3107.09423828125
+  },
+  {
+    "name": "KeyLockPlastic2_2",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -10039.5458984375,
+    "lng": 57658.76953125,
+    "alt": 554.7304077148438
+  },
+  {
+    "name": "KeyLockPlastic3_2",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -32185.9296875,
+    "lng": 17983.173828125,
+    "alt": 3990.0546875
+  },
+  {
+    "name": "KeyLockPlastic4_5",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -39393.85546875,
+    "lng": 4129.68505859375,
+    "alt": 1898.389892578125
+  },
+  {
+    "name": "KeyLockPlastic5_8",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -26518.765625,
+    "lng": 20057.3671875,
+    "alt": -2364.673583984375
+  },
+  {
+    "name": "KeyLockPlastic6_11",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -47207.578125,
+    "lng": 46650.703125,
+    "alt": 1404.035888671875
+  },
+  {
+    "name": "KeyLockPlastic7_2",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": 1432.8079833984375,
+    "lng": -58722.6484375,
+    "alt": 1330.340576171875
+  },
+  {
+    "name": "KeyLockPlastic8_5",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": 2965.51220703125,
+    "lng": 11270.697265625,
+    "alt": 3191.43212890625
+  },
+  {
+    "name": "KeyLockPlastic9_2",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -23502.841796875,
+    "lng": 16220.7568359375,
+    "alt": -113.6812744140625
+  },
+  {
+    "name": "KeyLockPlastic_2",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -12031.7919921875,
+    "lng": 39926.7734375,
+    "alt": 986.3282470703125
+  },
+  {
+    "name": "KeyPlastic2_2",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -32139.642578125,
+    "lng": 17539.626953125,
+    "alt": 3548.81298828125
+  },
+  {
+    "name": "KeyPlastic3_7",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -42815.91015625,
+    "lng": 5081.8369140625,
+    "alt": 1914.4849853515625
+  },
+  {
+    "name": "KeyPlastic4_10",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -25816.71875,
+    "lng": 19997.5859375,
+    "alt": -2945.32275390625
+  },
+  {
+    "name": "KeyPlastic5_13",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -42661.6015625,
+    "lng": 50433.77734375,
+    "alt": 2026.05419921875
+  },
+  {
+    "name": "KeyPlastic7_2",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": 1036.0755615234375,
+    "lng": 9822.853515625,
+    "alt": 3264.112548828125
+  },
+  {
+    "name": "KeyPlastic8_2",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": 4865.1513671875,
+    "lng": 23861.056640625,
+    "alt": 3746.44140625
+  },
+  {
+    "name": "KeyPlastic9_2",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -23551.095703125,
+    "lng": 14341.8359375,
+    "alt": 1122.739990234375
+  },
+  {
+    "name": "KeyPlastic_4",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_Complete",
+    "lat": -11516.7880859375,
+    "lng": 40117.25,
+    "alt": 1468.337646484375
+  },
+  {
+    "name": "Lever10_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -20820.953125,
+    "lng": 21885.814453125,
+    "alt": -110.0,
+    "actors": [
+      "DLC2_Complete:Glowline86_2"
+    ]
+  },
+  {
+    "name": "Lever11_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -30245.7734375,
+    "lng": 24642.03125,
+    "alt": 2023.79150390625,
+    "actors": [
+      "DLC2_Complete:Glowline122_5"
+    ]
+  },
+  {
+    "name": "Lever12_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -54846.67578125,
+    "lng": 52939.76171875,
+    "alt": 19.0,
+    "actors": [
+      "DLC2_Complete:DoorAnna9",
+      "DLC2_Complete:DoorAnna7",
+      "DLC2_Complete:Glowline50"
+    ]
+  },
+  {
+    "name": "Lever13_5",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -24545.6171875,
+    "lng": 14738.234375,
+    "alt": 1431.0,
+    "actors": [
+      "DLC2_Complete:Glowline5_8"
+    ]
+  },
+  {
+    "name": "Lever14_4",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -17705.02734375,
+    "lng": 45718.265625,
+    "alt": 1503.8736572265625,
+    "actors": [
+      "DLC2_Complete:Glowline123_2"
+    ]
+  },
+  {
+    "name": "Lever15_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": 12212.10546875,
+    "lng": 22151.060546875,
+    "alt": 3546.497314453125,
+    "actors": [
+      "DLC2_Complete:Glowline126_2",
+      "DLC2_Complete:Glowline104_2"
+    ]
+  },
+  {
+    "name": "Lever16_5",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -26721.009765625,
+    "lng": 25888.611328125,
+    "alt": 935.6543579101562,
+    "actors": [
+      "DLC2_Complete:Glowline105_2"
+    ]
+  },
+  {
+    "name": "Lever18_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -12049.1865234375,
+    "lng": 41341.203125,
+    "alt": 2864.204345703125,
+    "actors": [
+      "DLC2_Complete:Glowline138_2"
+    ]
+  },
+  {
+    "name": "Lever2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -47761.7734375,
+    "lng": 52597.5625,
+    "alt": 1954.3919677734375
+  },
+  {
+    "name": "Lever3_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -13367.5986328125,
+    "lng": 59401.58203125,
+    "alt": 482.4542236328125,
+    "actors": [
+      "DLC2_Complete:Glowline89_2",
+      "DLC2_Complete:Jumppad8"
+    ]
+  },
+  {
+    "name": "Lever4_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -12030.666015625,
+    "lng": 56362.8828125,
+    "alt": 500.0,
+    "actors": [
+      "DLC2_Complete:Glowline74_5"
+    ]
+  },
+  {
+    "name": "Lever5_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -54541.671875,
+    "lng": 43405.0078125,
+    "alt": 1261.9051513671875,
+    "actors": [
+      "DLC2_Complete:RampArea5_2",
+      "DLC2_Complete:Glowline27_2"
+    ]
+  },
+  {
+    "name": "Lever6_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -31891.646484375,
+    "lng": 18115.40234375,
+    "alt": 3880.006591796875,
+    "actors": [
+      "DLC2_Complete:Noquest"
+    ]
+  },
+  {
+    "name": "Lever7_4",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -14685.8837890625,
+    "lng": 59016.1328125,
+    "alt": 603.8480224609375,
+    "actors": [
+      "DLC2_Complete:Glowline58_2"
+    ]
+  },
+  {
+    "name": "Lever8_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -16951.251953125,
+    "lng": 44808.20703125,
+    "alt": 550.175048828125,
+    "actors": [
+      "DLC2_Complete:Glowline9_2"
+    ]
+  },
+  {
+    "name": "Lever9_5",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -28175.091796875,
+    "lng": 19982.1640625,
+    "alt": 1171.785400390625,
+    "actors": [
+      "DLC2_Complete:Glowline4_2",
+      "DLC2_Complete:BP_RampLadyUpdate_2"
+    ]
+  },
+  {
+    "name": "Lever_2",
+    "type": "Lever_C",
+    "area": "DLC2_Complete",
+    "lat": 17323.8984375,
+    "lng": 22270.150390625,
+    "alt": 3853.4931640625,
+    "actors": [
+      "DLC2_Complete:Metalset1_SteelPoleRound_27",
+      "DLC2_Complete:Gears_2"
+    ]
   },
   {
     "name": "Lift1_2",
@@ -7031,6 +9032,29 @@
     "lat": -48438.828125,
     "lng": 52036.6484375,
     "alt": 1984.3919677734375
+  },
+  {
+    "name": "Match_Lever2",
+    "type": "Match_Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -37370.0,
+    "lng": 4126.0361328125,
+    "alt": 1880.0,
+    "actors": [
+      "DLC2_Complete:Glowline34",
+      "DLC2_Complete:PaintMachine"
+    ]
+  },
+  {
+    "name": "Match_Lever_2",
+    "type": "Match_Lever_C",
+    "area": "DLC2_Complete",
+    "lat": -15625.55078125,
+    "lng": 46879.984375,
+    "alt": -45.4281005859375,
+    "actors": [
+      "DLC2_Complete:Glowline17"
+    ]
   },
   {
     "name": "MatchBox10",
@@ -10831,13 +12855,1187 @@
     "hits": 7
   },
   {
+    "name": "BankElectricityPuzzle_1_PedestalButton_ResetBattery",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -51360.97265625,
+    "lng": 3371.258056640625,
+    "alt": 3230.788818359375,
+    "actors": [
+      "DLC2_Complete:BankElectricityPuzzle_1_ExplodingBattery"
+    ]
+  },
+  {
+    "name": "PedestalButton10",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -20519.833984375,
+    "lng": 60106.67578125,
+    "alt": 3963.5419921875,
+    "actors": [
+      "DLC2_Complete:Glowline18",
+      "DLC2_Complete:Jumppad6_4"
+    ]
+  },
+  {
+    "name": "PedestalButton100_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 17262.2578125,
+    "lng": 19722.01171875,
+    "alt": 3699.432861328125,
+    "actors": [
+      "DLC2_Complete:Glowline_2",
+      "DLC2_Complete:FireEffect_226"
+    ]
+  },
+  {
+    "name": "PedestalButton101_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -52297.2578125,
+    "lng": 47255.4609375,
+    "alt": -57.17307662963867,
+    "actors": [
+      "DLC2_Complete:Key3"
+    ]
+  },
+  {
+    "name": "PedestalButton102_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -49395.0,
+    "lng": 53095.0,
+    "alt": 1905.0,
+    "actors": [
+      "DLC2_Complete:Glowline134_2"
+    ]
+  },
+  {
+    "name": "PedestalButton102_NewAndImproved",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -31550.009765625,
+    "lng": 27655.666015625,
+    "alt": -239.3452606201172,
+    "actors": [
+      "DLC2_Complete:ShieldGenerator_2",
+      "DLC2_Complete:Glowline91_2",
+      "DLC2_Complete:BP_EnemyArenaShieldToggler_2"
+    ]
+  },
+  {
+    "name": "PedestalButton103",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -288940.65625,
+    "lng": 321.0,
+    "alt": 10292.11328125,
+    "actors": [
+      "DLC2_Complete:10",
+      "DLC2_Complete:9",
+      "DLC2_Complete:8_2",
+      "DLC2_Complete:11",
+      "DLC2_Complete:12"
+    ]
+  },
+  {
+    "name": "PedestalButton104",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -47285.0625,
+    "lng": 6349.39306640625,
+    "alt": 2948.888671875,
+    "actors": [
+      "DLC2_Complete:TalkingSpeaker10"
+    ]
+  },
+  {
+    "name": "PedestalButton105",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -50154.640625,
+    "lng": 4072.542724609375,
+    "alt": 2663.843505859375,
+    "actors": [
+      "DLC2_Complete:PrintingPressDoor9"
+    ]
+  },
+  {
+    "name": "PedestalButton106_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -42613.6640625,
+    "lng": 148.39683532714844,
+    "alt": 1810.873779296875,
+    "actors": [
+      "DLC2_Complete:TeslaCoil11_4"
+    ]
+  },
+  {
+    "name": "PedestalButton107_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 501.7955322265625,
+    "lng": -58674.19140625,
+    "alt": 8093.3203125,
+    "actors": [
+      "DLC2_Complete:DoorInverted15_2"
+    ]
+  },
+  {
+    "name": "PedestalButton11",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -11077.685546875,
+    "lng": 63672.58984375,
+    "alt": 4026.762451171875,
+    "actors": [
+      "DLC2_Complete:Glowline12_4",
+      "DLC2_Complete:Jumppad7"
+    ]
+  },
+  {
+    "name": "PedestalButton12",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -10631.54296875,
+    "lng": 62433.5234375,
+    "alt": 439.53228759765625,
+    "actors": [
+      "DLC2_Complete:ValveCarriable4"
+    ]
+  },
+  {
+    "name": "PedestalButton13_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -47933.08984375,
+    "lng": 4474.078125,
+    "alt": 1720.2431640625,
+    "actors": [
+      "DLC2_Complete:KeycardColor4"
+    ]
+  },
+  {
+    "name": "PedestalButton14_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -40436.796875,
+    "lng": -1736.479248046875,
+    "alt": 1776.9998779296875,
+    "actors": [
+      "DLC2_Complete:KeycardColor_2"
+    ]
+  },
+  {
+    "name": "PedestalButton16_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -47782.80078125,
+    "lng": 51607.19140625,
+    "alt": 1886.420654296875,
+    "actors": [
+      "DLC2_Complete:Door34"
+    ]
+  },
+  {
+    "name": "PedestalButton17",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -40599.35546875,
+    "lng": -1151.2259521484375,
+    "alt": 1758.004150390625,
+    "actors": [
+      "DLC2_Complete:BP_C_RedGuyGoodbye_2"
+    ]
+  },
+  {
+    "name": "PedestalButton18_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -26400.51953125,
+    "lng": 21285.0859375,
+    "alt": 1360.39306640625,
+    "actors": [
+      "DLC2_Complete:KeycardColor7_2"
+    ]
+  },
+  {
+    "name": "PedestalButton19_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -33499.23046875,
+    "lng": 20738.306640625,
+    "alt": 2876.884521484375
+  },
+  {
+    "name": "PedestalButton20_8",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -31868.146484375,
+    "lng": 18712.177734375,
+    "alt": 1359.071533203125
+  },
+  {
+    "name": "PedestalButton21",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -51991.75,
+    "lng": -933.1396484375,
+    "alt": 1746.620361328125,
+    "actors": [
+      "DLC2_Complete:Glowline44",
+      "DLC2_Complete:Door17",
+      "DLC2_Complete:BP_BankManager8"
+    ]
+  },
+  {
+    "name": "PedestalButton23",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -37081.19921875,
+    "lng": 3710.468994140625,
+    "alt": 2947.52880859375,
+    "actors": [
+      "DLC2_Complete:CarryPipe4_5"
+    ]
+  },
+  {
+    "name": "PedestalButton24",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -38514.75,
+    "lng": -850.6549072265625,
+    "alt": 1754.999267578125,
+    "actors": [
+      "DLC2_Complete:CarryPipe3_2"
+    ]
+  },
+  {
+    "name": "PedestalButton25_11",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -26123.55859375,
+    "lng": 22450.455078125,
+    "alt": 1910.8546142578125
+  },
+  {
+    "name": "PedestalButton26_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -63200.0546875,
+    "lng": 57178.109375,
+    "alt": 4371.37353515625,
+    "actors": [
+      "DLC2_Complete:DoorStone10_2"
+    ]
+  },
+  {
+    "name": "PedestalButton27",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48552.3203125,
+    "lng": 1536.70849609375,
+    "alt": 1760.2174072265625,
+    "actors": [
+      "DLC2_Complete:Door30",
+      "DLC2_Complete:Glowline38",
+      "DLC2_Complete:BP_BankManager5"
+    ]
+  },
+  {
+    "name": "PedestalButton28",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46712.8046875,
+    "lng": 39213.84375,
+    "alt": 2559.67138671875,
+    "actors": [
+      "DLC2_Complete:MoveMesh6_2"
+    ]
+  },
+  {
+    "name": "PedestalButton29_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -45925.48828125,
+    "lng": 6119.56689453125,
+    "alt": 3271.079833984375,
+    "actors": [
+      "DLC2_Complete:Glowline68_2"
+    ]
+  },
+  {
+    "name": "PedestalButton2_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -31350.150390625,
+    "lng": 17752.04296875,
+    "alt": 568.8074951171875,
+    "actors": [
+      "DLC2_Complete:Door46",
+      "DLC2_Complete:Glowline110_5"
+    ]
+  },
+  {
+    "name": "PedestalButton3",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 2238.164306640625,
+    "lng": 11787.7744140625,
+    "alt": 3120.9814453125,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery4_2"
+    ]
+  },
+  {
+    "name": "PedestalButton30_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -23454.140625,
+    "lng": 20993.587890625,
+    "alt": 1490.30517578125,
+    "actors": [
+      "DLC2_Complete:Door63_1"
+    ]
+  },
+  {
+    "name": "PedestalButton31_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -23543.037109375,
+    "lng": 15735.98828125,
+    "alt": 906.9166259765625,
+    "actors": [
+      "DLC2_Complete:KeyPlastic9_2"
+    ]
+  },
+  {
+    "name": "PedestalButton32_7",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -47125.19921875,
+    "lng": 34780.47265625,
+    "alt": 1538.6019287109375,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery3"
+    ]
+  },
+  {
+    "name": "PedestalButton34",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46676.828125,
+    "lng": 38564.29296875,
+    "alt": 748.3919677734375,
+    "actors": [
+      "DLC2_Complete:Anvil2_3"
+    ]
+  },
+  {
+    "name": "PedestalButton35_8",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -50755.01171875,
+    "lng": 40355.71875,
+    "alt": -262.2195129394531,
+    "actors": [
+      "DLC2_Complete:Door3_2",
+      "DLC2_Complete:Glowline64",
+      "DLC2_Complete:DestroyObjectsOnTrigger_2"
+    ]
+  },
+  {
+    "name": "PedestalButton36",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46648.78125,
+    "lng": 40228.38671875,
+    "alt": 1659.7330322265625,
+    "actors": [
+      "DLC2_Complete:Glowline66",
+      "DLC2_Complete:Jumppad20"
+    ]
+  },
+  {
+    "name": "PedestalButton37_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 6514.99853515625,
+    "lng": 31686.875,
+    "alt": 3900.78515625,
+    "actors": [
+      "DLC2_Complete:Glowline124_2"
+    ]
+  },
+  {
+    "name": "PedestalButton38",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46492.1171875,
+    "lng": 50260.6796875,
+    "alt": 1923.3919677734375,
+    "actors": [
+      "DLC2_Complete:DoorAnna10",
+      "DLC2_Complete:Glowline81"
+    ]
+  },
+  {
+    "name": "PedestalButton39",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -57134.6328125,
+    "lng": 52774.51171875,
+    "alt": 3524.626953125,
+    "actors": [
+      "DLC2_Complete:Glowline47",
+      "DLC2_Complete:Jumppad17"
+    ]
+  },
+  {
+    "name": "PedestalButton40",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -57901.921875,
+    "lng": 53752.71484375,
+    "alt": 4403.298828125,
+    "actors": [
+      "DLC2_Complete:Glowline48",
+      "DLC2_Complete:Jumppad15"
+    ]
+  },
+  {
+    "name": "PedestalButton41",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -42501.84765625,
+    "lng": 50550.7265625,
+    "alt": 1930.3919677734375,
+    "actors": [
+      "DLC2_Complete:KeyPlastic5_13"
+    ]
+  },
+  {
+    "name": "PedestalButton42",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -53872.5625,
+    "lng": 50512.5,
+    "alt": 233.34976196289062,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery2",
+      "DLC2_Complete:Glowline45"
+    ]
+  },
+  {
+    "name": "PedestalButton43",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -56137.56640625,
+    "lng": 49206.9296875,
+    "alt": 338.4817810058594,
+    "actors": [
+      "DLC2_Complete:BP_Parasol_44"
+    ]
+  },
+  {
+    "name": "PedestalButton44",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -56091.96484375,
+    "lng": 55728.26953125,
+    "alt": 951.6207275390625,
+    "actors": [
+      "DLC2_Complete:Sponge_Large2_4"
+    ]
+  },
+  {
+    "name": "PedestalButton45",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -50221.76171875,
+    "lng": 55931.7109375,
+    "alt": 462.8076171875,
+    "actors": [
+      "DLC2_Complete:DoorStone6"
+    ]
+  },
+  {
+    "name": "PedestalButton46_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -43224.0,
+    "lng": -6824.0,
+    "alt": 2519.0,
+    "actors": [
+      "DLC2_Complete:BP_Weight_2"
+    ]
+  },
+  {
+    "name": "PedestalButton47_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -12633.00390625,
+    "lng": 32687.7265625,
+    "alt": -443.505126953125,
+    "actors": [
+      "DLC2_Complete:Glowline125_2",
+      "DLC2_Complete:BP_ContinuousSpawner_2"
+    ]
+  },
+  {
+    "name": "PedestalButton48",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46491.578125,
+    "lng": 39283.71484375,
+    "alt": 2342.53466796875,
+    "actors": [
+      "DLC2_Complete:MoveMesh8"
+    ]
+  },
+  {
+    "name": "PedestalButton49",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46442.703125,
+    "lng": 39117.95703125,
+    "alt": 2331.8974609375,
+    "actors": [
+      "DLC2_Complete:MoveMesh8"
+    ]
+  },
+  {
+    "name": "PedestalButton4_1",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 856.9375610351562,
+    "lng": 9741.4794921875,
+    "alt": 3193.521484375,
+    "actors": [
+      "DLC2_Complete:KeyPlastic7_2"
+    ]
+  },
+  {
+    "name": "PedestalButton5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 4769.29052734375,
+    "lng": 23721.73828125,
+    "alt": 3674.6845703125,
+    "actors": [
+      "DLC2_Complete:KeyPlastic8_2"
+    ]
+  },
+  {
+    "name": "PedestalButton50",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -45608.19140625,
+    "lng": 40131.26953125,
+    "alt": 2324.37548828125,
+    "actors": [
+      "DLC2_Complete:MoveMesh9"
+    ]
+  },
+  {
+    "name": "PedestalButton51",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -53732.0234375,
+    "lng": 54416.234375,
+    "alt": 485.3956298828125,
+    "actors": [
+      "DLC2_Complete:DoorStone7",
+      "DLC2_Complete:Glowline49"
+    ]
+  },
+  {
+    "name": "PedestalButton52",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -15200.978515625,
+    "lng": -54812.14453125,
+    "alt": 9249.78515625,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery5"
+    ]
+  },
+  {
+    "name": "PedestalButton53",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -10966.5283203125,
+    "lng": -58720.4921875,
+    "alt": 8320.8046875,
+    "actors": [
+      "DLC2_Complete:MoveMesh14_5"
+    ]
+  },
+  {
+    "name": "PedestalButton54",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -15216.404296875,
+    "lng": -54812.72265625,
+    "alt": 9371.203125,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery6"
+    ]
+  },
+  {
+    "name": "PedestalButton55_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -44310.0,
+    "lng": -6290.0,
+    "alt": 2519.0,
+    "actors": [
+      "DLC2_Complete:CarryStones_Heavy2"
+    ]
+  },
+  {
+    "name": "PedestalButton56",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -7638.07763671875,
+    "lng": -43045.140625,
+    "alt": 9058.224609375,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery7"
+    ]
+  },
+  {
+    "name": "PedestalButton58",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -24427.1484375,
+    "lng": 20155.40625,
+    "alt": -216.69960021972656,
+    "actors": [
+      "DLC2_Complete:Door43"
+    ]
+  },
+  {
+    "name": "PedestalButton59",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -29802.404296875,
+    "lng": 20894.083984375,
+    "alt": -219.60972595214844,
+    "actors": [
+      "DLC2_Complete:Door42"
+    ]
+  },
+  {
+    "name": "PedestalButton6",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 1824.73681640625,
+    "lng": 15803.8134765625,
+    "alt": 3492.711669921875,
+    "actors": [
+      "DLC2_Complete:Glowline3_2"
+    ]
+  },
+  {
+    "name": "PedestalButton60",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -12545.38671875,
+    "lng": 16661.662109375,
+    "alt": 6258.5732421875,
+    "actors": [
+      "DLC2_Complete:GlowlineJumppad",
+      "DLC2_Complete:Jumppad21"
+    ]
+  },
+  {
+    "name": "PedestalButton61",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -32165.154296875,
+    "lng": 17673.95703125,
+    "alt": 3492.26416015625,
+    "actors": [
+      "DLC2_Complete:KeyPlastic2_2"
+    ]
+  },
+  {
+    "name": "PedestalButton62_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 15460.0546875,
+    "lng": 21978.380859375,
+    "alt": 3107.375732421875,
+    "actors": [
+      "DLC2_Complete:MetalBall7_2"
+    ]
+  },
+  {
+    "name": "PedestalButton63_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -39222.02734375,
+    "lng": -973.9864501953125,
+    "alt": 4376.37255859375
+  },
+  {
+    "name": "PedestalButton64_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -38871.4375,
+    "lng": 2253.625244140625,
+    "alt": 4102.640625
+  },
+  {
+    "name": "PedestalButton65_8",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -36332.578125,
+    "lng": 4713.1845703125,
+    "alt": 2943.02587890625
+  },
+  {
+    "name": "PedestalButton66",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -5452.09521484375,
+    "lng": -43767.2421875,
+    "alt": 7149.09326171875,
+    "actors": [
+      "DLC2_Complete:MoveMesh15"
+    ]
+  },
+  {
+    "name": "PedestalButton67",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -5326.49951171875,
+    "lng": -43060.5,
+    "alt": 9790.787109375,
+    "actors": [
+      "DLC2_Complete:DoorLego2"
+    ]
+  },
+  {
+    "name": "PedestalButton68",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -9826.4697265625,
+    "lng": -43520.5,
+    "alt": 9020.7900390625,
+    "actors": [
+      "DLC2_Complete:Gears3",
+      "DLC2_Complete:MoveMesh11_2"
+    ]
+  },
+  {
+    "name": "PedestalButton69_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 13016.533203125,
+    "lng": 28355.419921875,
+    "alt": 3036.4091796875
+  },
+  {
+    "name": "PedestalButton70_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -43028.0,
+    "lng": 4961.0,
+    "alt": 1768.0,
+    "actors": [
+      "DLC2_Complete:KeyPlastic3_7"
+    ]
+  },
+  {
+    "name": "PedestalButton71_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -41687.47265625,
+    "lng": 34284.5625,
+    "alt": -32.0,
+    "actors": [
+      "DLC2_Complete:Door29_2"
+    ]
+  },
+  {
+    "name": "PedestalButton72_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 18009.36328125,
+    "lng": 21930.6484375,
+    "alt": 3142.144775390625,
+    "actors": [
+      "DLC2_Complete:Glowline119_2"
+    ]
+  },
+  {
+    "name": "PedestalButton73_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -21228.85546875,
+    "lng": 40640.82421875,
+    "alt": 7023.31591796875,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery8_2"
+    ]
+  },
+  {
+    "name": "PedestalButton74",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -10599.1611328125,
+    "lng": 62003.40234375,
+    "alt": 393.5957946777344,
+    "actors": [
+      "DLC2_Complete:Door14"
+    ]
+  },
+  {
+    "name": "PedestalButton75_8",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 13599.5068359375,
+    "lng": 27299.15625,
+    "alt": 3046.0380859375
+  },
+  {
+    "name": "PedestalButton76_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -29831.0,
+    "lng": 24415.0,
+    "alt": 1717.0,
+    "actors": [
+      "DLC2_Complete:Anvil4_2"
+    ]
+  },
+  {
+    "name": "PedestalButton77_4",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 8913.294921875,
+    "lng": 20120.314453125,
+    "alt": 3407.689697265625,
+    "actors": [
+      "DLC2_Complete:Glowline88_4"
+    ]
+  },
+  {
+    "name": "PedestalButton78",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 4581.80908203125,
+    "lng": 18901.751953125,
+    "alt": 3115.194091796875,
+    "actors": [
+      "DLC2_Complete:Door50"
+    ]
+  },
+  {
+    "name": "PedestalButton79_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -16979.73828125,
+    "lng": 60514.28515625,
+    "alt": 1213.5826416015625,
+    "actors": [
+      "DLC2_Complete:TalkingSpeaker_2"
+    ]
+  },
+  {
+    "name": "PedestalButton7_6",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -15489.6767578125,
+    "lng": 61765.83203125,
+    "alt": 431.5621643066406,
+    "actors": [
+      "DLC2_Complete:ValveCarriable_1976"
+    ]
+  },
+  {
+    "name": "PedestalButton80_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 8677.064453125,
+    "lng": 17071.748046875,
+    "alt": 3122.757568359375,
+    "actors": [
+      "DLC2_Complete:MetalBall2"
+    ]
+  },
+  {
+    "name": "PedestalButton81_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 10219.9775390625,
+    "lng": 29195.650390625,
+    "alt": 3305.344482421875,
+    "actors": [
+      "DLC2_Complete:MetalBall5_2"
+    ]
+  },
+  {
+    "name": "PedestalButton82_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48676.0,
+    "lng": 45491.0,
+    "alt": 371.0,
+    "actors": [
+      "DLC2_Complete:DoorAnna6_2"
+    ]
+  },
+  {
+    "name": "PedestalButton83_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -6400.4443359375,
+    "lng": -49152.64453125,
+    "alt": 8265.4765625,
+    "actors": [
+      "DLC2_Complete:DoorInverted8_2"
+    ]
+  },
+  {
+    "name": "PedestalButton84",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -46624.86328125,
+    "lng": -1259.8466796875,
+    "alt": 1765.0,
+    "actors": [
+      "DLC2_Complete:Glowline39",
+      "DLC2_Complete:Door77",
+      "DLC2_Complete:BP_BankManager6"
+    ]
+  },
+  {
+    "name": "PedestalButton85",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -51451.34375,
+    "lng": 328.06048583984375,
+    "alt": 1756.8802490234375,
+    "actors": [
+      "DLC2_Complete:Glowline131",
+      "DLC2_Complete:Door80",
+      "DLC2_Complete:BP_BankManager7"
+    ]
+  },
+  {
+    "name": "PedestalButton86",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -49890.30078125,
+    "lng": 1214.64306640625,
+    "alt": 3264.0,
+    "actors": [
+      "DLC2_Complete:SelectivePipeRespawn_2"
+    ]
+  },
+  {
+    "name": "PedestalButton87",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -49268.77734375,
+    "lng": 4080.97265625,
+    "alt": 3260.769287109375,
+    "actors": [
+      "DLC2_Complete:Glowline136"
+    ]
+  },
+  {
+    "name": "PedestalButton88",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48309.44921875,
+    "lng": 4095.30029296875,
+    "alt": 2694.91015625,
+    "actors": [
+      "DLC2_Complete:ExplodingBattery12"
+    ]
+  },
+  {
+    "name": "PedestalButton89_19",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -43057.83203125,
+    "lng": 50447.796875,
+    "alt": 1941.980224609375,
+    "actors": [
+      "DLC2_Complete:DoorAnna18_2"
+    ]
+  },
+  {
+    "name": "PedestalButton8_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 4979.291015625,
+    "lng": 18859.189453125,
+    "alt": 3232.6064453125,
+    "actors": [
+      "DLC2_Complete:Door50"
+    ]
+  },
+  {
+    "name": "PedestalButton90_4",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 10386.400390625,
+    "lng": 32573.740234375,
+    "alt": 4071.34130859375,
+    "actors": [
+      "DLC2_Complete:CarryPipe5_2"
+    ]
+  },
+  {
+    "name": "PedestalButton91_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -155.0,
+    "lng": 217.0,
+    "alt": -298.0,
+    "actors": [
+      "DLC2_Complete:BP_TeleportToPreviousArea_2"
+    ]
+  },
+  {
+    "name": "PedestalButton92_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -36485.0,
+    "lng": 632.0,
+    "alt": 3111.59716796875,
+    "actors": [
+      "DLC2_Complete:Glowline40",
+      "DLC2_Complete:DoorStone2"
+    ]
+  },
+  {
+    "name": "PedestalButton93_4",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -37558.0,
+    "lng": 2855.0,
+    "alt": 3233.666748046875,
+    "actors": [
+      "DLC2_Complete:DoorStone5"
+    ]
+  },
+  {
+    "name": "PedestalButton94",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -25810.671875,
+    "lng": 20131.4453125,
+    "alt": -3019.18310546875,
+    "actors": [
+      "DLC2_Complete:KeyPlastic4_10"
+    ]
+  },
+  {
+    "name": "PedestalButton96",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -187.90432739257812,
+    "lng": 225.0,
+    "alt": -20000.0,
+    "actors": [
+      "DLC2_Complete:BP_TeleportToPreviousArea_2"
+    ]
+  },
+  {
+    "name": "PedestalButton97_11",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -8513.73046875,
+    "lng": 62258.59375,
+    "alt": 510.9388122558594,
+    "actors": []
+  },
+  {
+    "name": "PedestalButton98_14",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -7831.21533203125,
+    "lng": 62290.76953125,
+    "alt": 3612.359619140625,
+    "actors": [
+      "DLC2_Complete:Mean_TalkingSpeaker14"
+    ]
+  },
+  {
+    "name": "PedestalButton99_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -288947.0,
+    "lng": 320.0,
+    "alt": 10298.0,
+    "actors": [
+      "DLC2_Complete:10",
+      "DLC2_Complete:9",
+      "DLC2_Complete:8_2",
+      "DLC2_Complete:11",
+      "DLC2_Complete:12"
+    ]
+  },
+  {
+    "name": "PedestalButton9_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 7214.5615234375,
+    "lng": 24407.64453125,
+    "alt": 3846.795654296875,
+    "actors": [
+      "DLC2_Complete:Jumppad13",
+      "DLC2_Complete:Glowline37_2"
+    ]
+  },
+  {
+    "name": "PedestalButton_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": 12455.248046875,
+    "lng": 26913.853515625,
+    "alt": 3011.641845703125
+  },
+  {
+    "name": "PedestalButton_Shape1",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48930.8203125,
+    "lng": 55093.2265625,
+    "alt": 1880.3564453125
+  },
+  {
+    "name": "PedestalButton_Shape2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48010.07421875,
+    "lng": 54560.60546875,
+    "alt": 1885.31787109375
+  },
+  {
+    "name": "PedestalButton_Shape3",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Complete",
+    "lat": -48335.8203125,
+    "lng": 54754.0,
+    "alt": 2424.177001953125
+  },
+  {
     "name": "A1FastTravelPipeCap",
     "type": "PipeCap_C",
     "area": "DLC2_Complete",
     "lat": 15560.884765625,
     "lng": 20652.861328125,
     "alt": 3572.840087890625,
-    "other_cap": "DLC2_Complete:A1FastTravelPipeCap"
+    "other_cap": "DLC2_Complete:A1FastTravelPipeCap2"
   },
   {
     "name": "A1FastTravelPipeCap2",
@@ -10873,7 +14071,7 @@
     "lat": -43396.73046875,
     "lng": 8937.830078125,
     "alt": 2463.414306640625,
-    "other_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "other_cap": "DLC2_Complete:A3FastTravelPipeCap3"
   },
   {
     "name": "A3FastTravelPipeCap3",
@@ -10891,7 +14089,7 @@
     "lat": -60099.109375,
     "lng": 57716.53125,
     "alt": 1278.751220703125,
-    "other_cap": "DLC2_Complete:A4FastTravelPipeCap"
+    "other_cap": "DLC2_Complete:A4FastTravelPipeCap4"
   },
   {
     "name": "A4FastTravelPipeCap4",
@@ -10909,7 +14107,7 @@
     "lat": -48333.3828125,
     "lng": 42753.484375,
     "alt": 1487.4796142578125,
-    "other_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_cap": "DLC2_Complete:A4SmallWallPipeCap_CubeSide"
   },
   {
     "name": "A4SmallWallPipeCap_CubeSide",
@@ -10926,8 +14124,7 @@
     "area": "DLC2_Complete",
     "lat": -31964.537109375,
     "lng": 20148.083984375,
-    "alt": 287.7752990722656,
-    "other_cap": "DLC2_FinalBoss:PipeCap12_2"
+    "alt": 287.7752990722656
   },
   {
     "name": "A5FastTravelPipeCap1",
@@ -10935,8 +14132,7 @@
     "area": "DLC2_Complete",
     "lat": -42555.07421875,
     "lng": 21526.291015625,
-    "alt": 3507.08544921875,
-    "other_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "alt": 3507.08544921875
   },
   {
     "name": "A5FastTravelPipeCap5",
@@ -10944,8 +14140,7 @@
     "area": "DLC2_Complete",
     "lat": -32586.25390625,
     "lng": 19641.314453125,
-    "alt": 380.9241027832031,
-    "other_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "alt": 380.9241027832031
   },
   {
     "name": "PipeCap10_2",
@@ -10953,8 +14148,7 @@
     "area": "DLC2_Complete",
     "lat": -13410.740234375,
     "lng": 4797.03271484375,
-    "alt": 2301.41357421875,
-    "other_cap": "DLC2_FinalBoss:PipeCap12_2"
+    "alt": 2301.41357421875
   },
   {
     "name": "PipeCap13",
@@ -10962,8 +14156,7 @@
     "area": "DLC2_Complete",
     "lat": -7682.0380859375,
     "lng": 5404.517578125,
-    "alt": 1181.64208984375,
-    "other_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "alt": 1181.64208984375
   },
   {
     "name": "PipeCap14",
@@ -10989,8 +14182,7 @@
     "area": "DLC2_Complete",
     "lat": -537.02880859375,
     "lng": 37337.58203125,
-    "alt": 2679.68896484375,
-    "other_cap": "DLC2_Complete:PipeCap4_2"
+    "alt": 2679.68896484375
   },
   {
     "name": "PipeCap8_2",
@@ -11015,8 +14207,7 @@
     "area": "DLC2_Complete",
     "lat": -14990.53515625,
     "lng": 58759.33984375,
-    "alt": 790.1314086914062,
-    "other_cap": "DLC2_Complete:PipeCap_2"
+    "alt": 790.1314086914062
   },
   {
     "name": "PipesystemNew10",
@@ -11025,8 +14216,7 @@
     "lat": -44912.16796875,
     "lng": 51589.5,
     "alt": 2909.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew6_1",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew6_1"
   },
   {
     "name": "PipesystemNew11",
@@ -11035,8 +14225,7 @@
     "lat": -46867.0625,
     "lng": 50368.0234375,
     "alt": 2493.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew3",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew3"
   },
   {
     "name": "PipesystemNew12_5",
@@ -11045,8 +14234,7 @@
     "lat": -44372.0,
     "lng": 19610.0859375,
     "alt": 27491.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew9_2",
-    "nearest_cap": "DLC2_Complete:A5FastTravelPipeCap1"
+    "other_pipe": "DLC2_Complete:PipesystemNew9_2"
   },
   {
     "name": "PipesystemNew2",
@@ -11055,8 +14243,7 @@
     "lat": -48137.3203125,
     "lng": 52687.015625,
     "alt": 1995.3919677734375,
-    "other_pipe": "DLC2_Complete:PipesystemNew_2",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew_2"
   },
   {
     "name": "PipesystemNew3",
@@ -11065,8 +14252,7 @@
     "lat": -48244.4140625,
     "lng": 51430.28125,
     "alt": 2113.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew11",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew11"
   },
   {
     "name": "PipesystemNew4",
@@ -11075,8 +14261,7 @@
     "lat": -13603.6845703125,
     "lng": 61608.2109375,
     "alt": 1640.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew5",
-    "nearest_cap": "DLC2_Complete:PipeCap_2"
+    "other_pipe": "DLC2_Complete:PipesystemNew5"
   },
   {
     "name": "PipesystemNew5",
@@ -11085,8 +14270,7 @@
     "lat": -12294.8603515625,
     "lng": 62915.63671875,
     "alt": 1610.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew4",
-    "nearest_cap": "DLC2_Complete:PipeCap_2"
+    "other_pipe": "DLC2_Complete:PipesystemNew4"
   },
   {
     "name": "PipesystemNew6_1",
@@ -11095,8 +14279,7 @@
     "lat": -43757.26171875,
     "lng": 52092.3125,
     "alt": 1271.7386474609375,
-    "other_pipe": "DLC2_Complete:PipesystemNew10",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew10"
   },
   {
     "name": "PipesystemNew7_2",
@@ -11125,8 +14308,7 @@
     "lat": -21942.0,
     "lng": -73832.0,
     "alt": -9857.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew12_5",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "other_pipe": "DLC2_Complete:PipesystemNew12_5"
   },
   {
     "name": "PipesystemNew_2",
@@ -11135,8 +14317,7 @@
     "lat": -48115.3359375,
     "lng": 52665.15625,
     "alt": 1995.3919677734375,
-    "other_pipe": "DLC2_Complete:PipesystemNew2",
-    "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "other_pipe": "DLC2_Complete:PipesystemNew2"
   },
   {
     "name": "Area1_FastTravelPipe",
@@ -11183,8 +14364,7 @@
     "area": "DLC2_Complete",
     "lat": 12044.2080078125,
     "lng": 29695.482421875,
-    "alt": 3980.762939453125,
-    "nearest_cap": "DLC2_Complete:PipeCap9_5"
+    "alt": 3980.762939453125
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_1",
@@ -11192,8 +14372,7 @@
     "area": "DLC2_Complete",
     "lat": 12564.2890625,
     "lng": 29449.42578125,
-    "alt": 3980.767333984375,
-    "nearest_cap": "DLC2_Complete:PipeCap9_5"
+    "alt": 3980.767333984375
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_1943",
@@ -11201,8 +14380,7 @@
     "area": "DLC2_Complete",
     "lat": 2852.74658203125,
     "lng": 20171.46484375,
-    "alt": 2784.47412109375,
-    "nearest_cap": "DLC2_Complete:PipeCap14"
+    "alt": 2784.47412109375
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_2",
@@ -11210,8 +14388,7 @@
     "area": "DLC2_Complete",
     "lat": 14539.12109375,
     "lng": 30247.51171875,
-    "alt": 3980.779541015625,
-    "nearest_cap": "DLC2_Complete:PipeCap9_5"
+    "alt": 3980.779541015625
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_3",
@@ -11219,8 +14396,7 @@
     "area": "DLC2_Complete",
     "lat": -39189.98828125,
     "lng": 2799.162841796875,
-    "alt": 2447.0,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 2447.0
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_335",
@@ -11228,8 +14404,7 @@
     "area": "DLC2_Complete",
     "lat": -36987.99609375,
     "lng": -716.8406982421875,
-    "alt": 3764.000732421875,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 3764.000732421875
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_4",
@@ -11237,8 +14412,7 @@
     "area": "DLC2_Complete",
     "lat": -39729.9921875,
     "lng": 1311.1640625,
-    "alt": 2469.000244140625,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 2469.000244140625
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_5",
@@ -11246,8 +14420,7 @@
     "area": "DLC2_Complete",
     "lat": -39729.9921875,
     "lng": 105.16413879394531,
-    "alt": 2190.001220703125,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 2190.001220703125
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_6",
@@ -11255,8 +14428,7 @@
     "area": "DLC2_Complete",
     "lat": -38929.99609375,
     "lng": -716.837158203125,
-    "alt": 2730.001220703125,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 2730.001220703125
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_680",
@@ -11264,8 +14436,7 @@
     "area": "DLC2_Complete",
     "lat": 1201.297119140625,
     "lng": 19610.884765625,
-    "alt": 4078.473876953125,
-    "nearest_cap": "DLC2_Complete:PipeCap14"
+    "alt": 4078.473876953125
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_7",
@@ -11273,8 +14444,7 @@
     "area": "DLC2_Complete",
     "lat": -37725.99609375,
     "lng": -716.8383178710938,
-    "alt": 3010.000732421875,
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 3010.000732421875
   },
   {
     "name": "NODE_AddChildActorComponent-1_PipesystemNewDLC_C_CAT_79",
@@ -11282,8 +14452,7 @@
     "area": "DLC2_Complete",
     "lat": 14541.90234375,
     "lng": 30248.634765625,
-    "alt": 3980.779541015625,
-    "nearest_cap": "DLC2_Complete:PipeCap9_5"
+    "alt": 3980.779541015625
   },
   {
     "name": "Pipesystem_Area4",
@@ -11302,8 +14471,7 @@
     "lat": -49335.3359375,
     "lng": 55097.140625,
     "alt": 2831.169921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_334",
-    "nearest_cap": "DLC2_Complete:A4FastTravelPipeCap"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC_334"
   },
   {
     "name": "PipesystemNewDLC11_405",
@@ -11332,8 +14500,7 @@
     "lat": -33614.1796875,
     "lng": 22480.037109375,
     "alt": -420.270263671875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC19",
-    "nearest_cap": "DLC2_Complete:A5FastTravelPipe_ExitCombatFinale"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC19"
   },
   {
     "name": "PipesystemNewDLC19",
@@ -11342,8 +14509,7 @@
     "lat": -31866.4375,
     "lng": 18459.4375,
     "alt": -2803.29541015625,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC16_2167",
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap3"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC16_2167"
   },
   {
     "name": "PipesystemNewDLC2",
@@ -11352,8 +14518,7 @@
     "lat": -39630.97265625,
     "lng": 1548.9307861328125,
     "alt": 5275.92578125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC3",
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC3"
   },
   {
     "name": "PipesystemNewDLC2_Middle",
@@ -11372,8 +14537,7 @@
     "lat": -35944.9765625,
     "lng": 2373.036376953125,
     "alt": 1909.189453125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC2",
-    "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC3_End",
@@ -11401,8 +14565,7 @@
     "lat": 2415.970947265625,
     "lng": 30174.87890625,
     "alt": 5459.419921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC5_3570",
-    "nearest_cap": "DLC2_Complete:PipeCap4_2"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC5_3570"
   },
   {
     "name": "PipesystemNewDLC7_3581",
@@ -11411,8 +14574,7 @@
     "lat": -11389.6220703125,
     "lng": 57514.05859375,
     "alt": 4687.990234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC8",
-    "nearest_cap": "DLC2_Complete:PipeCap2"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC8"
   },
   {
     "name": "PipesystemNewDLC8",
@@ -11421,8 +14583,7 @@
     "lat": -10963.87890625,
     "lng": 57091.01953125,
     "alt": 4687.990234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC7_3581",
-    "nearest_cap": "DLC2_Complete:PipeCap2"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC7_3581"
   },
   {
     "name": "PipesystemNewDLC9_2017",
@@ -11431,8 +14592,7 @@
     "lat": -2155.849365234375,
     "lng": -59503.16796875,
     "alt": 2302.79638671875,
-    "other_pipe": "DLC2_Complete:RainbowTownShortcutPipe",
-    "nearest_cap": "DLC2_FinalBoss:PipeCap12_2"
+    "other_pipe": "DLC2_Complete:RainbowTownShortcutPipe"
   },
   {
     "name": "PipesystemNewDLC_334",
@@ -11441,8 +14601,7 @@
     "lat": -49338.26171875,
     "lng": 55098.828125,
     "alt": 1986.86865234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC10",
-    "nearest_cap": "DLC2_Complete:A4FastTravelPipeCap"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC10"
   },
   {
     "name": "PipesystemNewDLC_BathToSecretLavaAreaToBath1",
@@ -11451,8 +14610,7 @@
     "lat": 1614.123046875,
     "lng": 10273.6982421875,
     "alt": 3074.8310546875,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNewDLC_BathToSecretLavaAreaToBath2",
-    "nearest_cap": "DLC2_Complete:PipeCap13"
+    "other_pipe": "DLC2_SecretLavaArea:PipesystemNewDLC_BathToSecretLavaAreaToBath2"
   },
   {
     "name": "PipesystemNewDLC_CombatExitPipe",
@@ -11461,8 +14619,7 @@
     "lat": -20788.62890625,
     "lng": -32291.802734375,
     "alt": 5625.8564453125,
-    "other_pipe": "DLC2_Complete:PipeToAreaBoss2",
-    "nearest_cap": "DLC2_FinalBoss:PipeCap12_2"
+    "other_pipe": "DLC2_Complete:PipeToAreaBoss2"
   },
   {
     "name": "PipesystemNewDLC_Start",
@@ -11541,8 +14698,7 @@
     "lat": -20467.703125,
     "lng": -67755.71875,
     "alt": 9166.0439453125,
-    "other_pipe": "DLC2_Complete:PipeToAreaSpecial",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "other_pipe": "DLC2_Complete:PipeToAreaSpecial"
   },
   {
     "name": "PlayerStart_1",
@@ -11571,6 +14727,14 @@
     "cost": 100
   },
   {
+    "name": "Purchase_SlumHouse1_2",
+    "type": "Purchase_SlumHouse1_C",
+    "area": "DLC2_Complete",
+    "lat": -28398.265625,
+    "lng": 11155.4501953125,
+    "alt": -148.50311279296875
+  },
+  {
     "name": "Purchase_StonePickaxe_8",
     "type": "Purchase_StonePickaxe_C",
     "area": "DLC2_Complete",
@@ -11589,132 +14753,52 @@
     "cost": 42
   },
   {
-    "name": "Scrap177_2",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63365.9765625,
-    "lng": 41623.96875,
-    "alt": 3229.5244140625
-  },
-  {
-    "name": "Scrap178",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63535.1953125,
-    "lng": 41579.359375,
-    "alt": 3235.7880859375
-  },
-  {
-    "name": "Scrap179",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63404.3984375,
-    "lng": 41517.671875,
-    "alt": 3229.3212890625
-  },
-  {
-    "name": "Scrap180",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63274.9609375,
-    "lng": 41456.375,
-    "alt": 3214.8974609375
-  },
-  {
-    "name": "Scrap181_9",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63333.0078125,
-    "lng": 41509.296875,
-    "alt": 3229.3212890625
-  },
-  {
-    "name": "Scrap182_11",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63193.3984375,
-    "lng": 41429.015625,
-    "alt": 3250.84130859375
-  },
-  {
-    "name": "Scrap183",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63209.3984375,
-    "lng": 41554.734375,
-    "alt": 3245.59521484375
-  },
-  {
-    "name": "Scrap184",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63285.7265625,
-    "lng": 41590.0390625,
-    "alt": 3229.3212890625
-  },
-  {
-    "name": "Scrap185",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63103.2109375,
-    "lng": 41371.7890625,
-    "alt": 3255.01708984375
-  },
-  {
-    "name": "Scrap186",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63108.6953125,
-    "lng": 41487.875,
-    "alt": 3268.69287109375
-  },
-  {
-    "name": "Scrap187",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -62930.6484375,
-    "lng": 41192.03515625,
-    "alt": 3285.66748046875
-  },
-  {
-    "name": "Scrap188",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63014.7109375,
-    "lng": 41316.88671875,
-    "alt": 3290.53271484375
-  },
-  {
-    "name": "Scrap189",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63029.7578125,
-    "lng": 41430.6328125,
-    "alt": 3254.69091796875
-  },
-  {
-    "name": "Scrap190",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63441.5546875,
-    "lng": 41629.234375,
-    "alt": 3235.7880859375
-  },
-  {
-    "name": "Scrap_2",
-    "type": "Scrap_C",
-    "area": "DLC2_Complete",
-    "lat": -63052.5078125,
-    "lng": 41790.4921875,
-    "alt": 3271.39208984375
-  },
-  {
     "name": "SlumBurningQuest_3",
     "type": "SlumBurningQuest_C",
     "area": "DLC2_Complete",
     "lat": -27745.974609375,
     "lng": 12236.783203125,
     "alt": -20.975341796875
+  },
+  {
+    "name": "SwingingDoor2_2",
+    "type": "SwingingDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -41548.0,
+    "lng": -155.671875,
+    "alt": 2381.0
+  },
+  {
+    "name": "SwingingDoor3_5",
+    "type": "SwingingDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -11502.7353515625,
+    "lng": 40107.0,
+    "alt": 1852.0
+  },
+  {
+    "name": "SwingingDoor4",
+    "type": "SwingingDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -13833.650390625,
+    "lng": 42156.8125,
+    "alt": 3303.96728515625
+  },
+  {
+    "name": "SwingingDoor5",
+    "type": "SwingingDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -30597.796875,
+    "lng": 18463.0703125,
+    "alt": -2613.29443359375
+  },
+  {
+    "name": "SwingingDoor6",
+    "type": "SwingingDoor_C",
+    "area": "DLC2_Complete",
+    "lat": -47276.70703125,
+    "lng": 2262.790283203125,
+    "alt": 2057.471435546875
   },
   {
     "name": "Trash2_2",
@@ -11827,6 +14911,58 @@
     "lat": -15603.2978515625,
     "lng": 61870.984375,
     "alt": 430.830322265625
+  },
+  {
+    "name": "BallButton2_2",
+    "type": "BallButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -17967.357421875,
+    "lng": -25541.939453125,
+    "alt": 8055.8974609375,
+    "actors": [
+      "DLC2_FinalBoss:Glowline3_2"
+    ]
+  },
+  {
+    "name": "BossPuzzle3_BallButton",
+    "type": "BallButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25030.71875,
+    "lng": -23943.265625,
+    "alt": 7218.1044921875,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle3_BallButtonFloorGlowline"
+    ]
+  },
+  {
+    "name": "BossPuzzle0_ButtonFloor",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20417.4140625,
+    "lng": -29262.650390625,
+    "alt": 6795.0,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle0_Glowline"
+    ]
+  },
+  {
+    "name": "BossPuzzle3_ButtonFloor",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24898.080078125,
+    "lng": -23653.373046875,
+    "alt": 7199.80517578125,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle3_ButtonGlowline"
+    ]
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_224",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18616.083984375,
+    "lng": -26558.501953125,
+    "alt": 6096.26025390625
   },
   {
     "name": "Chest2_2",
@@ -12575,6 +15711,78 @@
     "alt": 6341.380859375
   },
   {
+    "name": "BossPuzzle0_Door1",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -19954.9765625,
+    "lng": -28787.82421875,
+    "alt": 6395.0
+  },
+  {
+    "name": "BossPuzzle0_Door2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20051.919921875,
+    "lng": -27882.685546875,
+    "alt": 5995.0
+  },
+  {
+    "name": "BossPuzzle1_Door",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18835.640625,
+    "lng": -25358.8046875,
+    "alt": 5995.0
+  },
+  {
+    "name": "BossPuzzle2_Door1",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21571.9375,
+    "lng": -23642.3984375,
+    "alt": 5995.0
+  },
+  {
+    "name": "BossPuzzle2_Door2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21534.421875,
+    "lng": -24345.373046875,
+    "alt": 6030.90771484375
+  },
+  {
+    "name": "BossPuzzle2_Door3",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21907.14453125,
+    "lng": -25213.55078125,
+    "alt": 5995.0
+  },
+  {
+    "name": "BossPuzzle3_JailDoor1",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23358.244140625,
+    "lng": -25899.34765625,
+    "alt": 7195.0
+  },
+  {
+    "name": "BossPuzzle3_JailDoor2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24083.291015625,
+    "lng": -25561.251953125,
+    "alt": 7195.0
+  },
+  {
+    "name": "BossPuzzle3_JailDoor3",
+    "type": "DoorInverted_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24807.91796875,
+    "lng": -25222.259765625,
+    "alt": 7195.0
+  },
+  {
     "name": "BossPuzzle3_ExplodingBattery",
     "type": "ExplodingBattery_C",
     "area": "DLC2_FinalBoss",
@@ -12591,6 +15799,102 @@
     "alt": 6096.26025390625
   },
   {
+    "name": "JailDoor2",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23281.30078125,
+    "lng": -22833.56640625,
+    "alt": 7182.0
+  },
+  {
+    "name": "JailDoor3",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23281.30078125,
+    "lng": -22833.56640625,
+    "alt": 7182.0
+  },
+  {
+    "name": "JailDoor4",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21807.650390625,
+    "lng": -23520.74609375,
+    "alt": 7182.0
+  },
+  {
+    "name": "JailDoor_2",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22604.314453125,
+    "lng": -23149.27734375,
+    "alt": 7182.0
+  },
+  {
+    "name": "JailWall1",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23712.0078125,
+    "lng": -25723.349609375,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall11",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24029.517578125,
+    "lng": -24724.58984375,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall12_2",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24573.30078125,
+    "lng": -24471.01953125,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall13",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25117.087890625,
+    "lng": -24217.44921875,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall2_3",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24504.421875,
+    "lng": -25353.841796875,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall3",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25053.34375,
+    "lng": -25097.87109375,
+    "alt": 7195.0
+  },
+  {
+    "name": "JailWall4",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24504.421875,
+    "lng": -25353.841796875,
+    "alt": 7595.0
+  },
+  {
+    "name": "JailWall6",
+    "type": "JailDoor_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25053.345703125,
+    "lng": -25097.873046875,
+    "alt": 7595.0
+  },
+  {
     "name": "Jumppad2_2",
     "type": "Jumppad_C",
     "area": "DLC2_FinalBoss",
@@ -12604,10 +15908,58 @@
       "z": 0.9150053262710571
     },
     "target": {
-      "x": -22212.254404976964,
-      "y": -16547.156079113483,
-      "z": 7963.871979786898
+      "x": -22573.108211785555,
+      "y": -18211.412028431892,
+      "z": 7116.645961977049
     }
+  },
+  {
+    "name": "BossPuzzleEnd1_KeyLockPlastic",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20815.33203125,
+    "lng": -29347.435546875,
+    "alt": 6087.65087890625
+  },
+  {
+    "name": "BossPuzzleEnd2_KeyLockPlastic",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22898.40234375,
+    "lng": -28363.3671875,
+    "alt": 6087.65087890625
+  },
+  {
+    "name": "BossPuzzleEnd3_KeyLockPlastic",
+    "type": "KeyLockPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22095.98828125,
+    "lng": -26576.89453125,
+    "alt": 6087.65087890625
+  },
+  {
+    "name": "Boss_Key1",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18492.396484375,
+    "lng": -26333.28515625,
+    "alt": 7249.45556640625
+  },
+  {
+    "name": "Boss_Key2",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22192.962890625,
+    "lng": -25779.326171875,
+    "alt": 6049.45556640625
+  },
+  {
+    "name": "Boss_Key3",
+    "type": "KeyPlastic_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25142.982421875,
+    "lng": -25289.48828125,
+    "alt": 7255.0
   },
   {
     "name": "BossPuzzle3_MatchBox",
@@ -12675,13 +16027,122 @@
     "hits": 7
   },
   {
+    "name": "Boss_RespawnButtonKey1",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18607.513671875,
+    "lng": -26263.23828125,
+    "alt": 7165.0,
+    "actors": [
+      "DLC2_FinalBoss:Boss_Key1"
+    ]
+  },
+  {
+    "name": "Boss_RespawnButtonKey2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22269.38671875,
+    "lng": -25855.294921875,
+    "alt": 5981.24755859375,
+    "actors": [
+      "DLC2_FinalBoss:Boss_Key2"
+    ]
+  },
+  {
+    "name": "Boss_RespawnButtonKey3",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25210.416015625,
+    "lng": -25434.1640625,
+    "alt": 7177.34326171875,
+    "actors": [
+      "DLC2_FinalBoss:Boss_Key3"
+    ]
+  },
+  {
+    "name": "BossPuzzle2_ResetButton_MetalBall_Huge",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23613.279296875,
+    "lng": -25668.71875,
+    "alt": 5595.01123046875,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle2_MetalBall_Huge"
+    ]
+  },
+  {
+    "name": "BossPuzzle3_JailDoor4_PedestalButton",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25401.541015625,
+    "lng": -24825.890625,
+    "alt": 7344.83251953125,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle3_MoveMesh"
+    ]
+  },
+  {
+    "name": "BossPuzzleEnd1_PedestalButton",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20791.92578125,
+    "lng": -29420.947265625,
+    "alt": 5995.0,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzleEnd1_Relay"
+    ]
+  },
+  {
+    "name": "BossPuzzleEnd2_PedestalButton",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22971.900390625,
+    "lng": -28386.798828125,
+    "alt": 5995.0,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzleEnd2_Relay"
+    ]
+  },
+  {
+    "name": "BossPuzzleEnd3_PedestalButton",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22164.49609375,
+    "lng": -26541.45703125,
+    "alt": 5995.0,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzleEnd3_Relay"
+    ]
+  },
+  {
+    "name": "PedestalButton12",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -22086.19921875,
+    "lng": -25048.640625,
+    "alt": 6122.88134765625,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle2_Door3"
+    ]
+  },
+  {
+    "name": "PedestalButton15",
+    "type": "PedestalButton_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23231.537109375,
+    "lng": -23268.529296875,
+    "alt": 7188.26123046875,
+    "actors": [
+      "DLC2_FinalBoss:BossPuzzle3_ExplodingBattery"
+    ]
+  },
+  {
     "name": "PipeCap12_2",
     "type": "PipeCap_C",
     "area": "DLC2_FinalBoss",
     "lat": -20071.126953125,
     "lng": -30054.828125,
-    "alt": 7161.45068359375,
-    "other_cap": "DLC2_Complete:PipeCap10_2"
+    "alt": 7161.45068359375
   },
   {
     "name": "BossArea_BaronPipe1",
@@ -12690,8 +16151,7 @@
     "lat": -9792.423828125,
     "lng": -5053.1416015625,
     "alt": 3239.46875,
-    "other_pipe": "DLC2_FinalBoss:BossArea_BaronPipe2",
-    "nearest_cap": "DLC2_Complete:PipeCap10_2"
+    "other_pipe": "DLC2_FinalBoss:BossArea_BaronPipe2"
   },
   {
     "name": "BossArea_BaronPipe2",
@@ -12730,13 +16190,111 @@
     "spawns": "BuyTranslocator_Fake_C"
   },
   {
+    "name": "Door33_968",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -287626.0,
+    "lng": -2003.5,
+    "alt": 10063.390625
+  },
+  {
+    "name": "Door34",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -286704.15625,
+    "lng": 1001.808349609375,
+    "alt": 9816.3203125
+  },
+  {
+    "name": "Door36",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -290626.0,
+    "lng": -538.0,
+    "alt": 10333.171875
+  },
+  {
+    "name": "Door37",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -290629.0,
+    "lng": -1027.5,
+    "alt": 10333.171875
+  },
+  {
+    "name": "Door38",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -289570.0,
+    "lng": -543.5,
+    "alt": 10333.171875
+  },
+  {
+    "name": "Door39",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -289573.0,
+    "lng": -1033.0,
+    "alt": 10333.171875
+  },
+  {
+    "name": "Door40",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -285345.0,
+    "lng": -1320.0,
+    "alt": 9807.4140625
+  },
+  {
+    "name": "Door66",
+    "type": "Door3_C",
+    "area": "DLC2_Area0",
+    "lat": -282728.0,
+    "lng": -557.0,
+    "alt": 9868.9609375
+  },
+  {
+    "name": "DoorAnna2_4",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Area0",
+    "lat": -289338.1875,
+    "lng": -2759.0,
+    "alt": 10529.0
+  },
+  {
+    "name": "DoorAnna_2",
+    "type": "DoorAnna_C",
+    "area": "DLC2_Area0",
+    "lat": -289909.75,
+    "lng": -2151.0,
+    "alt": 10529.0
+  },
+  {
+    "name": "PedestalButton2_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Area0",
+    "lat": -283208.03125,
+    "lng": -343.2530212402344,
+    "alt": 9809.943359375
+  },
+  {
+    "name": "PedestalButton3_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_Area0",
+    "lat": -286730.125,
+    "lng": 1466.3447265625,
+    "alt": 9799.03515625,
+    "actors": [
+      "DLC2_Area0:ValveCarriable_Orange"
+    ]
+  },
+  {
     "name": "PipeCap10_2",
     "type": "PipeCap_C",
     "area": "DLC2_Area0",
     "lat": -284028.03125,
     "lng": -2240.900146484375,
-    "alt": 9974.640625,
-    "other_cap": "DLC2_Complete:A1FastTravelPipeCap"
+    "alt": 9974.640625
   },
   {
     "name": "PipesystemNew_AboveSewer",
@@ -12842,7 +16400,14 @@
     "area": "DLC2_Area0",
     "lat": -290014.9375,
     "lng": -2064.678955078125,
-    "alt": 10688.0
+    "alt": 10688.0,
+    "actors": [
+      "DLC2_Area0:DoorAnna_2",
+      "DLC2_Area0:Talk_Foreman_Intro",
+      "DLC2_Area0:TutorialButtons_2",
+      "DLC2_Area0:BP_A0_Intro_4",
+      "DLC2_Area0:SignalInverter_2"
+    ]
   },
   {
     "name": "ValveSlot_2",
@@ -12859,6 +16424,30 @@
     "lat": -1642.2034912109375,
     "lng": -16584.927734375,
     "alt": 3105.4658203125
+  },
+  {
+    "name": "ButtonFloor2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2976.564697265625,
+    "lng": 2182.0537109375,
+    "alt": 702.18212890625,
+    "actors": [
+      "DLC2_SecretLavaArea:Counter_2",
+      "DLC2_SecretLavaArea:Glowline2_5"
+    ]
+  },
+  {
+    "name": "ButtonFloor_2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 4755.34326171875,
+    "lng": 3959.14599609375,
+    "alt": 504.236572265625,
+    "actors": [
+      "DLC2_SecretLavaArea:Counter_2",
+      "DLC2_SecretLavaArea:Glowline_2"
+    ]
   },
   {
     "name": "Chest2_2",
@@ -13908,6 +17497,30 @@
     "alt": 673.0
   },
   {
+    "name": "SecretLavaArea_ArenaDoor",
+    "type": "DoorInverted_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 804.4298706054688,
+    "lng": -14442.9853515625,
+    "alt": 1420.0
+  },
+  {
+    "name": "SecretLavaArea_ArenaPuzzle_Door",
+    "type": "DoorInverted_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 807.2150268554688,
+    "lng": -14423.1806640625,
+    "alt": 1420.0
+  },
+  {
+    "name": "SecretLavaArea_ArenaPuzzle_DoorExit",
+    "type": "DoorInverted_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -1160.14599609375,
+    "lng": -16923.580078125,
+    "alt": 3020.0
+  },
+  {
     "name": "ExplodingBattery_2",
     "type": "ExplodingBattery_C",
     "area": "DLC2_SecretLavaArea",
@@ -13932,9 +17545,9 @@
       "z": 0.2755940556526184
     },
     "target": {
-      "x": 3838.3129029273987,
-      "y": 6772.476925492287,
-      "z": 208.99459869422907
+      "x": 2701.668622493744,
+      "y": 7076.49394261837,
+      "z": 533.2360745754241
     }
   },
   {
@@ -13953,10 +17566,33 @@
       "z": 0.8660169243812561
     },
     "target": {
-      "x": -16587.897220626473,
-      "y": -649.194079503417,
-      "z": 3103.7057578841827
+      "x": -16642.64201436937,
+      "y": -789.3889227062464,
+      "z": 3014.413952122942
     }
+  },
+  {
+    "name": "Lever17_2",
+    "type": "Lever_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 4586.12451171875,
+    "lng": -3891.43017578125,
+    "alt": 3286.9052734375,
+    "actors": [
+      "DLC2_SecretLavaArea:MoveMesh28_2"
+    ]
+  },
+  {
+    "name": "Match_Lever_5",
+    "type": "Match_Lever_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 8887.3740234375,
+    "lng": 1392.28076171875,
+    "alt": 980.12353515625,
+    "actors": [
+      "DLC2_SecretLavaArea:Secret_Rotator",
+      "DLC2_SecretLavaArea:RelayGlowLineForASecond"
+    ]
   },
   {
     "name": "MatchBox8_2",
@@ -15048,13 +18684,57 @@
     "hits": 7
   },
   {
+    "name": "PedestalButton10",
+    "type": "PedestalButton_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 9426.6201171875,
+    "lng": 278.5731506347656,
+    "alt": 792.97119140625,
+    "actors": [
+      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe"
+    ]
+  },
+  {
+    "name": "PedestalButton9",
+    "type": "PedestalButton_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 9413.34375,
+    "lng": 247.9603729248047,
+    "alt": 758.150146484375,
+    "actors": [
+      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe"
+    ]
+  },
+  {
+    "name": "PedestalButton95_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 10348.8349609375,
+    "lng": -2491.52734375,
+    "alt": 458.500732421875,
+    "actors": [
+      "DLC2_SecretLavaArea:ExplodingBattery_2"
+    ]
+  },
+  {
+    "name": "PedestalButton_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -631.0020141601562,
+    "lng": -15431.646484375,
+    "alt": 3015.2998046875,
+    "actors": [
+      "DLC2_SecretLavaArea:Glowline4_5"
+    ]
+  },
+  {
     "name": "Area1_SecretArea_TeleportPipeCap1",
     "type": "PipeCap_C",
     "area": "DLC2_SecretLavaArea",
     "lat": 3305.47607421875,
     "lng": -280.1111755371094,
     "alt": 797.051025390625,
-    "other_cap": "DLC2_Complete:PipeCap13"
+    "other_cap": "DLC2_SecretLavaArea:PipeCap11"
   },
   {
     "name": "PipeCap11",
@@ -15100,8 +18780,7 @@
     "lat": 10191.171875,
     "lng": -3894.28955078125,
     "alt": 2904.20458984375,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_GetCarryPipe_TeleportPipe",
-    "nearest_cap": "DLC2_SecretLavaArea:PipeCap11"
+    "other_pipe": "DLC2_SecretLavaArea:Secret_GetCarryPipe_TeleportPipe"
   },
   {
     "name": "Secret_DrainWater_TeleportPipe1",
@@ -15110,8 +18789,7 @@
     "lat": 10816.677734375,
     "lng": 5672.96826171875,
     "alt": -945.0032958984375,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe6",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe6"
   },
   {
     "name": "Secret_GetCarryPipe_TeleportPipe",
@@ -15120,8 +18798,7 @@
     "lat": 8960.6259765625,
     "lng": -1678.115966796875,
     "alt": 1740.47265625,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNew_4",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_SecretLavaArea:PipesystemNew_4"
   },
   {
     "name": "Secret_TeleportPipe1",
@@ -15140,8 +18817,7 @@
     "lat": 2874.1748046875,
     "lng": 5304.390625,
     "alt": 179.0185546875,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe3",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe3"
   },
   {
     "name": "Secret_TeleportPipe3",
@@ -15150,8 +18826,7 @@
     "lat": 3133.619140625,
     "lng": 4935.88037109375,
     "alt": -2491.081298828125,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe2",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe2"
   },
   {
     "name": "Secret_TeleportPipe6",
@@ -15160,8 +18835,7 @@
     "lat": 10821.8154296875,
     "lng": 5673.66845703125,
     "alt": -2012.6494140625,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_DrainWater_TeleportPipe1",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_SecretLavaArea:Secret_DrainWater_TeleportPipe1"
   },
   {
     "name": "PipesystemNewDLC_BathToSecretLavaAreaToBath2",
@@ -15170,8 +18844,7 @@
     "lat": 585.74365234375,
     "lng": 7443.4892578125,
     "alt": 180.625732421875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_BathToSecretLavaAreaToBath1",
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC_BathToSecretLavaAreaToBath1"
   },
   {
     "name": "PipesystemNewDLC_FastTravelLavaToBeam1",
@@ -15207,7 +18880,21 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 4922.91259765625,
     "lng": 8243.8955078125,
-    "alt": -7577.89404296875
+    "alt": -7577.89404296875,
+    "actors": [
+      "DLC2_SecretLavaArea:Relay_OpenFastTravelSecretLavaAreaToBeamTutorial"
+    ]
+  },
+  {
+    "name": "BallButton2_2",
+    "type": "BallButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42479.15625,
+    "lng": -57406.09375,
+    "alt": 10351.3662109375,
+    "actors": [
+      "DLC2_PostRainbow:Glowline23_2"
+    ]
   },
   {
     "name": "BP_EngagementCup_Base12_37",
@@ -15288,6 +18975,122 @@
     "lat": -47840.1328125,
     "lng": -49320.54296875,
     "alt": 16208.3984375
+  },
+  {
+    "name": "ButtonFloor10_277",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39302.203125,
+    "lng": -67615.296875,
+    "alt": 9767.1875
+  },
+  {
+    "name": "ButtonFloor2_2",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40196.91796875,
+    "lng": -71553.59375,
+    "alt": 5540.91748046875,
+    "actors": [
+      "DLC2_PostRainbow:Glowline5_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor3_271",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40768.41796875,
+    "lng": -62582.6171875,
+    "alt": 9975.0,
+    "actors": [
+      "DLC2_PostRainbow:Glowline2_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor4_271",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40085.16015625,
+    "lng": -52634.6953125,
+    "alt": 9966.7490234375,
+    "actors": [
+      "DLC2_PostRainbow:Glowline_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor5_5",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -36444.10546875,
+    "lng": -56009.88671875,
+    "alt": 5421.2802734375,
+    "actors": [
+      "DLC2_PostRainbow:Glowline7_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor6_268",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40272.61328125,
+    "lng": -63378.8984375,
+    "alt": 5808.53125,
+    "actors": [
+      "DLC2_PostRainbow:Glowline10_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor7",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -38640.95703125,
+    "lng": -52441.38671875,
+    "alt": 9966.7490234375,
+    "actors": [
+      "DLC2_PostRainbow:Glowline12_5"
+    ]
+  },
+  {
+    "name": "ButtonFloor8_271",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -47579.515625,
+    "lng": -46959.875,
+    "alt": 5590.12841796875,
+    "actors": [
+      "DLC2_PostRainbow:Glowline21_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor9_274",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -45626.140625,
+    "lng": -58457.5546875,
+    "alt": 9884.7646484375,
+    "actors": [
+      "DLC2_PostRainbow:DoorInverted4",
+      "DLC2_PostRainbow:LampDiode8_2"
+    ]
+  },
+  {
+    "name": "ButtonFloor_276",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37815.9921875,
+    "lng": -57130.1328125,
+    "alt": 9908.7919921875,
+    "actors": [
+      "DLC2_PostRainbow:Glowline22_8"
+    ]
+  },
+  {
+    "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_262",
+    "type": "ButtonFloor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41882.84375,
+    "lng": -67533.890625,
+    "alt": 9868.1357421875
   },
   {
     "name": "Chest2_2",
@@ -16044,6 +19847,94 @@
     "alt": 9762.923828125
   },
   {
+    "name": "Door3_2",
+    "type": "Door3_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41452.82421875,
+    "lng": -70460.40625,
+    "alt": 5516.87841796875
+  },
+  {
+    "name": "Door2_3",
+    "type": "Door_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42895.9296875,
+    "lng": -57464.54296875,
+    "alt": 9753.6689453125
+  },
+  {
+    "name": "DoorInverted2_2",
+    "type": "Door_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42030.0546875,
+    "lng": -55734.78515625,
+    "alt": 9741.5400390625
+  },
+  {
+    "name": "DoorInverted4",
+    "type": "Door_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -44749.921875,
+    "lng": -58980.828125,
+    "alt": 9745.3427734375
+  },
+  {
+    "name": "Door_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41221.6875,
+    "lng": -68778.609375,
+    "alt": 5436.00146484375
+  },
+  {
+    "name": "DoorInverted3_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -47493.25,
+    "lng": -48180.07421875,
+    "alt": 5611.6337890625
+  },
+  {
+    "name": "DoorInverted5_6",
+    "type": "DoorInverted_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39590.11328125,
+    "lng": -52169.71875,
+    "alt": 9963.939453125
+  },
+  {
+    "name": "DoorInverted_2",
+    "type": "DoorInverted_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39130.96484375,
+    "lng": -53572.796875,
+    "alt": 5380.5947265625
+  },
+  {
+    "name": "DoorStone2_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37633.59765625,
+    "lng": -63536.07421875,
+    "alt": 5389.29541015625
+  },
+  {
+    "name": "DoorStone3_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -46345.86328125,
+    "lng": -60287.10546875,
+    "alt": 9971.1142578125
+  },
+  {
+    "name": "DoorStone_2",
+    "type": "DoorStone_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40498.19921875,
+    "lng": -60952.66015625,
+    "alt": 9721.6748046875
+  },
+  {
     "name": "ExplodingBattery9_5",
     "type": "ExplodingBattery_C",
     "area": "DLC2_PostRainbow",
@@ -16058,6 +19949,14 @@
     "lat": -41882.84375,
     "lng": -67533.890625,
     "alt": 9868.1357421875
+  },
+  {
+    "name": "JailDoor_4",
+    "type": "JailDoor_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37803.3046875,
+    "lng": -56991.296875,
+    "alt": 9913.333984375
   },
   {
     "name": "Jumppad2_2",
@@ -16118,10 +20017,21 @@
       "z": 0.9396669268608093
     },
     "target": {
-      "x": -47463.39317756891,
-      "y": -39173.06231355667,
-      "z": 11058.234597976876
+      "x": -47495.07515478134,
+      "y": -39252.50022506714,
+      "z": 10781.10132969208
     }
+  },
+  {
+    "name": "Lever_2",
+    "type": "Lever_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -44074.22265625,
+    "lng": -46649.0625,
+    "alt": 6397.951171875,
+    "actors": [
+      "DLC2_PostRainbow:Glowline29_2"
+    ]
   },
   {
     "name": "MetalBall_2",
@@ -16168,13 +20078,133 @@
     "hits": 11
   },
   {
+    "name": "PedestalButton10_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42835.390625,
+    "lng": -57263.2109375,
+    "alt": 9861.25390625,
+    "actors": [
+      "DLC2_PostRainbow:Door2_3"
+    ]
+  },
+  {
+    "name": "PedestalButton11_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41246.359375,
+    "lng": -70098.5,
+    "alt": 5500.294921875,
+    "actors": [
+      "DLC2_PostRainbow:Glowline26_8"
+    ]
+  },
+  {
+    "name": "PedestalButton12_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37319.69140625,
+    "lng": -63387.203125,
+    "alt": 5864.42822265625,
+    "actors": [
+      "DLC2_PostRainbow:DoorStone2_2"
+    ]
+  },
+  {
+    "name": "PedestalButton3_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -47761.3671875,
+    "lng": -47914.11328125,
+    "alt": 5729.9375,
+    "actors": [
+      "DLC2_PostRainbow:DoorInverted3_2"
+    ]
+  },
+  {
+    "name": "PedestalButton4_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -46707.3671875,
+    "lng": -59585.3046875,
+    "alt": 10104.0390625
+  },
+  {
+    "name": "PedestalButton57_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39495.73046875,
+    "lng": -60939.4453125,
+    "alt": 9891.2216796875,
+    "actors": [
+      "DLC2_PostRainbow:DoorStone_2"
+    ]
+  },
+  {
+    "name": "PedestalButton5_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -49776.9375,
+    "lng": -44494.00390625,
+    "alt": 5623.7255859375,
+    "actors": [
+      "DLC2_PostRainbow:MetalBall_2"
+    ]
+  },
+  {
+    "name": "PedestalButton6_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37913.2890625,
+    "lng": -57395.26953125,
+    "alt": 9910.5166015625,
+    "actors": [
+      "DLC2_PostRainbow:ExplodingBattery9_5"
+    ]
+  },
+  {
+    "name": "PedestalButton8_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39471.23046875,
+    "lng": -52351.76953125,
+    "alt": 10075.0927734375,
+    "actors": [
+      "DLC2_PostRainbow:DoorInverted5_6"
+    ]
+  },
+  {
+    "name": "PedestalButton9_5",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43183.3828125,
+    "lng": -53317.6015625,
+    "alt": 9679.7529296875,
+    "actors": [
+      "DLC2_PostRainbow:CarrotPhysical2",
+      "DLC2_PostRainbow:CarrotPhysical_2",
+      "DLC2_PostRainbow:CarrotPhysical4",
+      "DLC2_PostRainbow:CarrotPhysical3"
+    ]
+  },
+  {
+    "name": "PedestalButton_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42953.171875,
+    "lng": -54759.24609375,
+    "alt": 9883.8935546875,
+    "actors": [
+      "DLC2_PostRainbow:RingColorer_5"
+    ]
+  },
+  {
     "name": "PipeCap2_2",
     "type": "PipeCap_C",
     "area": "DLC2_PostRainbow",
     "lat": -43132.2578125,
     "lng": -70574.84375,
-    "alt": 5762.4091796875,
-    "other_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "alt": 5762.4091796875
   },
   {
     "name": "PipeCap_2",
@@ -16182,8 +20212,7 @@
     "area": "DLC2_PostRainbow",
     "lat": -42775.58984375,
     "lng": -52996.9140625,
-    "alt": 5645.86767578125,
-    "other_cap": "DLC2_PostRainbow:PipeCap_2"
+    "alt": 5645.86767578125
   },
   {
     "name": "PipesystemNew2",
@@ -16192,8 +20221,7 @@
     "lat": -39467.86328125,
     "lng": -53929.92578125,
     "alt": 5190.4228515625,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew_2",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap_2"
+    "other_pipe": "DLC2_PostRainbow:PipesystemNew_2"
   },
   {
     "name": "PipesystemNew3_5",
@@ -16202,8 +20230,7 @@
     "lat": -41000.0390625,
     "lng": -71331.84375,
     "alt": 11042.857421875,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew6",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap2_2"
+    "other_pipe": "DLC2_PostRainbow:PipesystemNew6"
   },
   {
     "name": "PipesystemNew4_2",
@@ -16222,8 +20249,7 @@
     "lat": -37744.7890625,
     "lng": -57149.6328125,
     "alt": 4853.21533203125,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap_2"
+    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5"
   },
   {
     "name": "PipesystemNew6",
@@ -16232,8 +20258,7 @@
     "lat": -44440.8984375,
     "lng": -55234.1953125,
     "alt": 3695.21044921875,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap_2"
+    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5"
   },
   {
     "name": "PipesystemNew_2",
@@ -16242,8 +20267,7 @@
     "lat": -39725.625,
     "lng": -53630.5078125,
     "alt": 5169.57275390625,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew2",
-    "nearest_cap": "DLC2_PostRainbow:PipeCap_2"
+    "other_pipe": "DLC2_PostRainbow:PipesystemNew2"
   },
   {
     "name": "BP_PurchaseSpeedx2_2",
@@ -16294,14 +20318,21 @@
     "alt": 20191.72265625
   },
   {
+    "name": "A0_EscapeDoor",
+    "type": "Door_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23295.990234375,
+    "lng": 16726.919921875,
+    "alt": 19475.0
+  },
+  {
     "name": "PipesystemNew_IntoSewer",
     "type": "PipesystemNew_C",
     "area": "DLC2_Area0_Below",
     "lat": 21059.283203125,
     "lng": 9276.5419921875,
     "alt": 20986.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer2",
-    "nearest_cap": "DLC2_Complete:A1FastTravelPipeCap"
+    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer2"
   },
   {
     "name": "PipesystemNew_IntoSewer2",
@@ -16310,8 +20341,7 @@
     "lat": 19590.291015625,
     "lng": 9693.0283203125,
     "alt": 20986.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer",
-    "nearest_cap": "DLC2_Complete:A1FastTravelPipeCap"
+    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_0",
@@ -16322,13 +20352,56 @@
     "alt": 19551.0
   },
   {
+    "name": "Door13",
+    "type": "Door3_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23645.171875,
+    "lng": -64135.640625,
+    "alt": 7827.505859375
+  },
+  {
+    "name": "Door14",
+    "type": "Door3_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -20952.28125,
+    "lng": -63970.953125,
+    "alt": 7856.109375
+  },
+  {
+    "name": "Door45",
+    "type": "Door3_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22173.1328125,
+    "lng": -62646.4375,
+    "alt": 7733.4658203125
+  },
+  {
+    "name": "Door46",
+    "type": "Door3_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22417.6796875,
+    "lng": -57591.296875,
+    "alt": 7752.8232421875
+  },
+  {
+    "name": "PedestalButton22_2",
+    "type": "PedestalButton_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22048.5234375,
+    "lng": -62782.55078125,
+    "alt": 7850.966796875,
+    "actors": [
+      "DLC2_RainbowTown:Door45",
+      "DLC2_RainbowTown:Relay_2"
+    ]
+  },
+  {
     "name": "PipesystemNewDLC4",
     "type": "PipesystemNewDLC_C",
     "area": "DLC2_Menu_Splash",
     "lat": 2373.376953125,
     "lng": 3473.5615234375,
-    "alt": 1345.9921875,
-    "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "alt": 1345.9921875
   },
   {
     "name": "MatchBox_2",
