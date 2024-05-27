@@ -56,6 +56,22 @@ function getViewURL() {
   return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
+function copyToClipboard(text) {
+  let input = document.body.appendChild(document.createElement("input"));
+  input.value = text;
+  input.focus();
+  input.select();
+  document.execCommand('copy');
+  input.parentNode.removeChild(input);
+  console.log(text + ' copied to clipboard');
+}
+
+function openLoadFileDialog() {
+  document.querySelector('#file').value = null;
+  document.querySelector('#file').accept = '.sav';
+  document.querySelector('#file').click();
+}
+
 function loadMap() {
   for (id in maps) {
     var title = maps[id].title;
@@ -220,20 +236,6 @@ function loadMap() {
     map.fitBounds(mapBounds);
   }
 
-  function copyToClipboard(text) {
-    let input = document.body.appendChild(document.createElement("input"));
-    input.value = text;
-    input.focus();
-    input.select();
-    document.execCommand('copy');
-    input.parentNode.removeChild(input);
-    console.log(text + ' copied to clipboard');
-  }
-
-  document.querySelector('#file').onchange = function(e) {
-    loadSaveFile();
-  }
-
   let subAction = L.Toolbar2.Action.extend({
     initialize:function(map,myAction){this.map=map;this.myAction=myAction;L.Toolbar2.Action.prototype.initialize.call(this);},
     addHooks:function(){ this.myAction.disable(); }
@@ -265,15 +267,13 @@ function loadMap() {
         // load game button
         L.Toolbar2.Action.extend({
           options: {
-            toolbarIcon:{html: '&#x1F4C1;', tooltip: 'Upload'},
+            toolbarIcon:{html: '&#x1F4C1;', tooltip: 'Load Game'},
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
-                  options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items'}},
+                  options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items (Alt+F)'}},
                   addHooks: function () {
-                    document.querySelector('#file').value = null;
-                    document.querySelector('#file').accept = '.sav';
-                    document.querySelector('#file').click();
+                    openLoadFileDialog();
                     subAction.prototype.addHooks.call(this);
                   }
                 }),
@@ -859,15 +859,19 @@ window.onload = function(event) {
   });
 
   window.addEventListener("keydown",function (e) {
-    //console.log(e.code);
+    //console.log(e, e.code);
     if (e.target.id.startsWith('searchtext')) {
       return;
     }
     pressed[e.code] = true;
+    setTimeout(function(code){pressed[code]=false;},250,e.code); // prevent stuck keys
     switch (e.code) {
       case 'KeyF':
         if (e.ctrlKey) {
           searchControl.expand(true);
+          e.preventDefault();
+        } else if (e.altKey) {
+          openLoadFileDialog();
           e.preventDefault();
         } else {
           map.toggleFullscreen();
@@ -886,7 +890,10 @@ window.onload = function(event) {
     }
   });
 
-  window.requestAnimationFrame(update);
+  document.querySelector('#file').onchange = function(e) {
+    loadSaveFile();
+  }
 
+  window.requestAnimationFrame(update);
   window.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true); // enable default context menu
 }
