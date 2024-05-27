@@ -278,7 +278,7 @@ function loadMap() {
                   }
                 }),
                 subAction.extend({
-                  options:{toolbarIcon:{html:'Copy Path', tooltip: 'Copy save file directory path to clipboard'}},
+                  options:{toolbarIcon:{html:'Copy Path', tooltip: 'Copy default Windows game save file path to clipboard'}},
                   addHooks:function() {
                     copyToClipboard('%LocalAppData%\\Supraland'+(mapId=='siu' ? 'SIU':'')+'\\Saved\\SaveGames');
                     subAction.prototype.addHooks.call(this);
@@ -395,6 +395,7 @@ function loadMap() {
             let defaultLayer = 'misc';
             let icon = c.icon || defaultIcon;
             let layer = layers[c.layer] ? c.layer : defaultLayer;
+            let color = getMarkerColor(o);
 
             // can't have duplicate titles in search
             if (titles[title]) {
@@ -408,6 +409,12 @@ function loadMap() {
 
             if ({'Jumppad_C':1,'PipesystemNew_C':1,'PipesystemNewDLC_C':1}[o.type]) {
               // add these markers in 2nd pass for z-index to work
+
+              let layer = o.type == 'Jumppad_C' ? 'jumppads' : 'pipesys';
+              let line = L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+              line._path && line._path.setAttribute('alt', alt);
+
             } else {
 
               if (o.type.endsWith('Chest_C')) {
@@ -472,23 +479,17 @@ function loadMap() {
 
         } // end of loop
 
-        // pass 2 (pads and pipe markers)
+        // pass 2 (pads and pipes)
         // need to add shadows / investigate issue with shadows, they should be drawn in order
         // there's no stroke property for lines, so it needs thicker shadow lines
-        for (name of Object.keys(objects)) {
-
-          let o = objects[name];
+        // need to add title as a single space, so leaflet-search doesn't crash and it doesn't appear in search
+        for (const[name,o] of Object.entries(objects)) {
           let alt = o.area + ':' + o.name
           let color = getMarkerColor(o);
-          let layer = 'jumppads';
-          let text = '';
 
           if (o.type == 'Jumppad_C' && o.target) {
+            let layer = 'jumppads';
             if (r = o.direction) {
-              // need to add title as a single space (leaflet search issue), but not the full title so it doesn't appear in search
-              L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-
               let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
               line._path && line._path.setAttribute('alt', alt);
             }
@@ -498,8 +499,6 @@ function loadMap() {
           if (o.other_pipe) {
             let layer = 'pipesys';
             if (p = objects[o.other_pipe]) {
-              L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:o, alt: alt})
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
               let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
               line._path && line._path.setAttribute('alt', alt);
             }
@@ -774,7 +773,9 @@ window.loadSaveFile = function () {
 
             // do not mark jumppads and pipes for now
             if (name.includes('Jumppad') || name.includes('Pipesystem')) {
-              continue;
+              //continue; // let's try inverting css rules for paths so activated are brighter
+
+              console.log('activating', area +':' + name);
             }
 
             markItemFound(area + ':' + name, true, false);
