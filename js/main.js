@@ -853,6 +853,10 @@ window.onload = function(event) {
     window.requestAnimationFrame(update);
   }
 
+  document.querySelector('#map').addEventListener('blur', function(e) {
+    pressed = {}; // prevent sticky keys
+  });
+
   window.addEventListener('keyup', (e) => {
     delete pressed[e.code];
   });
