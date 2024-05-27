@@ -271,7 +271,7 @@ function loadMap() {
             subToolbar: new L.Toolbar2({ 
               actions: [
                 subAction.extend({
-                  options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items (Alt+F)'}},
+                  options:{toolbarIcon:{html:'Load Game', tooltip: 'Load game save (*.sav) to mark collected items (Alt+R)'}},
                   addHooks: function () {
                     openLoadFileDialog();
                     subAction.prototype.addHooks.call(this);
@@ -812,7 +812,6 @@ window.loadSaveFile = function () {
   };
 
   if (file instanceof Blob) {
-    console.log(file);
     reader.readAsArrayBuffer(file);
   }
 }
@@ -870,9 +869,6 @@ window.onload = function(event) {
         if (e.ctrlKey) {
           searchControl.expand();
           e.preventDefault();
-        } else if (e.altKey) {
-          openLoadFileDialog();
-          e.preventDefault();
         } else {
           map.toggleFullscreen();
         }
@@ -885,7 +881,7 @@ window.onload = function(event) {
         if (!e.ctrlKey && !e.altKey) {
           map.flyTo(playerMarker ? playerMarker._latlng : mapCenter);
         } else if (e.altKey) {
-          document.querySelector('#file').click();
+          openLoadFileDialog();
         }
         break;
       case 'Digit1': reloadMap('sl'); break;
