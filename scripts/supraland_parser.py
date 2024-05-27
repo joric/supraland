@@ -93,6 +93,18 @@ price_types = {
     'EPriceType::NewEnumerator6':'bones',
 }
 
+properties = [
+    'Coins','CoinsInGold','Cost','Value', # chest_c
+    'HitsToBreak','bObsidian', # minecraftbrick_c
+    'AllowEnemyProjectiles','RequiresPurpleShot?', # button_c
+    'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity','CenterActor', # jumpppad_c
+]
+
+def camel_to_snake(s):
+    if s[-1]=='?': s = s[:-1] + 'Flag'
+    if s.startswith('b'): s = 'Is' + s[1:]
+    return ''.join(['_'+c.lower() if c.isupper() else c for c in s]).lstrip('_')
+
 def export_levels(game, cache_dir):
     path = config[game]['path']
     prefix = config[game]['prefix']
@@ -154,8 +166,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 or any(o['Type'].contains(s) for s in contains)
             )
 
-            if not allowed_items:
-                continue
+            if not allowed_items: continue
+            #if not o['Type'].endswith('_C'): continue
 
             def get_matrix(o, matrix=Matrix.Identity(4)):
                 p = o.get('Properties',{})
@@ -182,19 +194,16 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             data[-1].update({'lat': t.y, 'lng': t.x, 'alt': t.z})
 
             p = o.get('Properties',{})
-            optKey(data[-1], 'coins', p.get('Coins'))
-            optKey(data[-1], 'coins', p.get('CoinsInGold'))
-            optKey(data[-1], 'cost', p.get('Cost'))
-            optKey(data[-1], 'value', p.get('Value'))
+
+            for key in properties:
+                optKey(data[-1], camel_to_snake(key), p.get(key))
+
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
-            optKey(data[-1], 'hits', p.get('HitsToBreak'))
-            optKey(data[-1], 'obsidian', p.get('bObsidian'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
-
             res = []
-            for section in ('Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate'):
+            for section in ('Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open'):
                 if actors := p.get(section):
                     if type(actors) is dict:
                         actors = [actors]
@@ -204,15 +213,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                                 res.append(':'.join((a['OuterIndex']['Outer'],a['ObjectName'])))
                     optKey(data[-1], 'actors', res)
 
-
             if o['Type'] in ('Jumppad_C'):
-                optKey(data[-1], 'relative_velocity', p.get('RelativeVelocity'))
                 optKey(data[-1], 'velocity', (v:=p.get('Velocity'))and getXYZ(getVec(v)))
-                optKey(data[-1], 'allow_stomp', p.get('AllowStomp'))
-                optKey(data[-1], 'disable_movement', p.get('DisableMovementInAir'))
-                optKey(data[-1], 'allow_relative_velocity', p.get('RelativeVelocity?'))
-                optKey(data[-1], 'center_actor', p.get('CenterActor'))
-
                 d = Vector((matrix[0][2],matrix[1][2],matrix[2][2]));
                 d.normalize()
                 data[-1].update({'direction': getXYZ(d)})

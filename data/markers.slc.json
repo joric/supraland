@@ -1041,7 +1041,10 @@
     "area": "Crash",
     "lat": -2815.41259765625,
     "lng": 20008.6015625,
-    "alt": 1887.0006103515625
+    "alt": 1887.0006103515625,
+    "actors": [
+      "Crash:DoorLego6"
+    ]
   },
   {
     "name": "Button11_2",
@@ -1049,7 +1052,11 @@
     "area": "Crash",
     "lat": -1432.2908935546875,
     "lng": 3574.80615234375,
-    "alt": -1552.3299560546875
+    "alt": -1552.3299560546875,
+    "actors": [
+      "Crash:Door_2",
+      "Crash:Glowline44_5"
+    ]
   },
   {
     "name": "Button12_11",
@@ -1057,7 +1064,10 @@
     "area": "Crash",
     "lat": -1773.68115234375,
     "lng": 6862.6044921875,
-    "alt": -1672.4754638671875
+    "alt": -1672.4754638671875,
+    "actors": [
+      "Crash:ProjectileShooter6_2"
+    ]
   },
   {
     "name": "Button13_2",
@@ -1065,7 +1075,8 @@
     "area": "Crash",
     "lat": -1889.6185302734375,
     "lng": 55017.21875,
-    "alt": 2561.71875
+    "alt": 2561.71875,
+    "requires_purple_shot_flag": true
   },
   {
     "name": "Button14",
@@ -1081,7 +1092,11 @@
     "area": "Crash",
     "lat": -1396.9713134765625,
     "lng": 34328.6875,
-    "alt": -2405.614013671875
+    "alt": -2405.614013671875,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:MoveMesh25_5"
+    ]
   },
   {
     "name": "Button17_2",
@@ -1089,7 +1104,12 @@
     "area": "Crash",
     "lat": -15186.5810546875,
     "lng": -4852.3203125,
-    "alt": -681.8060913085938
+    "alt": -681.8060913085938,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Crash:Jumppad33_2",
+      "Crash:Glowline77_2"
+    ]
   },
   {
     "name": "Button18",
@@ -1097,7 +1117,12 @@
     "area": "Crash",
     "lat": 923.5294799804688,
     "lng": 38123.25,
-    "alt": -2246.45361328125
+    "alt": -2246.45361328125,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger3",
+      "Crash:Glowline22"
+    ]
   },
   {
     "name": "Button19",
@@ -1105,7 +1130,12 @@
     "area": "Crash",
     "lat": 923.5294799804688,
     "lng": 38123.25,
-    "alt": -1877.5882568359375
+    "alt": -1877.5882568359375,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger3",
+      "Crash:Glowline21_11"
+    ]
   },
   {
     "name": "Button2",
@@ -1113,7 +1143,11 @@
     "area": "Crash",
     "lat": -6282.763671875,
     "lng": 38475.3671875,
-    "alt": 199.54034423828125
+    "alt": 199.54034423828125,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:DoorLego2"
+    ]
   },
   {
     "name": "Button20",
@@ -1121,7 +1155,12 @@
     "area": "Crash",
     "lat": 904.3223266601562,
     "lng": 38802.25,
-    "alt": -2246.45361328125
+    "alt": -2246.45361328125,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger3",
+      "Crash:Glowline24"
+    ]
   },
   {
     "name": "Button21",
@@ -1129,7 +1168,12 @@
     "area": "Crash",
     "lat": 903.7781372070312,
     "lng": 38787.2578125,
-    "alt": -1868.9390869140625
+    "alt": -1868.9390869140625,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger3",
+      "Crash:Glowline23"
+    ]
   },
   {
     "name": "Button22_2",
@@ -1137,7 +1181,10 @@
     "area": "Crash",
     "lat": -3230.80810546875,
     "lng": 45611.515625,
-    "alt": -171.89694213867188
+    "alt": -171.89694213867188,
+    "actors": [
+      "Crash:MoveMesh38"
+    ]
   },
   {
     "name": "Button23_2",
@@ -1145,7 +1192,10 @@
     "area": "Crash",
     "lat": -1064.0699462890625,
     "lng": 36237.6953125,
-    "alt": 182.32858276367188
+    "alt": 182.32858276367188,
+    "actors": [
+      "Crash:Jumppad36"
+    ]
   },
   {
     "name": "Button24",
@@ -1153,7 +1203,13 @@
     "area": "Crash",
     "lat": 3831.716064453125,
     "lng": 36104.20703125,
-    "alt": 219.28189086914062
+    "alt": 219.28189086914062,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Crash:MoveMesh_2",
+      "Crash:Gears7_2",
+      "Crash:Glowline27_2"
+    ]
   },
   {
     "name": "Button25",
@@ -1161,7 +1217,11 @@
     "area": "Crash",
     "lat": -3337.840087890625,
     "lng": 39920.140625,
-    "alt": 1373.3763427734375
+    "alt": 1373.3763427734375,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:MoveMesh48"
+    ]
   },
   {
     "name": "Button3",
@@ -1169,7 +1229,12 @@
     "area": "Crash",
     "lat": -6011.90087890625,
     "lng": 29071.37109375,
-    "alt": 237.50331115722656
+    "alt": 237.50331115722656,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:DoorStone2_2",
+      "Crash:Glowline7_2"
+    ]
   },
   {
     "name": "Button4",
@@ -1177,7 +1242,13 @@
     "area": "Crash",
     "lat": -6946.81396484375,
     "lng": 30120.2421875,
-    "alt": 221.14405822753906
+    "alt": 221.14405822753906,
+    "allow_enemy_projectiles": true,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Crash:Door16_2",
+      "Crash:Glowline19_5"
+    ]
   },
   {
     "name": "Button5",
@@ -1185,7 +1256,12 @@
     "area": "Crash",
     "lat": -8005.89892578125,
     "lng": 33628.94140625,
-    "alt": 179.83616638183594
+    "alt": 179.83616638183594,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger2_2",
+      "Crash:Glowline22"
+    ]
   },
   {
     "name": "Button6",
@@ -1193,7 +1269,11 @@
     "area": "Crash",
     "lat": -3150.37109375,
     "lng": 30643.640625,
-    "alt": 314.03192138671875
+    "alt": 314.03192138671875,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:Jumppad8_2"
+    ]
   },
   {
     "name": "Button7",
@@ -1201,7 +1281,12 @@
     "area": "Crash",
     "lat": -8005.89892578125,
     "lng": 33628.94140625,
-    "alt": 548.7015991210938
+    "alt": 548.7015991210938,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger2_2",
+      "Crash:Glowline21_11"
+    ]
   },
   {
     "name": "Button8",
@@ -1209,7 +1294,12 @@
     "area": "Crash",
     "lat": -7539.3564453125,
     "lng": 34122.64453125,
-    "alt": 179.83616638183594
+    "alt": 179.83616638183594,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger2_2",
+      "Crash:Glowline24"
+    ]
   },
   {
     "name": "Button9",
@@ -1217,7 +1307,12 @@
     "area": "Crash",
     "lat": -7550.3408203125,
     "lng": 34112.4296875,
-    "alt": 557.3506469726562
+    "alt": 557.3506469726562,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:CounterTrigger2_2",
+      "Crash:Glowline23"
+    ]
   },
   {
     "name": "Button_2",
@@ -1225,7 +1320,12 @@
     "area": "Crash",
     "lat": -593.3748779296875,
     "lng": 33610.7890625,
-    "alt": 272.09246826171875
+    "alt": 272.09246826171875,
+    "allow_enemy_projectiles": true,
+    "actors": [
+      "Crash:DoorLego_2",
+      "Crash:Glowline4_5"
+    ]
   },
   {
     "name": "ProjectileShooter4",
@@ -1233,7 +1333,13 @@
     "area": "Crash",
     "lat": 12586.4765625,
     "lng": 1774.9539794921875,
-    "alt": 2445.813720703125
+    "alt": 2445.813720703125,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Crash:DoorStone4_2",
+      "Crash:Glowline52_16",
+      "Crash:Jumppad24"
+    ]
   },
   {
     "name": "ProjectileShooter5",
@@ -1241,7 +1347,10 @@
     "area": "Crash",
     "lat": 17280.41015625,
     "lng": -1366.956298828125,
-    "alt": 2445.8134765625
+    "alt": 2445.8134765625,
+    "actors": [
+      "Crash:Glowline69_2"
+    ]
   },
   {
     "name": "ProjectileShooter8",
@@ -1249,7 +1358,11 @@
     "area": "Crash",
     "lat": 14931.4384765625,
     "lng": -2297.39599609375,
-    "alt": 2333.800537109375
+    "alt": 2333.800537109375,
+    "actors": [
+      "Crash:Jumppad25",
+      "Crash:Jumppad23_2"
+    ]
   },
   {
     "name": "ButtonFloor10",
@@ -4384,7 +4497,7 @@
     "lng": 18453.279296875,
     "alt": 2464.40234375,
     "relative_velocity": 1475.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "center_actor": true,
     "direction": {
       "x": 0.00014647466014139354,
@@ -4405,7 +4518,7 @@
     "lng": 21023.423828125,
     "alt": 2464.40234375,
     "relative_velocity": 1475.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "center_actor": true,
     "direction": {
       "x": 0.4617760479450226,
@@ -4811,7 +4924,7 @@
     "lng": 37332.078125,
     "alt": -1362.333740234375,
     "relative_velocity": 1798.9630126953125,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,

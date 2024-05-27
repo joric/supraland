@@ -705,7 +705,11 @@
     "area": "Map",
     "lat": -1085.3699951171875,
     "lng": 12050.3759765625,
-    "alt": 916.7136840820312
+    "alt": 916.7136840820312,
+    "actors": [
+      "Map:Lift1_3932",
+      "Map:WifiwafeE_2"
+    ]
   },
   {
     "name": "Button11",
@@ -713,7 +717,10 @@
     "area": "Map",
     "lat": -47239.4140625,
     "lng": -10720.1630859375,
-    "alt": 231.55264282226562
+    "alt": 231.55264282226562,
+    "actors": [
+      "Map:Door39"
+    ]
   },
   {
     "name": "Button12",
@@ -721,7 +728,10 @@
     "area": "Map",
     "lat": -22836.88671875,
     "lng": -36828.89453125,
-    "alt": 505.8309020996094
+    "alt": 505.8309020996094,
+    "actors": [
+      "Map:Jumppad19"
+    ]
   },
   {
     "name": "Button13_1692",
@@ -729,7 +739,11 @@
     "area": "Map",
     "lat": -48827.73046875,
     "lng": -49871.59375,
-    "alt": -820.4249877929688
+    "alt": -820.4249877929688,
+    "actors": [
+      "Map:Lift6",
+      "Map:WifiwafeE5"
+    ]
   },
   {
     "name": "Button14",
@@ -737,7 +751,11 @@
     "area": "Map",
     "lat": -46158.18359375,
     "lng": -54845.1171875,
-    "alt": -820.4249877929688
+    "alt": -820.4249877929688,
+    "actors": [
+      "Map:Lift7_9313",
+      "Map:WifiwafeE6"
+    ]
   },
   {
     "name": "Button15_1162",
@@ -745,7 +763,10 @@
     "area": "Map",
     "lat": -27973.6875,
     "lng": 3613.947265625,
-    "alt": 1486.5235595703125
+    "alt": 1486.5235595703125,
+    "actors": [
+      "Map:Jumppad48"
+    ]
   },
   {
     "name": "Button16",
@@ -753,7 +774,10 @@
     "area": "Map",
     "lat": -40297.78515625,
     "lng": -52432.7109375,
-    "alt": -375.1980285644531
+    "alt": -375.1980285644531,
+    "actors": [
+      "Map:Jumppad32_9265"
+    ]
   },
   {
     "name": "Button17_1652",
@@ -761,7 +785,11 @@
     "area": "Map",
     "lat": -5212.15576171875,
     "lng": -34315.83984375,
-    "alt": 1356.215576171875
+    "alt": 1356.215576171875,
+    "actors": [
+      "Map:Lift9_1871",
+      "Map:WifiwafeE9"
+    ]
   },
   {
     "name": "Button18_1092",
@@ -769,7 +797,11 @@
     "area": "Map",
     "lat": 15988.83203125,
     "lng": -12106.5859375,
-    "alt": 890.292724609375
+    "alt": 890.292724609375,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:RisingBeam_1802"
+    ]
   },
   {
     "name": "Button19",
@@ -777,7 +809,10 @@
     "area": "Map",
     "lat": 22251.015625,
     "lng": 6046.3125,
-    "alt": 1680.460205078125
+    "alt": 1680.460205078125,
+    "actors": [
+      "Map:ShieldGenerator9_10112"
+    ]
   },
   {
     "name": "Button20",
@@ -785,7 +820,10 @@
     "area": "Map",
     "lat": 24136.185546875,
     "lng": -27307.365234375,
-    "alt": 441.3703308105469
+    "alt": 441.3703308105469,
+    "actors": [
+      "Map:CounterTimerTrigger_350"
+    ]
   },
   {
     "name": "Button21",
@@ -793,7 +831,10 @@
     "area": "Map",
     "lat": 24992.064453125,
     "lng": -26838.220703125,
-    "alt": 441.370849609375
+    "alt": 441.370849609375,
+    "actors": [
+      "Map:CounterTimerTrigger_350"
+    ]
   },
   {
     "name": "Button22",
@@ -801,7 +842,10 @@
     "area": "Map",
     "lat": 24215.18359375,
     "lng": -26653.091796875,
-    "alt": 441.3712158203125
+    "alt": 441.3712158203125,
+    "actors": [
+      "Map:CounterTimerTrigger_350"
+    ]
   },
   {
     "name": "Button23",
@@ -809,7 +853,10 @@
     "area": "Map",
     "lat": 24730.671875,
     "lng": -27540.9609375,
-    "alt": 441.37066650390625
+    "alt": 441.37066650390625,
+    "actors": [
+      "Map:CounterTimerTrigger_350"
+    ]
   },
   {
     "name": "Button24_792",
@@ -817,7 +864,10 @@
     "area": "Map",
     "lat": 16492.03125,
     "lng": 10197.814453125,
-    "alt": 30.0
+    "alt": 30.0,
+    "actors": [
+      "Map:Door81_812"
+    ]
   },
   {
     "name": "Button25_2",
@@ -825,7 +875,11 @@
     "area": "Map",
     "lat": 37569.73046875,
     "lng": -60315.7109375,
-    "alt": 877.3623657226562
+    "alt": 877.3623657226562,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:RisingBeam2_2"
+    ]
   },
   {
     "name": "Button26_2",
@@ -833,7 +887,13 @@
     "area": "Map",
     "lat": 33189.0,
     "lng": 26345.0,
-    "alt": 1166.0
+    "alt": 1166.0,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:Door105",
+      "Map:BlueGuyGuardingMoney",
+      "Map:Mom7"
+    ]
   },
   {
     "name": "Button27",
@@ -841,7 +901,11 @@
     "area": "Map",
     "lat": 24921.0,
     "lng": 26727.0,
-    "alt": 1390.0
+    "alt": 1390.0,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:Door102"
+    ]
   },
   {
     "name": "Button28",
@@ -849,7 +913,11 @@
     "area": "Map",
     "lat": 24540.0,
     "lng": 25062.0,
-    "alt": 1052.0
+    "alt": 1052.0,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:Door102"
+    ]
   },
   {
     "name": "Button29",
@@ -857,7 +925,10 @@
     "area": "Map",
     "lat": -40463.7109375,
     "lng": -25099.982421875,
-    "alt": 417.6410217285156
+    "alt": 417.6410217285156,
+    "actors": [
+      "Map:CounterTimerTrigger2_2"
+    ]
   },
   {
     "name": "Button2_800",
@@ -865,7 +936,21 @@
     "area": "Map",
     "lat": -27731.822265625,
     "lng": 23350.0,
-    "alt": 5950.0
+    "alt": 5950.0,
+    "actors": [
+      "Map:RedGuy5_7049",
+      "Map:Door4_642",
+      "Map:RedGuy18_2336",
+      "Map:DeadHeroIndy",
+      "Map:ShowRedCrystalGuy2",
+      "Map:Mom3",
+      "Map:CliffJumpGuy",
+      "Map:ShowRedCrystalGuy",
+      "Map:TutorialButtons16_17011",
+      "Map:EnemySpawn154",
+      "Map:TriggerVolume61",
+      "Map:QuestActivator_2"
+    ]
   },
   {
     "name": "Button30",
@@ -873,7 +958,10 @@
     "area": "Map",
     "lat": -40463.7109375,
     "lng": -26042.3046875,
-    "alt": 417.6410217285156
+    "alt": 417.6410217285156,
+    "actors": [
+      "Map:CounterTimerTrigger2_2"
+    ]
   },
   {
     "name": "Button31",
@@ -881,7 +969,10 @@
     "area": "Map",
     "lat": -40789.73046875,
     "lng": -25591.244140625,
-    "alt": 417.6413269042969
+    "alt": 417.6413269042969,
+    "actors": [
+      "Map:CounterTimerTrigger2_2"
+    ]
   },
   {
     "name": "Button32",
@@ -889,7 +980,10 @@
     "area": "Map",
     "lat": -40105.3203125,
     "lng": -25591.244140625,
-    "alt": 417.6387023925781
+    "alt": 417.6387023925781,
+    "actors": [
+      "Map:CounterTimerTrigger2_2"
+    ]
   },
   {
     "name": "Button33_2",
@@ -897,7 +991,10 @@
     "area": "Map",
     "lat": -17469.6953125,
     "lng": 42007.40234375,
-    "alt": 1730.24658203125
+    "alt": 1730.24658203125,
+    "actors": [
+      "Map:RingColorer7_3"
+    ]
   },
   {
     "name": "Button34",
@@ -905,7 +1002,11 @@
     "area": "Map",
     "lat": -19662.939453125,
     "lng": 42391.05859375,
-    "alt": 1242.6968994140625
+    "alt": 1242.6968994140625,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:SupraballCanon10_2"
+    ]
   },
   {
     "name": "Button36",
@@ -913,7 +1014,10 @@
     "area": "Map",
     "lat": -40127.2890625,
     "lng": -28656.234375,
-    "alt": -199.8069305419922
+    "alt": -199.8069305419922,
+    "actors": [
+      "Map:Door114"
+    ]
   },
   {
     "name": "Button37_4",
@@ -921,7 +1025,11 @@
     "area": "Map",
     "lat": 33204.21484375,
     "lng": 66938.1328125,
-    "alt": 2074.27685546875
+    "alt": 2074.27685546875,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:RingColorer9"
+    ]
   },
   {
     "name": "Button38",
@@ -929,7 +1037,11 @@
     "area": "Map",
     "lat": -40598.93359375,
     "lng": -285.75537109375,
-    "alt": 760.21923828125
+    "alt": 760.21923828125,
+    "actors": [
+      "Map:Door98",
+      "Map:Door99"
+    ]
   },
   {
     "name": "Button39_2",
@@ -937,7 +1049,10 @@
     "area": "Map",
     "lat": 17904.875,
     "lng": -47957.64453125,
-    "alt": 1242.2900390625
+    "alt": 1242.2900390625,
+    "actors": [
+      "Map:CounterTimerTrigger3"
+    ]
   },
   {
     "name": "Button3_524",
@@ -945,7 +1060,10 @@
     "area": "Map",
     "lat": -17899.6796875,
     "lng": 15899.197265625,
-    "alt": -1015.5895385742188
+    "alt": -1015.5895385742188,
+    "actors": [
+      "Map:Door_1496"
+    ]
   },
   {
     "name": "Button40",
@@ -953,7 +1071,10 @@
     "area": "Map",
     "lat": 16742.828125,
     "lng": -43187.6328125,
-    "alt": 1242.2900390625
+    "alt": 1242.2900390625,
+    "actors": [
+      "Map:CounterTimerTrigger3"
+    ]
   },
   {
     "name": "Button41",
@@ -961,7 +1082,11 @@
     "area": "Map",
     "lat": 17918.8046875,
     "lng": -45647.71875,
-    "alt": 1327.675048828125
+    "alt": 1327.675048828125,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:CounterTimerTrigger3"
+    ]
   },
   {
     "name": "Button42",
@@ -969,7 +1094,10 @@
     "area": "Map",
     "lat": 19479.43359375,
     "lng": -44083.0703125,
-    "alt": 1070.54052734375
+    "alt": 1070.54052734375,
+    "actors": [
+      "Map:CounterTimerTrigger4"
+    ]
   },
   {
     "name": "Button43",
@@ -977,7 +1105,10 @@
     "area": "Map",
     "lat": 19510.576171875,
     "lng": -43144.92578125,
-    "alt": 1070.541015625
+    "alt": 1070.541015625,
+    "actors": [
+      "Map:CounterTimerTrigger4"
+    ]
   },
   {
     "name": "Button44",
@@ -985,7 +1116,10 @@
     "area": "Map",
     "lat": 19970.279296875,
     "lng": -43607.35546875,
-    "alt": 1070.540771484375
+    "alt": 1070.540771484375,
+    "actors": [
+      "Map:CounterTimerTrigger4"
+    ]
   },
   {
     "name": "Button45",
@@ -993,7 +1127,10 @@
     "area": "Map",
     "lat": 19000.205078125,
     "lng": -43600.359375,
-    "alt": 1070.5401611328125
+    "alt": 1070.5401611328125,
+    "actors": [
+      "Map:CounterTimerTrigger4"
+    ]
   },
   {
     "name": "Button46_15",
@@ -1001,7 +1138,10 @@
     "area": "Map",
     "lat": 15125.1728515625,
     "lng": -14668.455078125,
-    "alt": 996.3755493164062
+    "alt": 996.3755493164062,
+    "actors": [
+      "Map:Jumppad93"
+    ]
   },
   {
     "name": "Button47",
@@ -1009,7 +1149,10 @@
     "area": "Map",
     "lat": -22546.017578125,
     "lng": 19419.611328125,
-    "alt": 198.7828826904297
+    "alt": 198.7828826904297,
+    "actors": [
+      "Map:Door29"
+    ]
   },
   {
     "name": "Button48",
@@ -1017,7 +1160,10 @@
     "area": "Map",
     "lat": 38229.45703125,
     "lng": -37251.1796875,
-    "alt": -2947.07958984375
+    "alt": -2947.07958984375,
+    "actors": [
+      "Map:CounterTimerTrigger5"
+    ]
   },
   {
     "name": "Button49",
@@ -1025,7 +1171,10 @@
     "area": "Map",
     "lat": 38667.53125,
     "lng": -37254.80078125,
-    "alt": -2947.0791015625
+    "alt": -2947.0791015625,
+    "actors": [
+      "Map:CounterTimerTrigger5"
+    ]
   },
   {
     "name": "Button4_1004",
@@ -1033,7 +1182,10 @@
     "area": "Map",
     "lat": -29445.748046875,
     "lng": 21546.16796875,
-    "alt": 658.1005859375
+    "alt": 658.1005859375,
+    "actors": [
+      "Map:Door11_1002"
+    ]
   },
   {
     "name": "Button50",
@@ -1041,7 +1193,10 @@
     "area": "Map",
     "lat": 38430.40625,
     "lng": -37025.49609375,
-    "alt": -2947.0791015625
+    "alt": -2947.0791015625,
+    "actors": [
+      "Map:CounterTimerTrigger5"
+    ]
   },
   {
     "name": "Button51",
@@ -1049,7 +1204,10 @@
     "area": "Map",
     "lat": 38522.4453125,
     "lng": -37521.21875,
-    "alt": -2947.07958984375
+    "alt": -2947.07958984375,
+    "actors": [
+      "Map:CounterTimerTrigger5"
+    ]
   },
   {
     "name": "Button52",
@@ -1057,7 +1215,11 @@
     "area": "Map",
     "lat": 8084.17578125,
     "lng": 21026.265625,
-    "alt": 603.7318115234375
+    "alt": 603.7318115234375,
+    "actors": [
+      "Map:Lift14",
+      "Map:WifiwafeE15"
+    ]
   },
   {
     "name": "Button53_2",
@@ -1065,7 +1227,12 @@
     "area": "Map",
     "lat": -10130.6533203125,
     "lng": -34617.375,
-    "alt": 992.7142333984375
+    "alt": 992.7142333984375,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:Jumppad96",
+      "Map:Jumppad97"
+    ]
   },
   {
     "name": "Button54_2",
@@ -1073,7 +1240,10 @@
     "area": "Map",
     "lat": -2088.216796875,
     "lng": -18392.90234375,
-    "alt": -2216.609619140625
+    "alt": -2216.609619140625,
+    "actors": [
+      "Map:Jumppad12_1472"
+    ]
   },
   {
     "name": "Button5_512",
@@ -1081,7 +1251,11 @@
     "area": "Map",
     "lat": -39728.25390625,
     "lng": -27643.025390625,
-    "alt": -974.18359375
+    "alt": -974.18359375,
+    "actors": [
+      "Map:CousinRot",
+      "Map:TutorialButtons17"
+    ]
   },
   {
     "name": "Button6",
@@ -1089,7 +1263,10 @@
     "area": "Map",
     "lat": -38210.33984375,
     "lng": -27264.013671875,
-    "alt": -744.18359375
+    "alt": -744.18359375,
+    "actors": [
+      "Map:Jumppad31_1993"
+    ]
   },
   {
     "name": "Button7_17968",
@@ -1097,7 +1274,11 @@
     "area": "Map",
     "lat": 1519.5106201171875,
     "lng": -3747.490478515625,
-    "alt": 51.71641540527344
+    "alt": 51.71641540527344,
+    "actors": [
+      "Map:Lift8",
+      "Map:WifiwafeE7"
+    ]
   },
   {
     "name": "Button8",
@@ -1105,7 +1286,10 @@
     "area": "Map",
     "lat": -33263.609375,
     "lng": -38701.43359375,
-    "alt": 1712.9996337890625
+    "alt": 1712.9996337890625,
+    "actors": [
+      "Map:DoorPhysical3_925"
+    ]
   },
   {
     "name": "Button9_1322",
@@ -1113,7 +1297,10 @@
     "area": "Map",
     "lat": -37557.93359375,
     "lng": -2035.75537109375,
-    "alt": 1559.21923828125
+    "alt": 1559.21923828125,
+    "actors": [
+      "Map:Door33_968"
+    ]
   },
   {
     "name": "Button_702",
@@ -1121,7 +1308,12 @@
     "area": "Map",
     "lat": -7154.4267578125,
     "lng": 14598.154296875,
-    "alt": 465.5191345214844
+    "alt": 465.5191345214844,
+    "actors": [
+      "Map:Door6_3665",
+      "Map:RedGuyEvent3_1748",
+      "Map:Mom3"
+    ]
   },
   {
     "name": "ProjectileShooter2",
@@ -1129,7 +1321,11 @@
     "area": "Map",
     "lat": 44993.765625,
     "lng": -39767.2109375,
-    "alt": 539.0682983398438
+    "alt": 539.0682983398438,
+    "requires_purple_shot_flag": true,
+    "actors": [
+      "Map:DoorPhysical6_2"
+    ]
   },
   {
     "name": "BigButton36_2",
@@ -12659,12 +12855,12 @@
     "lng": -28320.197265625,
     "alt": 1339.5185546875,
     "relative_velocity": 5715.23046875,
+    "center_actor": true,
     "velocity": {
       "x": 4800.0,
       "y": 250.0,
       "z": 3500.0
     },
-    "center_actor": true,
     "direction": {
       "x": -0.7168710231781006,
       "y": -0.028279317542910576,
@@ -12684,12 +12880,12 @@
     "lng": 6939.50927734375,
     "alt": 267.7165832519531,
     "relative_velocity": 6000.0,
+    "center_actor": true,
     "velocity": {
       "x": -4500.0,
       "y": 0.0,
       "z": 4000.0
     },
-    "center_actor": true,
     "direction": {
       "x": 0.7071068286895752,
       "y": 0.0,
@@ -12713,7 +12909,6 @@
       "y": -3000.0,
       "z": 1850.0
     },
-    "allow_relative_velocity": false,
     "direction": {
       "x": -3.725104988916428e-06,
       "y": 0.9239068627357483,
@@ -12757,12 +12952,12 @@
     "lng": -38368.94921875,
     "alt": 188.93057250976562,
     "relative_velocity": 1500.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 1500.0,
       "y": 0.0,
       "z": 555.0
     },
-    "disable_movement": false,
     "direction": {
       "x": -1.0,
       "y": 2.1022908640588867e-06,
@@ -12782,12 +12977,12 @@
     "lng": -31647.798828125,
     "alt": -1058.822509765625,
     "relative_velocity": 1700.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 700.0,
       "y": 0.0,
       "z": 600.0
     },
-    "disable_movement": false,
     "direction": {
       "x": -0.956940770149231,
       "y": 9.399895475326048e-07,
@@ -12807,12 +13002,12 @@
     "lng": -38368.94921875,
     "alt": -1036.3271484375,
     "relative_velocity": 2222.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 1250.0,
       "y": 0.0,
       "z": 555.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 2.7972038196821813e-07,
       "y": 0.2902851402759552,
@@ -12969,12 +13164,12 @@
     "lng": 10072.9677734375,
     "alt": -420.1930236816406,
     "relative_velocity": 1800.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 0.0,
       "z": 1800.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -12998,7 +13193,6 @@
       "y": -3000.0,
       "z": 350.0
     },
-    "allow_relative_velocity": false,
     "direction": {
       "x": -3.2395048492617207e-06,
       "y": 1.0,
@@ -13037,13 +13231,12 @@
     "lng": 2520.616455078125,
     "alt": -266.2233581542969,
     "relative_velocity": 6000.0,
+    "allow_stomp": true,
     "velocity": {
       "x": 2550.0,
       "y": 5200.0,
       "z": 2100.0
     },
-    "allow_stomp": true,
-    "allow_relative_velocity": false,
     "direction": {
       "x": -0.3633880317211151,
       "y": -0.723253071308136,
@@ -13082,7 +13275,7 @@
     "lng": -26690.0,
     "alt": -1960.0,
     "relative_velocity": 1600.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13139,7 +13332,7 @@
     "lng": -21078.736328125,
     "alt": 0.6382675170898438,
     "relative_velocity": 2000.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": -0.6360566020011902,
@@ -13179,7 +13372,7 @@
     "lng": 21452.93359375,
     "alt": -991.9861450195312,
     "relative_velocity": 1700.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13256,12 +13449,12 @@
     "lng": 4081.52490234375,
     "alt": -435.8060302734375,
     "relative_velocity": 1650.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 0.0,
       "z": 1650.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13319,12 +13512,12 @@
     "lng": 18563.1953125,
     "alt": 38.327606201171875,
     "relative_velocity": 1850.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 250.0,
       "z": 1800.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13344,7 +13537,7 @@
     "lng": 63599.31640625,
     "alt": 6091.57861328125,
     "relative_velocity": 3250.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.47139647603034973,
       "y": 0.0,
@@ -13446,7 +13639,6 @@
       "y": 600.0,
       "z": 1700.0
     },
-    "allow_relative_velocity": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13466,7 +13658,7 @@
     "lng": 6287.68505859375,
     "alt": -1121.760009765625,
     "relative_velocity": 1400.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13486,12 +13678,12 @@
     "lng": 24044.64453125,
     "alt": 3600.333251953125,
     "relative_velocity": 1500.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 0.0,
       "z": 1500.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13529,7 +13721,7 @@
     "lng": -26924.81640625,
     "alt": 429.0494079589844,
     "relative_velocity": 1850.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13568,7 +13760,7 @@
     "lng": -26924.81640625,
     "alt": 2005.7440185546875,
     "relative_velocity": 3000.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": -0.7143462896347046,
@@ -13663,7 +13855,7 @@
     "lng": -45152.98046875,
     "alt": -403.8818054199219,
     "relative_velocity": 2200.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.7058008313179016,
       "y": 0.04287060350179672,
@@ -13702,12 +13894,12 @@
     "lng": 22860.0,
     "alt": 830.0,
     "relative_velocity": 1800.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 250.0,
       "z": 1800.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13727,12 +13919,12 @@
     "lng": 5738.78125,
     "alt": -781.7189331054688,
     "relative_velocity": 1555.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 0.0,
       "z": 1555.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -13921,12 +14113,12 @@
     "lng": 14497.19921875,
     "alt": 375.2969970703125,
     "relative_velocity": 3333.0,
+    "allow_stomp": true,
     "velocity": {
       "x": -2000.0,
       "y": 800.0,
       "z": 2800.0
     },
-    "allow_stomp": true,
     "direction": {
       "x": 0.6438025832176208,
       "y": -0.28576943278312683,
@@ -14142,13 +14334,13 @@
     "lng": 3225.965576171875,
     "alt": 120.24662780761719,
     "relative_velocity": 3333.0,
+    "allow_stomp": true,
+    "center_actor": true,
     "velocity": {
       "x": 1850.0,
       "y": -600.0,
       "z": 2800.0
     },
-    "allow_stomp": true,
-    "center_actor": true,
     "direction": {
       "x": -0.561651349067688,
       "y": 0.22305326163768768,
@@ -14439,12 +14631,12 @@
     "lng": 38969.359375,
     "alt": 234.11398315429688,
     "relative_velocity": 1800.0,
+    "disable_movement_in_air": false,
     "velocity": {
       "x": 0.0,
       "y": 250.0,
       "z": 1800.0
     },
-    "disable_movement": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -14483,12 +14675,12 @@
     "lng": -30676.283203125,
     "alt": 118.1915054321289,
     "relative_velocity": 8700.0,
+    "center_actor": true,
     "velocity": {
       "x": 4800.0,
       "y": 250.0,
       "z": 3500.0
     },
-    "center_actor": true,
     "direction": {
       "x": 0.22986069321632385,
       "y": -0.5407039523124695,
@@ -14508,12 +14700,12 @@
     "lng": -58992.2421875,
     "alt": 928.8194580078125,
     "relative_velocity": 8700.0,
+    "center_actor": true,
     "velocity": {
       "x": 4800.0,
       "y": 250.0,
       "z": 3500.0
     },
-    "center_actor": true,
     "direction": {
       "x": -0.21063314378261566,
       "y": 0.5484808087348938,
@@ -14533,7 +14725,7 @@
     "lng": -62275.48046875,
     "alt": -955.3148193359375,
     "relative_velocity": 1500.0,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.0,
       "y": 0.0,
@@ -14553,7 +14745,7 @@
     "lng": -40175.44921875,
     "alt": -1922.519287109375,
     "relative_velocity": 2228.18017578125,
-    "disable_movement": false,
+    "disable_movement_in_air": false,
     "direction": {
       "x": 0.1507868766784668,
       "y": 0.0,
@@ -14592,12 +14784,12 @@
     "lng": 13439.556640625,
     "alt": -446.81304931640625,
     "relative_velocity": 5600.0,
+    "allow_stomp": true,
     "velocity": {
       "x": -2400.0,
       "y": -5200.0,
       "z": 2100.0
     },
-    "allow_stomp": true,
     "direction": {
       "x": 0.37756744027137756,
       "y": 0.8290273547172546,
@@ -15775,7 +15967,7 @@
     "lat": 54122.73046875,
     "lng": -34180.29296875,
     "alt": 572.543701171875,
-    "hits": 1
+    "hits_to_break": 1
   },
   {
     "name": "MinecraftBrick39",
@@ -15816,7 +16008,7 @@
     "lat": 54240.07421875,
     "lng": -35791.578125,
     "alt": 501.73193359375,
-    "hits": 1
+    "hits_to_break": 1
   },
   {
     "name": "MinecraftBrick44",
@@ -15825,7 +16017,7 @@
     "lat": 54240.07421875,
     "lng": -35791.578125,
     "alt": 829.2449340820312,
-    "hits": 1
+    "hits_to_break": 1
   },
   {
     "name": "MinecraftBrick45",

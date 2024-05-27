@@ -357,7 +357,7 @@ function loadMap() {
 
   function getMarkerColor(o) {
     if (o.type == 'Jumppad_C') {
-      return (o.allow_stomp || o.disable_movement==false) ? 'dodgerblue' : 'red';
+      return (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
     } else if (o.type.startsWith('Pipe')) {
       return 'yellowgreen';
     }
