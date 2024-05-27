@@ -868,7 +868,7 @@ window.onload = function(event) {
     switch (e.code) {
       case 'KeyF':
         if (e.ctrlKey) {
-          searchControl.expand(true);
+          searchControl.expand();
           e.preventDefault();
         } else if (e.altKey) {
           openLoadFileDialog();
