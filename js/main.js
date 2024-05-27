@@ -867,7 +867,6 @@ window.onload = function(event) {
       return;
     }
     pressed[e.code] = true;
-    setTimeout(function(code){pressed[code]=false;},250,e.code); // prevent stuck keys
     switch (e.code) {
       case 'KeyF':
         if (e.ctrlKey) {
