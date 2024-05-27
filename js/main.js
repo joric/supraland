@@ -757,6 +757,7 @@ window.loadSaveFile = function () {
     let loadedSave;
     try {
       loadedSave = new UESaveObject(evt.target.result);
+      evt.target.value = null;
     } catch(e) {
       console.log(e);
       alert('Could not load file, incompatible format.');
@@ -811,6 +812,7 @@ window.loadSaveFile = function () {
   };
 
   if (file instanceof Blob) {
+    console.log(file);
     reader.readAsArrayBuffer(file);
   }
 }
@@ -879,7 +881,13 @@ window.onload = function(event) {
         searchControl.expand(true);
         e.preventDefault();
         break;
-      case 'KeyR':if (!e.ctrlKey) map.flyTo(playerMarker ? playerMarker._latlng : mapCenter); break;
+      case 'KeyR':
+        if (!e.ctrlKey && !e.altKey) {
+          map.flyTo(playerMarker ? playerMarker._latlng : mapCenter);
+        } else if (e.altKey) {
+          document.querySelector('#file').click();
+        }
+        break;
       case 'Digit1': reloadMap('sl'); break;
       case 'Digit2': reloadMap('slc'); break;
       case 'Digit3': reloadMap('siu'); break;
