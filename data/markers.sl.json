@@ -17511,6 +17511,22 @@
     "alt": -92.99317169189453
   },
   {
+    "name": "ProjectileShooter3_2",
+    "type": "ProjectileShooter_C",
+    "area": "Map",
+    "lat": 9340.0,
+    "lng": 41790.0,
+    "alt": 3880.0
+  },
+  {
+    "name": "ProjectileShooter_2",
+    "type": "ProjectileShooter_C",
+    "area": "Map",
+    "lat": 45010.80078125,
+    "lng": -41221.2109375,
+    "alt": 517.9697265625
+  },
+  {
     "name": "Shell13_3781",
     "type": "Shell_C",
     "area": "Map",

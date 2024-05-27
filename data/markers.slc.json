@@ -6524,6 +6524,46 @@
     "alt": 1550.3951416015625
   },
   {
+    "name": "ProjectileShooter2",
+    "type": "ProjectileShooter_C",
+    "area": "Crash",
+    "lat": 2740.176513671875,
+    "lng": 42511.94921875,
+    "alt": 245.6644287109375
+  },
+  {
+    "name": "ProjectileShooter3",
+    "type": "ProjectileShooter_C",
+    "area": "Crash",
+    "lat": 11202.76171875,
+    "lng": -1364.440673828125,
+    "alt": 2445.81689453125
+  },
+  {
+    "name": "ProjectileShooter6_2",
+    "type": "ProjectileShooter_C",
+    "area": "Crash",
+    "lat": -1787.941162109375,
+    "lng": 6644.12744140625,
+    "alt": -1551.201171875
+  },
+  {
+    "name": "ProjectileShooter7",
+    "type": "ProjectileShooter_C",
+    "area": "Crash",
+    "lat": -1787.941162109375,
+    "lng": 3602.8037109375,
+    "alt": -1551.201171875
+  },
+  {
+    "name": "ProjectileShooter_2",
+    "type": "ProjectileShooter_C",
+    "area": "Crash",
+    "lat": -630.0,
+    "lng": 37250.0,
+    "alt": 300.0
+  },
+  {
     "name": "SwingingDoor10",
     "type": "SwingingDoor_C",
     "area": "Crash",
