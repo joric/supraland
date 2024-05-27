@@ -370,7 +370,7 @@ function loadMap() {
       .then((response) => response.json())
       .then((j) => {
         let objects = {};
-        let titles = {};
+        let names = {};
 
         // collect objects for cross-references
         for (o of j) {
@@ -395,7 +395,7 @@ function loadMap() {
             let c = classes[o.type];
             let text = ''; // set it later in onPopupOpen
             let alt = id;
-            let title = o.name;
+            let name = o.name;
             let defaultIcon = 'question_mark';
             let defaultLayer = 'misc';
             let icon = c && c.icon || defaultIcon;
@@ -405,12 +405,20 @@ function loadMap() {
               layer = defaultLayer;
             }
 
-            // can't have duplicate titles in search
-            if (titles[title]) {
-              title = o.area + ':' + o.name;
+            // can't have duplicate titles in search, will lose items
+            if (names[name]) {
+              name = o.area + ':' + o.name;
             }
+            names[name] = name;
 
-            titles[title] = title;
+            let title = name;
+
+            if (o.spawns) {
+              title = title + ' ('+o.spawns+')';
+            } else if (o.coins) {
+              title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
+            }
+            title = title + ' of ' + o.type;
 
             if ( o.type == 'Jumppad_C' || o.type.startsWith('Pipesystem') ) {
 
@@ -460,14 +468,7 @@ function loadMap() {
               if (o.type.endsWith('Chest_C')) {
                 icon = 'chest';
                 layer = 'closedChest';
-                if (o.spawns) {
-                  title = title + ' ('+o.spawns+')';
-                } else if (o.coins) {
-                  title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
-                }
               }
-
-              title = title + ' of ' + o.type;
 
               // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
               if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
