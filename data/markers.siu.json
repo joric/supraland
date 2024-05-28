@@ -8206,9 +8206,9 @@
       "z": 0.9550187587738037
     },
     "target": {
-      "x": 39901.280423110555,
-      "y": -46469.21609445719,
-      "z": 1952.3172051563138
+      "x": 39908.16129210498,
+      "y": -46469.87075870647,
+      "z": 1956.9633269438623
     }
   },
   {
@@ -8246,9 +8246,9 @@
       "z": 0.9696907997131348
     },
     "target": {
-      "x": 41651.37831030786,
-      "y": -62140.441386312246,
-      "z": 3202.60345800635
+      "x": 41658.67184346914,
+      "y": -62158.04871118069,
+      "z": 3278.348175628725
     }
   },
   {
@@ -8527,9 +8527,9 @@
       "z": 0.9148827195167542
     },
     "target": {
-      "x": 58732.187280118465,
-      "y": -21767.077561974525,
-      "z": 3295.7882781992407
+      "x": 58351.15662269294,
+      "y": -22177.131248503923,
+      "z": 2516.4455688092294
     }
   },
   {
@@ -14893,12 +14893,140 @@
     "cost": 42
   },
   {
+    "name": "Scrap177_2",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63365.9765625,
+    "lng": 41623.96875,
+    "alt": 3229.5244140625
+  },
+  {
+    "name": "Scrap178",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63535.1953125,
+    "lng": 41579.359375,
+    "alt": 3235.7880859375
+  },
+  {
+    "name": "Scrap179",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63404.3984375,
+    "lng": 41517.671875,
+    "alt": 3229.3212890625
+  },
+  {
+    "name": "Scrap180",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63274.9609375,
+    "lng": 41456.375,
+    "alt": 3214.8974609375
+  },
+  {
+    "name": "Scrap181_9",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63333.0078125,
+    "lng": 41509.296875,
+    "alt": 3229.3212890625
+  },
+  {
+    "name": "Scrap182_11",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63193.3984375,
+    "lng": 41429.015625,
+    "alt": 3250.84130859375
+  },
+  {
+    "name": "Scrap183",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63209.3984375,
+    "lng": 41554.734375,
+    "alt": 3245.59521484375
+  },
+  {
+    "name": "Scrap184",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63285.7265625,
+    "lng": 41590.0390625,
+    "alt": 3229.3212890625
+  },
+  {
+    "name": "Scrap185",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63103.2109375,
+    "lng": 41371.7890625,
+    "alt": 3255.01708984375
+  },
+  {
+    "name": "Scrap186",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63108.6953125,
+    "lng": 41487.875,
+    "alt": 3268.69287109375
+  },
+  {
+    "name": "Scrap187",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -62930.6484375,
+    "lng": 41192.03515625,
+    "alt": 3285.66748046875
+  },
+  {
+    "name": "Scrap188",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63014.7109375,
+    "lng": 41316.88671875,
+    "alt": 3290.53271484375
+  },
+  {
+    "name": "Scrap189",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63029.7578125,
+    "lng": 41430.6328125,
+    "alt": 3254.69091796875
+  },
+  {
+    "name": "Scrap190",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63441.5546875,
+    "lng": 41629.234375,
+    "alt": 3235.7880859375
+  },
+  {
+    "name": "Scrap_2",
+    "type": "Scrap_C",
+    "area": "DLC2_Complete",
+    "lat": -63052.5078125,
+    "lng": 41790.4921875,
+    "alt": 3271.39208984375
+  },
+  {
     "name": "SlumBurningQuest_3",
     "type": "SlumBurningQuest_C",
     "area": "DLC2_Complete",
     "lat": -27745.974609375,
     "lng": 12236.783203125,
     "alt": -20.975341796875
+  },
+  {
+    "name": "Sponge_Large2_4",
+    "type": "Sponge_Large_C",
+    "area": "DLC2_Complete",
+    "lat": -56075.640625,
+    "lng": 55474.0078125,
+    "alt": 1026.4268798828125
   },
   {
     "name": "SwingingDoor2_2",
@@ -14939,6 +15067,166 @@
     "lat": -47276.70703125,
     "lng": 2262.790283203125,
     "alt": 2057.471435546875
+  },
+  {
+    "name": "Mean_TalkingSpeaker14",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -7916.13720703125,
+    "lng": 62192.71484375,
+    "alt": 3742.08544921875
+  },
+  {
+    "name": "Mean_TalkingSpeaker3",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -15842.7470703125,
+    "lng": 46627.10546875,
+    "alt": 516.7955932617188
+  },
+  {
+    "name": "Mean_TalkingSpeaker9",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -16466.865234375,
+    "lng": 58639.0859375,
+    "alt": 3066.939697265625
+  },
+  {
+    "name": "Nice_TalkingSpeaker4",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -16503.5390625,
+    "lng": 46679.5859375,
+    "alt": 522.4327392578125
+  },
+  {
+    "name": "TalkingSpeaker10",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -47331.4765625,
+    "lng": 6315.63623046875,
+    "alt": 2949.21484375
+  },
+  {
+    "name": "TalkingSpeaker11",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -55986.9296875,
+    "lng": 59236.8203125,
+    "alt": 911.9866333007812
+  },
+  {
+    "name": "TalkingSpeaker12",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": 5215.0546875,
+    "lng": 35109.37890625,
+    "alt": 3182.6376953125
+  },
+  {
+    "name": "TalkingSpeaker13",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -14859.986328125,
+    "lng": -57558.7890625,
+    "alt": 10512.35546875
+  },
+  {
+    "name": "TalkingSpeaker14",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -57091.94921875,
+    "lng": 48708.00390625,
+    "alt": 526.9684448242188
+  },
+  {
+    "name": "TalkingSpeaker15_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -46501.18359375,
+    "lng": 45798.93359375,
+    "alt": 872.0499267578125
+  },
+  {
+    "name": "TalkingSpeaker16_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": 1770.4073486328125,
+    "lng": -12908.90625,
+    "alt": 1023.5304565429688
+  },
+  {
+    "name": "TalkingSpeaker2_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -42379.76953125,
+    "lng": 3936.42822265625,
+    "alt": 1856.623779296875
+  },
+  {
+    "name": "TalkingSpeaker3",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -46668.3515625,
+    "lng": 39598.875,
+    "alt": 2274.641357421875
+  },
+  {
+    "name": "TalkingSpeaker4",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -12764.7265625,
+    "lng": 53037.29296875,
+    "alt": 594.500732421875
+  },
+  {
+    "name": "TalkingSpeaker5",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -50859.2421875,
+    "lng": 56357.4453125,
+    "alt": 526.9684448242188
+  },
+  {
+    "name": "TalkingSpeaker6",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -13303.1826171875,
+    "lng": 52741.0234375,
+    "alt": 594.500732421875
+  },
+  {
+    "name": "TalkingSpeaker7_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -31324.669921875,
+    "lng": 19618.078125,
+    "alt": -94.01608276367188
+  },
+  {
+    "name": "TalkingSpeaker8",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -31363.41796875,
+    "lng": 19537.36328125,
+    "alt": 1353.5206298828125
+  },
+  {
+    "name": "TalkingSpeaker9",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -49738.95703125,
+    "lng": 35244.171875,
+    "alt": -196.0211181640625
+  },
+  {
+    "name": "TalkingSpeaker_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Complete",
+    "lat": -16967.123046875,
+    "lng": 60380.48828125,
+    "alt": 1215.1781005859375
   },
   {
     "name": "Trash2_2",
@@ -16418,6 +16706,14 @@
     "alt": 10529.0
   },
   {
+    "name": "Juicer3",
+    "type": "Juicer_C",
+    "area": "DLC2_Area0",
+    "lat": -286991.0,
+    "lng": -4023.0,
+    "alt": 10127.109375
+  },
+  {
     "name": "PedestalButton2_2",
     "type": "PedestalButton_C",
     "area": "DLC2_Area0",
@@ -16517,6 +16813,38 @@
     "lat": -284190.375,
     "lng": 902.2235717773438,
     "alt": 9808.3916015625
+  },
+  {
+    "name": "TalkingSpeaker2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Area0",
+    "lat": -286302.375,
+    "lng": 278.02166748046875,
+    "alt": 10367.875
+  },
+  {
+    "name": "TalkingSpeaker3",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Area0",
+    "lat": -282936.25,
+    "lng": -603.7203369140625,
+    "alt": 10510.9443359375
+  },
+  {
+    "name": "TalkingSpeaker5",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Area0",
+    "lat": -290592.03125,
+    "lng": -1187.91162109375,
+    "alt": 10589.2783203125
+  },
+  {
+    "name": "TalkingSpeaker_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_Area0",
+    "lat": -287538.3125,
+    "lng": -2000.2119140625,
+    "alt": 11510.1943359375
   },
   {
     "name": "ValveCarriable_288",
@@ -20459,6 +20787,14 @@
     "lng": -53630.5078125,
     "alt": 5169.57275390625,
     "other_pipe": "DLC2_PostRainbow:PipesystemNew2"
+  },
+  {
+    "name": "TalkingSpeaker_2",
+    "type": "TalkingSpeaker_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -44241.578125,
+    "lng": -56704.0625,
+    "alt": 9882.1220703125
   },
   {
     "name": "BP_PurchaseSpeedx2_2",

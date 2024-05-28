@@ -68,9 +68,9 @@ marker_types = {
   'MoonTake_C', 'Plumbus_C',
   'SlumBurningQuest_C', 'Stone_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
   'MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C', 'Supraball_C','Trash_C',
-  'Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','TalkingSpeaker_C'
+  'Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','Sponge_C','Juicer_C',
   # slc
-  'Scrap_C',
+  'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
   'MinecraftBrick_C', 'HealingStation_C', 'BP_EngagementCup_Base_C',
 }
