@@ -314,6 +314,7 @@
     "lat": -47705.51953125,
     "lng": -6.793715953826904,
     "alt": 3265.543701171875,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_Complete:Glowline133": {}
     }
@@ -338,6 +339,7 @@
     "lat": -54853.6328125,
     "lng": 56879.890625,
     "alt": 457.311279296875,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:MoveMesh2_2": {
         "DLC2_Complete:Red_brick_13": {}
@@ -352,6 +354,7 @@
     "lat": -54246.45703125,
     "lng": 56912.84765625,
     "alt": 4339.16064453125,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:DoorLego_2": {},
       "DLC2_Complete:Glowline56": {}
@@ -410,6 +413,7 @@
     "lat": -46958.078125,
     "lng": 44538.59375,
     "alt": 752.3919677734375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Jumppad30_2": {},
       "DLC2_Complete:Glowline108_2": {}
@@ -434,6 +438,7 @@
     "lat": -47705.5234375,
     "lng": -783.9344482421875,
     "alt": 3264.465576171875,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_Complete:Glowline132": {}
     }
@@ -461,6 +466,7 @@
     "lat": -14936.9189453125,
     "lng": -57327.4609375,
     "alt": 10673.400390625,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_Complete:Glowline115": {
         "DLC2_Complete:MoveMesh13_4": {
@@ -476,6 +482,7 @@
     "lat": -9821.26953125,
     "lng": -58246.1640625,
     "alt": 8252.22265625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Glowline114": {
         "DLC2_Complete:Magnet_Base6": {}
@@ -489,6 +496,7 @@
     "lat": -5429.21142578125,
     "lng": -46161.9453125,
     "alt": 8258.677734375,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_Complete:Glowline116": {
         "DLC2_Complete:MoveMesh15": {
@@ -518,6 +526,7 @@
     "lat": -22553.19140625,
     "lng": 20208.427734375,
     "alt": 1867.7869873046875,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Glowline7_2": {},
       "DLC2_Complete:Door63_1": {}
@@ -545,6 +554,7 @@
     "lat": 5436.916015625,
     "lng": -56796.73828125,
     "alt": 1852.55322265625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Glowline140_2": {
         "DLC2_Complete:SignalInverter11": {
@@ -585,6 +595,7 @@
     "lat": -8443.95703125,
     "lng": 60879.45703125,
     "alt": 416.1670227050781,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Glowline16": {
         "DLC2_Complete:Door11": {}
@@ -645,6 +656,7 @@
     "lat": -46267.83203125,
     "lng": 44519.6484375,
     "alt": 113.3919677734375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_Complete:Glowline54_10": {
         "DLC2_Complete:DoorInverted14_2": {}
@@ -8644,7 +8656,8 @@
     "area": "DLC2_Complete",
     "lat": -40253.625,
     "lng": -1734.120849609375,
-    "alt": 1877.6624755859375
+    "alt": 1877.6624755859375,
+    "color": 5
   },
   {
     "name": "KeycardColor3_2",
@@ -8660,7 +8673,8 @@
     "area": "DLC2_Complete",
     "lat": -47973.56640625,
     "lng": 4568.236328125,
-    "alt": 1896.2939453125
+    "alt": 1896.2939453125,
+    "color": 2
   },
   {
     "name": "KeycardColor5",
@@ -8668,7 +8682,8 @@
     "area": "DLC2_Complete",
     "lat": -47907.53125,
     "lng": 4566.7060546875,
-    "alt": 1773.879638671875
+    "alt": 1773.879638671875,
+    "color": 2
   },
   {
     "name": "KeycardColor6",
@@ -8684,7 +8699,8 @@
     "area": "DLC2_Complete",
     "lat": -26261.052734375,
     "lng": 21480.673828125,
-    "alt": 1447.3681640625
+    "alt": 1447.3681640625,
+    "color": 4
   },
   {
     "name": "KeycardColor_2",
@@ -8692,7 +8708,8 @@
     "area": "DLC2_Complete",
     "lat": -40335.6171875,
     "lng": -1734.129150390625,
-    "alt": 1877.6624755859375
+    "alt": 1877.6624755859375,
+    "color": 5
   },
   {
     "name": "KeycardReader2_2",
@@ -8701,6 +8718,7 @@
     "lat": -25352.3671875,
     "lng": 22298.849609375,
     "alt": 1502.5069580078125,
+    "color": 4,
     "actors": {
       "DLC2_Complete:DoorLego4_2": {}
     }
@@ -8712,6 +8730,7 @@
     "lat": -40684.125,
     "lng": -622.4583740234375,
     "alt": 1940.0,
+    "color": 6,
     "actors": {
       "DLC2_Complete:JailDoor8": {},
       "DLC2_Complete:BP_A3_FreePrisoner_2": {}
@@ -8724,6 +8743,7 @@
     "lat": -41404.10546875,
     "lng": 10096.009765625,
     "alt": 2191.429443359375,
+    "color": 5,
     "actors": {
       "DLC2_Complete:Door54": {},
       "DLC2_Complete:BP_TownUpdate_Area3Complete_2": {}
@@ -8736,6 +8756,7 @@
     "lat": -47326.62890625,
     "lng": 5409.0322265625,
     "alt": 1900.51416015625,
+    "color": 2,
     "actors": {
       "DLC2_Complete:DoorInverted13": {}
     }
@@ -8747,6 +8768,7 @@
     "lat": -46460.3203125,
     "lng": 4002.134765625,
     "alt": 3114.1103515625,
+    "color": 1,
     "actors": {
       "DLC2_Complete:MoveMesh26": {
         "DLC2_Complete:Metal_Grate16": {}
@@ -8760,6 +8782,7 @@
     "lat": -42925.65234375,
     "lng": 3937.3720703125,
     "alt": 1902.881103515625,
+    "color": 3,
     "actors": {
       "DLC2_Complete:Door21": {}
     }
@@ -8781,7 +8804,8 @@
     "area": "DLC2_Complete",
     "lat": 5973.7802734375,
     "lng": 17726.09765625,
-    "alt": 3107.09423828125
+    "alt": 3107.09423828125,
+    "color": "ButtonColor::NewEnumerator10"
   },
   {
     "name": "KeyLockPlastic2_2",
@@ -8797,7 +8821,8 @@
     "area": "DLC2_Complete",
     "lat": -32185.9296875,
     "lng": 17983.173828125,
-    "alt": 3990.0546875
+    "alt": 3990.0546875,
+    "color": "ButtonColor::NewEnumerator4"
   },
   {
     "name": "KeyLockPlastic4_5",
@@ -8805,7 +8830,8 @@
     "area": "DLC2_Complete",
     "lat": -39393.85546875,
     "lng": 4129.68505859375,
-    "alt": 1898.389892578125
+    "alt": 1898.389892578125,
+    "color": "ButtonColor::NewEnumerator2"
   },
   {
     "name": "KeyLockPlastic5_8",
@@ -8813,7 +8839,8 @@
     "area": "DLC2_Complete",
     "lat": -26518.765625,
     "lng": 20057.3671875,
-    "alt": -2364.673583984375
+    "alt": -2364.673583984375,
+    "color": "ButtonColor::NewEnumerator5"
   },
   {
     "name": "KeyLockPlastic6_11",
@@ -8821,7 +8848,8 @@
     "area": "DLC2_Complete",
     "lat": -47207.578125,
     "lng": 46650.703125,
-    "alt": 1404.035888671875
+    "alt": 1404.035888671875,
+    "color": "ButtonColor::NewEnumerator6"
   },
   {
     "name": "KeyLockPlastic7_2",
@@ -8829,7 +8857,8 @@
     "area": "DLC2_Complete",
     "lat": 1432.8079833984375,
     "lng": -58722.6484375,
-    "alt": 1330.340576171875
+    "alt": 1330.340576171875,
+    "color": "ButtonColor::NewEnumerator9"
   },
   {
     "name": "KeyLockPlastic8_5",
@@ -8837,7 +8866,8 @@
     "area": "DLC2_Complete",
     "lat": 2965.51220703125,
     "lng": 11270.697265625,
-    "alt": 3191.43212890625
+    "alt": 3191.43212890625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "KeyLockPlastic9_2",
@@ -8845,7 +8875,8 @@
     "area": "DLC2_Complete",
     "lat": -23502.841796875,
     "lng": 16220.7568359375,
-    "alt": -113.6812744140625
+    "alt": -113.6812744140625,
+    "color": "ButtonColor::NewEnumerator7"
   },
   {
     "name": "KeyLockPlastic_2",
@@ -8861,7 +8892,8 @@
     "area": "DLC2_Complete",
     "lat": -32139.642578125,
     "lng": 17539.626953125,
-    "alt": 3548.81298828125
+    "alt": 3548.81298828125,
+    "color": "ButtonColor::NewEnumerator4"
   },
   {
     "name": "KeyPlastic3_7",
@@ -8869,7 +8901,8 @@
     "area": "DLC2_Complete",
     "lat": -42815.91015625,
     "lng": 5081.8369140625,
-    "alt": 1914.4849853515625
+    "alt": 1914.4849853515625,
+    "color": "ButtonColor::NewEnumerator2"
   },
   {
     "name": "KeyPlastic4_10",
@@ -8877,7 +8910,8 @@
     "area": "DLC2_Complete",
     "lat": -25816.71875,
     "lng": 19997.5859375,
-    "alt": -2945.32275390625
+    "alt": -2945.32275390625,
+    "color": "ButtonColor::NewEnumerator5"
   },
   {
     "name": "KeyPlastic5_13",
@@ -8885,7 +8919,8 @@
     "area": "DLC2_Complete",
     "lat": -42661.6015625,
     "lng": 50433.77734375,
-    "alt": 2026.05419921875
+    "alt": 2026.05419921875,
+    "color": "ButtonColor::NewEnumerator6"
   },
   {
     "name": "KeyPlastic7_2",
@@ -8893,7 +8928,8 @@
     "area": "DLC2_Complete",
     "lat": 1036.0755615234375,
     "lng": 9822.853515625,
-    "alt": 3264.112548828125
+    "alt": 3264.112548828125,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "KeyPlastic8_2",
@@ -8901,7 +8937,8 @@
     "area": "DLC2_Complete",
     "lat": 4865.1513671875,
     "lng": 23861.056640625,
-    "alt": 3746.44140625
+    "alt": 3746.44140625,
+    "color": "ButtonColor::NewEnumerator10"
   },
   {
     "name": "KeyPlastic9_2",
@@ -8909,7 +8946,8 @@
     "area": "DLC2_Complete",
     "lat": -23551.095703125,
     "lng": 14341.8359375,
-    "alt": 1122.739990234375
+    "alt": 1122.739990234375,
+    "color": "ButtonColor::NewEnumerator7"
   },
   {
     "name": "KeyPlastic_4",
@@ -15282,7 +15320,8 @@
     "area": "DLC2_Complete",
     "lat": -16200.4560546875,
     "lng": 59717.27734375,
-    "alt": 3980.403564453125
+    "alt": 3980.403564453125,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_426",
@@ -15290,7 +15329,8 @@
     "area": "DLC2_Complete",
     "lat": -12756.4208984375,
     "lng": 65203.9609375,
-    "alt": 3278.85791015625
+    "alt": 3278.85791015625,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_428",
@@ -15298,7 +15338,8 @@
     "area": "DLC2_Complete",
     "lat": -13849.5703125,
     "lng": 61255.49609375,
-    "alt": 10265.8046875
+    "alt": 10265.8046875,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_430",
@@ -15306,7 +15347,8 @@
     "area": "DLC2_Complete",
     "lat": -10266.8232421875,
     "lng": 57378.828125,
-    "alt": 726.0514526367188
+    "alt": 726.0514526367188,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_432",
@@ -15314,7 +15356,8 @@
     "area": "DLC2_Complete",
     "lat": -11364.00390625,
     "lng": 56679.44921875,
-    "alt": 1848.478271484375
+    "alt": 1848.478271484375,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_471",
@@ -15322,7 +15365,8 @@
     "area": "DLC2_Complete",
     "lat": -7507.99462890625,
     "lng": 61151.1640625,
-    "alt": 3815.596923828125
+    "alt": 3815.596923828125,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_560",
@@ -15330,7 +15374,8 @@
     "area": "DLC2_Complete",
     "lat": -6826.0,
     "lng": 59955.0,
-    "alt": 4196.00048828125
+    "alt": 4196.00048828125,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "ValveCarriable4",
@@ -15338,7 +15383,8 @@
     "area": "DLC2_Complete",
     "lat": -10631.638671875,
     "lng": 62274.234375,
-    "alt": 443.014404296875
+    "alt": 443.014404296875,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "ValveCarriable_1976",
@@ -15346,7 +15392,8 @@
     "area": "DLC2_Complete",
     "lat": -15603.2978515625,
     "lng": 61870.984375,
-    "alt": 430.830322265625
+    "alt": 430.830322265625,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "BallButton2_2",
@@ -15381,6 +15428,7 @@
     "lat": -20417.4140625,
     "lng": -29262.650390625,
     "alt": 6795.0,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_FinalBoss:BossPuzzle0_Glowline": {
         "DLC2_FinalBoss:BossPuzzle0_Door2": {}
@@ -15394,6 +15442,7 @@
     "lat": -24898.080078125,
     "lng": -23653.373046875,
     "alt": 7199.80517578125,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_FinalBoss:BossPuzzle3_ButtonGlowline": {}
     }
@@ -16361,7 +16410,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -20815.33203125,
     "lng": -29347.435546875,
-    "alt": 6087.65087890625
+    "alt": 6087.65087890625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "BossPuzzleEnd2_KeyLockPlastic",
@@ -16369,7 +16419,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -22898.40234375,
     "lng": -28363.3671875,
-    "alt": 6087.65087890625
+    "alt": 6087.65087890625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "BossPuzzleEnd3_KeyLockPlastic",
@@ -16377,7 +16428,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -22095.98828125,
     "lng": -26576.89453125,
-    "alt": 6087.65087890625
+    "alt": 6087.65087890625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "Boss_Key1",
@@ -16385,7 +16437,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -18492.396484375,
     "lng": -26333.28515625,
-    "alt": 7249.45556640625
+    "alt": 7249.45556640625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "Boss_Key2",
@@ -16393,7 +16446,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -22192.962890625,
     "lng": -25779.326171875,
-    "alt": 6049.45556640625
+    "alt": 6049.45556640625,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "Boss_Key3",
@@ -16401,7 +16455,8 @@
     "area": "DLC2_FinalBoss",
     "lat": -25142.982421875,
     "lng": -25289.48828125,
-    "alt": 7255.0
+    "alt": 7255.0,
+    "color": "ButtonColor::NewEnumerator3"
   },
   {
     "name": "BossPuzzle3_MatchBox",
@@ -16860,7 +16915,8 @@
     "area": "DLC2_Area0",
     "lat": -290017.5,
     "lng": -2067.0,
-    "alt": 10764.1484375
+    "alt": 10764.1484375,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "ValveCarriable_Orange",
@@ -16868,7 +16924,8 @@
     "area": "DLC2_Area0",
     "lat": -286630.25,
     "lng": 1408.9046630859375,
-    "alt": 9887.1015625
+    "alt": 9887.1015625,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "ValveCarriable_Purple",
@@ -16876,7 +16933,8 @@
     "area": "DLC2_Area0",
     "lat": -284053.03125,
     "lng": 15.205077171325684,
-    "alt": 9785.2578125
+    "alt": 9785.2578125,
+    "color": "EPipeColour::NewEnumerator2"
   },
   {
     "name": "ValveSlot2_2",
@@ -16885,6 +16943,7 @@
     "lat": -290014.9375,
     "lng": -2064.678955078125,
     "alt": 10688.0,
+    "color": "EPipeColour::NewEnumerator5",
     "actors": {
       "DLC2_Area0:DoorAnna_2": {},
       "DLC2_Area0:Talk_Foreman_Intro": {},
@@ -16901,7 +16960,8 @@
     "area": "DLC2_Area0",
     "lat": -284052.21875,
     "lng": 14.705077171325684,
-    "alt": 9785.34375
+    "alt": 9785.34375,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "Bones_2",
@@ -19370,7 +19430,8 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 4967.49951171875,
     "lng": 8333.4755859375,
-    "alt": -7631.91162109375
+    "alt": -7631.91162109375,
+    "color": "EPipeColour::NewEnumerator1"
   },
   {
     "name": "ValveSlot_2",
@@ -19379,6 +19440,7 @@
     "lat": 4922.91259765625,
     "lng": 8243.8955078125,
     "alt": -7577.89404296875,
+    "color": "EPipeColour::NewEnumerator1",
     "actors": {
       "DLC2_SecretLavaArea:Relay_OpenFastTravelSecretLavaAreaToBeamTutorial": {}
     }
@@ -19491,6 +19553,7 @@
     "lat": -40196.91796875,
     "lng": -71553.59375,
     "alt": 5540.91748046875,
+    "color": "ButtonColor::NewEnumerator7",
     "actors": {
       "DLC2_PostRainbow:Glowline5_2": {
         "DLC2_PostRainbow:TeslaCoil_9": {}
@@ -19517,6 +19580,7 @@
     "lat": -40085.16015625,
     "lng": -52634.6953125,
     "alt": 9966.7490234375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_PostRainbow:Glowline_2": {
         "DLC2_PostRainbow:Door2_3": {},
@@ -19557,6 +19621,7 @@
     "lat": -38640.95703125,
     "lng": -52441.38671875,
     "alt": 9966.7490234375,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_PostRainbow:Glowline12_5": {
         "DLC2_PostRainbow:DoorInverted5_6": {}
@@ -19570,6 +19635,7 @@
     "lat": -47579.515625,
     "lng": -46959.875,
     "alt": 5590.12841796875,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_PostRainbow:Glowline21_2": {
         "DLC2_PostRainbow:DoorInverted3_2": {}
@@ -19583,6 +19649,7 @@
     "lat": -45626.140625,
     "lng": -58457.5546875,
     "alt": 9884.7646484375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "DLC2_PostRainbow:DoorInverted4": {},
       "DLC2_PostRainbow:LampDiode8_2": {}
@@ -19595,6 +19662,7 @@
     "lat": -37815.9921875,
     "lng": -57130.1328125,
     "alt": 9908.7919921875,
+    "color": "ButtonColor::NewEnumerator6",
     "actors": {
       "DLC2_PostRainbow:Glowline22_8": {
         "DLC2_PostRainbow:JailDoor_4": {}
@@ -20797,6 +20865,104 @@
     "other_pipe": "DLC2_PostRainbow:PipesystemNew2"
   },
   {
+    "name": "RingColorerFlower10",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43547.96875,
+    "lng": -58621.5,
+    "alt": 9740.7421875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower11",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43518.26953125,
+    "lng": -58419.17578125,
+    "alt": 9730.0888671875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower2",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -38903.859375,
+    "lng": -56690.625,
+    "alt": 9887.2294921875,
+    "color": 4
+  },
+  {
+    "name": "RingColorerFlower3",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -38794.46875,
+    "lng": -57775.35546875,
+    "alt": 9862.705078125,
+    "color": 6
+  },
+  {
+    "name": "RingColorerFlower4",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37569.55859375,
+    "lng": -57933.0859375,
+    "alt": 9860.5810546875,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower5",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37543.046875,
+    "lng": -55380.59765625,
+    "alt": 9856.4697265625,
+    "color": 3
+  },
+  {
+    "name": "RingColorerFlower6",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37553.1640625,
+    "lng": -53904.25,
+    "alt": 9857.501953125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower7",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40202.74609375,
+    "lng": -54598.94140625,
+    "alt": 9777.240234375,
+    "color": 4
+  },
+  {
+    "name": "RingColorerFlower8",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -40587.45703125,
+    "lng": -57391.234375,
+    "alt": 9798.3232421875
+  },
+  {
+    "name": "RingColorerFlower9_12",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43668.85546875,
+    "lng": -58441.9296875,
+    "alt": 9727.353515625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower_2",
+    "type": "RingColorerFlower_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39627.125,
+    "lng": -56385.61328125,
+    "alt": 9849.212890625,
+    "color": 1
+  },
+  {
     "name": "TalkingSpeaker_2",
     "type": "TalkingSpeaker_C",
     "area": "DLC2_PostRainbow",
@@ -20884,7 +21050,8 @@
     "area": "DLC2_Area0_Below",
     "lat": 25024.05078125,
     "lng": 15319.908203125,
-    "alt": 19551.0
+    "alt": 19551.0,
+    "color": "EPipeColour::NewEnumerator4"
   },
   {
     "name": "Door13",
