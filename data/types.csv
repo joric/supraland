@@ -27,7 +27,6 @@ BP_TrophyDetector_C,,upgrades
 BarrelColor_C,,collectable
 BarrelRed_C,barrel_red,collectable
 BarrelClosed_Blueprint_C,barrel_gold,collectable
-Battery_C,,
 Bones_C,bones,collectable
 BuyArmor1_C,armor,upgrades
 BuyBeltRepel_C,belt,upgrades
@@ -127,7 +126,6 @@ CoinRed_C,coinRed,coin
 Coin_C,coin,coin
 DeadHero_C,,
 DestroyablePots_C,pots,misc
-ExplodingBattery_C,,
 GoldBlock_C,,
 GoldNugget_C,,
 Jumppad_C,jumppad,jumppads
@@ -209,3 +207,5 @@ DoorPhysical_C,door,misc
 DoorStone_C,door,misc
 SwingingDoor_C,door,misc
 SwingingDoorResetVolume_C,door,misc
+Battery_C,battery,misc
+ExplodingBattery_C,battery,misc
