@@ -78,7 +78,7 @@ starts_with = {
 }
 
 ends_with = {
-    'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C','Flower_C',
+    'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C','Flower_C','Coin_C'
 }
 
 price_types = {

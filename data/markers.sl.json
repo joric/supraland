@@ -16510,6 +16510,14 @@
     }
   },
   {
+    "name": "PhysicalCoin_746",
+    "type": "PhysicalCoin_C",
+    "area": "Map",
+    "lat": -20688.552734375,
+    "lng": 24045.5234375,
+    "alt": -413.3852233886719
+  },
+  {
     "name": "PipeCap10_2",
     "type": "PipeCap_C",
     "area": "Map",
