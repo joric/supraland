@@ -211,17 +211,10 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 for action in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
                     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate'):
                     if a := o.get('Properties',{}).get(action):
-                        if type(a) is dict:
-                            a = [a]
-                        for d in a:
-                            if type(d) is dict:
-                                if 'OuterIndex' in d and 'ObjectName' in d:
-                                    key = d['OuterIndex']['Outer'] +':' + d['ObjectName']
-                                    arr = []
-                                    #print('level',level,o['Name'],'->',key, key in objects)
-                                    if key in objects:
-                                        arr = get_actors(objects[key], level+1)
-                                    actors.update({key:arr})
+                        for d in [a] if type(a) is dict else a:
+                            if type(d) is dict and 'OuterIndex' in d and 'ObjectName' in d:
+                                key = d['OuterIndex']['Outer'] +':' + d['ObjectName']
+                                actors.update({key:get_actors(objects[key], level+1) if key in objects else {}})
                 return actors
 
             optKey(data[-1], 'actors', get_actors(o)or None)
