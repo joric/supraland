@@ -130,8 +130,6 @@ GoldBlock_C,,
 GoldNugget_C,,
 Jumppad_C,jumppad,jumppads
 Jumppillow_C,,
-Key_C,,
-KeycardColor_C,,
 LotsOfCoins10_C,coinStash,coin
 LotsOfCoins15_C,coinStash,coin
 LotsOfCoins30_C,coinStash,coin
@@ -162,14 +160,11 @@ EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
 Shell_C,shell,collectable
-MetalBall_C,,
 Supraball_C,,
 Trash_C,,
 DeadHero_C,hero_placeholder,collectable
-Lift1_C,question_mark,misc
 EnemySpawner_C,,
 Enemyspawner2_C,,
-KeyLock_C,,misc
 SnappyPipe,pipe,pipecaps
 CarryPipe_C,pipe,pipecaps
 PipeCap_C,pipe,pipecaps
@@ -209,3 +204,12 @@ SwingingDoor_C,door,misc
 SwingingDoorResetVolume_C,door,misc
 Battery_C,battery,misc
 ExplodingBattery_C,battery,misc
+Key_C,key,misc
+KeyLock_C,lock,misc
+KeyPlastic_C,key_plastic,misc
+KeyLockPlastic_C,lock_plastic,misc
+TalkingSpeaker_C,speaker,misc
+KeycardColor_C,keycard,misc
+KeycardReader_C,keycard_reader,misc
+MetalBall_C,metal_ball,misc
+Lift1_C,lift,misc
