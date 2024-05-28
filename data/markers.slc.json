@@ -4505,9 +4505,9 @@
       "z": 0.8870645761489868
     },
     "target": {
-      "x": 18452.6851590348,
-      "y": 16140.052551686764,
-      "z": 2529.41303075434
+      "x": 18452.67219602738,
+      "y": 16099.196936905384,
+      "z": 2452.348145743526
     }
   },
   {
@@ -4526,9 +4526,9 @@
       "z": 0.8869965076446533
     },
     "target": {
-      "x": 19109.477553404868,
-      "y": 18193.55276286462,
-      "z": 2452.0660188101897
+      "x": 19075.421569868922,
+      "y": 18193.55265911221,
+      "z": 2385.280011248983
     }
   },
   {
@@ -5087,9 +5087,9 @@
       "z": 0.9061192274093628
     },
     "target": {
-      "x": 56119.839004814625,
-      "y": -4697.443363457918,
-      "z": 2463.029923699574
+      "x": 56219.336633622646,
+      "y": -4650.570079177618,
+      "z": 2189.0846228260098
     }
   },
   {
@@ -6562,6 +6562,190 @@
     "lat": -630.0,
     "lng": 37250.0,
     "alt": 300.0
+  },
+  {
+    "name": "Smallbutton2_2",
+    "type": "Smallbutton2_C",
+    "area": "Crash",
+    "lat": -8141.369140625,
+    "lng": 43012.25390625,
+    "alt": 1519.4063720703125
+  },
+  {
+    "name": "Smallbutton5",
+    "type": "Smallbutton2_C",
+    "area": "Crash",
+    "lat": -4638.01416015625,
+    "lng": 23777.169921875,
+    "alt": -140.58798217773438
+  },
+  {
+    "name": "Smallbutton3_2",
+    "type": "Smallbutton_C",
+    "area": "Crash",
+    "lat": -4079.861083984375,
+    "lng": 21396.203125,
+    "alt": 414.2999572753906
+  },
+  {
+    "name": "Smallbutton4_2",
+    "type": "Smallbutton_C",
+    "area": "Crash",
+    "lat": -1493.974853515625,
+    "lng": 18391.443359375,
+    "alt": -585.1307373046875
+  },
+  {
+    "name": "Smallbutton6_2",
+    "type": "Smallbutton_C",
+    "area": "Crash",
+    "lat": 938.0536499023438,
+    "lng": 37807.0625,
+    "alt": -107.259033203125
+  },
+  {
+    "name": "Smallbutton_2",
+    "type": "Smallbutton_C",
+    "area": "Crash",
+    "lat": -5962.83349609375,
+    "lng": 31527.4140625,
+    "alt": 258.9306640625
+  },
+  {
+    "name": "PedestalButton5",
+    "type": "SmallbuttonFlipFlop_C",
+    "area": "Crash",
+    "lat": -4381.5048828125,
+    "lng": 55074.79296875,
+    "alt": 2198.486328125
+  },
+  {
+    "name": "SmallbuttonFlipFlop2",
+    "type": "SmallbuttonFlipFlop_C",
+    "area": "Crash",
+    "lat": 18092.798828125,
+    "lng": 21149.666015625,
+    "alt": 2396.643798828125
+  },
+  {
+    "name": "SmallbuttonFlipFlop3",
+    "type": "SmallbuttonFlipFlop_C",
+    "area": "Crash",
+    "lat": -265.7269592285156,
+    "lng": 35165.30859375,
+    "alt": 279.07183837890625
+  },
+  {
+    "name": "SmallbuttonFlipFlop_2",
+    "type": "SmallbuttonFlipFlop_C",
+    "area": "Crash",
+    "lat": 18191.81640625,
+    "lng": 18352.5234375,
+    "alt": 2360.849853515625
+  },
+  {
+    "name": "SmallbuttonMultipleActors4_2",
+    "type": "SmallbuttonMultipleActors_C",
+    "area": "Crash",
+    "lat": -15654.466796875,
+    "lng": 44278.51171875,
+    "alt": 551.3653564453125
+  },
+  {
+    "name": "SmallbuttonMultipleActors5_1",
+    "type": "SmallbuttonMultipleActors_C",
+    "area": "Crash",
+    "lat": -16312.962890625,
+    "lng": 47445.01171875,
+    "alt": 451.4610900878906
+  },
+  {
+    "name": "SmallbuttonMultipleActors2_2",
+    "type": "SmallbuttonOnceMultipleActors_C",
+    "area": "Crash",
+    "lat": -4567.521484375,
+    "lng": 42210.1640625,
+    "alt": 759.5975341796875
+  },
+  {
+    "name": "SmallbuttonMultipleActors_2",
+    "type": "SmallbuttonOnceMultipleActors_C",
+    "area": "Crash",
+    "lat": -1236.88525390625,
+    "lng": 39365.3671875,
+    "alt": 220.0
+  },
+  {
+    "name": "SmallbuttonMultipleActors3",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": 3235.880615234375,
+    "lng": 38572.69921875,
+    "alt": 300.9156188964844
+  },
+  {
+    "name": "SmallbuttonMultipleActors6",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": -15652.8076171875,
+    "lng": 47425.8671875,
+    "alt": 440.344970703125
+  },
+  {
+    "name": "SmallbuttonMultipleActors8",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": -17596.45703125,
+    "lng": 49565.0625,
+    "alt": 1196.8118896484375
+  },
+  {
+    "name": "SmallbuttonOpenClose2_2",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": 1373.5477294921875,
+    "lng": 34265.10546875,
+    "alt": 710.7374267578125
+  },
+  {
+    "name": "SmallbuttonOpenClose3_2",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": -6760.51953125,
+    "lng": 2133.810302734375,
+    "alt": 785.7935180664062
+  },
+  {
+    "name": "SmallbuttonOpenClose_2",
+    "type": "SmallbuttonOpenClose_C",
+    "area": "Crash",
+    "lat": -9393.794921875,
+    "lng": -7539.73046875,
+    "alt": -3488.21923828125
+  },
+  {
+    "name": "SmallbuttonQuickOnoff_2",
+    "type": "SmallbuttonQuickOnoff_C",
+    "area": "Crash",
+    "lat": 2892.714599609375,
+    "lng": 37213.28515625,
+    "alt": -1248.984375
+  },
+  {
+    "name": "SmallbuttonWhile2",
+    "type": "SmallbuttonWhile_C",
+    "area": "Crash",
+    "lat": 734.470947265625,
+    "lng": 6619.6865234375,
+    "alt": 153.97802734375
+  },
+  {
+    "name": "SmallbuttonWhile_2",
+    "type": "SmallbuttonWhile_C",
+    "area": "Crash",
+    "lat": -7638.435546875,
+    "lng": 2873.109130859375,
+    "alt": 165.45498657226562
   },
   {
     "name": "SwingingDoor10",

@@ -76,7 +76,7 @@ marker_types = {
 }
 
 starts_with = {
-    'Pipesystem','Buy','BP_Buy','BP_Purchase','Purchase','Upgrade','Button','SmallButton','Coin',
+    'Pipesystem','Buy','BP_Buy','BP_Purchase','Purchase','Upgrade','Button','Smallbutton','Coin',
     'LightTrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key','ProjectileShooter',
 }
 
