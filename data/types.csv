@@ -160,7 +160,6 @@ EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
 Shell_C,shell,collectable
-Supraball_C,,
 Trash_C,,
 DeadHero_C,hero_placeholder,collectable
 EnemySpawner_C,,
@@ -215,3 +214,4 @@ MetalBall_C,metal_ball,misc
 Lift1_C,lift,misc
 Sponge_C,sponge,misc
 SpongeBig_C,sponge,misc
+Supraball_C,supraball,misc
