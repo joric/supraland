@@ -6,11 +6,13 @@
     "lat": -777.19384765625,
     "lng": 8104.126953125,
     "alt": -2298.772216796875,
-    "actors": [
-      "Crash:Button12_11",
-      "Crash:Glowline46_2",
-      "Crash:TutorialButtons19_5"
-    ]
+    "actors": {
+      "Crash:Button12_11": {
+        "Crash:ProjectileShooter6_2": {}
+      },
+      "Crash:Glowline46_2": {},
+      "Crash:TutorialButtons19_5": {}
+    }
   },
   {
     "name": "BallButton11",
@@ -19,9 +21,9 @@
     "lat": -11770.765625,
     "lng": -3521.822021484375,
     "alt": 1056.41015625,
-    "actors": [
-      "Crash:Scrap201"
-    ]
+    "actors": {
+      "Crash:Scrap201": {}
+    }
   },
   {
     "name": "BallButton12_2",
@@ -30,10 +32,12 @@
     "lat": -16938.525390625,
     "lng": -6230.52392578125,
     "alt": -793.7493896484375,
-    "actors": [
-      "Crash:MoveMesh28_2",
-      "Crash:Glowline67_11"
-    ]
+    "actors": {
+      "Crash:MoveMesh28_2": {
+        "Crash:Wall_400x600": {}
+      },
+      "Crash:Glowline67_11": {}
+    }
   },
   {
     "name": "BallButton13",
@@ -42,9 +46,9 @@
     "lat": -19466.896484375,
     "lng": -6924.349609375,
     "alt": -795.314208984375,
-    "actors": [
-      "Crash:TaskRaceguy5"
-    ]
+    "actors": {
+      "Crash:TaskRaceguy5": {}
+    }
   },
   {
     "name": "BallButton14_2",
@@ -53,9 +57,11 @@
     "lat": -5097.39404296875,
     "lng": 35648.0078125,
     "alt": 108.90533447265625,
-    "actors": [
-      "Crash:MoveMesh31_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh31_2": {
+        "Crash:Wood_block_369": {}
+      }
+    }
   },
   {
     "name": "BallButton15",
@@ -64,10 +70,12 @@
     "lat": 2381.026611328125,
     "lng": 7506.1318359375,
     "alt": 34.04820251464844,
-    "actors": [
-      "Crash:MoveMesh32",
-      "Crash:Glowline80_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh32": {
+        "Crash:Wood_block_372": {}
+      },
+      "Crash:Glowline80_2": {}
+    }
   },
   {
     "name": "BallButton16_2",
@@ -76,10 +84,14 @@
     "lat": -1150.9090576171875,
     "lng": 40493.02734375,
     "alt": 126.05413818359375,
-    "actors": [
-      "Crash:Glowline87_2",
-      "Crash:MoveMesh39_4"
-    ]
+    "actors": {
+      "Crash:Glowline87_2": {
+        "Crash:DoorLego46": {}
+      },
+      "Crash:MoveMesh39_4": {
+        "Crash:crate9_520": {}
+      }
+    }
   },
   {
     "name": "BallButton17_2",
@@ -88,9 +100,11 @@
     "lat": -3710.0,
     "lng": 44780.0,
     "alt": -400.0,
-    "actors": [
-      "Crash:MoveMesh37"
-    ]
+    "actors": {
+      "Crash:MoveMesh37": {
+        "Crash:SM_Bars_15": {}
+      }
+    }
   },
   {
     "name": "BallButton18_2",
@@ -99,12 +113,18 @@
     "lat": -1539.5750732421875,
     "lng": 43444.4765625,
     "alt": -2094.75439453125,
-    "actors": [
-      "Crash:FirePipe4_2",
-      "Crash:Glowline90_8",
-      "Crash:MoveMesh40_2",
-      "Crash:Glowline88_2"
-    ]
+    "actors": {
+      "Crash:FirePipe4_2": {},
+      "Crash:Glowline90_8": {},
+      "Crash:MoveMesh40_2": {
+        "Crash:Metalset1_SteelPoleRound13": {}
+      },
+      "Crash:Glowline88_2": {
+        "Crash:MoveMesh40_2": {
+          "Crash:Metalset1_SteelPoleRound13": {}
+        }
+      }
+    }
   },
   {
     "name": "BallButton2",
@@ -113,9 +133,9 @@
     "lat": 12618.4716796875,
     "lng": 9246.59765625,
     "alt": 2185.991943359375,
-    "actors": [
-      "Crash:TaskRaceguy3"
-    ]
+    "actors": {
+      "Crash:TaskRaceguy3": {}
+    }
   },
   {
     "name": "BallButton3_5",
@@ -124,10 +144,10 @@
     "lat": -2929.302734375,
     "lng": 39894.875,
     "alt": 1512.0543212890625,
-    "actors": [
-      "Crash:Jumppad37",
-      "Crash:Glowline97_5"
-    ]
+    "actors": {
+      "Crash:Jumppad37": {},
+      "Crash:Glowline97_5": {}
+    }
   },
   {
     "name": "BallButton4_3",
@@ -136,10 +156,12 @@
     "lat": 1714.8536376953125,
     "lng": 36859.92578125,
     "alt": -217.25054931640625,
-    "actors": [
-      "Crash:MoveMesh7_17",
-      "Crash:Glowline30_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh7_17": {
+        "Crash:Metalset1_SteelPoleRound11_31": {}
+      },
+      "Crash:Glowline30_2": {}
+    }
   },
   {
     "name": "BallButton5",
@@ -148,10 +170,12 @@
     "lat": 13247.1083984375,
     "lng": 1906.728271484375,
     "alt": 2027.0006103515625,
-    "actors": [
-      "Crash:MoveMesh10_2",
-      "Crash:Glowline37_5"
-    ]
+    "actors": {
+      "Crash:MoveMesh10_2": {
+        "Crash:SM_outer_wall_broken_b100": {}
+      },
+      "Crash:Glowline37_5": {}
+    }
   },
   {
     "name": "BallButton6_2",
@@ -160,9 +184,9 @@
     "lat": -10174.5654296875,
     "lng": 43720.46875,
     "alt": 245.865478515625,
-    "actors": [
-      "Crash:DoorStone_2"
-    ]
+    "actors": {
+      "Crash:DoorStone_2": {}
+    }
   },
   {
     "name": "BallButton7_3",
@@ -171,13 +195,13 @@
     "lat": 18232.775390625,
     "lng": 14316.7197265625,
     "alt": 2229.618408203125,
-    "actors": [
-      "Crash:Jumppad12",
-      "Crash:Jumppad13",
-      "Crash:Glowline38_2",
-      "Crash:DoorLego47_2",
-      "Crash:Glowline96_2"
-    ]
+    "actors": {
+      "Crash:Jumppad12": {},
+      "Crash:Jumppad13": {},
+      "Crash:Glowline38_2": {},
+      "Crash:DoorLego47_2": {},
+      "Crash:Glowline96_2": {}
+    }
   },
   {
     "name": "BallButton8",
@@ -186,9 +210,9 @@
     "lat": -10122.3466796875,
     "lng": 8247.62109375,
     "alt": 392.330322265625,
-    "actors": [
-      "Crash:TaskRaceguy4"
-    ]
+    "actors": {
+      "Crash:TaskRaceguy4": {}
+    }
   },
   {
     "name": "BallButton9_3",
@@ -197,10 +221,10 @@
     "lat": -9440.7861328125,
     "lng": -7842.65966796875,
     "alt": -3641.287109375,
-    "actors": [
-      "Crash:Glowline48",
-      "Crash:DoorLego7_2"
-    ]
+    "actors": {
+      "Crash:Glowline48": {},
+      "Crash:DoorLego7_2": {}
+    }
   },
   {
     "name": "BallButton_2",
@@ -209,9 +233,9 @@
     "lat": 13429.19921875,
     "lng": -7559.3583984375,
     "alt": 1004.00439453125,
-    "actors": [
-      "Crash:TaskRaceguy2"
-    ]
+    "actors": {
+      "Crash:TaskRaceguy2": {}
+    }
   },
   {
     "name": "Battery2_2",
@@ -244,12 +268,12 @@
     "lat": -1028.7769775390625,
     "lng": 37993.64453125,
     "alt": 166.1577911376953,
-    "actors": [
-      "Crash:ProjectileShooter_2",
-      "Crash:Jumppad2",
-      "Crash:Glowline11_12",
-      "Crash:Glowline_2"
-    ]
+    "actors": {
+      "Crash:ProjectileShooter_2": {},
+      "Crash:Jumppad2": {},
+      "Crash:Glowline11_12": {},
+      "Crash:Glowline_2": {}
+    }
   },
   {
     "name": "Bones10",
@@ -1042,9 +1066,9 @@
     "lat": -2815.41259765625,
     "lng": 20008.6015625,
     "alt": 1887.0006103515625,
-    "actors": [
-      "Crash:DoorLego6"
-    ]
+    "actors": {
+      "Crash:DoorLego6": {}
+    }
   },
   {
     "name": "Button11_2",
@@ -1053,10 +1077,10 @@
     "lat": -1432.2908935546875,
     "lng": 3574.80615234375,
     "alt": -1552.3299560546875,
-    "actors": [
-      "Crash:Door_2",
-      "Crash:Glowline44_5"
-    ]
+    "actors": {
+      "Crash:Door_2": {},
+      "Crash:Glowline44_5": {}
+    }
   },
   {
     "name": "Button12_11",
@@ -1065,9 +1089,9 @@
     "lat": -1773.68115234375,
     "lng": 6862.6044921875,
     "alt": -1672.4754638671875,
-    "actors": [
-      "Crash:ProjectileShooter6_2"
-    ]
+    "actors": {
+      "Crash:ProjectileShooter6_2": {}
+    }
   },
   {
     "name": "Button13_2",
@@ -1094,9 +1118,11 @@
     "lng": 34328.6875,
     "alt": -2405.614013671875,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:MoveMesh25_5"
-    ]
+    "actors": {
+      "Crash:MoveMesh25_5": {
+        "Crash:Damaged_Wall_Right_01_76": {}
+      }
+    }
   },
   {
     "name": "Button17_2",
@@ -1106,10 +1132,10 @@
     "lng": -4852.3203125,
     "alt": -681.8060913085938,
     "requires_purple_shot_flag": true,
-    "actors": [
-      "Crash:Jumppad33_2",
-      "Crash:Glowline77_2"
-    ]
+    "actors": {
+      "Crash:Jumppad33_2": {},
+      "Crash:Glowline77_2": {}
+    }
   },
   {
     "name": "Button18",
@@ -1119,10 +1145,10 @@
     "lng": 38123.25,
     "alt": -2246.45361328125,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline22"
-    ]
+    "actors": {
+      "Crash:CounterTrigger3": {},
+      "Crash:Glowline22": {}
+    }
   },
   {
     "name": "Button19",
@@ -1132,10 +1158,10 @@
     "lng": 38123.25,
     "alt": -1877.5882568359375,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline21_11"
-    ]
+    "actors": {
+      "Crash:CounterTrigger3": {},
+      "Crash:Glowline21_11": {}
+    }
   },
   {
     "name": "Button2",
@@ -1145,9 +1171,9 @@
     "lng": 38475.3671875,
     "alt": 199.54034423828125,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:DoorLego2"
-    ]
+    "actors": {
+      "Crash:DoorLego2": {}
+    }
   },
   {
     "name": "Button20",
@@ -1157,10 +1183,10 @@
     "lng": 38802.25,
     "alt": -2246.45361328125,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline24"
-    ]
+    "actors": {
+      "Crash:CounterTrigger3": {},
+      "Crash:Glowline24": {}
+    }
   },
   {
     "name": "Button21",
@@ -1170,10 +1196,10 @@
     "lng": 38787.2578125,
     "alt": -1868.9390869140625,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline23"
-    ]
+    "actors": {
+      "Crash:CounterTrigger3": {},
+      "Crash:Glowline23": {}
+    }
   },
   {
     "name": "Button22_2",
@@ -1182,9 +1208,11 @@
     "lat": -3230.80810546875,
     "lng": 45611.515625,
     "alt": -171.89694213867188,
-    "actors": [
-      "Crash:MoveMesh38"
-    ]
+    "actors": {
+      "Crash:MoveMesh38": {
+        "Crash:Wood_block_474": {}
+      }
+    }
   },
   {
     "name": "Button23_2",
@@ -1193,9 +1221,9 @@
     "lat": -1064.0699462890625,
     "lng": 36237.6953125,
     "alt": 182.32858276367188,
-    "actors": [
-      "Crash:Jumppad36"
-    ]
+    "actors": {
+      "Crash:Jumppad36": {}
+    }
   },
   {
     "name": "Button24",
@@ -1205,11 +1233,13 @@
     "lng": 36104.20703125,
     "alt": 219.28189086914062,
     "requires_purple_shot_flag": true,
-    "actors": [
-      "Crash:MoveMesh_2",
-      "Crash:Gears7_2",
-      "Crash:Glowline27_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh_2": {
+        "Crash:Charred_branch8": {}
+      },
+      "Crash:Gears7_2": {},
+      "Crash:Glowline27_2": {}
+    }
   },
   {
     "name": "Button25",
@@ -1219,9 +1249,11 @@
     "lng": 39920.140625,
     "alt": 1373.3763427734375,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:MoveMesh48"
-    ]
+    "actors": {
+      "Crash:MoveMesh48": {
+        "Crash:SM_Bars_23": {}
+      }
+    }
   },
   {
     "name": "Button3",
@@ -1231,10 +1263,10 @@
     "lng": 29071.37109375,
     "alt": 237.50331115722656,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:DoorStone2_2",
-      "Crash:Glowline7_2"
-    ]
+    "actors": {
+      "Crash:DoorStone2_2": {},
+      "Crash:Glowline7_2": {}
+    }
   },
   {
     "name": "Button4",
@@ -1245,10 +1277,10 @@
     "alt": 221.14405822753906,
     "allow_enemy_projectiles": true,
     "requires_purple_shot_flag": true,
-    "actors": [
-      "Crash:Door16_2",
-      "Crash:Glowline19_5"
-    ]
+    "actors": {
+      "Crash:Door16_2": {},
+      "Crash:Glowline19_5": {}
+    }
   },
   {
     "name": "Button5",
@@ -1258,10 +1290,10 @@
     "lng": 33628.94140625,
     "alt": 179.83616638183594,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline22"
-    ]
+    "actors": {
+      "Crash:CounterTrigger2_2": {},
+      "Crash:Glowline22": {}
+    }
   },
   {
     "name": "Button6",
@@ -1271,9 +1303,9 @@
     "lng": 30643.640625,
     "alt": 314.03192138671875,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:Jumppad8_2"
-    ]
+    "actors": {
+      "Crash:Jumppad8_2": {}
+    }
   },
   {
     "name": "Button7",
@@ -1283,10 +1315,10 @@
     "lng": 33628.94140625,
     "alt": 548.7015991210938,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline21_11"
-    ]
+    "actors": {
+      "Crash:CounterTrigger2_2": {},
+      "Crash:Glowline21_11": {}
+    }
   },
   {
     "name": "Button8",
@@ -1296,10 +1328,10 @@
     "lng": 34122.64453125,
     "alt": 179.83616638183594,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline24"
-    ]
+    "actors": {
+      "Crash:CounterTrigger2_2": {},
+      "Crash:Glowline24": {}
+    }
   },
   {
     "name": "Button9",
@@ -1309,10 +1341,10 @@
     "lng": 34112.4296875,
     "alt": 557.3506469726562,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline23"
-    ]
+    "actors": {
+      "Crash:CounterTrigger2_2": {},
+      "Crash:Glowline23": {}
+    }
   },
   {
     "name": "Button_2",
@@ -1322,10 +1354,10 @@
     "lng": 33610.7890625,
     "alt": 272.09246826171875,
     "allow_enemy_projectiles": true,
-    "actors": [
-      "Crash:DoorLego_2",
-      "Crash:Glowline4_5"
-    ]
+    "actors": {
+      "Crash:DoorLego_2": {},
+      "Crash:Glowline4_5": {}
+    }
   },
   {
     "name": "ProjectileShooter4",
@@ -1335,11 +1367,11 @@
     "lng": 1774.9539794921875,
     "alt": 2445.813720703125,
     "requires_purple_shot_flag": true,
-    "actors": [
-      "Crash:DoorStone4_2",
-      "Crash:Glowline52_16",
-      "Crash:Jumppad24"
-    ]
+    "actors": {
+      "Crash:DoorStone4_2": {},
+      "Crash:Glowline52_16": {},
+      "Crash:Jumppad24": {}
+    }
   },
   {
     "name": "ProjectileShooter5",
@@ -1348,9 +1380,11 @@
     "lat": 17280.41015625,
     "lng": -1366.956298828125,
     "alt": 2445.8134765625,
-    "actors": [
-      "Crash:Glowline69_2"
-    ]
+    "actors": {
+      "Crash:Glowline69_2": {
+        "Crash:Door27_2": {}
+      }
+    }
   },
   {
     "name": "ProjectileShooter8",
@@ -1359,10 +1393,10 @@
     "lat": 14931.4384765625,
     "lng": -2297.39599609375,
     "alt": 2333.800537109375,
-    "actors": [
-      "Crash:Jumppad25",
-      "Crash:Jumppad23_2"
-    ]
+    "actors": {
+      "Crash:Jumppad25": {},
+      "Crash:Jumppad23_2": {}
+    }
   },
   {
     "name": "ButtonFloor10",
@@ -1371,9 +1405,9 @@
     "lat": 13332.2998046875,
     "lng": -1928.4378662109375,
     "alt": 2417.905517578125,
-    "actors": [
-      "Crash:Jumppad11"
-    ]
+    "actors": {
+      "Crash:Jumppad11": {}
+    }
   },
   {
     "name": "ButtonFloor11_2",
@@ -1382,9 +1416,11 @@
     "lat": 6129.5673828125,
     "lng": 11492.6572265625,
     "alt": 2315.054931640625,
-    "actors": [
-      "Crash:MoveMesh11_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh11_2": {
+        "Crash:Simple_rock_132": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor12_2",
@@ -1393,11 +1429,13 @@
     "lat": 17914.61328125,
     "lng": 22495.72265625,
     "alt": 2296.0927734375,
-    "actors": [
-      "Crash:MoveMesh12_2",
-      "Crash:Glowline39_5",
-      "Crash:Gears8_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh12_2": {
+        "Crash:Metalset1_SteelPoleSquare120": {}
+      },
+      "Crash:Glowline39_5": {},
+      "Crash:Gears8_2": {}
+    }
   },
   {
     "name": "ButtonFloor13_2",
@@ -1406,10 +1444,10 @@
     "lat": -6858.1083984375,
     "lng": 36143.69140625,
     "alt": 360.2218017578125,
-    "actors": [
-      "Crash:Jumppad5_2",
-      "Crash:Glowline41_5"
-    ]
+    "actors": {
+      "Crash:Jumppad5_2": {},
+      "Crash:Glowline41_5": {}
+    }
   },
   {
     "name": "ButtonFloor14_5",
@@ -1418,10 +1456,10 @@
     "lat": -4501.16650390625,
     "lng": 24731.94921875,
     "alt": 747.6473999023438,
-    "actors": [
-      "Crash:DoorLego6",
-      "Crash:Glowline40_2"
-    ]
+    "actors": {
+      "Crash:DoorLego6": {},
+      "Crash:Glowline40_2": {}
+    }
   },
   {
     "name": "ButtonFloor15_2",
@@ -1430,9 +1468,11 @@
     "lat": -8422.78125,
     "lng": -5120.0107421875,
     "alt": 617.5607299804688,
-    "actors": [
-      "Crash:SignalInverter_2"
-    ]
+    "actors": {
+      "Crash:SignalInverter_2": {
+        "Crash:FirePipe3": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor16",
@@ -1441,10 +1481,10 @@
     "lat": 14060.1611328125,
     "lng": 21258.84375,
     "alt": 2278.51318359375,
-    "actors": [
-      "Crash:PipeCap2_5",
-      "Crash:Glowline45_8"
-    ]
+    "actors": {
+      "Crash:PipeCap2_5": {},
+      "Crash:Glowline45_8": {}
+    }
   },
   {
     "name": "ButtonFloor17",
@@ -1453,9 +1493,9 @@
     "lat": 13048.1728515625,
     "lng": 24803.875,
     "alt": 2626.345458984375,
-    "actors": [
-      "Crash:Jumppad14"
-    ]
+    "actors": {
+      "Crash:Jumppad14": {}
+    }
   },
   {
     "name": "ButtonFloor18_2",
@@ -1464,10 +1504,10 @@
     "lat": -9471.89453125,
     "lng": -7256.365234375,
     "alt": -3641.2890625,
-    "actors": [
-      "Crash:Glowline47_2",
-      "Crash:DoorLego8"
-    ]
+    "actors": {
+      "Crash:Glowline47_2": {},
+      "Crash:DoorLego8": {}
+    }
   },
   {
     "name": "ButtonFloor19_16",
@@ -1476,10 +1516,10 @@
     "lat": -6587.099609375,
     "lng": 63885.87109375,
     "alt": 13169.60546875,
-    "actors": [
-      "Crash:HeadSwitcher_2",
-      "Crash:Glowline58_11"
-    ]
+    "actors": {
+      "Crash:HeadSwitcher_2": {},
+      "Crash:Glowline58_11": {}
+    }
   },
   {
     "name": "ButtonFloor20_19",
@@ -1488,10 +1528,10 @@
     "lat": -10249.8134765625,
     "lng": 65996.2734375,
     "alt": 13632.94921875,
-    "actors": [
-      "Crash:MetalBall3",
-      "Crash:Glowline59_14"
-    ]
+    "actors": {
+      "Crash:MetalBall3": {},
+      "Crash:Glowline59_14": {}
+    }
   },
   {
     "name": "ButtonFloor21_2",
@@ -1500,9 +1540,12 @@
     "lat": -14004.1484375,
     "lng": 43872.16796875,
     "alt": 357.2705078125,
-    "actors": [
-      "Crash:SignalInverter4_2"
-    ]
+    "actors": {
+      "Crash:SignalInverter4_2": {
+        "Crash:Door32": {},
+        "Crash:Glowline94_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor22_3",
@@ -1511,10 +1554,10 @@
     "lat": -9650.1689453125,
     "lng": 43762.83203125,
     "alt": 240.7220458984375,
-    "actors": [
-      "Crash:Door26_2",
-      "Crash:Glowline68_5"
-    ]
+    "actors": {
+      "Crash:Door26_2": {},
+      "Crash:Glowline68_5": {}
+    }
   },
   {
     "name": "ButtonFloor23",
@@ -1523,10 +1566,10 @@
     "lat": 420.60791015625,
     "lng": 35419.890625,
     "alt": 820.687255859375,
-    "actors": [
-      "Crash:Glowline3_2",
-      "Crash:Jumppad_2"
-    ]
+    "actors": {
+      "Crash:Glowline3_2": {},
+      "Crash:Jumppad_2": {}
+    }
   },
   {
     "name": "ButtonFloor24",
@@ -1535,10 +1578,10 @@
     "lat": -2965.876220703125,
     "lng": 66698.15625,
     "alt": 13633.6064453125,
-    "actors": [
-      "Crash:Jumppad20",
-      "Crash:Glowline56"
-    ]
+    "actors": {
+      "Crash:Jumppad20": {},
+      "Crash:Glowline56": {}
+    }
   },
   {
     "name": "ButtonFloor25",
@@ -1547,10 +1590,10 @@
     "lat": -3303.977783203125,
     "lng": 66698.15625,
     "alt": 13633.6064453125,
-    "actors": [
-      "Crash:Jumppad19",
-      "Crash:Glowline55"
-    ]
+    "actors": {
+      "Crash:Jumppad19": {},
+      "Crash:Glowline55": {}
+    }
   },
   {
     "name": "ButtonFloor26",
@@ -1559,10 +1602,10 @@
     "lat": -3629.390380859375,
     "lng": 66698.15625,
     "alt": 13633.6064453125,
-    "actors": [
-      "Crash:Jumppad18",
-      "Crash:Glowline54"
-    ]
+    "actors": {
+      "Crash:Jumppad18": {},
+      "Crash:Glowline54": {}
+    }
   },
   {
     "name": "ButtonFloor27",
@@ -1571,10 +1614,10 @@
     "lat": -3957.4052734375,
     "lng": 66698.15625,
     "alt": 13633.6064453125,
-    "actors": [
-      "Crash:Jumppad17",
-      "Crash:Glowline53_2"
-    ]
+    "actors": {
+      "Crash:Jumppad17": {},
+      "Crash:Glowline53_2": {}
+    }
   },
   {
     "name": "ButtonFloor28",
@@ -1583,9 +1626,9 @@
     "lat": -4328.17724609375,
     "lng": 66698.15625,
     "alt": 13633.6064453125,
-    "actors": [
-      "Crash:EffectTriggerable4_2"
-    ]
+    "actors": {
+      "Crash:EffectTriggerable4_2": {}
+    }
   },
   {
     "name": "ButtonFloor29",
@@ -1594,10 +1637,10 @@
     "lat": -1842.48193359375,
     "lng": 64675.578125,
     "alt": 13792.7265625,
-    "actors": [
-      "Crash:Jumppad21",
-      "Crash:Glowline57_8"
-    ]
+    "actors": {
+      "Crash:Jumppad21": {},
+      "Crash:Glowline57_8": {}
+    }
   },
   {
     "name": "ButtonFloor2_5",
@@ -1606,9 +1649,9 @@
     "lat": 4209.140625,
     "lng": 37944.30859375,
     "alt": -2326.363525390625,
-    "actors": [
-      "Crash:Door21_2"
-    ]
+    "actors": {
+      "Crash:Door21_2": {}
+    }
   },
   {
     "name": "ButtonFloor30_2",
@@ -1617,10 +1660,10 @@
     "lat": 8009.5556640625,
     "lng": 42164.5,
     "alt": 2214.3935546875,
-    "actors": [
-      "Crash:DoorLego41_2",
-      "Crash:Glowline72_2"
-    ]
+    "actors": {
+      "Crash:DoorLego41_2": {},
+      "Crash:Glowline72_2": {}
+    }
   },
   {
     "name": "ButtonFloor31_5",
@@ -1629,10 +1672,10 @@
     "lat": 10403.4990234375,
     "lng": 45005.19140625,
     "alt": -1963.877197265625,
-    "actors": [
-      "Crash:Jumppad29",
-      "Crash:Glowline75_9"
-    ]
+    "actors": {
+      "Crash:Jumppad29": {},
+      "Crash:Glowline75_9": {}
+    }
   },
   {
     "name": "ButtonFloor32_2",
@@ -1641,10 +1684,12 @@
     "lat": -17742.955078125,
     "lng": -5616.50830078125,
     "alt": 121.3615493774414,
-    "actors": [
-      "Crash:MoveMesh29",
-      "Crash:Glowline78_5"
-    ]
+    "actors": {
+      "Crash:MoveMesh29": {
+        "Crash:Wall_400x627": {}
+      },
+      "Crash:Glowline78_5": {}
+    }
   },
   {
     "name": "ButtonFloor33",
@@ -1653,10 +1698,12 @@
     "lat": -823.0357055664062,
     "lng": 5343.1513671875,
     "alt": 36.56090545654297,
-    "actors": [
-      "Crash:MoveMesh35",
-      "Crash:Glowline85_8"
-    ]
+    "actors": {
+      "Crash:MoveMesh35": {
+        "Crash:Cartoon_plank_330": {}
+      },
+      "Crash:Glowline85_8": {}
+    }
   },
   {
     "name": "ButtonFloor34_5",
@@ -1665,10 +1712,10 @@
     "lat": -1741.478271484375,
     "lng": 41704.6328125,
     "alt": -2118.058349609375,
-    "actors": [
-      "Crash:WoodBlockLift_2",
-      "Crash:Glowline89_5"
-    ]
+    "actors": {
+      "Crash:WoodBlockLift_2": {},
+      "Crash:Glowline89_5": {}
+    }
   },
   {
     "name": "ButtonFloor35_2",
@@ -1677,9 +1724,11 @@
     "lat": -3828.91015625,
     "lng": 43526.0234375,
     "alt": -1200.843505859375,
-    "actors": [
-      "Crash:MoveMesh41_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh41_2": {
+        "Crash:Wood_block_27": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor36_5",
@@ -1688,10 +1737,12 @@
     "lat": -4787.69677734375,
     "lng": 199.05557250976562,
     "alt": 27.343658447265625,
-    "actors": [
-      "Crash:MoveMesh42_5",
-      "Crash:Glowline91_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh42_5": {
+        "Crash:Wall_400x584": {}
+      },
+      "Crash:Glowline91_2": {}
+    }
   },
   {
     "name": "ButtonFloor37_2",
@@ -1700,9 +1751,9 @@
     "lat": -8295.4345703125,
     "lng": 54283.1171875,
     "alt": 2498.1611328125,
-    "actors": [
-      "Crash:PipeCap_2"
-    ]
+    "actors": {
+      "Crash:PipeCap_2": {}
+    }
   },
   {
     "name": "ButtonFloor3_2",
@@ -1711,10 +1762,12 @@
     "lat": -43.68893814086914,
     "lng": 36749.3515625,
     "alt": 102.44485473632812,
-    "actors": [
-      "Crash:Glowline12_15",
-      "Crash:MoveMesh2_2"
-    ]
+    "actors": {
+      "Crash:Glowline12_15": {},
+      "Crash:MoveMesh2_2": {
+        "Crash:Wood_block_98": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor4_5",
@@ -1723,9 +1776,9 @@
     "lat": -6090.71875,
     "lng": 27568.7421875,
     "alt": -607.03173828125,
-    "actors": [
-      "Crash:Door3_2"
-    ]
+    "actors": {
+      "Crash:Door3_2": {}
+    }
   },
   {
     "name": "ButtonFloor5_8",
@@ -1734,11 +1787,13 @@
     "lat": 12900.951171875,
     "lng": 19028.2265625,
     "alt": 3000.070556640625,
-    "actors": [
-      "Crash:Gears6_2",
-      "Crash:Glowline25_2",
-      "Crash:MoveMesh3_5"
-    ]
+    "actors": {
+      "Crash:Gears6_2": {},
+      "Crash:Glowline25_2": {},
+      "Crash:MoveMesh3_5": {
+        "Crash:Wood_block_156": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor6_11",
@@ -1747,10 +1802,12 @@
     "lat": -1694.068115234375,
     "lng": -1778.9466552734375,
     "alt": -121.62134552001953,
-    "actors": [
-      "Crash:MoveMesh4_8",
-      "Crash:Glowline50_10"
-    ]
+    "actors": {
+      "Crash:MoveMesh4_8": {
+        "Crash:Wood_block_183": {}
+      },
+      "Crash:Glowline50_10": {}
+    }
   },
   {
     "name": "ButtonFloor7_14",
@@ -1759,11 +1816,13 @@
     "lat": -6531.5400390625,
     "lng": -1468.9901123046875,
     "alt": -222.99295043945312,
-    "actors": [
-      "Crash:Minium",
-      "Crash:Glowline18",
-      "Crash:MoveMesh5_11"
-    ]
+    "actors": {
+      "Crash:Minium": {},
+      "Crash:Glowline18": {},
+      "Crash:MoveMesh5_11": {
+        "Crash:Metalset1_SteelPoleRound8_141": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor8_2",
@@ -1772,10 +1831,12 @@
     "lat": 865.293212890625,
     "lng": 6747.07861328125,
     "alt": 21.41644287109375,
-    "actors": [
-      "Crash:MoveMesh35",
-      "Crash:Glowline84_5"
-    ]
+    "actors": {
+      "Crash:MoveMesh35": {
+        "Crash:Cartoon_plank_330": {}
+      },
+      "Crash:Glowline84_5": {}
+    }
   },
   {
     "name": "ButtonFloor9",
@@ -1784,10 +1845,10 @@
     "lat": 13749.8310546875,
     "lng": -977.024658203125,
     "alt": 2273.984130859375,
-    "actors": [
-      "Crash:ProjectileShooter3",
-      "Crash:Glowline36_2"
-    ]
+    "actors": {
+      "Crash:ProjectileShooter3": {},
+      "Crash:Glowline36_2": {}
+    }
   },
   {
     "name": "ButtonFloor_2",
@@ -1796,9 +1857,11 @@
     "lat": -3540.010498046875,
     "lng": 6740.275390625,
     "alt": -1561.8104248046875,
-    "actors": [
-      "Crash:MoveMesh49_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh49_2": {
+        "Crash:SM_Fence_3": {}
+      }
+    }
   },
   {
     "name": "BuyBelt_2",
@@ -5391,12 +5454,14 @@
     "lat": -5594.4736328125,
     "lng": 7636.98291015625,
     "alt": 155.33912658691406,
-    "actors": [
-      "Crash:MoveMesh34_2",
-      "Crash:Gears5",
-      "Crash:RedGuyEvent15",
-      "Crash:RedGuyEvent11_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh34_2": {
+        "Crash:Concrette_Paving179": {}
+      },
+      "Crash:Gears5": {},
+      "Crash:RedGuyEvent15": {},
+      "Crash:RedGuyEvent11_2": {}
+    }
   },
   {
     "name": "KeyLock_2",
@@ -5405,9 +5470,9 @@
     "lat": -14769.294921875,
     "lng": 43716.484375,
     "alt": 848.9498291015625,
-    "actors": [
-      "Crash:Birdcage3_3"
-    ]
+    "actors": {
+      "Crash:Birdcage3_3": {}
+    }
   },
   {
     "name": "Lever10",
@@ -5416,10 +5481,10 @@
     "lat": 1172.59912109375,
     "lng": 37816.90625,
     "alt": -189.0847625732422,
-    "actors": [
-      "Crash:crate14",
-      "Crash:TutorialButtons18_2"
-    ]
+    "actors": {
+      "Crash:crate14": {},
+      "Crash:TutorialButtons18_2": {}
+    }
   },
   {
     "name": "Lever11",
@@ -5428,9 +5493,9 @@
     "lat": -3920.9287109375,
     "lng": 43446.25390625,
     "alt": -359.1758117675781,
-    "actors": [
-      "Crash:Wood_block_456"
-    ]
+    "actors": {
+      "Crash:Wood_block_456": {}
+    }
   },
   {
     "name": "Lever12",
@@ -5439,9 +5504,9 @@
     "lat": -2834.29150390625,
     "lng": 40147.78125,
     "alt": 1501.5130615234375,
-    "actors": [
-      "Crash:Brick142"
-    ]
+    "actors": {
+      "Crash:Brick142": {}
+    }
   },
   {
     "name": "Lever2",
@@ -5450,9 +5515,9 @@
     "lat": -7102.9833984375,
     "lng": 40424.0625,
     "alt": 196.31259155273438,
-    "actors": [
-      "Crash:SM_Bars_24"
-    ]
+    "actors": {
+      "Crash:SM_Bars_24": {}
+    }
   },
   {
     "name": "Lever3_6",
@@ -5461,10 +5526,10 @@
     "lat": -4202.7880859375,
     "lng": 43867.2578125,
     "alt": 1320.2569580078125,
-    "actors": [
-      "Crash:Wood_block_143",
-      "Crash:Glowline9_18"
-    ]
+    "actors": {
+      "Crash:Wood_block_143": {},
+      "Crash:Glowline9_18": {}
+    }
   },
   {
     "name": "Lever4_2",
@@ -5473,9 +5538,9 @@
     "lat": -1150.8277587890625,
     "lng": 6624.94775390625,
     "alt": 86.34921264648438,
-    "actors": [
-      "Crash:WoodenPart128"
-    ]
+    "actors": {
+      "Crash:WoodenPart128": {}
+    }
   },
   {
     "name": "Lever5_2",
@@ -5484,13 +5549,13 @@
     "lat": -3870.0,
     "lng": 37520.0,
     "alt": -1490.0,
-    "actors": [
-      "Crash:Concrette_Paving32",
-      "Crash:EffectTriggerable_2",
-      "Crash:EffectTriggerable2",
-      "Crash:EffectTriggerable3",
-      "Crash:Glowline76_2"
-    ]
+    "actors": {
+      "Crash:Concrette_Paving32": {},
+      "Crash:EffectTriggerable_2": {},
+      "Crash:EffectTriggerable2": {},
+      "Crash:EffectTriggerable3": {},
+      "Crash:Glowline76_2": {}
+    }
   },
   {
     "name": "Lever6",
@@ -5499,10 +5564,10 @@
     "lat": -4674.33154296875,
     "lng": 24078.138671875,
     "alt": -223.019287109375,
-    "actors": [
-      "Crash:Wood_block_135",
-      "Crash:Glowline13_2"
-    ]
+    "actors": {
+      "Crash:Wood_block_135": {},
+      "Crash:Glowline13_2": {}
+    }
   },
   {
     "name": "Lever7",
@@ -5511,9 +5576,9 @@
     "lat": -13168.69921875,
     "lng": 44119.1171875,
     "alt": 380.6325988769531,
-    "actors": [
-      "Crash:SM_Bars_25"
-    ]
+    "actors": {
+      "Crash:SM_Bars_25": {}
+    }
   },
   {
     "name": "Lever8_2",
@@ -5522,9 +5587,9 @@
     "lat": -13192.78515625,
     "lng": 44383.06640625,
     "alt": 1736.925048828125,
-    "actors": [
-      "Crash:Metalset1_SteelPoleSquare49"
-    ]
+    "actors": {
+      "Crash:Metalset1_SteelPoleSquare49": {}
+    }
   },
   {
     "name": "Lever9_2",
@@ -5533,9 +5598,9 @@
     "lat": 1864.0240478515625,
     "lng": 35574.2734375,
     "alt": 205.99322509765625,
-    "actors": [
-      "Crash:Lego_Brick_02_No_Bottom25"
-    ]
+    "actors": {
+      "Crash:Lego_Brick_02_No_Bottom25": {}
+    }
   },
   {
     "name": "Lever_2",
@@ -5544,10 +5609,10 @@
     "lat": -6391.484375,
     "lng": 42332.95703125,
     "alt": 487.5684814453125,
-    "actors": [
-      "Crash:Wood_block_89",
-      "Crash:Glowline6_11"
-    ]
+    "actors": {
+      "Crash:Wood_block_89": {},
+      "Crash:Glowline6_11": {}
+    }
   },
   {
     "name": "Lift1_5",
@@ -5604,10 +5669,10 @@
     "lat": -10114.166015625,
     "lng": 64382.19921875,
     "alt": 13197.2001953125,
-    "actors": [
-      "Crash:MetalBall2_2",
-      "Crash:Glowline60_17"
-    ]
+    "actors": {
+      "Crash:MetalBall2_2": {},
+      "Crash:Glowline60_17": {}
+    }
   },
   {
     "name": "PedestalButton11_10",
@@ -5616,9 +5681,9 @@
     "lat": -1068.64208984375,
     "lng": 63133.546875,
     "alt": 13367.634765625,
-    "actors": [
-      "Crash:CarryBody3"
-    ]
+    "actors": {
+      "Crash:CarryBody3": {}
+    }
   },
   {
     "name": "PedestalButton12",
@@ -5627,10 +5692,10 @@
     "lat": -7527.33984375,
     "lng": 67101.296875,
     "alt": 13420.181640625,
-    "actors": [
-      "Crash:CarryBody5",
-      "Crash:Glowline61"
-    ]
+    "actors": {
+      "Crash:CarryBody5": {},
+      "Crash:Glowline61": {}
+    }
   },
   {
     "name": "PedestalButton13",
@@ -5639,10 +5704,10 @@
     "lat": -1511.1358642578125,
     "lng": 67089.15625,
     "alt": 13595.5625,
-    "actors": [
-      "Crash:CarryBody4",
-      "Crash:Glowline62"
-    ]
+    "actors": {
+      "Crash:CarryBody4": {},
+      "Crash:Glowline62": {}
+    }
   },
   {
     "name": "PedestalButton14_2",
@@ -5651,14 +5716,14 @@
     "lat": -6920.89208984375,
     "lng": 54277.4296875,
     "alt": -2662.472412109375,
-    "actors": [
-      "Crash:Glowline63",
-      "Crash:Jumppad16",
-      "Crash:Glowline65",
-      "Crash:Glowline64",
-      "Crash:DoorAnna2",
-      "Crash:DoorAnna_2"
-    ]
+    "actors": {
+      "Crash:Glowline63": {},
+      "Crash:Jumppad16": {},
+      "Crash:Glowline65": {},
+      "Crash:Glowline64": {},
+      "Crash:DoorAnna2": {},
+      "Crash:DoorAnna_2": {}
+    }
   },
   {
     "name": "PedestalButton15_2",
@@ -5667,10 +5732,12 @@
     "lat": -10167.2001953125,
     "lng": 34683.6015625,
     "alt": 99.99917602539062,
-    "actors": [
-      "Crash:Lift1_5",
-      "Crash:Glowline70_2"
-    ]
+    "actors": {
+      "Crash:Lift1_5": {},
+      "Crash:Glowline70_2": {
+        "Crash:Waves_4": {}
+      }
+    }
   },
   {
     "name": "PedestalButton16_2",
@@ -5679,27 +5746,26 @@
     "lat": -13223.216796875,
     "lng": 894.6646118164062,
     "alt": -714.992431640625,
-    "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
-    ]
+    "actors": {
+      "Crash:DestroyablePots34": {},
+      "Crash:DestroyablePots35": {},
+      "Crash:DestroyablePots36": {},
+      "Crash:DestroyablePots37": {},
+      "Crash:DestroyablePots32": {},
+      "Crash:DestroyablePots33": {},
+      "Crash:DestroyablePots38": {},
+      "Crash:DestroyablePots31_2": {},
+      "Crash:DestroyablePots48": {},
+      "Crash:DestroyablePots39": {},
+      "Crash:DestroyablePots45": {},
+      "Crash:DestroyablePots41": {},
+      "Crash:DestroyablePots42": {},
+      "Crash:DestroyablePots40": {},
+      "Crash:DestroyablePots47": {},
+      "Crash:DestroyablePots44": {},
+      "Crash:DestroyablePots46": {},
+      "Crash:DestroyablePots43": {}
+    }
   },
   {
     "name": "PedestalButton17",
@@ -5708,27 +5774,26 @@
     "lat": -13217.68359375,
     "lng": 974.0180053710938,
     "alt": -714.992431640625,
-    "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
-    ]
+    "actors": {
+      "Crash:DestroyablePots34": {},
+      "Crash:DestroyablePots35": {},
+      "Crash:DestroyablePots36": {},
+      "Crash:DestroyablePots37": {},
+      "Crash:DestroyablePots32": {},
+      "Crash:DestroyablePots33": {},
+      "Crash:DestroyablePots38": {},
+      "Crash:DestroyablePots31_2": {},
+      "Crash:DestroyablePots48": {},
+      "Crash:DestroyablePots39": {},
+      "Crash:DestroyablePots45": {},
+      "Crash:DestroyablePots41": {},
+      "Crash:DestroyablePots42": {},
+      "Crash:DestroyablePots40": {},
+      "Crash:DestroyablePots47": {},
+      "Crash:DestroyablePots44": {},
+      "Crash:DestroyablePots46": {},
+      "Crash:DestroyablePots43": {}
+    }
   },
   {
     "name": "PedestalButton18",
@@ -5737,27 +5802,26 @@
     "lat": -13211.6884765625,
     "lng": 1049.7767333984375,
     "alt": -714.992431640625,
-    "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
-    ]
+    "actors": {
+      "Crash:DestroyablePots34": {},
+      "Crash:DestroyablePots35": {},
+      "Crash:DestroyablePots36": {},
+      "Crash:DestroyablePots37": {},
+      "Crash:DestroyablePots32": {},
+      "Crash:DestroyablePots33": {},
+      "Crash:DestroyablePots38": {},
+      "Crash:DestroyablePots31_2": {},
+      "Crash:DestroyablePots48": {},
+      "Crash:DestroyablePots39": {},
+      "Crash:DestroyablePots45": {},
+      "Crash:DestroyablePots41": {},
+      "Crash:DestroyablePots42": {},
+      "Crash:DestroyablePots40": {},
+      "Crash:DestroyablePots47": {},
+      "Crash:DestroyablePots44": {},
+      "Crash:DestroyablePots46": {},
+      "Crash:DestroyablePots43": {}
+    }
   },
   {
     "name": "PedestalButton19",
@@ -5766,27 +5830,26 @@
     "lat": -13207.103515625,
     "lng": 1119.62646484375,
     "alt": -714.992431640625,
-    "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
-    ]
+    "actors": {
+      "Crash:DestroyablePots34": {},
+      "Crash:DestroyablePots35": {},
+      "Crash:DestroyablePots36": {},
+      "Crash:DestroyablePots37": {},
+      "Crash:DestroyablePots32": {},
+      "Crash:DestroyablePots33": {},
+      "Crash:DestroyablePots38": {},
+      "Crash:DestroyablePots31_2": {},
+      "Crash:DestroyablePots48": {},
+      "Crash:DestroyablePots39": {},
+      "Crash:DestroyablePots45": {},
+      "Crash:DestroyablePots41": {},
+      "Crash:DestroyablePots42": {},
+      "Crash:DestroyablePots40": {},
+      "Crash:DestroyablePots47": {},
+      "Crash:DestroyablePots44": {},
+      "Crash:DestroyablePots46": {},
+      "Crash:DestroyablePots43": {}
+    }
   },
   {
     "name": "PedestalButton20",
@@ -5795,27 +5858,26 @@
     "lat": -13204.4228515625,
     "lng": 1188.2086181640625,
     "alt": -714.992431640625,
-    "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
-    ]
+    "actors": {
+      "Crash:DestroyablePots34": {},
+      "Crash:DestroyablePots35": {},
+      "Crash:DestroyablePots36": {},
+      "Crash:DestroyablePots37": {},
+      "Crash:DestroyablePots32": {},
+      "Crash:DestroyablePots33": {},
+      "Crash:DestroyablePots38": {},
+      "Crash:DestroyablePots31_2": {},
+      "Crash:DestroyablePots48": {},
+      "Crash:DestroyablePots39": {},
+      "Crash:DestroyablePots45": {},
+      "Crash:DestroyablePots41": {},
+      "Crash:DestroyablePots42": {},
+      "Crash:DestroyablePots40": {},
+      "Crash:DestroyablePots47": {},
+      "Crash:DestroyablePots44": {},
+      "Crash:DestroyablePots46": {},
+      "Crash:DestroyablePots43": {}
+    }
   },
   {
     "name": "PedestalButton21_2",
@@ -5824,9 +5886,9 @@
     "lat": 7830.23583984375,
     "lng": 45161.19921875,
     "alt": -1026.5628662109375,
-    "actors": [
-      "Crash:DoorLego41_2"
-    ]
+    "actors": {
+      "Crash:DoorLego41_2": {}
+    }
   },
   {
     "name": "PedestalButton22_5",
@@ -5843,11 +5905,11 @@
     "lat": -1961.8983154296875,
     "lng": 5725.9921875,
     "alt": 2.53582763671875,
-    "actors": [
-      "Crash:DestroyablePots68",
-      "Crash:DestroyablePots69",
-      "Crash:DestroyablePots70"
-    ]
+    "actors": {
+      "Crash:DestroyablePots68": {},
+      "Crash:DestroyablePots69": {},
+      "Crash:DestroyablePots70": {}
+    }
   },
   {
     "name": "PedestalButton24_11",
@@ -5856,9 +5918,9 @@
     "lat": -4586.4951171875,
     "lng": 1589.05517578125,
     "alt": -73.9979019165039,
-    "actors": [
-      "Crash:Sponge_Large2_2"
-    ]
+    "actors": {
+      "Crash:Sponge_Large2_2": {}
+    }
   },
   {
     "name": "PedestalButton25_2",
@@ -5867,9 +5929,9 @@
     "lat": 7088.80615234375,
     "lng": 38914.234375,
     "alt": -75.41455078125,
-    "actors": [
-      "Crash:DoorLego3"
-    ]
+    "actors": {
+      "Crash:DoorLego3": {}
+    }
   },
   {
     "name": "PedestalButton26_2",
@@ -5878,10 +5940,10 @@
     "lat": 17321.30078125,
     "lng": 36731.4140625,
     "alt": 896.2449951171875,
-    "actors": [
-      "Crash:SupraballCanon_2",
-      "Crash:Jumppad30_2"
-    ]
+    "actors": {
+      "Crash:SupraballCanon_2": {},
+      "Crash:Jumppad30_2": {}
+    }
   },
   {
     "name": "PedestalButton27_5",
@@ -5898,9 +5960,11 @@
     "lat": -2181.417724609375,
     "lng": 33116.68359375,
     "alt": -2870.15087890625,
-    "actors": [
-      "Crash:MoveMesh44_2"
-    ]
+    "actors": {
+      "Crash:MoveMesh44_2": {
+        "Crash:Metalset1_SteelPoleRoundComplexCollision6": {}
+      }
+    }
   },
   {
     "name": "PedestalButton29_2",
@@ -5909,10 +5973,12 @@
     "lat": -4421.6689453125,
     "lng": -4786.53369140625,
     "alt": 576.577880859375,
-    "actors": [
-      "Crash:MoveActorAlongSpline2_5",
-      "Crash:PlayerForceLook34_956"
-    ]
+    "actors": {
+      "Crash:MoveActorAlongSpline2_5": {
+        "Crash:Rocket2_2": {}
+      },
+      "Crash:PlayerForceLook34_956": {}
+    }
   },
   {
     "name": "PedestalButton2_2",
@@ -5921,9 +5987,9 @@
     "lat": -14479.7939453125,
     "lng": 45160.046875,
     "alt": 605.9805908203125,
-    "actors": [
-      "Crash:TalkingSpeaker2_2"
-    ]
+    "actors": {
+      "Crash:TalkingSpeaker2_2": {}
+    }
   },
   {
     "name": "PedestalButton3_2",
@@ -5932,9 +5998,9 @@
     "lat": -7866.75244140625,
     "lng": -8168.8212890625,
     "alt": 434.3741455078125,
-    "actors": [
-      "Crash:CarryPipe_2"
-    ]
+    "actors": {
+      "Crash:CarryPipe_2": {}
+    }
   },
   {
     "name": "PedestalButton4_2",
@@ -5951,9 +6017,9 @@
     "lat": 2440.0,
     "lng": 713.3240356445312,
     "alt": 750.0,
-    "actors": [
-      "Crash:DoorLego40_9"
-    ]
+    "actors": {
+      "Crash:DoorLego40_9": {}
+    }
   },
   {
     "name": "PedestalButton7_2",
@@ -5962,9 +6028,9 @@
     "lat": -6574.47607421875,
     "lng": 4100.64501953125,
     "alt": 44.20263671875,
-    "actors": [
-      "Crash:Door25"
-    ]
+    "actors": {
+      "Crash:Door25": {}
+    }
   },
   {
     "name": "PedestalButton8_2",
@@ -5973,9 +6039,9 @@
     "lat": -8887.9384765625,
     "lng": 44369.09375,
     "alt": 201.56182861328125,
-    "actors": [
-      "Crash:Door26_2"
-    ]
+    "actors": {
+      "Crash:Door26_2": {}
+    }
   },
   {
     "name": "PedestalButton9_2",
@@ -5984,10 +6050,12 @@
     "lat": 2266.50927734375,
     "lng": 37339.015625,
     "alt": -1499.62841796875,
-    "actors": [
-      "Crash:MoveMesh23_2",
-      "Crash:PlayerForceLook26_6"
-    ]
+    "actors": {
+      "Crash:MoveMesh23_2": {
+        "Crash:metalSet3_MetalBar_19": {}
+      },
+      "Crash:PlayerForceLook26_6": {}
+    }
   },
   {
     "name": "PedestalButton_2",
@@ -5996,9 +6064,9 @@
     "lat": 2298.2490234375,
     "lng": 5240.365234375,
     "alt": -2242.6328125,
-    "actors": [
-      "Crash:Battery2_2"
-    ]
+    "actors": {
+      "Crash:Battery2_2": {}
+    }
   },
   {
     "name": "PipeCap2_5",
@@ -6570,9 +6638,13 @@
     "lat": -8141.369140625,
     "lng": 43012.25390625,
     "alt": 1519.4063720703125,
-    "actors": [
-      "Crash:Glowline79_2"
-    ]
+    "actors": {
+      "Crash:Glowline79_2": {
+        "Crash:MoveMesh18_2": {
+          "Crash:Wood_block_259": {}
+        }
+      }
+    }
   },
   {
     "name": "Smallbutton5",
@@ -6581,9 +6653,11 @@
     "lat": -4638.01416015625,
     "lng": 23777.169921875,
     "alt": -140.58798217773438,
-    "actors": [
-      "Crash:MoveMesh6_14"
-    ]
+    "actors": {
+      "Crash:MoveMesh6_14": {
+        "Crash:Wood_block_238": {}
+      }
+    }
   },
   {
     "name": "Smallbutton3_2",
@@ -6600,9 +6674,9 @@
     "lat": -1493.974853515625,
     "lng": 18391.443359375,
     "alt": -585.1307373046875,
-    "actors": [
-      "Crash:Sponge_Large_2"
-    ]
+    "actors": {
+      "Crash:Sponge_Large_2": {}
+    }
   },
   {
     "name": "Smallbutton6_2",
@@ -6611,9 +6685,9 @@
     "lat": 938.0536499023438,
     "lng": 37807.0625,
     "alt": -107.259033203125,
-    "actors": [
-      "Crash:TranslocatorDisc_2"
-    ]
+    "actors": {
+      "Crash:TranslocatorDisc_2": {}
+    }
   },
   {
     "name": "Smallbutton_2",
@@ -6630,9 +6704,9 @@
     "lat": -4381.5048828125,
     "lng": 55074.79296875,
     "alt": 2198.486328125,
-    "actors": [
-      "Crash:EffectTriggerable5"
-    ]
+    "actors": {
+      "Crash:EffectTriggerable5": {}
+    }
   },
   {
     "name": "SmallbuttonFlipFlop2",
@@ -6641,9 +6715,11 @@
     "lat": 18092.798828125,
     "lng": 21149.666015625,
     "alt": 2396.643798828125,
-    "actors": [
-      "Crash:MoveMesh14"
-    ]
+    "actors": {
+      "Crash:MoveMesh14": {
+        "Crash:Brick66": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonFlipFlop3",
@@ -6652,9 +6728,11 @@
     "lat": -265.7269592285156,
     "lng": 35165.30859375,
     "alt": 279.07183837890625,
-    "actors": [
-      "Crash:MoveMesh22"
-    ]
+    "actors": {
+      "Crash:MoveMesh22": {
+        "Crash:Brick140": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonFlipFlop_2",
@@ -6663,9 +6741,11 @@
     "lat": 18191.81640625,
     "lng": 18352.5234375,
     "alt": 2360.849853515625,
-    "actors": [
-      "Crash:MoveMesh13"
-    ]
+    "actors": {
+      "Crash:MoveMesh13": {
+        "Crash:Brick65_109": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonMultipleActors4_2",
@@ -6674,9 +6754,9 @@
     "lat": -15654.466796875,
     "lng": 44278.51171875,
     "alt": 551.3653564453125,
-    "actors": [
-      "Crash:Key_2"
-    ]
+    "actors": {
+      "Crash:Key_2": {}
+    }
   },
   {
     "name": "SmallbuttonMultipleActors5_1",
@@ -6685,9 +6765,9 @@
     "lat": -16312.962890625,
     "lng": 47445.01171875,
     "alt": 451.4610900878906,
-    "actors": [
-      "Crash:Battery_2"
-    ]
+    "actors": {
+      "Crash:Battery_2": {}
+    }
   },
   {
     "name": "SmallbuttonMultipleActors2_2",
@@ -6696,10 +6776,10 @@
     "lat": -4567.521484375,
     "lng": 42210.1640625,
     "alt": 759.5975341796875,
-    "actors": [
-      "Crash:Jumppad3",
-      "Crash:Glowline5_8"
-    ]
+    "actors": {
+      "Crash:Jumppad3": {},
+      "Crash:Glowline5_8": {}
+    }
   },
   {
     "name": "SmallbuttonMultipleActors_2",
@@ -6708,9 +6788,9 @@
     "lat": -1236.88525390625,
     "lng": 39365.3671875,
     "alt": 220.0,
-    "actors": [
-      "Crash:DoorLego4"
-    ]
+    "actors": {
+      "Crash:DoorLego4": {}
+    }
   },
   {
     "name": "SmallbuttonMultipleActors3",
@@ -6719,9 +6799,11 @@
     "lat": 3235.880615234375,
     "lng": 38572.69921875,
     "alt": 300.9156188964844,
-    "actors": [
-      "Crash:Glowline8_15"
-    ]
+    "actors": {
+      "Crash:Glowline8_15": {
+        "Crash:Jumppad4": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonMultipleActors6",
@@ -6730,9 +6812,9 @@
     "lat": -15652.8076171875,
     "lng": 47425.8671875,
     "alt": 440.344970703125,
-    "actors": [
-      "Crash:Door4_2"
-    ]
+    "actors": {
+      "Crash:Door4_2": {}
+    }
   },
   {
     "name": "SmallbuttonMultipleActors8",
@@ -6741,9 +6823,9 @@
     "lat": -17596.45703125,
     "lng": 49565.0625,
     "alt": 1196.8118896484375,
-    "actors": [
-      "Crash:Door32"
-    ]
+    "actors": {
+      "Crash:Door32": {}
+    }
   },
   {
     "name": "SmallbuttonOpenClose2_2",
@@ -6752,9 +6834,9 @@
     "lat": 1373.5477294921875,
     "lng": 34265.10546875,
     "alt": 710.7374267578125,
-    "actors": [
-      "Crash:DoorLego43"
-    ]
+    "actors": {
+      "Crash:DoorLego43": {}
+    }
   },
   {
     "name": "SmallbuttonOpenClose3_2",
@@ -6763,9 +6845,11 @@
     "lat": -6760.51953125,
     "lng": 2133.810302734375,
     "alt": 785.7935180664062,
-    "actors": [
-      "Crash:SignalInverter5_2"
-    ]
+    "actors": {
+      "Crash:SignalInverter5_2": {
+        "Crash:FirePipe8_2": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonOpenClose_2",
@@ -6774,9 +6858,11 @@
     "lat": -9393.794921875,
     "lng": -7539.73046875,
     "alt": -3488.21923828125,
-    "actors": [
-      "Crash:Glowline49"
-    ]
+    "actors": {
+      "Crash:Glowline49": {
+        "Crash:DoorLego9": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonQuickOnoff_2",
@@ -6785,9 +6871,9 @@
     "lat": 2892.714599609375,
     "lng": 37213.28515625,
     "alt": -1248.984375,
-    "actors": [
-      "Crash:Jumppad32_2"
-    ]
+    "actors": {
+      "Crash:Jumppad32_2": {}
+    }
   },
   {
     "name": "SmallbuttonWhile2",
@@ -6796,9 +6882,11 @@
     "lat": 734.470947265625,
     "lng": 6619.6865234375,
     "alt": 153.97802734375,
-    "actors": [
-      "Crash:Glowline83_2"
-    ]
+    "actors": {
+      "Crash:Glowline83_2": {
+        "Crash:DoorLego45": {}
+      }
+    }
   },
   {
     "name": "SmallbuttonWhile_2",
@@ -6807,9 +6895,15 @@
     "lat": -7638.435546875,
     "lng": 2873.109130859375,
     "alt": 165.45498657226562,
-    "actors": [
-      "Crash:Glowline81_2"
-    ]
+    "actors": {
+      "Crash:Glowline81_2": {
+        "Crash:MoveMesh33_2": {
+          "Crash:Wood_block_80": {}
+        },
+        "Crash:Gears4": {},
+        "Crash:Gears_2": {}
+      }
+    }
   },
   {
     "name": "SwingingDoor10",

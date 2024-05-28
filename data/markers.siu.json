@@ -6,9 +6,11 @@
     "lat": -57945.18359375,
     "lng": 56204.41015625,
     "alt": 4406.310546875,
-    "actors": [
-      "DLC2_Complete:Glowline67_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline67_2": {
+        "DLC2_Complete:DoorStone10_2": {}
+      }
+    }
   },
   {
     "name": "BallButton2",
@@ -17,10 +19,10 @@
     "lat": -50491.75390625,
     "lng": 52167.03125,
     "alt": 464.793701171875,
-    "actors": [
-      "DLC2_Complete:Jumppad16",
-      "DLC2_Complete:Glowline57"
-    ]
+    "actors": {
+      "DLC2_Complete:Jumppad16": {},
+      "DLC2_Complete:Glowline57": {}
+    }
   },
   {
     "name": "BallButton3_2",
@@ -29,9 +31,13 @@
     "lat": -45890.19921875,
     "lng": 44969.796875,
     "alt": 769.1431274414062,
-    "actors": [
-      "DLC2_Complete:Glowline109_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline109_2": {
+        "DLC2_Complete:MoveMesh27_2": {
+          "DLC2_Complete:Cartoon_plank_148": {}
+        }
+      }
+    }
   },
   {
     "name": "BallButton4_2",
@@ -40,9 +46,11 @@
     "lat": -2737.76611328125,
     "lng": -58926.28515625,
     "alt": 6820.4248046875,
-    "actors": [
-      "DLC2_Complete:Glowline139_4"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline139_4": {
+        "DLC2_Complete:DoorInverted15_2": {}
+      }
+    }
   },
   {
     "name": "BallButton5_2",
@@ -51,9 +59,13 @@
     "lat": 6046.8515625,
     "lng": -58583.98046875,
     "alt": 1246.7735595703125,
-    "actors": [
-      "DLC2_Complete:Glowline141_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline141_2": {
+        "DLC2_Complete:SignalInverter8_2": {
+          "DLC2_Complete:BP_EnemyArenaShieldToggler2_2": {}
+        }
+      }
+    }
   },
   {
     "name": "BatteryExplosionDetector_2",
@@ -294,9 +306,9 @@
     "lat": -47705.51953125,
     "lng": -6.793715953826904,
     "alt": 3265.543701171875,
-    "actors": [
-      "DLC2_Complete:Glowline133"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline133": {}
+    }
   },
   {
     "name": "ButtonFloor11_7",
@@ -305,9 +317,11 @@
     "lat": -13531.57421875,
     "lng": 55461.53515625,
     "alt": 456.56219482421875,
-    "actors": [
-      "DLC2_Complete:Glowline80_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline80_2": {
+        "DLC2_Complete:Door47": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor12",
@@ -316,10 +330,12 @@
     "lat": -54853.6328125,
     "lng": 56879.890625,
     "alt": 457.311279296875,
-    "actors": [
-      "DLC2_Complete:MoveMesh2_2",
-      "DLC2_Complete:Glowline41"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh2_2": {
+        "DLC2_Complete:Red_brick_13": {}
+      },
+      "DLC2_Complete:Glowline41": {}
+    }
   },
   {
     "name": "ButtonFloor13",
@@ -328,10 +344,10 @@
     "lat": -54246.45703125,
     "lng": 56912.84765625,
     "alt": 4339.16064453125,
-    "actors": [
-      "DLC2_Complete:DoorLego_2",
-      "DLC2_Complete:Glowline56"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorLego_2": {},
+      "DLC2_Complete:Glowline56": {}
+    }
   },
   {
     "name": "ButtonFloor14",
@@ -340,15 +356,18 @@
     "lat": -44801.83984375,
     "lng": 51324.2890625,
     "alt": 1903.3919677734375,
-    "actors": [
-      "DLC2_Complete:DoorInverted3_3",
-      "DLC2_Complete:DoorInverted4",
-      "DLC2_Complete:DoorInverted5",
-      "DLC2_Complete:SignalInverter4",
-      "DLC2_Complete:Glowline51",
-      "DLC2_Complete:DoorInverted10_2",
-      "DLC2_Complete:Glowline107"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorInverted3_3": {},
+      "DLC2_Complete:DoorInverted4": {},
+      "DLC2_Complete:DoorInverted5": {},
+      "DLC2_Complete:SignalInverter4": {
+        "DLC2_Complete:Glowline53": {},
+        "DLC2_Complete:Glowline52": {}
+      },
+      "DLC2_Complete:Glowline51": {},
+      "DLC2_Complete:DoorInverted10_2": {},
+      "DLC2_Complete:Glowline107": {}
+    }
   },
   {
     "name": "ButtonFloor15",
@@ -357,10 +376,10 @@
     "lat": -48448.203125,
     "lng": 52027.265625,
     "alt": 3185.39208984375,
-    "actors": [
-      "DLC2_Complete:Door34",
-      "DLC2_Complete:Glowline82"
-    ]
+    "actors": {
+      "DLC2_Complete:Door34": {},
+      "DLC2_Complete:Glowline82": {}
+    }
   },
   {
     "name": "ButtonFloor16",
@@ -369,10 +388,12 @@
     "lat": -45938.80859375,
     "lng": 39874.14453125,
     "alt": 871.0582275390625,
-    "actors": [
-      "DLC2_Complete:MoveMesh5",
-      "DLC2_Complete:Glowline61"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh5": {
+        "DLC2_Complete:BeamUp": {}
+      },
+      "DLC2_Complete:Glowline61": {}
+    }
   },
   {
     "name": "ButtonFloor17_8797",
@@ -381,10 +402,10 @@
     "lat": -46958.078125,
     "lng": 44538.59375,
     "alt": 752.3919677734375,
-    "actors": [
-      "DLC2_Complete:Jumppad30_2",
-      "DLC2_Complete:Glowline108_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Jumppad30_2": {},
+      "DLC2_Complete:Glowline108_2": {}
+    }
   },
   {
     "name": "ButtonFloor18",
@@ -393,10 +414,10 @@
     "lat": -61027.3515625,
     "lng": 48627.52734375,
     "alt": 252.6885986328125,
-    "actors": [
-      "DLC2_Complete:RampArea7",
-      "DLC2_Complete:Glowline73"
-    ]
+    "actors": {
+      "DLC2_Complete:RampArea7": {},
+      "DLC2_Complete:Glowline73": {}
+    }
   },
   {
     "name": "ButtonFloor19",
@@ -405,9 +426,9 @@
     "lat": -47705.5234375,
     "lng": -783.9344482421875,
     "alt": 3264.465576171875,
-    "actors": [
-      "DLC2_Complete:Glowline132"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline132": {}
+    }
   },
   {
     "name": "ButtonFloor20",
@@ -416,14 +437,14 @@
     "lat": -48915.171875,
     "lng": 54269.49609375,
     "alt": 1899.688232421875,
-    "actors": [
-      "DLC2_Complete:DoorInverted6",
-      "DLC2_Complete:Door40",
-      "DLC2_Complete:DoorInverted7",
-      "DLC2_Complete:Glowline69",
-      "DLC2_Complete:Glowline70",
-      "DLC2_Complete:Glowline71"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorInverted6": {},
+      "DLC2_Complete:Door40": {},
+      "DLC2_Complete:DoorInverted7": {},
+      "DLC2_Complete:Glowline69": {},
+      "DLC2_Complete:Glowline70": {},
+      "DLC2_Complete:Glowline71": {}
+    }
   },
   {
     "name": "ButtonFloor21",
@@ -432,9 +453,13 @@
     "lat": -14936.9189453125,
     "lng": -57327.4609375,
     "alt": 10673.400390625,
-    "actors": [
-      "DLC2_Complete:Glowline115"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline115": {
+        "DLC2_Complete:MoveMesh13_4": {
+          "DLC2_Complete:Wood_block_21": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor22",
@@ -443,9 +468,11 @@
     "lat": -9821.26953125,
     "lng": -58246.1640625,
     "alt": 8252.22265625,
-    "actors": [
-      "DLC2_Complete:Glowline114"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline114": {
+        "DLC2_Complete:Magnet_Base6": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor23",
@@ -454,9 +481,13 @@
     "lat": -5429.21142578125,
     "lng": -46161.9453125,
     "alt": 8258.677734375,
-    "actors": [
-      "DLC2_Complete:Glowline116"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline116": {
+        "DLC2_Complete:MoveMesh15": {
+          "DLC2_Complete:Wood_block_23": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor24_6100",
@@ -465,10 +496,12 @@
     "lat": -10382.8505859375,
     "lng": 55441.80859375,
     "alt": 457.0,
-    "actors": [
-      "DLC2_Complete:MoveMesh18_2",
-      "DLC2_Complete:Glowline11"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh18_2": {
+        "DLC2_Complete:MovingPlank": {}
+      },
+      "DLC2_Complete:Glowline11": {}
+    }
   },
   {
     "name": "ButtonFloor25",
@@ -477,10 +510,10 @@
     "lat": -22553.19140625,
     "lng": 20208.427734375,
     "alt": 1867.7869873046875,
-    "actors": [
-      "DLC2_Complete:Glowline7_2",
-      "DLC2_Complete:Door63_1"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline7_2": {},
+      "DLC2_Complete:Door63_1": {}
+    }
   },
   {
     "name": "ButtonFloor26_6103",
@@ -489,9 +522,13 @@
     "lat": -8312.263671875,
     "lng": 62087.359375,
     "alt": 414.0,
-    "actors": [
-      "DLC2_Complete:Glowline10"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline10": {
+        "DLC2_Complete:MoveMeshPipe": {
+          "DLC2_Complete:RotatingPipe": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor27_8796",
@@ -500,9 +537,13 @@
     "lat": 5436.916015625,
     "lng": -56796.73828125,
     "alt": 1852.55322265625,
-    "actors": [
-      "DLC2_Complete:Glowline140_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline140_2": {
+        "DLC2_Complete:SignalInverter11": {
+          "DLC2_Complete:BP_EnemyArenaShieldToggler3": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor2_5",
@@ -511,10 +552,10 @@
     "lat": -15678.0498046875,
     "lng": 57937.83203125,
     "alt": 429.43939208984375,
-    "actors": [
-      "DLC2_Complete:Glowline13",
-      "DLC2_Complete:PipeCap_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline13": {},
+      "DLC2_Complete:PipeCap_2": {}
+    }
   },
   {
     "name": "ButtonFloor3_1",
@@ -523,9 +564,11 @@
     "lat": -15136.0673828125,
     "lng": 61236.5546875,
     "alt": 1247.4632568359375,
-    "actors": [
-      "DLC2_Complete:Glowline14_6"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline14_6": {
+        "DLC2_Complete:Door6": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor4_2",
@@ -534,10 +577,16 @@
     "lat": -8443.95703125,
     "lng": 60879.45703125,
     "alt": 416.1670227050781,
-    "actors": [
-      "DLC2_Complete:Glowline16",
-      "DLC2_Complete:Glowline15"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline16": {
+        "DLC2_Complete:Door11": {}
+      },
+      "DLC2_Complete:Glowline15": {
+        "DLC2_Complete:SignalInverter2_2": {
+          "DLC2_Complete:Door75": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor5",
@@ -546,10 +595,10 @@
     "lat": -10139.3388671875,
     "lng": 62757.96875,
     "alt": 413.0,
-    "actors": [
-      "DLC2_Complete:Door14",
-      "DLC2_Complete:Glowline79_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Door14": {},
+      "DLC2_Complete:Glowline79_2": {}
+    }
   },
   {
     "name": "ButtonFloor6",
@@ -558,9 +607,13 @@
     "lat": -14866.97265625,
     "lng": 60902.03515625,
     "alt": 429.43939208984375,
-    "actors": [
-      "DLC2_Complete:Glowline127_5"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline127_5": {
+        "DLC2_Complete:MoveMesh22_2": {
+          "DLC2_Complete:WoodenPart23_460": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor7",
@@ -569,9 +622,13 @@
     "lat": -39299.9296875,
     "lng": -4829.150390625,
     "alt": 1804.862060546875,
-    "actors": [
-      "DLC2_Complete:Glowline8_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline8_2": {
+        "DLC2_Complete:MoveMesh21": {
+          "DLC2_Complete:Red_brick_43": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor8_2",
@@ -580,9 +637,11 @@
     "lat": -46267.83203125,
     "lng": 44519.6484375,
     "alt": 113.3919677734375,
-    "actors": [
-      "DLC2_Complete:Glowline54_10"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline54_10": {
+        "DLC2_Complete:DoorInverted14_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor9",
@@ -591,9 +650,11 @@
     "lat": -42713.89453125,
     "lng": -6100.939453125,
     "alt": 2499.52734375,
-    "actors": [
-      "DLC2_Complete:Glowline28"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline28": {
+        "DLC2_Complete:Door2_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor_2",
@@ -602,9 +663,11 @@
     "lat": 19706.345703125,
     "lng": 20397.435546875,
     "alt": 3077.958740234375,
-    "actors": [
-      "DLC2_Complete:Glowline95_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline95_2": {
+        "DLC2_Complete:Counter5_5": {}
+      }
+    }
   },
   {
     "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_1147",
@@ -8678,9 +8741,9 @@
     "lat": -52353.9921875,
     "lng": 47191.03125,
     "alt": 529.594482421875,
-    "actors": [
-      "DLC2_Complete:Door71"
-    ]
+    "actors": {
+      "DLC2_Complete:Door71": {}
+    }
   },
   {
     "name": "KeyLockPlastic10_5",
@@ -8833,9 +8896,11 @@
     "lat": -20820.953125,
     "lng": 21885.814453125,
     "alt": -110.0,
-    "actors": [
-      "DLC2_Complete:Glowline86_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline86_2": {
+        "DLC2_Complete:DoorAnna13_2": {}
+      }
+    }
   },
   {
     "name": "Lever11_2",
@@ -8844,9 +8909,11 @@
     "lat": -30245.7734375,
     "lng": 24642.03125,
     "alt": 2023.79150390625,
-    "actors": [
-      "DLC2_Complete:Glowline122_5"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline122_5": {
+        "DLC2_Complete:Door52_2": {}
+      }
+    }
   },
   {
     "name": "Lever12_2",
@@ -8855,11 +8922,11 @@
     "lat": -54846.67578125,
     "lng": 52939.76171875,
     "alt": 19.0,
-    "actors": [
-      "DLC2_Complete:DoorAnna9",
-      "DLC2_Complete:DoorAnna7",
-      "DLC2_Complete:Glowline50"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorAnna9": {},
+      "DLC2_Complete:DoorAnna7": {},
+      "DLC2_Complete:Glowline50": {}
+    }
   },
   {
     "name": "Lever13_5",
@@ -8868,9 +8935,11 @@
     "lat": -24545.6171875,
     "lng": 14738.234375,
     "alt": 1431.0,
-    "actors": [
-      "DLC2_Complete:Glowline5_8"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline5_8": {
+        "DLC2_Complete:DLC2_Town_Ramp3": {}
+      }
+    }
   },
   {
     "name": "Lever14_4",
@@ -8879,9 +8948,13 @@
     "lat": -17705.02734375,
     "lng": 45718.265625,
     "alt": 1503.8736572265625,
-    "actors": [
-      "DLC2_Complete:Glowline123_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline123_2": {
+        "DLC2_Complete:MoveMesh20_2": {
+          "DLC2_Complete:Single_basalt858": {}
+        }
+      }
+    }
   },
   {
     "name": "Lever15_2",
@@ -8890,10 +8963,14 @@
     "lat": 12212.10546875,
     "lng": 22151.060546875,
     "alt": 3546.497314453125,
-    "actors": [
-      "DLC2_Complete:Glowline126_2",
-      "DLC2_Complete:Glowline104_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline126_2": {
+        "DLC2_Complete:PipeCap9_5": {}
+      },
+      "DLC2_Complete:Glowline104_2": {
+        "DLC2_Complete:PipeCap14": {}
+      }
+    }
   },
   {
     "name": "Lever16_5",
@@ -8902,9 +8979,11 @@
     "lat": -26721.009765625,
     "lng": 25888.611328125,
     "alt": 935.6543579101562,
-    "actors": [
-      "DLC2_Complete:Glowline105_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline105_2": {
+        "DLC2_Complete:Door61_3": {}
+      }
+    }
   },
   {
     "name": "Lever18_2",
@@ -8913,9 +8992,13 @@
     "lat": -12049.1865234375,
     "lng": 41341.203125,
     "alt": 2864.204345703125,
-    "actors": [
-      "DLC2_Complete:Glowline138_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline138_2": {
+        "DLC2_Complete:MoveMesh29_2": {
+          "DLC2_Complete:Windowthing10_31": {}
+        }
+      }
+    }
   },
   {
     "name": "Lever2",
@@ -8932,10 +9015,12 @@
     "lat": -13367.5986328125,
     "lng": 59401.58203125,
     "alt": 482.4542236328125,
-    "actors": [
-      "DLC2_Complete:Glowline89_2",
-      "DLC2_Complete:Jumppad8"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline89_2": {
+        "DLC2_Complete:Door31_2": {}
+      },
+      "DLC2_Complete:Jumppad8": {}
+    }
   },
   {
     "name": "Lever4_2",
@@ -8944,9 +9029,9 @@
     "lat": -12030.666015625,
     "lng": 56362.8828125,
     "alt": 500.0,
-    "actors": [
-      "DLC2_Complete:Glowline74_5"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline74_5": {}
+    }
   },
   {
     "name": "Lever5_2",
@@ -8955,10 +9040,10 @@
     "lat": -54541.671875,
     "lng": 43405.0078125,
     "alt": 1261.9051513671875,
-    "actors": [
-      "DLC2_Complete:RampArea5_2",
-      "DLC2_Complete:Glowline27_2"
-    ]
+    "actors": {
+      "DLC2_Complete:RampArea5_2": {},
+      "DLC2_Complete:Glowline27_2": {}
+    }
   },
   {
     "name": "Lever6_2",
@@ -8967,9 +9052,9 @@
     "lat": -31891.646484375,
     "lng": 18115.40234375,
     "alt": 3880.006591796875,
-    "actors": [
-      "DLC2_Complete:Noquest"
-    ]
+    "actors": {
+      "DLC2_Complete:Noquest": {}
+    }
   },
   {
     "name": "Lever7_4",
@@ -8978,9 +9063,9 @@
     "lat": -14685.8837890625,
     "lng": 59016.1328125,
     "alt": 603.8480224609375,
-    "actors": [
-      "DLC2_Complete:Glowline58_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline58_2": {}
+    }
   },
   {
     "name": "Lever8_2",
@@ -8989,9 +9074,11 @@
     "lat": -16951.251953125,
     "lng": 44808.20703125,
     "alt": 550.175048828125,
-    "actors": [
-      "DLC2_Complete:Glowline9_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline9_2": {
+        "DLC2_Complete:Door44_5": {}
+      }
+    }
   },
   {
     "name": "Lever9_5",
@@ -9000,10 +9087,12 @@
     "lat": -28175.091796875,
     "lng": 19982.1640625,
     "alt": 1171.785400390625,
-    "actors": [
-      "DLC2_Complete:Glowline4_2",
-      "DLC2_Complete:BP_RampLadyUpdate_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline4_2": {
+        "DLC2_Complete:DLC2_Town_Ramp2_0": {}
+      },
+      "DLC2_Complete:BP_RampLadyUpdate_2": {}
+    }
   },
   {
     "name": "Lever_2",
@@ -9012,10 +9101,10 @@
     "lat": 17323.8984375,
     "lng": 22270.150390625,
     "alt": 3853.4931640625,
-    "actors": [
-      "DLC2_Complete:Metalset1_SteelPoleRound_27",
-      "DLC2_Complete:Gears_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Metalset1_SteelPoleRound_27": {},
+      "DLC2_Complete:Gears_2": {}
+    }
   },
   {
     "name": "Lift1_2",
@@ -9040,10 +9129,10 @@
     "lat": -37370.0,
     "lng": 4126.0361328125,
     "alt": 1880.0,
-    "actors": [
-      "DLC2_Complete:Glowline34",
-      "DLC2_Complete:PaintMachine"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline34": {},
+      "DLC2_Complete:PaintMachine": {}
+    }
   },
   {
     "name": "Match_Lever_2",
@@ -9052,9 +9141,9 @@
     "lat": -15625.55078125,
     "lng": 46879.984375,
     "alt": -45.4281005859375,
-    "actors": [
-      "DLC2_Complete:Glowline17"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline17": {}
+    }
   },
   {
     "name": "MatchBox10",
@@ -12861,9 +12950,9 @@
     "lat": -51360.97265625,
     "lng": 3371.258056640625,
     "alt": 3230.788818359375,
-    "actors": [
-      "DLC2_Complete:BankElectricityPuzzle_1_ExplodingBattery"
-    ]
+    "actors": {
+      "DLC2_Complete:BankElectricityPuzzle_1_ExplodingBattery": {}
+    }
   },
   {
     "name": "PedestalButton10",
@@ -12872,10 +12961,10 @@
     "lat": -20519.833984375,
     "lng": 60106.67578125,
     "alt": 3963.5419921875,
-    "actors": [
-      "DLC2_Complete:Glowline18",
-      "DLC2_Complete:Jumppad6_4"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline18": {},
+      "DLC2_Complete:Jumppad6_4": {}
+    }
   },
   {
     "name": "PedestalButton100_2",
@@ -12884,10 +12973,10 @@
     "lat": 17262.2578125,
     "lng": 19722.01171875,
     "alt": 3699.432861328125,
-    "actors": [
-      "DLC2_Complete:Glowline_2",
-      "DLC2_Complete:FireEffect_226"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline_2": {},
+      "DLC2_Complete:FireEffect_226": {}
+    }
   },
   {
     "name": "PedestalButton101_2",
@@ -12896,9 +12985,9 @@
     "lat": -52297.2578125,
     "lng": 47255.4609375,
     "alt": -57.17307662963867,
-    "actors": [
-      "DLC2_Complete:Key3"
-    ]
+    "actors": {
+      "DLC2_Complete:Key3": {}
+    }
   },
   {
     "name": "PedestalButton102_2",
@@ -12907,9 +12996,11 @@
     "lat": -49395.0,
     "lng": 53095.0,
     "alt": 1905.0,
-    "actors": [
-      "DLC2_Complete:Glowline134_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline134_2": {
+        "DLC2_Complete:Jumppad31_2": {}
+      }
+    }
   },
   {
     "name": "PedestalButton102_NewAndImproved",
@@ -12918,11 +13009,11 @@
     "lat": -31550.009765625,
     "lng": 27655.666015625,
     "alt": -239.3452606201172,
-    "actors": [
-      "DLC2_Complete:ShieldGenerator_2",
-      "DLC2_Complete:Glowline91_2",
-      "DLC2_Complete:BP_EnemyArenaShieldToggler_2"
-    ]
+    "actors": {
+      "DLC2_Complete:ShieldGenerator_2": {},
+      "DLC2_Complete:Glowline91_2": {},
+      "DLC2_Complete:BP_EnemyArenaShieldToggler_2": {}
+    }
   },
   {
     "name": "PedestalButton103",
@@ -12931,13 +13022,13 @@
     "lat": -288940.65625,
     "lng": 321.0,
     "alt": 10292.11328125,
-    "actors": [
-      "DLC2_Complete:10",
-      "DLC2_Complete:9",
-      "DLC2_Complete:8_2",
-      "DLC2_Complete:11",
-      "DLC2_Complete:12"
-    ]
+    "actors": {
+      "DLC2_Complete:10": {},
+      "DLC2_Complete:9": {},
+      "DLC2_Complete:8_2": {},
+      "DLC2_Complete:11": {},
+      "DLC2_Complete:12": {}
+    }
   },
   {
     "name": "PedestalButton104",
@@ -12946,9 +13037,9 @@
     "lat": -47285.0625,
     "lng": 6349.39306640625,
     "alt": 2948.888671875,
-    "actors": [
-      "DLC2_Complete:TalkingSpeaker10"
-    ]
+    "actors": {
+      "DLC2_Complete:TalkingSpeaker10": {}
+    }
   },
   {
     "name": "PedestalButton105",
@@ -12957,9 +13048,9 @@
     "lat": -50154.640625,
     "lng": 4072.542724609375,
     "alt": 2663.843505859375,
-    "actors": [
-      "DLC2_Complete:PrintingPressDoor9"
-    ]
+    "actors": {
+      "DLC2_Complete:PrintingPressDoor9": {}
+    }
   },
   {
     "name": "PedestalButton106_2",
@@ -12968,9 +13059,9 @@
     "lat": -42613.6640625,
     "lng": 148.39683532714844,
     "alt": 1810.873779296875,
-    "actors": [
-      "DLC2_Complete:TeslaCoil11_4"
-    ]
+    "actors": {
+      "DLC2_Complete:TeslaCoil11_4": {}
+    }
   },
   {
     "name": "PedestalButton107_2",
@@ -12979,9 +13070,9 @@
     "lat": 501.7955322265625,
     "lng": -58674.19140625,
     "alt": 8093.3203125,
-    "actors": [
-      "DLC2_Complete:DoorInverted15_2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorInverted15_2": {}
+    }
   },
   {
     "name": "PedestalButton11",
@@ -12990,10 +13081,10 @@
     "lat": -11077.685546875,
     "lng": 63672.58984375,
     "alt": 4026.762451171875,
-    "actors": [
-      "DLC2_Complete:Glowline12_4",
-      "DLC2_Complete:Jumppad7"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline12_4": {},
+      "DLC2_Complete:Jumppad7": {}
+    }
   },
   {
     "name": "PedestalButton12",
@@ -13002,9 +13093,9 @@
     "lat": -10631.54296875,
     "lng": 62433.5234375,
     "alt": 439.53228759765625,
-    "actors": [
-      "DLC2_Complete:ValveCarriable4"
-    ]
+    "actors": {
+      "DLC2_Complete:ValveCarriable4": {}
+    }
   },
   {
     "name": "PedestalButton13_2",
@@ -13013,9 +13104,9 @@
     "lat": -47933.08984375,
     "lng": 4474.078125,
     "alt": 1720.2431640625,
-    "actors": [
-      "DLC2_Complete:KeycardColor4"
-    ]
+    "actors": {
+      "DLC2_Complete:KeycardColor4": {}
+    }
   },
   {
     "name": "PedestalButton14_5",
@@ -13024,9 +13115,9 @@
     "lat": -40436.796875,
     "lng": -1736.479248046875,
     "alt": 1776.9998779296875,
-    "actors": [
-      "DLC2_Complete:KeycardColor_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeycardColor_2": {}
+    }
   },
   {
     "name": "PedestalButton16_2",
@@ -13035,9 +13126,9 @@
     "lat": -47782.80078125,
     "lng": 51607.19140625,
     "alt": 1886.420654296875,
-    "actors": [
-      "DLC2_Complete:Door34"
-    ]
+    "actors": {
+      "DLC2_Complete:Door34": {}
+    }
   },
   {
     "name": "PedestalButton17",
@@ -13046,9 +13137,9 @@
     "lat": -40599.35546875,
     "lng": -1151.2259521484375,
     "alt": 1758.004150390625,
-    "actors": [
-      "DLC2_Complete:BP_C_RedGuyGoodbye_2"
-    ]
+    "actors": {
+      "DLC2_Complete:BP_C_RedGuyGoodbye_2": {}
+    }
   },
   {
     "name": "PedestalButton18_2",
@@ -13057,9 +13148,9 @@
     "lat": -26400.51953125,
     "lng": 21285.0859375,
     "alt": 1360.39306640625,
-    "actors": [
-      "DLC2_Complete:KeycardColor7_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeycardColor7_2": {}
+    }
   },
   {
     "name": "PedestalButton19_5",
@@ -13084,11 +13175,11 @@
     "lat": -51991.75,
     "lng": -933.1396484375,
     "alt": 1746.620361328125,
-    "actors": [
-      "DLC2_Complete:Glowline44",
-      "DLC2_Complete:Door17",
-      "DLC2_Complete:BP_BankManager8"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline44": {},
+      "DLC2_Complete:Door17": {},
+      "DLC2_Complete:BP_BankManager8": {}
+    }
   },
   {
     "name": "PedestalButton23",
@@ -13097,9 +13188,9 @@
     "lat": -37081.19921875,
     "lng": 3710.468994140625,
     "alt": 2947.52880859375,
-    "actors": [
-      "DLC2_Complete:CarryPipe4_5"
-    ]
+    "actors": {
+      "DLC2_Complete:CarryPipe4_5": {}
+    }
   },
   {
     "name": "PedestalButton24",
@@ -13108,9 +13199,9 @@
     "lat": -38514.75,
     "lng": -850.6549072265625,
     "alt": 1754.999267578125,
-    "actors": [
-      "DLC2_Complete:CarryPipe3_2"
-    ]
+    "actors": {
+      "DLC2_Complete:CarryPipe3_2": {}
+    }
   },
   {
     "name": "PedestalButton25_11",
@@ -13127,9 +13218,9 @@
     "lat": -63200.0546875,
     "lng": 57178.109375,
     "alt": 4371.37353515625,
-    "actors": [
-      "DLC2_Complete:DoorStone10_2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorStone10_2": {}
+    }
   },
   {
     "name": "PedestalButton27",
@@ -13138,11 +13229,11 @@
     "lat": -48552.3203125,
     "lng": 1536.70849609375,
     "alt": 1760.2174072265625,
-    "actors": [
-      "DLC2_Complete:Door30",
-      "DLC2_Complete:Glowline38",
-      "DLC2_Complete:BP_BankManager5"
-    ]
+    "actors": {
+      "DLC2_Complete:Door30": {},
+      "DLC2_Complete:Glowline38": {},
+      "DLC2_Complete:BP_BankManager5": {}
+    }
   },
   {
     "name": "PedestalButton28",
@@ -13151,9 +13242,11 @@
     "lat": -46712.8046875,
     "lng": 39213.84375,
     "alt": 2559.67138671875,
-    "actors": [
-      "DLC2_Complete:MoveMesh6_2"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh6_2": {
+        "DLC2_Complete:Lego_Brick_02_No_Bottom58": {}
+      }
+    }
   },
   {
     "name": "PedestalButton29_2",
@@ -13162,9 +13255,11 @@
     "lat": -45925.48828125,
     "lng": 6119.56689453125,
     "alt": 3271.079833984375,
-    "actors": [
-      "DLC2_Complete:Glowline68_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline68_2": {
+        "DLC2_Complete:Jumppad11_2": {}
+      }
+    }
   },
   {
     "name": "PedestalButton2_2",
@@ -13173,10 +13268,10 @@
     "lat": -31350.150390625,
     "lng": 17752.04296875,
     "alt": 568.8074951171875,
-    "actors": [
-      "DLC2_Complete:Door46",
-      "DLC2_Complete:Glowline110_5"
-    ]
+    "actors": {
+      "DLC2_Complete:Door46": {},
+      "DLC2_Complete:Glowline110_5": {}
+    }
   },
   {
     "name": "PedestalButton3",
@@ -13185,9 +13280,9 @@
     "lat": 2238.164306640625,
     "lng": 11787.7744140625,
     "alt": 3120.9814453125,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery4_2"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery4_2": {}
+    }
   },
   {
     "name": "PedestalButton30_2",
@@ -13196,9 +13291,9 @@
     "lat": -23454.140625,
     "lng": 20993.587890625,
     "alt": 1490.30517578125,
-    "actors": [
-      "DLC2_Complete:Door63_1"
-    ]
+    "actors": {
+      "DLC2_Complete:Door63_1": {}
+    }
   },
   {
     "name": "PedestalButton31_2",
@@ -13207,9 +13302,9 @@
     "lat": -23543.037109375,
     "lng": 15735.98828125,
     "alt": 906.9166259765625,
-    "actors": [
-      "DLC2_Complete:KeyPlastic9_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic9_2": {}
+    }
   },
   {
     "name": "PedestalButton32_7",
@@ -13218,9 +13313,9 @@
     "lat": -47125.19921875,
     "lng": 34780.47265625,
     "alt": 1538.6019287109375,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery3"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery3": {}
+    }
   },
   {
     "name": "PedestalButton34",
@@ -13229,9 +13324,9 @@
     "lat": -46676.828125,
     "lng": 38564.29296875,
     "alt": 748.3919677734375,
-    "actors": [
-      "DLC2_Complete:Anvil2_3"
-    ]
+    "actors": {
+      "DLC2_Complete:Anvil2_3": {}
+    }
   },
   {
     "name": "PedestalButton35_8",
@@ -13240,11 +13335,11 @@
     "lat": -50755.01171875,
     "lng": 40355.71875,
     "alt": -262.2195129394531,
-    "actors": [
-      "DLC2_Complete:Door3_2",
-      "DLC2_Complete:Glowline64",
-      "DLC2_Complete:DestroyObjectsOnTrigger_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Door3_2": {},
+      "DLC2_Complete:Glowline64": {},
+      "DLC2_Complete:DestroyObjectsOnTrigger_2": {}
+    }
   },
   {
     "name": "PedestalButton36",
@@ -13253,10 +13348,10 @@
     "lat": -46648.78125,
     "lng": 40228.38671875,
     "alt": 1659.7330322265625,
-    "actors": [
-      "DLC2_Complete:Glowline66",
-      "DLC2_Complete:Jumppad20"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline66": {},
+      "DLC2_Complete:Jumppad20": {}
+    }
   },
   {
     "name": "PedestalButton37_2",
@@ -13265,9 +13360,11 @@
     "lat": 6514.99853515625,
     "lng": 31686.875,
     "alt": 3900.78515625,
-    "actors": [
-      "DLC2_Complete:Glowline124_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline124_2": {
+        "DLC2_Complete:Jumppad5_2": {}
+      }
+    }
   },
   {
     "name": "PedestalButton38",
@@ -13276,10 +13373,10 @@
     "lat": -46492.1171875,
     "lng": 50260.6796875,
     "alt": 1923.3919677734375,
-    "actors": [
-      "DLC2_Complete:DoorAnna10",
-      "DLC2_Complete:Glowline81"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorAnna10": {},
+      "DLC2_Complete:Glowline81": {}
+    }
   },
   {
     "name": "PedestalButton39",
@@ -13288,10 +13385,10 @@
     "lat": -57134.6328125,
     "lng": 52774.51171875,
     "alt": 3524.626953125,
-    "actors": [
-      "DLC2_Complete:Glowline47",
-      "DLC2_Complete:Jumppad17"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline47": {},
+      "DLC2_Complete:Jumppad17": {}
+    }
   },
   {
     "name": "PedestalButton40",
@@ -13300,10 +13397,10 @@
     "lat": -57901.921875,
     "lng": 53752.71484375,
     "alt": 4403.298828125,
-    "actors": [
-      "DLC2_Complete:Glowline48",
-      "DLC2_Complete:Jumppad15"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline48": {},
+      "DLC2_Complete:Jumppad15": {}
+    }
   },
   {
     "name": "PedestalButton41",
@@ -13312,9 +13409,9 @@
     "lat": -42501.84765625,
     "lng": 50550.7265625,
     "alt": 1930.3919677734375,
-    "actors": [
-      "DLC2_Complete:KeyPlastic5_13"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic5_13": {}
+    }
   },
   {
     "name": "PedestalButton42",
@@ -13323,10 +13420,10 @@
     "lat": -53872.5625,
     "lng": 50512.5,
     "alt": 233.34976196289062,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery2",
-      "DLC2_Complete:Glowline45"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery2": {},
+      "DLC2_Complete:Glowline45": {}
+    }
   },
   {
     "name": "PedestalButton43",
@@ -13335,9 +13432,9 @@
     "lat": -56137.56640625,
     "lng": 49206.9296875,
     "alt": 338.4817810058594,
-    "actors": [
-      "DLC2_Complete:BP_Parasol_44"
-    ]
+    "actors": {
+      "DLC2_Complete:BP_Parasol_44": {}
+    }
   },
   {
     "name": "PedestalButton44",
@@ -13346,9 +13443,9 @@
     "lat": -56091.96484375,
     "lng": 55728.26953125,
     "alt": 951.6207275390625,
-    "actors": [
-      "DLC2_Complete:Sponge_Large2_4"
-    ]
+    "actors": {
+      "DLC2_Complete:Sponge_Large2_4": {}
+    }
   },
   {
     "name": "PedestalButton45",
@@ -13357,9 +13454,9 @@
     "lat": -50221.76171875,
     "lng": 55931.7109375,
     "alt": 462.8076171875,
-    "actors": [
-      "DLC2_Complete:DoorStone6"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorStone6": {}
+    }
   },
   {
     "name": "PedestalButton46_2",
@@ -13368,9 +13465,9 @@
     "lat": -43224.0,
     "lng": -6824.0,
     "alt": 2519.0,
-    "actors": [
-      "DLC2_Complete:BP_Weight_2"
-    ]
+    "actors": {
+      "DLC2_Complete:BP_Weight_2": {}
+    }
   },
   {
     "name": "PedestalButton47_2",
@@ -13379,10 +13476,10 @@
     "lat": -12633.00390625,
     "lng": 32687.7265625,
     "alt": -443.505126953125,
-    "actors": [
-      "DLC2_Complete:Glowline125_2",
-      "DLC2_Complete:BP_ContinuousSpawner_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline125_2": {},
+      "DLC2_Complete:BP_ContinuousSpawner_2": {}
+    }
   },
   {
     "name": "PedestalButton48",
@@ -13391,9 +13488,11 @@
     "lat": -46491.578125,
     "lng": 39283.71484375,
     "alt": 2342.53466796875,
-    "actors": [
-      "DLC2_Complete:MoveMesh8"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh8": {
+        "DLC2_Complete:BlueGlassDoor6": {}
+      }
+    }
   },
   {
     "name": "PedestalButton49",
@@ -13402,9 +13501,11 @@
     "lat": -46442.703125,
     "lng": 39117.95703125,
     "alt": 2331.8974609375,
-    "actors": [
-      "DLC2_Complete:MoveMesh8"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh8": {
+        "DLC2_Complete:BlueGlassDoor6": {}
+      }
+    }
   },
   {
     "name": "PedestalButton4_1",
@@ -13413,9 +13514,9 @@
     "lat": 856.9375610351562,
     "lng": 9741.4794921875,
     "alt": 3193.521484375,
-    "actors": [
-      "DLC2_Complete:KeyPlastic7_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic7_2": {}
+    }
   },
   {
     "name": "PedestalButton5",
@@ -13424,9 +13525,9 @@
     "lat": 4769.29052734375,
     "lng": 23721.73828125,
     "alt": 3674.6845703125,
-    "actors": [
-      "DLC2_Complete:KeyPlastic8_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic8_2": {}
+    }
   },
   {
     "name": "PedestalButton50",
@@ -13435,9 +13536,11 @@
     "lat": -45608.19140625,
     "lng": 40131.26953125,
     "alt": 2324.37548828125,
-    "actors": [
-      "DLC2_Complete:MoveMesh9"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh9": {
+        "DLC2_Complete:BlueGlassDoor8": {}
+      }
+    }
   },
   {
     "name": "PedestalButton51",
@@ -13446,10 +13549,10 @@
     "lat": -53732.0234375,
     "lng": 54416.234375,
     "alt": 485.3956298828125,
-    "actors": [
-      "DLC2_Complete:DoorStone7",
-      "DLC2_Complete:Glowline49"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorStone7": {},
+      "DLC2_Complete:Glowline49": {}
+    }
   },
   {
     "name": "PedestalButton52",
@@ -13458,9 +13561,9 @@
     "lat": -15200.978515625,
     "lng": -54812.14453125,
     "alt": 9249.78515625,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery5"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery5": {}
+    }
   },
   {
     "name": "PedestalButton53",
@@ -13469,9 +13572,11 @@
     "lat": -10966.5283203125,
     "lng": -58720.4921875,
     "alt": 8320.8046875,
-    "actors": [
-      "DLC2_Complete:MoveMesh14_5"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh14_5": {
+        "DLC2_Complete:Wood_block_22": {}
+      }
+    }
   },
   {
     "name": "PedestalButton54",
@@ -13480,9 +13585,9 @@
     "lat": -15216.404296875,
     "lng": -54812.72265625,
     "alt": 9371.203125,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery6"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery6": {}
+    }
   },
   {
     "name": "PedestalButton55_2",
@@ -13491,9 +13596,9 @@
     "lat": -44310.0,
     "lng": -6290.0,
     "alt": 2519.0,
-    "actors": [
-      "DLC2_Complete:CarryStones_Heavy2"
-    ]
+    "actors": {
+      "DLC2_Complete:CarryStones_Heavy2": {}
+    }
   },
   {
     "name": "PedestalButton56",
@@ -13502,9 +13607,9 @@
     "lat": -7638.07763671875,
     "lng": -43045.140625,
     "alt": 9058.224609375,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery7"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery7": {}
+    }
   },
   {
     "name": "PedestalButton58",
@@ -13513,9 +13618,9 @@
     "lat": -24427.1484375,
     "lng": 20155.40625,
     "alt": -216.69960021972656,
-    "actors": [
-      "DLC2_Complete:Door43"
-    ]
+    "actors": {
+      "DLC2_Complete:Door43": {}
+    }
   },
   {
     "name": "PedestalButton59",
@@ -13524,9 +13629,9 @@
     "lat": -29802.404296875,
     "lng": 20894.083984375,
     "alt": -219.60972595214844,
-    "actors": [
-      "DLC2_Complete:Door42"
-    ]
+    "actors": {
+      "DLC2_Complete:Door42": {}
+    }
   },
   {
     "name": "PedestalButton6",
@@ -13535,9 +13640,11 @@
     "lat": 1824.73681640625,
     "lng": 15803.8134765625,
     "alt": 3492.711669921875,
-    "actors": [
-      "DLC2_Complete:Glowline3_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline3_2": {
+        "DLC2_Complete:Jumppad_2": {}
+      }
+    }
   },
   {
     "name": "PedestalButton60",
@@ -13546,10 +13653,10 @@
     "lat": -12545.38671875,
     "lng": 16661.662109375,
     "alt": 6258.5732421875,
-    "actors": [
-      "DLC2_Complete:GlowlineJumppad",
-      "DLC2_Complete:Jumppad21"
-    ]
+    "actors": {
+      "DLC2_Complete:GlowlineJumppad": {},
+      "DLC2_Complete:Jumppad21": {}
+    }
   },
   {
     "name": "PedestalButton61",
@@ -13558,9 +13665,9 @@
     "lat": -32165.154296875,
     "lng": 17673.95703125,
     "alt": 3492.26416015625,
-    "actors": [
-      "DLC2_Complete:KeyPlastic2_2"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic2_2": {}
+    }
   },
   {
     "name": "PedestalButton62_5",
@@ -13569,9 +13676,9 @@
     "lat": 15460.0546875,
     "lng": 21978.380859375,
     "alt": 3107.375732421875,
-    "actors": [
-      "DLC2_Complete:MetalBall7_2"
-    ]
+    "actors": {
+      "DLC2_Complete:MetalBall7_2": {}
+    }
   },
   {
     "name": "PedestalButton63_2",
@@ -13604,9 +13711,11 @@
     "lat": -5452.09521484375,
     "lng": -43767.2421875,
     "alt": 7149.09326171875,
-    "actors": [
-      "DLC2_Complete:MoveMesh15"
-    ]
+    "actors": {
+      "DLC2_Complete:MoveMesh15": {
+        "DLC2_Complete:Wood_block_23": {}
+      }
+    }
   },
   {
     "name": "PedestalButton67",
@@ -13615,9 +13724,9 @@
     "lat": -5326.49951171875,
     "lng": -43060.5,
     "alt": 9790.787109375,
-    "actors": [
-      "DLC2_Complete:DoorLego2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorLego2": {}
+    }
   },
   {
     "name": "PedestalButton68",
@@ -13626,10 +13735,12 @@
     "lat": -9826.4697265625,
     "lng": -43520.5,
     "alt": 9020.7900390625,
-    "actors": [
-      "DLC2_Complete:Gears3",
-      "DLC2_Complete:MoveMesh11_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Gears3": {},
+      "DLC2_Complete:MoveMesh11_2": {
+        "DLC2_Complete:Basalt_cliff_ceiling495": {}
+      }
+    }
   },
   {
     "name": "PedestalButton69_5",
@@ -13646,9 +13757,9 @@
     "lat": -43028.0,
     "lng": 4961.0,
     "alt": 1768.0,
-    "actors": [
-      "DLC2_Complete:KeyPlastic3_7"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic3_7": {}
+    }
   },
   {
     "name": "PedestalButton71_2",
@@ -13657,9 +13768,9 @@
     "lat": -41687.47265625,
     "lng": 34284.5625,
     "alt": -32.0,
-    "actors": [
-      "DLC2_Complete:Door29_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Door29_2": {}
+    }
   },
   {
     "name": "PedestalButton72_2",
@@ -13668,9 +13779,13 @@
     "lat": 18009.36328125,
     "lng": 21930.6484375,
     "alt": 3142.144775390625,
-    "actors": [
-      "DLC2_Complete:Glowline119_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline119_2": {
+        "DLC2_Complete:LampDiod13_2": {},
+        "DLC2_Complete:LampDiod14": {},
+        "DLC2_Complete:LampDiod15": {}
+      }
+    }
   },
   {
     "name": "PedestalButton73_2",
@@ -13679,9 +13794,9 @@
     "lat": -21228.85546875,
     "lng": 40640.82421875,
     "alt": 7023.31591796875,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery8_2"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery8_2": {}
+    }
   },
   {
     "name": "PedestalButton74",
@@ -13690,9 +13805,9 @@
     "lat": -10599.1611328125,
     "lng": 62003.40234375,
     "alt": 393.5957946777344,
-    "actors": [
-      "DLC2_Complete:Door14"
-    ]
+    "actors": {
+      "DLC2_Complete:Door14": {}
+    }
   },
   {
     "name": "PedestalButton75_8",
@@ -13709,9 +13824,9 @@
     "lat": -29831.0,
     "lng": 24415.0,
     "alt": 1717.0,
-    "actors": [
-      "DLC2_Complete:Anvil4_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Anvil4_2": {}
+    }
   },
   {
     "name": "PedestalButton77_4",
@@ -13720,9 +13835,11 @@
     "lat": 8913.294921875,
     "lng": 20120.314453125,
     "alt": 3407.689697265625,
-    "actors": [
-      "DLC2_Complete:Glowline88_4"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline88_4": {
+        "DLC2_Complete:Door50": {}
+      }
+    }
   },
   {
     "name": "PedestalButton78",
@@ -13731,9 +13848,9 @@
     "lat": 4581.80908203125,
     "lng": 18901.751953125,
     "alt": 3115.194091796875,
-    "actors": [
-      "DLC2_Complete:Door50"
-    ]
+    "actors": {
+      "DLC2_Complete:Door50": {}
+    }
   },
   {
     "name": "PedestalButton79_2",
@@ -13742,9 +13859,9 @@
     "lat": -16979.73828125,
     "lng": 60514.28515625,
     "alt": 1213.5826416015625,
-    "actors": [
-      "DLC2_Complete:TalkingSpeaker_2"
-    ]
+    "actors": {
+      "DLC2_Complete:TalkingSpeaker_2": {}
+    }
   },
   {
     "name": "PedestalButton7_6",
@@ -13753,9 +13870,9 @@
     "lat": -15489.6767578125,
     "lng": 61765.83203125,
     "alt": 431.5621643066406,
-    "actors": [
-      "DLC2_Complete:ValveCarriable_1976"
-    ]
+    "actors": {
+      "DLC2_Complete:ValveCarriable_1976": {}
+    }
   },
   {
     "name": "PedestalButton80_2",
@@ -13764,9 +13881,9 @@
     "lat": 8677.064453125,
     "lng": 17071.748046875,
     "alt": 3122.757568359375,
-    "actors": [
-      "DLC2_Complete:MetalBall2"
-    ]
+    "actors": {
+      "DLC2_Complete:MetalBall2": {}
+    }
   },
   {
     "name": "PedestalButton81_2",
@@ -13775,9 +13892,9 @@
     "lat": 10219.9775390625,
     "lng": 29195.650390625,
     "alt": 3305.344482421875,
-    "actors": [
-      "DLC2_Complete:MetalBall5_2"
-    ]
+    "actors": {
+      "DLC2_Complete:MetalBall5_2": {}
+    }
   },
   {
     "name": "PedestalButton82_2",
@@ -13786,9 +13903,9 @@
     "lat": -48676.0,
     "lng": 45491.0,
     "alt": 371.0,
-    "actors": [
-      "DLC2_Complete:DoorAnna6_2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorAnna6_2": {}
+    }
   },
   {
     "name": "PedestalButton83_2",
@@ -13797,9 +13914,9 @@
     "lat": -6400.4443359375,
     "lng": -49152.64453125,
     "alt": 8265.4765625,
-    "actors": [
-      "DLC2_Complete:DoorInverted8_2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorInverted8_2": {}
+    }
   },
   {
     "name": "PedestalButton84",
@@ -13808,11 +13925,11 @@
     "lat": -46624.86328125,
     "lng": -1259.8466796875,
     "alt": 1765.0,
-    "actors": [
-      "DLC2_Complete:Glowline39",
-      "DLC2_Complete:Door77",
-      "DLC2_Complete:BP_BankManager6"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline39": {},
+      "DLC2_Complete:Door77": {},
+      "DLC2_Complete:BP_BankManager6": {}
+    }
   },
   {
     "name": "PedestalButton85",
@@ -13821,11 +13938,11 @@
     "lat": -51451.34375,
     "lng": 328.06048583984375,
     "alt": 1756.8802490234375,
-    "actors": [
-      "DLC2_Complete:Glowline131",
-      "DLC2_Complete:Door80",
-      "DLC2_Complete:BP_BankManager7"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline131": {},
+      "DLC2_Complete:Door80": {},
+      "DLC2_Complete:BP_BankManager7": {}
+    }
   },
   {
     "name": "PedestalButton86",
@@ -13834,9 +13951,9 @@
     "lat": -49890.30078125,
     "lng": 1214.64306640625,
     "alt": 3264.0,
-    "actors": [
-      "DLC2_Complete:SelectivePipeRespawn_2"
-    ]
+    "actors": {
+      "DLC2_Complete:SelectivePipeRespawn_2": {}
+    }
   },
   {
     "name": "PedestalButton87",
@@ -13845,9 +13962,11 @@
     "lat": -49268.77734375,
     "lng": 4080.97265625,
     "alt": 3260.769287109375,
-    "actors": [
-      "DLC2_Complete:Glowline136"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline136": {
+        "DLC2_Complete:BP_SmashyGlassQuest2": {}
+      }
+    }
   },
   {
     "name": "PedestalButton88",
@@ -13856,9 +13975,9 @@
     "lat": -48309.44921875,
     "lng": 4095.30029296875,
     "alt": 2694.91015625,
-    "actors": [
-      "DLC2_Complete:ExplodingBattery12"
-    ]
+    "actors": {
+      "DLC2_Complete:ExplodingBattery12": {}
+    }
   },
   {
     "name": "PedestalButton89_19",
@@ -13867,9 +13986,9 @@
     "lat": -43057.83203125,
     "lng": 50447.796875,
     "alt": 1941.980224609375,
-    "actors": [
-      "DLC2_Complete:DoorAnna18_2"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorAnna18_2": {}
+    }
   },
   {
     "name": "PedestalButton8_2",
@@ -13878,9 +13997,9 @@
     "lat": 4979.291015625,
     "lng": 18859.189453125,
     "alt": 3232.6064453125,
-    "actors": [
-      "DLC2_Complete:Door50"
-    ]
+    "actors": {
+      "DLC2_Complete:Door50": {}
+    }
   },
   {
     "name": "PedestalButton90_4",
@@ -13889,9 +14008,9 @@
     "lat": 10386.400390625,
     "lng": 32573.740234375,
     "alt": 4071.34130859375,
-    "actors": [
-      "DLC2_Complete:CarryPipe5_2"
-    ]
+    "actors": {
+      "DLC2_Complete:CarryPipe5_2": {}
+    }
   },
   {
     "name": "PedestalButton91_2",
@@ -13900,9 +14019,9 @@
     "lat": -155.0,
     "lng": 217.0,
     "alt": -298.0,
-    "actors": [
-      "DLC2_Complete:BP_TeleportToPreviousArea_2"
-    ]
+    "actors": {
+      "DLC2_Complete:BP_TeleportToPreviousArea_2": {}
+    }
   },
   {
     "name": "PedestalButton92_2",
@@ -13911,10 +14030,10 @@
     "lat": -36485.0,
     "lng": 632.0,
     "alt": 3111.59716796875,
-    "actors": [
-      "DLC2_Complete:Glowline40",
-      "DLC2_Complete:DoorStone2"
-    ]
+    "actors": {
+      "DLC2_Complete:Glowline40": {},
+      "DLC2_Complete:DoorStone2": {}
+    }
   },
   {
     "name": "PedestalButton93_4",
@@ -13923,9 +14042,9 @@
     "lat": -37558.0,
     "lng": 2855.0,
     "alt": 3233.666748046875,
-    "actors": [
-      "DLC2_Complete:DoorStone5"
-    ]
+    "actors": {
+      "DLC2_Complete:DoorStone5": {}
+    }
   },
   {
     "name": "PedestalButton94",
@@ -13934,9 +14053,9 @@
     "lat": -25810.671875,
     "lng": 20131.4453125,
     "alt": -3019.18310546875,
-    "actors": [
-      "DLC2_Complete:KeyPlastic4_10"
-    ]
+    "actors": {
+      "DLC2_Complete:KeyPlastic4_10": {}
+    }
   },
   {
     "name": "PedestalButton96",
@@ -13945,9 +14064,9 @@
     "lat": -187.90432739257812,
     "lng": 225.0,
     "alt": -20000.0,
-    "actors": [
-      "DLC2_Complete:BP_TeleportToPreviousArea_2"
-    ]
+    "actors": {
+      "DLC2_Complete:BP_TeleportToPreviousArea_2": {}
+    }
   },
   {
     "name": "PedestalButton97_11",
@@ -13955,8 +14074,7 @@
     "area": "DLC2_Complete",
     "lat": -8513.73046875,
     "lng": 62258.59375,
-    "alt": 510.9388122558594,
-    "actors": []
+    "alt": 510.9388122558594
   },
   {
     "name": "PedestalButton98_14",
@@ -13965,9 +14083,9 @@
     "lat": -7831.21533203125,
     "lng": 62290.76953125,
     "alt": 3612.359619140625,
-    "actors": [
-      "DLC2_Complete:Mean_TalkingSpeaker14"
-    ]
+    "actors": {
+      "DLC2_Complete:Mean_TalkingSpeaker14": {}
+    }
   },
   {
     "name": "PedestalButton99_2",
@@ -13976,13 +14094,13 @@
     "lat": -288947.0,
     "lng": 320.0,
     "alt": 10298.0,
-    "actors": [
-      "DLC2_Complete:10",
-      "DLC2_Complete:9",
-      "DLC2_Complete:8_2",
-      "DLC2_Complete:11",
-      "DLC2_Complete:12"
-    ]
+    "actors": {
+      "DLC2_Complete:10": {},
+      "DLC2_Complete:9": {},
+      "DLC2_Complete:8_2": {},
+      "DLC2_Complete:11": {},
+      "DLC2_Complete:12": {}
+    }
   },
   {
     "name": "PedestalButton9_2",
@@ -13991,10 +14109,10 @@
     "lat": 7214.5615234375,
     "lng": 24407.64453125,
     "alt": 3846.795654296875,
-    "actors": [
-      "DLC2_Complete:Jumppad13",
-      "DLC2_Complete:Glowline37_2"
-    ]
+    "actors": {
+      "DLC2_Complete:Jumppad13": {},
+      "DLC2_Complete:Glowline37_2": {}
+    }
   },
   {
     "name": "PedestalButton_2",
@@ -14919,9 +15037,13 @@
     "lat": -17967.357421875,
     "lng": -25541.939453125,
     "alt": 8055.8974609375,
-    "actors": [
-      "DLC2_FinalBoss:Glowline3_2"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:Glowline3_2": {
+        "DLC2_FinalBoss:BossPuzzle1_MoveMesh": {
+          "DLC2_FinalBoss:BossPuzzle1_Trapdoor": {}
+        }
+      }
+    }
   },
   {
     "name": "BossPuzzle3_BallButton",
@@ -14930,9 +15052,9 @@
     "lat": -25030.71875,
     "lng": -23943.265625,
     "alt": 7218.1044921875,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle3_BallButtonFloorGlowline"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle3_BallButtonFloorGlowline": {}
+    }
   },
   {
     "name": "BossPuzzle0_ButtonFloor",
@@ -14941,9 +15063,11 @@
     "lat": -20417.4140625,
     "lng": -29262.650390625,
     "alt": 6795.0,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle0_Glowline"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle0_Glowline": {
+        "DLC2_FinalBoss:BossPuzzle0_Door2": {}
+      }
+    }
   },
   {
     "name": "BossPuzzle3_ButtonFloor",
@@ -14952,9 +15076,9 @@
     "lat": -24898.080078125,
     "lng": -23653.373046875,
     "alt": 7199.80517578125,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle3_ButtonGlowline"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle3_ButtonGlowline": {}
+    }
   },
   {
     "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_224",
@@ -16033,9 +16157,9 @@
     "lat": -18607.513671875,
     "lng": -26263.23828125,
     "alt": 7165.0,
-    "actors": [
-      "DLC2_FinalBoss:Boss_Key1"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:Boss_Key1": {}
+    }
   },
   {
     "name": "Boss_RespawnButtonKey2",
@@ -16044,9 +16168,9 @@
     "lat": -22269.38671875,
     "lng": -25855.294921875,
     "alt": 5981.24755859375,
-    "actors": [
-      "DLC2_FinalBoss:Boss_Key2"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:Boss_Key2": {}
+    }
   },
   {
     "name": "Boss_RespawnButtonKey3",
@@ -16055,9 +16179,9 @@
     "lat": -25210.416015625,
     "lng": -25434.1640625,
     "alt": 7177.34326171875,
-    "actors": [
-      "DLC2_FinalBoss:Boss_Key3"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:Boss_Key3": {}
+    }
   },
   {
     "name": "BossPuzzle2_ResetButton_MetalBall_Huge",
@@ -16066,9 +16190,9 @@
     "lat": -23613.279296875,
     "lng": -25668.71875,
     "alt": 5595.01123046875,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle2_MetalBall_Huge"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle2_MetalBall_Huge": {}
+    }
   },
   {
     "name": "BossPuzzle3_JailDoor4_PedestalButton",
@@ -16077,9 +16201,11 @@
     "lat": -25401.541015625,
     "lng": -24825.890625,
     "alt": 7344.83251953125,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle3_MoveMesh"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle3_MoveMesh": {
+        "DLC2_FinalBoss:BossPuzzle3_JailDoor4": {}
+      }
+    }
   },
   {
     "name": "BossPuzzleEnd1_PedestalButton",
@@ -16088,9 +16214,9 @@
     "lat": -20791.92578125,
     "lng": -29420.947265625,
     "alt": 5995.0,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzleEnd1_Relay"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzleEnd1_Relay": {}
+    }
   },
   {
     "name": "BossPuzzleEnd2_PedestalButton",
@@ -16099,9 +16225,9 @@
     "lat": -22971.900390625,
     "lng": -28386.798828125,
     "alt": 5995.0,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzleEnd2_Relay"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzleEnd2_Relay": {}
+    }
   },
   {
     "name": "BossPuzzleEnd3_PedestalButton",
@@ -16110,9 +16236,9 @@
     "lat": -22164.49609375,
     "lng": -26541.45703125,
     "alt": 5995.0,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzleEnd3_Relay"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzleEnd3_Relay": {}
+    }
   },
   {
     "name": "PedestalButton12",
@@ -16121,9 +16247,9 @@
     "lat": -22086.19921875,
     "lng": -25048.640625,
     "alt": 6122.88134765625,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle2_Door3"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle2_Door3": {}
+    }
   },
   {
     "name": "PedestalButton15",
@@ -16132,9 +16258,9 @@
     "lat": -23231.537109375,
     "lng": -23268.529296875,
     "alt": 7188.26123046875,
-    "actors": [
-      "DLC2_FinalBoss:BossPuzzle3_ExplodingBattery"
-    ]
+    "actors": {
+      "DLC2_FinalBoss:BossPuzzle3_ExplodingBattery": {}
+    }
   },
   {
     "name": "PipeCap12_2",
@@ -16284,9 +16410,9 @@
     "lat": -286730.125,
     "lng": 1466.3447265625,
     "alt": 9799.03515625,
-    "actors": [
-      "DLC2_Area0:ValveCarriable_Orange"
-    ]
+    "actors": {
+      "DLC2_Area0:ValveCarriable_Orange": {}
+    }
   },
   {
     "name": "PipeCap10_2",
@@ -16401,13 +16527,15 @@
     "lat": -290014.9375,
     "lng": -2064.678955078125,
     "alt": 10688.0,
-    "actors": [
-      "DLC2_Area0:DoorAnna_2",
-      "DLC2_Area0:Talk_Foreman_Intro",
-      "DLC2_Area0:TutorialButtons_2",
-      "DLC2_Area0:BP_A0_Intro_4",
-      "DLC2_Area0:SignalInverter_2"
-    ]
+    "actors": {
+      "DLC2_Area0:DoorAnna_2": {},
+      "DLC2_Area0:Talk_Foreman_Intro": {},
+      "DLC2_Area0:TutorialButtons_2": {},
+      "DLC2_Area0:BP_A0_Intro_4": {},
+      "DLC2_Area0:SignalInverter_2": {
+        "DLC2_Area0:TutorialButtons_2": {}
+      }
+    }
   },
   {
     "name": "ValveSlot_2",
@@ -16432,10 +16560,14 @@
     "lat": 2976.564697265625,
     "lng": 2182.0537109375,
     "alt": 702.18212890625,
-    "actors": [
-      "DLC2_SecretLavaArea:Counter_2",
-      "DLC2_SecretLavaArea:Glowline2_5"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Counter_2": {},
+      "DLC2_SecretLavaArea:Glowline2_5": {
+        "DLC2_SecretLavaArea:MoveMeshDoor1": {
+          "DLC2_SecretLavaArea:Cartoon_plank_72": {}
+        }
+      }
+    }
   },
   {
     "name": "ButtonFloor_2",
@@ -16444,10 +16576,14 @@
     "lat": 4755.34326171875,
     "lng": 3959.14599609375,
     "alt": 504.236572265625,
-    "actors": [
-      "DLC2_SecretLavaArea:Counter_2",
-      "DLC2_SecretLavaArea:Glowline_2"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Counter_2": {},
+      "DLC2_SecretLavaArea:Glowline_2": {
+        "DLC2_SecretLavaArea:MoveMeshDoor2": {
+          "DLC2_SecretLavaArea:Cartoon_plank_12": {}
+        }
+      }
+    }
   },
   {
     "name": "Chest2_2",
@@ -17578,9 +17714,11 @@
     "lat": 4586.12451171875,
     "lng": -3891.43017578125,
     "alt": 3286.9052734375,
-    "actors": [
-      "DLC2_SecretLavaArea:MoveMesh28_2"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:MoveMesh28_2": {
+        "DLC2_SecretLavaArea:Basalt_Cliff719": {}
+      }
+    }
   },
   {
     "name": "Match_Lever_5",
@@ -17589,10 +17727,10 @@
     "lat": 8887.3740234375,
     "lng": 1392.28076171875,
     "alt": 980.12353515625,
-    "actors": [
-      "DLC2_SecretLavaArea:Secret_Rotator",
-      "DLC2_SecretLavaArea:RelayGlowLineForASecond"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Secret_Rotator": {},
+      "DLC2_SecretLavaArea:RelayGlowLineForASecond": {}
+    }
   },
   {
     "name": "MatchBox8_2",
@@ -18690,9 +18828,9 @@
     "lat": 9426.6201171875,
     "lng": 278.5731506347656,
     "alt": 792.97119140625,
-    "actors": [
-      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe": {}
+    }
   },
   {
     "name": "PedestalButton9",
@@ -18701,9 +18839,9 @@
     "lat": 9413.34375,
     "lng": 247.9603729248047,
     "alt": 758.150146484375,
-    "actors": [
-      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Secret_GetCarryPipe_CarryPipe": {}
+    }
   },
   {
     "name": "PedestalButton95_2",
@@ -18712,9 +18850,9 @@
     "lat": 10348.8349609375,
     "lng": -2491.52734375,
     "alt": 458.500732421875,
-    "actors": [
-      "DLC2_SecretLavaArea:ExplodingBattery_2"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:ExplodingBattery_2": {}
+    }
   },
   {
     "name": "PedestalButton_2",
@@ -18723,9 +18861,11 @@
     "lat": -631.0020141601562,
     "lng": -15431.646484375,
     "alt": 3015.2998046875,
-    "actors": [
-      "DLC2_SecretLavaArea:Glowline4_5"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Glowline4_5": {
+        "DLC2_SecretLavaArea:Jumppad2_2": {}
+      }
+    }
   },
   {
     "name": "Area1_SecretArea_TeleportPipeCap1",
@@ -18881,9 +19021,9 @@
     "lat": 4922.91259765625,
     "lng": 8243.8955078125,
     "alt": -7577.89404296875,
-    "actors": [
-      "DLC2_SecretLavaArea:Relay_OpenFastTravelSecretLavaAreaToBeamTutorial"
-    ]
+    "actors": {
+      "DLC2_SecretLavaArea:Relay_OpenFastTravelSecretLavaAreaToBeamTutorial": {}
+    }
   },
   {
     "name": "BallButton2_2",
@@ -18892,9 +19032,11 @@
     "lat": -42479.15625,
     "lng": -57406.09375,
     "alt": 10351.3662109375,
-    "actors": [
-      "DLC2_PostRainbow:Glowline23_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline23_2": {
+        "DLC2_PostRainbow:DoorInverted2_2": {}
+      }
+    }
   },
   {
     "name": "BP_EngagementCup_Base12_37",
@@ -18991,9 +19133,11 @@
     "lat": -40196.91796875,
     "lng": -71553.59375,
     "alt": 5540.91748046875,
-    "actors": [
-      "DLC2_PostRainbow:Glowline5_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline5_2": {
+        "DLC2_PostRainbow:TeslaCoil_9": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor3_271",
@@ -19002,9 +19146,11 @@
     "lat": -40768.41796875,
     "lng": -62582.6171875,
     "alt": 9975.0,
-    "actors": [
-      "DLC2_PostRainbow:Glowline2_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline2_2": {
+        "DLC2_PostRainbow:TeslaCoil15_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor4_271",
@@ -19013,9 +19159,12 @@
     "lat": -40085.16015625,
     "lng": -52634.6953125,
     "alt": 9966.7490234375,
-    "actors": [
-      "DLC2_PostRainbow:Glowline_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline_2": {
+        "DLC2_PostRainbow:Door2_3": {},
+        "DLC2_PostRainbow:LampDiode6_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor5_5",
@@ -19024,9 +19173,11 @@
     "lat": -36444.10546875,
     "lng": -56009.88671875,
     "alt": 5421.2802734375,
-    "actors": [
-      "DLC2_PostRainbow:Glowline7_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline7_2": {
+        "DLC2_PostRainbow:TeslaCoil3_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor6_268",
@@ -19035,9 +19186,11 @@
     "lat": -40272.61328125,
     "lng": -63378.8984375,
     "alt": 5808.53125,
-    "actors": [
-      "DLC2_PostRainbow:Glowline10_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline10_2": {
+        "DLC2_PostRainbow:DoorStone2_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor7",
@@ -19046,9 +19199,11 @@
     "lat": -38640.95703125,
     "lng": -52441.38671875,
     "alt": 9966.7490234375,
-    "actors": [
-      "DLC2_PostRainbow:Glowline12_5"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline12_5": {
+        "DLC2_PostRainbow:DoorInverted5_6": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor8_271",
@@ -19057,9 +19212,11 @@
     "lat": -47579.515625,
     "lng": -46959.875,
     "alt": 5590.12841796875,
-    "actors": [
-      "DLC2_PostRainbow:Glowline21_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline21_2": {
+        "DLC2_PostRainbow:DoorInverted3_2": {}
+      }
+    }
   },
   {
     "name": "ButtonFloor9_274",
@@ -19068,10 +19225,10 @@
     "lat": -45626.140625,
     "lng": -58457.5546875,
     "alt": 9884.7646484375,
-    "actors": [
-      "DLC2_PostRainbow:DoorInverted4",
-      "DLC2_PostRainbow:LampDiode8_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:DoorInverted4": {},
+      "DLC2_PostRainbow:LampDiode8_2": {}
+    }
   },
   {
     "name": "ButtonFloor_276",
@@ -19080,9 +19237,11 @@
     "lat": -37815.9921875,
     "lng": -57130.1328125,
     "alt": 9908.7919921875,
-    "actors": [
-      "DLC2_PostRainbow:Glowline22_8"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline22_8": {
+        "DLC2_PostRainbow:JailDoor_4": {}
+      }
+    }
   },
   {
     "name": "Floorbutton_GEN_VARIABLE_ButtonFloor_C_CAT_262",
@@ -20029,9 +20188,12 @@
     "lat": -44074.22265625,
     "lng": -46649.0625,
     "alt": 6397.951171875,
-    "actors": [
-      "DLC2_PostRainbow:Glowline29_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline29_2": {
+        "DLC2_PostRainbow:Jumppad2_2": {},
+        "DLC2_PostRainbow:Jumppad3_5": {}
+      }
+    }
   },
   {
     "name": "MetalBall_2",
@@ -20084,9 +20246,9 @@
     "lat": -42835.390625,
     "lng": -57263.2109375,
     "alt": 9861.25390625,
-    "actors": [
-      "DLC2_PostRainbow:Door2_3"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Door2_3": {}
+    }
   },
   {
     "name": "PedestalButton11_2",
@@ -20095,9 +20257,16 @@
     "lat": -41246.359375,
     "lng": -70098.5,
     "alt": 5500.294921875,
-    "actors": [
-      "DLC2_PostRainbow:Glowline26_8"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:Glowline26_8": {
+        "DLC2_PostRainbow:Glowline27_11": {
+          "DLC2_PostRainbow:Door3_2": {}
+        },
+        "DLC2_PostRainbow:Glowline28_15": {
+          "DLC2_PostRainbow:Door_2": {}
+        }
+      }
+    }
   },
   {
     "name": "PedestalButton12_2",
@@ -20106,9 +20275,9 @@
     "lat": -37319.69140625,
     "lng": -63387.203125,
     "alt": 5864.42822265625,
-    "actors": [
-      "DLC2_PostRainbow:DoorStone2_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:DoorStone2_2": {}
+    }
   },
   {
     "name": "PedestalButton3_2",
@@ -20117,9 +20286,9 @@
     "lat": -47761.3671875,
     "lng": -47914.11328125,
     "alt": 5729.9375,
-    "actors": [
-      "DLC2_PostRainbow:DoorInverted3_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:DoorInverted3_2": {}
+    }
   },
   {
     "name": "PedestalButton4_2",
@@ -20136,9 +20305,9 @@
     "lat": -39495.73046875,
     "lng": -60939.4453125,
     "alt": 9891.2216796875,
-    "actors": [
-      "DLC2_PostRainbow:DoorStone_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:DoorStone_2": {}
+    }
   },
   {
     "name": "PedestalButton5_5",
@@ -20147,9 +20316,9 @@
     "lat": -49776.9375,
     "lng": -44494.00390625,
     "alt": 5623.7255859375,
-    "actors": [
-      "DLC2_PostRainbow:MetalBall_2"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:MetalBall_2": {}
+    }
   },
   {
     "name": "PedestalButton6_2",
@@ -20158,9 +20327,9 @@
     "lat": -37913.2890625,
     "lng": -57395.26953125,
     "alt": 9910.5166015625,
-    "actors": [
-      "DLC2_PostRainbow:ExplodingBattery9_5"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:ExplodingBattery9_5": {}
+    }
   },
   {
     "name": "PedestalButton8_5",
@@ -20169,9 +20338,9 @@
     "lat": -39471.23046875,
     "lng": -52351.76953125,
     "alt": 10075.0927734375,
-    "actors": [
-      "DLC2_PostRainbow:DoorInverted5_6"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:DoorInverted5_6": {}
+    }
   },
   {
     "name": "PedestalButton9_5",
@@ -20180,12 +20349,12 @@
     "lat": -43183.3828125,
     "lng": -53317.6015625,
     "alt": 9679.7529296875,
-    "actors": [
-      "DLC2_PostRainbow:CarrotPhysical2",
-      "DLC2_PostRainbow:CarrotPhysical_2",
-      "DLC2_PostRainbow:CarrotPhysical4",
-      "DLC2_PostRainbow:CarrotPhysical3"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:CarrotPhysical2": {},
+      "DLC2_PostRainbow:CarrotPhysical_2": {},
+      "DLC2_PostRainbow:CarrotPhysical4": {},
+      "DLC2_PostRainbow:CarrotPhysical3": {}
+    }
   },
   {
     "name": "PedestalButton_2",
@@ -20194,9 +20363,9 @@
     "lat": -42953.171875,
     "lng": -54759.24609375,
     "alt": 9883.8935546875,
-    "actors": [
-      "DLC2_PostRainbow:RingColorer_5"
-    ]
+    "actors": {
+      "DLC2_PostRainbow:RingColorer_5": {}
+    }
   },
   {
     "name": "PipeCap2_2",
@@ -20390,10 +20559,10 @@
     "lat": -22048.5234375,
     "lng": -62782.55078125,
     "alt": 7850.966796875,
-    "actors": [
-      "DLC2_RainbowTown:Door45",
-      "DLC2_RainbowTown:Relay_2"
-    ]
+    "actors": {
+      "DLC2_RainbowTown:Door45": {},
+      "DLC2_RainbowTown:Relay_2": {}
+    }
   },
   {
     "name": "PipesystemNewDLC4",

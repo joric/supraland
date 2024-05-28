@@ -103,6 +103,7 @@ properties = [
 def camel_to_snake(s):
     if s[-1]=='?': s = s[:-1] + 'Flag'
     if s.startswith('b'): s = 'Is' + s[1:]
+    s = s.replace(' ','')
     return ''.join(['_'+c.lower() if c.isupper() else c for c in s]).lstrip('_')
 
 def export_levels(game, cache_dir):
@@ -142,6 +143,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
     def parse_json(j, area):
         outer = {}
         pipes = {}
+        objects = {}
         for o in j:
             p = o.get('Properties',{})
             if a := p.get('WorldAsset',{}).get('AssetPathName'):
@@ -157,6 +159,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 b = ':'.join((t['AssetPathName'].split('.').pop(),t['SubPathString'].split('.').pop()) if (t:=p.get('otherPipeInOtherLevel')) else (area, p['OtherPipe']['ObjectName']))
                 pipes[ a ] = b
                 pipes[ b ] = a
+
+            objects[area +':'+o['Name']] = o
 
         for o in j:
             allowed_items = (
@@ -202,16 +206,25 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
-            res = []
-            for section in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open'):
-                if actors := p.get(section):
-                    if type(actors) is dict:
-                        actors = [actors]
-                    for a in actors:
+            def get_actors(o,level=0):
+                actors = {}
+                for action in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open','Actors To Enable/Disable','ObjectsToInvert'):
+                    if a := o.get('Properties',{}).get(action):
                         if type(a) is dict:
-                            if 'OuterIndex' in a and 'ObjectName' in a:
-                                res.append(':'.join((a['OuterIndex']['Outer'],a['ObjectName'])))
-                    optKey(data[-1], 'actors', res)
+                            a = [a]
+                        for d in a:
+                            if type(d) is dict:
+                                if 'OuterIndex' in d and 'ObjectName' in d:
+                                    key = d['OuterIndex']['Outer'] +':' + d['ObjectName']
+                                    arr = []
+                                    #print('level',level,o['Name'],'->',key, key in objects)
+                                    if key in objects:
+                                        arr = get_actors(objects[key], level+1)
+                                    actors.update({key:arr})
+                return actors
+
+            optKey(data[-1], 'actors', get_actors(o)or None)
+
 
             if o['Type'] in ('Jumppad_C'):
                 optKey(data[-1], 'velocity', (v:=p.get('Velocity'))and getXYZ(getVec(v)))
