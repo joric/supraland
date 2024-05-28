@@ -116,6 +116,14 @@
     "alt": 4653.763671875
   },
   {
+    "name": "BP_A3_StrengthQuest_2",
+    "type": "BP_A3_StrengthQuest_C",
+    "area": "DLC2_Complete",
+    "lat": -43490.41015625,
+    "lng": -6546.513671875,
+    "alt": 2595.6064453125
+  },
+  {
     "name": "BP_BoneDetector_2",
     "type": "BP_BoneDetector_C",
     "area": "DLC2_Complete",

@@ -61,18 +61,15 @@ config = {
 }
 
 marker_types = {
-  'PlayerStart','Jumppad_C','Bones_C','Chest_C'
-  'BP_A3_StrengthQuest_C',
-  'BarrelColor_C', 'BarrelRed_C','Battery_C', 'Lift1_C', 'DeadHero_C',
-  'ExplodingBattery_C', 'GoldBlock_C', 'GoldNugget_C', 'Jumppillow_C', 
-  'MoonTake_C', 'Plumbus_C',
-  'SlumBurningQuest_C', 'Stone_C', 'ValveCarriable_C', 'ValveSlot_C', 'Valve_C',
-  'MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C', 'Supraball_C','Trash_C',
-  'Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','Sponge_C','Juicer_C',
+  'PlayerStart','Jumppad_C','Bones_C','Chest_C','BarrelColor_C', 'BarrelRed_C','Battery_C',
+  'BP_A3_StrengthQuest_C','Lift1_C', 'DeadHero_C','ExplodingBattery_C', 'GoldBlock_C',
+  'GoldNugget_C', 'Jumppillow_C', 'MoonTake_C', 'Plumbus_C','Stone_C', 'ValveCarriable_C',
+  'ValveSlot_C', 'Valve_C','MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C',
+  'Supraball_C','Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','Sponge_C','Juicer_C','Seed_C',
   # slc
   'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
-  'MinecraftBrick_C', 'HealingStation_C', 'BP_EngagementCup_Base_C',
+  'MinecraftBrick_C', 'HealingStation_C', 'BP_EngagementCup_Base_C','SlumBurningQuest_C','Trash_C',
 }
 
 starts_with = {
@@ -83,10 +80,6 @@ starts_with = {
 ends_with = {
     'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C'
 }
-
-contains = {
-}
-
 
 price_types = {
     'EPriceType::NewEnumerator5':'scrap',
@@ -167,7 +160,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 ((not marker_names or o['Name'] in marker_names) and (not marker_types or o['Type'] in marker_types))
                 or any(o['Type'].startswith(s) for s in starts_with)
                 or any(o['Type'].endswith(s) for s in ends_with)
-                or any(o['Type'].contains(s) for s in contains)
             )
 
             if not allowed_items: continue
