@@ -208,7 +208,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             def get_actors(o,level=0):
                 actors = {}
-                for action in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open','Actors To Enable/Disable','ObjectsToInvert'):
+                for action in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
+                    'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate'):
                     if a := o.get('Properties',{}).get(action):
                         if type(a) is dict:
                             a = [a]

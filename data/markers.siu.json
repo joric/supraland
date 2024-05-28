@@ -8692,7 +8692,10 @@
     "area": "DLC2_Complete",
     "lat": -25352.3671875,
     "lng": 22298.849609375,
-    "alt": 1502.5069580078125
+    "alt": 1502.5069580078125,
+    "actors": {
+      "DLC2_Complete:DoorLego4_2": {}
+    }
   },
   {
     "name": "KeycardReader3",
@@ -8700,7 +8703,11 @@
     "area": "DLC2_Complete",
     "lat": -40684.125,
     "lng": -622.4583740234375,
-    "alt": 1940.0
+    "alt": 1940.0,
+    "actors": {
+      "DLC2_Complete:JailDoor8": {},
+      "DLC2_Complete:BP_A3_FreePrisoner_2": {}
+    }
   },
   {
     "name": "KeycardReader4_2",
@@ -8708,7 +8715,11 @@
     "area": "DLC2_Complete",
     "lat": -41404.10546875,
     "lng": 10096.009765625,
-    "alt": 2191.429443359375
+    "alt": 2191.429443359375,
+    "actors": {
+      "DLC2_Complete:Door54": {},
+      "DLC2_Complete:BP_TownUpdate_Area3Complete_2": {}
+    }
   },
   {
     "name": "KeycardReader5_2",
@@ -8716,7 +8727,10 @@
     "area": "DLC2_Complete",
     "lat": -47326.62890625,
     "lng": 5409.0322265625,
-    "alt": 1900.51416015625
+    "alt": 1900.51416015625,
+    "actors": {
+      "DLC2_Complete:DoorInverted13": {}
+    }
   },
   {
     "name": "KeycardReader6_8",
@@ -8724,7 +8738,12 @@
     "area": "DLC2_Complete",
     "lat": -46460.3203125,
     "lng": 4002.134765625,
-    "alt": 3114.1103515625
+    "alt": 3114.1103515625,
+    "actors": {
+      "DLC2_Complete:MoveMesh26": {
+        "DLC2_Complete:Metal_Grate16": {}
+      }
+    }
   },
   {
     "name": "KeycardReader7",
@@ -8732,7 +8751,10 @@
     "area": "DLC2_Complete",
     "lat": -42925.65234375,
     "lng": 3937.3720703125,
-    "alt": 1902.881103515625
+    "alt": 1902.881103515625,
+    "actors": {
+      "DLC2_Complete:Door21": {}
+    }
   },
   {
     "name": "KeyLock8_2",

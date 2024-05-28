@@ -822,7 +822,9 @@
     "lng": -27307.365234375,
     "alt": 441.3703308105469,
     "actors": {
-      "Map:CounterTimerTrigger_350": {}
+      "Map:CounterTimerTrigger_350": {
+        "Map:Door71": {}
+      }
     }
   },
   {
@@ -833,7 +835,9 @@
     "lng": -26838.220703125,
     "alt": 441.370849609375,
     "actors": {
-      "Map:CounterTimerTrigger_350": {}
+      "Map:CounterTimerTrigger_350": {
+        "Map:Door71": {}
+      }
     }
   },
   {
@@ -844,7 +848,9 @@
     "lng": -26653.091796875,
     "alt": 441.3712158203125,
     "actors": {
-      "Map:CounterTimerTrigger_350": {}
+      "Map:CounterTimerTrigger_350": {
+        "Map:Door71": {}
+      }
     }
   },
   {
@@ -855,7 +861,9 @@
     "lng": -27540.9609375,
     "alt": 441.37066650390625,
     "actors": {
-      "Map:CounterTimerTrigger_350": {}
+      "Map:CounterTimerTrigger_350": {
+        "Map:Door71": {}
+      }
     }
   },
   {
@@ -927,7 +935,9 @@
     "lng": -25099.982421875,
     "alt": 417.6410217285156,
     "actors": {
-      "Map:CounterTimerTrigger2_2": {}
+      "Map:CounterTimerTrigger2_2": {
+        "Map:Door106": {}
+      }
     }
   },
   {
@@ -960,7 +970,9 @@
     "lng": -26042.3046875,
     "alt": 417.6410217285156,
     "actors": {
-      "Map:CounterTimerTrigger2_2": {}
+      "Map:CounterTimerTrigger2_2": {
+        "Map:Door106": {}
+      }
     }
   },
   {
@@ -971,7 +983,9 @@
     "lng": -25591.244140625,
     "alt": 417.6413269042969,
     "actors": {
-      "Map:CounterTimerTrigger2_2": {}
+      "Map:CounterTimerTrigger2_2": {
+        "Map:Door106": {}
+      }
     }
   },
   {
@@ -982,7 +996,9 @@
     "lng": -25591.244140625,
     "alt": 417.6387023925781,
     "actors": {
-      "Map:CounterTimerTrigger2_2": {}
+      "Map:CounterTimerTrigger2_2": {
+        "Map:Door106": {}
+      }
     }
   },
   {
@@ -1051,7 +1067,10 @@
     "lng": -47957.64453125,
     "alt": 1242.2900390625,
     "actors": {
-      "Map:CounterTimerTrigger3": {}
+      "Map:CounterTimerTrigger3": {
+        "Map:Door132_3": {},
+        "Map:LampOn107": {}
+      }
     }
   },
   {
@@ -1073,7 +1092,10 @@
     "lng": -43187.6328125,
     "alt": 1242.2900390625,
     "actors": {
-      "Map:CounterTimerTrigger3": {}
+      "Map:CounterTimerTrigger3": {
+        "Map:Door132_3": {},
+        "Map:LampOn107": {}
+      }
     }
   },
   {
@@ -1085,7 +1107,10 @@
     "alt": 1327.675048828125,
     "requires_purple_shot_flag": true,
     "actors": {
-      "Map:CounterTimerTrigger3": {}
+      "Map:CounterTimerTrigger3": {
+        "Map:Door132_3": {},
+        "Map:LampOn107": {}
+      }
     }
   },
   {
@@ -1096,7 +1121,9 @@
     "lng": -44083.0703125,
     "alt": 1070.54052734375,
     "actors": {
-      "Map:CounterTimerTrigger4": {}
+      "Map:CounterTimerTrigger4": {
+        "Map:Door133_5": {}
+      }
     }
   },
   {
@@ -1107,7 +1134,9 @@
     "lng": -43144.92578125,
     "alt": 1070.541015625,
     "actors": {
-      "Map:CounterTimerTrigger4": {}
+      "Map:CounterTimerTrigger4": {
+        "Map:Door133_5": {}
+      }
     }
   },
   {
@@ -1118,7 +1147,9 @@
     "lng": -43607.35546875,
     "alt": 1070.540771484375,
     "actors": {
-      "Map:CounterTimerTrigger4": {}
+      "Map:CounterTimerTrigger4": {
+        "Map:Door133_5": {}
+      }
     }
   },
   {
@@ -1129,7 +1160,9 @@
     "lng": -43600.359375,
     "alt": 1070.5401611328125,
     "actors": {
-      "Map:CounterTimerTrigger4": {}
+      "Map:CounterTimerTrigger4": {
+        "Map:Door133_5": {}
+      }
     }
   },
   {
@@ -1162,7 +1195,9 @@
     "lng": -37251.1796875,
     "alt": -2947.07958984375,
     "actors": {
-      "Map:CounterTimerTrigger5": {}
+      "Map:CounterTimerTrigger5": {
+        "Map:Door135": {}
+      }
     }
   },
   {
@@ -1173,7 +1208,9 @@
     "lng": -37254.80078125,
     "alt": -2947.0791015625,
     "actors": {
-      "Map:CounterTimerTrigger5": {}
+      "Map:CounterTimerTrigger5": {
+        "Map:Door135": {}
+      }
     }
   },
   {
@@ -1195,7 +1232,9 @@
     "lng": -37025.49609375,
     "alt": -2947.0791015625,
     "actors": {
-      "Map:CounterTimerTrigger5": {}
+      "Map:CounterTimerTrigger5": {
+        "Map:Door135": {}
+      }
     }
   },
   {
@@ -1206,7 +1245,9 @@
     "lng": -37521.21875,
     "alt": -2947.07958984375,
     "actors": {
-      "Map:CounterTimerTrigger5": {}
+      "Map:CounterTimerTrigger5": {
+        "Map:Door135": {}
+      }
     }
   },
   {
@@ -15079,7 +15120,11 @@
     "area": "Map",
     "lat": 57570.91796875,
     "lng": -61281.640625,
-    "alt": 541.7359619140625
+    "alt": 541.7359619140625,
+    "actors": {
+      "Map:PipeCap20": {},
+      "Map:PipeCap19": {}
+    }
   },
   {
     "name": "KeycardReader2_2",
@@ -15087,7 +15132,11 @@
     "area": "Map",
     "lat": -43897.0,
     "lng": -61058.0,
-    "alt": 475.0
+    "alt": 475.0,
+    "actors": {
+      "Map:Door92_2": {},
+      "Map:Hintguy10": {}
+    }
   },
   {
     "name": "KeycardReader3_1586",
@@ -15095,7 +15144,10 @@
     "area": "Map",
     "lat": 57770.6171875,
     "lng": -55380.84375,
-    "alt": 541.7359619140625
+    "alt": 541.7359619140625,
+    "actors": {
+      "Map:Jumppad68": {}
+    }
   },
   {
     "name": "KeycardReader4",
@@ -15103,7 +15155,11 @@
     "area": "Map",
     "lat": -13256.3134765625,
     "lng": -26448.40234375,
-    "alt": -2261.8076171875
+    "alt": -2261.8076171875,
+    "actors": {
+      "Map:ShieldGenerator_522": {},
+      "Map:Professor": {}
+    }
   },
   {
     "name": "KeycardReader5",
@@ -15111,7 +15167,11 @@
     "area": "Map",
     "lat": -8437.67578125,
     "lng": -21124.634765625,
-    "alt": -1629.0853271484375
+    "alt": -1629.0853271484375,
+    "actors": {
+      "Map:Door20": {},
+      "Map:WarnShieldGuy3": {}
+    }
   },
   {
     "name": "KeycardReader8",
@@ -15119,7 +15179,12 @@
     "area": "Map",
     "lat": -11595.6611328125,
     "lng": -24313.416015625,
-    "alt": -1713.5528564453125
+    "alt": -1713.5528564453125,
+    "actors": {
+      "Map:Door25": {},
+      "Map:Door24": {},
+      "Map:HintRedCardsGuy": {}
+    }
   },
   {
     "name": "KeycardReader9_494",
@@ -15127,7 +15192,10 @@
     "area": "Map",
     "lat": -14860.8115234375,
     "lng": -28524.42578125,
-    "alt": -2211.447265625
+    "alt": -2211.447265625,
+    "actors": {
+      "Map:Door15_4541": {}
+    }
   },
   {
     "name": "KeycardReader_1298",
@@ -15135,7 +15203,10 @@
     "area": "Map",
     "lat": -14098.568359375,
     "lng": -28880.326171875,
-    "alt": -2118.72998046875
+    "alt": -2118.72998046875,
+    "actors": {
+      "Map:Door86_1182": {}
+    }
   },
   {
     "name": "KeyLock10_5",
