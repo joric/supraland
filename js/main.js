@@ -506,7 +506,7 @@ function loadMap() {
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
-            playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon), zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
+            playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon,42), zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
             .bindPopup()
             .on('moveend', function(e) {
               let marker = e.target;
@@ -670,10 +670,10 @@ function getIconSize(zoom) {
   return s[Math.round(Math.min(zoom,s.length-1))];
 }
 
-function getIcon(icon) {
+function getIcon(icon, size) {
   let iconObj = icons[icon];
   if (!iconObj) {
-    let s = getIconSize(map.getZoom());
+    let s = size ? size : getIconSize(map.getZoom());
     let c = s >> 1;
     iconObj = L.icon({iconUrl: 'img/'+icon+'.png', iconSize: [s,s], iconAnchor: [c,c]});
     icons[icon] = iconObj;
