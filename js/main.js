@@ -391,7 +391,7 @@ function loadMap() {
           }
 
           function hidden(type) {
-            return ['Jumppillow_C','EnemySpawner_C','PipeCap_C'].includes(type);
+            return ['Jumppillow_C','EnemySpawner_C','PipeCap_C','GoldBlock_C'].includes(type);
           }
 
           // check if class is in the types list
@@ -469,9 +469,10 @@ function loadMap() {
               if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
 
               if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
-                if (o.color==1) icon += '_yellow';
-                if (o.color==2) icon += '_red';
-                if (o.color==5) icon += '_green';
+                let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
+                if (c = colors[o.color]) {
+                  icon = icon +'_' + c;
+                }
               }
 
               // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
@@ -499,12 +500,13 @@ function loadMap() {
 
           // add dynamic player marker on top of PlayerStart icon
           if (o.type == 'PlayerStart' && !playerMarker) {
+            icon = mapId=='siu' ? 'player_blue' : 'player_red';
             playerStart = [o.lat, o.lng, o.alt];
             let t = new L.LatLng(o.lat, o.lng);
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
-            playerMarker = L.marker([t.lat, t.lng], {zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
+            playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon), zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
             .bindPopup()
             .on('moveend', function(e) {
               let marker = e.target;

@@ -32,7 +32,7 @@ BuyArmor1_C,armor,upgrades
 BuyBeltRepel_C,belt,upgrades
 BuyBelt_C,belt,upgrades
 BuyBelt_DLC2_C,belt,upgrades
-BuyBrokenPipeDetector_C,,
+BuyBrokenPipeDetector_C,valve,upgrades
 BuyChestDetectorRadius_C,,upgrades
 BuyChestDetector_C,see_chest_count,upgrades
 BuyCoinMagnet_C,,upgrades
@@ -95,7 +95,7 @@ BuySmashdownRadius+_C,stomp_damage,upgrades
 BuySmashdown_C,stomp_damage,upgrades
 BuySpeedx15_C,speed,upgrades
 BuySpeedx2_C,speed,upgrades
-BuyStats_C,,upgrades
+BuyStats_C,awesome,upgrades
 BuySword2_C,sword,upgrades
 BuySwordCriticalDamageChance_C,sword_critical,upgrades
 BuySwordCriticalDamage_C,sword_critical,upgrades
@@ -146,6 +146,7 @@ Purchase_ForceCube_C,force_cube,upgrades
 Purchase_IronPickaxe_C,pickaxe_metal,upgrades
 Purchase_StonePickaxe_C,pickaxe_stone,upgrades
 Purchase_WoodPickaxe_C,pickaxe_wood,upgrades
+Purchase_SlumHouse1_C,awesome,misc
 Scrap_C,scrap,collectable
 SlumBurningQuest_C,shop,shop
 SpawnEnemy3_C,,
@@ -154,13 +155,11 @@ UpgradeHappiness_C,,
 ValveCarriable_C,valve,misc
 ValveSlot_C,valve,misc
 Valve_C,valve,misc
-HealingStation_C,health,upgrades
-MatchBox_C,gun_upgrade,misc
+HealingStation_C,health,misc
 EnemySpawn1_C,grave_wood,graves
 EnemySpawn2_C,grave_stone,graves
 EnemySpawn3_C,grave_volcano,graves
 Shell_C,shell,collectable
-Trash_C,,
 DeadHero_C,hero_placeholder,collectable
 EnemySpawner_C,,
 Enemyspawner2_C,,
@@ -199,6 +198,8 @@ DoorLego_C,door,misc
 DoorInverted_C,door,misc
 DoorPhysical_C,door,misc
 DoorStone_C,door,misc
+BP_ElevatorDoor_C,door,misc
+BP_Fix_A4_CombatArenaDoor_C,door,misc
 SwingingDoor_C,door,misc
 SwingingDoorResetVolume_C,door,misc
 Battery_C,battery,misc
@@ -217,3 +218,5 @@ SpongeBig_C,sponge,misc
 Supraball_C,supraball,misc
 Seed_C,seed,misc
 RingColorerFlower_C,flower,misc
+Trash_C,trash,misc
+MatchBox_C,matchbox,misc
