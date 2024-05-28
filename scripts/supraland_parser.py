@@ -203,7 +203,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
             res = []
-            for section in ('Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open'):
+            for section in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate','Actors to Open'):
                 if actors := p.get(section):
                     if type(actors) is dict:
                         actors = [actors]
