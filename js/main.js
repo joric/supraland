@@ -183,15 +183,20 @@ function loadMap() {
     loadMap(id);
   });
 
-  map.on('overlayadd', function(e) {
-    settings.activeLayers[e.layer.id] = true;
+  function updatePolylines(layerId) {
     // set alt for polylines (attributes are not populated to paths)
-    if (layers[e.layer.id])
-    for (const m of Object.values(layers[e.layer.id]._layers)) {
-      if (p = m._path) {
-        p.setAttribute('alt', m.options.alt);
+    if (layers[layerId]) {
+      for (const m of Object.values(layers[layerId]._layers)) {
+        if (p = m._path) {
+          p.setAttribute('alt', m.options.alt);
+        }
       }
     }
+  }
+
+  map.on('overlayadd', function(e) {
+    settings.activeLayers[e.layer.id] = true;
+    updatePolylines(e.layer.id);
     markItems();
     saveSettings();
   });
@@ -424,21 +429,11 @@ function loadMap() {
 
               let a = o; // start object
 
-              if (o.type.startsWith('Pipesystem')) {
-                if (o.nearest_cap) {
-                  a = objects[o.nearest_cap];
-                  alt = a.area + ':' + a.name;
-                } else {
-                  alt = ''; // only mark pipes that have caps
-                }
-              }
-
               // pad line
               if (o.type == 'Jumppad_C' && o.target) {
                 let layer = 'jumppads';
                 if (r = o.direction) {
-                  let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
-                  line._path && line._path.setAttribute('alt', alt);
+                  L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
                 }
               }
 
@@ -446,22 +441,29 @@ function loadMap() {
               if (o.type.startsWith('Pipesystem')) {
                 let layer = 'pipecaps';
 
+                if (o.nearest_cap) {
+                  a = objects[o.nearest_cap];
+                  alt = a.area + ':' + a.name;
+                } else {
+                  alt = ''; // only mark pipes with caps
+                }
+
                 if (b = objects[o.other_pipe]) {
 
                   if (b.nearest_cap) {
                     b = objects[b.nearest_cap];
                     alt = b.area + ':' + b.name;
+                  } else {
+                    alt = '';
                   }
 
-                  let line = L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
-                  line._path && line._path.setAttribute('alt', alt);
+                  L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
                 }
               }
 
               // marker
-              let line = L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
+              L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
                 .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-              line._path && line._path.setAttribute('alt', alt);
 
             } else {
 
@@ -519,6 +521,8 @@ function loadMap() {
           }
         } // end of main loop
 
+        updatePolylines('jumppads');
+        updatePolylines('pipecaps');
         markItems();
     });
   }
