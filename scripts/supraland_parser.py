@@ -78,7 +78,7 @@ starts_with = {
 }
 
 ends_with = {
-    'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C'
+    'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C','Flower_C',
 }
 
 price_types = {
@@ -87,9 +87,10 @@ price_types = {
 }
 
 properties = [
-    'Coins','CoinsInGold','Cost','Value', # chest_c
-    'HitsToBreak','bObsidian', # minecraftbrick_c
-    'AllowEnemyProjectiles','RequiresPurpleShot?', # button_c
+    'Coins','CoinsInGold','Cost','Value', # Chest_C
+    'HitsToBreak','bObsidian', # Minecraftbrick_C
+    'AllowEnemyProjectiles','RequiresPurpleShot?', # Button_C
+    'Color', # Seed_C/*Flower_C (0 - white, 1 - yellow, 2 - red)
     'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity','CenterActor', # jumpppad_c
 ]
 

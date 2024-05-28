@@ -1405,6 +1405,7 @@
     "lat": 13332.2998046875,
     "lng": -1928.4378662109375,
     "alt": 2417.905517578125,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Jumppad11": {}
     }
@@ -1416,6 +1417,7 @@
     "lat": 6129.5673828125,
     "lng": 11492.6572265625,
     "alt": 2315.054931640625,
+    "color": "ButtonColor::NewEnumerator3",
     "actors": {
       "Crash:MoveMesh11_2": {
         "Crash:Simple_rock_132": {}
@@ -1444,6 +1446,7 @@
     "lat": -6858.1083984375,
     "lng": 36143.69140625,
     "alt": 360.2218017578125,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Jumppad5_2": {},
       "Crash:Glowline41_5": {}
@@ -1493,6 +1496,7 @@
     "lat": 13048.1728515625,
     "lng": 24803.875,
     "alt": 2626.345458984375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Jumppad14": {}
     }
@@ -1504,6 +1508,7 @@
     "lat": -9471.89453125,
     "lng": -7256.365234375,
     "alt": -3641.2890625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Glowline47_2": {},
       "Crash:DoorLego8": {}
@@ -1528,6 +1533,7 @@
     "lat": -10249.8134765625,
     "lng": 65996.2734375,
     "alt": 13632.94921875,
+    "color": "ButtonColor::NewEnumerator2",
     "actors": {
       "Crash:MetalBall3": {},
       "Crash:Glowline59_14": {}
@@ -1554,6 +1560,7 @@
     "lat": -9650.1689453125,
     "lng": 43762.83203125,
     "alt": 240.7220458984375,
+    "color": "ButtonColor::NewEnumerator5",
     "actors": {
       "Crash:Door26_2": {},
       "Crash:Glowline68_5": {}
@@ -1566,6 +1573,7 @@
     "lat": 420.60791015625,
     "lng": 35419.890625,
     "alt": 820.687255859375,
+    "color": "ButtonColor::NewEnumerator5",
     "actors": {
       "Crash:Glowline3_2": {},
       "Crash:Jumppad_2": {}
@@ -1649,6 +1657,7 @@
     "lat": 4209.140625,
     "lng": 37944.30859375,
     "alt": -2326.363525390625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Door21_2": {}
     }
@@ -1672,6 +1681,7 @@
     "lat": 10403.4990234375,
     "lng": 45005.19140625,
     "alt": -1963.877197265625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:Jumppad29": {},
       "Crash:Glowline75_9": {}
@@ -1684,6 +1694,7 @@
     "lat": -17742.955078125,
     "lng": -5616.50830078125,
     "alt": 121.3615493774414,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:MoveMesh29": {
         "Crash:Wall_400x627": {}
@@ -1712,6 +1723,7 @@
     "lat": -1741.478271484375,
     "lng": 41704.6328125,
     "alt": -2118.058349609375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:WoodBlockLift_2": {},
       "Crash:Glowline89_5": {}
@@ -1724,6 +1736,7 @@
     "lat": -3828.91015625,
     "lng": 43526.0234375,
     "alt": -1200.843505859375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:MoveMesh41_2": {
         "Crash:Wood_block_27": {}
@@ -1751,6 +1764,7 @@
     "lat": -8295.4345703125,
     "lng": 54283.1171875,
     "alt": 2498.1611328125,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:PipeCap_2": {}
     }
@@ -1776,6 +1790,7 @@
     "lat": -6090.71875,
     "lng": 27568.7421875,
     "alt": -607.03173828125,
+    "color": "ButtonColor::NewEnumerator3",
     "actors": {
       "Crash:Door3_2": {}
     }
@@ -1802,6 +1817,7 @@
     "lat": -1694.068115234375,
     "lng": -1778.9466552734375,
     "alt": -121.62134552001953,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:MoveMesh4_8": {
         "Crash:Wood_block_183": {}
@@ -1816,6 +1832,7 @@
     "lat": -6531.5400390625,
     "lng": -1468.9901123046875,
     "alt": -222.99295043945312,
+    "color": "ButtonColor::NewEnumerator3",
     "actors": {
       "Crash:Minium": {},
       "Crash:Glowline18": {},
@@ -1857,6 +1874,7 @@
     "lat": -3540.010498046875,
     "lng": 6740.275390625,
     "alt": -1561.8104248046875,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Crash:MoveMesh49_2": {
         "Crash:SM_Fence_3": {}
@@ -5317,7 +5335,8 @@
     "area": "Crash",
     "lat": 13106.28515625,
     "lng": 39799.91015625,
-    "alt": 14.439788818359375
+    "alt": 14.439788818359375,
+    "color": 4
   },
   {
     "name": "Jumppillow20",
@@ -5349,7 +5368,8 @@
     "area": "Crash",
     "lat": 11307.9306640625,
     "lng": 38301.27734375,
-    "alt": -1642.3299560546875
+    "alt": -1642.3299560546875,
+    "color": 4
   },
   {
     "name": "Jumppillow4_15",
@@ -5430,6 +5450,7 @@
     "lat": -7536.71630859375,
     "lng": 54409.0390625,
     "alt": -2499.472412109375,
+    "color": 3,
     "actors": {
       "Crash:JailDoor3": {}
     }
@@ -5441,6 +5462,7 @@
     "lat": -7023.71240234375,
     "lng": 54506.0234375,
     "alt": -2499.472412109375,
+    "color": 6,
     "actors": {
       "Crash:JailDoor8": {}
     }
@@ -5452,6 +5474,7 @@
     "lat": -7534.71337890625,
     "lng": 54466.03125,
     "alt": -2499.472412109375,
+    "color": 6,
     "actors": {
       "Crash:JailDoor_2": {}
     }

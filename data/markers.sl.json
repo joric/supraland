@@ -264,7 +264,8 @@
     "area": "Map",
     "lat": -15123.947265625,
     "lng": -27276.822265625,
-    "alt": 565.6940307617188
+    "alt": 565.6940307617188,
+    "color": 0
   },
   {
     "name": "BarrelRed5",
@@ -1375,6 +1376,7 @@
     "lat": -7797.56689453125,
     "lng": 66405.4375,
     "alt": 5339.54541015625,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Jumppad20_2": {}
     }
@@ -1386,6 +1388,7 @@
     "lat": 1069.8564453125,
     "lng": -7281.1826171875,
     "alt": -380.9202880859375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Door41": {}
     }
@@ -1397,6 +1400,7 @@
     "lat": 772.4598388671875,
     "lng": -9445.259765625,
     "alt": -173.43673706054688,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Door40_2895": {}
     }
@@ -1408,6 +1412,7 @@
     "lat": 44873.7578125,
     "lng": -63050.53125,
     "alt": 428.8101501464844,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Jumppad64_1993": {},
       "Map:Jumppad65": {},
@@ -1421,6 +1426,7 @@
     "lat": 46377.1640625,
     "lng": -62180.6484375,
     "alt": -670.61279296875,
+    "color": "ButtonColor::NewEnumerator3",
     "actors": {
       "Map:Jumppad98_2": {}
     }
@@ -1432,6 +1438,7 @@
     "lat": -19933.884765625,
     "lng": 45944.83984375,
     "alt": 1139.865234375,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Jumppad70": {},
       "Map:Glowline72_2": {}
@@ -1444,6 +1451,7 @@
     "lat": 1063.748046875,
     "lng": -7668.73876953125,
     "alt": -182.69088745117188,
+    "color": "ButtonColor::NewEnumerator1",
     "actors": {
       "Map:Door40_2895": {}
     }
@@ -13177,9 +13185,9 @@
       "z": 0.8626556992530823
     },
     "target": {
-      "x": -2793.5410756617785,
-      "y": -37136.1730042994,
-      "z": 164.28345299225867
+      "x": -2717.123818859458,
+      "y": -37176.682094305754,
+      "z": 19.92907756453709
     }
   },
   {
@@ -14531,9 +14539,9 @@
       "z": 0.6343936920166016
     },
     "target": {
-      "x": 14153.6025249362,
-      "y": 5231.961291730404,
-      "z": -420.1816431364377
+      "x": 14542.900381445885,
+      "y": 5520.681376338005,
+      "z": 17.71911196914899
     }
   },
   {
@@ -15145,6 +15153,7 @@
     "lat": 57570.91796875,
     "lng": -61281.640625,
     "alt": 541.7359619140625,
+    "color": 2,
     "actors": {
       "Map:PipeCap20": {},
       "Map:PipeCap19": {}
@@ -15157,6 +15166,7 @@
     "lat": -43897.0,
     "lng": -61058.0,
     "alt": 475.0,
+    "color": 2,
     "actors": {
       "Map:Door92_2": {},
       "Map:Hintguy10": {}
@@ -15180,6 +15190,7 @@
     "lat": -13256.3134765625,
     "lng": -26448.40234375,
     "alt": -2261.8076171875,
+    "color": 2,
     "actors": {
       "Map:ShieldGenerator_522": {},
       "Map:Professor": {}
@@ -15204,6 +15215,7 @@
     "lat": -11595.6611328125,
     "lng": -24313.416015625,
     "alt": -1713.5528564453125,
+    "color": 2,
     "actors": {
       "Map:Door25": {},
       "Map:Door24": {},
@@ -15228,6 +15240,7 @@
     "lat": -14098.568359375,
     "lng": -28880.326171875,
     "alt": -2118.72998046875,
+    "color": 5,
     "actors": {
       "Map:Door86_1182": {}
     }
@@ -17622,12 +17635,988 @@
     "alt": 517.9697265625
   },
   {
+    "name": "RingColorerFlower10",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15007.3349609375,
+    "lng": -14885.26171875,
+    "alt": -899.1470947265625
+  },
+  {
+    "name": "RingColorerFlower100",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36599.0,
+    "lng": -2408.0,
+    "alt": -15.0
+  },
+  {
+    "name": "RingColorerFlower101",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36523.0,
+    "lng": -1021.0,
+    "alt": -55.0
+  },
+  {
+    "name": "RingColorerFlower102",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36777.0,
+    "lng": -1063.0,
+    "alt": -36.0
+  },
+  {
+    "name": "RingColorerFlower103",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36909.0,
+    "lng": -1373.0,
+    "alt": -33.0
+  },
+  {
+    "name": "RingColorerFlower104",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36936.0,
+    "lng": 136.0,
+    "alt": -65.0
+  },
+  {
+    "name": "RingColorerFlower105",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36699.0,
+    "lng": 16.0,
+    "alt": -71.0
+  },
+  {
+    "name": "RingColorerFlower106",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36578.0,
+    "lng": 433.0,
+    "alt": -115.0
+  },
+  {
+    "name": "RingColorerFlower107",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35697.0,
+    "lng": 1052.0,
+    "alt": -317.0
+  },
+  {
+    "name": "RingColorerFlower108",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35860.0,
+    "lng": 1228.0,
+    "alt": -347.0
+  },
+  {
+    "name": "RingColorerFlower109",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35076.0,
+    "lng": 1073.0,
+    "alt": -417.0
+  },
+  {
+    "name": "RingColorerFlower11",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14314.44140625,
+    "lng": -13542.947265625,
+    "alt": -819.2584228515625
+  },
+  {
+    "name": "RingColorerFlower110",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -34989.0,
+    "lng": 1220.0,
+    "alt": -432.0
+  },
+  {
+    "name": "RingColorerFlower111",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -34843.0,
+    "lng": 1084.0,
+    "alt": -442.0
+  },
+  {
+    "name": "RingColorerFlower112",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38065.7265625,
+    "lng": 63205.74609375,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower113",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 37901.7734375,
+    "lng": 63806.01171875,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower114",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38219.19921875,
+    "lng": 63413.78125,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower115",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38352.94140625,
+    "lng": 63783.328125,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower116",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38414.25390625,
+    "lng": 63426.93359375,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower12",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14461.7744140625,
+    "lng": -13722.4765625,
+    "alt": -809.292724609375
+  },
+  {
+    "name": "RingColorerFlower13",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14483.9248046875,
+    "lng": -13378.96484375,
+    "alt": -768.346923828125
+  },
+  {
+    "name": "RingColorerFlower14",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14755.9287109375,
+    "lng": -13362.392578125,
+    "alt": -712.9818115234375
+  },
+  {
+    "name": "RingColorerFlower15",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14132.4130859375,
+    "lng": -13771.154296875,
+    "alt": -874.0369873046875
+  },
+  {
+    "name": "RingColorerFlower16",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14198.765625,
+    "lng": -13117.84765625,
+    "alt": -800.8618774414062
+  },
+  {
+    "name": "RingColorerFlower17",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14360.70703125,
+    "lng": -13297.376953125,
+    "alt": -784.0752563476562
+  },
+  {
+    "name": "RingColorerFlower18",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14368.2490234375,
+    "lng": -12953.865234375,
+    "alt": -742.2555541992188
+  },
+  {
+    "name": "RingColorerFlower19",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14640.2529296875,
+    "lng": -13135.2568359375,
+    "alt": -703.7146606445312,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower20",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14016.7373046875,
+    "lng": -13346.0546875,
+    "alt": -861.1109008789062
+  },
+  {
+    "name": "RingColorerFlower21",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13691.0703125,
+    "lng": -13542.947265625,
+    "alt": -940.96875
+  },
+  {
+    "name": "RingColorerFlower22",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13838.4033203125,
+    "lng": -13722.4765625,
+    "alt": -923.2089233398438
+  },
+  {
+    "name": "RingColorerFlower23",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13860.5537109375,
+    "lng": -13378.96484375,
+    "alt": -896.6227416992188
+  },
+  {
+    "name": "RingColorerFlower24",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13509.0419921875,
+    "lng": -13771.154296875,
+    "alt": -987.245849609375
+  },
+  {
+    "name": "RingColorerFlower25",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13737.3359375,
+    "lng": -13297.376953125,
+    "alt": -918.630126953125
+  },
+  {
+    "name": "RingColorerFlower26_2200",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9280.0078125,
+    "lng": -13770.599609375,
+    "alt": -2256.083740234375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower27",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8833.1513671875,
+    "lng": -13635.3134765625,
+    "alt": -2337.718017578125,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower28",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9125.15625,
+    "lng": -13659.0126953125,
+    "alt": -2304.402099609375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower29",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9183.0478515625,
+    "lng": -14183.34765625,
+    "alt": -2256.084228515625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower2_928",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13616.626953125,
+    "lng": -15420.337890625,
+    "alt": -1224.764404296875
+  },
+  {
+    "name": "RingColorerFlower30",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8758.15625,
+    "lng": -14016.443359375,
+    "alt": -2336.8828125,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower31",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9194.9736328125,
+    "lng": -14106.9521484375,
+    "alt": -2256.084228515625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower32",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8688.2685546875,
+    "lng": -14365.3388671875,
+    "alt": -2333.2509765625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower33",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8848.6533203125,
+    "lng": -14540.6162109375,
+    "alt": -2279.57177734375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower34",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9174.365234375,
+    "lng": -14526.71875,
+    "alt": -2175.088623046875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower35",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9497.0029296875,
+    "lng": -14020.14453125,
+    "alt": -2140.169921875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower36",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8598.27734375,
+    "lng": -13632.990234375,
+    "alt": -2344.777099609375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower37_554",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -16117.2470703125,
+    "lng": -12270.154296875,
+    "alt": -776.1884155273438
+  },
+  {
+    "name": "RingColorerFlower38",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -16247.4990234375,
+    "lng": -12863.6259765625,
+    "alt": -826.520263671875
+  },
+  {
+    "name": "RingColorerFlower39",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15960.1123046875,
+    "lng": -12748.060546875,
+    "alt": -804.7775268554688
+  },
+  {
+    "name": "RingColorerFlower3_1032",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13624.1689453125,
+    "lng": -15076.826171875,
+    "alt": -1127.7568359375
+  },
+  {
+    "name": "RingColorerFlower40",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -16063.8759765625,
+    "lng": -13053.0791015625,
+    "alt": -833.96240234375
+  },
+  {
+    "name": "RingColorerFlower41",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15836.0849609375,
+    "lng": -12445.751953125,
+    "alt": -789.7247314453125
+  },
+  {
+    "name": "RingColorerFlower42",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -16200.3642578125,
+    "lng": -12445.751953125,
+    "alt": -779.8368530273438
+  },
+  {
+    "name": "RingColorerFlower43",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15780.3388671875,
+    "lng": -12083.765625,
+    "alt": -779.7308349609375
+  },
+  {
+    "name": "RingColorerFlower44",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14867.279296875,
+    "lng": -13098.701171875,
+    "alt": -671.1866455078125,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower45",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14874.8212890625,
+    "lng": -12755.189453125,
+    "alt": -668.5929565429688,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower46",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15146.8251953125,
+    "lng": -12936.5810546875,
+    "alt": -698.4793701171875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower47",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15294.1787109375,
+    "lng": -12850.646484375,
+    "alt": -721.9474487304688,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower48",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15117.056640625,
+    "lng": -12714.0673828125,
+    "alt": -712.529296875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower49",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -15443.8974609375,
+    "lng": -12564.2646484375,
+    "alt": -756.6966552734375
+  },
+  {
+    "name": "RingColorerFlower4_1151",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13896.1728515625,
+    "lng": -15258.2177734375,
+    "alt": -1145.99462890625
+  },
+  {
+    "name": "RingColorerFlower50",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8594.220703125,
+    "lng": -14223.4365234375,
+    "alt": -2345.875244140625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower51",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8300.841796875,
+    "lng": -14697.4189453125,
+    "alt": -2352.694580078125,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower52",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -8300.841796875,
+    "lng": -14439.41015625,
+    "alt": -2351.545654296875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower53_560",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -49866.5,
+    "lng": -49280.19921875,
+    "alt": -1779.3851318359375
+  },
+  {
+    "name": "RingColorerFlower54",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50642.82421875,
+    "lng": -50695.91015625,
+    "alt": -1779.3817138671875,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower55",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50524.81640625,
+    "lng": -50484.14453125,
+    "alt": -1779.3817138671875,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower56",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -49898.71484375,
+    "lng": -49547.3984375,
+    "alt": -1739.81591796875,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower57",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -49730.28515625,
+    "lng": -49286.76953125,
+    "alt": -1779.3304443359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower58",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50372.58203125,
+    "lng": -50501.4609375,
+    "alt": -1779.3817138671875
+  },
+  {
+    "name": "RingColorerFlower59",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50033.47265625,
+    "lng": -49466.78125,
+    "alt": -1776.2567138671875
+  },
+  {
+    "name": "RingColorerFlower5_1318",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13272.6572265625,
+    "lng": -15469.015625,
+    "alt": -1191.4471435546875
+  },
+  {
+    "name": "RingColorerFlower60",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50492.671875,
+    "lng": -50681.2578125,
+    "alt": -1779.3817138671875
+  },
+  {
+    "name": "RingColorerFlower61",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -50713.4453125,
+    "lng": -50557.97265625,
+    "alt": -1779.3817138671875
+  },
+  {
+    "name": "RingColorerFlower62",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9249.7744140625,
+    "lng": -16878.533203125,
+    "alt": -1898.0433349609375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower63",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9201.9306640625,
+    "lng": -17063.615234375,
+    "alt": -1872.796875,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower64",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9352.5478515625,
+    "lng": -16944.078125,
+    "alt": -1884.6705322265625,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower65",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -9249.7744140625,
+    "lng": -17105.27734375,
+    "alt": -1863.6409912109375,
+    "color": 2
+  },
+  {
+    "name": "RingColorerFlower66",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6639.19677734375,
+    "lng": 16586.591796875,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower67",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6333.09423828125,
+    "lng": 16602.279296875,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower68",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6465.54833984375,
+    "lng": 16751.541015625,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower69",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6967.22802734375,
+    "lng": 16669.009765625,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower6_1479",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14382.5810546875,
+    "lng": -15212.23046875,
+    "alt": -1109.5274658203125
+  },
+  {
+    "name": "RingColorerFlower7",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14288.025390625,
+    "lng": -14983.732421875,
+    "alt": -1069.5263671875
+  },
+  {
+    "name": "RingColorerFlower70",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7079.9208984375,
+    "lng": 16247.935546875,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower71",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7454.92578125,
+    "lng": 16188.33984375,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower72",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7743.62548828125,
+    "lng": 16014.6767578125,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower73",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 8141.49462890625,
+    "lng": 16237.2177734375,
+    "alt": -80.4788818359375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower74",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6889.8310546875,
+    "lng": 18684.36328125,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower75",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 6863.728515625,
+    "lng": 18497.16796875,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower76",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7307.04443359375,
+    "lng": 18347.384765625,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower77",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7233.982421875,
+    "lng": 18661.884765625,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower78",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7379.00732421875,
+    "lng": 18915.119140625,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower79",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7656.26220703125,
+    "lng": 19068.884765625,
+    "alt": -94.4307861328125,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower8",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14517.75,
+    "lng": -14983.732421875,
+    "alt": -1021.4902954101562
+  },
+  {
+    "name": "RingColorerFlower80",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 7753.248046875,
+    "lng": 19542.853515625,
+    "alt": -44.624794006347656,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower81",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 8939.275390625,
+    "lng": 17850.689453125,
+    "alt": 101.962646484375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower82",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 8939.275390625,
+    "lng": 17430.3359375,
+    "alt": 101.962646484375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower83",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 8939.275390625,
+    "lng": 17600.865234375,
+    "alt": 101.962646484375,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower84",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 8803.5634765625,
+    "lng": 17476.177734375,
+    "alt": 60.09191131591797,
+    "color": 1
+  },
+  {
+    "name": "RingColorerFlower85_2",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38585.9453125,
+    "lng": 63097.40625,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower86",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38586.16796875,
+    "lng": 63566.89453125,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower87",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38355.4921875,
+    "lng": 63240.6953125,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower88",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": 38143.67578125,
+    "lng": 63562.37890625,
+    "alt": 1597.6544189453125
+  },
+  {
+    "name": "RingColorerFlower89",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -33092.0,
+    "lng": -359.0,
+    "alt": -183.0
+  },
+  {
+    "name": "RingColorerFlower9",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -14630.048828125,
+    "lng": -15200.4052734375,
+    "alt": -1060.782470703125
+  },
+  {
+    "name": "RingColorerFlower90",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -33210.0,
+    "lng": -597.0,
+    "alt": -171.0
+  },
+  {
+    "name": "RingColorerFlower91",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -33442.0,
+    "lng": -710.0,
+    "alt": -170.0
+  },
+  {
+    "name": "RingColorerFlower92",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -32638.0,
+    "lng": -1465.0,
+    "alt": 44.0
+  },
+  {
+    "name": "RingColorerFlower93",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -32318.0,
+    "lng": -1418.0,
+    "alt": -32.0
+  },
+  {
+    "name": "RingColorerFlower94",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35191.0,
+    "lng": -2683.0,
+    "alt": -107.0
+  },
+  {
+    "name": "RingColorerFlower95",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35461.0,
+    "lng": -2513.0,
+    "alt": -127.0
+  },
+  {
+    "name": "RingColorerFlower96",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -35390.0,
+    "lng": -2686.0,
+    "alt": -115.0
+  },
+  {
+    "name": "RingColorerFlower97",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -34955.0,
+    "lng": -2526.0,
+    "alt": -106.0
+  },
+  {
+    "name": "RingColorerFlower98",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36444.0,
+    "lng": -2604.0,
+    "alt": -32.0
+  },
+  {
+    "name": "RingColorerFlower99",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -36738.0,
+    "lng": -2502.0,
+    "alt": 7.0
+  },
+  {
+    "name": "RingColorerFlower_191",
+    "type": "RingColorerFlower_C",
+    "area": "Map",
+    "lat": -13454.685546875,
+    "lng": -15240.80859375,
+    "alt": -1175.3546142578125
+  },
+  {
     "name": "Seed10",
     "type": "Seed_C",
     "area": "Map",
     "lat": -30797.71875,
     "lng": -9434.484375,
-    "alt": -823.4221801757812
+    "alt": -823.4221801757812,
+    "color": 2
   },
   {
     "name": "Seed11",
@@ -17667,7 +18656,8 @@
     "area": "Map",
     "lat": -30475.9921875,
     "lng": -9447.4658203125,
-    "alt": -823.4234008789062
+    "alt": -823.4234008789062,
+    "color": 1
   },
   {
     "name": "Seed16",
@@ -17675,7 +18665,8 @@
     "area": "Map",
     "lat": -30494.359375,
     "lng": -9478.2216796875,
-    "alt": -823.4234008789062
+    "alt": -823.4234008789062,
+    "color": 1
   },
   {
     "name": "Seed17",
@@ -17683,7 +18674,8 @@
     "area": "Map",
     "lat": -30439.958984375,
     "lng": -9479.8115234375,
-    "alt": -823.4234619140625
+    "alt": -823.4234619140625,
+    "color": 1
   },
   {
     "name": "Seed18",
@@ -17691,7 +18683,8 @@
     "area": "Map",
     "lat": -30476.62109375,
     "lng": -9510.9384765625,
-    "alt": -823.42333984375
+    "alt": -823.42333984375,
+    "color": 1
   },
   {
     "name": "Seed19",
@@ -17699,7 +18692,8 @@
     "area": "Map",
     "lat": -30361.48828125,
     "lng": -9561.9755859375,
-    "alt": -823.4237670898438
+    "alt": -823.4237670898438,
+    "color": 4
   },
   {
     "name": "Seed2",
@@ -17707,7 +18701,8 @@
     "area": "Map",
     "lat": 2490.014404296875,
     "lng": -1088.34765625,
-    "alt": 38.31877136230469
+    "alt": 38.31877136230469,
+    "color": 1
   },
   {
     "name": "Seed20",
@@ -17715,7 +18710,8 @@
     "area": "Map",
     "lat": -30379.85546875,
     "lng": -9592.7314453125,
-    "alt": -823.4237670898438
+    "alt": -823.4237670898438,
+    "color": 4
   },
   {
     "name": "Seed21",
@@ -17723,7 +18719,8 @@
     "area": "Map",
     "lat": -30325.455078125,
     "lng": -9594.3212890625,
-    "alt": -823.423828125
+    "alt": -823.423828125,
+    "color": 4
   },
   {
     "name": "Seed22",
@@ -17731,7 +18728,8 @@
     "area": "Map",
     "lat": -30362.1171875,
     "lng": -9625.4482421875,
-    "alt": -823.4237060546875
+    "alt": -823.4237060546875,
+    "color": 4
   },
   {
     "name": "Seed23",
@@ -17739,7 +18737,8 @@
     "area": "Map",
     "lat": 57201.515625,
     "lng": -62833.9140625,
-    "alt": 497.53033447265625
+    "alt": 497.53033447265625,
+    "color": 2
   },
   {
     "name": "Seed24",
@@ -17747,7 +18746,8 @@
     "area": "Map",
     "lat": 57220.45703125,
     "lng": -62773.35546875,
-    "alt": 495.6648864746094
+    "alt": 495.6648864746094,
+    "color": 2
   },
   {
     "name": "Seed25",
@@ -17755,7 +18755,8 @@
     "area": "Map",
     "lat": 57194.08203125,
     "lng": -62797.45703125,
-    "alt": 498.2627258300781
+    "alt": 498.2627258300781,
+    "color": 2
   },
   {
     "name": "Seed26",
@@ -17763,7 +18764,8 @@
     "area": "Map",
     "lat": 57245.4296875,
     "lng": -62814.765625,
-    "alt": 493.2052001953125
+    "alt": 493.2052001953125,
+    "color": 2
   },
   {
     "name": "Seed27",
@@ -17771,7 +18773,8 @@
     "area": "Map",
     "lat": 57198.625,
     "lng": -63133.86328125,
-    "alt": 497.5303039550781
+    "alt": 497.5303039550781,
+    "color": 1
   },
   {
     "name": "Seed28",
@@ -17779,7 +18782,8 @@
     "area": "Map",
     "lat": 57229.015625,
     "lng": -63078.1640625,
-    "alt": 495.66485595703125
+    "alt": 495.66485595703125,
+    "color": 1
   },
   {
     "name": "Seed29",
@@ -17787,7 +18791,8 @@
     "area": "Map",
     "lat": 57198.4453125,
     "lng": -63096.66015625,
-    "alt": 498.2626953125
+    "alt": 498.2626953125,
+    "color": 1
   },
   {
     "name": "Seed3",
@@ -17795,7 +18800,8 @@
     "area": "Map",
     "lat": 2513.818603515625,
     "lng": -1085.757568359375,
-    "alt": 66.6956787109375
+    "alt": 66.6956787109375,
+    "color": 2
   },
   {
     "name": "Seed30",
@@ -17803,7 +18809,8 @@
     "area": "Map",
     "lat": 57245.4296875,
     "lng": -63123.65234375,
-    "alt": 493.2051696777344
+    "alt": 493.2051696777344,
+    "color": 1
   },
   {
     "name": "Seed31",
@@ -17843,7 +18850,8 @@
     "area": "Map",
     "lat": 61346.09765625,
     "lng": -61824.48828125,
-    "alt": 492.2315673828125
+    "alt": 492.2315673828125,
+    "color": 2
   },
   {
     "name": "Seed36",
@@ -17851,7 +18859,8 @@
     "area": "Map",
     "lat": 61365.12890625,
     "lng": -61764.22265625,
-    "alt": 498.1674499511719
+    "alt": 498.1674499511719,
+    "color": 2
   },
   {
     "name": "Seed37",
@@ -17859,7 +18868,8 @@
     "area": "Map",
     "lat": 61338.625,
     "lng": -61788.20703125,
-    "alt": 495.8052062988281
+    "alt": 495.8052062988281,
+    "color": 2
   },
   {
     "name": "Seed38",
@@ -17867,7 +18877,8 @@
     "area": "Map",
     "lat": 61390.22265625,
     "lng": -61805.43359375,
-    "alt": 494.10845947265625
+    "alt": 494.10845947265625,
+    "color": 2
   },
   {
     "name": "Seed39",
@@ -17875,7 +18886,8 @@
     "area": "Map",
     "lat": 2337.5146484375,
     "lng": -1108.1231689453125,
-    "alt": 39.32359313964844
+    "alt": 39.32359313964844,
+    "color": 1
   },
   {
     "name": "Seed40",
@@ -17883,7 +18895,8 @@
     "area": "Map",
     "lat": 2339.61865234375,
     "lng": -1084.2711181640625,
-    "alt": 67.70050048828125
+    "alt": 67.70050048828125,
+    "color": 2
   },
   {
     "name": "Seed41",
@@ -17891,7 +18904,8 @@
     "area": "Map",
     "lat": 2355.36962890625,
     "lng": -1057.6082763671875,
-    "alt": 81.00811004638672
+    "alt": 81.00811004638672,
+    "color": 1
   },
   {
     "name": "Seed42",
@@ -17899,7 +18913,8 @@
     "area": "Map",
     "lat": 2363.7724609375,
     "lng": -1103.86669921875,
-    "alt": 85.3998031616211
+    "alt": 85.3998031616211,
+    "color": 2
   },
   {
     "name": "Seed43",
@@ -17915,7 +18930,8 @@
     "area": "Map",
     "lat": -30797.08984375,
     "lng": -9371.01171875,
-    "alt": -823.4222412109375
+    "alt": -823.4222412109375,
+    "color": 2
   },
   {
     "name": "Seed5",
@@ -17923,7 +18939,8 @@
     "area": "Map",
     "lat": -30815.45703125,
     "lng": -9401.767578125,
-    "alt": -823.4222412109375
+    "alt": -823.4222412109375,
+    "color": 2
   },
   {
     "name": "Seed6",
@@ -17931,7 +18948,8 @@
     "area": "Map",
     "lat": -30761.056640625,
     "lng": -9403.357421875,
-    "alt": -823.4223022460938
+    "alt": -823.4223022460938,
+    "color": 2
   },
   {
     "name": "Seed7",
@@ -17947,7 +18965,8 @@
     "area": "Map",
     "lat": 2543.04150390625,
     "lng": -1096.00439453125,
-    "alt": 80.00328826904297
+    "alt": 80.00328826904297,
+    "color": 1
   },
   {
     "name": "Seed9",
@@ -17955,7 +18974,8 @@
     "area": "Map",
     "lat": 2499.3115234375,
     "lng": -1113.270263671875,
-    "alt": 84.39498138427734
+    "alt": 84.39498138427734,
+    "color": 2
   },
   {
     "name": "Seed_22",

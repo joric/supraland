@@ -466,9 +466,11 @@ function loadMap() {
 
             } else {
 
-              if (o.type.endsWith('Chest_C')) {
-                icon = 'chest';
-                layer = 'closedChest';
+              if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
+
+              if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C')) {
+                if (o.color==1) icon += '_yellow';
+                if (o.color==2) icon += '_red';
               }
 
               // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
