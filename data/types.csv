@@ -151,7 +151,7 @@ Scrap_C,scrap,collectable
 SlumBurningQuest_C,shop,shop
 SpawnEnemy3_C,,
 Stone_C,,
-UpgradeHappiness_C,,
+UpgradeHappiness_C,awesome,upgrades
 ValveCarriable_C,valve,misc
 ValveSlot_C,valve,misc
 Valve_C,valve,misc
