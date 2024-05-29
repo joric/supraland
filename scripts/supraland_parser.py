@@ -87,7 +87,7 @@ price_types = {
 }
 
 properties = [
-    'IsInShop',
+    'IsInShop','canBePickedUp', # BP_UnlockMap_C, etc.
     'Coins','CoinsInGold','Cost','Value', # Chest_C
     'HitsToBreak','bObsidian', # Minecraftbrick_C
     'AllowEnemyProjectiles','RequiresPurpleShot?', # Button_C

@@ -125,6 +125,7 @@
     "lng": -58072.6640625,
     "alt": 7850.2783203125,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 50
   },
   {
@@ -146,6 +147,7 @@
     "lng": 15039.345703125,
     "alt": 1457.178955078125,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 50
   },
   {
@@ -268,6 +270,7 @@
     "lng": 14975.8818359375,
     "alt": 1455.8984375,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 50
   },
   {
@@ -278,6 +281,7 @@
     "lng": 15850.8603515625,
     "alt": -97.390380859375,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 30
   },
   {
@@ -288,6 +292,7 @@
     "lng": 15985.712890625,
     "alt": -78.06648254394531,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 30
   },
   {
@@ -315,6 +320,7 @@
     "lng": 15581.537109375,
     "alt": -92.87537384033203,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 60
   },
   {
@@ -826,6 +832,7 @@
     "lat": -22132.296875,
     "lng": -58074.578125,
     "alt": 7836.95361328125,
+    "can_be_picked_up": false,
     "cost": 50
   },
   {
@@ -866,6 +873,7 @@
     "lng": 15713.7216796875,
     "alt": -79.1365966796875,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 30
   },
   {
@@ -14863,6 +14871,7 @@
     "lng": 16464.306640625,
     "alt": -72.95669555664062,
     "is_in_shop": true,
+    "can_be_picked_up": false,
     "cost": 200
   },
   {
@@ -14872,6 +14881,7 @@
     "lat": -28352.66015625,
     "lng": 16443.494140625,
     "alt": -57.282127380371094,
+    "can_be_picked_up": false,
     "cost": 100
   },
   {
@@ -14889,6 +14899,7 @@
     "lat": -28170.8125,
     "lng": 16432.439453125,
     "alt": -77.56555938720703,
+    "can_be_picked_up": false,
     "cost": 20
   },
   {
@@ -20917,7 +20928,8 @@
     "lat": 23538.671875,
     "lng": 10969.87890625,
     "alt": 21214.2578125,
-    "is_in_shop": false
+    "is_in_shop": false,
+    "can_be_picked_up": false
   },
   {
     "name": "Coin703_2",
