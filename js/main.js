@@ -442,7 +442,7 @@ function loadMap() {
           if (o.actors) {
             let layer = 'misc';
             for (actor of o.actors) {
-              if (p = objects[actor]) {
+              if (p = (objects[actor] || objects[o.area +':' + actor])) { // actors have optional area prefix
                 L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: 0.5, weight: 2, color: 'white', interactive: false}).addTo(layers[layer]);
               }
             }

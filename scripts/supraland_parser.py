@@ -131,8 +131,9 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
     data = []
     areas = {}
 
-    notEnum= lambda s:int(s[len(s.rstrip('0123456789')):]or 0) if type(s) is str else s
-    optKey = lambda d,k,v: v is not None and d.__setitem__(k,notEnum(v))
+    optEnum= lambda s:int(s[len(s.rstrip('0123456789')):]or 0) if type(s) is str and '::' in s else s
+    optArea= lambda a,k,v: v if a==k else ':'.join((k,v))
+    optKey = lambda d,k,v: v is not None and d.__setitem__(k,optEnum(v))
     getVec = lambda d,v=0: Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
     getRot = lambda d,v=0: Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
     getQuat= lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
@@ -174,7 +175,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 p = o.get('Properties',{})
                 if p.get('RelativeLocation'):
                     matrix = Matrix.LocRotScale(getVec(p.get('RelativeLocation')), getRot(p.get('RelativeRotation')), getVec(p.get('RelativeScale3D'), 1)) @ matrix
-
                 for parent in ['RootObject', 'RootComponent', 'DefaultSceneRoot', 'AttachParent']:
                     node = p.get(parent,{})
                     if type(node) is dict:
@@ -182,7 +182,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                             key = ':'.join((node.get('ObjectName',''),ref))
                             if key in outer:
                                 return get_matrix(outer[key], matrix)
-
                 return matrix
 
             matrix = get_matrix(o)
@@ -208,8 +207,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                     if a := o.get('Properties',{}).get(action):
                         for d in [a] if type(a) is dict else a:
                             if type(d) is dict and 'OuterIndex' in d and 'ObjectName' in d:
-                                key = d['OuterIndex']['Outer'] +':' + d['ObjectName']
-                                actors.append(key)
+                                key = ':'.join((k:= d['OuterIndex']['Outer'],v:= d['ObjectName']))
+                                actors.append(optArea(area, k, v))
                                 if key in objects and level<5:
                                     get_actors(objects[key], level+1)
             get_actors(o)

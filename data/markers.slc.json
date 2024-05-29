@@ -7,10 +7,10 @@
     "lng": 8104.126953125,
     "alt": -2298.772216796875,
     "actors": [
-      "Crash:Button12_11",
-      "Crash:ProjectileShooter6_2",
-      "Crash:Glowline46_2",
-      "Crash:TutorialButtons19_5"
+      "Button12_11",
+      "ProjectileShooter6_2",
+      "Glowline46_2",
+      "TutorialButtons19_5"
     ]
   },
   {
@@ -21,7 +21,7 @@
     "lng": -3521.822021484375,
     "alt": 1056.41015625,
     "actors": [
-      "Crash:Scrap201"
+      "Scrap201"
     ]
   },
   {
@@ -32,9 +32,9 @@
     "lng": -6230.52392578125,
     "alt": -793.7493896484375,
     "actors": [
-      "Crash:MoveMesh28_2",
-      "Crash:Wall_400x600",
-      "Crash:Glowline67_11"
+      "MoveMesh28_2",
+      "Wall_400x600",
+      "Glowline67_11"
     ]
   },
   {
@@ -45,7 +45,7 @@
     "lng": -6924.349609375,
     "alt": -795.314208984375,
     "actors": [
-      "Crash:TaskRaceguy5"
+      "TaskRaceguy5"
     ]
   },
   {
@@ -56,8 +56,8 @@
     "lng": 35648.0078125,
     "alt": 108.90533447265625,
     "actors": [
-      "Crash:MoveMesh31_2",
-      "Crash:Wood_block_369"
+      "MoveMesh31_2",
+      "Wood_block_369"
     ]
   },
   {
@@ -68,9 +68,9 @@
     "lng": 7506.1318359375,
     "alt": 34.04820251464844,
     "actors": [
-      "Crash:MoveMesh32",
-      "Crash:Wood_block_372",
-      "Crash:Glowline80_2"
+      "MoveMesh32",
+      "Wood_block_372",
+      "Glowline80_2"
     ]
   },
   {
@@ -81,10 +81,10 @@
     "lng": 40493.02734375,
     "alt": 126.05413818359375,
     "actors": [
-      "Crash:Glowline87_2",
-      "Crash:DoorLego46",
-      "Crash:MoveMesh39_4",
-      "Crash:crate9_520"
+      "Glowline87_2",
+      "DoorLego46",
+      "MoveMesh39_4",
+      "crate9_520"
     ]
   },
   {
@@ -95,8 +95,8 @@
     "lng": 44780.0,
     "alt": -400.0,
     "actors": [
-      "Crash:MoveMesh37",
-      "Crash:SM_Bars_15"
+      "MoveMesh37",
+      "SM_Bars_15"
     ]
   },
   {
@@ -107,13 +107,13 @@
     "lng": 43444.4765625,
     "alt": -2094.75439453125,
     "actors": [
-      "Crash:FirePipe4_2",
-      "Crash:Glowline90_8",
-      "Crash:MoveMesh40_2",
-      "Crash:Metalset1_SteelPoleRound13",
-      "Crash:Glowline88_2",
-      "Crash:MoveMesh40_2",
-      "Crash:Metalset1_SteelPoleRound13"
+      "FirePipe4_2",
+      "Glowline90_8",
+      "MoveMesh40_2",
+      "Metalset1_SteelPoleRound13",
+      "Glowline88_2",
+      "MoveMesh40_2",
+      "Metalset1_SteelPoleRound13"
     ]
   },
   {
@@ -124,7 +124,7 @@
     "lng": 9246.59765625,
     "alt": 2185.991943359375,
     "actors": [
-      "Crash:TaskRaceguy3"
+      "TaskRaceguy3"
     ]
   },
   {
@@ -135,8 +135,8 @@
     "lng": 39894.875,
     "alt": 1512.0543212890625,
     "actors": [
-      "Crash:Jumppad37",
-      "Crash:Glowline97_5"
+      "Jumppad37",
+      "Glowline97_5"
     ]
   },
   {
@@ -147,9 +147,9 @@
     "lng": 36859.92578125,
     "alt": -217.25054931640625,
     "actors": [
-      "Crash:MoveMesh7_17",
-      "Crash:Metalset1_SteelPoleRound11_31",
-      "Crash:Glowline30_2"
+      "MoveMesh7_17",
+      "Metalset1_SteelPoleRound11_31",
+      "Glowline30_2"
     ]
   },
   {
@@ -160,9 +160,9 @@
     "lng": 1906.728271484375,
     "alt": 2027.0006103515625,
     "actors": [
-      "Crash:MoveMesh10_2",
-      "Crash:SM_outer_wall_broken_b100",
-      "Crash:Glowline37_5"
+      "MoveMesh10_2",
+      "SM_outer_wall_broken_b100",
+      "Glowline37_5"
     ]
   },
   {
@@ -173,7 +173,7 @@
     "lng": 43720.46875,
     "alt": 245.865478515625,
     "actors": [
-      "Crash:DoorStone_2"
+      "DoorStone_2"
     ]
   },
   {
@@ -184,11 +184,11 @@
     "lng": 14316.7197265625,
     "alt": 2229.618408203125,
     "actors": [
-      "Crash:Jumppad12",
-      "Crash:Jumppad13",
-      "Crash:Glowline38_2",
-      "Crash:DoorLego47_2",
-      "Crash:Glowline96_2"
+      "Jumppad12",
+      "Jumppad13",
+      "Glowline38_2",
+      "DoorLego47_2",
+      "Glowline96_2"
     ]
   },
   {
@@ -199,7 +199,7 @@
     "lng": 8247.62109375,
     "alt": 392.330322265625,
     "actors": [
-      "Crash:TaskRaceguy4"
+      "TaskRaceguy4"
     ]
   },
   {
@@ -210,8 +210,8 @@
     "lng": -7842.65966796875,
     "alt": -3641.287109375,
     "actors": [
-      "Crash:Glowline48",
-      "Crash:DoorLego7_2"
+      "Glowline48",
+      "DoorLego7_2"
     ]
   },
   {
@@ -222,7 +222,7 @@
     "lng": -7559.3583984375,
     "alt": 1004.00439453125,
     "actors": [
-      "Crash:TaskRaceguy2"
+      "TaskRaceguy2"
     ]
   },
   {
@@ -257,10 +257,10 @@
     "lng": 37993.64453125,
     "alt": 166.1577911376953,
     "actors": [
-      "Crash:ProjectileShooter_2",
-      "Crash:Jumppad2",
-      "Crash:Glowline11_12",
-      "Crash:Glowline_2"
+      "ProjectileShooter_2",
+      "Jumppad2",
+      "Glowline11_12",
+      "Glowline_2"
     ]
   },
   {
@@ -1055,7 +1055,7 @@
     "lng": 20008.6015625,
     "alt": 1887.0006103515625,
     "actors": [
-      "Crash:DoorLego6"
+      "DoorLego6"
     ]
   },
   {
@@ -1066,8 +1066,8 @@
     "lng": 3574.80615234375,
     "alt": -1552.3299560546875,
     "actors": [
-      "Crash:Door_2",
-      "Crash:Glowline44_5"
+      "Door_2",
+      "Glowline44_5"
     ]
   },
   {
@@ -1078,7 +1078,7 @@
     "lng": 6862.6044921875,
     "alt": -1672.4754638671875,
     "actors": [
-      "Crash:ProjectileShooter6_2"
+      "ProjectileShooter6_2"
     ]
   },
   {
@@ -1107,8 +1107,8 @@
     "alt": -2405.614013671875,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:MoveMesh25_5",
-      "Crash:Damaged_Wall_Right_01_76"
+      "MoveMesh25_5",
+      "Damaged_Wall_Right_01_76"
     ]
   },
   {
@@ -1120,8 +1120,8 @@
     "alt": -681.8060913085938,
     "requires_purple_shot_flag": true,
     "actors": [
-      "Crash:Jumppad33_2",
-      "Crash:Glowline77_2"
+      "Jumppad33_2",
+      "Glowline77_2"
     ]
   },
   {
@@ -1133,8 +1133,8 @@
     "alt": -2246.45361328125,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline22"
+      "CounterTrigger3",
+      "Glowline22"
     ]
   },
   {
@@ -1146,8 +1146,8 @@
     "alt": -1877.5882568359375,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline21_11"
+      "CounterTrigger3",
+      "Glowline21_11"
     ]
   },
   {
@@ -1159,7 +1159,7 @@
     "alt": 199.54034423828125,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:DoorLego2"
+      "DoorLego2"
     ]
   },
   {
@@ -1171,8 +1171,8 @@
     "alt": -2246.45361328125,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline24"
+      "CounterTrigger3",
+      "Glowline24"
     ]
   },
   {
@@ -1184,8 +1184,8 @@
     "alt": -1868.9390869140625,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger3",
-      "Crash:Glowline23"
+      "CounterTrigger3",
+      "Glowline23"
     ]
   },
   {
@@ -1196,8 +1196,8 @@
     "lng": 45611.515625,
     "alt": -171.89694213867188,
     "actors": [
-      "Crash:MoveMesh38",
-      "Crash:Wood_block_474"
+      "MoveMesh38",
+      "Wood_block_474"
     ]
   },
   {
@@ -1208,7 +1208,7 @@
     "lng": 36237.6953125,
     "alt": 182.32858276367188,
     "actors": [
-      "Crash:Jumppad36"
+      "Jumppad36"
     ]
   },
   {
@@ -1220,10 +1220,10 @@
     "alt": 219.28189086914062,
     "requires_purple_shot_flag": true,
     "actors": [
-      "Crash:MoveMesh_2",
-      "Crash:Charred_branch8",
-      "Crash:Gears7_2",
-      "Crash:Glowline27_2"
+      "MoveMesh_2",
+      "Charred_branch8",
+      "Gears7_2",
+      "Glowline27_2"
     ]
   },
   {
@@ -1235,8 +1235,8 @@
     "alt": 1373.3763427734375,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:MoveMesh48",
-      "Crash:SM_Bars_23"
+      "MoveMesh48",
+      "SM_Bars_23"
     ]
   },
   {
@@ -1248,8 +1248,8 @@
     "alt": 237.50331115722656,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:DoorStone2_2",
-      "Crash:Glowline7_2"
+      "DoorStone2_2",
+      "Glowline7_2"
     ]
   },
   {
@@ -1262,8 +1262,8 @@
     "allow_enemy_projectiles": true,
     "requires_purple_shot_flag": true,
     "actors": [
-      "Crash:Door16_2",
-      "Crash:Glowline19_5"
+      "Door16_2",
+      "Glowline19_5"
     ]
   },
   {
@@ -1275,8 +1275,8 @@
     "alt": 179.83616638183594,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline22"
+      "CounterTrigger2_2",
+      "Glowline22"
     ]
   },
   {
@@ -1288,7 +1288,7 @@
     "alt": 314.03192138671875,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:Jumppad8_2"
+      "Jumppad8_2"
     ]
   },
   {
@@ -1300,8 +1300,8 @@
     "alt": 548.7015991210938,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline21_11"
+      "CounterTrigger2_2",
+      "Glowline21_11"
     ]
   },
   {
@@ -1313,8 +1313,8 @@
     "alt": 179.83616638183594,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline24"
+      "CounterTrigger2_2",
+      "Glowline24"
     ]
   },
   {
@@ -1326,8 +1326,8 @@
     "alt": 557.3506469726562,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:CounterTrigger2_2",
-      "Crash:Glowline23"
+      "CounterTrigger2_2",
+      "Glowline23"
     ]
   },
   {
@@ -1339,8 +1339,8 @@
     "alt": 272.09246826171875,
     "allow_enemy_projectiles": true,
     "actors": [
-      "Crash:DoorLego_2",
-      "Crash:Glowline4_5"
+      "DoorLego_2",
+      "Glowline4_5"
     ]
   },
   {
@@ -1352,9 +1352,9 @@
     "alt": 2445.813720703125,
     "requires_purple_shot_flag": true,
     "actors": [
-      "Crash:DoorStone4_2",
-      "Crash:Glowline52_16",
-      "Crash:Jumppad24"
+      "DoorStone4_2",
+      "Glowline52_16",
+      "Jumppad24"
     ]
   },
   {
@@ -1365,8 +1365,8 @@
     "lng": -1366.956298828125,
     "alt": 2445.8134765625,
     "actors": [
-      "Crash:Glowline69_2",
-      "Crash:Door27_2"
+      "Glowline69_2",
+      "Door27_2"
     ]
   },
   {
@@ -1377,8 +1377,8 @@
     "lng": -2297.39599609375,
     "alt": 2333.800537109375,
     "actors": [
-      "Crash:Jumppad25",
-      "Crash:Jumppad23_2"
+      "Jumppad25",
+      "Jumppad23_2"
     ]
   },
   {
@@ -1390,7 +1390,7 @@
     "alt": 2417.905517578125,
     "color": 1,
     "actors": [
-      "Crash:Jumppad11"
+      "Jumppad11"
     ]
   },
   {
@@ -1402,8 +1402,8 @@
     "alt": 2315.054931640625,
     "color": 3,
     "actors": [
-      "Crash:MoveMesh11_2",
-      "Crash:Simple_rock_132"
+      "MoveMesh11_2",
+      "Simple_rock_132"
     ]
   },
   {
@@ -1414,10 +1414,10 @@
     "lng": 22495.72265625,
     "alt": 2296.0927734375,
     "actors": [
-      "Crash:MoveMesh12_2",
-      "Crash:Metalset1_SteelPoleSquare120",
-      "Crash:Glowline39_5",
-      "Crash:Gears8_2"
+      "MoveMesh12_2",
+      "Metalset1_SteelPoleSquare120",
+      "Glowline39_5",
+      "Gears8_2"
     ]
   },
   {
@@ -1429,8 +1429,8 @@
     "alt": 360.2218017578125,
     "color": 1,
     "actors": [
-      "Crash:Jumppad5_2",
-      "Crash:Glowline41_5"
+      "Jumppad5_2",
+      "Glowline41_5"
     ]
   },
   {
@@ -1441,8 +1441,8 @@
     "lng": 24731.94921875,
     "alt": 747.6473999023438,
     "actors": [
-      "Crash:DoorLego6",
-      "Crash:Glowline40_2"
+      "DoorLego6",
+      "Glowline40_2"
     ]
   },
   {
@@ -1453,8 +1453,8 @@
     "lng": -5120.0107421875,
     "alt": 617.5607299804688,
     "actors": [
-      "Crash:SignalInverter_2",
-      "Crash:FirePipe3"
+      "SignalInverter_2",
+      "FirePipe3"
     ]
   },
   {
@@ -1465,8 +1465,8 @@
     "lng": 21258.84375,
     "alt": 2278.51318359375,
     "actors": [
-      "Crash:PipeCap2_5",
-      "Crash:Glowline45_8"
+      "PipeCap2_5",
+      "Glowline45_8"
     ]
   },
   {
@@ -1478,7 +1478,7 @@
     "alt": 2626.345458984375,
     "color": 1,
     "actors": [
-      "Crash:Jumppad14"
+      "Jumppad14"
     ]
   },
   {
@@ -1490,8 +1490,8 @@
     "alt": -3641.2890625,
     "color": 1,
     "actors": [
-      "Crash:Glowline47_2",
-      "Crash:DoorLego8"
+      "Glowline47_2",
+      "DoorLego8"
     ]
   },
   {
@@ -1502,8 +1502,8 @@
     "lng": 63885.87109375,
     "alt": 13169.60546875,
     "actors": [
-      "Crash:HeadSwitcher_2",
-      "Crash:Glowline58_11"
+      "HeadSwitcher_2",
+      "Glowline58_11"
     ]
   },
   {
@@ -1515,8 +1515,8 @@
     "alt": 13632.94921875,
     "color": 2,
     "actors": [
-      "Crash:MetalBall3",
-      "Crash:Glowline59_14"
+      "MetalBall3",
+      "Glowline59_14"
     ]
   },
   {
@@ -1527,9 +1527,9 @@
     "lng": 43872.16796875,
     "alt": 357.2705078125,
     "actors": [
-      "Crash:SignalInverter4_2",
-      "Crash:Door32",
-      "Crash:Glowline94_2"
+      "SignalInverter4_2",
+      "Door32",
+      "Glowline94_2"
     ]
   },
   {
@@ -1541,8 +1541,8 @@
     "alt": 240.7220458984375,
     "color": 5,
     "actors": [
-      "Crash:Door26_2",
-      "Crash:Glowline68_5"
+      "Door26_2",
+      "Glowline68_5"
     ]
   },
   {
@@ -1554,8 +1554,8 @@
     "alt": 820.687255859375,
     "color": 5,
     "actors": [
-      "Crash:Glowline3_2",
-      "Crash:Jumppad_2"
+      "Glowline3_2",
+      "Jumppad_2"
     ]
   },
   {
@@ -1566,8 +1566,8 @@
     "lng": 66698.15625,
     "alt": 13633.6064453125,
     "actors": [
-      "Crash:Jumppad20",
-      "Crash:Glowline56"
+      "Jumppad20",
+      "Glowline56"
     ]
   },
   {
@@ -1578,8 +1578,8 @@
     "lng": 66698.15625,
     "alt": 13633.6064453125,
     "actors": [
-      "Crash:Jumppad19",
-      "Crash:Glowline55"
+      "Jumppad19",
+      "Glowline55"
     ]
   },
   {
@@ -1590,8 +1590,8 @@
     "lng": 66698.15625,
     "alt": 13633.6064453125,
     "actors": [
-      "Crash:Jumppad18",
-      "Crash:Glowline54"
+      "Jumppad18",
+      "Glowline54"
     ]
   },
   {
@@ -1602,8 +1602,8 @@
     "lng": 66698.15625,
     "alt": 13633.6064453125,
     "actors": [
-      "Crash:Jumppad17",
-      "Crash:Glowline53_2"
+      "Jumppad17",
+      "Glowline53_2"
     ]
   },
   {
@@ -1614,7 +1614,7 @@
     "lng": 66698.15625,
     "alt": 13633.6064453125,
     "actors": [
-      "Crash:EffectTriggerable4_2"
+      "EffectTriggerable4_2"
     ]
   },
   {
@@ -1625,8 +1625,8 @@
     "lng": 64675.578125,
     "alt": 13792.7265625,
     "actors": [
-      "Crash:Jumppad21",
-      "Crash:Glowline57_8"
+      "Jumppad21",
+      "Glowline57_8"
     ]
   },
   {
@@ -1638,7 +1638,7 @@
     "alt": -2326.363525390625,
     "color": 1,
     "actors": [
-      "Crash:Door21_2"
+      "Door21_2"
     ]
   },
   {
@@ -1649,8 +1649,8 @@
     "lng": 42164.5,
     "alt": 2214.3935546875,
     "actors": [
-      "Crash:DoorLego41_2",
-      "Crash:Glowline72_2"
+      "DoorLego41_2",
+      "Glowline72_2"
     ]
   },
   {
@@ -1662,8 +1662,8 @@
     "alt": -1963.877197265625,
     "color": 1,
     "actors": [
-      "Crash:Jumppad29",
-      "Crash:Glowline75_9"
+      "Jumppad29",
+      "Glowline75_9"
     ]
   },
   {
@@ -1675,9 +1675,9 @@
     "alt": 121.3615493774414,
     "color": 1,
     "actors": [
-      "Crash:MoveMesh29",
-      "Crash:Wall_400x627",
-      "Crash:Glowline78_5"
+      "MoveMesh29",
+      "Wall_400x627",
+      "Glowline78_5"
     ]
   },
   {
@@ -1688,9 +1688,9 @@
     "lng": 5343.1513671875,
     "alt": 36.56090545654297,
     "actors": [
-      "Crash:MoveMesh35",
-      "Crash:Cartoon_plank_330",
-      "Crash:Glowline85_8"
+      "MoveMesh35",
+      "Cartoon_plank_330",
+      "Glowline85_8"
     ]
   },
   {
@@ -1702,8 +1702,8 @@
     "alt": -2118.058349609375,
     "color": 1,
     "actors": [
-      "Crash:WoodBlockLift_2",
-      "Crash:Glowline89_5"
+      "WoodBlockLift_2",
+      "Glowline89_5"
     ]
   },
   {
@@ -1715,8 +1715,8 @@
     "alt": -1200.843505859375,
     "color": 1,
     "actors": [
-      "Crash:MoveMesh41_2",
-      "Crash:Wood_block_27"
+      "MoveMesh41_2",
+      "Wood_block_27"
     ]
   },
   {
@@ -1727,9 +1727,9 @@
     "lng": 199.05557250976562,
     "alt": 27.343658447265625,
     "actors": [
-      "Crash:MoveMesh42_5",
-      "Crash:Wall_400x584",
-      "Crash:Glowline91_2"
+      "MoveMesh42_5",
+      "Wall_400x584",
+      "Glowline91_2"
     ]
   },
   {
@@ -1741,7 +1741,7 @@
     "alt": 2498.1611328125,
     "color": 1,
     "actors": [
-      "Crash:PipeCap_2"
+      "PipeCap_2"
     ]
   },
   {
@@ -1752,9 +1752,9 @@
     "lng": 36749.3515625,
     "alt": 102.44485473632812,
     "actors": [
-      "Crash:Glowline12_15",
-      "Crash:MoveMesh2_2",
-      "Crash:Wood_block_98"
+      "Glowline12_15",
+      "MoveMesh2_2",
+      "Wood_block_98"
     ]
   },
   {
@@ -1766,7 +1766,7 @@
     "alt": -607.03173828125,
     "color": 3,
     "actors": [
-      "Crash:Door3_2"
+      "Door3_2"
     ]
   },
   {
@@ -1777,10 +1777,10 @@
     "lng": 19028.2265625,
     "alt": 3000.070556640625,
     "actors": [
-      "Crash:Gears6_2",
-      "Crash:Glowline25_2",
-      "Crash:MoveMesh3_5",
-      "Crash:Wood_block_156"
+      "Gears6_2",
+      "Glowline25_2",
+      "MoveMesh3_5",
+      "Wood_block_156"
     ]
   },
   {
@@ -1792,9 +1792,9 @@
     "alt": -121.62134552001953,
     "color": 1,
     "actors": [
-      "Crash:MoveMesh4_8",
-      "Crash:Wood_block_183",
-      "Crash:Glowline50_10"
+      "MoveMesh4_8",
+      "Wood_block_183",
+      "Glowline50_10"
     ]
   },
   {
@@ -1806,10 +1806,10 @@
     "alt": -222.99295043945312,
     "color": 3,
     "actors": [
-      "Crash:Minium",
-      "Crash:Glowline18",
-      "Crash:MoveMesh5_11",
-      "Crash:Metalset1_SteelPoleRound8_141"
+      "Minium",
+      "Glowline18",
+      "MoveMesh5_11",
+      "Metalset1_SteelPoleRound8_141"
     ]
   },
   {
@@ -1820,9 +1820,9 @@
     "lng": 6747.07861328125,
     "alt": 21.41644287109375,
     "actors": [
-      "Crash:MoveMesh35",
-      "Crash:Cartoon_plank_330",
-      "Crash:Glowline84_5"
+      "MoveMesh35",
+      "Cartoon_plank_330",
+      "Glowline84_5"
     ]
   },
   {
@@ -1833,8 +1833,8 @@
     "lng": -977.024658203125,
     "alt": 2273.984130859375,
     "actors": [
-      "Crash:ProjectileShooter3",
-      "Crash:Glowline36_2"
+      "ProjectileShooter3",
+      "Glowline36_2"
     ]
   },
   {
@@ -1846,8 +1846,8 @@
     "alt": -1561.8104248046875,
     "color": 1,
     "actors": [
-      "Crash:MoveMesh49_2",
-      "Crash:SM_Fence_3"
+      "MoveMesh49_2",
+      "SM_Fence_3"
     ]
   },
   {
@@ -1923,7 +1923,7 @@
     "is_in_shop": true,
     "cost": 61,
     "actors": [
-      "Crash:TutorialButtons20_8"
+      "TutorialButtons20_8"
     ]
   },
   {
@@ -2076,7 +2076,7 @@
     "lat": 16094.1943359375,
     "lng": -4490.00439453125,
     "alt": 1179.5394287109375,
-    "spawns": 0
+    "spawns": "BuyWalletx15_C"
   },
   {
     "name": "Chest119_2",
@@ -2085,7 +2085,7 @@
     "lat": -2214.8349609375,
     "lng": 55521.76171875,
     "alt": 537.5179443359375,
-    "spawns": 0
+    "spawns": "BuyForceCubeBeam_C"
   },
   {
     "name": "Chest11_2",
@@ -2094,7 +2094,7 @@
     "lat": 5446.6142578125,
     "lng": 37349.2265625,
     "alt": -107.74044036865234,
-    "spawns": 0
+    "spawns": "BuyShowHealthbar_C"
   },
   {
     "name": "Chest12_5",
@@ -2103,7 +2103,7 @@
     "lat": -7659.13525390625,
     "lng": 41877.31640625,
     "alt": 219.0546875,
-    "spawns": 0
+    "spawns": "BuySmashdownRadius+_C"
   },
   {
     "name": "Chest13_2",
@@ -2112,7 +2112,7 @@
     "lat": 10272.833984375,
     "lng": -5264.703125,
     "alt": 1530.1470947265625,
-    "spawns": 0
+    "spawns": "BuyHealth+15_C"
   },
   {
     "name": "Chest14",
@@ -2121,7 +2121,7 @@
     "lat": 10272.833984375,
     "lng": -5099.8310546875,
     "alt": 1534.45361328125,
-    "spawns": 0
+    "spawns": "BuyHealthRegenMax15_C"
   },
   {
     "name": "Chest15_2",
@@ -2130,7 +2130,7 @@
     "lat": -711.4050903320312,
     "lng": 5893.91650390625,
     "alt": 95.51234436035156,
-    "spawns": 0
+    "spawns": "BuyNumberRising_C"
   },
   {
     "name": "Chest16_2",
@@ -2139,7 +2139,7 @@
     "lat": -6696.26416015625,
     "lng": 40916.78125,
     "alt": -622.9281005859375,
-    "spawns": 0
+    "spawns": "BuyGunRefireRate50_C"
   },
   {
     "name": "Chest18_2",
@@ -2148,7 +2148,7 @@
     "lat": 2732.5478515625,
     "lng": 36309.80078125,
     "alt": 686.169189453125,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+3_C"
   },
   {
     "name": "Chest20",
@@ -2157,7 +2157,7 @@
     "lat": 6158.10107421875,
     "lng": 37856.36328125,
     "alt": 1580.4462890625,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+3_C"
   },
   {
     "name": "Chest21_2",
@@ -2166,7 +2166,7 @@
     "lat": -3565.517578125,
     "lng": 7141.90185546875,
     "alt": -1515.2947998046875,
-    "spawns": 0
+    "spawns": "BuyTranslocatorDamagex3_C"
   },
   {
     "name": "Chest22",
@@ -2175,7 +2175,7 @@
     "lat": 2885.389892578125,
     "lng": 3338.64013671875,
     "alt": 719.2843017578125,
-    "spawns": 0
+    "spawns": "BuyGunRefireRate50_C"
   },
   {
     "name": "Chest24",
@@ -2184,7 +2184,7 @@
     "lat": 3120.079345703125,
     "lng": 3302.072021484375,
     "alt": 716.5054321289062,
-    "spawns": 0
+    "spawns": "BuyHealthRegenMax15_C"
   },
   {
     "name": "Chest25_6",
@@ -2193,7 +2193,7 @@
     "lat": -9030.11328125,
     "lng": 44304.60546875,
     "alt": 258.0674743652344,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+3_C"
   },
   {
     "name": "Chest28_9",
@@ -2202,7 +2202,7 @@
     "lat": -14529.28125,
     "lng": 27868.373046875,
     "alt": -507.9334716796875,
-    "spawns": 0
+    "spawns": "BuyHealth+5_C"
   },
   {
     "name": "Chest29_12",
@@ -2211,7 +2211,7 @@
     "lat": -13596.2919921875,
     "lng": 34281.875,
     "alt": 16.556396484375,
-    "spawns": 0
+    "spawns": "BuyHealth+2_C"
   },
   {
     "name": "Chest2_5",
@@ -2220,7 +2220,7 @@
     "lat": -345.537109375,
     "lng": 47847.48046875,
     "alt": 944.1328735351562,
-    "spawns": 0
+    "spawns": "BuyWalletx2_C"
   },
   {
     "name": "Chest30_15",
@@ -2229,7 +2229,7 @@
     "lat": -2695.05517578125,
     "lng": 39753.6015625,
     "alt": 978.2976684570312,
-    "spawns": 0
+    "spawns": "BuyHealth+5_C"
   },
   {
     "name": "Chest31_18",
@@ -2238,7 +2238,7 @@
     "lat": -12675.3642578125,
     "lng": 48910.04296875,
     "alt": 2925.927490234375,
-    "spawns": 0
+    "spawns": "BuyHealth+5_C"
   },
   {
     "name": "Chest32_21",
@@ -2247,7 +2247,7 @@
     "lat": -8638.0927734375,
     "lng": 43841.66796875,
     "alt": 90.33992004394531,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+1_C"
   },
   {
     "name": "Chest33_24",
@@ -2256,7 +2256,7 @@
     "lat": 3458.637939453125,
     "lng": 32053.0703125,
     "alt": 999.6883544921875,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+3_C"
   },
   {
     "name": "Chest34_27",
@@ -2265,7 +2265,7 @@
     "lat": -4111.29541015625,
     "lng": 45474.1484375,
     "alt": -484.3470153808594,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+1_C"
   },
   {
     "name": "Chest35_30",
@@ -2274,7 +2274,7 @@
     "lat": -312.454345703125,
     "lng": 34350.79296875,
     "alt": -2696.89990234375,
-    "spawns": 0
+    "spawns": "BuyGunAltDamagex2_C"
   },
   {
     "name": "Chest36_33",
@@ -2283,7 +2283,7 @@
     "lat": -4616.7138671875,
     "lng": 9948.3955078125,
     "alt": -1516.2109375,
-    "spawns": 0
+    "spawns": "BuyGunAltDamagex2_C"
   },
   {
     "name": "Chest37_36",
@@ -2292,7 +2292,7 @@
     "lat": 11243.51953125,
     "lng": -130.99945068359375,
     "alt": 3023.717529296875,
-    "spawns": 0
+    "spawns": "BuyGunAltDamagex2_C"
   },
   {
     "name": "Chest38_39",
@@ -2301,7 +2301,7 @@
     "lat": 10751.73046875,
     "lng": -2339.823974609375,
     "alt": 1332.194580078125,
-    "spawns": 0
+    "spawns": "BuyGunAltDamagex2_C"
   },
   {
     "name": "Chest39_42",
@@ -2310,7 +2310,7 @@
     "lat": 16231.7138671875,
     "lng": 45006.79296875,
     "alt": 1524.0516357421875,
-    "spawns": 0
+    "spawns": "BuyHealth+5_C"
   },
   {
     "name": "Chest3_2",
@@ -2319,7 +2319,7 @@
     "lat": -4660.42431640625,
     "lng": 23504.736328125,
     "alt": -794.0892944335938,
-    "spawns": 0
+    "spawns": "BuyHealthRegenMax15_C"
   },
   {
     "name": "Chest40",
@@ -2328,7 +2328,7 @@
     "lat": 14051.2509765625,
     "lng": 43748.18359375,
     "alt": 1524.0516357421875,
-    "spawns": 0
+    "spawns": "BuyHealthRegenMax5_C"
   },
   {
     "name": "Chest41_46",
@@ -2337,7 +2337,7 @@
     "lat": 7627.6201171875,
     "lng": 45868.1484375,
     "alt": -1044.4412841796875,
-    "spawns": 0
+    "spawns": "BuyHealthRegenSpeed_C"
   },
   {
     "name": "Chest42_49",
@@ -2346,7 +2346,7 @@
     "lat": -18660.33203125,
     "lng": 55482.3828125,
     "alt": 972.832763671875,
-    "spawns": 0
+    "spawns": "BuyHealthRegenSpeed_C"
   },
   {
     "name": "Chest43_52",
@@ -2355,7 +2355,7 @@
     "lat": 9741.689453125,
     "lng": 40798.20703125,
     "alt": -1105.8056640625,
-    "spawns": 0
+    "spawns": "BuyHealth+2_C"
   },
   {
     "name": "Chest44_55",
@@ -2364,7 +2364,7 @@
     "lat": -6318.294921875,
     "lng": 56186.50390625,
     "alt": 2695.764404296875,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+1_C"
   },
   {
     "name": "Chest45_2",
@@ -2373,7 +2373,7 @@
     "lat": -17753.068359375,
     "lng": 30992.19140625,
     "alt": 114.38147735595703,
-    "spawns": 0
+    "spawns": "BuyTranslocatorDamagex3_C"
   },
   {
     "name": "Chest46_5",
@@ -2382,7 +2382,7 @@
     "lat": -8534.9931640625,
     "lng": 40648.38671875,
     "alt": 244.9840087890625,
-    "spawns": 0
+    "spawns": "BuyTranslocatorDamagex3_C"
   },
   {
     "name": "Chest4_2",
@@ -2391,7 +2391,7 @@
     "lat": 15697.39453125,
     "lng": -9384.943359375,
     "alt": 2203.329345703125,
-    "spawns": 0
+    "spawns": "BuySmashdownDamage+3_C"
   },
   {
     "name": "Chest5_2",
@@ -2400,7 +2400,7 @@
     "lat": 2977.30322265625,
     "lng": 38915.07421875,
     "alt": -2236.359619140625,
-    "spawns": 0
+    "spawns": "BuyGun1_C"
   },
   {
     "name": "Chest6_2",
@@ -2409,7 +2409,7 @@
     "lat": 2653.248291015625,
     "lng": 3309.1591796875,
     "alt": 732.0569458007812,
-    "spawns": 0
+    "spawns": "BuyHealth+15_C"
   },
   {
     "name": "Chest7_2",
@@ -2418,7 +2418,7 @@
     "lat": 2459.70263671875,
     "lng": 7699.14306640625,
     "alt": -1165.341064453125,
-    "spawns": 0
+    "spawns": "BuyGunAlt_C"
   },
   {
     "name": "Chest8_2",
@@ -2427,7 +2427,7 @@
     "lat": 6220.0068359375,
     "lng": 9336.2060546875,
     "alt": 2472.301513671875,
-    "spawns": 0
+    "spawns": "BuyWalletx15_C"
   },
   {
     "name": "Chest9_2",
@@ -2436,7 +2436,7 @@
     "lat": 6084.83984375,
     "lng": 25805.306640625,
     "alt": -1321.84765625,
-    "spawns": 0
+    "spawns": "BuyStats_C"
   },
   {
     "name": "Chest_2",
@@ -2445,7 +2445,7 @@
     "lat": 4383.1689453125,
     "lng": 38385.80078125,
     "alt": -2279.52880859375,
-    "spawns": 0
+    "spawns": "BuyForceBeam_C"
   },
   {
     "name": "Coin10_9",
@@ -5433,7 +5433,7 @@
     "alt": -2499.472412109375,
     "color": 3,
     "actors": [
-      "Crash:JailDoor3"
+      "JailDoor3"
     ]
   },
   {
@@ -5445,7 +5445,7 @@
     "alt": -2499.472412109375,
     "color": 6,
     "actors": [
-      "Crash:JailDoor8"
+      "JailDoor8"
     ]
   },
   {
@@ -5457,7 +5457,7 @@
     "alt": -2499.472412109375,
     "color": 6,
     "actors": [
-      "Crash:JailDoor_2"
+      "JailDoor_2"
     ]
   },
   {
@@ -5468,11 +5468,11 @@
     "lng": 7636.98291015625,
     "alt": 155.33912658691406,
     "actors": [
-      "Crash:MoveMesh34_2",
-      "Crash:Concrette_Paving179",
-      "Crash:Gears5",
-      "Crash:RedGuyEvent15",
-      "Crash:RedGuyEvent11_2"
+      "MoveMesh34_2",
+      "Concrette_Paving179",
+      "Gears5",
+      "RedGuyEvent15",
+      "RedGuyEvent11_2"
     ]
   },
   {
@@ -5483,7 +5483,7 @@
     "lng": 43716.484375,
     "alt": 848.9498291015625,
     "actors": [
-      "Crash:Birdcage3_3"
+      "Birdcage3_3"
     ]
   },
   {
@@ -5494,8 +5494,8 @@
     "lng": 37816.90625,
     "alt": -189.0847625732422,
     "actors": [
-      "Crash:crate14",
-      "Crash:TutorialButtons18_2"
+      "crate14",
+      "TutorialButtons18_2"
     ]
   },
   {
@@ -5506,7 +5506,7 @@
     "lng": 43446.25390625,
     "alt": -359.1758117675781,
     "actors": [
-      "Crash:Wood_block_456"
+      "Wood_block_456"
     ]
   },
   {
@@ -5517,7 +5517,7 @@
     "lng": 40147.78125,
     "alt": 1501.5130615234375,
     "actors": [
-      "Crash:Brick142"
+      "Brick142"
     ]
   },
   {
@@ -5528,7 +5528,7 @@
     "lng": 40424.0625,
     "alt": 196.31259155273438,
     "actors": [
-      "Crash:SM_Bars_24"
+      "SM_Bars_24"
     ]
   },
   {
@@ -5539,8 +5539,8 @@
     "lng": 43867.2578125,
     "alt": 1320.2569580078125,
     "actors": [
-      "Crash:Wood_block_143",
-      "Crash:Glowline9_18"
+      "Wood_block_143",
+      "Glowline9_18"
     ]
   },
   {
@@ -5551,7 +5551,7 @@
     "lng": 6624.94775390625,
     "alt": 86.34921264648438,
     "actors": [
-      "Crash:WoodenPart128"
+      "WoodenPart128"
     ]
   },
   {
@@ -5562,11 +5562,11 @@
     "lng": 37520.0,
     "alt": -1490.0,
     "actors": [
-      "Crash:Concrette_Paving32",
-      "Crash:EffectTriggerable_2",
-      "Crash:EffectTriggerable2",
-      "Crash:EffectTriggerable3",
-      "Crash:Glowline76_2"
+      "Concrette_Paving32",
+      "EffectTriggerable_2",
+      "EffectTriggerable2",
+      "EffectTriggerable3",
+      "Glowline76_2"
     ]
   },
   {
@@ -5577,8 +5577,8 @@
     "lng": 24078.138671875,
     "alt": -223.019287109375,
     "actors": [
-      "Crash:Wood_block_135",
-      "Crash:Glowline13_2"
+      "Wood_block_135",
+      "Glowline13_2"
     ]
   },
   {
@@ -5589,7 +5589,7 @@
     "lng": 44119.1171875,
     "alt": 380.6325988769531,
     "actors": [
-      "Crash:SM_Bars_25"
+      "SM_Bars_25"
     ]
   },
   {
@@ -5600,7 +5600,7 @@
     "lng": 44383.06640625,
     "alt": 1736.925048828125,
     "actors": [
-      "Crash:Metalset1_SteelPoleSquare49"
+      "Metalset1_SteelPoleSquare49"
     ]
   },
   {
@@ -5611,7 +5611,7 @@
     "lng": 35574.2734375,
     "alt": 205.99322509765625,
     "actors": [
-      "Crash:Lego_Brick_02_No_Bottom25"
+      "Lego_Brick_02_No_Bottom25"
     ]
   },
   {
@@ -5622,8 +5622,8 @@
     "lng": 42332.95703125,
     "alt": 487.5684814453125,
     "actors": [
-      "Crash:Wood_block_89",
-      "Crash:Glowline6_11"
+      "Wood_block_89",
+      "Glowline6_11"
     ]
   },
   {
@@ -5642,10 +5642,10 @@
     "lng": 19807.080078125,
     "alt": 3091.565673828125,
     "actors": [
-      "Crash:DoorInverted2",
-      "Crash:Door23",
-      "Crash:DoorInverted_2",
-      "Crash:Door2_1"
+      "DoorInverted2",
+      "Door23",
+      "DoorInverted_2",
+      "Door2_1"
     ]
   },
   {
@@ -5656,10 +5656,10 @@
     "lng": 33151.84375,
     "alt": 162.77069091796875,
     "actors": [
-      "Crash:DoorLego42",
-      "Crash:DoorLego43",
-      "Crash:DoorLego44",
-      "Crash:Glowline82_2"
+      "DoorLego42",
+      "DoorLego43",
+      "DoorLego44",
+      "Glowline82_2"
     ]
   },
   {
@@ -5670,9 +5670,9 @@
     "lng": -9452.123046875,
     "alt": -1245.70654296875,
     "actors": [
-      "Crash:MoveMesh16_2",
-      "Crash:SM_stairs_wall_c_39",
-      "Crash:Glowline43_2"
+      "MoveMesh16_2",
+      "SM_stairs_wall_c_39",
+      "Glowline43_2"
     ]
   },
   {
@@ -5683,8 +5683,8 @@
     "lng": 45185.6953125,
     "alt": 717.8123779296875,
     "actors": [
-      "Crash:Glowline17_2",
-      "Crash:Door4_2"
+      "Glowline17_2",
+      "Door4_2"
     ]
   },
   {
@@ -5695,8 +5695,8 @@
     "lng": -1884.879638671875,
     "alt": 160.64852905273438,
     "actors": [
-      "Crash:DoorLego40_9",
-      "Crash:Glowline51_13"
+      "DoorLego40_9",
+      "Glowline51_13"
     ]
   },
   {
@@ -5707,8 +5707,8 @@
     "lng": 43028.76953125,
     "alt": 369.82421875,
     "actors": [
-      "Crash:Glowline10_9",
-      "Crash:DoorLego3"
+      "Glowline10_9",
+      "DoorLego3"
     ]
   },
   {
@@ -5759,8 +5759,8 @@
     "lng": 64382.19921875,
     "alt": 13197.2001953125,
     "actors": [
-      "Crash:MetalBall2_2",
-      "Crash:Glowline60_17"
+      "MetalBall2_2",
+      "Glowline60_17"
     ]
   },
   {
@@ -5771,7 +5771,7 @@
     "lng": 63133.546875,
     "alt": 13367.634765625,
     "actors": [
-      "Crash:CarryBody3"
+      "CarryBody3"
     ]
   },
   {
@@ -5782,8 +5782,8 @@
     "lng": 67101.296875,
     "alt": 13420.181640625,
     "actors": [
-      "Crash:CarryBody5",
-      "Crash:Glowline61"
+      "CarryBody5",
+      "Glowline61"
     ]
   },
   {
@@ -5794,8 +5794,8 @@
     "lng": 67089.15625,
     "alt": 13595.5625,
     "actors": [
-      "Crash:CarryBody4",
-      "Crash:Glowline62"
+      "CarryBody4",
+      "Glowline62"
     ]
   },
   {
@@ -5806,12 +5806,12 @@
     "lng": 54277.4296875,
     "alt": -2662.472412109375,
     "actors": [
-      "Crash:Glowline63",
-      "Crash:Jumppad16",
-      "Crash:Glowline65",
-      "Crash:Glowline64",
-      "Crash:DoorAnna2",
-      "Crash:DoorAnna_2"
+      "Glowline63",
+      "Jumppad16",
+      "Glowline65",
+      "Glowline64",
+      "DoorAnna2",
+      "DoorAnna_2"
     ]
   },
   {
@@ -5822,9 +5822,9 @@
     "lng": 34683.6015625,
     "alt": 99.99917602539062,
     "actors": [
-      "Crash:Lift1_5",
-      "Crash:Glowline70_2",
-      "Crash:Waves_4"
+      "Lift1_5",
+      "Glowline70_2",
+      "Waves_4"
     ]
   },
   {
@@ -5835,25 +5835,25 @@
     "lng": 894.6646118164062,
     "alt": -714.992431640625,
     "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
+      "DestroyablePots34",
+      "DestroyablePots35",
+      "DestroyablePots36",
+      "DestroyablePots37",
+      "DestroyablePots32",
+      "DestroyablePots33",
+      "DestroyablePots38",
+      "DestroyablePots33",
+      "DestroyablePots31_2",
+      "DestroyablePots48",
+      "DestroyablePots39",
+      "DestroyablePots45",
+      "DestroyablePots41",
+      "DestroyablePots42",
+      "DestroyablePots40",
+      "DestroyablePots47",
+      "DestroyablePots44",
+      "DestroyablePots46",
+      "DestroyablePots43"
     ]
   },
   {
@@ -5864,25 +5864,25 @@
     "lng": 974.0180053710938,
     "alt": -714.992431640625,
     "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
+      "DestroyablePots34",
+      "DestroyablePots35",
+      "DestroyablePots36",
+      "DestroyablePots37",
+      "DestroyablePots32",
+      "DestroyablePots33",
+      "DestroyablePots38",
+      "DestroyablePots33",
+      "DestroyablePots31_2",
+      "DestroyablePots48",
+      "DestroyablePots39",
+      "DestroyablePots45",
+      "DestroyablePots41",
+      "DestroyablePots42",
+      "DestroyablePots40",
+      "DestroyablePots47",
+      "DestroyablePots44",
+      "DestroyablePots46",
+      "DestroyablePots43"
     ]
   },
   {
@@ -5893,25 +5893,25 @@
     "lng": 1049.7767333984375,
     "alt": -714.992431640625,
     "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
+      "DestroyablePots34",
+      "DestroyablePots35",
+      "DestroyablePots36",
+      "DestroyablePots37",
+      "DestroyablePots32",
+      "DestroyablePots33",
+      "DestroyablePots38",
+      "DestroyablePots33",
+      "DestroyablePots31_2",
+      "DestroyablePots48",
+      "DestroyablePots39",
+      "DestroyablePots45",
+      "DestroyablePots41",
+      "DestroyablePots42",
+      "DestroyablePots40",
+      "DestroyablePots47",
+      "DestroyablePots44",
+      "DestroyablePots46",
+      "DestroyablePots43"
     ]
   },
   {
@@ -5922,25 +5922,25 @@
     "lng": 1119.62646484375,
     "alt": -714.992431640625,
     "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
+      "DestroyablePots34",
+      "DestroyablePots35",
+      "DestroyablePots36",
+      "DestroyablePots37",
+      "DestroyablePots32",
+      "DestroyablePots33",
+      "DestroyablePots38",
+      "DestroyablePots33",
+      "DestroyablePots31_2",
+      "DestroyablePots48",
+      "DestroyablePots39",
+      "DestroyablePots45",
+      "DestroyablePots41",
+      "DestroyablePots42",
+      "DestroyablePots40",
+      "DestroyablePots47",
+      "DestroyablePots44",
+      "DestroyablePots46",
+      "DestroyablePots43"
     ]
   },
   {
@@ -5951,25 +5951,25 @@
     "lng": 1188.2086181640625,
     "alt": -714.992431640625,
     "actors": [
-      "Crash:DestroyablePots34",
-      "Crash:DestroyablePots35",
-      "Crash:DestroyablePots36",
-      "Crash:DestroyablePots37",
-      "Crash:DestroyablePots32",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots38",
-      "Crash:DestroyablePots33",
-      "Crash:DestroyablePots31_2",
-      "Crash:DestroyablePots48",
-      "Crash:DestroyablePots39",
-      "Crash:DestroyablePots45",
-      "Crash:DestroyablePots41",
-      "Crash:DestroyablePots42",
-      "Crash:DestroyablePots40",
-      "Crash:DestroyablePots47",
-      "Crash:DestroyablePots44",
-      "Crash:DestroyablePots46",
-      "Crash:DestroyablePots43"
+      "DestroyablePots34",
+      "DestroyablePots35",
+      "DestroyablePots36",
+      "DestroyablePots37",
+      "DestroyablePots32",
+      "DestroyablePots33",
+      "DestroyablePots38",
+      "DestroyablePots33",
+      "DestroyablePots31_2",
+      "DestroyablePots48",
+      "DestroyablePots39",
+      "DestroyablePots45",
+      "DestroyablePots41",
+      "DestroyablePots42",
+      "DestroyablePots40",
+      "DestroyablePots47",
+      "DestroyablePots44",
+      "DestroyablePots46",
+      "DestroyablePots43"
     ]
   },
   {
@@ -5980,7 +5980,7 @@
     "lng": 45161.19921875,
     "alt": -1026.5628662109375,
     "actors": [
-      "Crash:DoorLego41_2"
+      "DoorLego41_2"
     ]
   },
   {
@@ -5999,9 +5999,9 @@
     "lng": 5725.9921875,
     "alt": 2.53582763671875,
     "actors": [
-      "Crash:DestroyablePots68",
-      "Crash:DestroyablePots69",
-      "Crash:DestroyablePots70"
+      "DestroyablePots68",
+      "DestroyablePots69",
+      "DestroyablePots70"
     ]
   },
   {
@@ -6012,7 +6012,7 @@
     "lng": 1589.05517578125,
     "alt": -73.9979019165039,
     "actors": [
-      "Crash:Sponge_Large2_2"
+      "Sponge_Large2_2"
     ]
   },
   {
@@ -6023,7 +6023,7 @@
     "lng": 38914.234375,
     "alt": -75.41455078125,
     "actors": [
-      "Crash:DoorLego3"
+      "DoorLego3"
     ]
   },
   {
@@ -6034,8 +6034,8 @@
     "lng": 36731.4140625,
     "alt": 896.2449951171875,
     "actors": [
-      "Crash:SupraballCanon_2",
-      "Crash:Jumppad30_2"
+      "SupraballCanon_2",
+      "Jumppad30_2"
     ]
   },
   {
@@ -6054,8 +6054,8 @@
     "lng": 33116.68359375,
     "alt": -2870.15087890625,
     "actors": [
-      "Crash:MoveMesh44_2",
-      "Crash:Metalset1_SteelPoleRoundComplexCollision6"
+      "MoveMesh44_2",
+      "Metalset1_SteelPoleRoundComplexCollision6"
     ]
   },
   {
@@ -6066,9 +6066,9 @@
     "lng": -4786.53369140625,
     "alt": 576.577880859375,
     "actors": [
-      "Crash:MoveActorAlongSpline2_5",
-      "Crash:Rocket2_2",
-      "Crash:PlayerForceLook34_956"
+      "MoveActorAlongSpline2_5",
+      "Rocket2_2",
+      "PlayerForceLook34_956"
     ]
   },
   {
@@ -6079,7 +6079,7 @@
     "lng": 45160.046875,
     "alt": 605.9805908203125,
     "actors": [
-      "Crash:TalkingSpeaker2_2"
+      "TalkingSpeaker2_2"
     ]
   },
   {
@@ -6090,7 +6090,7 @@
     "lng": -8168.8212890625,
     "alt": 434.3741455078125,
     "actors": [
-      "Crash:CarryPipe_2"
+      "CarryPipe_2"
     ]
   },
   {
@@ -6109,7 +6109,7 @@
     "lng": 713.3240356445312,
     "alt": 750.0,
     "actors": [
-      "Crash:DoorLego40_9"
+      "DoorLego40_9"
     ]
   },
   {
@@ -6120,7 +6120,7 @@
     "lng": 4100.64501953125,
     "alt": 44.20263671875,
     "actors": [
-      "Crash:Door25"
+      "Door25"
     ]
   },
   {
@@ -6131,7 +6131,7 @@
     "lng": 44369.09375,
     "alt": 201.56182861328125,
     "actors": [
-      "Crash:Door26_2"
+      "Door26_2"
     ]
   },
   {
@@ -6142,9 +6142,9 @@
     "lng": 37339.015625,
     "alt": -1499.62841796875,
     "actors": [
-      "Crash:MoveMesh23_2",
-      "Crash:metalSet3_MetalBar_19",
-      "Crash:PlayerForceLook26_6"
+      "MoveMesh23_2",
+      "metalSet3_MetalBar_19",
+      "PlayerForceLook26_6"
     ]
   },
   {
@@ -6155,7 +6155,7 @@
     "lng": 5240.365234375,
     "alt": -2242.6328125,
     "actors": [
-      "Crash:Battery2_2"
+      "Battery2_2"
     ]
   },
   {
@@ -6205,7 +6205,7 @@
     "lat": -4020.472412109375,
     "lng": 6788.603515625,
     "alt": -1699.3790283203125,
-    "other_pipe": 11
+    "other_pipe": "Crash:PipesystemNew11"
   },
   {
     "name": "PipesystemNew11",
@@ -6214,7 +6214,7 @@
     "lat": -2886.613525390625,
     "lng": 7747.9345703125,
     "alt": 166.4151153564453,
-    "other_pipe": 14
+    "other_pipe": "Crash:PipesystemNew14"
   },
   {
     "name": "PipesystemNew12_2",
@@ -6223,7 +6223,7 @@
     "lat": 9357.791015625,
     "lng": 40524.953125,
     "alt": -1987.2265625,
-    "other_pipe": 19
+    "other_pipe": "Crash:PipesystemNew19"
   },
   {
     "name": "PipesystemNew13_2",
@@ -6232,7 +6232,7 @@
     "lat": -4179.44677734375,
     "lng": 45594.05859375,
     "alt": -1147.593017578125,
-    "other_pipe": 20
+    "other_pipe": "Crash:PipesystemNew20"
   },
   {
     "name": "PipesystemNew14",
@@ -6241,7 +6241,7 @@
     "lat": -1349.330322265625,
     "lng": 11031.1787109375,
     "alt": 643.8033447265625,
-    "other_pipe": 11
+    "other_pipe": "Crash:PipesystemNew11"
   },
   {
     "name": "PipesystemNew15_2",
@@ -6250,7 +6250,7 @@
     "lat": -5756.5283203125,
     "lng": -6391.9970703125,
     "alt": -3310.516845703125,
-    "other_pipe": 18
+    "other_pipe": "Crash:PipesystemNew18"
   },
   {
     "name": "PipesystemNew16",
@@ -6259,7 +6259,7 @@
     "lat": -5171.66259765625,
     "lng": -6391.9970703125,
     "alt": -3328.49658203125,
-    "other_pipe": 18
+    "other_pipe": "Crash:PipesystemNew18"
   },
   {
     "name": "PipesystemNew17",
@@ -6268,7 +6268,7 @@
     "lat": -4524.11767578125,
     "lng": -6391.9970703125,
     "alt": -3350.7080078125,
-    "other_pipe": 18
+    "other_pipe": "Crash:PipesystemNew18"
   },
   {
     "name": "PipesystemNew18",
@@ -6277,7 +6277,7 @@
     "lat": -7871.3740234375,
     "lng": -7543.84326171875,
     "alt": -1323.410888671875,
-    "other_pipe": 18
+    "other_pipe": "Crash:PipesystemNew18"
   },
   {
     "name": "PipesystemNew19",
@@ -6286,7 +6286,7 @@
     "lat": 10152.8408203125,
     "lng": 41108.609375,
     "alt": -322.2944641113281,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew12_2"
   },
   {
     "name": "PipesystemNew2",
@@ -6295,7 +6295,7 @@
     "lat": -12879.640625,
     "lng": 45776.578125,
     "alt": -82.48126220703125,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew_2"
   },
   {
     "name": "PipesystemNew20",
@@ -6304,7 +6304,7 @@
     "lat": -4179.44677734375,
     "lng": 45594.05859375,
     "alt": -109.74856567382812,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew13_2"
   },
   {
     "name": "PipesystemNew21_2",
@@ -6313,7 +6313,7 @@
     "lat": -6993.09423828125,
     "lng": 54857.61328125,
     "alt": 336.3084411621094,
-    "other_pipe": 5,
+    "other_pipe": "Crash:PipesystemNew22_5",
     "nearest_cap": "Crash:PipeCap5_5"
   },
   {
@@ -6323,7 +6323,7 @@
     "lat": -6284.51953125,
     "lng": 55715.75390625,
     "alt": 704.7681884765625,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew21_2"
   },
   {
     "name": "PipesystemNew23_2",
@@ -6332,7 +6332,7 @@
     "lat": -17585.740234375,
     "lng": 43423.76171875,
     "alt": 124.17230224609375,
-    "other_pipe": 24
+    "other_pipe": "Crash:PipesystemNew24"
   },
   {
     "name": "PipesystemNew24",
@@ -6341,7 +6341,7 @@
     "lat": -17585.740234375,
     "lng": 43768.76171875,
     "alt": 70.72064208984375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew23_2"
   },
   {
     "name": "PipesystemNew25",
@@ -6350,7 +6350,7 @@
     "lat": 9987.1748046875,
     "lng": 46627.05078125,
     "alt": -2268.685302734375,
-    "other_pipe": 26
+    "other_pipe": "Crash:PipesystemNew26"
   },
   {
     "name": "PipesystemNew26",
@@ -6359,7 +6359,7 @@
     "lat": 14910.1953125,
     "lng": 47438.171875,
     "alt": -1465.6490478515625,
-    "other_pipe": 25
+    "other_pipe": "Crash:PipesystemNew25"
   },
   {
     "name": "PipesystemNew3_2",
@@ -6368,7 +6368,7 @@
     "lat": -6319.666015625,
     "lng": 1761.0826416015625,
     "alt": -151.43313598632812,
-    "other_pipe": 4
+    "other_pipe": "Crash:PipesystemNew4"
   },
   {
     "name": "PipesystemNew4",
@@ -6377,7 +6377,7 @@
     "lat": -6141.619140625,
     "lng": 1837.845703125,
     "alt": 577.0473022460938,
-    "other_pipe": 5
+    "other_pipe": "Crash:PipesystemNew5"
   },
   {
     "name": "PipesystemNew5",
@@ -6386,7 +6386,7 @@
     "lat": -6319.666015625,
     "lng": 2746.856201171875,
     "alt": -151.43313598632812,
-    "other_pipe": 4
+    "other_pipe": "Crash:PipesystemNew4"
   },
   {
     "name": "PipesystemNew6",
@@ -6395,7 +6395,7 @@
     "lat": -6514.7568359375,
     "lng": -2028.81298828125,
     "alt": -113.03692626953125,
-    "other_pipe": 8
+    "other_pipe": "Crash:PipesystemNew8"
   },
   {
     "name": "PipesystemNew7",
@@ -6404,7 +6404,7 @@
     "lat": -6504.17236328125,
     "lng": -2912.019287109375,
     "alt": 714.8199462890625,
-    "other_pipe": 9
+    "other_pipe": "Crash:PipesystemNew9"
   },
   {
     "name": "PipesystemNew8",
@@ -6413,7 +6413,7 @@
     "lat": -6502.84765625,
     "lng": -2085.76904296875,
     "alt": -111.75312042236328,
-    "other_pipe": 6
+    "other_pipe": "Crash:PipesystemNew6"
   },
   {
     "name": "PipesystemNew9",
@@ -6422,7 +6422,7 @@
     "lat": -6502.84765625,
     "lng": -2454.94921875,
     "alt": 295.3083190917969,
-    "other_pipe": 7
+    "other_pipe": "Crash:PipesystemNew7"
   },
   {
     "name": "PipesystemNew_2",
@@ -6431,7 +6431,7 @@
     "lat": -12127.0205078125,
     "lng": 43278.01171875,
     "alt": -351.6873779296875,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNew2"
   },
   {
     "name": "PipesystemNewDLC2",
@@ -6440,7 +6440,7 @@
     "lat": 16600.419921875,
     "lng": 22102.123046875,
     "alt": 2474.070068359375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC_2"
   },
   {
     "name": "PipesystemNewDLC3",
@@ -6449,7 +6449,7 @@
     "lat": 16668.33984375,
     "lng": 21291.962890625,
     "alt": 2474.070068359375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC4",
@@ -6458,7 +6458,7 @@
     "lat": 16668.33984375,
     "lng": 21663.66015625,
     "alt": 2474.070068359375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC5",
@@ -6467,7 +6467,7 @@
     "lat": 16668.33984375,
     "lng": 22034.736328125,
     "alt": 2474.070068359375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC2"
   },
   {
     "name": "PipesystemNewDLC6_2",
@@ -6476,7 +6476,7 @@
     "lat": -5072.5244140625,
     "lng": -992.0934448242188,
     "alt": 110.49958801269531,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC6_2"
   },
   {
     "name": "PipesystemNewDLC7",
@@ -6485,7 +6485,7 @@
     "lat": -5217.47998046875,
     "lng": -990.3453979492188,
     "alt": 502.5618896484375,
-    "other_pipe": 8
+    "other_pipe": "Crash:PipesystemNewDLC8"
   },
   {
     "name": "PipesystemNewDLC8",
@@ -6494,7 +6494,7 @@
     "lat": -5549.33935546875,
     "lng": -1985.43017578125,
     "alt": 3029.458740234375,
-    "other_pipe": 7
+    "other_pipe": "Crash:PipesystemNewDLC7"
   },
   {
     "name": "PipesystemNewDLC_2",
@@ -6503,7 +6503,7 @@
     "lat": 16730.67578125,
     "lng": 20609.82421875,
     "alt": 2474.070068359375,
-    "other_pipe": 2
+    "other_pipe": "Crash:PipesystemNewDLC2"
   },
   {
     "name": "PlayerStart_2",
@@ -10239,9 +10239,9 @@
     "lng": 43012.25390625,
     "alt": 1519.4063720703125,
     "actors": [
-      "Crash:Glowline79_2",
-      "Crash:MoveMesh18_2",
-      "Crash:Wood_block_259"
+      "Glowline79_2",
+      "MoveMesh18_2",
+      "Wood_block_259"
     ]
   },
   {
@@ -10252,8 +10252,8 @@
     "lng": 23777.169921875,
     "alt": -140.58798217773438,
     "actors": [
-      "Crash:MoveMesh6_14",
-      "Crash:Wood_block_238"
+      "MoveMesh6_14",
+      "Wood_block_238"
     ]
   },
   {
@@ -10272,7 +10272,7 @@
     "lng": 18391.443359375,
     "alt": -585.1307373046875,
     "actors": [
-      "Crash:Sponge_Large_2"
+      "Sponge_Large_2"
     ]
   },
   {
@@ -10283,7 +10283,7 @@
     "lng": 37807.0625,
     "alt": -107.259033203125,
     "actors": [
-      "Crash:TranslocatorDisc_2"
+      "TranslocatorDisc_2"
     ]
   },
   {
@@ -10302,7 +10302,7 @@
     "lng": 55074.79296875,
     "alt": 2198.486328125,
     "actors": [
-      "Crash:EffectTriggerable5"
+      "EffectTriggerable5"
     ]
   },
   {
@@ -10313,8 +10313,8 @@
     "lng": 21149.666015625,
     "alt": 2396.643798828125,
     "actors": [
-      "Crash:MoveMesh14",
-      "Crash:Brick66"
+      "MoveMesh14",
+      "Brick66"
     ]
   },
   {
@@ -10325,8 +10325,8 @@
     "lng": 35165.30859375,
     "alt": 279.07183837890625,
     "actors": [
-      "Crash:MoveMesh22",
-      "Crash:Brick140"
+      "MoveMesh22",
+      "Brick140"
     ]
   },
   {
@@ -10337,8 +10337,8 @@
     "lng": 18352.5234375,
     "alt": 2360.849853515625,
     "actors": [
-      "Crash:MoveMesh13",
-      "Crash:Brick65_109"
+      "MoveMesh13",
+      "Brick65_109"
     ]
   },
   {
@@ -10349,7 +10349,7 @@
     "lng": 44278.51171875,
     "alt": 551.3653564453125,
     "actors": [
-      "Crash:Key_2"
+      "Key_2"
     ]
   },
   {
@@ -10360,7 +10360,7 @@
     "lng": 47445.01171875,
     "alt": 451.4610900878906,
     "actors": [
-      "Crash:Battery_2"
+      "Battery_2"
     ]
   },
   {
@@ -10371,8 +10371,8 @@
     "lng": 42210.1640625,
     "alt": 759.5975341796875,
     "actors": [
-      "Crash:Jumppad3",
-      "Crash:Glowline5_8"
+      "Jumppad3",
+      "Glowline5_8"
     ]
   },
   {
@@ -10383,7 +10383,7 @@
     "lng": 39365.3671875,
     "alt": 220.0,
     "actors": [
-      "Crash:DoorLego4"
+      "DoorLego4"
     ]
   },
   {
@@ -10394,8 +10394,8 @@
     "lng": 38572.69921875,
     "alt": 300.9156188964844,
     "actors": [
-      "Crash:Glowline8_15",
-      "Crash:Jumppad4"
+      "Glowline8_15",
+      "Jumppad4"
     ]
   },
   {
@@ -10406,7 +10406,7 @@
     "lng": 47425.8671875,
     "alt": 440.344970703125,
     "actors": [
-      "Crash:Door4_2"
+      "Door4_2"
     ]
   },
   {
@@ -10417,7 +10417,7 @@
     "lng": 49565.0625,
     "alt": 1196.8118896484375,
     "actors": [
-      "Crash:Door32"
+      "Door32"
     ]
   },
   {
@@ -10428,7 +10428,7 @@
     "lng": 34265.10546875,
     "alt": 710.7374267578125,
     "actors": [
-      "Crash:DoorLego43"
+      "DoorLego43"
     ]
   },
   {
@@ -10439,8 +10439,8 @@
     "lng": 2133.810302734375,
     "alt": 785.7935180664062,
     "actors": [
-      "Crash:SignalInverter5_2",
-      "Crash:FirePipe8_2"
+      "SignalInverter5_2",
+      "FirePipe8_2"
     ]
   },
   {
@@ -10451,8 +10451,8 @@
     "lng": -7539.73046875,
     "alt": -3488.21923828125,
     "actors": [
-      "Crash:Glowline49",
-      "Crash:DoorLego9"
+      "Glowline49",
+      "DoorLego9"
     ]
   },
   {
@@ -10463,7 +10463,7 @@
     "lng": 37213.28515625,
     "alt": -1248.984375,
     "actors": [
-      "Crash:Jumppad32_2"
+      "Jumppad32_2"
     ]
   },
   {
@@ -10474,8 +10474,8 @@
     "lng": 6619.6865234375,
     "alt": 153.97802734375,
     "actors": [
-      "Crash:Glowline83_2",
-      "Crash:DoorLego45"
+      "Glowline83_2",
+      "DoorLego45"
     ]
   },
   {
@@ -10486,11 +10486,11 @@
     "lng": 2873.109130859375,
     "alt": 165.45498657226562,
     "actors": [
-      "Crash:Glowline81_2",
-      "Crash:MoveMesh33_2",
-      "Crash:Wood_block_80",
-      "Crash:Gears4",
-      "Crash:Gears_2"
+      "Glowline81_2",
+      "MoveMesh33_2",
+      "Wood_block_80",
+      "Gears4",
+      "Gears_2"
     ]
   },
   {
