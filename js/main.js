@@ -427,6 +427,9 @@ function loadMap() {
             }
           }
 
+          // marked lines (paths) display inverted (found is brighter, see css)
+          // pipes without the caps cannnot be marked, so alt tag is unset for those
+
           // pipe line
           if (o.type.startsWith('Pipesystem')) {
             let layer = 'pipecaps';
