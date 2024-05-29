@@ -461,46 +461,41 @@ function loadMap() {
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
           }
 
-          // draw the rest of the markers, all known classes
-          if (classes[o.type]) { 
+          // we don't have to list all known classes in types.csv anymore, just blacklist some of them
+          if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C'].includes(o.type)) {
+            continue;
+          }
 
-            // some classes are blacklisted (for now) too much visual noise
-            if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C'].includes(o.type)) {
-              continue;
+          if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
+
+          if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
+            let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
+            if (c = colors[o.color]) {
+              icon = icon +'_' + c;
             }
+          }
 
-            if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
-
-            if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
-              let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
-              if (c = colors[o.color]) {
-                icon = icon +'_' + c;
-              }
-            }
-
-            // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
-            if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
-              || o.type.startsWith('BP_Purchase') || (o.is_in_shop && o.is_in_shop==true) ) {
-              let icon = 'shop';
-              let layer = 'shop';
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-            }
-
-            // finally, add marker (base marker goes in the middle)
-            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer })
+          // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
+          if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
+            || o.type.startsWith('BP_Purchase') || (o.is_in_shop && o.is_in_shop==true) ) {
+            let icon = 'shop';
+            let layer = 'shop';
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
               .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+          }
 
-            // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
-            // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
-            if (s = classes[o.spawns]) {
-              let icon = s.icon || defaultIcon;
-              let layer = layers[s.layer] ? s.layer : defaultLayer;
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer })
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-            }
+          // finally, add marker (base marker goes in the middle)
+          L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer })
+            .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
 
-          } // end of all known classes
+          // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
+          // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
+          if (s = classes[o.spawns]) {
+            let icon = s.icon || defaultIcon;
+            let layer = layers[s.layer] ? s.layer : defaultLayer;
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer })
+              .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+          }
 
           //add dynamic player marker on top of PlayerStart icon
           if (o.type == 'PlayerStart' && !playerMarker) {
