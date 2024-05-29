@@ -9401,7 +9401,8 @@
     "lat": -5501.6162109375,
     "lng": 63750.0,
     "alt": 4636.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick101",
@@ -9410,7 +9411,8 @@
     "lat": -5301.6162109375,
     "lng": 63750.0,
     "alt": 4636.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick102",
@@ -9419,7 +9421,8 @@
     "lat": -5101.6162109375,
     "lng": 63750.0,
     "alt": 4436.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick103",
@@ -9428,7 +9431,8 @@
     "lat": -5101.6162109375,
     "lng": 63750.0,
     "alt": 4636.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick104",
@@ -9437,7 +9441,8 @@
     "lat": -5301.6162109375,
     "lng": 63950.0,
     "alt": 4636.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick105",
@@ -9447,7 +9452,8 @@
     "lng": 63950.0,
     "alt": 4436.24755859375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick106",
@@ -9456,7 +9462,8 @@
     "lat": -5101.6162109375,
     "lng": 63950.0,
     "alt": 4636.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick107",
@@ -9465,7 +9472,8 @@
     "lat": -5101.6162109375,
     "lng": 63950.0,
     "alt": 4436.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick108_52",
@@ -9474,7 +9482,8 @@
     "lat": -8852.9990234375,
     "lng": 56278.39453125,
     "alt": 513.1370849609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2c2c2c"
   },
   {
     "name": "MinecraftBrick109",
@@ -9483,7 +9492,8 @@
     "lat": -8852.9990234375,
     "lng": 56278.39453125,
     "alt": 713.1370849609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2c2c2c"
   },
   {
     "name": "MinecraftBrick11",
@@ -9492,7 +9502,8 @@
     "lat": 6571.4072265625,
     "lng": 23591.484375,
     "alt": 4015.83544921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a1831"
   },
   {
     "name": "MinecraftBrick110",
@@ -9512,7 +9523,8 @@
     "lat": -8994.4208984375,
     "lng": 56136.97265625,
     "alt": 713.1370849609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2c2c2c"
   },
   {
     "name": "MinecraftBrick112_58",
@@ -9596,7 +9608,8 @@
     "lat": 6571.4072265625,
     "lng": 23591.484375,
     "alt": 4299.7451171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a1831"
   },
   {
     "name": "MinecraftBrick120",
@@ -9696,7 +9709,8 @@
     "lat": 6462.71533203125,
     "lng": 23853.888671875,
     "alt": 4299.7451171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a1831"
   },
   {
     "name": "MinecraftBrick130_2",
@@ -9773,7 +9787,8 @@
     "lat": -48478.91015625,
     "lng": -1564.63916015625,
     "alt": 1804.1336669921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#837343"
   },
   {
     "name": "MinecraftBrick138",
@@ -9800,7 +9815,8 @@
     "lat": -12472.7841796875,
     "lng": 64128.40234375,
     "alt": 570.8310546875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#919191"
   },
   {
     "name": "MinecraftBrick140",
@@ -9828,7 +9844,8 @@
     "lat": -21615.267578125,
     "lng": -48448.7578125,
     "alt": 16143.8271484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#6cb3ff"
   },
   {
     "name": "MinecraftBrick143_108",
@@ -9950,7 +9967,8 @@
     "lat": 6565.556640625,
     "lng": 10389.404296875,
     "alt": 3775.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick156",
@@ -9959,7 +9977,8 @@
     "lat": 6565.556640625,
     "lng": 10389.404296875,
     "alt": 3575.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick157",
@@ -9968,7 +9987,8 @@
     "lat": 9082.388671875,
     "lng": 8230.421875,
     "alt": 3940.072998046875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick158_134",
@@ -9977,7 +9997,8 @@
     "lat": 23015.53125,
     "lng": 16619.48828125,
     "alt": 3881.268310546875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2e51a2"
   },
   {
     "name": "MinecraftBrick159",
@@ -9986,7 +10007,8 @@
     "lat": 9082.388671875,
     "lng": 8230.421875,
     "alt": 3655.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick160_136",
@@ -9996,7 +10018,8 @@
     "lng": 16791.208984375,
     "alt": 3881.263916015625,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#2e51a2"
   },
   {
     "name": "MinecraftBrick161",
@@ -10005,7 +10028,8 @@
     "lat": 9357.5107421875,
     "lng": 8302.99609375,
     "alt": 3940.0712890625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick162",
@@ -10014,7 +10038,8 @@
     "lat": 22899.880859375,
     "lng": 16792.759765625,
     "alt": 4082.901123046875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2e51a2"
   },
   {
     "name": "MinecraftBrick163",
@@ -10023,7 +10048,8 @@
     "lat": 22788.96875,
     "lng": 16958.75390625,
     "alt": 4082.901123046875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#2e51a2"
   },
   {
     "name": "MinecraftBrick168_153",
@@ -10053,7 +10079,8 @@
     "lng": 18102.494140625,
     "alt": 5289.83740234375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick170",
@@ -10187,7 +10214,8 @@
     "lat": -12426.759765625,
     "lng": 16246.2568359375,
     "alt": 6433.82958984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick191",
@@ -10207,7 +10235,8 @@
     "lat": -12398.333984375,
     "lng": 16526.875,
     "alt": 6433.82958984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick193_24",
@@ -10216,7 +10245,8 @@
     "lat": -15659.6572265625,
     "lng": 14262.2568359375,
     "alt": 5091.19189453125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick194",
@@ -10225,7 +10255,8 @@
     "lat": -15506.2841796875,
     "lng": 14388.126953125,
     "alt": 5091.19189453125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick195",
@@ -10234,7 +10265,8 @@
     "lat": -15659.1376953125,
     "lng": 14262.6845703125,
     "alt": 5288.595703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick196",
@@ -10243,7 +10275,8 @@
     "lat": -12273.8857421875,
     "lng": 16371.716796875,
     "alt": 6630.2099609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick197",
@@ -10253,7 +10286,8 @@
     "lng": 21620.1796875,
     "alt": 4769.31201171875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick198",
@@ -10262,7 +10296,8 @@
     "lat": -14705.8828125,
     "lng": 21743.51953125,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick199",
@@ -10271,7 +10306,8 @@
     "lat": -14858.736328125,
     "lng": 21618.076171875,
     "alt": 4966.7158203125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick20",
@@ -10280,7 +10316,8 @@
     "lat": 9292.7021484375,
     "lng": 15022.3095703125,
     "alt": 3190.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick200",
@@ -10291,7 +10328,8 @@
     "alt": 4769.31201171875,
     "coins_in_gold": 15,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick201",
@@ -10301,7 +10339,8 @@
     "lng": 21647.240234375,
     "alt": 4769.31201171875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick202",
@@ -10311,7 +10350,8 @@
     "lng": 21772.185546875,
     "alt": 4966.513671875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick203",
@@ -10321,7 +10361,8 @@
     "lng": 21647.939453125,
     "alt": 4966.513671875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick204",
@@ -10331,7 +10372,8 @@
     "lng": 21896.212890625,
     "alt": 4769.31201171875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick205",
@@ -10341,7 +10383,8 @@
     "lng": 21899.001953125,
     "alt": 4966.513671875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick206",
@@ -10351,7 +10394,8 @@
     "lng": 21924.81640625,
     "alt": 4769.31201171875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick207",
@@ -10361,7 +10405,8 @@
     "lng": 21797.90234375,
     "alt": 4769.31201171875,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick208",
@@ -10371,7 +10416,8 @@
     "lng": 21924.806640625,
     "alt": 4970.5322265625,
     "hits_to_break": 16,
-    "brick_type": 3
+    "brick_type": 3,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick209",
@@ -10380,7 +10426,8 @@
     "lat": -15262.7080078125,
     "lng": 21800.560546875,
     "alt": 4970.5322265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick210",
@@ -10389,7 +10436,8 @@
     "lat": -15012.658203125,
     "lng": 21491.779296875,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick211",
@@ -10398,7 +10446,8 @@
     "lat": -15012.6630859375,
     "lng": 21491.779296875,
     "alt": 4969.5244140625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick212",
@@ -10407,7 +10456,8 @@
     "lat": -15288.0908203125,
     "lng": 21524.177734375,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick213_54",
@@ -10416,7 +10466,8 @@
     "lat": -14677.78125,
     "lng": 22021.453125,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick214",
@@ -10425,7 +10476,8 @@
     "lat": -15288.0927734375,
     "lng": 21524.1796875,
     "alt": 4968.609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick215",
@@ -10434,7 +10486,8 @@
     "lat": -14734.8583984375,
     "lng": 21464.984375,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick216",
@@ -10443,7 +10496,8 @@
     "lat": -14706.443359375,
     "lng": 21744.205078125,
     "alt": 4967.93115234375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick217_55",
@@ -10452,7 +10506,8 @@
     "lat": -14678.341796875,
     "lng": 22022.138671875,
     "alt": 4967.93115234375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick218_57",
@@ -10461,7 +10516,8 @@
     "lat": -14554.58203125,
     "lng": 21871.328125,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick219",
@@ -10470,7 +10526,8 @@
     "lat": -15414.5859375,
     "lng": 21678.326171875,
     "alt": 4769.31201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick21_5",
@@ -10479,7 +10536,8 @@
     "lat": 9151.2802734375,
     "lng": 15163.7314453125,
     "alt": 3190.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick220",
@@ -10488,7 +10546,8 @@
     "lat": -15414.587890625,
     "lng": 21678.328125,
     "alt": 4968.609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#191e2c"
   },
   {
     "name": "MinecraftBrick221_60",
@@ -10525,7 +10584,8 @@
     "lat": -41877.2890625,
     "lng": -1411.583740234375,
     "alt": 2490.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#5f5f5f"
   },
   {
     "name": "MinecraftBrick224",
@@ -10535,7 +10595,8 @@
     "lng": 40495.51953125,
     "alt": 948.931884765625,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick225",
@@ -10544,7 +10605,8 @@
     "lat": -12551.306640625,
     "lng": 40494.8203125,
     "alt": 1149.6090087890625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick226",
@@ -10553,7 +10615,8 @@
     "lat": -12553.1923828125,
     "lng": 40494.8203125,
     "alt": 1349.39697265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick227",
@@ -10562,7 +10625,8 @@
     "lat": -12351.46484375,
     "lng": 40494.8203125,
     "alt": 1349.39697265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick228",
@@ -10571,7 +10635,8 @@
     "lat": -12351.46484375,
     "lng": 40694.84375,
     "alt": 1349.39697265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick231",
@@ -10667,7 +10732,8 @@
     "lat": -23460.177734375,
     "lng": 21543.32421875,
     "alt": -67.82820129394531,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#384656"
   },
   {
     "name": "MinecraftBrick240",
@@ -10755,7 +10821,8 @@
     "lat": -33736.84765625,
     "lng": 19839.73828125,
     "alt": -79.80071258544922,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#194013"
   },
   {
     "name": "MinecraftBrick249",
@@ -10764,7 +10831,8 @@
     "lat": -33736.84765625,
     "lng": 19839.73828125,
     "alt": 224.0423583984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#194013"
   },
   {
     "name": "MinecraftBrick24_7",
@@ -10773,7 +10841,8 @@
     "lat": 9009.8583984375,
     "lng": 15305.1533203125,
     "alt": 3190.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick250_47",
@@ -10878,7 +10947,8 @@
     "lat": 9292.7021484375,
     "lng": 15022.3095703125,
     "alt": 3390.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick26",
@@ -10887,7 +10957,8 @@
     "lat": -31356.20703125,
     "lng": 17746.17578125,
     "alt": 688.4395751953125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick260",
@@ -11027,7 +11098,8 @@
     "lng": 4400.0,
     "alt": 1378.3450927734375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#182c43"
   },
   {
     "name": "MinecraftBrick275",
@@ -11091,7 +11163,8 @@
     "lat": 11425.2138671875,
     "lng": 10675.2109375,
     "alt": 3300.483154296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick280",
@@ -11164,7 +11237,8 @@
     "lat": -17215.439453125,
     "lng": 25058.64453125,
     "alt": -1140.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick288",
@@ -11203,7 +11277,8 @@
     "lat": -46379.4296875,
     "lng": 42681.3203125,
     "alt": -549.197265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#8111c"
   },
   {
     "name": "MinecraftBrick293_101",
@@ -11289,7 +11364,8 @@
     "lat": -37066.921875,
     "lng": -379.4332580566406,
     "alt": 2493.4169921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#949797"
   },
   {
     "name": "MinecraftBrick302_115",
@@ -11298,7 +11374,8 @@
     "lat": -48115.8671875,
     "lng": 50458.34375,
     "alt": 2165.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick303",
@@ -11308,7 +11385,8 @@
     "lng": 50331.46484375,
     "alt": 2165.118896484375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick304_125",
@@ -11317,7 +11395,8 @@
     "lat": -48115.8671875,
     "lng": 50458.34375,
     "alt": 2365.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#111c26"
   },
   {
     "name": "MinecraftBrick305",
@@ -11326,7 +11405,8 @@
     "lat": -48242.7421875,
     "lng": 50612.94921875,
     "alt": 2165.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1720"
   },
   {
     "name": "MinecraftBrick306",
@@ -11335,7 +11415,8 @@
     "lat": -48397.3515625,
     "lng": 50486.07421875,
     "alt": 2165.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick307_132",
@@ -11355,7 +11436,8 @@
     "lat": -48397.3515625,
     "lng": 50486.07421875,
     "alt": 2365.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick309",
@@ -11364,7 +11446,8 @@
     "lat": -48270.4765625,
     "lng": 50331.46875,
     "alt": 2365.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick310_135",
@@ -11384,7 +11467,8 @@
     "lng": 55285.40234375,
     "alt": 2000.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick312",
@@ -11394,7 +11478,8 @@
     "lng": 55285.40234375,
     "alt": 2200.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick314",
@@ -11404,7 +11489,8 @@
     "lng": 18102.494140625,
     "alt": 4890.146484375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick315",
@@ -11414,7 +11500,8 @@
     "lng": 17704.017578125,
     "alt": 5289.83740234375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick316",
@@ -11423,7 +11510,8 @@
     "lat": -2029.100830078125,
     "lng": 17704.326171875,
     "alt": 4890.146484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick317",
@@ -11433,7 +11521,8 @@
     "lng": 58337.55859375,
     "alt": 838.7459716796875,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick318",
@@ -11443,7 +11532,8 @@
     "lng": 58337.55859375,
     "alt": 1038.7459716796875,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick319",
@@ -11453,7 +11543,8 @@
     "lng": 55240.71875,
     "alt": 2000.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick320",
@@ -11473,7 +11564,8 @@
     "lat": -25661.6875,
     "lng": 25621.25390625,
     "alt": 2580.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick322",
@@ -11482,7 +11574,8 @@
     "lat": -25461.6875,
     "lng": 25621.25390625,
     "alt": 2580.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick323",
@@ -11492,7 +11585,8 @@
     "lng": 25421.25390625,
     "alt": 2580.7578125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick324",
@@ -11501,7 +11595,8 @@
     "lat": -25461.6875,
     "lng": 25221.25390625,
     "alt": 2580.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick325",
@@ -11510,7 +11605,8 @@
     "lat": -25661.6875,
     "lng": 25421.25390625,
     "alt": 2580.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick326",
@@ -11519,7 +11615,8 @@
     "lat": -25461.6875,
     "lng": 25621.25390625,
     "alt": 2780.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick327",
@@ -11528,7 +11625,8 @@
     "lat": -25461.6875,
     "lng": 25421.25390625,
     "alt": 2780.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#182743"
   },
   {
     "name": "MinecraftBrick328",
@@ -11538,7 +11636,8 @@
     "lng": 55240.71875,
     "alt": 2200.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick329",
@@ -11548,7 +11647,8 @@
     "lng": 55401.65234375,
     "alt": 2400.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#12235e"
   },
   {
     "name": "MinecraftBrick32_66",
@@ -11567,7 +11667,8 @@
     "lng": 17305.541015625,
     "alt": 5289.83740234375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick331",
@@ -11577,7 +11678,8 @@
     "lng": 17305.541015625,
     "alt": 4889.83740234375,
     "hits_to_break": 11,
-    "brick_type": 2
+    "brick_type": 2,
+    "custom_color": "#314a63"
   },
   {
     "name": "MinecraftBrick332",
@@ -11586,7 +11688,8 @@
     "lat": -49434.41015625,
     "lng": 53050.1640625,
     "alt": 2005.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick333",
@@ -11595,7 +11698,8 @@
     "lat": -49561.28515625,
     "lng": 53204.7734375,
     "alt": 2005.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1720"
   },
   {
     "name": "MinecraftBrick334_163",
@@ -11604,7 +11708,8 @@
     "lat": -10500.0,
     "lng": 61200.0,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#111c31"
   },
   {
     "name": "MinecraftBrick335",
@@ -11613,7 +11718,8 @@
     "lat": -9061.1826171875,
     "lng": 57953.46484375,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#111c31"
   },
   {
     "name": "MinecraftBrick336",
@@ -11622,7 +11728,8 @@
     "lat": -49349.62109375,
     "lng": 53262.03515625,
     "alt": 2005.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a121a"
   },
   {
     "name": "MinecraftBrick339_172",
@@ -11649,7 +11756,8 @@
     "lat": 9151.2802734375,
     "lng": 15163.7314453125,
     "alt": 3390.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick340",
@@ -11769,7 +11877,8 @@
     "lat": -7586.91357421875,
     "lng": 57647.36328125,
     "alt": 2874.235107421875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1a1a1a"
   },
   {
     "name": "MinecraftBrick353_192",
@@ -11842,7 +11951,8 @@
     "lat": 6605.39013671875,
     "lng": 10585.400390625,
     "alt": 3575.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick365",
@@ -11851,7 +11961,8 @@
     "lat": -42718.37109375,
     "lng": 20355.279296875,
     "alt": 3000.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#101010"
   },
   {
     "name": "MinecraftBrick366",
@@ -11860,7 +11971,8 @@
     "lat": -42519.33203125,
     "lng": 20335.677734375,
     "alt": 3000.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#101010"
   },
   {
     "name": "MinecraftBrick367_212",
@@ -11869,7 +11981,8 @@
     "lat": -42737.97265625,
     "lng": 20156.244140625,
     "alt": 3000.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#101010"
   },
   {
     "name": "MinecraftBrick37_2",
@@ -11880,7 +11993,8 @@
     "alt": 3171.560546875,
     "coins_in_gold": 1,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick383_236",
@@ -11889,7 +12003,8 @@
     "lat": -11160.0947265625,
     "lng": -59981.8046875,
     "alt": 7933.1484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#fbfbfb"
   },
   {
     "name": "MinecraftBrick384_239",
@@ -11898,7 +12013,8 @@
     "lat": 176.3837432861328,
     "lng": -56618.09765625,
     "alt": 6823.91552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick385",
@@ -11907,7 +12023,8 @@
     "lat": 364.6730041503906,
     "lng": -56550.734375,
     "alt": 6823.91552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick386",
@@ -11916,7 +12033,8 @@
     "lat": 124.85298919677734,
     "lng": -56443.25,
     "alt": 6844.41552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick387",
@@ -11925,7 +12043,8 @@
     "lat": 176.3837432861328,
     "lng": -56618.09765625,
     "alt": 7023.91552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick388",
@@ -11935,7 +12054,8 @@
     "lng": -56550.734375,
     "alt": 7023.91552734375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick389_246",
@@ -11945,7 +12065,8 @@
     "lng": -46750.1015625,
     "alt": 5799.779296875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick38_2",
@@ -11966,7 +12087,8 @@
     "lng": 12455.5078125,
     "alt": 2724.9453125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c2849"
   },
   {
     "name": "MinecraftBrick391",
@@ -11975,7 +12097,8 @@
     "lat": -19765.916015625,
     "lng": 12631.892578125,
     "alt": 2724.9453125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c2849"
   },
   {
     "name": "MinecraftBrick392_253",
@@ -11984,7 +12107,8 @@
     "lat": -20662.2734375,
     "lng": 25153.27734375,
     "alt": 2863.686767578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#141d35"
   },
   {
     "name": "MinecraftBrick393",
@@ -11993,7 +12117,8 @@
     "lat": -20839.037109375,
     "lng": 25247.794921875,
     "alt": 2863.686767578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#141d35"
   },
   {
     "name": "MinecraftBrick394_257",
@@ -12003,7 +12128,8 @@
     "lng": 22723.521484375,
     "alt": 2683.95361328125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#16253d"
   },
   {
     "name": "MinecraftBrick395_260",
@@ -12041,7 +12167,8 @@
     "lat": -12351.46484375,
     "lng": 40294.359375,
     "alt": 1347.2547607421875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick399",
@@ -12050,7 +12177,8 @@
     "lat": -12351.46484375,
     "lng": 40294.359375,
     "alt": 1146.897705078125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick39_19",
@@ -12059,7 +12187,8 @@
     "lat": 14691.115234375,
     "lng": 22146.400390625,
     "alt": 3514.239501953125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick400",
@@ -12068,7 +12197,8 @@
     "lat": -12351.46484375,
     "lng": 40294.359375,
     "alt": 945.6572875976562,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick401",
@@ -12077,7 +12207,8 @@
     "lat": -12351.46484375,
     "lng": 40694.5546875,
     "alt": 1149.7152099609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick402",
@@ -12086,7 +12217,8 @@
     "lat": -12351.46484375,
     "lng": 40695.59765625,
     "alt": 949.4119873046875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick403",
@@ -12096,7 +12228,8 @@
     "lng": 40495.51953125,
     "alt": 948.931884765625,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick404",
@@ -12105,7 +12238,8 @@
     "lat": -12351.41796875,
     "lng": 40494.8203125,
     "alt": 1149.6090087890625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#9b9b9b"
   },
   {
     "name": "MinecraftBrick405",
@@ -12114,7 +12248,8 @@
     "lat": -12709.4072265625,
     "lng": 40494.8203125,
     "alt": 1522.10791015625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick406",
@@ -12123,7 +12258,8 @@
     "lat": -12709.4072265625,
     "lng": 40494.8203125,
     "alt": 1721.6951904296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick407",
@@ -12132,7 +12268,8 @@
     "lat": -12709.4072265625,
     "lng": 40494.8203125,
     "alt": 1921.2376708984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick408",
@@ -12142,7 +12279,8 @@
     "lng": 38383.640625,
     "alt": 1804.65576171875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick409",
@@ -12151,7 +12289,8 @@
     "lat": -23712.720703125,
     "lng": 38483.8515625,
     "alt": 1804.65576171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick410",
@@ -12160,7 +12299,8 @@
     "lat": -23885.771484375,
     "lng": 38383.9453125,
     "alt": 2004.7117919921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick411",
@@ -12170,7 +12310,8 @@
     "lng": 32465.720703125,
     "alt": 1790.62060546875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick412_2",
@@ -12251,7 +12392,8 @@
     "lat": 15701.1748046875,
     "lng": 19642.505859375,
     "alt": 3171.560546875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick420",
@@ -12296,7 +12438,8 @@
     "lat": 9292.7021484375,
     "lng": 15022.3095703125,
     "alt": 3790.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick425",
@@ -12305,7 +12448,8 @@
     "lat": 9151.2802734375,
     "lng": 15163.7314453125,
     "alt": 3790.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick426",
@@ -12314,7 +12458,8 @@
     "lat": 9009.8583984375,
     "lng": 15305.1533203125,
     "alt": 3790.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick427",
@@ -12323,7 +12468,8 @@
     "lat": 8868.4365234375,
     "lng": 15446.5751953125,
     "alt": 3790.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick428",
@@ -12371,7 +12517,8 @@
     "lat": -21635.087890625,
     "lng": 40600.28125,
     "alt": 7151.5390625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrick433",
@@ -12401,6 +12548,7 @@
     "alt": -70.25227355957031,
     "hits_to_break": 7,
     "hits_taken": 4,
+    "custom_color": "#aeaeae",
     "actors": [
       "Purchase_StonePickaxe_8",
       "GiveAchievementDLC16_13"
@@ -12427,7 +12575,8 @@
     "lat": 14615.763671875,
     "lng": 21691.06640625,
     "alt": 3514.11474609375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick438_22",
@@ -12436,7 +12585,8 @@
     "lat": 14650.1142578125,
     "lng": 23233.705078125,
     "alt": 3520.5712890625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick439",
@@ -12445,7 +12595,8 @@
     "lat": 9357.5107421875,
     "lng": 8302.99609375,
     "alt": 3655.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick44",
@@ -12454,7 +12605,8 @@
     "lat": 9009.8583984375,
     "lng": 15305.1533203125,
     "alt": 3390.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick440",
@@ -12537,7 +12689,8 @@
     "lat": 9292.7021484375,
     "lng": 15022.3095703125,
     "alt": 3590.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick46",
@@ -12546,7 +12699,8 @@
     "lat": 9151.2802734375,
     "lng": 15163.7314453125,
     "alt": 3590.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick47",
@@ -12555,7 +12709,8 @@
     "lat": 9009.8583984375,
     "lng": 15305.1533203125,
     "alt": 3590.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick48",
@@ -12564,7 +12719,8 @@
     "lat": 8868.4365234375,
     "lng": 15446.5751953125,
     "alt": 3190.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick49",
@@ -12573,7 +12729,8 @@
     "lat": 8868.4365234375,
     "lng": 15446.5751953125,
     "alt": 3390.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick50",
@@ -12582,7 +12739,8 @@
     "lat": 8868.4365234375,
     "lng": 15446.5751953125,
     "alt": 3590.53173828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick51",
@@ -12591,7 +12749,8 @@
     "lat": 11283.7919921875,
     "lng": 10816.6328125,
     "alt": 3300.483154296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick52_11",
@@ -12627,7 +12786,8 @@
     "lat": 6645.21826171875,
     "lng": 10781.3955078125,
     "alt": 3575.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick56",
@@ -12636,7 +12796,8 @@
     "lat": 6605.39013671875,
     "lng": 10585.400390625,
     "alt": 3775.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick57",
@@ -12645,7 +12806,8 @@
     "lat": 6645.21826171875,
     "lng": 10781.3955078125,
     "alt": 3775.5380859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick5_4",
@@ -12654,7 +12816,8 @@
     "lat": -41877.2890625,
     "lng": -1685.583740234375,
     "alt": 2490.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#5f5f5f"
   },
   {
     "name": "MinecraftBrick60",
@@ -12663,7 +12826,8 @@
     "lat": -37066.921875,
     "lng": -655.8556518554688,
     "alt": 2493.4169921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#949797"
   },
   {
     "name": "MinecraftBrick61",
@@ -12672,7 +12836,8 @@
     "lat": -23724.841796875,
     "lng": 21581.80859375,
     "alt": -67.82894897460938,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#384656"
   },
   {
     "name": "MinecraftBrick64",
@@ -12701,7 +12866,8 @@
     "lat": 15595.07421875,
     "lng": 20143.962890625,
     "alt": 3067.815673828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick68",
@@ -12710,7 +12876,8 @@
     "lat": 15586.3583984375,
     "lng": 20134.134765625,
     "alt": 3267.82958984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#3b4d62"
   },
   {
     "name": "MinecraftBrick69",
@@ -12720,7 +12887,8 @@
     "lng": 25058.64453125,
     "alt": -1540.1341552734375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick70",
@@ -12730,7 +12898,8 @@
     "lng": 24858.64453125,
     "alt": -1540.1341552734375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick71",
@@ -12739,7 +12908,8 @@
     "lat": -17415.439453125,
     "lng": 24658.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick72",
@@ -12748,7 +12918,8 @@
     "lat": -17215.439453125,
     "lng": 24658.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick73",
@@ -12759,7 +12930,8 @@
     "alt": -1540.1341552734375,
     "coins_in_gold": 4,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick74",
@@ -12768,7 +12940,8 @@
     "lat": -17215.439453125,
     "lng": 25058.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick75",
@@ -12777,7 +12950,8 @@
     "lat": -17415.439453125,
     "lng": 25258.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick76",
@@ -12786,7 +12960,8 @@
     "lat": -17415.439453125,
     "lng": 25058.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick77",
@@ -12795,7 +12970,8 @@
     "lat": -17415.439453125,
     "lng": 24858.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick78",
@@ -12804,7 +12980,8 @@
     "lat": -17415.439453125,
     "lng": 24658.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick79",
@@ -12813,7 +12990,8 @@
     "lat": -17215.439453125,
     "lng": 24658.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick80",
@@ -12822,7 +13000,8 @@
     "lat": -17215.439453125,
     "lng": 24858.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick81",
@@ -12832,7 +13011,8 @@
     "lng": 25058.64453125,
     "alt": -1340.1341552734375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick82",
@@ -12841,7 +13021,8 @@
     "lat": -17615.439453125,
     "lng": 25258.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick83",
@@ -12850,7 +13031,8 @@
     "lat": -17615.439453125,
     "lng": 25058.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick84",
@@ -12859,7 +13041,8 @@
     "lat": -17615.439453125,
     "lng": 24858.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick85",
@@ -12868,7 +13051,8 @@
     "lat": -17615.439453125,
     "lng": 25058.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#e1727"
   },
   {
     "name": "MinecraftBrick86_22",
@@ -12878,7 +13062,8 @@
     "lng": 16655.904296875,
     "alt": 3350.0,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#142035"
   },
   {
     "name": "MinecraftBrick87",
@@ -12887,7 +13072,8 @@
     "lat": -8420.7109375,
     "lng": 16832.287109375,
     "alt": 3350.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#142035"
   },
   {
     "name": "MinecraftBrick88",
@@ -12896,7 +13082,8 @@
     "lat": -8420.7109375,
     "lng": 16832.287109375,
     "alt": 3550.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#142035"
   },
   {
     "name": "MinecraftBrick89",
@@ -12905,7 +13092,8 @@
     "lat": -8326.4296875,
     "lng": 16655.904296875,
     "alt": 3550.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#142035"
   },
   {
     "name": "MinecraftBrick90_28",
@@ -12962,7 +13150,8 @@
     "alt": -110.0,
     "coins_in_gold": 2,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#e213d"
   },
   {
     "name": "MinecraftBrick96",
@@ -12991,7 +13180,8 @@
     "lat": -5500.0,
     "lng": 63750.0,
     "alt": 4436.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick99",
@@ -13000,7 +13190,8 @@
     "lat": -5301.6162109375,
     "lng": 63750.0,
     "alt": 4436.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#212121"
   },
   {
     "name": "MinecraftBrick9_2",
@@ -13009,7 +13200,8 @@
     "lat": 6462.796875,
     "lng": 23853.693359375,
     "alt": 4015.83544921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#a1831"
   },
   {
     "name": "MinecraftBrickRespawnable10",
@@ -13018,7 +13210,8 @@
     "lat": -54857.13671875,
     "lng": 56567.7109375,
     "alt": 535.5946044921875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1a3284"
   },
   {
     "name": "MinecraftBrickRespawnable13_119",
@@ -13054,7 +13247,8 @@
     "lat": -4370.3134765625,
     "lng": -46411.7890625,
     "alt": 7141.0322265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrickRespawnable26",
@@ -13063,7 +13257,8 @@
     "lat": -3976.594970703125,
     "lng": -46411.7890625,
     "alt": 7141.0322265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrickRespawnable27",
@@ -13072,7 +13267,8 @@
     "lat": -3580.634033203125,
     "lng": -46411.7890625,
     "alt": 7141.0322265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#ffffff"
   },
   {
     "name": "MinecraftBrickRespawnable35",
@@ -13081,7 +13277,8 @@
     "lat": -54851.72265625,
     "lng": 56568.15625,
     "alt": 811.0558471679688,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1a3284"
   },
   {
     "name": "MinecraftBrickRespawnable40",
@@ -13090,7 +13287,8 @@
     "lat": -51272.09765625,
     "lng": 39784.24609375,
     "alt": -220.25392150878906,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c3151"
   },
   {
     "name": "MinecraftBrickRespawnable41",
@@ -13099,7 +13297,8 @@
     "lat": -51272.09765625,
     "lng": 39784.24609375,
     "alt": -498.30584716796875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c3151"
   },
   {
     "name": "MinecraftBrickRespawnable42",
@@ -13117,7 +13316,8 @@
     "lat": -51058.41796875,
     "lng": 39959.2265625,
     "alt": -379.67138671875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c3151"
   },
   {
     "name": "MinecraftBrickRespawnable46",
@@ -13153,7 +13353,8 @@
     "area": "DLC2_Complete",
     "lat": -46687.125,
     "lng": 38970.84765625,
-    "alt": 845.4063720703125
+    "alt": 845.4063720703125,
+    "custom_color": "#315471"
   },
   {
     "name": "MinecraftBrickRespawnable12",
@@ -13161,7 +13362,8 @@
     "area": "DLC2_Complete",
     "lat": -46687.125,
     "lng": 38764.08203125,
-    "alt": 845.4063720703125
+    "alt": 845.4063720703125,
+    "custom_color": "#315471"
   },
   {
     "name": "MinecraftBrickRespawnable21",
@@ -14622,7 +14824,7 @@
     "lat": -44912.16796875,
     "lng": 51589.5,
     "alt": 2909.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew6_1"
+    "other_pipe": "DLC2_Complete:PipesystemNew10"
   },
   {
     "name": "PipesystemNew11",
@@ -14640,7 +14842,7 @@
     "lat": -44372.0,
     "lng": 19610.0859375,
     "alt": 27491.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew9_2"
+    "other_pipe": "DLC2_Complete:PipesystemNew12_5"
   },
   {
     "name": "PipesystemNew2",
@@ -14649,7 +14851,7 @@
     "lat": -48137.3203125,
     "lng": 52687.015625,
     "alt": 1995.3919677734375,
-    "other_pipe": "DLC2_Complete:PipesystemNew_2"
+    "other_pipe": "DLC2_Complete:PipesystemNew2"
   },
   {
     "name": "PipesystemNew3",
@@ -14877,7 +15079,7 @@
     "lat": -49335.3359375,
     "lng": 55097.140625,
     "alt": 2831.169921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_334"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC10"
   },
   {
     "name": "PipesystemNewDLC11_405",
@@ -14906,7 +15108,7 @@
     "lat": -33614.1796875,
     "lng": 22480.037109375,
     "alt": -420.270263671875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC19"
+    "other_pipe": "DLC2_Complete:PipesystemNewDLC16_2167"
   },
   {
     "name": "PipesystemNewDLC19",
@@ -14923,8 +15125,7 @@
     "area": "DLC2_Complete",
     "lat": -39630.97265625,
     "lng": 1548.9307861328125,
-    "alt": 5275.92578125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC3"
+    "alt": 5275.92578125
   },
   {
     "name": "PipesystemNewDLC2_Middle",
@@ -14970,8 +15171,7 @@
     "area": "DLC2_Complete",
     "lat": 2415.970947265625,
     "lng": 30174.87890625,
-    "alt": 5459.419921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC5_3570"
+    "alt": 5459.419921875
   },
   {
     "name": "PipesystemNewDLC7_3581",
@@ -19689,7 +19889,8 @@
     "lat": -13772.7099609375,
     "lng": 4141.01953125,
     "alt": 1829.6612548828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#131414"
   },
   {
     "name": "MinecraftBrick189",
@@ -19698,7 +19899,8 @@
     "lat": -13759.673828125,
     "lng": 4127.5078125,
     "alt": 2129.65869140625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#131414"
   },
   {
     "name": "MinecraftBrick230",
@@ -19707,7 +19909,8 @@
     "lat": -13730.0546875,
     "lng": 4096.76611328125,
     "alt": 2429.64697265625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#131414"
   },
   {
     "name": "Boss_RespawnButtonKey1",
@@ -22117,7 +22320,8 @@
     "lng": -851.3427734375,
     "alt": 768.17529296875,
     "hits_to_break": 7,
-    "hits_taken": 3
+    "hits_taken": 3,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick102",
@@ -22147,7 +22351,8 @@
     "lng": -35.20418167114258,
     "alt": 32.784423828125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick105",
@@ -22157,7 +22362,8 @@
     "lng": -35.20167922973633,
     "alt": -20.786865234375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick106",
@@ -22167,7 +22373,8 @@
     "lng": 214.7623748779297,
     "alt": -56.501220703125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick107",
@@ -22178,7 +22385,8 @@
     "alt": -38.64404296875,
     "hits_to_break": 7,
     "hits_taken": 3,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick108_7",
@@ -22188,7 +22396,8 @@
     "lng": -851.3427734375,
     "alt": 968.17529296875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick109",
@@ -22199,7 +22408,8 @@
     "alt": -218.91796875,
     "coins_in_gold": 1,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick10_15",
@@ -22218,7 +22428,8 @@
     "lng": 8394.4326171875,
     "alt": 400.0,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#858585"
   },
   {
     "name": "MinecraftBrick110",
@@ -22229,7 +22440,8 @@
     "alt": -272.489013671875,
     "coins_in_gold": 2,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick111",
@@ -22240,7 +22452,8 @@
     "alt": -308.203369140625,
     "coins_in_gold": 2,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick112",
@@ -22259,7 +22472,8 @@
     "lng": -35.20887756347656,
     "alt": -128.727783203125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick114",
@@ -22269,7 +22483,8 @@
     "lng": -287.6285705566406,
     "alt": -199.719482421875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick115",
@@ -22297,7 +22512,8 @@
     "lat": 8086.900390625,
     "lng": 6228.39453125,
     "alt": -2448.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick12",
@@ -22503,7 +22719,8 @@
     "lat": -7396.10546875,
     "lng": -2591.569091796875,
     "alt": 3720.53759765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#171717"
   },
   {
     "name": "MinecraftBrick2_5",
@@ -22545,7 +22762,8 @@
     "lat": -7396.10546875,
     "lng": -2991.569091796875,
     "alt": 3720.53759765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#171717"
   },
   {
     "name": "MinecraftBrick32_8",
@@ -22554,7 +22772,8 @@
     "lat": 6864.51708984375,
     "lng": -534.3471069335938,
     "alt": 453.287841796875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick33",
@@ -22563,7 +22782,8 @@
     "lat": 6612.96435546875,
     "lng": -535.4285888671875,
     "alt": 436.35595703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick34_38",
@@ -22572,7 +22792,8 @@
     "lat": 6612.97998046875,
     "lng": -536.1961669921875,
     "alt": 184.35595703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick35_41",
@@ -22581,7 +22802,8 @@
     "lat": 6864.49560546875,
     "lng": -536.0531616210938,
     "alt": 201.287841796875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick36_45",
@@ -22591,7 +22813,8 @@
     "lng": -285.4269104003906,
     "alt": 305.213134765625,
     "hits_to_break": 7,
-    "hits_taken": 3
+    "hits_taken": 3,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick37_47",
@@ -22600,7 +22823,8 @@
     "lat": 6864.50341796875,
     "lng": -285.5136413574219,
     "alt": 250.71630859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick38_51",
@@ -22609,7 +22833,8 @@
     "lat": 6612.98779296875,
     "lng": -35.23988342285156,
     "alt": 122.0703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick39_53",
@@ -22619,7 +22844,8 @@
     "lng": -35.47187805175781,
     "alt": 67.573486328125,
     "hits_to_break": 7,
-    "hits_taken": 1
+    "hits_taken": 1,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick40",
@@ -22628,7 +22854,8 @@
     "lat": 7115.36865234375,
     "lng": -533.629150390625,
     "alt": 435.520263671875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick41_57",
@@ -22637,7 +22864,8 @@
     "lat": 7115.36474609375,
     "lng": -535.33740234375,
     "alt": 183.520263671875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick428",
@@ -22648,7 +22876,8 @@
     "alt": 3687.0341796875,
     "hits_to_break": 20,
     "is_obsidian": true,
-    "brick_type": 1
+    "brick_type": 1,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick429",
@@ -22659,7 +22888,8 @@
     "alt": 3987.0341796875,
     "hits_to_break": 20,
     "is_obsidian": true,
-    "brick_type": 1
+    "brick_type": 1,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick42_83",
@@ -22681,7 +22911,8 @@
     "alt": 3987.0341796875,
     "hits_to_break": 20,
     "is_obsidian": true,
-    "brick_type": 1
+    "brick_type": 1,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick43_52",
@@ -22690,7 +22921,8 @@
     "lat": 7115.37646484375,
     "lng": -33.84962463378906,
     "alt": 34.31787109375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick44_69",
@@ -22699,7 +22931,8 @@
     "lat": 6612.99560546875,
     "lng": -285.2042541503906,
     "alt": 52.213134765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick45_70",
@@ -22708,7 +22941,8 @@
     "lat": 7115.37451171875,
     "lng": -283.847412109375,
     "alt": 105.889404296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick46_71",
@@ -22717,7 +22951,8 @@
     "lat": 6864.50341796875,
     "lng": -285.2140808105469,
     "alt": -2.28369140625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#1c1c1c"
   },
   {
     "name": "MinecraftBrick47_84",
@@ -22999,7 +23234,8 @@
     "lng": -3762.59033203125,
     "alt": 187.99951171875,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c0c"
   },
   {
     "name": "MinecraftBrick75",
@@ -23062,7 +23298,8 @@
     "lng": -3509.760986328125,
     "alt": 152.142333984375,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c0c"
   },
   {
     "name": "MinecraftBrick84",
@@ -23072,7 +23309,8 @@
     "lng": -3259.7578125,
     "alt": 187.856689453125,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#1c0c"
   },
   {
     "name": "MinecraftBrick85",
@@ -23092,7 +23330,8 @@
     "lat": 8106.900390625,
     "lng": 5695.583984375,
     "alt": -2715.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick88",
@@ -23101,7 +23340,8 @@
     "lat": 8089.900390625,
     "lng": 5962.083984375,
     "alt": -2715.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick89",
@@ -23111,7 +23351,8 @@
     "lng": 6228.39453125,
     "alt": -2715.0,
     "hits_to_break": 7,
-    "brick_type": 4
+    "brick_type": 4,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick9",
@@ -23129,7 +23370,8 @@
     "lat": 8123.900390625,
     "lng": 5695.583984375,
     "alt": -2448.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick91",
@@ -23138,7 +23380,8 @@
     "lat": 8105.900390625,
     "lng": 5962.083984375,
     "alt": -2448.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "custom_color": "#151515"
   },
   {
     "name": "MinecraftBrick92",
@@ -23159,7 +23402,8 @@
     "alt": 3687.0341796875,
     "hits_to_break": 20,
     "is_obsidian": true,
-    "brick_type": 1
+    "brick_type": 1,
+    "custom_color": "#1c1b1c"
   },
   {
     "name": "MinecraftBrick94",
@@ -23397,8 +23641,7 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 8960.6259765625,
     "lng": -1678.115966796875,
-    "alt": 1740.47265625,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNew_4"
+    "alt": 1740.47265625
   },
   {
     "name": "Secret_TeleportPipe1",
@@ -24875,8 +25118,7 @@
     "area": "DLC2_PostRainbow",
     "lat": -41000.0390625,
     "lng": -71331.84375,
-    "alt": 11042.857421875,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew6"
+    "alt": 11042.857421875
   },
   {
     "name": "PipesystemNew4_2",
@@ -25183,8 +25425,7 @@
     "area": "DLC2_Area0_Below",
     "lat": 21059.283203125,
     "lng": 9276.5419921875,
-    "alt": 20986.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer2"
+    "alt": 20986.0
   },
   {
     "name": "PipesystemNew_IntoSewer2",

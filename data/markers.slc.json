@@ -5494,8 +5494,8 @@
     "lng": 37816.90625,
     "alt": -189.0847625732422,
     "actors": [
-      "crate14",
-      "TutorialButtons18_2"
+      "TutorialButtons18_2",
+      "crate14"
     ]
   },
   {
@@ -5539,8 +5539,8 @@
     "lng": 43867.2578125,
     "alt": 1320.2569580078125,
     "actors": [
-      "Wood_block_143",
-      "Glowline9_18"
+      "Glowline9_18",
+      "Wood_block_143"
     ]
   },
   {
@@ -5562,11 +5562,11 @@
     "lng": 37520.0,
     "alt": -1490.0,
     "actors": [
-      "Concrette_Paving32",
       "EffectTriggerable_2",
       "EffectTriggerable2",
       "EffectTriggerable3",
-      "Glowline76_2"
+      "Glowline76_2",
+      "Concrette_Paving32"
     ]
   },
   {
@@ -5577,8 +5577,8 @@
     "lng": 24078.138671875,
     "alt": -223.019287109375,
     "actors": [
-      "Wood_block_135",
-      "Glowline13_2"
+      "Glowline13_2",
+      "Wood_block_135"
     ]
   },
   {
@@ -5622,8 +5622,8 @@
     "lng": 42332.95703125,
     "alt": 487.5684814453125,
     "actors": [
-      "Wood_block_89",
-      "Glowline6_11"
+      "Glowline6_11",
+      "Wood_block_89"
     ]
   },
   {
@@ -6214,7 +6214,7 @@
     "lat": -2886.613525390625,
     "lng": 7747.9345703125,
     "alt": 166.4151153564453,
-    "other_pipe": "Crash:PipesystemNew14"
+    "other_pipe": "Crash:PipesystemNew11"
   },
   {
     "name": "PipesystemNew12_2",
@@ -6285,8 +6285,7 @@
     "area": "Crash",
     "lat": 10152.8408203125,
     "lng": 41108.609375,
-    "alt": -322.2944641113281,
-    "other_pipe": "Crash:PipesystemNew12_2"
+    "alt": -322.2944641113281
   },
   {
     "name": "PipesystemNew2",
@@ -6303,8 +6302,7 @@
     "area": "Crash",
     "lat": -4179.44677734375,
     "lng": 45594.05859375,
-    "alt": -109.74856567382812,
-    "other_pipe": "Crash:PipesystemNew13_2"
+    "alt": -109.74856567382812
   },
   {
     "name": "PipesystemNew21_2",
@@ -6377,7 +6375,7 @@
     "lat": -6141.619140625,
     "lng": 1837.845703125,
     "alt": 577.0473022460938,
-    "other_pipe": "Crash:PipesystemNew5"
+    "other_pipe": "Crash:PipesystemNew4"
   },
   {
     "name": "PipesystemNew5",
@@ -6421,8 +6419,7 @@
     "area": "Crash",
     "lat": -6502.84765625,
     "lng": -2454.94921875,
-    "alt": 295.3083190917969,
-    "other_pipe": "Crash:PipesystemNew7"
+    "alt": 295.3083190917969
   },
   {
     "name": "PipesystemNew_2",
@@ -6439,8 +6436,7 @@
     "area": "Crash",
     "lat": 16600.419921875,
     "lng": 22102.123046875,
-    "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC_2"
+    "alt": 2474.070068359375
   },
   {
     "name": "PipesystemNewDLC3",
@@ -6485,7 +6481,7 @@
     "lat": -5217.47998046875,
     "lng": -990.3453979492188,
     "alt": 502.5618896484375,
-    "other_pipe": "Crash:PipesystemNewDLC8"
+    "other_pipe": "Crash:PipesystemNewDLC7"
   },
   {
     "name": "PipesystemNewDLC8",
