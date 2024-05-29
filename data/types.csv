@@ -174,7 +174,7 @@ Lever_C,lever,misc
 Button_C,button,misc
 ButtonFloor_C,floor_button,misc
 PedestalButton_C,pedestal_button,misc
-BallButton_C,floor_button,misc
+BallButton_C,ball_button,misc
 BigButton_C,big_button,misc
 BigButton2_C,big_button,misc
 BigButton2Once_C,big_button,misc
