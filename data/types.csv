@@ -166,9 +166,6 @@ Enemyspawner2_C,,
 SnappyPipe,pipe,pipecaps
 CarryPipe_C,pipe,pipecaps
 PipeCap_C,pipe,pipecaps
-Pipesystem_C,pipe,pipecaps
-PipesystemNew_C,pipe,pipecaps
-PipesystemNewDLC_C,pipe,pipecaps
 Juicer_C,bucket,misc
 Lever_C,lever,misc
 Button_C,button,misc

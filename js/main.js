@@ -374,7 +374,7 @@ function loadMap() {
       .then((response) => response.json())
       .then((j) => {
         let objects = {};
-        let names = {};
+        let titles = {};
 
         // collect objects for cross-references
         for (o of j) {
@@ -390,126 +390,119 @@ function loadMap() {
             continue;
           }
 
-          function hidden(type) {
-            return ['Jumppillow_C','EnemySpawner_C','PipeCap_C','GoldBlock_C'].includes(type);
+          let c = classes[o.type];
+          let text = ''; // set it later in onPopupOpen
+          let alt = id;
+          let title = o.name;
+          let defaultIcon = 'question_mark';
+          let defaultLayer = 'misc';
+          let icon = c && c.icon || defaultIcon;
+          let layer = c && c.layer || defaultLayer;
+          let color = getMarkerColor(o);
+
+          // check if layer id really exists in layers
+          layer = layers[layer] ? layer : defaultLayer;
+
+          // can't have duplicate titles in search (loses items) clarify duplicate titles
+          title = titles[title] ? o.area + ':' + o.name : title;
+          titles[title] = title;
+
+          // add spawns and coins to title
+          if (o.spawns) {
+            title = title + ' ('+o.spawns+')';
+          } else if (o.coins) {
+            title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
           }
 
-          // check if class is in the types list
-          if (!hidden(o.type)) {
-            let c = classes[o.type];
-            let text = ''; // set it later in onPopupOpen
-            let alt = id;
-            let name = o.name;
-            let defaultIcon = 'question_mark';
-            let defaultLayer = 'misc';
-            let icon = c && c.icon || defaultIcon;
-            let layer = c && c.layer || defaultLayer;
-            let color = getMarkerColor(o);
-            if (!layers[layer]) {
-              layer = defaultLayer;
-            }
+          // add class name to title
+          title = title + ' of ' + o.type;
 
-            // can't have duplicate titles in search, will lose items
-            if (names[name]) {
-              name = o.area + ':' + o.name;
-            }
-            names[name] = name;
-
-            let title = name;
-
-            if (o.spawns) {
-              title = title + ' ('+o.spawns+')';
-            } else if (o.coins) {
-              title = title + ' ('+o.coins+' coin'+(o.coins>1?'s':'')+')';
-            }
-            title = title + ' of ' + o.type;
-
-            if ( o.type == 'Jumppad_C' || o.type.startsWith('Pipesystem') ) {
-
-              let a = o; // start object
-
-              // pad line
-              if (o.type == 'Jumppad_C' && o.target) {
-                let layer = 'jumppads';
-                if (r = o.direction) {
-                  L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
-                }
+          // jumppad line
+          if ( o.type == 'Jumppad_C') {
+            if (o.target) {
+              let layer = 'jumppads';
+              if (r = o.direction) {
+                L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
               }
+            }
+          }
 
-              // pipe line
-              if (o.type.startsWith('Pipesystem')) {
-                let layer = 'pipecaps';
+          // pipe line
+          if (o.type.startsWith('Pipesystem')) {
+            let layer = 'pipecaps';
+            if (p = objects[o.other_pipe]) {
+              let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // start of the line
+              let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p; // end of the line
+              L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:(o.nearest_cap?alt:''), color: color}).addTo(layers[layer]);
+            }
+          }
 
-                if (o.nearest_cap) {
-                  a = objects[o.nearest_cap];
-                  alt = a.area + ':' + a.name;
-                } else {
-                  alt = ''; // only mark pipes with caps
-                }
-
-                if (b = objects[o.other_pipe]) {
-
-                  if (b.nearest_cap) {
-                    b = objects[b.nearest_cap];
-                    alt = b.area + ':' + b.name;
-                  } else {
-                    alt = '';
-                  }
-
-                  L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:alt, color: color, interactive:false}).addTo(layers[layer]);
-                }
+          // actor lines
+          if (o.actors) {
+            for (actor of o.actors) {
+              if (p = objects[actor]) {
+                L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: 0.5, weight: 2, color: 'white'}).addTo(layers[layer]);
               }
+            }
+          }
 
-              // marker
-              L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, color: 'black', fillColor: color, title: title, o:a, alt: alt})
+          // add pipe marker as circle
+          if (o.type.startsWith('Pipesystem')) {
+            let layer = 'pipecaps';
+            let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // move marker to cap, if exists
+            L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, fillColor: color, title: title, o:o, alt: (o.nearest_cap?alt:'')})
+               .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+          }
+
+          // add jumppad marker as circle
+          if (o.type == 'Jumppad_C') {
+            let layer = 'jumppads';
+            L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, fillColor: color, title: title, o:o, alt: alt})
+               .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+          }
+
+          // draw the rest of the markers, all known classes
+          if (classes[o.type]) { 
+
+            // some classes are blacklisted (for now) too much visual noise
+            if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C'].includes(o.type)) {
+              continue;
+            }
+
+            if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
+
+            if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
+              let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
+              if (c = colors[o.color]) {
+                icon = icon +'_' + c;
+              }
+            }
+
+            // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
+            if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
+              || o.type.startsWith('BP_Purchase') || (o.is_in_shop && o.is_in_shop==true) ) {
+              let icon = 'shop';
+              let layer = 'shop';
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
                 .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-
-            } else {
-
-              if (o.actors) {
-                for (actor of o.actors) {
-                  if (b = objects[actor]) {
-                    let a = o;
-                    L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {opacity: 0.5, weight: 2, title:' ', alt:'', color: 'white'}).addTo(layers[layer]);
-                  }
-                }
-              }
-
-
-              if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
-
-              if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
-                let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
-                if (c = colors[o.color]) {
-                  icon = icon +'_' + c;
-                }
-              }
-
-              // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
-              if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
-                || o.type.startsWith('BP_Purchase') || (o.is_in_shop && o.is_in_shop==true) ) {
-                let icon = 'shop';
-                let layer = 'shop';
-                L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
-                  .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-              }
-
-              // finally, add marker (base marker goes in the middle)
-              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer })
-                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-
-              // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
-              // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
-              if (s = classes[o.spawns]) {
-                let icon = s.icon || defaultIcon;
-                let layer = layers[s.layer] ? s.layer : defaultLayer;
-                L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer })
-                  .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
-              }
             }
-          } // end of all items that have types entry
 
-          // add dynamic player marker on top of PlayerStart icon
+            // finally, add marker (base marker goes in the middle)
+            L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 100, alt: alt, o:o, layerId:layer })
+              .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+
+            // we also have to put all spawns up there as separate markers, they may overlap already listed items (legacy thing)
+            // note the title is ' ' to prevent leaflet-search from collecting items from a fake item layer
+            if (s = classes[o.spawns]) {
+              let icon = s.icon || defaultIcon;
+              let layer = layers[s.layer] ? s.layer : defaultLayer;
+              L.marker([o.lat, o.lng], {icon: getIcon(icon), title: ' ', zIndexOffset: 1000, alt: alt, o:o, layerId:layer })
+                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
+            }
+
+          } // end of all known classes
+
+          //add dynamic player marker on top of PlayerStart icon
           if (o.type == 'PlayerStart' && !playerMarker) {
             icon = mapId=='siu' ? 'player_blue' : 'player_red';
             playerStart = [o.lat, o.lng, o.alt];
@@ -533,7 +526,8 @@ function loadMap() {
                 marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
                 marker.openPopup();
             }).addTo(map)
-          }
+          } // end of player marker
+
         } // end of main loop
 
         updatePolylines();
