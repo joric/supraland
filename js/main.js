@@ -432,8 +432,8 @@ function loadMap() {
           if (o.type.startsWith('Pipesystem')) {
             let layer = 'pipecaps';
             if (p = objects[o.other_pipe]) {
-              let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o;
-              let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p;
+              let a = (c=objects[o.nearest_cap]) ? c : o;
+              let b = (c=objects[p.nearest_cap]) ? c : p;
               L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt: (o.nearest_cap ? alt : ''), color: color, interactive: false}).addTo(layers[layer]);
             }
           }

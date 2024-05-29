@@ -158,6 +158,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 a = ':'.join((area, p['Pipe']['Outer']))
                 b = ':'.join((t['AssetPathName'].split('.').pop(),t['SubPathString'].split('.').pop()) if (t:=p.get('otherPipeInOtherLevel')) else (area, p['OtherPipe']['ObjectName']))
                 pipes[ a ] = b
+                #pipes[ b ] = a # links may be single-sided
 
             objects[area +':'+o['Name']] = o
 
@@ -170,6 +171,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             if not allowed_items: continue
             #if not o['Type'].endswith('_C'): continue
+            #if not 'Pipe' in o['Type']: continue
 
             def get_matrix(o, matrix=Matrix.Identity(4)):
                 p = o.get('Properties',{})
@@ -244,7 +246,9 @@ def calc_pipes(data):
     points = [(o['lng'], o['lat'], o['alt']) for o in data if allowed_points(o)]
     data_indices = [i for i,o in enumerate(data) if allowed_points(o)]
     print('collected', len(points), 'pipe caps, calculating links...')
-    if not points: return
+
+    if not points:
+        return
 
     tree = KDTree(points)
 
@@ -271,6 +275,7 @@ def calc_pipes(data):
             a = o['area'] + ':' + o['name']
             lookup[a] = o
 
+    ''' just add nearest cap for now ^. handle the rest in frontend
     # update caps with cross-references
     # not all pipes have caps, unfortunately
     # some only have level geometry that's not in the classes
@@ -285,7 +290,7 @@ def calc_pipes(data):
                         if other_cap := p.get('nearest_cap'):
                             if j := cap_indices.get(nearest_cap):
                                 data[j].update({'other_cap': other_cap})
-
+    '''
 
 def calc_pads(data):
     # calculates target altitude from the jump pad's velocity data
@@ -300,6 +305,9 @@ def calc_pads(data):
     data_indices = [i for i,o in enumerate(data) if allowed_points(o)]
 
     print('collected', len(points), 'terrain points, calculating targets...')
+
+    if not points:
+        return
 
     tree = KDTree(points)
 
