@@ -115,9 +115,15 @@ function loadMap() {
   p.MapWorldLowerRight.X -= 1;
   p.MapWorldLowerRight.Y -= 1;
 
-  mapBounds = [
+  let mapBounds = [
     [ p.MapWorldUpperLeft.Y, p.MapWorldUpperLeft.X ],
     [ p.MapWorldLowerRight.Y, p.MapWorldLowerRight.X ]
+  ];
+
+  let gap = p.MapWorldSize/2;
+  let mapBoundsWithGap = [
+    [ p.MapWorldUpperLeft.Y - gap, p.MapWorldUpperLeft.X - gap ],
+    [ p.MapWorldLowerRight.Y + gap, p.MapWorldLowerRight.X + gap ]
   ];
 
   var m = p.MapWorldSize / mapSize.width;
@@ -132,16 +138,11 @@ function loadMap() {
 
   mapCenter = [p.MapWorldCenter.Y, p.MapWorldCenter.X];
 
-  let gap = p.MapWorldSize/2;
-
   //Create the map
   map = new L.Map('map', {
     crs: crs,
     fadeAnimation: false,
-    maxBounds: [
-      [ p.MapWorldUpperLeft.Y - gap, p.MapWorldUpperLeft.X - gap ],
-      [ p.MapWorldLowerRight.Y + gap, p.MapWorldLowerRight.X + gap ]
-    ],
+    maxBounds: mapBoundsWithGap, // elastic-y bounds
     zoomControl: false,
   });
 
@@ -384,7 +385,7 @@ function loadMap() {
 
         for (const[id,o] of Object.entries(objects)) {
 
-          // skip markers out of bounds (e.g. "PipesystemNew_AboveSewer" in DLC2_Area0)
+          // skip markers out of bounds (e.g. the whole start area of the red town in SIU is not painted on the map)
           let [[top,left],[bottom,right]] = mapBounds;
           if (! (o.lng>left && o.lng<right && o.lat>top && o.lat<bottom )) {
             continue;
