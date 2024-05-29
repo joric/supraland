@@ -422,7 +422,7 @@ function loadMap() {
             if (o.target) {
               let layer = 'jumppads';
               if (r = o.direction) {
-                L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color}).addTo(layers[layer]);
+                L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
               }
             }
           }
@@ -433,7 +433,7 @@ function loadMap() {
             if (p = objects[o.other_pipe]) {
               let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // start of the line
               let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p; // end of the line
-              L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:(o.nearest_cap?alt:''), color: color}).addTo(layers[layer]);
+              L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:(o.nearest_cap?alt:''), color: color, interactive: false}).addTo(layers[layer]);
             }
           }
 
@@ -441,7 +441,7 @@ function loadMap() {
           if (o.actors) {
             for (actor of o.actors) {
               if (p = objects[actor]) {
-                L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: 0.5, weight: 2, color: 'white'}).addTo(layers[layer]);
+                L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: 0.5, weight: 2, color: 'white', interactive: false}).addTo(layers[layer]);
               }
             }
           }
