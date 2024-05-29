@@ -8063,9 +8063,9 @@
       "z": 0.6944271326065063
     },
     "target": {
-      "x": 19397.404002512572,
-      "y": 9293.578476631454,
-      "z": 3403.3573353394895
+      "x": 19589.315145223984,
+      "y": 9674.555170192809,
+      "z": 3012.703165088927
     }
   },
   {
@@ -8084,8 +8084,8 @@
     },
     "target": {
       "x": 5635.47119140625,
-      "y": -44252.01068878174,
-      "z": 1681.2158531982457
+      "y": -44154.50254023075,
+      "z": 1833.1768946743039
     }
   },
   {
@@ -8121,9 +8121,9 @@
       "z": 0.7071056962013245
     },
     "target": {
-      "x": 24000.63108444214,
-      "y": 6951.853013575077,
-      "z": 3917.8517562274124
+      "x": 24220.41386604309,
+      "y": 7566.019125074148,
+      "z": 4280.895351481686
     }
   },
   {
@@ -8222,9 +8222,9 @@
       "z": 0.9396960735321045
     },
     "target": {
-      "x": 2731.8454765081406,
-      "y": -48514.353081941605,
-      "z": 3731.5427149994
+      "x": 2489.4453160762787,
+      "y": -47948.465183734894,
+      "z": 3349.1931473571954
     }
   },
   {
@@ -8466,9 +8466,9 @@
       "z": 0.9436719417572021
     },
     "target": {
-      "x": 18599.33094822298,
-      "y": -30417.124521495163,
-      "z": 2933.026640364014
+      "x": 18589.249495074415,
+      "y": -30377.316010693583,
+      "z": 2999.3162481952327
     }
   },
   {
@@ -8606,9 +8606,9 @@
       "z": 0.8995097875595093
     },
     "target": {
-      "x": 63615.94337272644,
-      "y": -11313.246906280518,
-      "z": 4019.969317199778
+      "x": 63588.47115588188,
+      "y": -11328.57043504715,
+      "z": 4059.383512495493
     }
   },
   {
@@ -8627,9 +8627,9 @@
       "z": 0.6898553967475891
     },
     "target": {
-      "x": 51870.36780837178,
-      "y": -18166.870564699173,
-      "z": 2228.769280879412
+      "x": 52902.15809249878,
+      "y": -14722.990203857422,
+      "z": 515.5642811279581
     }
   },
   {
@@ -8647,9 +8647,9 @@
       "z": 0.9659258723258972
     },
     "target": {
-      "x": 62759.359944969416,
-      "y": -15538.92316699028,
-      "z": 1026.584150694383
+      "x": 62893.87431895733,
+      "y": -15404.409165382385,
+      "z": 1434.294134534845
     }
   },
   {
@@ -8667,9 +8667,9 @@
       "z": 0.6909903883934021
     },
     "target": {
-      "x": 11790.072445392609,
-      "y": 3163.0029285550117,
-      "z": 3072.9296804832607
+      "x": 11804.51605629921,
+      "y": 3162.3744308054447,
+      "z": 3087.5984727153923
     }
   },
   {
@@ -8695,7 +8695,8 @@
     "lat": -40253.625,
     "lng": -1734.120849609375,
     "alt": 1877.6624755859375,
-    "color": 5
+    "color": 5,
+    "original_color": 5
   },
   {
     "name": "KeycardColor3_2",
@@ -8712,7 +8713,8 @@
     "lat": -47973.56640625,
     "lng": 4568.236328125,
     "alt": 1896.2939453125,
-    "color": 2
+    "color": 2,
+    "original_color": 2
   },
   {
     "name": "KeycardColor5",
@@ -8721,7 +8723,8 @@
     "lat": -47907.53125,
     "lng": 4566.7060546875,
     "alt": 1773.879638671875,
-    "color": 2
+    "color": 2,
+    "original_color": 2
   },
   {
     "name": "KeycardColor6",
@@ -8738,7 +8741,8 @@
     "lat": -26261.052734375,
     "lng": 21480.673828125,
     "alt": 1447.3681640625,
-    "color": 4
+    "color": 4,
+    "original_color": 4
   },
   {
     "name": "KeycardColor_2",
@@ -8747,7 +8751,8 @@
     "lat": -40335.6171875,
     "lng": -1734.129150390625,
     "alt": 1877.6624755859375,
-    "color": 5
+    "color": 5,
+    "original_color": 5
   },
   {
     "name": "KeycardReader2_2",
@@ -14985,6 +14990,2935 @@
     ]
   },
   {
+    "name": "A2_PipeGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -7691.0,
+    "lng": 61209.0,
+    "alt": 4298.00048828125,
+    "color": 0
+  },
+  {
+    "name": "B1_PipeKeyGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -10198.7783203125,
+    "lng": 57990.6875,
+    "alt": 528.073486328125,
+    "color": 0
+  },
+  {
+    "name": "B3_Roof_RedGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11120.3193359375,
+    "lng": 64930.6640625,
+    "alt": 4129.6455078125,
+    "color": 0
+  },
+  {
+    "name": "B3_Roof_RedGuy3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46620.49609375,
+    "lng": 6250.435546875,
+    "alt": 3359.1904296875,
+    "color": 0
+  },
+  {
+    "name": "B3_Roof_RedGuyHungry",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12045.529296875,
+    "lng": 64304.60546875,
+    "alt": 4129.6455078125,
+    "color": 0
+  },
+  {
+    "name": "Baron",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29673.17578125,
+    "lng": 18533.15625,
+    "alt": 3177.312255859375,
+    "color": 0
+  },
+  {
+    "name": "Baron2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25311.962890625,
+    "lng": 10556.541015625,
+    "alt": -114.37921905517578,
+    "color": 0
+  },
+  {
+    "name": "Baron3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43243.5625,
+    "lng": 21467.98828125,
+    "alt": 3576.312255859375,
+    "color": 0
+  },
+  {
+    "name": "Baron4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24883.958984375,
+    "lng": 16379.287109375,
+    "alt": -122.73997497558594,
+    "color": 0
+  },
+  {
+    "name": "Baron5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29199.423828125,
+    "lng": 18521.73046875,
+    "alt": -26.167572021484375,
+    "color": 0
+  },
+  {
+    "name": "Baron6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -35081.109375,
+    "lng": 20570.55859375,
+    "alt": 3661.9375,
+    "color": 0
+  },
+  {
+    "name": "Baron7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30256.17578125,
+    "lng": 18490.15625,
+    "alt": -122.76730346679688,
+    "color": 0
+  },
+  {
+    "name": "Baron8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30429.17578125,
+    "lng": 20108.15625,
+    "alt": -91.2581787109375,
+    "color": 0
+  },
+  {
+    "name": "Baron9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30135.619140625,
+    "lng": 18392.291015625,
+    "alt": 3066.8564453125,
+    "color": 0
+  },
+  {
+    "name": "BaronGoonRamp5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -32854.1875,
+    "lng": 20356.1015625,
+    "alt": 3334.2138671875,
+    "color": 0
+  },
+  {
+    "name": "BaronGoonRamp7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24673.90234375,
+    "lng": 16188.28125,
+    "alt": -122.72464752197266,
+    "color": 0
+  },
+  {
+    "name": "BaronGoonRamp8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24779.486328125,
+    "lng": 16065.037109375,
+    "alt": -98.42057037353516,
+    "color": 0
+  },
+  {
+    "name": "BaronGoonRamp9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25407.548828125,
+    "lng": 17541.826171875,
+    "alt": -122.72464752197266,
+    "color": 0
+  },
+  {
+    "name": "BathGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 2096.6845703125,
+    "lng": 10374.72265625,
+    "alt": 3117.1728515625,
+    "color": 0
+  },
+  {
+    "name": "BathGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 2106.230224609375,
+    "lng": 11315.0615234375,
+    "alt": 3175.5654296875,
+    "original_color": 2
+  },
+  {
+    "name": "Beach_Runner_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57783.828125,
+    "lng": 52986.765625,
+    "alt": 553.03857421875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Beach_Runner_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57591.7421875,
+    "lng": 53127.671875,
+    "alt": 553.0380859375,
+    "color": 6,
+    "original_color": 6
+  },
+  {
+    "name": "Blacksmith3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28049.404296875,
+    "lng": 16364.93359375,
+    "alt": -122.75139617919922,
+    "color": 0
+  },
+  {
+    "name": "BlindGatekeeper",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21792.033203125,
+    "lng": 18709.78515625,
+    "alt": -122.76642608642578,
+    "color": 0
+  },
+  {
+    "name": "BlindGatekeeper2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -20108.033203125,
+    "lng": 19179.78515625,
+    "alt": 23.23357391357422,
+    "color": 0
+  },
+  {
+    "name": "BlueCollarGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29647.271484375,
+    "lng": 21500.216796875,
+    "alt": -122.7363510131836,
+    "color": 0
+  },
+  {
+    "name": "BlueInspector1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21657.5625,
+    "lng": -73378.0078125,
+    "alt": 2387.0302734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "BlueKing1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21417.609375,
+    "lng": -73336.2265625,
+    "alt": 2369.521484375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "BluePlumberStatue",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29104.16015625,
+    "lng": 18488.52734375,
+    "alt": 0.1573333740234375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "BluePrince1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21873.904296875,
+    "lng": -74015.6328125,
+    "alt": 2369.556640625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Constructor2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28960.884765625,
+    "lng": 11522.1875,
+    "alt": -122.71790313720703,
+    "color": 0
+  },
+  {
+    "name": "Constructor3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26325.41015625,
+    "lng": 18754.7734375,
+    "alt": -85.2814712524414,
+    "color": 0
+  },
+  {
+    "name": "Constructor4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30446.0546875,
+    "lng": 18259.384765625,
+    "alt": -122.69763946533203,
+    "color": 0
+  },
+  {
+    "name": "Curtis2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31445.123046875,
+    "lng": 18040.39453125,
+    "alt": -111.6589126586914,
+    "color": 0
+  },
+  {
+    "name": "CutsceneBaron",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29673.17578125,
+    "lng": 18629.15625,
+    "alt": 3177.312255859375,
+    "color": 0
+  },
+  {
+    "name": "DirectionGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25712.0,
+    "lng": 19583.0,
+    "alt": 1438.7535400390625,
+    "color": 0
+  },
+  {
+    "name": "ErniePlumber",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13095.2490234375,
+    "lng": 52979.77734375,
+    "alt": 560.9467163085938,
+    "color": 0
+  },
+  {
+    "name": "FerniePlumber2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12978.5625,
+    "lng": 52796.203125,
+    "alt": 520.08837890625,
+    "color": 0
+  },
+  {
+    "name": "Filbert",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12915.634765625,
+    "lng": 58559.515625,
+    "alt": 1354.4542236328125,
+    "color": 0
+  },
+  {
+    "name": "Historian2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22726.375,
+    "lng": 21710.57421875,
+    "alt": 3066.934814453125,
+    "original_color": 2
+  },
+  {
+    "name": "Lifeguard",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57045.7734375,
+    "lng": 49462.5859375,
+    "alt": 553.0389404296875,
+    "color": 0
+  },
+  {
+    "name": "Lifeguard3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -53393.234375,
+    "lng": 54200.62109375,
+    "alt": 553.0387573242188,
+    "color": 0
+  },
+  {
+    "name": "Lifeguard4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -52697.59375,
+    "lng": 52598.03125,
+    "alt": 548.97216796875,
+    "color": 0
+  },
+  {
+    "name": "Lifeguard5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -51678.953125,
+    "lng": 56315.6796875,
+    "alt": 553.0086669921875,
+    "color": 0
+  },
+  {
+    "name": "Magician",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27341.544921875,
+    "lng": 20579.71875,
+    "alt": -74.22403717041016,
+    "color": 0
+  },
+  {
+    "name": "Marius",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -15366.451171875,
+    "lng": 50450.8203125,
+    "alt": 520.767578125,
+    "color": 0
+  },
+  {
+    "name": "MinecraftGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -63389.2890625,
+    "lng": 42216.4140625,
+    "alt": 3283.53271484375,
+    "original_color": 2
+  },
+  {
+    "name": "MinerShopkeeper",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 15385.3466796875,
+    "lng": 22308.671875,
+    "alt": 3263.995361328125,
+    "color": 0
+  },
+  {
+    "name": "MinerShopkeeperKid",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 19588.630859375,
+    "lng": 18493.78515625,
+    "alt": 3195.607421875,
+    "color": 0
+  },
+  {
+    "name": "MinerShopkeeperKid2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 15390.7177734375,
+    "lng": 21924.376953125,
+    "alt": 3195.607421875,
+    "color": 0
+  },
+  {
+    "name": "MonsterAcademic3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30049.00390625,
+    "lng": 18062.931640625,
+    "alt": -100.59821319580078,
+    "color": 0
+  },
+  {
+    "name": "MonsterHunter",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23183.6640625,
+    "lng": 21225.6328125,
+    "alt": 3061.6328125,
+    "color": 0
+  },
+  {
+    "name": "MrMiracle1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21657.689453125,
+    "lng": -74009.4140625,
+    "alt": 2369.521484375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "NPC_Bank10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47084.359375,
+    "lng": 3602.866455078125,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Bank11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47203.73046875,
+    "lng": 3243.4169921875,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Bank12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47182.58984375,
+    "lng": 3597.775634765625,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Bank14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46517.796875,
+    "lng": 2329.93798828125,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Bank9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47055.10546875,
+    "lng": 3226.01220703125,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankChaos4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47171.0234375,
+    "lng": 2854.108154296875,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankChaos5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47169.96484375,
+    "lng": 3237.6181640625,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankChaos6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46900.71484375,
+    "lng": 3249.777099609375,
+    "alt": 1852.000244140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -52242.1796875,
+    "lng": -988.43212890625,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -48968.79296875,
+    "lng": -156.4736328125,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50302.11328125,
+    "lng": 1488.1083984375,
+    "alt": 1852.8079833984375,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee13",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50349.88671875,
+    "lng": 1653.4287109375,
+    "alt": 1852.8079833984375,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50056.515625,
+    "lng": 1741.3018798828125,
+    "alt": 1852.8079833984375,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50375.74609375,
+    "lng": 2695.2783203125,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankEmployee9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -51296.5390625,
+    "lng": 2283.19384765625,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankTeller4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47407.55078125,
+    "lng": 2851.4423828125,
+    "alt": 1851.8060302734375,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankTeller5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47408.703125,
+    "lng": 3607.276123046875,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankTeller6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47407.55078125,
+    "lng": 3246.104736328125,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankVaultGuard5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -48559.5546875,
+    "lng": 4046.2939453125,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankVaultGuard6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -49503.25,
+    "lng": 3850.514404296875,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankVaultGuard7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -52316.98046875,
+    "lng": 3817.72607421875,
+    "alt": 1851.805908203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_BankVaultGuard8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -47349.3828125,
+    "lng": 2507.20703125,
+    "alt": 3356.510986328125,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12596.2880859375,
+    "lng": 64335.43359375,
+    "alt": 4129.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12416.1298828125,
+    "lng": 64116.921875,
+    "alt": 4142.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12009.9296875,
+    "lng": 63621.703125,
+    "alt": 4135.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11732.39453125,
+    "lng": 63467.859375,
+    "alt": 4129.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11454.310546875,
+    "lng": 65158.40234375,
+    "alt": 4129.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Cafe6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11557.91015625,
+    "lng": 65259.2421875,
+    "alt": 4129.6494140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24417.71875,
+    "lng": 17997.181640625,
+    "alt": -98.69355010986328,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26914.337890625,
+    "lng": 17381.2421875,
+    "alt": -122.7531967163086,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27737.568359375,
+    "lng": 15398.3369140625,
+    "alt": -124.12955474853516,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27711.935546875,
+    "lng": 15688.212890625,
+    "alt": -125.70922088623047,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28867.94921875,
+    "lng": 17621.490234375,
+    "alt": -48.23596954345703,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom16",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28155.265625,
+    "lng": 19330.50390625,
+    "alt": -112.92538452148438,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom17",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30443.509765625,
+    "lng": 15345.3974609375,
+    "alt": -106.14286041259766,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22742.3828125,
+    "lng": 19448.7734375,
+    "alt": -98.69355010986328,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom20",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30254.94921875,
+    "lng": 18131.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom21",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30539.94921875,
+    "lng": 18045.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom22",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30419.94921875,
+    "lng": 18084.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom23",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30652.94921875,
+    "lng": 17997.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom24",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30093.94921875,
+    "lng": 18354.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom25",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30233.94921875,
+    "lng": 18308.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom26",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30327.94921875,
+    "lng": 18806.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom27",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30504.94921875,
+    "lng": 18806.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom28",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30640.94921875,
+    "lng": 18806.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom29",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30138.94921875,
+    "lng": 17850.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26592.46484375,
+    "lng": 19894.71875,
+    "alt": -98.69355010986328,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom30",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30419.94921875,
+    "lng": 17789.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom31",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30327.94921875,
+    "lng": 19004.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom32",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29850.94921875,
+    "lng": 18715.490234375,
+    "alt": -122.73005676269531,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom33",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22957.240234375,
+    "lng": 17494.078125,
+    "alt": -79.55591583251953,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom34",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28084.517578125,
+    "lng": 19618.0859375,
+    "alt": -112.92538452148438,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom35",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22845.240234375,
+    "lng": 17494.078125,
+    "alt": -79.55591583251953,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26185.99609375,
+    "lng": 17272.61328125,
+    "alt": -122.7531967163086,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26508.76953125,
+    "lng": 19418.259765625,
+    "alt": -64.00480651855469,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26483.03515625,
+    "lng": 19321.58203125,
+    "alt": -66.00421905517578,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27701.04296875,
+    "lng": 20011.314453125,
+    "alt": -119.63652801513672,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27553.83984375,
+    "lng": 19949.109375,
+    "alt": -112.92538452148438,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageBottom9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23210.015625,
+    "lng": 17889.662109375,
+    "alt": -98.69355010986328,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25123.396484375,
+    "lng": 18687.353515625,
+    "alt": 1438.31982421875,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -32333.91015625,
+    "lng": 15099.57421875,
+    "alt": 1436.078369140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31618.466796875,
+    "lng": 14819.794921875,
+    "alt": 1448.4898681640625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle13",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -35865.6640625,
+    "lng": 14379.583984375,
+    "alt": 2180.487548828125,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle15",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -19512.953125,
+    "lng": 32128.787109375,
+    "alt": -2516.34765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle16",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29526.1953125,
+    "lng": 24780.58203125,
+    "alt": 1816.2642822265625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26675.216796875,
+    "lng": 19734.779296875,
+    "alt": 1438.7744140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31493.14453125,
+    "lng": 19795.4765625,
+    "alt": 1438.4229736328125,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24695.97265625,
+    "lng": 20450.08984375,
+    "alt": 1446.6865234375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30354.515625,
+    "lng": 17986.439453125,
+    "alt": 1536.6553955078125,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30688.6640625,
+    "lng": 18023.583984375,
+    "alt": 1436.078369140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30503.228515625,
+    "lng": 18198.4296875,
+    "alt": 1437.71875,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24634.501953125,
+    "lng": 17327.431640625,
+    "alt": 1438.31982421875,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageMiddle9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25123.396484375,
+    "lng": 18525.353515625,
+    "alt": 1438.31982421875,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpper1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28978.3984375,
+    "lng": 20241.576171875,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpper2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28832.822265625,
+    "lng": 20241.783203125,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpper3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28641.794921875,
+    "lng": 16131.8671875,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpper4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25240.21484375,
+    "lng": 18443.08984375,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpperServent1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31563.3984375,
+    "lng": 16021.2841796875,
+    "alt": 3056.728271484375,
+    "original_color": 2
+  },
+  {
+    "name": "NPC_CageUpperServent2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -24005.361328125,
+    "lng": 18619.27734375,
+    "alt": 3056.728271484375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "NPC_CageUpperServent3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27620.873046875,
+    "lng": 14923.8369140625,
+    "alt": 3056.728271484375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "NPC_CageUpperServent4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -29356.240234375,
+    "lng": 21231.349609375,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpperServent5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31811.71484375,
+    "lng": 19421.84375,
+    "alt": 3061.509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpperServent6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31650.861328125,
+    "lng": 19502.376953125,
+    "alt": 3062.724365234375,
+    "color": 0
+  },
+  {
+    "name": "NPC_CageUpperServent7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -33163.8671875,
+    "lng": 15197.5400390625,
+    "alt": 3056.728271484375,
+    "color": 0
+  },
+  {
+    "name": "NPC_Child",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -19379.056640625,
+    "lng": 15114.4755859375,
+    "alt": -73.98895263671875,
+    "color": 0
+  },
+  {
+    "name": "NPC_Child2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -19316.52734375,
+    "lng": 14853.9345703125,
+    "alt": -72.20453643798828,
+    "color": 0
+  },
+  {
+    "name": "NPC_CoinNoticer1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27936.90625,
+    "lng": 19816.91796875,
+    "alt": 1438.789794921875,
+    "color": 0
+  },
+  {
+    "name": "NPC_CoinNoticer2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28029.830078125,
+    "lng": 19649.453125,
+    "alt": 1439.0,
+    "color": 0
+  },
+  {
+    "name": "NPC_CoinNoticer3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27838.267578125,
+    "lng": 19552.54296875,
+    "alt": 1438.789794921875,
+    "color": 0
+  },
+  {
+    "name": "NPC_ExitYellowCrystalBld",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11781.0,
+    "lng": 62131.0,
+    "alt": 2914.479248046875,
+    "color": 0
+  },
+  {
+    "name": "NPC_HintGold",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -42544.0859375,
+    "lng": 7867.53125,
+    "alt": 1858.0,
+    "color": 0
+  },
+  {
+    "name": "NPC_HotBalls1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 10819.830078125,
+    "lng": 22377.458984375,
+    "alt": 3193.3251953125,
+    "color": 0
+  },
+  {
+    "name": "NPC_HotBalls2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 9556.193359375,
+    "lng": 19830.607421875,
+    "alt": 3025.5634765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Outside4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -45340.1328125,
+    "lng": 6764.32568359375,
+    "alt": 1843.2330322265625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "NPC_Plumbster10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11958.4521484375,
+    "lng": 63377.765625,
+    "alt": 519.7507934570312,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster11_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12068.064453125,
+    "lng": 57851.8359375,
+    "alt": 1311.5372314453125,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster13",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -9897.8994140625,
+    "lng": 60837.4609375,
+    "alt": 4343.55029296875,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -15529.4296875,
+    "lng": 57052.68359375,
+    "alt": 524.3912963867188,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster15_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -17111.98828125,
+    "lng": 51611.91796875,
+    "alt": 558.2920532226562,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster16",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13631.6005859375,
+    "lng": 54944.0859375,
+    "alt": 524.2527465820312,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster17",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -15365.5693359375,
+    "lng": 63075.48828125,
+    "alt": 1348.9921875,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster18",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13059.158203125,
+    "lng": 61016.0546875,
+    "alt": 2895.59033203125,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster19",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11986.787109375,
+    "lng": 54930.36328125,
+    "alt": 594.5990600585938,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13624.9033203125,
+    "lng": 57089.34375,
+    "alt": 557.9920043945312,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster20",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -15198.482421875,
+    "lng": 52160.15625,
+    "alt": 518.9417724609375,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster21",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -8512.4140625,
+    "lng": 59536.0,
+    "alt": 3611.89306640625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12145.52734375,
+    "lng": 62768.171875,
+    "alt": 517.04443359375,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -15577.96875,
+    "lng": 57695.3046875,
+    "alt": 2880.78369140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13785.59765625,
+    "lng": 64213.97265625,
+    "alt": 519.7509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster7-1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13712.68359375,
+    "lng": 64067.828125,
+    "alt": 519.7509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster7-2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13841.6083984375,
+    "lng": 64052.59375,
+    "alt": 519.7509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11510.8310546875,
+    "lng": 62711.85546875,
+    "alt": 519.7509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Plumbster9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11771.806640625,
+    "lng": 63408.96875,
+    "alt": 519.7509155273438,
+    "color": 0
+  },
+  {
+    "name": "NPC_RaceGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -16834.91796875,
+    "lng": 62408.2890625,
+    "alt": 502.5706481933594,
+    "color": 6,
+    "original_color": 6
+  },
+  {
+    "name": "NPC_RedTowner",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -20116.25,
+    "lng": 17582.041015625,
+    "alt": 26.741802215576172,
+    "original_color": 2
+  },
+  {
+    "name": "NPC_RoamingNPCA1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 7571.001953125,
+    "lng": 24640.408203125,
+    "alt": 3195.615966796875,
+    "color": 0
+  },
+  {
+    "name": "NPC_SFX_CLAPPER",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23903.751953125,
+    "lng": 18348.23828125,
+    "alt": -146.8983917236328,
+    "color": 0
+  },
+  {
+    "name": "NPC_Signpost",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 2373.109375,
+    "lng": 17716.083984375,
+    "alt": 3417.619140625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Signpost2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 3701.768798828125,
+    "lng": 22892.974609375,
+    "alt": 3231.374267578125,
+    "color": 0
+  },
+  {
+    "name": "NPC_Signpost3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 4408.49072265625,
+    "lng": 23052.34375,
+    "alt": 3181.920166015625,
+    "color": 0
+  },
+  {
+    "name": "NPC_SkullGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -14060.6943359375,
+    "lng": 64559.2578125,
+    "alt": 14089.1455078125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "NPC_Spa",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 2874.979736328125,
+    "lng": 11735.0859375,
+    "alt": 3226.47509765625,
+    "color": 0
+  },
+  {
+    "name": "NPC_StrengthSoldier",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43619.23046875,
+    "lng": -6771.890625,
+    "alt": 2607.050048828125,
+    "color": 6,
+    "original_color": 6
+  },
+  {
+    "name": "NPC_Stroller",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11092.2607421875,
+    "lng": 17540.962890625,
+    "alt": 3380.074462890625,
+    "color": 0
+  },
+  {
+    "name": "NPC_Stroller2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -11140.23046875,
+    "lng": 17782.599609375,
+    "alt": 3378.0615234375,
+    "color": 0
+  },
+  {
+    "name": "NPC_Stroller3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13905.9345703125,
+    "lng": 14211.3046875,
+    "alt": 673.8379516601562,
+    "color": 0
+  },
+  {
+    "name": "NPC_VoidGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23632.5234375,
+    "lng": 37368.1640625,
+    "alt": 519.8539428710938,
+    "color": 0
+  },
+  {
+    "name": "NPCBuilder5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -48518.2421875,
+    "lng": 4971.8212890625,
+    "alt": 3359.1904296875,
+    "color": 0
+  },
+  {
+    "name": "NPCBuilder6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46915.98046875,
+    "lng": 5333.94189453125,
+    "alt": 3359.1904296875,
+    "color": 0
+  },
+  {
+    "name": "NPCBuilder7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -49230.76953125,
+    "lng": 1599.643310546875,
+    "alt": 3359.1904296875,
+    "color": 0
+  },
+  {
+    "name": "NPCBuilder8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50792.26953125,
+    "lng": 2393.989990234375,
+    "alt": 3944.75390625,
+    "color": 0
+  },
+  {
+    "name": "NPCVaultWorker2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46727.52734375,
+    "lng": 4479.28125,
+    "alt": 1852.01318359375,
+    "color": 0
+  },
+  {
+    "name": "ParanoidGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28757.40625,
+    "lng": 14880.462890625,
+    "alt": -122.76642608642578,
+    "color": 0
+  },
+  {
+    "name": "Prefect",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23243.517578125,
+    "lng": 20663.220703125,
+    "alt": 1446.66015625,
+    "color": 0
+  },
+  {
+    "name": "Prefect2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23065.57421875,
+    "lng": 20103.572265625,
+    "alt": 1439.0457763671875,
+    "color": 0
+  },
+  {
+    "name": "RED_RedguyTown1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27307.193359375,
+    "lng": 18238.79296875,
+    "alt": -128.34739685058594,
+    "original_color": 2
+  },
+  {
+    "name": "RED_RedguyTown2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27540.658203125,
+    "lng": 18513.1796875,
+    "alt": -63.63725280761719,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RED_RedguyTown3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27314.880859375,
+    "lng": 18690.044921875,
+    "alt": -123.12044525146484,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy103",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43309.56640625,
+    "lng": 6569.68212890625,
+    "alt": 1848.9552001953125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy104_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -37798.484375,
+    "lng": 460.8680419921875,
+    "alt": 1856.648681640625,
+    "color": 0
+  },
+  {
+    "name": "RedGuy105_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12326.0927734375,
+    "lng": 55707.73046875,
+    "alt": 1348.6287841796875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy106_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -20878.015625,
+    "lng": -66793.6328125,
+    "alt": 8965.0869140625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy107_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57932.125,
+    "lng": 56988.3671875,
+    "alt": 4846.9326171875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy108_8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30415.0,
+    "lng": 24947.0,
+    "alt": 2045.0,
+    "color": 0
+  },
+  {
+    "name": "RedGuy109_11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -30294.8671875,
+    "lng": 25180.337890625,
+    "alt": 1959.289306640625,
+    "color": 0
+  },
+  {
+    "name": "RedGuy110",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13517.6689453125,
+    "lng": 59780.26953125,
+    "alt": 1348.910888671875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy111",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -39276.94140625,
+    "lng": 3958.540771484375,
+    "alt": 1843.2269287109375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy11_Gold_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43913.1171875,
+    "lng": 21331.90234375,
+    "alt": 3039.759521484375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy11_Gold_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44577.0625,
+    "lng": 19764.46484375,
+    "alt": 3039.759521484375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy11_Gold_Lift3_4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21988.83203125,
+    "lng": -73632.4765625,
+    "alt": 2369.537109375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy11_Gold_Lift4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23100.7890625,
+    "lng": -66268.6015625,
+    "alt": 8861.728515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy13",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -32369.48046875,
+    "lng": 18717.83203125,
+    "alt": 1448.8953857421875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy13_Building_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43856.5859375,
+    "lng": 20969.384765625,
+    "alt": 3058.4189453125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy13_Building_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44582.64453125,
+    "lng": 20039.37890625,
+    "alt": 3058.4189453125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy13_Building_Lift3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -41280.4609375,
+    "lng": 21643.056640625,
+    "alt": 3149.893798828125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy14_Fire_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43768.9609375,
+    "lng": 21157.44921875,
+    "alt": 3039.7412109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy14_Fire_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -41320.87109375,
+    "lng": 21411.931640625,
+    "alt": 3130.23974609375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy14_Smell_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43938.9609375,
+    "lng": 19847.44921875,
+    "alt": 3039.7412109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy16_Upper_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44063.49609375,
+    "lng": 21058.24609375,
+    "alt": 3041.49462890625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy16_Upper_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44146.12890625,
+    "lng": 19446.87890625,
+    "alt": 3041.49462890625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy16_Upper_Lift3_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21475.291015625,
+    "lng": -73783.5390625,
+    "alt": 2371.2724609375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy16_Upper_Lift4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21340.783203125,
+    "lng": -66093.6015625,
+    "alt": 8858.462890625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17_Lower_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43804.01953125,
+    "lng": 20775.080078125,
+    "alt": 3039.7763671875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17_Lower_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44613.54296875,
+    "lng": 19563.05859375,
+    "alt": 3039.7763671875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17_Lower_Lift3_6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21954.232421875,
+    "lng": -73834.1953125,
+    "alt": 2369.556640625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17_Lower_Lift4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23409.7734375,
+    "lng": -66337.6015625,
+    "alt": 8869.654296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy18_Lava_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44089.1796875,
+    "lng": 20635.88671875,
+    "alt": 3039.741455078125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy18_Lava_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44529.1796875,
+    "lng": 19345.88671875,
+    "alt": 3039.741455078125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy18_Lava_Lift3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -41508.3515625,
+    "lng": 21090.529296875,
+    "alt": 3059.62109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy19_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27420.931640625,
+    "lng": 16150.794921875,
+    "alt": -94.25377655029297,
+    "color": 0
+  },
+  {
+    "name": "RedGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43219.91796875,
+    "lng": 21361.576171875,
+    "alt": 3057.251953125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy20_3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21492.5546875,
+    "lng": 15487.3125,
+    "alt": -122.03857421875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy20_Fat_Lift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43524.69921875,
+    "lng": 20852.0625,
+    "alt": 3039.764404296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy20_Fat_Lift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44369.5078125,
+    "lng": 19636.3828125,
+    "alt": 3039.764404296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy20_Fat_Lift3_7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21749.974609375,
+    "lng": -73681.8203125,
+    "alt": 2369.544921875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy20_Fat_Lift4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21610.79296875,
+    "lng": -66173.6015625,
+    "alt": 8822.693359375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy21",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44178.734375,
+    "lng": 19890.2421875,
+    "alt": 3057.251953125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy21_Fat3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -48589.5703125,
+    "lng": -351.1117248535156,
+    "alt": 3353.04736328125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy21_Fat4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -46736.6015625,
+    "lng": -1430.7313232421875,
+    "alt": 3353.9755859375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy25",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21566.984375,
+    "lng": 15678.9619140625,
+    "alt": -119.53765106201172,
+    "color": 0
+  },
+  {
+    "name": "RedGuy26",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21519.931640625,
+    "lng": 20090.6953125,
+    "alt": -103.12196350097656,
+    "color": 0
+  },
+  {
+    "name": "RedGuy27",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -54527.11328125,
+    "lng": 48303.609375,
+    "alt": 51.2276611328125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy28",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21287.51171875,
+    "lng": 20275.01171875,
+    "alt": -83.96723937988281,
+    "color": 0
+  },
+  {
+    "name": "RedGuy29",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -54898.953125,
+    "lng": 55141.91015625,
+    "alt": 3600.60498046875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy2Counter",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43408.1484375,
+    "lng": 20398.392578125,
+    "alt": 3039.772216796875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy2Counter2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44419.0546875,
+    "lng": 19915.419921875,
+    "alt": 3039.772216796875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy30",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -55148.04296875,
+    "lng": 55465.51953125,
+    "alt": 3592.66748046875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy31",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -18039.75390625,
+    "lng": 19726.451171875,
+    "alt": -174.6399383544922,
+    "color": 0
+  },
+  {
+    "name": "RedGuy32",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -54856.19921875,
+    "lng": 47750.8828125,
+    "alt": 33.6943473815918,
+    "color": 0
+  },
+  {
+    "name": "RedGuy33",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50166.0234375,
+    "lng": 39259.44921875,
+    "alt": -433.5423583984375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy34",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50126.78125,
+    "lng": 39375.75390625,
+    "alt": -412.04638671875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy35",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -50058.7265625,
+    "lng": 39428.28515625,
+    "alt": -412.04638671875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy36",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -55836.28125,
+    "lng": 49739.25,
+    "alt": 439.08673095703125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy37",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -55759.62109375,
+    "lng": 49835.12109375,
+    "alt": 441.82977294921875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy38",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -55677.703125,
+    "lng": 49861.203125,
+    "alt": 433.7386474609375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy42",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -13228.802734375,
+    "lng": -56254.1328125,
+    "alt": 8088.3583984375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy57_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 16616.87890625,
+    "lng": 22968.3359375,
+    "alt": 3908.0,
+    "color": 0
+  },
+  {
+    "name": "RedGuy59_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44592.05859375,
+    "lng": 20589.01171875,
+    "alt": 3039.740234375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy60",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44557.0703125,
+    "lng": 20922.76953125,
+    "alt": 3042.29052734375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy61",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44606.9375,
+    "lng": 21367.982421875,
+    "alt": 3042.29052734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy62",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21722.564453125,
+    "lng": 23462.904296875,
+    "alt": -355.2057800292969,
+    "color": 0
+  },
+  {
+    "name": "RedGuy63_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21593.876953125,
+    "lng": 23634.513671875,
+    "alt": -358.6994323730469,
+    "color": 0
+  },
+  {
+    "name": "RedGuy64",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -42915.6796875,
+    "lng": 21033.41015625,
+    "alt": 3057.251953125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy65_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43077.3203125,
+    "lng": 3818.2763671875,
+    "alt": 1858.0,
+    "color": 3
+  },
+  {
+    "name": "RedGuy66_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -8510.732421875,
+    "lng": -47102.96484375,
+    "alt": 8437.408203125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy67_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25751.4609375,
+    "lng": 23301.650390625,
+    "alt": -82.83036041259766,
+    "color": 0
+  },
+  {
+    "name": "RedGuy68_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -40467.0,
+    "lng": 293.0,
+    "alt": 1865.0501708984375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy69_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -18873.6875,
+    "lng": 13740.25,
+    "alt": 2692.137451171875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy70_6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44396.0,
+    "lng": 19293.0,
+    "alt": 3050.0,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy71",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44500.7734375,
+    "lng": 21421.779296875,
+    "alt": 3042.29052734375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy72",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44239.28125,
+    "lng": 21634.009765625,
+    "alt": 3042.29052734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy73",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43712.13671875,
+    "lng": 21704.134765625,
+    "alt": 3093.29052734375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy74_10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43353.0,
+    "lng": 20136.0,
+    "alt": 3040.0,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy75",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44600.21484375,
+    "lng": 21137.30078125,
+    "alt": 3045.29052734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy76",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -42914.3203125,
+    "lng": 21485.916015625,
+    "alt": 3058.51904296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy77",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -45092.125,
+    "lng": 19123.41796875,
+    "alt": 3198.068603515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy78",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44589.39453125,
+    "lng": 21464.38671875,
+    "alt": 3042.29052734375,
+    "color": 4,
+    "original_color": 4
+  },
+  {
+    "name": "RedGuy79",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44674.58203125,
+    "lng": 20785.83984375,
+    "alt": 3042.29052734375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy80",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44550.625,
+    "lng": 21539.3125,
+    "alt": 3026.5390625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy81",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44028.0078125,
+    "lng": 21927.32421875,
+    "alt": 3146.0224609375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy82",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43210.2421875,
+    "lng": 20103.146484375,
+    "alt": 3040.0,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy83",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43003.9453125,
+    "lng": 20362.5703125,
+    "alt": 3040.0,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy84",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -42484.45703125,
+    "lng": 20680.162109375,
+    "alt": 3058.539306640625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy85_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -23878.0,
+    "lng": 16690.0,
+    "alt": 447.0,
+    "color": 0
+  },
+  {
+    "name": "RedGuy89_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43834.078125,
+    "lng": 21475.462890625,
+    "alt": 3053.35693359375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy8_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -32364.361328125,
+    "lng": 18597.47265625,
+    "alt": 1448.8953857421875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy90",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43611.078125,
+    "lng": 21992.462890625,
+    "alt": 3550.954833984375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy91",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44076.078125,
+    "lng": 21222.462890625,
+    "alt": 3053.35693359375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy92",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44341.078125,
+    "lng": 21088.462890625,
+    "alt": 3035.35693359375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy93_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -31427.771484375,
+    "lng": 19918.318359375,
+    "alt": -108.29446411132812,
+    "color": 0
+  },
+  {
+    "name": "RedGuy94",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -18224.203125,
+    "lng": -58356.34375,
+    "alt": 8188.1416015625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy95",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -18169.16015625,
+    "lng": -58451.96875,
+    "alt": 8192.880859375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy96_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -45132.0703125,
+    "lng": 49565.30078125,
+    "alt": 2007.4464111328125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy97",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -45316.0703125,
+    "lng": 49653.30078125,
+    "alt": 2007.4464111328125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy99_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -34549.54296875,
+    "lng": -59309.51171875,
+    "alt": 18544.859375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy9_TransPuzzleLift",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57084.87890625,
+    "lng": 22403.16796875,
+    "alt": 12057.4423828125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy9_TransPuzzleLift2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -44168.609375,
+    "lng": 19255.53515625,
+    "alt": 3040.6591796875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy9_TransPuzzleLift3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -41274.234375,
+    "lng": 21199.08203125,
+    "alt": 3081.704345703125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy_Building2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -16620.79296875,
+    "lng": 58684.8671875,
+    "alt": 572.3291015625,
+    "color": 0
+  },
+  {
+    "name": "RedGuy_Building4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -8308.7548828125,
+    "lng": 62080.8828125,
+    "alt": 595.7605590820312,
+    "color": 0
+  },
+  {
+    "name": "RedGuy_UndergroundArena_KeyGiver",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": 2147.125,
+    "lng": -58580.00390625,
+    "alt": 8345.369140625,
+    "original_color": 2
+  },
+  {
+    "name": "RedInspector1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21891.65234375,
+    "lng": -73435.6328125,
+    "alt": 2369.552734375,
+    "original_color": 2
+  },
+  {
+    "name": "RedKing1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -21430.955078125,
+    "lng": -73970.9765625,
+    "alt": 2370.439453125,
+    "original_color": 2
+  },
+  {
+    "name": "RedQueen1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22088.08203125,
+    "lng": -73376.0078125,
+    "alt": 2388.197265625,
+    "original_color": 2
+  },
+  {
+    "name": "RoamingNPC1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -9595.462890625,
+    "lng": 62911.99609375,
+    "alt": 526.336669921875,
+    "color": 0
+  },
+  {
+    "name": "RoamingNPC2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -12311.0361328125,
+    "lng": 61414.8046875,
+    "alt": 535.82080078125,
+    "color": 0
+  },
+  {
+    "name": "RoamingNPC3_Jogger",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -10005.7421875,
+    "lng": 59084.1171875,
+    "alt": 511.6989440917969,
+    "color": 0
+  },
+  {
+    "name": "RobBoss",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -43935.44140625,
+    "lng": 7335.30078125,
+    "alt": 1843.0,
+    "color": 0
+  },
+  {
+    "name": "Shopkeeper",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27456.490234375,
+    "lng": 15478.0849609375,
+    "alt": -95.50179290771484,
+    "color": 0
+  },
+  {
+    "name": "ShopKid1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -25831.802734375,
+    "lng": 21927.234375,
+    "alt": -136.18455505371094,
+    "color": 0
+  },
+  {
+    "name": "ShopKid2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -32422.802734375,
+    "lng": 16747.234375,
+    "alt": 1445.0679931640625,
+    "color": 0
+  },
+  {
+    "name": "Slumguy1_H3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27731.783203125,
+    "lng": 12962.2626953125,
+    "alt": -124.02533721923828,
+    "color": 0
+  },
+  {
+    "name": "Slumguy2_H2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28239.900390625,
+    "lng": 11950.0205078125,
+    "alt": -122.76642608642578,
+    "color": 0
+  },
+  {
+    "name": "Slumguy3_H1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27558.1640625,
+    "lng": 10767.982421875,
+    "alt": -122.66117095947266,
+    "color": 0
+  },
+  {
+    "name": "Slumguy5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -20277.615234375,
+    "lng": 13282.3916015625,
+    "alt": -95.71260833740234,
+    "color": 0
+  },
+  {
+    "name": "Slumguy9_H4_Brother",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26968.861328125,
+    "lng": 12588.7333984375,
+    "alt": -190.48895263671875,
+    "color": 0
+  },
+  {
+    "name": "SlumguyGatekeeper",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -22173.98046875,
+    "lng": 13454.3515625,
+    "alt": -122.76642608642578,
+    "color": 0
+  },
+  {
+    "name": "SlumguyHouse4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26697.376953125,
+    "lng": 12400.642578125,
+    "alt": -156.64352416992188,
+    "color": 0
+  },
+  {
+    "name": "SlumguyHouse5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -20548.376953125,
+    "lng": 13750.642578125,
+    "alt": -122.69598388671875,
+    "color": 0
+  },
+  {
+    "name": "SlumguyLeader",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28310.451171875,
+    "lng": 11074.158203125,
+    "alt": -122.69683074951172,
+    "color": 0
+  },
+  {
+    "name": "SlumguyLeader2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -28310.451171875,
+    "lng": 11074.158203125,
+    "alt": -122.69683074951172,
+    "color": 0
+  },
+  {
+    "name": "SpectatorKid1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27161.521484375,
+    "lng": 20382.94140625,
+    "alt": -157.99583435058594,
+    "color": 0
+  },
+  {
+    "name": "SpectatorKid2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27057.798828125,
+    "lng": 20360.84375,
+    "alt": -157.99244689941406,
+    "color": 0
+  },
+  {
+    "name": "SpectatorKid3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -27042.841796875,
+    "lng": 20458.529296875,
+    "alt": -149.1684112548828,
+    "color": 0
+  },
+  {
+    "name": "SpectatorKid4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26981.24609375,
+    "lng": 20551.978515625,
+    "alt": -149.1684112548828,
+    "color": 0
+  },
+  {
+    "name": "SpectatorKid5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26853.78515625,
+    "lng": 20559.865234375,
+    "alt": -157.9923553466797,
+    "color": 0
+  },
+  {
+    "name": "Vicky_PipeObsessed",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -7067.2705078125,
+    "lng": 60496.828125,
+    "alt": 4135.58447265625,
+    "color": 0
+  },
+  {
+    "name": "WhiteCollarGal",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -26247.111328125,
+    "lng": 20973.39453125,
+    "alt": 1446.6865234375,
+    "color": 0
+  },
+  {
+    "name": "WomanBeach",
+    "type": "RedGuy_C",
+    "area": "DLC2_Complete",
+    "lat": -57269.328125,
+    "lng": 49842.7421875,
+    "alt": 553.0389404296875,
+    "color": 0
+  },
+  {
     "name": "Scrap177_2",
     "type": "Scrap_C",
     "area": "DLC2_Complete",
@@ -16705,6 +19639,42 @@
     "nearest_cap": "DLC2_FinalBoss:PipeCap12_2"
   },
   {
+    "name": "NPC_InStocks",
+    "type": "RedGuy_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24756.146484375,
+    "lng": -25121.55078125,
+    "alt": 6085.2294921875,
+    "color": 0
+  },
+  {
+    "name": "NPC_Zaheer",
+    "type": "RedGuy_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24656.43359375,
+    "lng": -23746.771484375,
+    "alt": 6169.27490234375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24229.82421875,
+    "lng": -22912.580078125,
+    "alt": 6086.6845703125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24183.70703125,
+    "lng": -22845.5078125,
+    "alt": 6086.6845703125,
+    "color": 0
+  },
+  {
     "name": "BuyQuintupleJump",
     "type": "BuyQuintupleJump_C",
     "area": "DLC2_Area0",
@@ -16920,6 +19890,731 @@
     "lat": -284190.375,
     "lng": 902.2235717773438,
     "alt": 9808.3916015625
+  },
+  {
+    "name": "BlueKing",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283061.6875,
+    "lng": -594.5,
+    "alt": 9928.9921875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "BluePrince",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282985.65625,
+    "lng": -574.5,
+    "alt": 9950.1328125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Historian1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -290347.1875,
+    "lng": -220.2820587158203,
+    "alt": 10391.0,
+    "original_color": 2
+  },
+  {
+    "name": "Kid_Blue",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282608.90625,
+    "lng": 442.0,
+    "alt": 9726.890625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Kid_Purple",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283805.6875,
+    "lng": -809.562744140625,
+    "alt": 9884.1533203125,
+    "color": 4,
+    "original_color": 4
+  },
+  {
+    "name": "Merchant_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283723.75,
+    "lng": 338.0438537597656,
+    "alt": 9788.515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283315.875,
+    "lng": -762.0,
+    "alt": 9928.9921875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282668.5625,
+    "lng": -75.5,
+    "alt": 9900.9990234375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283364.15625,
+    "lng": -197.5,
+    "alt": 9865.359375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy18",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283429.21875,
+    "lng": -965.5,
+    "alt": 9951.5,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy19",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282982.40625,
+    "lng": -277.5,
+    "alt": 9896.3984375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy2_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -287705.5625,
+    "lng": -2412.982177734375,
+    "alt": 10227.8740234375,
+    "color": 4,
+    "original_color": 4
+  },
+  {
+    "name": "RedGuy3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282912.78125,
+    "lng": 10.5,
+    "alt": 9849.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy4_4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282858.90625,
+    "lng": 2272.1220703125,
+    "alt": 9429.3291015625,
+    "color": 0
+  },
+  {
+    "name": "RedGuy59_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285158.90625,
+    "lng": -38.6811637878418,
+    "alt": 9863.849609375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy60",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285254.96875,
+    "lng": 6.116137504577637,
+    "alt": 9880.4951171875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy61_6",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284971.96875,
+    "lng": -101.57514953613281,
+    "alt": 9840.0380859375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy62",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285706.96875,
+    "lng": 518.1161499023438,
+    "alt": 9985.54296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283145.875,
+    "lng": -718.5,
+    "alt": 9933.0703125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -287539.1875,
+    "lng": -2364.0537109375,
+    "alt": 10167.0,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedKing1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289804.65625,
+    "lng": -965.7030029296875,
+    "alt": 10391.625,
+    "original_color": 2
+  },
+  {
+    "name": "RedKing2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283235.09375,
+    "lng": -424.7285461425781,
+    "alt": 9895.9921875,
+    "original_color": 2
+  },
+  {
+    "name": "RedQueen1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289901.6875,
+    "lng": -570.2831420898438,
+    "alt": 10391.625,
+    "original_color": 2
+  },
+  {
+    "name": "RedQueen2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283366.59375,
+    "lng": -502.0,
+    "alt": 9892.03125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator10_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -288329.21875,
+    "lng": -2123.1494140625,
+    "alt": 10640.28125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator10_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283721.1875,
+    "lng": -1052.0,
+    "alt": 9929.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator1_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289444.0,
+    "lng": -3191.0,
+    "alt": 10640.2109375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator1_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284592.4375,
+    "lng": -1527.5,
+    "alt": 9921.46875,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator2_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289475.0,
+    "lng": -2823.0,
+    "alt": 10640.2109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Spectator2_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284725.78125,
+    "lng": -1504.5,
+    "alt": 9910.8203125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Spectator2_3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289654.0,
+    "lng": -3052.0,
+    "alt": 10667.2109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Spectator3_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -288958.875,
+    "lng": 182.5,
+    "alt": 10389.2109375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Spectator3_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284580.84375,
+    "lng": -713.0,
+    "alt": 9830.8203125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "Spectator4_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -288297.15625,
+    "lng": -2248.6494140625,
+    "alt": 10640.2109375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator4_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284911.78125,
+    "lng": -1489.5,
+    "alt": 9910.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator5_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289759.875,
+    "lng": 182.5,
+    "alt": 10389.2109375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator5_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284305.0,
+    "lng": -312.5,
+    "alt": 9813.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator5_3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289054.46875,
+    "lng": 294.5,
+    "alt": 10389.2109375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator6_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -287761.875,
+    "lng": -2128.5,
+    "alt": 10168.0234375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator6_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283089.59375,
+    "lng": 1161.0,
+    "alt": 9577.90625,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator7_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -287506.875,
+    "lng": -2217.5,
+    "alt": 10168.0234375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator7_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283837.65625,
+    "lng": 857.0,
+    "alt": 9789.515625,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator8_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -288453.21875,
+    "lng": -64.5,
+    "alt": 10392.2109375,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator8_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282810.71875,
+    "lng": 639.5,
+    "alt": 9705.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator9_1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -289321.375,
+    "lng": 180.13087463378906,
+    "alt": 10389.28125,
+    "original_color": 2
+  },
+  {
+    "name": "Spectator9_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283165.90625,
+    "lng": 996.9146118164062,
+    "alt": 9595.0234375,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorBlocker1",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285550.46875,
+    "lng": -348.17938232421875,
+    "alt": 9888.875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorBlocker2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285605.25,
+    "lng": -248.08143615722656,
+    "alt": 9886.375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorBlocker3",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285556.9375,
+    "lng": -125.75531768798828,
+    "alt": 9883.7998046875,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorBlocker4",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285544.4375,
+    "lng": -24.67899513244629,
+    "alt": 9893.171875,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283042.9375,
+    "lng": 34.0,
+    "alt": 9837.2421875,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_12",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284462.40625,
+    "lng": -203.47625732421875,
+    "alt": 9821.3828125,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_14",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284437.375,
+    "lng": -1534.5,
+    "alt": 9910.8203125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_15",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285074.03125,
+    "lng": -86.13468933105469,
+    "alt": 9848.93359375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_16",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283878.625,
+    "lng": -1401.0,
+    "alt": 9912.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_17",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285146.8125,
+    "lng": -1969.0,
+    "alt": 9903.9912109375,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_18",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283706.09375,
+    "lng": -1245.0,
+    "alt": 9941.3046875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_19",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284571.84375,
+    "lng": -220.49853515625,
+    "alt": 9800.0439453125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283973.8125,
+    "lng": -1524.0,
+    "alt": 9940.318359375,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_20",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282814.5,
+    "lng": 130.0,
+    "alt": 9847.1875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_21",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283377.25,
+    "lng": 656.0,
+    "alt": 9711.40625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_22",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283279.09375,
+    "lng": 799.0,
+    "alt": 9673.7734375,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_25",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283656.15625,
+    "lng": -744.5,
+    "alt": 9905.5234375,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_26",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282700.90625,
+    "lng": 473.0,
+    "alt": 9765.3125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_27",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282479.375,
+    "lng": 97.00009155273438,
+    "alt": 9866.9189453125,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_28",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283033.90625,
+    "lng": 799.0,
+    "alt": 9667.7734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_30",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282637.90625,
+    "lng": 346.0,
+    "alt": 9779.3125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_31",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -282913.625,
+    "lng": 799.0,
+    "alt": 9664.654296875,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_32",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285090.15625,
+    "lng": -1457.5020751953125,
+    "alt": 9889.9580078125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_33",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283733.15625,
+    "lng": -856.0,
+    "alt": 9902.8203125,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_35",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283781.125,
+    "lng": -578.5,
+    "alt": 9872.8203125,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_39",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283512.75,
+    "lng": 511.5,
+    "alt": 9733.1640625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_41",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -284807.8125,
+    "lng": -1476.42431640625,
+    "alt": 9879.91796875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285336.53125,
+    "lng": 63.0,
+    "alt": 9879.369140625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_7",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -285234.75,
+    "lng": -510.0,
+    "alt": 9893.9140625,
+    "original_color": 2
+  },
+  {
+    "name": "SpectatorStanding_8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283534.90625,
+    "lng": -149.45079040527344,
+    "alt": 9835.1796875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "SpectatorStanding_9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0",
+    "lat": -283636.1875,
+    "lng": -262.5,
+    "alt": 9859.7421875,
+    "original_color": 2
   },
   {
     "name": "TalkingSpeaker2",
@@ -19462,6 +23157,24 @@
     "nearest_cap": "DLC2_SecretLavaArea:PipeCap_FastTravelLavaToBeam2"
   },
   {
+    "name": "RedGuy2_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 4165.57958984375,
+    "lng": -55.31888961791992,
+    "alt": 1140.642333984375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy_PickaxeGuy",
+    "type": "RedGuy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 5297.00634765625,
+    "lng": -9300.9443359375,
+    "alt": 707.8359375,
+    "original_color": 2
+  },
+  {
     "name": "ValveCarriable_2",
     "type": "ValveCarriable_C",
     "area": "DLC2_SecretLavaArea",
@@ -20630,9 +24343,9 @@
       "z": 0.9396669268608093
     },
     "target": {
-      "x": -47495.07515478134,
-      "y": -39252.50022506714,
-      "z": 10781.10132969208
+      "x": -47419.03840947151,
+      "y": -39061.84923744202,
+      "z": 11348.466173575593
     }
   },
   {
@@ -20889,6 +24602,104 @@
     "other_pipe": "DLC2_PostRainbow:PipesystemNew2"
   },
   {
+    "name": "RedGuy10",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -45084.890625,
+    "lng": -56251.30859375,
+    "alt": 9989.857421875,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy11",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -45611.4765625,
+    "lng": -58478.203125,
+    "alt": 10159.1337890625,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy12",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -46550.11328125,
+    "lng": -59433.17578125,
+    "alt": 10062.078125,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy14_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41886.27734375,
+    "lng": -48835.5078125,
+    "alt": 12441.396484375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy15_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43414.49609375,
+    "lng": -75575.4140625,
+    "alt": 5422.96142578125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy3_12",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -49701.3828125,
+    "lng": -44583.1328125,
+    "alt": 5709.72314453125,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy4_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -39291.93359375,
+    "lng": -67624.9609375,
+    "alt": 9967.4248046875,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy7",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -41507.203125,
+    "lng": -70559.8515625,
+    "alt": 5600.58056640625,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy9",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43349.0703125,
+    "lng": -57904.02734375,
+    "alt": 7878.32568359375,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -37619.6796875,
+    "lng": -57111.26171875,
+    "alt": 10003.67578125,
+    "color": 5,
+    "original_color": 5
+  },
+  {
     "name": "RingColorerFlower10",
     "type": "RingColorerFlower_C",
     "area": "DLC2_PostRainbow",
@@ -21071,6 +24882,487 @@
     "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer"
   },
   {
+    "name": "RedGuy10",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23470.013671875,
+    "lng": 16145.6455078125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy13",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23176.7109375,
+    "lng": 15712.015625,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy15",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23198.7421875,
+    "lng": 15945.970703125,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy16",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23186.068359375,
+    "lng": 15554.2470703125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23763.154296875,
+    "lng": 16138.083984375,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23841.056640625,
+    "lng": 16300.642578125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy20_20",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23090.115234375,
+    "lng": 13549.3671875,
+    "alt": 20452.796875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy21_23",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22266.990234375,
+    "lng": 13916.4189453125,
+    "alt": 20113.453125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy22_26",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22397.22265625,
+    "lng": 12869.865234375,
+    "alt": 20420.296875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy23_29",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 20270.99609375,
+    "lng": 10610.6923828125,
+    "alt": 20975.515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy24_32",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 21854.716796875,
+    "lng": 12403.2734375,
+    "alt": 20669.359375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy25_35",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 21357.12109375,
+    "lng": 11670.6103515625,
+    "alt": 20883.65625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy26",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23398.177734375,
+    "lng": 15653.20703125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy27",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23207.236328125,
+    "lng": 16169.4228515625,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy28",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23419.41015625,
+    "lng": 15886.544921875,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy29",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23631.3984375,
+    "lng": 16282.607421875,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy30",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23033.458984375,
+    "lng": 13344.4072265625,
+    "alt": 20452.796875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy31",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23313.21484375,
+    "lng": 15455.3349609375,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy32",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 21840.06640625,
+    "lng": 16661.203125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy33",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22330.11328125,
+    "lng": 16123.1181640625,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy34",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22544.4140625,
+    "lng": 16325.25,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy35",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22379.501953125,
+    "lng": 16421.6328125,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy36",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22276.68359375,
+    "lng": 16759.841796875,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy37",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22131.19140625,
+    "lng": 16556.080078125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy38",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22470.322265625,
+    "lng": 16236.025390625,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy39",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22166.6171875,
+    "lng": 16295.09375,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy40",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 21986.96484375,
+    "lng": 16715.16796875,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy41",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22035.03125,
+    "lng": 16467.6796875,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy42",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22352.84765625,
+    "lng": 16555.7421875,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy43",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22505.541015625,
+    "lng": 13095.97265625,
+    "alt": 20379.359375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy44",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23315.4375,
+    "lng": 14495.7451171875,
+    "alt": 19644.5625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy45",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23217.810546875,
+    "lng": 14639.3173828125,
+    "alt": 19685.1796875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy46",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23013.552734375,
+    "lng": 14869.76953125,
+    "alt": 19685.75,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy47",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23099.6796875,
+    "lng": 14623.119140625,
+    "alt": 19689.7734375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy48",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22714.52734375,
+    "lng": 16411.765625,
+    "alt": 19554.5625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy49",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22609.6640625,
+    "lng": 16548.453125,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy50",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22405.384765625,
+    "lng": 16793.076171875,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy51",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22498.59765625,
+    "lng": 16539.33203125,
+    "alt": 19556.34375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy52",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22468.15625,
+    "lng": 16689.97265625,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy53",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22287.953125,
+    "lng": 16870.21484375,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy54",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22432.8828125,
+    "lng": 17015.185546875,
+    "alt": 19556.34375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy55",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22873.884765625,
+    "lng": 13185.01953125,
+    "alt": 20442.1796875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy56",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 22690.810546875,
+    "lng": 13000.53125,
+    "alt": 20395.484375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy57_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23681.94140625,
+    "lng": 11052.1201171875,
+    "alt": 21246.3515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy58",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 23681.94140625,
+    "lng": 11052.1201171875,
+    "alt": 23050.3515625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy5_5",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 19266.01953125,
+    "lng": 11648.9306640625,
+    "alt": 21036.890625,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy6_8",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 19438.880859375,
+    "lng": 10606.3896484375,
+    "alt": 21017.046875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy7_11",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 19227.068359375,
+    "lng": 10987.841796875,
+    "alt": 20952.412109375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy9",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 19722.06640625,
+    "lng": 11779.76953125,
+    "alt": 20993.71875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 19622.974609375,
+    "lng": 10634.3974609375,
+    "alt": 21017.4609375,
+    "original_color": 2
+  },
+  {
+    "name": "SewerGirl",
+    "type": "RedGuy_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 24186.56640625,
+    "lng": 15696.6796875,
+    "alt": 19556.3359375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_0",
     "type": "ValveCarriable_C",
     "area": "DLC2_Area0_Below",
@@ -21124,6 +25416,260 @@
     ]
   },
   {
+    "name": "RedGuy100_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21748.6640625,
+    "lng": -56632.2578125,
+    "alt": 7827.9619140625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy101",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21735.64453125,
+    "lng": -56859.13671875,
+    "alt": 7853.5419921875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy102_6",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21558.6171875,
+    "lng": -56688.3046875,
+    "alt": 7889.89599609375,
+    "color": 6,
+    "original_color": 6
+  },
+  {
+    "name": "RedGuy11",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22231.90625,
+    "lng": -57949.984375,
+    "alt": 7808.228515625,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy12",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23111.7890625,
+    "lng": -61189.515625,
+    "alt": 8145.7763671875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy13",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24549.3125,
+    "lng": -64545.890625,
+    "alt": 7937.58984375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy14",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24550.0625,
+    "lng": -64288.25,
+    "alt": 7937.58984375,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy15",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24402.796875,
+    "lng": -64544.53125,
+    "alt": 7937.58984375,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy16",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24466.09375,
+    "lng": -62966.578125,
+    "alt": 8132.54248046875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy17",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24529.890625,
+    "lng": -62815.734375,
+    "alt": 8132.54248046875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy18",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24216.015625,
+    "lng": -62711.234375,
+    "alt": 8132.54248046875,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy19",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23220.234375,
+    "lng": -64948.609375,
+    "alt": 7976.76806640625,
+    "color": 0
+  },
+  {
+    "name": "RedGuy2",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22428.40234375,
+    "lng": -63335.9296875,
+    "alt": 7805.5244140625,
+    "color": 6,
+    "original_color": 6
+  },
+  {
+    "name": "RedGuy20",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22145.609375,
+    "lng": -58813.625,
+    "alt": 7926.73388671875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy21",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22666.78125,
+    "lng": -62775.546875,
+    "alt": 7824.39453125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy3",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22484.76171875,
+    "lng": -63182.4609375,
+    "alt": 7810.1298828125,
+    "color": 4,
+    "original_color": 4
+  },
+  {
+    "name": "RedGuy4",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22219.390625,
+    "lng": -62843.71875,
+    "alt": 7822.69921875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy5",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23039.3984375,
+    "lng": -61905.625,
+    "alt": 8183.98876953125,
+    "color": 5,
+    "original_color": 5
+  },
+  {
+    "name": "RedGuy6",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23038.6875,
+    "lng": -61112.109375,
+    "alt": 8112.626953125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy7",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22156.375,
+    "lng": -61201.234375,
+    "alt": 8169.98828125,
+    "color": 0
+  },
+  {
+    "name": "RedGuy8",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22002.578125,
+    "lng": -61136.453125,
+    "alt": 8170.7626953125,
+    "original_color": 2
+  },
+  {
+    "name": "RedGuy86",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -24366.8515625,
+    "lng": -62659.421875,
+    "alt": 8120.357421875,
+    "color": 4,
+    "original_color": 4
+  },
+  {
+    "name": "RedGuy87",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -23124.84375,
+    "lng": -61070.6484375,
+    "alt": 8133.8310546875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy88",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -22487.75,
+    "lng": -60974.80859375,
+    "alt": 8113.4599609375,
+    "color": 0
+  },
+  {
+    "name": "RedGuy9",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21910.484375,
+    "lng": -59893.671875,
+    "alt": 7914.57421875,
+    "color": 0
+  },
+  {
+    "name": "RedGuy98",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21328.6328125,
+    "lng": -62722.6640625,
+    "alt": 7849.7529296875,
+    "color": 3,
+    "original_color": 3
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_RainbowTown",
+    "lat": -21951.8828125,
+    "lng": -62350.59375,
+    "alt": 7823.060546875,
+    "original_color": 2
+  },
+  {
     "name": "PipesystemNewDLC4",
     "type": "PipesystemNewDLC_C",
     "area": "DLC2_Menu_Splash",
@@ -21146,5 +25692,15 @@
     "lat": -16198.95703125,
     "lng": -5676.1787109375,
     "alt": 3433.3935546875
+  },
+  {
+    "name": "RedGuy_2",
+    "type": "RedGuy_C",
+    "area": "DLC2_Menu",
+    "lat": -17804.318359375,
+    "lng": -1026.892822265625,
+    "alt": 3441.56689453125,
+    "color": 3,
+    "original_color": 3
   }
 ]

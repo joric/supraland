@@ -442,6 +442,7 @@ function loadMap() {
 
           // actor lines
           if (o.actors) {
+            let layer = 'misc';
             for (actor of o.actors) {
               if (p = objects[actor]) {
                 L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: 0.5, weight: 2, color: 'white', interactive: false}).addTo(layers[layer]);
@@ -465,15 +466,20 @@ function loadMap() {
           }
 
           // we don't have to list all known classes in types.csv anymore, just blacklist some of them
-          if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C'].includes(o.type)) {
+          if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C', 'GoldNugget_C'].includes(o.type)) {
+            continue;
+          }
+
+          if (o.type.startsWith('Pipesystem')) {
             continue;
           }
 
           if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
 
-          if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
+
+          if (['guy','flower','seed','keycard'].includes(icon)) {
             let colors = {1:'yellow',2:'red',3:'blue',4:'purple',5:'green',6:'orange'};
-            if (c = colors[o.color]) {
+            if (c = colors[o.color || o.original_color]) {
               icon = icon +'_' + c;
             }
           }
