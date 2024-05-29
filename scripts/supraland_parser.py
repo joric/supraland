@@ -69,11 +69,11 @@ marker_types = {
   # slc
   'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
-  'MinecraftBrick_C', 'HealingStation_C', 'BP_EngagementCup_Base_C','SlumBurningQuest_C','Trash_C',
+  'MinecraftBrick_C','HealingStation_C','BP_EngagementCup_Base_C','SlumBurningQuest_C','Trash_C',
 }
 
 starts_with = {
-    'Pipesystem','Buy','BP_Buy','BP_Purchase','Purchase','Upgrade','Button','Smallbutton','Coin',
+    'Pipesystem','Buy','BP_Buy','BP_Purchase','BP_Unlock', 'Purchase','Upgrade','Button','Smallbutton','Coin',
     'LightTrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key','ProjectileShooter',
 }
 

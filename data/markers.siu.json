@@ -308,6 +308,15 @@
     "alt": 10070.0
   },
   {
+    "name": "BP_UnlockMap_2",
+    "type": "BP_UnlockMap_C",
+    "area": "DLC2_Complete",
+    "lat": -27308.482421875,
+    "lng": 15581.537109375,
+    "alt": -92.87537384033203,
+    "cost": 60
+  },
+  {
     "name": "ButtonFloor-FatNPC2",
     "type": "ButtonFloor_C",
     "area": "DLC2_Complete",
