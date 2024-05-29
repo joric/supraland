@@ -183,10 +183,10 @@ function loadMap() {
     loadMap(id);
   });
 
-  function updatePolylines(layerId) {
+  function updatePolylines() {
     // set alt for polylines (attributes are not populated to paths)
-    if (layers[layerId]) {
-      for (const m of Object.values(layers[layerId]._layers)) {
+    for (const layerObj of Object.values(layers)) {
+      for (const m of Object.values(layerObj._layers)) {
         if (p = m._path) {
           p.setAttribute('alt', m.options.alt);
         }
@@ -466,6 +466,16 @@ function loadMap() {
 
             } else {
 
+              if (o.actors) {
+                for (actor of o.actors) {
+                  if (b = objects[actor]) {
+                    let a = o;
+                    L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {opacity: 0.5, weight: 2, title:' ', alt:'', color: 'white'}).addTo(layers[layer]);
+                  }
+                }
+              }
+
+
               if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
 
               if (o.type.endsWith('Flower_C') || o.type.endsWith('Seed_C') || o.type.endsWith('KeycardColor_C')) {
@@ -526,8 +536,7 @@ function loadMap() {
           }
         } // end of main loop
 
-        updatePolylines('jumppads');
-        updatePolylines('pipecaps');
+        updatePolylines();
         markItems();
     });
   }

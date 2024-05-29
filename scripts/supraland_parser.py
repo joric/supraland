@@ -200,18 +200,19 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
+            actors = []
             def get_actors(o,level=0):
-                actors = {}
                 for action in ('Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
                     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate'):
                     if a := o.get('Properties',{}).get(action):
                         for d in [a] if type(a) is dict else a:
                             if type(d) is dict and 'OuterIndex' in d and 'ObjectName' in d:
                                 key = d['OuterIndex']['Outer'] +':' + d['ObjectName']
-                                actors.update({key:get_actors(objects[key], level+1) if key in objects else {}})
-                return actors
-
-            optKey(data[-1], 'actors', get_actors(o)or None)
+                                actors.append(key)
+                                if key in objects and level<3:
+                                    get_actors(objects[key], level+1)
+            get_actors(o)
+            optKey(data[-1], 'actors', actors or None)
 
 
             if o['Type'] in ('Jumppad_C'):

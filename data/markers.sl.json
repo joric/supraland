@@ -6,9 +6,9 @@
     "lat": -8816.89453125,
     "lng": 69417.859375,
     "alt": 5212.9287109375,
-    "actors": {
-      "Map:DoorStone3_2": {}
-    }
+    "actors": [
+      "Map:DoorStone3_2"
+    ]
   },
   {
     "name": "BallButton11_2",
@@ -17,11 +17,11 @@
     "lat": 25364.8671875,
     "lng": 53504.20703125,
     "alt": 1507.3446044921875,
-    "actors": {
-      "Map:Door137_2": {},
-      "Map:Door138": {},
-      "Map:TutorialButtons34": {}
-    }
+    "actors": [
+      "Map:Door137_2",
+      "Map:Door138",
+      "Map:TutorialButtons34"
+    ]
   },
   {
     "name": "BallButton12",
@@ -30,9 +30,9 @@
     "lat": 25089.384765625,
     "lng": 48131.09375,
     "alt": 1250.61865234375,
-    "actors": {
-      "Map:Door138": {}
-    }
+    "actors": [
+      "Map:Door138"
+    ]
   },
   {
     "name": "BallButton13_2",
@@ -41,11 +41,11 @@
     "lat": 9591.6337890625,
     "lng": 52187.56640625,
     "alt": 3283.4970703125,
-    "actors": {
-      "Map:Killvolume5": {},
-      "Map:TutorialButtons35": {},
-      "Map:PlayerForceLook24_2": {}
-    }
+    "actors": [
+      "Map:Killvolume5",
+      "Map:TutorialButtons35",
+      "Map:PlayerForceLook24_2"
+    ]
   },
   {
     "name": "BallButton14",
@@ -54,10 +54,10 @@
     "lat": 25561.923828125,
     "lng": 55467.16796875,
     "alt": 1530.7967529296875,
-    "actors": {
-      "Map:Door139_2": {},
-      "Map:TutorialButtons36": {}
-    }
+    "actors": [
+      "Map:Door139_2",
+      "Map:TutorialButtons36"
+    ]
   },
   {
     "name": "BallButton15",
@@ -66,9 +66,9 @@
     "lat": -8979.1201171875,
     "lng": 66469.1953125,
     "alt": 5454.47021484375,
-    "actors": {
-      "Map:TeslaCoil31": {}
-    }
+    "actors": [
+      "Map:TeslaCoil31"
+    ]
   },
   {
     "name": "BallButton2_3626",
@@ -77,9 +77,9 @@
     "lat": -43144.05078125,
     "lng": -21110.548828125,
     "alt": -71.87918853759766,
-    "actors": {
-      "Map:Jumppad34_2191": {}
-    }
+    "actors": [
+      "Map:Jumppad34_2191"
+    ]
   },
   {
     "name": "BallButton3_2",
@@ -88,9 +88,9 @@
     "lat": -45569.3359375,
     "lng": -33820.51953125,
     "alt": -570.5507202148438,
-    "actors": {
-      "Map:Door108": {}
-    }
+    "actors": [
+      "Map:Door108"
+    ]
   },
   {
     "name": "BallButton4_637",
@@ -99,9 +99,9 @@
     "lat": -42160.625,
     "lng": -48487.78125,
     "alt": -1767.9593505859375,
-    "actors": {
-      "Map:DoorPhysical4_1133": {}
-    }
+    "actors": [
+      "Map:DoorPhysical4_1133"
+    ]
   },
   {
     "name": "BallButton5",
@@ -110,9 +110,9 @@
     "lat": -41572.16015625,
     "lng": -51456.17578125,
     "alt": -1706.6500244140625,
-    "actors": {
-      "Map:DoorPhysical5": {}
-    }
+    "actors": [
+      "Map:DoorPhysical5"
+    ]
   },
   {
     "name": "BallButton6_2071",
@@ -121,9 +121,9 @@
     "lat": -51418.125,
     "lng": -55362.0390625,
     "alt": -799.037353515625,
-    "actors": {
-      "Map:Door57": {}
-    }
+    "actors": [
+      "Map:Door57"
+    ]
   },
   {
     "name": "BallButton8_852",
@@ -132,9 +132,9 @@
     "lat": 43219.3203125,
     "lng": -7350.13330078125,
     "alt": 257.8887939453125,
-    "actors": {
-      "Map:Door75_962": {}
-    }
+    "actors": [
+      "Map:Door75_962"
+    ]
   },
   {
     "name": "BallButton9_2",
@@ -143,9 +143,9 @@
     "lat": 32418.9375,
     "lng": 72922.65625,
     "alt": 2998.89990234375,
-    "actors": {
-      "Map:DoorInverted2_2": {}
-    }
+    "actors": [
+      "Map:DoorInverted2_2"
+    ]
   },
   {
     "name": "BallButton_377",
@@ -154,10 +154,10 @@
     "lat": -45863.41796875,
     "lng": -41499.5546875,
     "alt": -2450.98095703125,
-    "actors": {
-      "Map:Door46": {},
-      "Map:Door45": {}
-    }
+    "actors": [
+      "Map:Door46",
+      "Map:Door45"
+    ]
   },
   {
     "name": "ButtonFloor6_2",
@@ -166,9 +166,9 @@
     "lat": 9732.541015625,
     "lng": 42639.5234375,
     "alt": 3866.272216796875,
-    "actors": {
-      "Map:PipeCap7_2": {}
-    }
+    "actors": [
+      "Map:PipeCap7_2"
+    ]
   },
   {
     "name": "BarrelClosed2_2",
@@ -338,9 +338,9 @@
     "lat": -23362.412109375,
     "lng": -30401.47265625,
     "alt": -1182.1170654296875,
-    "actors": {
-      "Map:Door18_9038": {}
-    }
+    "actors": [
+      "Map:Door18_9038"
+    ]
   },
   {
     "name": "BigButton13_2",
@@ -349,9 +349,9 @@
     "lat": 38619.98828125,
     "lng": 80885.8671875,
     "alt": 1646.912353515625,
-    "actors": {
-      "Map:SupraballCanon12": {}
-    }
+    "actors": [
+      "Map:SupraballCanon12"
+    ]
   },
   {
     "name": "BigButton15_1598",
@@ -360,9 +360,9 @@
     "lat": 32178.67578125,
     "lng": 8537.7890625,
     "alt": -1110.844482421875,
-    "actors": {
-      "Map:Jumppad49_2147": {}
-    }
+    "actors": [
+      "Map:Jumppad49_2147"
+    ]
   },
   {
     "name": "BigButton16_5616",
@@ -371,9 +371,9 @@
     "lat": -28170.943359375,
     "lng": -1583.5634765625,
     "alt": 95.01557922363281,
-    "actors": {
-      "Map:Jumppad33_1894": {}
-    }
+    "actors": [
+      "Map:Jumppad33_1894"
+    ]
   },
   {
     "name": "BigButton18_26904",
@@ -382,9 +382,9 @@
     "lat": -30638.8515625,
     "lng": 21837.6640625,
     "alt": -1423.592529296875,
-    "actors": {
-      "Map:Jumppad36_6503": {}
-    }
+    "actors": [
+      "Map:Jumppad36_6503"
+    ]
   },
   {
     "name": "BigButton19_29021",
@@ -393,9 +393,9 @@
     "lat": -336.6234436035156,
     "lng": 8884.736328125,
     "alt": 75.33381652832031,
-    "actors": {
-      "Map:Door43": {}
-    }
+    "actors": [
+      "Map:Door43"
+    ]
   },
   {
     "name": "BigButton20",
@@ -404,9 +404,9 @@
     "lat": -48.749908447265625,
     "lng": 8499.3359375,
     "alt": 196.9061737060547,
-    "actors": {
-      "Map:DoorInverted_612": {}
-    }
+    "actors": [
+      "Map:DoorInverted_612"
+    ]
   },
   {
     "name": "BigButton21",
@@ -415,9 +415,9 @@
     "lat": -2741.143310546875,
     "lng": 47832.34375,
     "alt": 3141.174560546875,
-    "actors": {
-      "Map:Jumppad84": {}
-    }
+    "actors": [
+      "Map:Jumppad84"
+    ]
   },
   {
     "name": "BigButton22_2",
@@ -426,9 +426,9 @@
     "lat": 9986.361328125,
     "lng": 47797.25390625,
     "alt": 3486.6455078125,
-    "actors": {
-      "Map:Door120": {}
-    }
+    "actors": [
+      "Map:Door120"
+    ]
   },
   {
     "name": "BigButton24_3628",
@@ -437,9 +437,9 @@
     "lat": -28169.291015625,
     "lng": -38455.234375,
     "alt": 529.8975219726562,
-    "actors": {
-      "Map:Jumppad29_13926": {}
-    }
+    "actors": [
+      "Map:Jumppad29_13926"
+    ]
   },
   {
     "name": "BigButton25_1850",
@@ -448,9 +448,9 @@
     "lat": 28763.751953125,
     "lng": -7122.0244140625,
     "alt": 255.56216430664062,
-    "actors": {
-      "Map:Door32_1562": {}
-    }
+    "actors": [
+      "Map:Door32_1562"
+    ]
   },
   {
     "name": "BigButton26_3603",
@@ -459,10 +459,10 @@
     "lat": 53358.46875,
     "lng": -42742.41015625,
     "alt": 1017.8441162109375,
-    "actors": {
-      "Map:Lift13_1871": {},
-      "Map:WifiwafeE14": {}
-    }
+    "actors": [
+      "Map:Lift13_1871",
+      "Map:WifiwafeE14"
+    ]
   },
   {
     "name": "BigButton27_1892",
@@ -471,9 +471,9 @@
     "lat": -22352.40234375,
     "lng": -2177.0654296875,
     "alt": -2286.020263671875,
-    "actors": {
-      "Map:Door80_2060": {}
-    }
+    "actors": [
+      "Map:Door80_2060"
+    ]
   },
   {
     "name": "BigButton28_884",
@@ -482,9 +482,9 @@
     "lat": 14860.0,
     "lng": 13520.0,
     "alt": 940.0,
-    "actors": {
-      "Map:Jumppad63": {}
-    }
+    "actors": [
+      "Map:Jumppad63"
+    ]
   },
   {
     "name": "BigButton30",
@@ -493,9 +493,9 @@
     "lat": 13670.0,
     "lng": 11500.0,
     "alt": 1800.0,
-    "actors": {
-      "Map:Jumppad62_2279": {}
-    }
+    "actors": [
+      "Map:Jumppad62_2279"
+    ]
   },
   {
     "name": "BigButton31_1332",
@@ -504,9 +504,9 @@
     "lat": 61254.9296875,
     "lng": -42836.16796875,
     "alt": 1030.55908203125,
-    "actors": {
-      "Map:Jumppad71_9499": {}
-    }
+    "actors": [
+      "Map:Jumppad71_9499"
+    ]
   },
   {
     "name": "BigButton32_2",
@@ -515,9 +515,9 @@
     "lat": 11962.5087890625,
     "lng": 22543.673828125,
     "alt": 424.0427551269531,
-    "actors": {
-      "Map:RingColorer6": {}
-    }
+    "actors": [
+      "Map:RingColorer6"
+    ]
   },
   {
     "name": "BigButton33",
@@ -526,9 +526,9 @@
     "lat": 9011.4599609375,
     "lng": 48173.38671875,
     "alt": 3486.6455078125,
-    "actors": {
-      "Map:Door119": {}
-    }
+    "actors": [
+      "Map:Door119"
+    ]
   },
   {
     "name": "BigButton35_2",
@@ -537,12 +537,12 @@
     "lat": -29.0,
     "lng": 82499.0,
     "alt": 4728.0,
-    "actors": {
-      "Map:PlayerForceLook20_2": {},
-      "Map:Enemy9_2": {},
-      "Map:Enemy10": {},
-      "Map:MusicChangeVolume43": {}
-    }
+    "actors": [
+      "Map:PlayerForceLook20_2",
+      "Map:Enemy9_2",
+      "Map:Enemy10",
+      "Map:MusicChangeVolume43"
+    ]
   },
   {
     "name": "BigButton37_2",
@@ -551,9 +551,9 @@
     "lat": 14289.9287109375,
     "lng": -45653.55078125,
     "alt": 963.3680419921875,
-    "actors": {
-      "Map:Jumppad92": {}
-    }
+    "actors": [
+      "Map:Jumppad92"
+    ]
   },
   {
     "name": "BigButton38",
@@ -562,9 +562,9 @@
     "lat": 15660.9716796875,
     "lng": -45653.55078125,
     "alt": 963.3680419921875,
-    "actors": {
-      "Map:Jumppad21_2": {}
-    }
+    "actors": [
+      "Map:Jumppad21_2"
+    ]
   },
   {
     "name": "BigButton39_2",
@@ -573,9 +573,9 @@
     "lat": 13099.775390625,
     "lng": 43012.67578125,
     "alt": 3064.68310546875,
-    "actors": {
-      "Map:FallingWaterTrigger_2": {}
-    }
+    "actors": [
+      "Map:FallingWaterTrigger_2"
+    ]
   },
   {
     "name": "BigButton3_1248",
@@ -584,9 +584,9 @@
     "lat": -20960.0,
     "lng": 23870.0,
     "alt": -420.0,
-    "actors": {
-      "Map:Door2_785": {}
-    }
+    "actors": [
+      "Map:Door2_785"
+    ]
   },
   {
     "name": "BigButton40",
@@ -595,9 +595,9 @@
     "lat": -21498.41796875,
     "lng": -24959.326171875,
     "alt": -365.0561828613281,
-    "actors": {
-      "Map:Door136": {}
-    }
+    "actors": [
+      "Map:Door136"
+    ]
   },
   {
     "name": "BigButton41",
@@ -606,9 +606,9 @@
     "lat": -24604.0390625,
     "lng": 20165.41015625,
     "alt": 1773.6258544921875,
-    "actors": {
-      "Map:WoodBlockLift_2": {}
-    }
+    "actors": [
+      "Map:WoodBlockLift_2"
+    ]
   },
   {
     "name": "BigButton42",
@@ -617,9 +617,9 @@
     "lat": -22524.56640625,
     "lng": -26533.63671875,
     "alt": -27.4727783203125,
-    "actors": {
-      "Map:Door136": {}
-    }
+    "actors": [
+      "Map:Door136"
+    ]
   },
   {
     "name": "BigButton4_6882",
@@ -628,9 +628,9 @@
     "lat": -27434.544921875,
     "lng": 21890.7265625,
     "alt": 93.40695190429688,
-    "actors": {
-      "Map:Door4_642": {}
-    }
+    "actors": [
+      "Map:Door4_642"
+    ]
   },
   {
     "name": "BigButton5_14361",
@@ -639,9 +639,9 @@
     "lat": -23634.9140625,
     "lng": 1991.0528564453125,
     "alt": -2331.45751953125,
-    "actors": {
-      "Map:Door3_892": {}
-    }
+    "actors": [
+      "Map:Door3_892"
+    ]
   },
   {
     "name": "BigButton6_3068",
@@ -650,9 +650,9 @@
     "lat": -39618.8203125,
     "lng": -5552.8984375,
     "alt": 559.6793823242188,
-    "actors": {
-      "Map:Door9": {}
-    }
+    "actors": [
+      "Map:Door9"
+    ]
   },
   {
     "name": "BigButton7_13333",
@@ -661,9 +661,9 @@
     "lat": 1240.0,
     "lng": 10601.3349609375,
     "alt": 1412.5916748046875,
-    "actors": {
-      "Map:Door7_6018": {}
-    }
+    "actors": [
+      "Map:Door7_6018"
+    ]
   },
   {
     "name": "BigButton8_2466",
@@ -672,10 +672,10 @@
     "lat": -38910.15234375,
     "lng": 4990.20947265625,
     "alt": -236.68487548828125,
-    "actors": {
-      "Map:Jumppad11_1342": {},
-      "Map:ShowTJBarrelGuy": {}
-    }
+    "actors": [
+      "Map:Jumppad11_1342",
+      "Map:ShowTJBarrelGuy"
+    ]
   },
   {
     "name": "BigButton9_408",
@@ -684,9 +684,9 @@
     "lat": -11878.3798828125,
     "lng": -24060.861328125,
     "alt": -1803.5438232421875,
-    "actors": {
-      "Map:Jumppad15_762": {}
-    }
+    "actors": [
+      "Map:Jumppad15_762"
+    ]
   },
   {
     "name": "BigButton_617",
@@ -695,10 +695,10 @@
     "lat": -27745.798828125,
     "lng": 6584.30517578125,
     "alt": 326.87774658203125,
-    "actors": {
-      "Map:Jumppad3_522": {},
-      "Map:Jumppad6": {}
-    }
+    "actors": [
+      "Map:Jumppad3_522",
+      "Map:Jumppad6"
+    ]
   },
   {
     "name": "Button10_1374",
@@ -707,10 +707,10 @@
     "lat": -1085.3699951171875,
     "lng": 12050.3759765625,
     "alt": 916.7136840820312,
-    "actors": {
-      "Map:Lift1_3932": {},
-      "Map:WifiwafeE_2": {}
-    }
+    "actors": [
+      "Map:Lift1_3932",
+      "Map:WifiwafeE_2"
+    ]
   },
   {
     "name": "Button11",
@@ -719,9 +719,9 @@
     "lat": -47239.4140625,
     "lng": -10720.1630859375,
     "alt": 231.55264282226562,
-    "actors": {
-      "Map:Door39": {}
-    }
+    "actors": [
+      "Map:Door39"
+    ]
   },
   {
     "name": "Button12",
@@ -730,9 +730,9 @@
     "lat": -22836.88671875,
     "lng": -36828.89453125,
     "alt": 505.8309020996094,
-    "actors": {
-      "Map:Jumppad19": {}
-    }
+    "actors": [
+      "Map:Jumppad19"
+    ]
   },
   {
     "name": "Button13_1692",
@@ -741,10 +741,10 @@
     "lat": -48827.73046875,
     "lng": -49871.59375,
     "alt": -820.4249877929688,
-    "actors": {
-      "Map:Lift6": {},
-      "Map:WifiwafeE5": {}
-    }
+    "actors": [
+      "Map:Lift6",
+      "Map:WifiwafeE5"
+    ]
   },
   {
     "name": "Button14",
@@ -753,10 +753,10 @@
     "lat": -46158.18359375,
     "lng": -54845.1171875,
     "alt": -820.4249877929688,
-    "actors": {
-      "Map:Lift7_9313": {},
-      "Map:WifiwafeE6": {}
-    }
+    "actors": [
+      "Map:Lift7_9313",
+      "Map:WifiwafeE6"
+    ]
   },
   {
     "name": "Button15_1162",
@@ -765,9 +765,9 @@
     "lat": -27973.6875,
     "lng": 3613.947265625,
     "alt": 1486.5235595703125,
-    "actors": {
-      "Map:Jumppad48": {}
-    }
+    "actors": [
+      "Map:Jumppad48"
+    ]
   },
   {
     "name": "Button16",
@@ -776,9 +776,9 @@
     "lat": -40297.78515625,
     "lng": -52432.7109375,
     "alt": -375.1980285644531,
-    "actors": {
-      "Map:Jumppad32_9265": {}
-    }
+    "actors": [
+      "Map:Jumppad32_9265"
+    ]
   },
   {
     "name": "Button17_1652",
@@ -787,10 +787,10 @@
     "lat": -5212.15576171875,
     "lng": -34315.83984375,
     "alt": 1356.215576171875,
-    "actors": {
-      "Map:Lift9_1871": {},
-      "Map:WifiwafeE9": {}
-    }
+    "actors": [
+      "Map:Lift9_1871",
+      "Map:WifiwafeE9"
+    ]
   },
   {
     "name": "Button18_1092",
@@ -800,9 +800,9 @@
     "lng": -12106.5859375,
     "alt": 890.292724609375,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:RisingBeam_1802": {}
-    }
+    "actors": [
+      "Map:RisingBeam_1802"
+    ]
   },
   {
     "name": "Button19",
@@ -811,9 +811,9 @@
     "lat": 22251.015625,
     "lng": 6046.3125,
     "alt": 1680.460205078125,
-    "actors": {
-      "Map:ShieldGenerator9_10112": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator9_10112"
+    ]
   },
   {
     "name": "Button20",
@@ -822,11 +822,10 @@
     "lat": 24136.185546875,
     "lng": -27307.365234375,
     "alt": 441.3703308105469,
-    "actors": {
-      "Map:CounterTimerTrigger_350": {
-        "Map:Door71": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger_350",
+      "Map:Door71"
+    ]
   },
   {
     "name": "Button21",
@@ -835,11 +834,10 @@
     "lat": 24992.064453125,
     "lng": -26838.220703125,
     "alt": 441.370849609375,
-    "actors": {
-      "Map:CounterTimerTrigger_350": {
-        "Map:Door71": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger_350",
+      "Map:Door71"
+    ]
   },
   {
     "name": "Button22",
@@ -848,11 +846,10 @@
     "lat": 24215.18359375,
     "lng": -26653.091796875,
     "alt": 441.3712158203125,
-    "actors": {
-      "Map:CounterTimerTrigger_350": {
-        "Map:Door71": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger_350",
+      "Map:Door71"
+    ]
   },
   {
     "name": "Button23",
@@ -861,11 +858,10 @@
     "lat": 24730.671875,
     "lng": -27540.9609375,
     "alt": 441.37066650390625,
-    "actors": {
-      "Map:CounterTimerTrigger_350": {
-        "Map:Door71": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger_350",
+      "Map:Door71"
+    ]
   },
   {
     "name": "Button24_792",
@@ -874,9 +870,9 @@
     "lat": 16492.03125,
     "lng": 10197.814453125,
     "alt": 30.0,
-    "actors": {
-      "Map:Door81_812": {}
-    }
+    "actors": [
+      "Map:Door81_812"
+    ]
   },
   {
     "name": "Button25_2",
@@ -886,9 +882,9 @@
     "lng": -60315.7109375,
     "alt": 877.3623657226562,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:RisingBeam2_2": {}
-    }
+    "actors": [
+      "Map:RisingBeam2_2"
+    ]
   },
   {
     "name": "Button26_2",
@@ -898,11 +894,11 @@
     "lng": 26345.0,
     "alt": 1166.0,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:Door105": {},
-      "Map:BlueGuyGuardingMoney": {},
-      "Map:Mom7": {}
-    }
+    "actors": [
+      "Map:Door105",
+      "Map:BlueGuyGuardingMoney",
+      "Map:Mom7"
+    ]
   },
   {
     "name": "Button27",
@@ -912,9 +908,9 @@
     "lng": 26727.0,
     "alt": 1390.0,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:Door102": {}
-    }
+    "actors": [
+      "Map:Door102"
+    ]
   },
   {
     "name": "Button28",
@@ -924,9 +920,9 @@
     "lng": 25062.0,
     "alt": 1052.0,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:Door102": {}
-    }
+    "actors": [
+      "Map:Door102"
+    ]
   },
   {
     "name": "Button29",
@@ -935,11 +931,10 @@
     "lat": -40463.7109375,
     "lng": -25099.982421875,
     "alt": 417.6410217285156,
-    "actors": {
-      "Map:CounterTimerTrigger2_2": {
-        "Map:Door106": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger2_2",
+      "Map:Door106"
+    ]
   },
   {
     "name": "Button2_800",
@@ -948,20 +943,20 @@
     "lat": -27731.822265625,
     "lng": 23350.0,
     "alt": 5950.0,
-    "actors": {
-      "Map:RedGuy5_7049": {},
-      "Map:Door4_642": {},
-      "Map:RedGuy18_2336": {},
-      "Map:DeadHeroIndy": {},
-      "Map:ShowRedCrystalGuy2": {},
-      "Map:Mom3": {},
-      "Map:CliffJumpGuy": {},
-      "Map:ShowRedCrystalGuy": {},
-      "Map:TutorialButtons16_17011": {},
-      "Map:EnemySpawn154": {},
-      "Map:TriggerVolume61": {},
-      "Map:QuestActivator_2": {}
-    }
+    "actors": [
+      "Map:RedGuy5_7049",
+      "Map:Door4_642",
+      "Map:RedGuy18_2336",
+      "Map:DeadHeroIndy",
+      "Map:ShowRedCrystalGuy2",
+      "Map:Mom3",
+      "Map:CliffJumpGuy",
+      "Map:ShowRedCrystalGuy",
+      "Map:TutorialButtons16_17011",
+      "Map:EnemySpawn154",
+      "Map:TriggerVolume61",
+      "Map:QuestActivator_2"
+    ]
   },
   {
     "name": "Button30",
@@ -970,11 +965,10 @@
     "lat": -40463.7109375,
     "lng": -26042.3046875,
     "alt": 417.6410217285156,
-    "actors": {
-      "Map:CounterTimerTrigger2_2": {
-        "Map:Door106": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger2_2",
+      "Map:Door106"
+    ]
   },
   {
     "name": "Button31",
@@ -983,11 +977,10 @@
     "lat": -40789.73046875,
     "lng": -25591.244140625,
     "alt": 417.6413269042969,
-    "actors": {
-      "Map:CounterTimerTrigger2_2": {
-        "Map:Door106": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger2_2",
+      "Map:Door106"
+    ]
   },
   {
     "name": "Button32",
@@ -996,11 +989,10 @@
     "lat": -40105.3203125,
     "lng": -25591.244140625,
     "alt": 417.6387023925781,
-    "actors": {
-      "Map:CounterTimerTrigger2_2": {
-        "Map:Door106": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger2_2",
+      "Map:Door106"
+    ]
   },
   {
     "name": "Button33_2",
@@ -1009,9 +1001,9 @@
     "lat": -17469.6953125,
     "lng": 42007.40234375,
     "alt": 1730.24658203125,
-    "actors": {
-      "Map:RingColorer7_3": {}
-    }
+    "actors": [
+      "Map:RingColorer7_3"
+    ]
   },
   {
     "name": "Button34",
@@ -1021,9 +1013,9 @@
     "lng": 42391.05859375,
     "alt": 1242.6968994140625,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:SupraballCanon10_2": {}
-    }
+    "actors": [
+      "Map:SupraballCanon10_2"
+    ]
   },
   {
     "name": "Button36",
@@ -1032,9 +1024,9 @@
     "lat": -40127.2890625,
     "lng": -28656.234375,
     "alt": -199.8069305419922,
-    "actors": {
-      "Map:Door114": {}
-    }
+    "actors": [
+      "Map:Door114"
+    ]
   },
   {
     "name": "Button37_4",
@@ -1044,9 +1036,9 @@
     "lng": 66938.1328125,
     "alt": 2074.27685546875,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:RingColorer9": {}
-    }
+    "actors": [
+      "Map:RingColorer9"
+    ]
   },
   {
     "name": "Button38",
@@ -1055,10 +1047,10 @@
     "lat": -40598.93359375,
     "lng": -285.75537109375,
     "alt": 760.21923828125,
-    "actors": {
-      "Map:Door98": {},
-      "Map:Door99": {}
-    }
+    "actors": [
+      "Map:Door98",
+      "Map:Door99"
+    ]
   },
   {
     "name": "Button39_2",
@@ -1067,12 +1059,11 @@
     "lat": 17904.875,
     "lng": -47957.64453125,
     "alt": 1242.2900390625,
-    "actors": {
-      "Map:CounterTimerTrigger3": {
-        "Map:Door132_3": {},
-        "Map:LampOn107": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger3",
+      "Map:Door132_3",
+      "Map:LampOn107"
+    ]
   },
   {
     "name": "Button3_524",
@@ -1081,9 +1072,9 @@
     "lat": -17899.6796875,
     "lng": 15899.197265625,
     "alt": -1015.5895385742188,
-    "actors": {
-      "Map:Door_1496": {}
-    }
+    "actors": [
+      "Map:Door_1496"
+    ]
   },
   {
     "name": "Button40",
@@ -1092,12 +1083,11 @@
     "lat": 16742.828125,
     "lng": -43187.6328125,
     "alt": 1242.2900390625,
-    "actors": {
-      "Map:CounterTimerTrigger3": {
-        "Map:Door132_3": {},
-        "Map:LampOn107": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger3",
+      "Map:Door132_3",
+      "Map:LampOn107"
+    ]
   },
   {
     "name": "Button41",
@@ -1107,12 +1097,11 @@
     "lng": -45647.71875,
     "alt": 1327.675048828125,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:CounterTimerTrigger3": {
-        "Map:Door132_3": {},
-        "Map:LampOn107": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger3",
+      "Map:Door132_3",
+      "Map:LampOn107"
+    ]
   },
   {
     "name": "Button42",
@@ -1121,11 +1110,10 @@
     "lat": 19479.43359375,
     "lng": -44083.0703125,
     "alt": 1070.54052734375,
-    "actors": {
-      "Map:CounterTimerTrigger4": {
-        "Map:Door133_5": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger4",
+      "Map:Door133_5"
+    ]
   },
   {
     "name": "Button43",
@@ -1134,11 +1122,10 @@
     "lat": 19510.576171875,
     "lng": -43144.92578125,
     "alt": 1070.541015625,
-    "actors": {
-      "Map:CounterTimerTrigger4": {
-        "Map:Door133_5": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger4",
+      "Map:Door133_5"
+    ]
   },
   {
     "name": "Button44",
@@ -1147,11 +1134,10 @@
     "lat": 19970.279296875,
     "lng": -43607.35546875,
     "alt": 1070.540771484375,
-    "actors": {
-      "Map:CounterTimerTrigger4": {
-        "Map:Door133_5": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger4",
+      "Map:Door133_5"
+    ]
   },
   {
     "name": "Button45",
@@ -1160,11 +1146,10 @@
     "lat": 19000.205078125,
     "lng": -43600.359375,
     "alt": 1070.5401611328125,
-    "actors": {
-      "Map:CounterTimerTrigger4": {
-        "Map:Door133_5": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger4",
+      "Map:Door133_5"
+    ]
   },
   {
     "name": "Button46_15",
@@ -1173,9 +1158,9 @@
     "lat": 15125.1728515625,
     "lng": -14668.455078125,
     "alt": 996.3755493164062,
-    "actors": {
-      "Map:Jumppad93": {}
-    }
+    "actors": [
+      "Map:Jumppad93"
+    ]
   },
   {
     "name": "Button47",
@@ -1184,9 +1169,9 @@
     "lat": -22546.017578125,
     "lng": 19419.611328125,
     "alt": 198.7828826904297,
-    "actors": {
-      "Map:Door29": {}
-    }
+    "actors": [
+      "Map:Door29"
+    ]
   },
   {
     "name": "Button48",
@@ -1195,11 +1180,10 @@
     "lat": 38229.45703125,
     "lng": -37251.1796875,
     "alt": -2947.07958984375,
-    "actors": {
-      "Map:CounterTimerTrigger5": {
-        "Map:Door135": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger5",
+      "Map:Door135"
+    ]
   },
   {
     "name": "Button49",
@@ -1208,11 +1192,10 @@
     "lat": 38667.53125,
     "lng": -37254.80078125,
     "alt": -2947.0791015625,
-    "actors": {
-      "Map:CounterTimerTrigger5": {
-        "Map:Door135": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger5",
+      "Map:Door135"
+    ]
   },
   {
     "name": "Button4_1004",
@@ -1221,9 +1204,9 @@
     "lat": -29445.748046875,
     "lng": 21546.16796875,
     "alt": 658.1005859375,
-    "actors": {
-      "Map:Door11_1002": {}
-    }
+    "actors": [
+      "Map:Door11_1002"
+    ]
   },
   {
     "name": "Button50",
@@ -1232,11 +1215,10 @@
     "lat": 38430.40625,
     "lng": -37025.49609375,
     "alt": -2947.0791015625,
-    "actors": {
-      "Map:CounterTimerTrigger5": {
-        "Map:Door135": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger5",
+      "Map:Door135"
+    ]
   },
   {
     "name": "Button51",
@@ -1245,11 +1227,10 @@
     "lat": 38522.4453125,
     "lng": -37521.21875,
     "alt": -2947.07958984375,
-    "actors": {
-      "Map:CounterTimerTrigger5": {
-        "Map:Door135": {}
-      }
-    }
+    "actors": [
+      "Map:CounterTimerTrigger5",
+      "Map:Door135"
+    ]
   },
   {
     "name": "Button52",
@@ -1258,10 +1239,10 @@
     "lat": 8084.17578125,
     "lng": 21026.265625,
     "alt": 603.7318115234375,
-    "actors": {
-      "Map:Lift14": {},
-      "Map:WifiwafeE15": {}
-    }
+    "actors": [
+      "Map:Lift14",
+      "Map:WifiwafeE15"
+    ]
   },
   {
     "name": "Button53_2",
@@ -1271,10 +1252,10 @@
     "lng": -34617.375,
     "alt": 992.7142333984375,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:Jumppad96": {},
-      "Map:Jumppad97": {}
-    }
+    "actors": [
+      "Map:Jumppad96",
+      "Map:Jumppad97"
+    ]
   },
   {
     "name": "Button54_2",
@@ -1283,9 +1264,9 @@
     "lat": -2088.216796875,
     "lng": -18392.90234375,
     "alt": -2216.609619140625,
-    "actors": {
-      "Map:Jumppad12_1472": {}
-    }
+    "actors": [
+      "Map:Jumppad12_1472"
+    ]
   },
   {
     "name": "Button5_512",
@@ -1294,10 +1275,10 @@
     "lat": -39728.25390625,
     "lng": -27643.025390625,
     "alt": -974.18359375,
-    "actors": {
-      "Map:CousinRot": {},
-      "Map:TutorialButtons17": {}
-    }
+    "actors": [
+      "Map:CousinRot",
+      "Map:TutorialButtons17"
+    ]
   },
   {
     "name": "Button6",
@@ -1306,9 +1287,9 @@
     "lat": -38210.33984375,
     "lng": -27264.013671875,
     "alt": -744.18359375,
-    "actors": {
-      "Map:Jumppad31_1993": {}
-    }
+    "actors": [
+      "Map:Jumppad31_1993"
+    ]
   },
   {
     "name": "Button7_17968",
@@ -1317,10 +1298,10 @@
     "lat": 1519.5106201171875,
     "lng": -3747.490478515625,
     "alt": 51.71641540527344,
-    "actors": {
-      "Map:Lift8": {},
-      "Map:WifiwafeE7": {}
-    }
+    "actors": [
+      "Map:Lift8",
+      "Map:WifiwafeE7"
+    ]
   },
   {
     "name": "Button8",
@@ -1329,9 +1310,9 @@
     "lat": -33263.609375,
     "lng": -38701.43359375,
     "alt": 1712.9996337890625,
-    "actors": {
-      "Map:DoorPhysical3_925": {}
-    }
+    "actors": [
+      "Map:DoorPhysical3_925"
+    ]
   },
   {
     "name": "Button9_1322",
@@ -1340,9 +1321,9 @@
     "lat": -37557.93359375,
     "lng": -2035.75537109375,
     "alt": 1559.21923828125,
-    "actors": {
-      "Map:Door33_968": {}
-    }
+    "actors": [
+      "Map:Door33_968"
+    ]
   },
   {
     "name": "Button_702",
@@ -1351,11 +1332,11 @@
     "lat": -7154.4267578125,
     "lng": 14598.154296875,
     "alt": 465.5191345214844,
-    "actors": {
-      "Map:Door6_3665": {},
-      "Map:RedGuyEvent3_1748": {},
-      "Map:Mom3": {}
-    }
+    "actors": [
+      "Map:Door6_3665",
+      "Map:RedGuyEvent3_1748",
+      "Map:Mom3"
+    ]
   },
   {
     "name": "ProjectileShooter2",
@@ -1365,9 +1346,9 @@
     "lng": -39767.2109375,
     "alt": 539.0682983398438,
     "requires_purple_shot_flag": true,
-    "actors": {
-      "Map:DoorPhysical6_2": {}
-    }
+    "actors": [
+      "Map:DoorPhysical6_2"
+    ]
   },
   {
     "name": "BigButton36_2",
@@ -1377,9 +1358,9 @@
     "lng": 66405.4375,
     "alt": 5339.54541015625,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Jumppad20_2": {}
-    }
+    "actors": [
+      "Map:Jumppad20_2"
+    ]
   },
   {
     "name": "ButtonFloor2",
@@ -1389,9 +1370,9 @@
     "lng": -7281.1826171875,
     "alt": -380.9202880859375,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Door41": {}
-    }
+    "actors": [
+      "Map:Door41"
+    ]
   },
   {
     "name": "ButtonFloor3",
@@ -1401,9 +1382,9 @@
     "lng": -9445.259765625,
     "alt": -173.43673706054688,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Door40_2895": {}
-    }
+    "actors": [
+      "Map:Door40_2895"
+    ]
   },
   {
     "name": "ButtonFloor4_2",
@@ -1413,11 +1394,11 @@
     "lng": -63050.53125,
     "alt": 428.8101501464844,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Jumppad64_1993": {},
-      "Map:Jumppad65": {},
-      "Map:Jumppad66": {}
-    }
+    "actors": [
+      "Map:Jumppad64_1993",
+      "Map:Jumppad65",
+      "Map:Jumppad66"
+    ]
   },
   {
     "name": "ButtonFloor5_5",
@@ -1427,9 +1408,9 @@
     "lng": -62180.6484375,
     "alt": -670.61279296875,
     "color": "ButtonColor::NewEnumerator3",
-    "actors": {
-      "Map:Jumppad98_2": {}
-    }
+    "actors": [
+      "Map:Jumppad98_2"
+    ]
   },
   {
     "name": "ButtonFloor7_2",
@@ -1439,10 +1420,10 @@
     "lng": 45944.83984375,
     "alt": 1139.865234375,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Jumppad70": {},
-      "Map:Glowline72_2": {}
-    }
+    "actors": [
+      "Map:Jumppad70",
+      "Map:Glowline72_2"
+    ]
   },
   {
     "name": "ButtonFloor_3",
@@ -1452,9 +1433,9 @@
     "lng": -7668.73876953125,
     "alt": -182.69088745117188,
     "color": "ButtonColor::NewEnumerator1",
-    "actors": {
-      "Map:Door40_2895": {}
-    }
+    "actors": [
+      "Map:Door40_2895"
+    ]
   },
   {
     "name": "BuyBelt2_2",
@@ -1963,9 +1944,9 @@
     "lat": -17035.396484375,
     "lng": 22532.78515625,
     "alt": 1523.2869873046875,
-    "actors": {
-      "Map:Door94": {}
-    }
+    "actors": [
+      "Map:Door94"
+    ]
   },
   {
     "name": "Chest100_2221",
@@ -15174,10 +15155,10 @@
     "lng": -61281.640625,
     "alt": 541.7359619140625,
     "color": 2,
-    "actors": {
-      "Map:PipeCap20": {},
-      "Map:PipeCap19": {}
-    }
+    "actors": [
+      "Map:PipeCap20",
+      "Map:PipeCap19"
+    ]
   },
   {
     "name": "KeycardReader2_2",
@@ -15187,10 +15168,10 @@
     "lng": -61058.0,
     "alt": 475.0,
     "color": 2,
-    "actors": {
-      "Map:Door92_2": {},
-      "Map:Hintguy10": {}
-    }
+    "actors": [
+      "Map:Door92_2",
+      "Map:Hintguy10"
+    ]
   },
   {
     "name": "KeycardReader3_1586",
@@ -15199,9 +15180,9 @@
     "lat": 57770.6171875,
     "lng": -55380.84375,
     "alt": 541.7359619140625,
-    "actors": {
-      "Map:Jumppad68": {}
-    }
+    "actors": [
+      "Map:Jumppad68"
+    ]
   },
   {
     "name": "KeycardReader4",
@@ -15211,10 +15192,10 @@
     "lng": -26448.40234375,
     "alt": -2261.8076171875,
     "color": 2,
-    "actors": {
-      "Map:ShieldGenerator_522": {},
-      "Map:Professor": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator_522",
+      "Map:Professor"
+    ]
   },
   {
     "name": "KeycardReader5",
@@ -15223,10 +15204,10 @@
     "lat": -8437.67578125,
     "lng": -21124.634765625,
     "alt": -1629.0853271484375,
-    "actors": {
-      "Map:Door20": {},
-      "Map:WarnShieldGuy3": {}
-    }
+    "actors": [
+      "Map:Door20",
+      "Map:WarnShieldGuy3"
+    ]
   },
   {
     "name": "KeycardReader8",
@@ -15236,11 +15217,11 @@
     "lng": -24313.416015625,
     "alt": -1713.5528564453125,
     "color": 2,
-    "actors": {
-      "Map:Door25": {},
-      "Map:Door24": {},
-      "Map:HintRedCardsGuy": {}
-    }
+    "actors": [
+      "Map:Door25",
+      "Map:Door24",
+      "Map:HintRedCardsGuy"
+    ]
   },
   {
     "name": "KeycardReader9_494",
@@ -15249,9 +15230,9 @@
     "lat": -14860.8115234375,
     "lng": -28524.42578125,
     "alt": -2211.447265625,
-    "actors": {
-      "Map:Door15_4541": {}
-    }
+    "actors": [
+      "Map:Door15_4541"
+    ]
   },
   {
     "name": "KeycardReader_1298",
@@ -15261,9 +15242,9 @@
     "lng": -28880.326171875,
     "alt": -2118.72998046875,
     "color": 5,
-    "actors": {
-      "Map:Door86_1182": {}
-    }
+    "actors": [
+      "Map:Door86_1182"
+    ]
   },
   {
     "name": "KeyLock10_5",
@@ -15272,11 +15253,11 @@
     "lat": 5952.1123046875,
     "lng": 45256.65234375,
     "alt": 3162.4150390625,
-    "actors": {
-      "Map:Door122": {},
-      "Map:RedGuyEvent13": {},
-      "Map:Door121_2": {}
-    }
+    "actors": [
+      "Map:Door122",
+      "Map:RedGuyEvent13",
+      "Map:Door121_2"
+    ]
   },
   {
     "name": "KeyLock2_7829",
@@ -15285,10 +15266,10 @@
     "lat": -45725.00390625,
     "lng": -47311.93359375,
     "alt": -1582.00634765625,
-    "actors": {
-      "Map:Door51": {},
-      "Map:Door52": {}
-    }
+    "actors": [
+      "Map:Door51",
+      "Map:Door52"
+    ]
   },
   {
     "name": "KeyLock3_9592",
@@ -15297,10 +15278,10 @@
     "lat": -8811.59765625,
     "lng": 9598.15234375,
     "alt": -298.76690673828125,
-    "actors": {
-      "Map:Door54_44574": {},
-      "Map:Door55": {}
-    }
+    "actors": [
+      "Map:Door54_44574",
+      "Map:Door55"
+    ]
   },
   {
     "name": "KeyLock4",
@@ -15309,10 +15290,10 @@
     "lat": 1054.2125244140625,
     "lng": -8316.0087890625,
     "alt": -10.224693298339844,
-    "actors": {
-      "Map:Door61": {},
-      "Map:Door62": {}
-    }
+    "actors": [
+      "Map:Door61",
+      "Map:Door62"
+    ]
   },
   {
     "name": "KeyLock5_642",
@@ -15321,10 +15302,10 @@
     "lat": -11785.298828125,
     "lng": -73.65043640136719,
     "alt": 549.6107788085938,
-    "actors": {
-      "Map:Jumppad46_2543": {},
-      "Map:Jumppad47": {}
-    }
+    "actors": [
+      "Map:Jumppad46_2543",
+      "Map:Jumppad47"
+    ]
   },
   {
     "name": "KeyLock6_982",
@@ -15333,9 +15314,9 @@
     "lat": 38660.98828125,
     "lng": -41958.35546875,
     "alt": 541.7852783203125,
-    "actors": {
-      "Map:Door77_1486": {}
-    }
+    "actors": [
+      "Map:Door77_1486"
+    ]
   },
   {
     "name": "KeyLock7_712",
@@ -15344,9 +15325,9 @@
     "lat": 51297.73828125,
     "lng": -68837.9921875,
     "alt": 757.3856201171875,
-    "actors": {
-      "Map:Door85_2564": {}
-    }
+    "actors": [
+      "Map:Door85_2564"
+    ]
   },
   {
     "name": "KeyLock8_2",
@@ -15355,9 +15336,9 @@
     "lat": 21538.0,
     "lng": 29145.0,
     "alt": 887.0,
-    "actors": {
-      "Map:Door100": {}
-    }
+    "actors": [
+      "Map:Door100"
+    ]
   },
   {
     "name": "KeyLock9_2",
@@ -15366,9 +15347,9 @@
     "lat": 3786.408447265625,
     "lng": 41571.51953125,
     "alt": 2213.6748046875,
-    "actors": {
-      "Map:Door121_2": {}
-    }
+    "actors": [
+      "Map:Door121_2"
+    ]
   },
   {
     "name": "KeyLock_302",
@@ -15377,9 +15358,9 @@
     "lat": -48924.08203125,
     "lng": -52271.16796875,
     "alt": -786.6761474609375,
-    "actors": {
-      "Map:Door50_17728": {}
-    }
+    "actors": [
+      "Map:Door50_17728"
+    ]
   },
   {
     "name": "Lever10_518",
@@ -15388,9 +15369,9 @@
     "lat": 10960.796875,
     "lng": 15770.8388671875,
     "alt": 1065.02783203125,
-    "actors": {
-      "Map:crate_planks_separated_Crate_plank02_mesh105_600": {}
-    }
+    "actors": [
+      "Map:crate_planks_separated_Crate_plank02_mesh105_600"
+    ]
   },
   {
     "name": "Lever11_578",
@@ -15399,9 +15380,9 @@
     "lat": 30523.814453125,
     "lng": -8600.70703125,
     "alt": 457.4151611328125,
-    "actors": {
-      "Map:Red_brick_2201": {}
-    }
+    "actors": [
+      "Map:Red_brick_2201"
+    ]
   },
   {
     "name": "Lever12",
@@ -15410,9 +15391,9 @@
     "lat": 27587.953125,
     "lng": -7944.5595703125,
     "alt": 454.62420654296875,
-    "actors": {
-      "Map:Red_brick_2150": {}
-    }
+    "actors": [
+      "Map:Red_brick_2150"
+    ]
   },
   {
     "name": "Lever13_1190",
@@ -15421,9 +15402,9 @@
     "lat": 40538.15234375,
     "lng": -17579.796875,
     "alt": 776.2465209960938,
-    "actors": {
-      "Map:wall_227": {}
-    }
+    "actors": [
+      "Map:wall_227"
+    ]
   },
   {
     "name": "Lever14_1070",
@@ -15432,10 +15413,10 @@
     "lat": -1308.751953125,
     "lng": -16134.8671875,
     "alt": 139.660888671875,
-    "actors": {
-      "Map:PipeCap16": {},
-      "Map:PipeCap15": {}
-    }
+    "actors": [
+      "Map:PipeCap16",
+      "Map:PipeCap15"
+    ]
   },
   {
     "name": "Lever15_1370",
@@ -15444,9 +15425,9 @@
     "lat": 13700.0,
     "lng": 10990.0,
     "alt": 1800.0,
-    "actors": {
-      "Map:Stump86": {}
-    }
+    "actors": [
+      "Map:Stump86"
+    ]
   },
   {
     "name": "Lever16_977",
@@ -15455,9 +15436,9 @@
     "lat": 56790.69921875,
     "lng": -53648.515625,
     "alt": 2325.16357421875,
-    "actors": {
-      "Map:Red_brick_3509": {}
-    }
+    "actors": [
+      "Map:Red_brick_3509"
+    ]
   },
   {
     "name": "Lever17_1640",
@@ -15466,10 +15447,10 @@
     "lat": 36741.91015625,
     "lng": -47552.078125,
     "alt": 724.4636840820312,
-    "actors": {
-      "Map:Red_brick_2781": {},
-      "Map:Door76": {}
-    }
+    "actors": [
+      "Map:Red_brick_2781",
+      "Map:Door76"
+    ]
   },
   {
     "name": "Lever18_769",
@@ -15478,9 +15459,9 @@
     "lat": 54480.1640625,
     "lng": -36060.39453125,
     "alt": 502.3856201171875,
-    "actors": {
-      "Map:Red_brick_3606": {}
-    }
+    "actors": [
+      "Map:Red_brick_3606"
+    ]
   },
   {
     "name": "Lever19",
@@ -15489,10 +15470,10 @@
     "lat": 15083.1376953125,
     "lng": -2748.10546875,
     "alt": 717.4254150390625,
-    "actors": {
-      "Map:PipeCap18": {},
-      "Map:PipeCap17": {}
-    }
+    "actors": [
+      "Map:PipeCap18",
+      "Map:PipeCap17"
+    ]
   },
   {
     "name": "Lever20_2",
@@ -15501,9 +15482,9 @@
     "lat": 18974.416015625,
     "lng": 29034.275390625,
     "alt": 809.7323608398438,
-    "actors": {
-      "Map:Volcanic_Rock_1657": {}
-    }
+    "actors": [
+      "Map:Volcanic_Rock_1657"
+    ]
   },
   {
     "name": "Lever21",
@@ -15512,9 +15493,9 @@
     "lat": 21885.416015625,
     "lng": 28316.275390625,
     "alt": 1341.732421875,
-    "actors": {
-      "Map:Volcanic_Rock_1768": {}
-    }
+    "actors": [
+      "Map:Volcanic_Rock_1768"
+    ]
   },
   {
     "name": "Lever2_5725",
@@ -15523,9 +15504,9 @@
     "lat": -17767.24609375,
     "lng": 10322.1611328125,
     "alt": -95.31005859375,
-    "actors": {
-      "Map:WoodenPart2_2": {}
-    }
+    "actors": [
+      "Map:WoodenPart2_2"
+    ]
   },
   {
     "name": "Lever3_1070",
@@ -15534,9 +15515,9 @@
     "lat": -31690.380859375,
     "lng": 21921.654296875,
     "alt": 58.21269226074219,
-    "actors": {
-      "Map:Red_brick_158": {}
-    }
+    "actors": [
+      "Map:Red_brick_158"
+    ]
   },
   {
     "name": "Lever4_2501",
@@ -15545,9 +15526,9 @@
     "lat": -38340.3203125,
     "lng": 555.980224609375,
     "alt": 339.87109375,
-    "actors": {
-      "Map:Fence5": {}
-    }
+    "actors": [
+      "Map:Fence5"
+    ]
   },
   {
     "name": "Lever5_986",
@@ -15556,9 +15537,9 @@
     "lat": -50232.68359375,
     "lng": -55146.10546875,
     "alt": -1652.9439697265625,
-    "actors": {
-      "Map:Brick2393": {}
-    }
+    "actors": [
+      "Map:Brick2393"
+    ]
   },
   {
     "name": "Lever6_2",
@@ -15567,9 +15548,9 @@
     "lat": -22221.095703125,
     "lng": 46581.95703125,
     "alt": 3325.129150390625,
-    "actors": {
-      "Map:MovingSteelBeam": {}
-    }
+    "actors": [
+      "Map:MovingSteelBeam"
+    ]
   },
   {
     "name": "Lever7_1730",
@@ -15578,9 +15559,9 @@
     "lat": -29536.0859375,
     "lng": 22610.97265625,
     "alt": 833.112060546875,
-    "actors": {
-      "Map:Stump88": {}
-    }
+    "actors": [
+      "Map:Stump88"
+    ]
   },
   {
     "name": "Lever8_4819",
@@ -15589,9 +15570,9 @@
     "lat": -48383.8828125,
     "lng": -52445.5,
     "alt": 1337.6453857421875,
-    "actors": {
-      "Map:Brick2611": {}
-    }
+    "actors": [
+      "Map:Brick2611"
+    ]
   },
   {
     "name": "Lever9_1622",
@@ -15600,9 +15581,9 @@
     "lat": -43539.1328125,
     "lng": -53953.4921875,
     "alt": -219.15725708007812,
-    "actors": {
-      "Map:Metalset1_SteelPoleRound7_8": {}
-    }
+    "actors": [
+      "Map:Metalset1_SteelPoleRound7_8"
+    ]
   },
   {
     "name": "Lever_194",
@@ -15611,10 +15592,10 @@
     "lat": -21341.318359375,
     "lng": 7112.92529296875,
     "alt": 969.1436157226562,
-    "actors": {
-      "Map:LegoDoor": {},
-      "Map:RedGuyEvent2_569": {}
-    }
+    "actors": [
+      "Map:LegoDoor",
+      "Map:RedGuyEvent2_569"
+    ]
   },
   {
     "name": "Lift10",
@@ -16514,9 +16495,9 @@
     "lat": 43700.3203125,
     "lng": -64201.8671875,
     "alt": -971.1793823242188,
-    "actors": {
-      "Map:RingRusty14": {}
-    }
+    "actors": [
+      "Map:RingRusty14"
+    ]
   },
   {
     "name": "PedestalButton_2",
@@ -16525,9 +16506,9 @@
     "lat": -8124.349609375,
     "lng": 75364.4296875,
     "alt": 5390.45947265625,
-    "actors": {
-      "Map:Sponge13_2": {}
-    }
+    "actors": [
+      "Map:Sponge13_2"
+    ]
   },
   {
     "name": "PhysicalCoin_746",
@@ -19068,9 +19049,9 @@
     "lat": -26508.19140625,
     "lng": 24615.859375,
     "alt": 3078.997802734375,
-    "actors": {
-      "Map:Jumppad16": {}
-    }
+    "actors": [
+      "Map:Jumppad16"
+    ]
   },
   {
     "name": "Smallbutton23_2326",
@@ -19079,9 +19060,9 @@
     "lat": -28290.0,
     "lng": -37650.0,
     "alt": 530.0,
-    "actors": {
-      "Map:Jumppad30_17845": {}
-    }
+    "actors": [
+      "Map:Jumppad30_17845"
+    ]
   },
   {
     "name": "Smallbutton25_1136",
@@ -19090,9 +19071,9 @@
     "lat": -26822.2265625,
     "lng": -30549.51953125,
     "alt": 115.50033569335938,
-    "actors": {
-      "Map:Jumppad38_2356": {}
-    }
+    "actors": [
+      "Map:Jumppad38_2356"
+    ]
   },
   {
     "name": "Smallbutton30_1304",
@@ -19101,9 +19082,9 @@
     "lat": -38891.8125,
     "lng": -24141.34375,
     "alt": -1076.35888671875,
-    "actors": {
-      "Map:Door23": {}
-    }
+    "actors": [
+      "Map:Door23"
+    ]
   },
   {
     "name": "Smallbutton38_35593",
@@ -19112,9 +19093,9 @@
     "lat": -42914.90234375,
     "lng": -52346.0390625,
     "alt": 41.92301940917969,
-    "actors": {
-      "Map:Door60": {}
-    }
+    "actors": [
+      "Map:Door60"
+    ]
   },
   {
     "name": "Smallbutton39",
@@ -19123,9 +19104,9 @@
     "lat": -24136.822265625,
     "lng": -9783.724609375,
     "alt": -958.0095825195312,
-    "actors": {
-      "Map:ShieldGenerator4": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator4"
+    ]
   },
   {
     "name": "Smallbutton42_730",
@@ -19134,9 +19115,9 @@
     "lat": 23683.685546875,
     "lng": -26777.48046875,
     "alt": 514.4402465820312,
-    "actors": {
-      "Map:Door70_8284": {}
-    }
+    "actors": [
+      "Map:Door70_8284"
+    ]
   },
   {
     "name": "Smallbutton44",
@@ -19145,9 +19126,9 @@
     "lat": -23744.11328125,
     "lng": 19185.87890625,
     "alt": 1583.6708984375,
-    "actors": {
-      "Map:Jumppad42": {}
-    }
+    "actors": [
+      "Map:Jumppad42"
+    ]
   },
   {
     "name": "Smallbutton45",
@@ -19156,9 +19137,9 @@
     "lat": -41095.515625,
     "lng": -29226.3359375,
     "alt": -1076.35888671875,
-    "actors": {
-      "Map:Door30": {}
-    }
+    "actors": [
+      "Map:Door30"
+    ]
   },
   {
     "name": "Smallbutton54",
@@ -19167,9 +19148,9 @@
     "lat": 13044.9931640625,
     "lng": -10211.6787109375,
     "alt": 3825.031494140625,
-    "actors": {
-      "Map:Jumppad74": {}
-    }
+    "actors": [
+      "Map:Jumppad74"
+    ]
   },
   {
     "name": "Smallbutton57",
@@ -19178,9 +19159,9 @@
     "lat": 13503.7421875,
     "lng": 11629.9091796875,
     "alt": 1820.47802734375,
-    "actors": {
-      "Map:Jumppad76": {}
-    }
+    "actors": [
+      "Map:Jumppad76"
+    ]
   },
   {
     "name": "Smallbutton60",
@@ -19189,9 +19170,9 @@
     "lat": 21434.3203125,
     "lng": 21324.498046875,
     "alt": 1457.8935546875,
-    "actors": {
-      "Map:Door96": {}
-    }
+    "actors": [
+      "Map:Door96"
+    ]
   },
   {
     "name": "Smallbutton61",
@@ -19200,9 +19181,9 @@
     "lat": 19857.671875,
     "lng": 29589.248046875,
     "alt": 1115.7601318359375,
-    "actors": {
-      "Map:Door97": {}
-    }
+    "actors": [
+      "Map:Door97"
+    ]
   },
   {
     "name": "Smallbutton62",
@@ -19211,9 +19192,9 @@
     "lat": 21007.34375,
     "lng": 24120.998046875,
     "alt": 1455.8935546875,
-    "actors": {
-      "Map:Door103": {}
-    }
+    "actors": [
+      "Map:Door103"
+    ]
   },
   {
     "name": "Smallbutton6_1416",
@@ -19222,9 +19203,9 @@
     "lat": -28240.0,
     "lng": 23950.0,
     "alt": 2210.0,
-    "actors": {
-      "Map:Jumppad5_4135": {}
-    }
+    "actors": [
+      "Map:Jumppad5_4135"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors54",
@@ -19233,9 +19214,9 @@
     "lat": 40311.609375,
     "lng": 27810.560546875,
     "alt": 2937.1865234375,
-    "actors": {
-      "Map:TeslaCoil23": {}
-    }
+    "actors": [
+      "Map:TeslaCoil23"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors5_912",
@@ -19244,9 +19225,9 @@
     "lat": -48695.50390625,
     "lng": -55669.16015625,
     "alt": -865.195068359375,
-    "actors": {
-      "Map:Door59": {}
-    }
+    "actors": [
+      "Map:Door59"
+    ]
   },
   {
     "name": "Smallbutton11_2410",
@@ -19255,9 +19236,9 @@
     "lat": -48285.06640625,
     "lng": -51125.18359375,
     "alt": -889.9430541992188,
-    "actors": {
-      "Map:Jumppad41": {}
-    }
+    "actors": [
+      "Map:Jumppad41"
+    ]
   },
   {
     "name": "Smallbutton12_4009",
@@ -19266,9 +19247,9 @@
     "lat": -34345.69140625,
     "lng": 540.1371459960938,
     "alt": -315.9112854003906,
-    "actors": {
-      "Map:Door8_1092": {}
-    }
+    "actors": [
+      "Map:Door8_1092"
+    ]
   },
   {
     "name": "Smallbutton14_2774",
@@ -19277,9 +19258,9 @@
     "lat": -39293.015625,
     "lng": -2922.76220703125,
     "alt": 666.1390380859375,
-    "actors": {
-      "Map:Door9": {}
-    }
+    "actors": [
+      "Map:Door9"
+    ]
   },
   {
     "name": "Smallbutton16_11668",
@@ -19288,9 +19269,9 @@
     "lat": -12418.6826171875,
     "lng": -15830.8603515625,
     "alt": -1114.40234375,
-    "actors": {
-      "Map:RingColorer_338": {}
-    }
+    "actors": [
+      "Map:RingColorer_338"
+    ]
   },
   {
     "name": "Smallbutton19_2791",
@@ -19299,9 +19280,9 @@
     "lat": -25198.44921875,
     "lng": -35338.5625,
     "alt": -939.0275268554688,
-    "actors": {
-      "Map:Door22": {}
-    }
+    "actors": [
+      "Map:Door22"
+    ]
   },
   {
     "name": "Smallbutton2",
@@ -19310,9 +19291,9 @@
     "lat": -29648.54296875,
     "lng": 5319.64404296875,
     "alt": -622.4896240234375,
-    "actors": {
-      "Map:BarrelClosed_Blueprint3_5": {}
-    }
+    "actors": [
+      "Map:BarrelClosed_Blueprint3_5"
+    ]
   },
   {
     "name": "Smallbutton24_5759",
@@ -19321,9 +19302,9 @@
     "lat": -49570.45703125,
     "lng": -15550.4912109375,
     "alt": 1544.48828125,
-    "actors": {
-      "Map:SupraballCanon2_1259": {}
-    }
+    "actors": [
+      "Map:SupraballCanon2_1259"
+    ]
   },
   {
     "name": "Smallbutton26",
@@ -19332,9 +19313,9 @@
     "lat": -59574.3515625,
     "lng": -8324.544921875,
     "alt": 882.00537109375,
-    "actors": {
-      "Map:BarrelClosed_Blueprint5_2": {}
-    }
+    "actors": [
+      "Map:BarrelClosed_Blueprint5_2"
+    ]
   },
   {
     "name": "Smallbutton27",
@@ -19343,9 +19324,9 @@
     "lat": -32557.978515625,
     "lng": -411.8133544921875,
     "alt": -32.8599853515625,
-    "actors": {
-      "Map:Door66": {}
-    }
+    "actors": [
+      "Map:Door66"
+    ]
   },
   {
     "name": "Smallbutton28_5",
@@ -19354,11 +19335,10 @@
     "lat": 4544.7041015625,
     "lng": 975.5363159179688,
     "alt": -81.09729766845703,
-    "actors": {
-      "Map:StarGate_5": {
-        "Map:Door115_2": {}
-      }
-    }
+    "actors": [
+      "Map:StarGate_5",
+      "Map:Door115_2"
+    ]
   },
   {
     "name": "Smallbutton29_2914",
@@ -19367,9 +19347,9 @@
     "lat": -45539.5078125,
     "lng": -37236.6796875,
     "alt": -1699.983154296875,
-    "actors": {
-      "Map:SupraballCanon_221": {}
-    }
+    "actors": [
+      "Map:SupraballCanon_221"
+    ]
   },
   {
     "name": "Smallbutton3",
@@ -19378,9 +19358,9 @@
     "lat": -41130.0,
     "lng": 6082.35205078125,
     "alt": -240.0,
-    "actors": {
-      "Map:BarrelClosed_Blueprint4": {}
-    }
+    "actors": [
+      "Map:BarrelClosed_Blueprint4"
+    ]
   },
   {
     "name": "Smallbutton31",
@@ -19389,9 +19369,9 @@
     "lat": -45224.4453125,
     "lng": -46490.93359375,
     "alt": -1626.54736328125,
-    "actors": {
-      "Map:SupraballCanon4_395": {}
-    }
+    "actors": [
+      "Map:SupraballCanon4_395"
+    ]
   },
   {
     "name": "Smallbutton32_8308",
@@ -19400,9 +19380,9 @@
     "lat": -27712.16015625,
     "lng": -21916.408203125,
     "alt": -243.1285400390625,
-    "actors": {
-      "Map:SupraballCanon5_1547": {}
-    }
+    "actors": [
+      "Map:SupraballCanon5_1547"
+    ]
   },
   {
     "name": "Smallbutton33",
@@ -19411,9 +19391,9 @@
     "lat": -49745.28515625,
     "lng": -52588.58984375,
     "alt": -1539.0458984375,
-    "actors": {
-      "Map:Key_50": {}
-    }
+    "actors": [
+      "Map:Key_50"
+    ]
   },
   {
     "name": "Smallbutton34",
@@ -19422,9 +19402,9 @@
     "lat": -50016.67578125,
     "lng": -50053.2734375,
     "alt": -1374.4326171875,
-    "actors": {
-      "Map:RingColorer2": {}
-    }
+    "actors": [
+      "Map:RingColorer2"
+    ]
   },
   {
     "name": "Smallbutton35_26234",
@@ -19433,9 +19413,9 @@
     "lat": -47460.98828125,
     "lng": -55534.23828125,
     "alt": -15.374271392822266,
-    "actors": {
-      "Map:SupraballCanon6": {}
-    }
+    "actors": [
+      "Map:SupraballCanon6"
+    ]
   },
   {
     "name": "Smallbutton36",
@@ -19444,9 +19424,9 @@
     "lat": -47753.2578125,
     "lng": -55638.7734375,
     "alt": -1622.8621826171875,
-    "actors": {
-      "Map:Key4_1426": {}
-    }
+    "actors": [
+      "Map:Key4_1426"
+    ]
   },
   {
     "name": "Smallbutton40_42120",
@@ -19455,9 +19435,9 @@
     "lat": -593.0735473632812,
     "lng": -8687.2529296875,
     "alt": 1738.4752197265625,
-    "actors": {
-      "Map:Key2": {}
-    }
+    "actors": [
+      "Map:Key2"
+    ]
   },
   {
     "name": "Smallbutton43",
@@ -19466,11 +19446,10 @@
     "lat": -34720.85546875,
     "lng": -2894.293212890625,
     "alt": 56.65931701660156,
-    "actors": {
-      "Map:StarGate2": {
-        "Map:Door131": {}
-      }
-    }
+    "actors": [
+      "Map:StarGate2",
+      "Map:Door131"
+    ]
   },
   {
     "name": "Smallbutton47",
@@ -19479,9 +19458,9 @@
     "lat": -10787.48828125,
     "lng": 148.0065460205078,
     "alt": -6547.0458984375,
-    "actors": {
-      "Map:Key5": {}
-    }
+    "actors": [
+      "Map:Key5"
+    ]
   },
   {
     "name": "Smallbutton48_1374",
@@ -19490,9 +19469,9 @@
     "lat": 24625.55078125,
     "lng": -23612.724609375,
     "alt": 519.0596313476562,
-    "actors": {
-      "Map:Door68_1032": {}
-    }
+    "actors": [
+      "Map:Door68_1032"
+    ]
   },
   {
     "name": "Smallbutton49",
@@ -19501,9 +19480,9 @@
     "lat": 44765.921875,
     "lng": -16561.150390625,
     "alt": 604.2377319335938,
-    "actors": {
-      "Map:SupraballCanon7": {}
-    }
+    "actors": [
+      "Map:SupraballCanon7"
+    ]
   },
   {
     "name": "Smallbutton4_1668",
@@ -19520,9 +19499,9 @@
     "lat": 45704.53125,
     "lng": -23341.591796875,
     "alt": 313.337890625,
-    "actors": {
-      "Map:Door74": {}
-    }
+    "actors": [
+      "Map:Door74"
+    ]
   },
   {
     "name": "Smallbutton51",
@@ -19531,9 +19510,9 @@
     "lat": 42777.9921875,
     "lng": -6998.03125,
     "alt": 362.853515625,
-    "actors": {
-      "Map:Door75_962": {}
-    }
+    "actors": [
+      "Map:Door75_962"
+    ]
   },
   {
     "name": "Smallbutton52",
@@ -19542,9 +19521,9 @@
     "lat": 12376.623046875,
     "lng": -10546.7158203125,
     "alt": 4048.275390625,
-    "actors": {
-      "Map:SupraballCanon8": {}
-    }
+    "actors": [
+      "Map:SupraballCanon8"
+    ]
   },
   {
     "name": "Smallbutton53",
@@ -19553,9 +19532,9 @@
     "lat": 58408.0390625,
     "lng": -61611.84375,
     "alt": 583.1775512695312,
-    "actors": {
-      "Map:RingColorer3": {}
-    }
+    "actors": [
+      "Map:RingColorer3"
+    ]
   },
   {
     "name": "Smallbutton55_2",
@@ -19564,9 +19543,9 @@
     "lat": -40677.01171875,
     "lng": -372.7772216796875,
     "alt": 391.1800537109375,
-    "actors": {
-      "Map:Door98": {}
-    }
+    "actors": [
+      "Map:Door98"
+    ]
   },
   {
     "name": "Smallbutton56",
@@ -19575,9 +19554,9 @@
     "lat": -42656.5625,
     "lng": -57334.5078125,
     "alt": 663.5673828125,
-    "actors": {
-      "Map:RingColorer5": {}
-    }
+    "actors": [
+      "Map:RingColorer5"
+    ]
   },
   {
     "name": "Smallbutton5_1696",
@@ -19586,9 +19565,9 @@
     "lat": -25030.181640625,
     "lng": 8638.8056640625,
     "alt": -360.00836181640625,
-    "actors": {
-      "Map:DoorPhysical2_1520": {}
-    }
+    "actors": [
+      "Map:DoorPhysical2_1520"
+    ]
   },
   {
     "name": "Smallbutton64",
@@ -19597,12 +19576,11 @@
     "lat": 13661.08203125,
     "lng": -14384.876953125,
     "alt": 856.3926391601562,
-    "actors": {
-      "Map:StarGate3": {
-        "Map:PipeCap29": {},
-        "Map:PipeCap28": {}
-      }
-    }
+    "actors": [
+      "Map:StarGate3",
+      "Map:PipeCap29",
+      "Map:PipeCap28"
+    ]
   },
   {
     "name": "Smallbutton66_2",
@@ -19611,9 +19589,9 @@
     "lat": -22682.39453125,
     "lng": -26509.666015625,
     "alt": -362.37060546875,
-    "actors": {
-      "Map:Door18_9038": {}
-    }
+    "actors": [
+      "Map:Door18_9038"
+    ]
   },
   {
     "name": "Smallbutton7",
@@ -19622,9 +19600,9 @@
     "lat": -24825.955078125,
     "lng": 10769.8212890625,
     "alt": -488.7657165527344,
-    "actors": {
-      "Map:DoorPhysical2_1520": {}
-    }
+    "actors": [
+      "Map:DoorPhysical2_1520"
+    ]
   },
   {
     "name": "Smallbutton9_1920",
@@ -19633,9 +19611,9 @@
     "lat": -43474.734375,
     "lng": -33406.3046875,
     "alt": -777.0579223632812,
-    "actors": {
-      "Map:SupraballCanon3_386": {}
-    }
+    "actors": [
+      "Map:SupraballCanon3_386"
+    ]
   },
   {
     "name": "Smallbutton_2237",
@@ -19644,9 +19622,9 @@
     "lat": -27721.3515625,
     "lng": -1243.54541015625,
     "alt": 179.0054473876953,
-    "actors": {
-      "Map:BarrelClosed_Blueprint2_3": {}
-    }
+    "actors": [
+      "Map:BarrelClosed_Blueprint2_3"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose3",
@@ -19655,9 +19633,9 @@
     "lat": -36789.265625,
     "lng": 1022.614013671875,
     "alt": -80.94550323486328,
-    "actors": {
-      "Map:Door34": {}
-    }
+    "actors": [
+      "Map:Door34"
+    ]
   },
   {
     "name": "Smallbutton17_4847",
@@ -19666,9 +19644,9 @@
     "lat": -19760.0,
     "lng": -31040.0,
     "alt": -1000.0,
-    "actors": {
-      "Map:Door17_20588": {}
-    }
+    "actors": [
+      "Map:Door17_20588"
+    ]
   },
   {
     "name": "Smallbutton18",
@@ -19677,9 +19655,9 @@
     "lat": -21500.0,
     "lng": -31380.0,
     "alt": -1000.0,
-    "actors": {
-      "Map:Door19": {}
-    }
+    "actors": [
+      "Map:Door19"
+    ]
   },
   {
     "name": "Smallbutton46",
@@ -19688,9 +19666,9 @@
     "lat": -32404.11328125,
     "lng": -24807.669921875,
     "alt": -2378.597900390625,
-    "actors": {
-      "Map:ShieldGenerator5": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator5"
+    ]
   },
   {
     "name": "Smallbutton65",
@@ -19699,9 +19677,9 @@
     "lat": -23612.916015625,
     "lng": -19024.921875,
     "alt": -1322.6260986328125,
-    "actors": {
-      "Map:ShieldGenerator3_1142": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator3_1142"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose5_2",
@@ -19710,11 +19688,10 @@
     "lat": -21313.396484375,
     "lng": 45160.52734375,
     "alt": 1244.7166748046875,
-    "actors": {
-      "Map:MoveMesh_2": {
-        "Map:Metalset1_SteelPoleRound6": {}
-      }
-    }
+    "actors": [
+      "Map:MoveMesh_2",
+      "Map:Metalset1_SteelPoleRound6"
+    ]
   },
   {
     "name": "PedestalButton3_2",
@@ -19723,9 +19700,9 @@
     "lat": 9240.375,
     "lng": 41856.16015625,
     "alt": 3974.615478515625,
-    "actors": {
-      "Map:ProjectileShooter3_2": {}
-    }
+    "actors": [
+      "Map:ProjectileShooter3_2"
+    ]
   },
   {
     "name": "Smallbutton13_8548",
@@ -19734,9 +19711,9 @@
     "lat": -35379.578125,
     "lng": 16233.1064453125,
     "alt": -267.10198974609375,
-    "actors": {
-      "Map:DoorPhysical_1520": {}
-    }
+    "actors": [
+      "Map:DoorPhysical_1520"
+    ]
   },
   {
     "name": "Smallbutton15_2410",
@@ -19745,10 +19722,10 @@
     "lat": -978.0018310546875,
     "lng": -17129.705078125,
     "alt": -872.6998291015625,
-    "actors": {
-      "Map:Lift3_1549": {},
-      "Map:WifiwafeE3": {}
-    }
+    "actors": [
+      "Map:Lift3_1549",
+      "Map:WifiwafeE3"
+    ]
   },
   {
     "name": "Smallbutton58",
@@ -19757,10 +19734,10 @@
     "lat": -41711.95703125,
     "lng": -33590.4296875,
     "alt": -450.2117004394531,
-    "actors": {
-      "Map:Jumppad26": {},
-      "Map:Jumppad35": {}
-    }
+    "actors": [
+      "Map:Jumppad26",
+      "Map:Jumppad35"
+    ]
   },
   {
     "name": "Smallbutton59",
@@ -19769,9 +19746,9 @@
     "lat": -11974.1640625,
     "lng": 12776.8349609375,
     "alt": 576.8758544921875,
-    "actors": {
-      "Map:Jumppad79": {}
-    }
+    "actors": [
+      "Map:Jumppad79"
+    ]
   },
   {
     "name": "Smallbutton63",
@@ -19780,9 +19757,9 @@
     "lat": 25653.802734375,
     "lng": 24665.400390625,
     "alt": 865.8935546875,
-    "actors": {
-      "Map:Door101": {}
-    }
+    "actors": [
+      "Map:Door101"
+    ]
   },
   {
     "name": "Smallbutton8_926",
@@ -19791,10 +19768,10 @@
     "lat": -46172.7109375,
     "lng": -50369.74609375,
     "alt": -1608.2952880859375,
-    "actors": {
-      "Map:WifiwafeE4": {},
-      "Map:Lift2_1066": {}
-    }
+    "actors": [
+      "Map:WifiwafeE4",
+      "Map:Lift2_1066"
+    ]
   },
   {
     "name": "SmallbuttonFlipFlop2_380",
@@ -19803,10 +19780,10 @@
     "lat": -28678.833984375,
     "lng": -38767.39453125,
     "alt": 614.6864013671875,
-    "actors": {
-      "Map:WifiwafeE8": {},
-      "Map:Lift5_3065": {}
-    }
+    "actors": [
+      "Map:WifiwafeE8",
+      "Map:Lift5_3065"
+    ]
   },
   {
     "name": "SmallbuttonFlipFlop_1262",
@@ -19815,10 +19792,10 @@
     "lat": -11920.9033203125,
     "lng": -24227.048828125,
     "alt": -1720.2139892578125,
-    "actors": {
-      "Map:WifiwafeE2": {},
-      "Map:Lift4_920": {}
-    }
+    "actors": [
+      "Map:WifiwafeE2",
+      "Map:Lift4_920"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors10_1626",
@@ -19827,9 +19804,9 @@
     "lat": 28027.435546875,
     "lng": -7476.50537109375,
     "alt": 608.0526123046875,
-    "actors": {
-      "Map:MetalBall_50": {}
-    }
+    "actors": [
+      "Map:MetalBall_50"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors11",
@@ -19838,9 +19815,9 @@
     "lat": 23751.08984375,
     "lng": -24114.896484375,
     "alt": 486.4002990722656,
-    "actors": {
-      "Map:MetalBall2_2186": {}
-    }
+    "actors": [
+      "Map:MetalBall2_2186"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors12",
@@ -19849,9 +19826,9 @@
     "lat": 29069.94921875,
     "lng": -23192.345703125,
     "alt": 514.2120361328125,
-    "actors": {
-      "Map:Battery3": {}
-    }
+    "actors": [
+      "Map:Battery3"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors13_1250",
@@ -19860,10 +19837,10 @@
     "lat": 41637.65234375,
     "lng": -12249.6103515625,
     "alt": -1981.9814453125,
-    "actors": {
-      "Map:LampOn9": {},
-      "Map:Jumppad54_1487": {}
-    }
+    "actors": [
+      "Map:LampOn9",
+      "Map:Jumppad54_1487"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors14",
@@ -19872,9 +19849,9 @@
     "lat": 45698.1484375,
     "lng": -18721.388671875,
     "alt": 579.29248046875,
-    "actors": {
-      "Map:Battery4": {}
-    }
+    "actors": [
+      "Map:Battery4"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors15",
@@ -19883,10 +19860,10 @@
     "lat": 42219.48046875,
     "lng": -23550.955078125,
     "alt": 447.60699462890625,
-    "actors": {
-      "Map:Lift10": {},
-      "Map:WifiwafeE10": {}
-    }
+    "actors": [
+      "Map:Lift10",
+      "Map:WifiwafeE10"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors16",
@@ -19895,9 +19872,9 @@
     "lat": 50619.12109375,
     "lng": -24924.845703125,
     "alt": 338.5556335449219,
-    "actors": {
-      "Map:MetalBall3": {}
-    }
+    "actors": [
+      "Map:MetalBall3"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors17",
@@ -19906,9 +19883,9 @@
     "lat": 43297.60546875,
     "lng": -26418.92578125,
     "alt": 298.6899108886719,
-    "actors": {
-      "Map:MetalBall6": {}
-    }
+    "actors": [
+      "Map:MetalBall6"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors18",
@@ -19917,10 +19894,10 @@
     "lat": 50004.453125,
     "lng": -23928.0625,
     "alt": 391.2874450683594,
-    "actors": {
-      "Map:Lift10": {},
-      "Map:WifiwafeE11": {}
-    }
+    "actors": [
+      "Map:Lift10",
+      "Map:WifiwafeE11"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors19",
@@ -19929,9 +19906,9 @@
     "lat": 43346.125,
     "lng": -25063.576171875,
     "alt": 1607.3485107421875,
-    "actors": {
-      "Map:MetalBall5": {}
-    }
+    "actors": [
+      "Map:MetalBall5"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors20_2",
@@ -19940,9 +19917,9 @@
     "lat": -9576.615234375,
     "lng": 47253.72265625,
     "alt": 5686.83349609375,
-    "actors": {
-      "Map:TeslaCoil27": {}
-    }
+    "actors": [
+      "Map:TeslaCoil27"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors21",
@@ -19951,9 +19928,9 @@
     "lat": 46096.828125,
     "lng": -22997.310546875,
     "alt": 466.808349609375,
-    "actors": {
-      "Map:Sponge12": {}
-    }
+    "actors": [
+      "Map:Sponge12"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors22",
@@ -19962,9 +19939,9 @@
     "lat": 24655.43359375,
     "lng": -27710.8515625,
     "alt": 358.0242004394531,
-    "actors": {
-      "Map:MetalBall7_209": {}
-    }
+    "actors": [
+      "Map:MetalBall7_209"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors23",
@@ -19973,9 +19950,9 @@
     "lat": 40504.60546875,
     "lng": -44331.30859375,
     "alt": 688.127197265625,
-    "actors": {
-      "Map:MetalBall26_3098": {}
-    }
+    "actors": [
+      "Map:MetalBall26_3098"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors24",
@@ -19984,9 +19961,9 @@
     "lat": 40464.9140625,
     "lng": -47170.3203125,
     "alt": 756.465087890625,
-    "actors": {
-      "Map:MetalBall26_3098": {}
-    }
+    "actors": [
+      "Map:MetalBall26_3098"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors25",
@@ -19995,10 +19972,10 @@
     "lat": 40428.60546875,
     "lng": -44331.30859375,
     "alt": 688.127197265625,
-    "actors": {
-      "Map:Lift11_2123": {},
-      "Map:WifiwafeE13": {}
-    }
+    "actors": [
+      "Map:Lift11_2123",
+      "Map:WifiwafeE13"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors26",
@@ -20007,10 +19984,10 @@
     "lat": 40583.60546875,
     "lng": -44331.30859375,
     "alt": 688.127197265625,
-    "actors": {
-      "Map:WifiwafeE12": {},
-      "Map:Lift12": {}
-    }
+    "actors": [
+      "Map:WifiwafeE12",
+      "Map:Lift12"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors27",
@@ -20019,10 +19996,10 @@
     "lat": 40374.046875,
     "lng": -47170.328125,
     "alt": 756.465087890625,
-    "actors": {
-      "Map:Lift11_2123": {},
-      "Map:WifiwafeE13": {}
-    }
+    "actors": [
+      "Map:Lift11_2123",
+      "Map:WifiwafeE13"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors28",
@@ -20031,10 +20008,10 @@
     "lat": 40540.765625,
     "lng": -47170.328125,
     "alt": 756.465087890625,
-    "actors": {
-      "Map:WifiwafeE12": {},
-      "Map:Lift12": {}
-    }
+    "actors": [
+      "Map:WifiwafeE12",
+      "Map:Lift12"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors29",
@@ -20043,9 +20020,9 @@
     "lat": 46063.61328125,
     "lng": -40275.40234375,
     "alt": 1785.4810791015625,
-    "actors": {
-      "Map:Key6_173": {}
-    }
+    "actors": [
+      "Map:Key6_173"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors2_1390",
@@ -20054,10 +20031,10 @@
     "lat": -12242.1826171875,
     "lng": -1790.3917236328125,
     "alt": 1566.7869873046875,
-    "actors": {
-      "Map:PipeCap_572": {},
-      "Map:PipeCap2_2783": {}
-    }
+    "actors": [
+      "Map:PipeCap_572",
+      "Map:PipeCap2_2783"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors3",
@@ -20066,10 +20043,10 @@
     "lat": -16638.70703125,
     "lng": -8149.8994140625,
     "alt": -327.3641662597656,
-    "actors": {
-      "Map:PipeCap4": {},
-      "Map:PipeCap5": {}
-    }
+    "actors": [
+      "Map:PipeCap4",
+      "Map:PipeCap5"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors30",
@@ -20078,9 +20055,9 @@
     "lat": 58367.3359375,
     "lng": -45540.453125,
     "alt": 1397.4849853515625,
-    "actors": {
-      "Map:MetalBall27": {}
-    }
+    "actors": [
+      "Map:MetalBall27"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors33",
@@ -20089,9 +20066,9 @@
     "lat": -21800.06640625,
     "lng": -1961.79541015625,
     "alt": -1984.5255126953125,
-    "actors": {
-      "Map:Door80_2060": {}
-    }
+    "actors": [
+      "Map:Door80_2060"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors34_2410",
@@ -20100,9 +20077,9 @@
     "lat": -56435.5390625,
     "lng": 12899.6630859375,
     "alt": 1089.513671875,
-    "actors": {
-      "Map:Onslaught_236": {}
-    }
+    "actors": [
+      "Map:Onslaught_236"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors35",
@@ -20111,9 +20088,9 @@
     "lat": 4952.01806640625,
     "lng": 17698.71875,
     "alt": 1092.6314697265625,
-    "actors": {
-      "Map:Battery5": {}
-    }
+    "actors": [
+      "Map:Battery5"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors36_1952",
@@ -20122,9 +20099,9 @@
     "lat": 54876.4375,
     "lng": -67842.8359375,
     "alt": 680.064697265625,
-    "actors": {
-      "Map:Door83_2663": {}
-    }
+    "actors": [
+      "Map:Door83_2663"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors37_2147",
@@ -20133,9 +20110,9 @@
     "lat": 35588.484375,
     "lng": -49994.05859375,
     "alt": 1481.19677734375,
-    "actors": {
-      "Map:Key7_83": {}
-    }
+    "actors": [
+      "Map:Key7_83"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors39",
@@ -20144,9 +20121,9 @@
     "lat": 40283.83203125,
     "lng": -49698.3515625,
     "alt": 660.7725219726562,
-    "actors": {
-      "Map:Door76": {}
-    }
+    "actors": [
+      "Map:Door76"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors41",
@@ -20155,10 +20132,10 @@
     "lat": 28059.234375,
     "lng": -737.37451171875,
     "alt": 2021.15087890625,
-    "actors": {
-      "Map:Jumppad61": {},
-      "Map:Jumppad59_1564": {}
-    }
+    "actors": [
+      "Map:Jumppad61",
+      "Map:Jumppad59_1564"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors42",
@@ -20167,9 +20144,9 @@
     "lat": 59571.8515625,
     "lng": -54606.84765625,
     "alt": 643.2778930664062,
-    "actors": {
-      "Map:Door89": {}
-    }
+    "actors": [
+      "Map:Door89"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors43_3182",
@@ -20178,9 +20155,9 @@
     "lat": 55705.453125,
     "lng": -63100.1796875,
     "alt": 543.4119873046875,
-    "actors": {
-      "Map:Juicer_286": {}
-    }
+    "actors": [
+      "Map:Juicer_286"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors44",
@@ -20189,9 +20166,9 @@
     "lat": 3212.769775390625,
     "lng": -5616.72509765625,
     "alt": -1296.3316650390625,
-    "actors": {
-      "Map:Juicer2": {}
-    }
+    "actors": [
+      "Map:Juicer2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors45",
@@ -20200,9 +20177,9 @@
     "lat": -37092.203125,
     "lng": -4018.653076171875,
     "alt": 215.009521484375,
-    "actors": {
-      "Map:Juicer3": {}
-    }
+    "actors": [
+      "Map:Juicer3"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors46_3752",
@@ -20211,9 +20188,9 @@
     "lat": 54035.46875,
     "lng": -57179.15625,
     "alt": 519.7020263671875,
-    "actors": {
-      "Map:BarrelColor_2": {}
-    }
+    "actors": [
+      "Map:BarrelColor_2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors47",
@@ -20222,10 +20199,10 @@
     "lat": -29887.8203125,
     "lng": 18430.244140625,
     "alt": -78.22598266601562,
-    "actors": {
-      "Map:Door90": {},
-      "Map:Door91": {}
-    }
+    "actors": [
+      "Map:Door90",
+      "Map:Door91"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors48_2",
@@ -20234,9 +20211,9 @@
     "lat": -37394.65234375,
     "lng": 1497.617919921875,
     "alt": -43.019798278808594,
-    "actors": {
-      "Map:RingColorer4": {}
-    }
+    "actors": [
+      "Map:RingColorer4"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors49_2",
@@ -20245,9 +20222,9 @@
     "lat": 20358.76953125,
     "lng": 21809.50390625,
     "alt": 1407.8905029296875,
-    "actors": {
-      "Map:MetalBall12_2": {}
-    }
+    "actors": [
+      "Map:MetalBall12_2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors4_8996",
@@ -20256,10 +20233,10 @@
     "lat": -11056.0107421875,
     "lng": 14580.095703125,
     "alt": -559.135009765625,
-    "actors": {
-      "Map:PipeCap6_10455": {},
-      "Map:PipeCap3_9330": {}
-    }
+    "actors": [
+      "Map:PipeCap6_10455",
+      "Map:PipeCap3_9330"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors50",
@@ -20268,9 +20245,9 @@
     "lat": 21326.931640625,
     "lng": 21826.703125,
     "alt": 906.380126953125,
-    "actors": {
-      "Map:Battery6_2": {}
-    }
+    "actors": [
+      "Map:Battery6_2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors51",
@@ -20279,9 +20256,9 @@
     "lat": 18680.931640625,
     "lng": 29529.703125,
     "alt": 906.380126953125,
-    "actors": {
-      "Map:Key8": {}
-    }
+    "actors": [
+      "Map:Key8"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors52_2",
@@ -20290,9 +20267,9 @@
     "lat": -37621.234375,
     "lng": 37868.38671875,
     "alt": 989.7816162109375,
-    "actors": {
-      "Map:Jumppad94": {}
-    }
+    "actors": [
+      "Map:Jumppad94"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors53_4",
@@ -20301,11 +20278,11 @@
     "lat": 33820.12890625,
     "lng": 25922.31640625,
     "alt": 2933.391845703125,
-    "actors": {
-      "Map:Door104": {},
-      "Map:Door107": {},
-      "Map:RedGuyEvent9_3": {}
-    }
+    "actors": [
+      "Map:Door104",
+      "Map:Door107",
+      "Map:RedGuyEvent9_3"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors55_3",
@@ -20314,9 +20291,9 @@
     "lat": -17072.08203125,
     "lng": 44456.7734375,
     "alt": 1247.2196044921875,
-    "actors": {
-      "Map:Door111_2": {}
-    }
+    "actors": [
+      "Map:Door111_2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors56_2",
@@ -20325,11 +20302,10 @@
     "lat": -5694.18505859375,
     "lng": -32533.236328125,
     "alt": -1364.871826171875,
-    "actors": {
-      "Map:TaskCheckComputer_2": {
-        "Map:RedGuy38": {}
-      }
-    }
+    "actors": [
+      "Map:TaskCheckComputer_2",
+      "Map:RedGuy38"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors57",
@@ -20338,10 +20314,10 @@
     "lat": -2874.818115234375,
     "lng": 50387.93359375,
     "alt": 3194.3486328125,
-    "actors": {
-      "Map:Sponge10_2": {},
-      "Map:Sponge11": {}
-    }
+    "actors": [
+      "Map:Sponge10_2",
+      "Map:Sponge11"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors58",
@@ -20350,9 +20326,9 @@
     "lat": 10618.0390625,
     "lng": 49410.55859375,
     "alt": 5754.84521484375,
-    "actors": {
-      "Map:Key10_5": {}
-    }
+    "actors": [
+      "Map:Key10_5"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors59_2",
@@ -20361,9 +20337,9 @@
     "lat": 16066.65234375,
     "lng": 38903.59375,
     "alt": 3178.0517578125,
-    "actors": {
-      "Map:Door123": {}
-    }
+    "actors": [
+      "Map:Door123"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors60_2",
@@ -20372,11 +20348,11 @@
     "lat": 27223.044921875,
     "lng": 42775.5859375,
     "alt": 1331.6998291015625,
-    "actors": {
-      "Map:Door124": {},
-      "Map:Jumppad85": {},
-      "Map:Jumppad83": {}
-    }
+    "actors": [
+      "Map:Door124",
+      "Map:Jumppad85",
+      "Map:Jumppad83"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors61_2",
@@ -20385,9 +20361,9 @@
     "lat": -43450.2265625,
     "lng": -61033.53515625,
     "alt": 560.6316528320312,
-    "actors": {
-      "Map:Door92_2": {}
-    }
+    "actors": [
+      "Map:Door92_2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors62",
@@ -20396,9 +20372,9 @@
     "lat": 37651.14453125,
     "lng": 62928.60546875,
     "alt": 1738.772705078125,
-    "actors": {
-      "Map:Door130": {}
-    }
+    "actors": [
+      "Map:Door130"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors63_2",
@@ -20407,10 +20383,10 @@
     "lat": 44462.6640625,
     "lng": -39939.19140625,
     "alt": 499.1037292480469,
-    "actors": {
-      "Map:ProjectileShooter_2": {},
-      "Map:Jumppad99": {}
-    }
+    "actors": [
+      "Map:ProjectileShooter_2",
+      "Map:Jumppad99"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors6_1234",
@@ -20419,9 +20395,9 @@
     "lat": 24214.630859375,
     "lng": 9169.259765625,
     "alt": -1036.3369140625,
-    "actors": {
-      "Map:ShieldGenerator8": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator8"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors7_898",
@@ -20430,9 +20406,9 @@
     "lat": 28475.30859375,
     "lng": -9971.85546875,
     "alt": 3167.801513671875,
-    "actors": {
-      "Map:Battery2": {}
-    }
+    "actors": [
+      "Map:Battery2"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors8",
@@ -20441,9 +20417,9 @@
     "lat": 29218.892578125,
     "lng": 10708.68359375,
     "alt": -71.8487548828125,
-    "actors": {
-      "Map:ShieldGenerator6_966": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator6_966"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors9",
@@ -20452,9 +20428,9 @@
     "lat": 28780.265625,
     "lng": 6097.00634765625,
     "alt": -71.84876251220703,
-    "actors": {
-      "Map:ShieldGenerator7": {}
-    }
+    "actors": [
+      "Map:ShieldGenerator7"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors_367",
@@ -20463,10 +20439,10 @@
     "lat": -12303.720703125,
     "lng": -6594.30712890625,
     "alt": 101.89291381835938,
-    "actors": {
-      "Map:Door64": {},
-      "Map:Door65": {}
-    }
+    "actors": [
+      "Map:Door64",
+      "Map:Door65"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose8",
@@ -20475,9 +20451,9 @@
     "lat": 13228.1357421875,
     "lng": 43012.18359375,
     "alt": 3103.49609375,
-    "actors": {
-      "Map:RingColorer8": {}
-    }
+    "actors": [
+      "Map:RingColorer8"
+    ]
   },
   {
     "name": "SmallbuttonNINE_2",
@@ -20486,13 +20462,13 @@
     "lat": -38945.0,
     "lng": 316.0,
     "alt": 388.0,
-    "actors": {
-      "Map:10": {},
-      "Map:9": {},
-      "Map:8_2": {},
-      "Map:11": {},
-      "Map:12": {}
-    }
+    "actors": [
+      "Map:10",
+      "Map:9",
+      "Map:8_2",
+      "Map:11",
+      "Map:12"
+    ]
   },
   {
     "name": "Smallbutton21_2004",
@@ -20501,10 +20477,10 @@
     "lat": -6771.62548828125,
     "lng": 13275.5556640625,
     "alt": -408.99505615234375,
-    "actors": {
-      "Map:Jumppad_266": {},
-      "Map:Jumppad2_49": {}
-    }
+    "actors": [
+      "Map:Jumppad_266",
+      "Map:Jumppad2_49"
+    ]
   },
   {
     "name": "Smallbutton37_33056",
@@ -20513,11 +20489,11 @@
     "lat": -32817.53515625,
     "lng": -13169.919921875,
     "alt": 1111.5810546875,
-    "actors": {
-      "Map:Jumppad24": {},
-      "Map:Jumppad23_3162": {},
-      "Map:PlayerForceLook18_2": {}
-    }
+    "actors": [
+      "Map:Jumppad24",
+      "Map:Jumppad23_3162",
+      "Map:PlayerForceLook18_2"
+    ]
   },
   {
     "name": "Smallbutton41",
@@ -20526,9 +20502,9 @@
     "lat": -43557.82421875,
     "lng": -49362.2734375,
     "alt": -545.5294799804688,
-    "actors": {
-      "Map:Jumppad40_8816": {}
-    }
+    "actors": [
+      "Map:Jumppad40_8816"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors31_17252",
@@ -20537,9 +20513,9 @@
     "lat": 55170.87109375,
     "lng": -44188.96484375,
     "alt": 2463.6474609375,
-    "actors": {
-      "Map:Door78": {}
-    }
+    "actors": [
+      "Map:Door78"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors32",
@@ -20548,10 +20524,10 @@
     "lat": 37269.7109375,
     "lng": -19802.37890625,
     "alt": 746.5677490234375,
-    "actors": {
-      "Map:PipeCap13": {},
-      "Map:PipeCap14": {}
-    }
+    "actors": [
+      "Map:PipeCap13",
+      "Map:PipeCap14"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors38",
@@ -20560,10 +20536,10 @@
     "lat": 43894.5546875,
     "lng": -15790.9033203125,
     "alt": 1958.065673828125,
-    "actors": {
-      "Map:Jumppad72": {},
-      "Map:Jumppad73": {}
-    }
+    "actors": [
+      "Map:Jumppad72",
+      "Map:Jumppad73"
+    ]
   },
   {
     "name": "SmallbuttonMultipleActors40",
@@ -20572,10 +20548,10 @@
     "lat": -11815.208984375,
     "lng": -28436.171875,
     "alt": 1380.17626953125,
-    "actors": {
-      "Map:Jumppad13_972": {},
-      "Map:Jumppad14_7215": {}
-    }
+    "actors": [
+      "Map:Jumppad13_972",
+      "Map:Jumppad14_7215"
+    ]
   },
   {
     "name": "Smallbutton22_5284",
@@ -20584,9 +20560,9 @@
     "lat": -10070.9736328125,
     "lng": 12557.353515625,
     "alt": -23.285491943359375,
-    "actors": {
-      "Map:Jumppad27_1960": {}
-    }
+    "actors": [
+      "Map:Jumppad27_1960"
+    ]
   },
   {
     "name": "SmallbuttonFlipFlop3_2",
@@ -20595,9 +20571,9 @@
     "lat": -25220.0,
     "lng": -34668.0,
     "alt": -276.0,
-    "actors": {
-      "Map:TeslaCoil33": {}
-    }
+    "actors": [
+      "Map:TeslaCoil33"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose4_2",
@@ -20606,9 +20582,9 @@
     "lat": 17956.568359375,
     "lng": 26222.42578125,
     "alt": 862.3067626953125,
-    "actors": {
-      "Map:Jumppad77": {}
-    }
+    "actors": [
+      "Map:Jumppad77"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose6_2",
@@ -20617,9 +20593,9 @@
     "lat": 10793.763671875,
     "lng": 50203.04296875,
     "alt": 3169.036865234375,
-    "actors": {
-      "Map:Door119": {}
-    }
+    "actors": [
+      "Map:Door119"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose7",
@@ -20636,9 +20612,9 @@
     "lat": -36257.3203125,
     "lng": 1452.640869140625,
     "alt": -124.4754409790039,
-    "actors": {
-      "Map:Door8_1092": {}
-    }
+    "actors": [
+      "Map:Door8_1092"
+    ]
   },
   {
     "name": "SmallbuttonWhile_1724",
@@ -20647,9 +20623,9 @@
     "lat": -33435.3359375,
     "lng": 17157.111328125,
     "alt": 1558.51318359375,
-    "actors": {
-      "Map:DoorPhysical_1520": {}
-    }
+    "actors": [
+      "Map:DoorPhysical_1520"
+    ]
   },
   {
     "name": "SmallbuttonOpenClose2_646",
@@ -20658,9 +20634,9 @@
     "lat": -20201.40234375,
     "lng": -18963.1953125,
     "alt": -241.44683837890625,
-    "actors": {
-      "Map:Jumppad22_1179": {}
-    }
+    "actors": [
+      "Map:Jumppad22_1179"
+    ]
   },
   {
     "name": "SmallbuttonWhile3_1022",
@@ -20669,9 +20645,9 @@
     "lat": 28286.9921875,
     "lng": -23064.83984375,
     "alt": 2218.606201171875,
-    "actors": {
-      "Map:Jumppad53": {}
-    }
+    "actors": [
+      "Map:Jumppad53"
+    ]
   },
   {
     "name": "Sponge10_2",
@@ -20890,9 +20866,9 @@
     "lat": 2150.98193359375,
     "lng": -1598.2049560546875,
     "alt": 146.0513153076172,
-    "actors": {
-      "Map:WaterPlants_329": {}
-    }
+    "actors": [
+      "Map:WaterPlants_329"
+    ]
   },
   {
     "name": "Valve3",
@@ -20901,9 +20877,9 @@
     "lat": -29865.048828125,
     "lng": -10481.69140625,
     "alt": -726.70068359375,
-    "actors": {
-      "Map:WaterPlants2": {}
-    }
+    "actors": [
+      "Map:WaterPlants2"
+    ]
   },
   {
     "name": "Valve4",
@@ -20912,9 +20888,9 @@
     "lat": 60796.4140625,
     "lng": -61781.43359375,
     "alt": 732.60693359375,
-    "actors": {
-      "Map:WaterPlants3": {}
-    }
+    "actors": [
+      "Map:WaterPlants3"
+    ]
   },
   {
     "name": "Valve_246",
@@ -20923,8 +20899,8 @@
     "lat": -22787.43359375,
     "lng": -3119.06884765625,
     "alt": -2014.2481689453125,
-    "actors": {
-      "Map:FireballSpawner2_2215": {}
-    }
+    "actors": [
+      "Map:FireballSpawner2_2215"
+    ]
   }
 ]
