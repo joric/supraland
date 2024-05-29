@@ -476,7 +476,8 @@ function loadMap() {
               }
 
               // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
-              if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase') || o.type.startsWith('BP_Purchase')) {
+              if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
+                || o.type.startsWith('BP_Purchase') || || (o.is_in_shop && o.is_in_shop==true) ) {
                 let icon = 'shop';
                 let layer = 'shop';
                 L.marker([o.lat, o.lng], {icon: getIcon(icon), title: title, zIndexOffset: 10, alt: alt, o:o, layerId:layer })
