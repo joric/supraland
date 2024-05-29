@@ -781,7 +781,7 @@ window.loadSaveFile = function () {
       return;
     }
 
-    console.log(loadedSave);
+    //console.log(loadedSave);
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
