@@ -196,7 +196,7 @@ function loadMap() {
 
   map.on('overlayadd', function(e) {
     settings.activeLayers[e.layer.id] = true;
-    updatePolylines(e.layer.id);
+    updatePolylines();
     markItems();
     saveSettings();
   });
@@ -433,7 +433,7 @@ function loadMap() {
             if (p = objects[o.other_pipe]) {
               let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // start of the line
               let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p; // end of the line
-              L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt:(o.nearest_cap?alt:''), color: color, interactive: false}).addTo(layers[layer]);
+              L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt: (o.nearest_cap ? alt : ''), color: color, interactive: false}).addTo(layers[layer]);
             }
           }
 
@@ -450,14 +450,14 @@ function loadMap() {
           if (o.type.startsWith('Pipesystem')) {
             let layer = 'pipecaps';
             let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // move marker to cap, if exists
-            L.circleMarker([a.lat, a.lng], {radius: 5, fillOpacity: 1, weight: 0, fillColor: color, title: title, o:o, alt: (o.nearest_cap?alt:'')})
+            L.circleMarker([a.lat, a.lng], {title: title, o:o, alt: (o.nearest_cap ? alt : ''), radius: 5, fillOpacity: 1, weight: 0, fillColor: color})
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
           }
 
           // add jumppad marker as circle
           if (o.type == 'Jumppad_C') {
             let layer = 'jumppads';
-            L.circleMarker([o.lat, o.lng], {radius: 5, fillOpacity: 1, weight: 0, fillColor: color, title: title, o:o, alt: alt})
+            L.circleMarker([o.lat, o.lng], {title: title, o:o, alt: alt, radius: 5, fillOpacity: 1, weight: 0, fillColor: color})
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
           }
 
