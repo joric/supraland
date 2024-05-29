@@ -417,7 +417,7 @@ function loadMap() {
           // add class name to title
           title = title + ' of ' + o.type;
 
-          // jumppad line
+          // jumppad line, marked lines (paths) display is inverted (found paths are brighter, see css)
           if ( o.type == 'Jumppad_C') {
             if (o.target) {
               let layer = 'jumppads';
@@ -427,15 +427,12 @@ function loadMap() {
             }
           }
 
-          // marked lines (paths) display inverted (found is brighter, see css)
-          // pipes without the caps cannnot be marked, so alt tag is unset for those
-
-          // pipe line
+          // pipe line. pipes without the caps cannnot be marked, so alt tag is unset
           if (o.type.startsWith('Pipesystem')) {
             let layer = 'pipecaps';
             if (p = objects[o.other_pipe]) {
-              let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // start of the line
-              let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p; // end of the line
+              let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o;
+              let b = (c=p.nearest_cap) && (c=objects[c]) ? c : p;
               L.polyline([[a.lat, a.lng],[b.lat, b.lng]], {title:' ', alt: (o.nearest_cap ? alt : ''), color: color, interactive: false}).addTo(layers[layer]);
             }
           }
