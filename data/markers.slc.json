@@ -4585,9 +4585,9 @@
       "z": 0.8869965076446533
     },
     "target": {
-      "x": 19061.799176454544,
-      "y": 18193.552617611247,
-      "z": 2357.9139082245006
+      "x": 19531.77174925059,
+      "y": 18193.55404939449,
+      "z": 3086.84381256915
     }
   },
   {
@@ -5630,6 +5630,83 @@
     "lat": -11360.1591796875,
     "lng": 31210.44921875,
     "alt": 99.9990234375
+  },
+  {
+    "name": "Lighttrigger3",
+    "type": "Lighttrigger2_C",
+    "area": "Crash",
+    "lat": 17449.119140625,
+    "lng": 19807.080078125,
+    "alt": 3091.565673828125,
+    "actors": [
+      "Crash:DoorInverted2",
+      "Crash:Door23",
+      "Crash:DoorInverted_2",
+      "Crash:Door2_1"
+    ]
+  },
+  {
+    "name": "Lighttrigger4",
+    "type": "Lighttrigger2_C",
+    "area": "Crash",
+    "lat": 1200.215576171875,
+    "lng": 33151.84375,
+    "alt": 162.77069091796875,
+    "actors": [
+      "Crash:DoorLego42",
+      "Crash:DoorLego43",
+      "Crash:DoorLego44",
+      "Crash:Glowline82_2"
+    ]
+  },
+  {
+    "name": "Lighttrigger7_2",
+    "type": "Lighttrigger2_C",
+    "area": "Crash",
+    "lat": -10396.572265625,
+    "lng": -9452.123046875,
+    "alt": -1245.70654296875,
+    "actors": [
+      "Crash:MoveMesh16_2",
+      "Crash:SM_stairs_wall_c_39",
+      "Crash:Glowline43_2"
+    ]
+  },
+  {
+    "name": "Lighttrigger2_2",
+    "type": "Lighttrigger_C",
+    "area": "Crash",
+    "lat": -13689.830078125,
+    "lng": 45185.6953125,
+    "alt": 717.8123779296875,
+    "actors": [
+      "Crash:Glowline17_2",
+      "Crash:Door4_2"
+    ]
+  },
+  {
+    "name": "Lighttrigger6",
+    "type": "Lighttrigger_C",
+    "area": "Crash",
+    "lat": -301.49139404296875,
+    "lng": -1884.879638671875,
+    "alt": 160.64852905273438,
+    "actors": [
+      "Crash:DoorLego40_9",
+      "Crash:Glowline51_13"
+    ]
+  },
+  {
+    "name": "Lighttrigger_2",
+    "type": "Lighttrigger_C",
+    "area": "Crash",
+    "lat": -9205.9140625,
+    "lng": 43028.76953125,
+    "alt": 369.82421875,
+    "actors": [
+      "Crash:Glowline10_9",
+      "Crash:DoorLego3"
+    ]
   },
   {
     "name": "MatchBox_2",
