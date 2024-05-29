@@ -137,7 +137,10 @@
     "alt": 3066.00439453125,
     "is_in_shop": true,
     "cost": 15,
-    "price_type": "scrap"
+    "price_type": "scrap",
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC40_45"
+    ]
   },
   {
     "name": "BP_BuyGunDamage+100pct_2",
@@ -260,7 +263,11 @@
     "area": "DLC2_Complete",
     "lat": 15517.7568359375,
     "lng": 22243.890625,
-    "alt": 3172.55419921875
+    "alt": 3172.55419921875,
+    "actors": [
+      "DLC2_Complete:TutorialButtons8",
+      "DLC2_Complete:GiveAchievementDLC27"
+    ]
   },
   {
     "name": "BP_Purchase_FasterPickaxe_2",
@@ -282,7 +289,13 @@
     "alt": -97.390380859375,
     "is_in_shop": true,
     "can_be_picked_up": false,
-    "cost": 30
+    "cost": 30,
+    "actors": [
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2"
+    ]
   },
   {
     "name": "Shop_Health_5",
@@ -293,7 +306,13 @@
     "alt": -78.06648254394531,
     "is_in_shop": true,
     "can_be_picked_up": false,
-    "cost": 30
+    "cost": 30,
+    "actors": [
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2"
+    ]
   },
   {
     "name": "BP_PurchaseJumpHeightPlus_2",
@@ -302,7 +321,11 @@
     "lat": 15441.4248046875,
     "lng": 22141.173828125,
     "alt": 3200.79296875,
-    "cost": 10
+    "cost": 10,
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC26_5",
+      "DLC2_Complete:TutorialButtons18"
+    ]
   },
   {
     "name": "BP_TrophyDetector_2",
@@ -321,7 +344,15 @@
     "alt": -92.87537384033203,
     "is_in_shop": true,
     "can_be_picked_up": false,
-    "cost": 60
+    "cost": 60,
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC43_54",
+      "DLC2_Complete:TutorialButtons10_2",
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2"
+    ]
   },
   {
     "name": "ButtonFloor-FatNPC2",
@@ -677,7 +708,8 @@
     "alt": 3077.958740234375,
     "actors": [
       "DLC2_Complete:Glowline95_2",
-      "DLC2_Complete:Counter5_5"
+      "DLC2_Complete:Counter5_5",
+      "DLC2_Complete:Door57"
     ]
   },
   {
@@ -874,7 +906,13 @@
     "alt": -79.1365966796875,
     "is_in_shop": true,
     "can_be_picked_up": false,
-    "cost": 30
+    "cost": 30,
+    "actors": [
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2"
+    ]
   },
   {
     "name": "BuyStats_2",
@@ -893,7 +931,10 @@
     "lng": 21392.783203125,
     "alt": 3065.90185546875,
     "cost": 6,
-    "price_type": "bones"
+    "price_type": "bones",
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC39_42"
+    ]
   },
   {
     "name": "BuyUpgradeChestNum_2",
@@ -9153,8 +9194,8 @@
     "lng": 22270.150390625,
     "alt": 3853.4931640625,
     "actors": [
-      "DLC2_Complete:Metalset1_SteelPoleRound_27",
-      "DLC2_Complete:Gears_2"
+      "DLC2_Complete:Gears_2",
+      "DLC2_Complete:Metalset1_SteelPoleRound_27"
     ]
   },
   {
@@ -13386,7 +13427,10 @@
     "actors": [
       "DLC2_Complete:Door3_2",
       "DLC2_Complete:Glowline64",
-      "DLC2_Complete:DestroyObjectsOnTrigger_2"
+      "DLC2_Complete:DestroyObjectsOnTrigger_2",
+      "DLC2_Complete:RedGuy33",
+      "DLC2_Complete:RedGuy34",
+      "DLC2_Complete:RedGuy35"
     ]
   },
   {
@@ -14872,7 +14916,10 @@
     "alt": -72.95669555664062,
     "is_in_shop": true,
     "can_be_picked_up": false,
-    "cost": 200
+    "cost": 200,
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC18"
+    ]
   },
   {
     "name": "Purchase_IronPickaxe_2",
@@ -14882,7 +14929,10 @@
     "lng": 16443.494140625,
     "alt": -57.282127380371094,
     "can_be_picked_up": false,
-    "cost": 100
+    "cost": 100,
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC17"
+    ]
   },
   {
     "name": "Purchase_SlumHouse1_2",
@@ -14890,7 +14940,19 @@
     "area": "DLC2_Complete",
     "lat": -28398.265625,
     "lng": 11155.4501953125,
-    "alt": -148.50311279296875
+    "alt": -148.50311279296875,
+    "actors": [
+      "DLC2_Complete:BP_ToggleObjectVisibility_H1_Brick2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H1_OLD2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_CH_Brick2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_CH_OLD2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H2_Brick2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H2_OLD2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H3_Brick2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H3_OLD2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H4_Brick2",
+      "DLC2_Complete:BP_ToggleObjectVisibility_H4_OLD2"
+    ]
   },
   {
     "name": "Purchase_StonePickaxe_8",
@@ -14900,7 +14962,10 @@
     "lng": 16432.439453125,
     "alt": -77.56555938720703,
     "can_be_picked_up": false,
-    "cost": 20
+    "cost": 20,
+    "actors": [
+      "DLC2_Complete:GiveAchievementDLC16_13"
+    ]
   },
   {
     "name": "Purchase_WoodPickaxe_2",
@@ -14909,7 +14974,15 @@
     "lat": 15551.4541015625,
     "lng": 22349.587890625,
     "alt": 3223.587646484375,
-    "cost": 42
+    "cost": 42,
+    "actors": [
+      "DLC2_Complete:DestroyPickaxeHintGuy",
+      "DLC2_Complete:BP_MinerCardboard0",
+      "DLC2_Complete:BP_MinerCardboard1",
+      "DLC2_Complete:NPC_safetyInspector2_5",
+      "DLC2_Complete:TutorialButtons17",
+      "DLC2_Complete:GiveAchievementDLC19_18"
+    ]
   },
   {
     "name": "Scrap177_2",

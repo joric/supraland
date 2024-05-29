@@ -67,7 +67,8 @@
     "lng": 66469.1953125,
     "alt": 5454.47021484375,
     "actors": [
-      "Map:TeslaCoil31"
+      "Map:TeslaCoil31",
+      "Map:LampOn100_2"
     ]
   },
   {
@@ -1444,7 +1445,10 @@
     "lat": 16689.0234375,
     "lng": 20230.7265625,
     "alt": 803.8145141601562,
-    "cost": 120
+    "cost": 120,
+    "actors": [
+      "Map:BlueShopKeeper"
+    ]
   },
   {
     "name": "BuyChestDetector_30",
@@ -1501,7 +1505,10 @@
     "lng": 20281.40625,
     "alt": 803.8145141601562,
     "is_in_shop": true,
-    "cost": 40
+    "cost": 40,
+    "actors": [
+      "Map:TutorialButtons15_14640"
+    ]
   },
   {
     "name": "BuyForceBlock_695",
@@ -1510,7 +1517,11 @@
     "lat": -33724.125,
     "lng": 135.09010314941406,
     "alt": -208.89215087890625,
-    "cost": 20
+    "cost": 20,
+    "actors": [
+      "Map:TutorialButtons15_14640",
+      "Map:TutorialButtons28_2"
+    ]
   },
   {
     "name": "BuyGun2_2",
@@ -19281,7 +19292,8 @@
     "lng": 27810.560546875,
     "alt": 2937.1865234375,
     "actors": [
-      "Map:TeslaCoil23"
+      "Map:TeslaCoil23",
+      "Map:LampOn42_2"
     ]
   },
   {
@@ -19984,7 +19996,8 @@
     "lng": 47253.72265625,
     "alt": 5686.83349609375,
     "actors": [
-      "Map:TeslaCoil27"
+      "Map:TeslaCoil27",
+      "Map:LampOn82"
     ]
   },
   {

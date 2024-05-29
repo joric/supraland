@@ -1921,7 +1921,10 @@
     "lng": 263.939453125,
     "alt": 129.1154022216797,
     "is_in_shop": true,
-    "cost": 61
+    "cost": 61,
+    "actors": [
+      "Crash:TutorialButtons20_8"
+    ]
   },
   {
     "name": "BuyForceCubeStompJump_2",
