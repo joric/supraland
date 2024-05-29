@@ -482,6 +482,15 @@ function loadMap() {
             }
           }
 
+          if (['brick'].includes(icon)) {
+            let colors = {1:'obsidian',2:'metal',3:'diamond',4:'gold'};
+            if (c = colors[o.brick_type]) {
+              icon = icon +'_' + c;
+            } else if (o.coins_in_gold) {
+              icon = icon +'_gold';
+            }
+          }
+
           // shops: all items you can purchase are marked as shops. note they may overlap "upgrades" and spawns.
           if (o.type.startsWith('Buy') || o.type.startsWith('BP_Buy') || o.type.startsWith('Purchase')
             || o.type.startsWith('BP_Purchase') || (o.is_in_shop && o.is_in_shop==true) ) {

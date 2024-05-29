@@ -69,27 +69,23 @@ marker_types = {
   # slc
   'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
-  'MinecraftBrick_C','HealingStation_C','BP_EngagementCup_Base_C','SlumBurningQuest_C','Trash_C',
+  'HealingStation_C','BP_EngagementCup_Base_C','SlumBurningQuest_C','Trash_C',
 }
 
 starts_with = {
     'Pipesystem','Buy','BP_Buy','BP_Purchase','BP_Unlock', 'Purchase','Upgrade','Button','Smallbutton','Coin',
     'Lighttrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key','ProjectileShooter',
+    'MinecraftBrick', # can be MinecraftBrick_C and MinecraftBrickRespawnable_C
 }
 
 ends_with = {
     'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C','Flower_C','Coin_C','Guy_C',
 }
 
-price_types = {
-    'EPriceType::NewEnumerator5':'scrap',
-    'EPriceType::NewEnumerator6':'bones',
-}
-
 properties = [
-    'IsInShop','canBePickedUp', # BP_UnlockMap_C, etc.
+    'IsInShop','canBePickedUp', 'PriceType', # BP_UnlockMap_C, etc.
     'Coins','CoinsInGold','Cost','Value', # Chest_C
-    'HitsToBreak','bObsidian', # Minecraftbrick_C
+    'HitsToBreak','bObsidian', 'HitsTaken', 'BrickType', # Minecraftbrick_C
     'AllowEnemyProjectiles','RequiresPurpleShot?', # Button_C
     'Color', 'OriginalColor', # Seed_C/*Flower_C/Keycard*_C (0 - white, 1 - yellow, 2 - red, 5 - green)
     'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity','CenterActor', # jumpppad_c
@@ -98,7 +94,7 @@ properties = [
 actions = {
     'OpenWhenTake','Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
-    'ActorsToOpen','ObjectsToDestroy',
+    'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy',
 }
 
 def camel_to_snake(s):
@@ -135,7 +131,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
     data = []
     areas = {}
 
-    optKey = lambda d,k,v: v is not None and d.__setitem__(k,v)
+    notEnum= lambda s:int(s[len(s.rstrip('0123456789')):]or 0) if type(s) is str else s
+    optKey = lambda d,k,v: v is not None and d.__setitem__(k,notEnum(v))
     getVec = lambda d,v=0: Vector((d['X'], d['Y'], d['Z'])) if d else Vector((v,v,v))
     getRot = lambda d,v=0: Euler(( radians(d['Roll']), radians(d['Pitch']), radians(d['Yaw'])) ) if d else Euler((v,v,v))
     getQuat= lambda d,v=0: Quaternion((d['W'], d['X'], d['Y'], d['Z'])) if d else Quaternion((v,v,v,v))
@@ -204,7 +201,6 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
-            optKey(data[-1], 'price_type', price_types.get(p.get('PriceType')))
 
             actors = []
             def get_actors(o,level=0):
@@ -248,6 +244,8 @@ def calc_pipes(data):
     points = [(o['lng'], o['lat'], o['alt']) for o in data if allowed_points(o)]
     data_indices = [i for i,o in enumerate(data) if allowed_points(o)]
     print('collected', len(points), 'pipe caps, calculating links...')
+    if not points: return
+
     tree = KDTree(points)
 
     pipes = {}

@@ -136,8 +136,8 @@
     "lng": 21730.326171875,
     "alt": 3066.00439453125,
     "is_in_shop": true,
+    "price_type": 5,
     "cost": 15,
-    "price_type": "scrap",
     "actors": [
       "DLC2_Complete:GiveAchievementDLC40_45"
     ]
@@ -361,7 +361,7 @@
     "lat": -47705.51953125,
     "lng": -6.793715953826904,
     "alt": 3265.543701171875,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_Complete:Glowline133"
     ]
@@ -385,7 +385,7 @@
     "lat": -54853.6328125,
     "lng": 56879.890625,
     "alt": 457.311279296875,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:MoveMesh2_2",
       "DLC2_Complete:Red_brick_13",
@@ -399,7 +399,7 @@
     "lat": -54246.45703125,
     "lng": 56912.84765625,
     "alt": 4339.16064453125,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:DoorLego_2",
       "DLC2_Complete:Glowline56"
@@ -456,7 +456,7 @@
     "lat": -46958.078125,
     "lng": 44538.59375,
     "alt": 752.3919677734375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Jumppad30_2",
       "DLC2_Complete:Glowline108_2"
@@ -481,7 +481,7 @@
     "lat": -47705.5234375,
     "lng": -783.9344482421875,
     "alt": 3264.465576171875,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_Complete:Glowline132"
     ]
@@ -509,7 +509,7 @@
     "lat": -14936.9189453125,
     "lng": -57327.4609375,
     "alt": 10673.400390625,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_Complete:Glowline115",
       "DLC2_Complete:MoveMesh13_4",
@@ -523,7 +523,7 @@
     "lat": -9821.26953125,
     "lng": -58246.1640625,
     "alt": 8252.22265625,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Glowline114",
       "DLC2_Complete:Magnet_Base6"
@@ -536,7 +536,7 @@
     "lat": -5429.21142578125,
     "lng": -46161.9453125,
     "alt": 8258.677734375,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_Complete:Glowline116",
       "DLC2_Complete:MoveMesh15",
@@ -563,7 +563,7 @@
     "lat": -22553.19140625,
     "lng": 20208.427734375,
     "alt": 1867.7869873046875,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Glowline7_2",
       "DLC2_Complete:Door63_1"
@@ -589,7 +589,7 @@
     "lat": 5436.916015625,
     "lng": -56796.73828125,
     "alt": 1852.55322265625,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Glowline140_2",
       "DLC2_Complete:SignalInverter11",
@@ -627,7 +627,7 @@
     "lat": -8443.95703125,
     "lng": 60879.45703125,
     "alt": 416.1670227050781,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Glowline16",
       "DLC2_Complete:Door11",
@@ -681,7 +681,7 @@
     "lat": -46267.83203125,
     "lng": 44519.6484375,
     "alt": 113.3919677734375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_Complete:Glowline54_10",
       "DLC2_Complete:DoorInverted14_2"
@@ -930,8 +930,8 @@
     "lat": -22837.6796875,
     "lng": 21392.783203125,
     "alt": 3065.90185546875,
+    "price_type": 6,
     "cost": 6,
-    "price_type": "bones",
     "actors": [
       "DLC2_Complete:GiveAchievementDLC39_42"
     ]
@@ -961,7 +961,7 @@
     "lat": 722.6304321289062,
     "lng": -59176.28515625,
     "alt": 1250.2861328125,
-    "spawns": "BuyJumpIncrease_C"
+    "spawns": 0
   },
   {
     "name": "Chest12_17",
@@ -988,7 +988,7 @@
     "lat": -36825.921875,
     "lng": -35361.01953125,
     "alt": 23564.826171875,
-    "spawns": "BuyJumpIncrease_C"
+    "spawns": 0
   },
   {
     "name": "Chest15_2",
@@ -1006,7 +1006,7 @@
     "lat": -47689.83203125,
     "lng": 6018.63818359375,
     "alt": 1815.2095947265625,
-    "spawns": "BuyElectricGun_C"
+    "spawns": 0
   },
   {
     "name": "Chest17",
@@ -1033,7 +1033,7 @@
     "lat": -11486.0,
     "lng": 41127.0,
     "alt": 921.0,
-    "spawns": "BP_BuyBoomerAxe_C"
+    "spawns": 0
   },
   {
     "name": "Chest4_2",
@@ -1051,7 +1051,7 @@
     "lat": -60852.0,
     "lng": 50108.0,
     "alt": 2764.71826171875,
-    "spawns": "BP_DoubleHealthLoot_C"
+    "spawns": 0
   },
   {
     "name": "Chest6_5",
@@ -1078,7 +1078,7 @@
     "lat": -29278.2109375,
     "lng": -49225.3125,
     "alt": 17556.3828125,
-    "spawns": "CoinBig_C"
+    "spawns": 0
   },
   {
     "name": "Chest9_8",
@@ -1105,7 +1105,7 @@
     "lat": -43441.16015625,
     "lng": -661.9174194335938,
     "alt": 1769.9998779296875,
-    "spawns": "BuyForceBeamGold_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1",
@@ -1123,7 +1123,7 @@
     "lat": -51696.421875,
     "lng": -1232.244384765625,
     "alt": 2670.432373046875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea12",
@@ -1150,7 +1150,7 @@
     "lat": -51268.6484375,
     "lng": 5355.951171875,
     "alt": 2664.69873046875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea15",
@@ -1159,7 +1159,7 @@
     "lat": -46645.0,
     "lng": -2034.76171875,
     "alt": 3265.88232421875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_0",
@@ -1177,7 +1177,7 @@
     "lat": 16827.134765625,
     "lng": 24559.958984375,
     "alt": 5468.384765625,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_10",
@@ -1240,7 +1240,7 @@
     "lat": 10140.6435546875,
     "lng": 21921.6875,
     "alt": 3981.875244140625,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_46",
@@ -1258,7 +1258,7 @@
     "lat": -19654.0390625,
     "lng": 58129.48828125,
     "alt": 547.089111328125,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_52",
@@ -1267,7 +1267,7 @@
     "lat": -6965.6552734375,
     "lng": 17338.40234375,
     "alt": 6099.73486328125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_6",
@@ -1276,7 +1276,7 @@
     "lat": -10532.794921875,
     "lng": 71378.34375,
     "alt": 3988.556640625,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_63",
@@ -1285,7 +1285,7 @@
     "lat": 9156.4189453125,
     "lng": 35667.55078125,
     "alt": 6210.43408203125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_69",
@@ -1294,7 +1294,7 @@
     "lat": 13468.8525390625,
     "lng": 33715.5078125,
     "alt": 3396.80322265625,
-    "spawns": "BP_BuyBoomeraxeThrowSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea1_7",
@@ -1348,7 +1348,7 @@
     "lat": -25915.728515625,
     "lng": 49992.65234375,
     "alt": 2723.984375,
-    "spawns": "BP_DoubleHealthLoot_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_16",
@@ -1366,7 +1366,7 @@
     "lat": -12285.3388671875,
     "lng": 65200.04296875,
     "alt": 1788.4366455078125,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_2",
@@ -1375,7 +1375,7 @@
     "lat": -13120.728515625,
     "lng": 56670.515625,
     "alt": 1316.8594970703125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_3",
@@ -1384,7 +1384,7 @@
     "lat": -5262.11474609375,
     "lng": 65350.03125,
     "alt": 8355.6875,
-    "spawns": "BuyHealthRegenSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_39",
@@ -1393,7 +1393,7 @@
     "lat": -20489.509765625,
     "lng": 44655.1484375,
     "alt": 431.5622253417969,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_4",
@@ -1402,7 +1402,7 @@
     "lat": -13330.7607421875,
     "lng": 60854.4609375,
     "alt": 480.95611572265625,
-    "spawns": "BP_BuyGunDuration+2s_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_5",
@@ -1429,7 +1429,7 @@
     "lat": -11552.0,
     "lng": 54248.0,
     "alt": 472.5650329589844,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_59",
@@ -1456,7 +1456,7 @@
     "lat": -9618.150390625,
     "lng": 60078.96484375,
     "alt": 3293.176025390625,
-    "spawns": "BP_Purchase_FasterPickaxe_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_65",
@@ -1465,7 +1465,7 @@
     "lat": -5595.01220703125,
     "lng": 59550.203125,
     "alt": 2963.65966796875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_67",
@@ -1474,7 +1474,7 @@
     "lat": -23410.931640625,
     "lng": 36906.53515625,
     "alt": 5165.91455078125,
-    "spawns": "BP_BuyBoomeraxeThrowSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_68",
@@ -1492,7 +1492,7 @@
     "lat": -9572.064453125,
     "lng": 60790.2421875,
     "alt": 432.8233947753906,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea2_80",
@@ -1501,7 +1501,7 @@
     "lat": -9639.0,
     "lng": 65765.0,
     "alt": 544.5811767578125,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3",
@@ -1510,7 +1510,7 @@
     "lat": -39650.0,
     "lng": 2697.0,
     "alt": 1755.0008544921875,
-    "spawns": "BP_BuyBoomeraxePenetration_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_21",
@@ -1519,7 +1519,7 @@
     "lat": -35616.76953125,
     "lng": 8566.478515625,
     "alt": 1769.2197265625,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_22",
@@ -1528,7 +1528,7 @@
     "lat": -36296.90625,
     "lng": -2190.2880859375,
     "alt": 3521.26953125,
-    "spawns": "BuyHealthRegenSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_23",
@@ -1537,7 +1537,7 @@
     "lat": -36520.05078125,
     "lng": -200.12841796875,
     "alt": 1754.0718994140625,
-    "spawns": "BP_BuyBoomeraxeDistance_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_25",
@@ -1546,7 +1546,7 @@
     "lat": -37831.97265625,
     "lng": -2481.36181640625,
     "alt": 1755.0006103515625,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_26",
@@ -1555,7 +1555,7 @@
     "lat": -40256.01171875,
     "lng": -147.4905548095703,
     "alt": 1777.0001220703125,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_27",
@@ -1564,7 +1564,7 @@
     "lat": -36611.17578125,
     "lng": -1181.80078125,
     "alt": 4476.28955078125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_44",
@@ -1591,7 +1591,7 @@
     "lat": -39022.74609375,
     "lng": 8284.1396484375,
     "alt": 1755.0006103515625,
-    "spawns": "BP_BuyBoomeraxeThrowSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea3_70",
@@ -1600,7 +1600,7 @@
     "lat": -39912.5390625,
     "lng": 7526.580078125,
     "alt": 1736.0,
-    "spawns": "BP_BuyGunDamage+100pct_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4",
@@ -1609,7 +1609,7 @@
     "lat": -63987.8828125,
     "lng": 42204.96875,
     "alt": 3214.12646484375,
-    "spawns": "BuyQuintupleJump_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_29",
@@ -1618,7 +1618,7 @@
     "lat": -32578.466796875,
     "lng": 31313.287109375,
     "alt": 3236.86474609375,
-    "spawns": "BP_BuyGunRechargeTime-50pct_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_32",
@@ -1627,7 +1627,7 @@
     "lat": -47550.0234375,
     "lng": 38427.8203125,
     "alt": 2214.948486328125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_33",
@@ -1636,7 +1636,7 @@
     "lat": -47416.8046875,
     "lng": 38265.48046875,
     "alt": 2483.51220703125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_34",
@@ -1654,7 +1654,7 @@
     "lat": -42255.51953125,
     "lng": 51443.8046875,
     "alt": 1906.208251953125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_36",
@@ -1663,7 +1663,7 @@
     "lat": -46289.609375,
     "lng": 39644.296875,
     "alt": 2203.81640625,
-    "spawns": "Purchase_ForceCube_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_37",
@@ -1681,7 +1681,7 @@
     "lat": -46098.85546875,
     "lng": 47519.6640625,
     "alt": 1296.39404296875,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_41",
@@ -1699,7 +1699,7 @@
     "lat": -57554.53125,
     "lng": 48658.8984375,
     "alt": 485.3988037109375,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_48",
@@ -1708,7 +1708,7 @@
     "lat": -64008.4453125,
     "lng": 55088.7265625,
     "alt": 1660.006591796875,
-    "spawns": "BP_BuyGunRechargeTime-50pct_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_54",
@@ -1717,7 +1717,7 @@
     "lat": -56443.5625,
     "lng": 58703.46875,
     "alt": 2905.64208984375,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_55",
@@ -1726,7 +1726,7 @@
     "lat": -63962.8125,
     "lng": 55114.61328125,
     "alt": 4412.15576171875,
-    "spawns": "BP_BuyBoomeraxeDistance_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_56",
@@ -1744,7 +1744,7 @@
     "lat": -50250.59765625,
     "lng": 56237.2109375,
     "alt": 464.79656982421875,
-    "spawns": "BP_BuyBoomeraxeThrowSpeed_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4_72",
@@ -1753,7 +1753,7 @@
     "lat": -57680.3828125,
     "lng": 56384.890625,
     "alt": 3517.9443359375,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea4Firegunonly",
@@ -1762,7 +1762,7 @@
     "lat": -55833.5390625,
     "lng": 65468.32421875,
     "alt": 689.518310546875,
-    "spawns": "BP_BuyFireGunAutoRecharge_C"
+    "spawns": 0
   },
   {
     "name": "ChestArea5",
@@ -1771,7 +1771,7 @@
     "lat": -49058.26953125,
     "lng": 55007.984375,
     "alt": 2431.684326171875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestAreaEnd2",
@@ -1780,7 +1780,7 @@
     "lat": -6772.22119140625,
     "lng": -46943.0234375,
     "alt": 8593.8544921875,
-    "spawns": "BuyChestDetector_C"
+    "spawns": 0
   },
   {
     "name": "ChestAreaEnd_73",
@@ -1789,7 +1789,7 @@
     "lat": -4499.41748046875,
     "lng": -47164.0859375,
     "alt": 7553.7197265625,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "ChestAreaEnd_74",
@@ -1798,7 +1798,7 @@
     "lat": -6829.44287109375,
     "lng": -42515.0390625,
     "alt": 7058.92724609375,
-    "spawns": "BP_BuyBoomeraxeDistance_C"
+    "spawns": 0
   },
   {
     "name": "ChestAreaEnd_75",
@@ -1816,7 +1816,7 @@
     "lat": -1694.2796630859375,
     "lng": -50914.0859375,
     "alt": 8537.857421875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestAreaEnd_78",
@@ -1826,7 +1826,7 @@
     "lng": -58828.6640625,
     "alt": 7870.2666015625,
     "coins": 5,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestFiregun",
@@ -1835,7 +1835,7 @@
     "lat": 2188.890625,
     "lng": 36101.87109375,
     "alt": 2392.3896484375,
-    "spawns": "BuyFireGun_C"
+    "spawns": 0
   },
   {
     "name": "ChestRepel",
@@ -1844,7 +1844,7 @@
     "lat": -10249.9091796875,
     "lng": 63738.71484375,
     "alt": 502.4501647949219,
-    "spawns": "BuyBeltRepel_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown",
@@ -1853,7 +1853,7 @@
     "lat": -18803.158203125,
     "lng": 26546.212890625,
     "alt": 1146.87646484375,
-    "spawns": "BP_PickaxeDamage+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown2",
@@ -1862,7 +1862,7 @@
     "lat": -24453.59765625,
     "lng": 18264.958984375,
     "alt": -2699.2568359375,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown3",
@@ -1871,7 +1871,7 @@
     "lat": -26511.375,
     "lng": 24236.3359375,
     "alt": -2961.1064453125,
-    "spawns": "Purchase_ForceBeam_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown4",
@@ -1880,7 +1880,7 @@
     "lat": -25829.046875,
     "lng": 24221.8984375,
     "alt": -1952.410400390625,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_10",
@@ -1889,7 +1889,7 @@
     "lat": -26128.767578125,
     "lng": 11920.294921875,
     "alt": 1218.8389892578125,
-    "spawns": "BP_BuyBoomeraxePenetration_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_18",
@@ -1898,7 +1898,7 @@
     "lat": -27292.66796875,
     "lng": -571.5170288085938,
     "alt": 1138.33642578125,
-    "spawns": "BP_Purchase_Pickaxe_Range+_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_24",
@@ -1907,7 +1907,7 @@
     "lat": -22548.998046875,
     "lng": 21105.736328125,
     "alt": 1360.9505615234375,
-    "spawns": "BP_BuyBoomeraxeDistance_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_3",
@@ -1916,7 +1916,7 @@
     "lat": -26330.03125,
     "lng": 17938.2734375,
     "alt": -2393.072265625,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_40",
@@ -1925,7 +1925,7 @@
     "lat": -28513.109375,
     "lng": 25499.1015625,
     "alt": 3.425640106201172,
-    "spawns": "BP_BuyBoomeraxePenetration_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_49",
@@ -1934,7 +1934,7 @@
     "lat": -15045.4951171875,
     "lng": 32297.8984375,
     "alt": -1023.7057495117188,
-    "spawns": "BuyBelt_DLC2_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_50",
@@ -1943,7 +1943,7 @@
     "lat": -24510.294921875,
     "lng": 27405.30859375,
     "alt": 1503.9774169921875,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_51",
@@ -1952,7 +1952,7 @@
     "lat": -20486.009765625,
     "lng": 25518.431640625,
     "alt": 2795.59521484375,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_61",
@@ -1961,7 +1961,7 @@
     "lat": -22469.267578125,
     "lng": 19978.205078125,
     "alt": 1359.762451171875,
-    "spawns": "BP_BuyGunDuration+2s_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_64",
@@ -1970,7 +1970,7 @@
     "lat": -30185.478515625,
     "lng": 23811.302734375,
     "alt": -201.6133575439453,
-    "spawns": "BP_PickaxeDamage+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_66",
@@ -1979,7 +1979,7 @@
     "lat": -30968.859375,
     "lng": 21850.021484375,
     "alt": 1363.51953125,
-    "spawns": "BP_BuyGunDuration+2s_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_8",
@@ -1988,7 +1988,7 @@
     "lat": -24160.162109375,
     "lng": 16547.00390625,
     "alt": -210.93675231933594,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_81",
@@ -1997,7 +1997,7 @@
     "lat": -22421.48828125,
     "lng": 23746.693359375,
     "alt": -446.87506103515625,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTown_9",
@@ -2006,7 +2006,7 @@
     "lat": -31713.19140625,
     "lng": 22077.9140625,
     "alt": -190.20057678222656,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "ChestTownFiregunonly",
@@ -2015,7 +2015,7 @@
     "lat": -28434.46875,
     "lng": 15623.9443359375,
     "alt": -134.3101043701172,
-    "spawns": "BP_Purchase_TranslocatorCooldown_C"
+    "spawns": 0
   },
   {
     "name": "ChestTranslocator",
@@ -2024,7 +2024,7 @@
     "lat": -56919.7578125,
     "lng": 56439.578125,
     "alt": 5936.94091796875,
-    "spawns": "BuyTranslocator_C"
+    "spawns": 0
   },
   {
     "name": "Coin10",
@@ -8847,7 +8847,7 @@
     "lat": 5973.7802734375,
     "lng": 17726.09765625,
     "alt": 3107.09423828125,
-    "color": "ButtonColor::NewEnumerator10"
+    "color": 10
   },
   {
     "name": "KeyLockPlastic2_2",
@@ -8864,7 +8864,7 @@
     "lat": -32185.9296875,
     "lng": 17983.173828125,
     "alt": 3990.0546875,
-    "color": "ButtonColor::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "KeyLockPlastic4_5",
@@ -8873,7 +8873,7 @@
     "lat": -39393.85546875,
     "lng": 4129.68505859375,
     "alt": 1898.389892578125,
-    "color": "ButtonColor::NewEnumerator2"
+    "color": 2
   },
   {
     "name": "KeyLockPlastic5_8",
@@ -8882,7 +8882,7 @@
     "lat": -26518.765625,
     "lng": 20057.3671875,
     "alt": -2364.673583984375,
-    "color": "ButtonColor::NewEnumerator5"
+    "color": 5
   },
   {
     "name": "KeyLockPlastic6_11",
@@ -8891,7 +8891,7 @@
     "lat": -47207.578125,
     "lng": 46650.703125,
     "alt": 1404.035888671875,
-    "color": "ButtonColor::NewEnumerator6"
+    "color": 6
   },
   {
     "name": "KeyLockPlastic7_2",
@@ -8900,7 +8900,7 @@
     "lat": 1432.8079833984375,
     "lng": -58722.6484375,
     "alt": 1330.340576171875,
-    "color": "ButtonColor::NewEnumerator9"
+    "color": 9
   },
   {
     "name": "KeyLockPlastic8_5",
@@ -8909,7 +8909,7 @@
     "lat": 2965.51220703125,
     "lng": 11270.697265625,
     "alt": 3191.43212890625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "KeyLockPlastic9_2",
@@ -8918,7 +8918,7 @@
     "lat": -23502.841796875,
     "lng": 16220.7568359375,
     "alt": -113.6812744140625,
-    "color": "ButtonColor::NewEnumerator7"
+    "color": 7
   },
   {
     "name": "KeyLockPlastic_2",
@@ -8935,7 +8935,7 @@
     "lat": -32139.642578125,
     "lng": 17539.626953125,
     "alt": 3548.81298828125,
-    "color": "ButtonColor::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "KeyPlastic3_7",
@@ -8944,7 +8944,7 @@
     "lat": -42815.91015625,
     "lng": 5081.8369140625,
     "alt": 1914.4849853515625,
-    "color": "ButtonColor::NewEnumerator2"
+    "color": 2
   },
   {
     "name": "KeyPlastic4_10",
@@ -8953,7 +8953,7 @@
     "lat": -25816.71875,
     "lng": 19997.5859375,
     "alt": -2945.32275390625,
-    "color": "ButtonColor::NewEnumerator5"
+    "color": 5
   },
   {
     "name": "KeyPlastic5_13",
@@ -8962,7 +8962,7 @@
     "lat": -42661.6015625,
     "lng": 50433.77734375,
     "alt": 2026.05419921875,
-    "color": "ButtonColor::NewEnumerator6"
+    "color": 6
   },
   {
     "name": "KeyPlastic7_2",
@@ -8971,7 +8971,7 @@
     "lat": 1036.0755615234375,
     "lng": 9822.853515625,
     "alt": 3264.112548828125,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "KeyPlastic8_2",
@@ -8980,7 +8980,7 @@
     "lat": 4865.1513671875,
     "lng": 23861.056640625,
     "alt": 3746.44140625,
-    "color": "ButtonColor::NewEnumerator10"
+    "color": 10
   },
   {
     "name": "KeyPlastic9_2",
@@ -8989,7 +8989,7 @@
     "lat": -23551.095703125,
     "lng": 14341.8359375,
     "alt": 1122.739990234375,
-    "color": "ButtonColor::NewEnumerator7"
+    "color": 7
   },
   {
     "name": "KeyPlastic_4",
@@ -9199,8 +9199,8 @@
     "lng": 22270.150390625,
     "alt": 3853.4931640625,
     "actors": [
-      "DLC2_Complete:Gears_2",
-      "DLC2_Complete:Metalset1_SteelPoleRound_27"
+      "DLC2_Complete:Metalset1_SteelPoleRound_27",
+      "DLC2_Complete:Gears_2"
     ]
   },
   {
@@ -9446,7 +9446,8 @@
     "lat": -5301.6162109375,
     "lng": 63950.0,
     "alt": 4436.24755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick106",
@@ -9501,7 +9502,8 @@
     "lng": 56136.97265625,
     "alt": 513.1370849609375,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick111",
@@ -9519,7 +9521,8 @@
     "lat": -23750.0,
     "lng": 39013.140625,
     "alt": 2922.737548828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick113",
@@ -9537,7 +9540,8 @@
     "lat": -23750.0,
     "lng": 39410.88671875,
     "alt": 2922.737548828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick115",
@@ -9573,7 +9577,8 @@
     "lat": -24966.546875,
     "lng": 9538.29296875,
     "alt": -130.55247497558594,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick119",
@@ -9618,7 +9623,8 @@
     "lat": -31196.234375,
     "lng": 22212.134765625,
     "alt": -86.67320251464844,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick123",
@@ -9700,7 +9706,8 @@
     "lng": 3660.0,
     "alt": 1595.16943359375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick131",
@@ -9710,7 +9717,8 @@
     "lng": 3408.0,
     "alt": 1595.16943359375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick132_2",
@@ -9719,7 +9727,8 @@
     "lat": -23526.140625,
     "lng": 34007.5859375,
     "alt": 1736.6708984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 1
   },
   {
     "name": "MinecraftBrick133_90",
@@ -9809,7 +9818,8 @@
     "lat": -23526.140625,
     "lng": 34007.5859375,
     "alt": 1936.6708984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 4
   },
   {
     "name": "MinecraftBrick142_2",
@@ -9836,7 +9846,8 @@
     "lat": -33191.93359375,
     "lng": 21955.517578125,
     "alt": 1459.0927734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick145",
@@ -9855,7 +9866,8 @@
     "lng": 17731.86328125,
     "alt": 5546.107421875,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick147",
@@ -9892,7 +9904,8 @@
     "lng": 17842.41796875,
     "alt": 5546.107421875,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick151",
@@ -9982,7 +9995,8 @@
     "lat": 22900.791015625,
     "lng": 16791.208984375,
     "alt": 3881.263916015625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick161",
@@ -10038,7 +10052,8 @@
     "lat": -1994.2532958984375,
     "lng": 18102.494140625,
     "alt": 5289.83740234375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick170",
@@ -10048,7 +10063,8 @@
     "lng": -4891.7939453125,
     "alt": 2040.70654296875,
     "coins_in_gold": 10,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick171",
@@ -10181,7 +10197,8 @@
     "lng": 16373.125,
     "alt": 6433.82958984375,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick192",
@@ -10235,7 +10252,8 @@
     "lat": -14861.3232421875,
     "lng": 21620.1796875,
     "alt": 4769.31201171875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick198",
@@ -10272,7 +10290,8 @@
     "lng": 21772.224609375,
     "alt": 4769.31201171875,
     "coins_in_gold": 15,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick201",
@@ -10281,7 +10300,8 @@
     "lat": -15138.2939453125,
     "lng": 21647.240234375,
     "alt": 4769.31201171875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick202",
@@ -10290,7 +10310,8 @@
     "lat": -14986.0693359375,
     "lng": 21772.185546875,
     "alt": 4966.513671875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick203",
@@ -10299,7 +10320,8 @@
     "lat": -15137.44921875,
     "lng": 21647.939453125,
     "alt": 4966.513671875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick204",
@@ -10308,7 +10330,8 @@
     "lat": -14835.0009765625,
     "lng": 21896.212890625,
     "alt": 4769.31201171875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick205",
@@ -10317,7 +10340,8 @@
     "lat": -14831.546875,
     "lng": 21899.001953125,
     "alt": 4966.513671875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick206",
@@ -10326,7 +10350,8 @@
     "lat": -15111.33984375,
     "lng": 21924.81640625,
     "alt": 4769.31201171875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick207",
@@ -10335,7 +10360,8 @@
     "lat": -15265.87890625,
     "lng": 21797.90234375,
     "alt": 4769.31201171875,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick208",
@@ -10344,7 +10370,8 @@
     "lat": -15111.328125,
     "lng": 21924.806640625,
     "alt": 4970.5322265625,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick209",
@@ -10470,7 +10497,12 @@
     "lat": -28565.4453125,
     "lng": 16424.0859375,
     "alt": -70.25227355957031,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3,
+    "actors": [
+      "DLC2_Complete:Purchase_DiamondPickaxe_2",
+      "DLC2_Complete:GiveAchievementDLC18"
+    ]
   },
   {
     "name": "MinecraftBrick222",
@@ -10479,7 +10511,12 @@
     "lat": -28355.296875,
     "lng": 16407.796875,
     "alt": -70.25227355957031,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2,
+    "actors": [
+      "DLC2_Complete:Purchase_IronPickaxe_2",
+      "DLC2_Complete:GiveAchievementDLC17"
+    ]
   },
   {
     "name": "MinecraftBrick223",
@@ -10497,7 +10534,8 @@
     "lat": -12551.9072265625,
     "lng": 40495.51953125,
     "alt": 948.931884765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick225",
@@ -10542,7 +10580,8 @@
     "lat": -19673.203125,
     "lng": 41256.796875,
     "alt": -330.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick232",
@@ -10569,7 +10608,8 @@
     "lat": -14380.0,
     "lng": 32430.0,
     "alt": -2400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick235",
@@ -10606,7 +10646,8 @@
     "lng": 16250.0,
     "alt": 420.0,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick239_28",
@@ -10616,7 +10657,8 @@
     "lng": 19419.36328125,
     "alt": 900.0,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick23_2",
@@ -10694,7 +10736,8 @@
     "lng": 21376.568359375,
     "alt": 403.6053161621094,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick247",
@@ -10748,7 +10791,8 @@
     "lat": -31403.697265625,
     "lng": 16839.517578125,
     "alt": 683.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick252",
@@ -10766,7 +10810,8 @@
     "lat": -31203.697265625,
     "lng": 17039.517578125,
     "alt": 683.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick254",
@@ -10776,7 +10821,8 @@
     "lng": 17039.517578125,
     "alt": 683.1514892578125,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick255",
@@ -10785,7 +10831,8 @@
     "lat": -31603.697265625,
     "lng": 17039.517578125,
     "alt": 683.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick256",
@@ -10803,7 +10850,8 @@
     "lat": -31403.697265625,
     "lng": 17239.517578125,
     "alt": 683.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick258",
@@ -10866,7 +10914,8 @@
     "lat": -31403.697265625,
     "lng": 17039.517578125,
     "alt": 883.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick263",
@@ -10875,7 +10924,8 @@
     "lat": -31603.697265625,
     "lng": 17039.517578125,
     "alt": 883.1514892578125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick264",
@@ -10903,7 +10953,8 @@
     "lng": 20870.96875,
     "alt": 403.5732421875,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick267",
@@ -10975,7 +11026,8 @@
     "lat": -27700.0,
     "lng": 4400.0,
     "alt": 1378.3450927734375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick275",
@@ -10984,7 +11036,8 @@
     "lat": -28010.96875,
     "lng": 14240.9794921875,
     "alt": -130.55247497558594,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick276",
@@ -11074,7 +11127,8 @@
     "lat": -32818.55859375,
     "lng": 13705.041015625,
     "alt": -530.552490234375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick284",
@@ -11129,7 +11183,8 @@
     "lng": 15804.509765625,
     "alt": 404.228515625,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick290",
@@ -11138,7 +11193,8 @@
     "lat": -24100.0,
     "lng": 14740.0,
     "alt": 90.0,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick292_98",
@@ -11165,7 +11221,8 @@
     "lat": -47536.23046875,
     "lng": 42954.47265625,
     "alt": -502.6898498535156,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick295",
@@ -11211,7 +11268,8 @@
     "lng": 13091.0302734375,
     "alt": 199.94923400878906,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick3",
@@ -11221,7 +11279,8 @@
     "lng": 13091.04296875,
     "alt": 413.7093505859375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick30",
@@ -11248,7 +11307,8 @@
     "lat": -48270.47265625,
     "lng": 50331.46484375,
     "alt": 2165.118896484375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick304_125",
@@ -11285,7 +11345,8 @@
     "lng": 55401.89453125,
     "alt": 2000.624755859375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick308",
@@ -11312,7 +11373,8 @@
     "lat": -46233.43359375,
     "lng": 55401.89453125,
     "alt": 2200.624755859375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick311",
@@ -11341,7 +11403,8 @@
     "lat": -1994.2532958984375,
     "lng": 18102.494140625,
     "alt": 4890.146484375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick315",
@@ -11350,7 +11413,8 @@
     "lat": -2029.1278076171875,
     "lng": 17704.017578125,
     "alt": 5289.83740234375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick316",
@@ -11399,7 +11463,8 @@
     "lng": 20601.875,
     "alt": 1552.9019775390625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick321_148",
@@ -11426,7 +11491,8 @@
     "lat": -25461.6875,
     "lng": 25421.25390625,
     "alt": 2580.7578125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick324",
@@ -11500,7 +11566,8 @@
     "lat": -2064.002685546875,
     "lng": 17305.541015625,
     "alt": 5289.83740234375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick331",
@@ -11509,7 +11576,8 @@
     "lat": -2064.002685546875,
     "lng": 17305.541015625,
     "alt": 4889.83740234375,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick332",
@@ -11590,7 +11658,8 @@
     "lat": -17811.11328125,
     "lng": 54166.296875,
     "alt": 4900.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick341_176",
@@ -11600,7 +11669,8 @@
     "lng": 65900.0,
     "alt": 3673.055908203125,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick342",
@@ -11708,7 +11778,8 @@
     "lat": -9938.7705078125,
     "lng": 65459.328125,
     "alt": 577.4940185546875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick354_195",
@@ -11808,7 +11879,8 @@
     "lng": 19449.9609375,
     "alt": 3171.560546875,
     "coins_in_gold": 1,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick383_236",
@@ -11862,7 +11934,8 @@
     "lat": 364.6730041503906,
     "lng": -56550.734375,
     "alt": 7023.91552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick389_246",
@@ -11871,7 +11944,8 @@
     "lat": -3898.392822265625,
     "lng": -46750.1015625,
     "alt": 5799.779296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick38_2",
@@ -11881,7 +11955,8 @@
     "lng": 44370.14453125,
     "alt": 580.1383056640625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick390_249",
@@ -11890,7 +11965,8 @@
     "lat": -19860.197265625,
     "lng": 12455.5078125,
     "alt": 2724.9453125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick391",
@@ -11926,7 +12002,8 @@
     "lat": -19205.83984375,
     "lng": 22723.521484375,
     "alt": 2683.95361328125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick395_260",
@@ -11935,7 +12012,8 @@
     "lat": -14145.7255859375,
     "lng": 64842.87890625,
     "alt": 14068.8095703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick396_263",
@@ -11953,7 +12031,8 @@
     "lat": -13945.7255859375,
     "lng": 65042.87890625,
     "alt": 14068.8095703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick398",
@@ -12016,7 +12095,8 @@
     "lat": -12351.5498046875,
     "lng": 40495.51953125,
     "alt": 948.931884765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick404",
@@ -12061,7 +12141,8 @@
     "lat": -23886.3359375,
     "lng": 38383.640625,
     "alt": 1804.65576171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick409",
@@ -12088,7 +12169,8 @@
     "lat": -27023.150390625,
     "lng": 32465.720703125,
     "alt": 1790.62060546875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick412_2",
@@ -12250,7 +12332,8 @@
     "lat": -17530.5078125,
     "lng": 30422.34375,
     "alt": -2080.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick43",
@@ -12260,7 +12343,8 @@
     "lng": 20617.29296875,
     "alt": 1435.1329345703125,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick430",
@@ -12305,7 +12389,8 @@
     "lat": -14332.83984375,
     "lng": 61619.40234375,
     "alt": 11480.0244140625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick435",
@@ -12314,7 +12399,12 @@
     "lat": -28173.287109375,
     "lng": 16389.86328125,
     "alt": -70.25227355957031,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 4,
+    "actors": [
+      "DLC2_Complete:Purchase_StonePickaxe_8",
+      "DLC2_Complete:GiveAchievementDLC16_13"
+    ]
   },
   {
     "name": "MinecraftBrick436_2",
@@ -12323,7 +12413,12 @@
     "lat": -42432.33984375,
     "lng": 34473.66796875,
     "alt": 1180.6717529296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "actors": [
+      "DLC2_Complete:BP_TeslaCoil_DLC5_3",
+      "DLC2_Complete:Glowline2_2",
+      "DLC2_Complete:DoorAnna11_2"
+    ]
   },
   {
     "name": "MinecraftBrick437_11",
@@ -12368,7 +12463,8 @@
     "lat": -24100.0,
     "lng": 14940.0,
     "alt": -110.0,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick441",
@@ -12377,7 +12473,8 @@
     "lat": -23900.0,
     "lng": 14740.0,
     "alt": -110.0,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick442_5",
@@ -12594,7 +12691,8 @@
     "lng": 44595.0859375,
     "alt": 580.1383056640625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick67",
@@ -12621,7 +12719,8 @@
     "lat": -17415.439453125,
     "lng": 25058.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick70",
@@ -12630,7 +12729,8 @@
     "lat": -17415.439453125,
     "lng": 24858.64453125,
     "alt": -1540.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick71",
@@ -12658,7 +12758,8 @@
     "lng": 24858.64453125,
     "alt": -1540.1341552734375,
     "coins_in_gold": 4,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick74",
@@ -12730,7 +12831,8 @@
     "lat": -17215.439453125,
     "lng": 25058.64453125,
     "alt": -1340.1341552734375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick82",
@@ -12775,7 +12877,8 @@
     "lat": -8326.4296875,
     "lng": 16655.904296875,
     "alt": 3350.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick87",
@@ -12811,7 +12914,8 @@
     "lat": -23566.10546875,
     "lng": 52188.34375,
     "alt": 517.449462890625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick91",
@@ -12857,7 +12961,8 @@
     "lng": 14740.0,
     "alt": -110.0,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick96",
@@ -12867,7 +12972,8 @@
     "lng": 16002.419921875,
     "alt": 404.228515625,
     "coins_in_gold": 5,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick97",
@@ -13020,7 +13126,8 @@
     "lat": -16575.458984375,
     "lng": 37262.37890625,
     "alt": 4022.694091796875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrickRespawnable47",
@@ -13039,6 +13146,101 @@
     "lng": -46795.9921875,
     "alt": 7669.580078125,
     "hits_to_break": 7
+  },
+  {
+    "name": "MinecraftBrickRespawnable11",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -46687.125,
+    "lng": 38970.84765625,
+    "alt": 845.4063720703125
+  },
+  {
+    "name": "MinecraftBrickRespawnable12",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -46687.125,
+    "lng": 38764.08203125,
+    "alt": 845.4063720703125
+  },
+  {
+    "name": "MinecraftBrickRespawnable21",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -27230.173828125,
+    "lng": 15973.8408203125,
+    "alt": -42.494197845458984,
+    "brick_type": 2,
+    "actors": [
+      "DLC2_Complete:Shop_Health_5",
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2",
+      "DLC2_Complete:Talk_2"
+    ]
+  },
+  {
+    "name": "MinecraftBrickRespawnable22",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -27268.337890625,
+    "lng": 15708.0263671875,
+    "alt": -42.49417495727539,
+    "brick_type": 2,
+    "actors": [
+      "DLC2_Complete:Shop_Health_regen",
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2",
+      "DLC2_Complete:Talk_2"
+    ]
+  },
+  {
+    "name": "MinecraftBrickRespawnable23",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -27248.427734375,
+    "lng": 15846.7158203125,
+    "alt": -42.49419403076172,
+    "brick_type": 2,
+    "actors": [
+      "DLC2_Complete:BP_PickaxeDamage+1_2",
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2",
+      "DLC2_Complete:Talk_2"
+    ]
+  },
+  {
+    "name": "MinecraftBrickRespawnable3_2",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -26465.626953125,
+    "lng": 18486.37109375,
+    "alt": -17.814804077148438,
+    "brick_type": 2
+  },
+  {
+    "name": "MinecraftBrickRespawnable43",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_Complete",
+    "lat": -27285.353515625,
+    "lng": 15589.5166015625,
+    "alt": -42.49445343017578,
+    "brick_type": 2,
+    "actors": [
+      "DLC2_Complete:BP_UnlockMap_2",
+      "DLC2_Complete:GiveAchievementDLC43_54",
+      "DLC2_Complete:TutorialButtons10_2",
+      "DLC2_Complete:Counter3_2",
+      "DLC2_Complete:DestroyObjectsOnTrigger8_2",
+      "DLC2_Complete:ShopKid2",
+      "DLC2_Complete:Talk2",
+      "DLC2_Complete:Talk_2"
+    ]
   },
   {
     "name": "BankElectricityPuzzle_1_PedestalButton_ResetBattery",
@@ -14238,8 +14440,7 @@
     "area": "DLC2_Complete",
     "lat": 15560.884765625,
     "lng": 20652.861328125,
-    "alt": 3572.840087890625,
-    "other_cap": "DLC2_Complete:A1FastTravelPipeCap2"
+    "alt": 3572.840087890625
   },
   {
     "name": "A1FastTravelPipeCap2",
@@ -14247,8 +14448,7 @@
     "area": "DLC2_Complete",
     "lat": -32586.25390625,
     "lng": 17408.404296875,
-    "alt": 379.67572021484375,
-    "other_cap": "DLC2_Complete:A1FastTravelPipeCap"
+    "alt": 379.67572021484375
   },
   {
     "name": "A2FastTravelPipeCap",
@@ -14256,8 +14456,7 @@
     "area": "DLC2_Complete",
     "lat": -7363.88330078125,
     "lng": 61197.86328125,
-    "alt": 4666.0,
-    "other_cap": "DLC2_Complete:A2FastTravelPipeCap2"
+    "alt": 4666.0
   },
   {
     "name": "A2FastTravelPipeCap2",
@@ -14265,8 +14464,7 @@
     "area": "DLC2_Complete",
     "lat": -32588.25390625,
     "lng": 17980.796875,
-    "alt": 382.5982666015625,
-    "other_cap": "DLC2_Complete:A2FastTravelPipeCap"
+    "alt": 382.5982666015625
   },
   {
     "name": "A3FastTravelPipeCap",
@@ -14274,8 +14472,7 @@
     "area": "DLC2_Complete",
     "lat": -43396.73046875,
     "lng": 8937.830078125,
-    "alt": 2463.414306640625,
-    "other_cap": "DLC2_Complete:A3FastTravelPipeCap3"
+    "alt": 2463.414306640625
   },
   {
     "name": "A3FastTravelPipeCap3",
@@ -14283,8 +14480,7 @@
     "area": "DLC2_Complete",
     "lat": -32586.25390625,
     "lng": 18539.6328125,
-    "alt": 381.9172668457031,
-    "other_cap": "DLC2_Complete:A3FastTravelPipeCap"
+    "alt": 381.9172668457031
   },
   {
     "name": "A4FastTravelPipeCap",
@@ -14292,8 +14488,7 @@
     "area": "DLC2_Complete",
     "lat": -60099.109375,
     "lng": 57716.53125,
-    "alt": 1278.751220703125,
-    "other_cap": "DLC2_Complete:A4FastTravelPipeCap4"
+    "alt": 1278.751220703125
   },
   {
     "name": "A4FastTravelPipeCap4",
@@ -14301,8 +14496,7 @@
     "area": "DLC2_Complete",
     "lat": -32586.25390625,
     "lng": 19086.947265625,
-    "alt": 380.5115661621094,
-    "other_cap": "DLC2_Complete:A4FastTravelPipeCap"
+    "alt": 380.5115661621094
   },
   {
     "name": "A4SmallWallPipeCap_BeachSide",
@@ -14310,8 +14504,7 @@
     "area": "DLC2_Complete",
     "lat": -48333.3828125,
     "lng": 42753.484375,
-    "alt": 1487.4796142578125,
-    "other_cap": "DLC2_Complete:A4SmallWallPipeCap_CubeSide"
+    "alt": 1487.4796142578125
   },
   {
     "name": "A4SmallWallPipeCap_CubeSide",
@@ -14319,8 +14512,7 @@
     "area": "DLC2_Complete",
     "lat": -48088.921875,
     "lng": 42462.2578125,
-    "alt": -53.9244384765625,
-    "other_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
+    "alt": -53.9244384765625
   },
   {
     "name": "A5FastTravelPipe_ExitCombatFinale",
@@ -14368,8 +14560,7 @@
     "area": "DLC2_Complete",
     "lat": 12369.5380859375,
     "lng": 20962.060546875,
-    "alt": 3910.046875,
-    "other_cap": "DLC2_Complete:PipeCap9_5"
+    "alt": 3910.046875
   },
   {
     "name": "PipeCap2",
@@ -14377,8 +14568,7 @@
     "area": "DLC2_Complete",
     "lat": -13181.89453125,
     "lng": 56968.3984375,
-    "alt": 786.9484252929688,
-    "other_cap": "DLC2_Complete:PipeCap2"
+    "alt": 786.9484252929688
   },
   {
     "name": "PipeCap4_2",
@@ -14402,8 +14592,7 @@
     "area": "DLC2_Complete",
     "lat": 13195.0986328125,
     "lng": 22501.416015625,
-    "alt": 3545.837890625,
-    "other_cap": "DLC2_Complete:PipeCap14"
+    "alt": 3545.837890625
   },
   {
     "name": "PipeCap_2",
@@ -14420,7 +14609,7 @@
     "lat": -44912.16796875,
     "lng": 51589.5,
     "alt": 2909.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew6_1"
+    "other_pipe": 1
   },
   {
     "name": "PipesystemNew11",
@@ -14429,7 +14618,7 @@
     "lat": -46867.0625,
     "lng": 50368.0234375,
     "alt": 2493.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew3"
+    "other_pipe": 3
   },
   {
     "name": "PipesystemNew12_5",
@@ -14438,7 +14627,7 @@
     "lat": -44372.0,
     "lng": 19610.0859375,
     "alt": 27491.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew9_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew2",
@@ -14447,7 +14636,7 @@
     "lat": -48137.3203125,
     "lng": 52687.015625,
     "alt": 1995.3919677734375,
-    "other_pipe": "DLC2_Complete:PipesystemNew_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew3",
@@ -14456,7 +14645,7 @@
     "lat": -48244.4140625,
     "lng": 51430.28125,
     "alt": 2113.39208984375,
-    "other_pipe": "DLC2_Complete:PipesystemNew11"
+    "other_pipe": 11
   },
   {
     "name": "PipesystemNew4",
@@ -14465,7 +14654,7 @@
     "lat": -13603.6845703125,
     "lng": 61608.2109375,
     "alt": 1640.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew5"
+    "other_pipe": 5
   },
   {
     "name": "PipesystemNew5",
@@ -14474,7 +14663,7 @@
     "lat": -12294.8603515625,
     "lng": 62915.63671875,
     "alt": 1610.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew4"
+    "other_pipe": 4
   },
   {
     "name": "PipesystemNew6_1",
@@ -14483,7 +14672,7 @@
     "lat": -43757.26171875,
     "lng": 52092.3125,
     "alt": 1271.7386474609375,
-    "other_pipe": "DLC2_Complete:PipesystemNew10"
+    "other_pipe": 10
   },
   {
     "name": "PipesystemNew7_2",
@@ -14492,7 +14681,7 @@
     "lat": -48181.70703125,
     "lng": 42572.3984375,
     "alt": 1440.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew8",
+    "other_pipe": 8,
     "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_BeachSide"
   },
   {
@@ -14502,7 +14691,7 @@
     "lat": -48240.84765625,
     "lng": 42642.87109375,
     "alt": -101.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew7_2",
+    "other_pipe": 2,
     "nearest_cap": "DLC2_Complete:A4SmallWallPipeCap_CubeSide"
   },
   {
@@ -14512,7 +14701,7 @@
     "lat": -21942.0,
     "lng": -73832.0,
     "alt": -9857.0,
-    "other_pipe": "DLC2_Complete:PipesystemNew12_5"
+    "other_pipe": 5
   },
   {
     "name": "PipesystemNew_2",
@@ -14521,7 +14710,7 @@
     "lat": -48115.3359375,
     "lng": 52665.15625,
     "alt": 1995.3919677734375,
-    "other_pipe": "DLC2_Complete:PipesystemNew2"
+    "other_pipe": 2
   },
   {
     "name": "Area1_FastTravelPipe",
@@ -14530,7 +14719,7 @@
     "lat": 14537.7373046875,
     "lng": 20063.669921875,
     "alt": 3337.74609375,
-    "other_pipe": "DLC2_Complete:PipeToArea1",
+    "other_pipe": 1,
     "nearest_cap": "DLC2_Complete:A1FastTravelPipeCap"
   },
   {
@@ -14540,7 +14729,7 @@
     "lat": -6527.8447265625,
     "lng": 62033.18359375,
     "alt": 4430.0,
-    "other_pipe": "DLC2_Complete:PipeToArea2",
+    "other_pipe": 2,
     "nearest_cap": "DLC2_Complete:A2FastTravelPipeCap"
   },
   {
@@ -14559,7 +14748,7 @@
     "lat": -44234.078125,
     "lng": 9774.3837890625,
     "alt": 2226.891357421875,
-    "other_pipe": "DLC2_Complete:PipeToArea3",
+    "other_pipe": 3,
     "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap"
   },
   {
@@ -14665,7 +14854,7 @@
     "lat": -60760.12109375,
     "lng": 58695.98828125,
     "alt": 1034.8792724609375,
-    "other_pipe": "DLC2_Complete:PipeToArea4",
+    "other_pipe": 4,
     "nearest_cap": "DLC2_Complete:A4FastTravelPipeCap"
   },
   {
@@ -14675,7 +14864,7 @@
     "lat": -49335.3359375,
     "lng": 55097.140625,
     "alt": 2831.169921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_334"
+    "other_pipe": 334
   },
   {
     "name": "PipesystemNewDLC11_405",
@@ -14684,7 +14873,7 @@
     "lat": 13449.060546875,
     "lng": 23204.26171875,
     "alt": 3128.976806640625,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC12_407",
+    "other_pipe": 407,
     "nearest_cap": "DLC2_Complete:PipeCap9_5"
   },
   {
@@ -14694,7 +14883,7 @@
     "lat": 12670.26171875,
     "lng": 20689.521484375,
     "alt": 3152.341796875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC11_405",
+    "other_pipe": 405,
     "nearest_cap": "DLC2_Complete:PipeCap14"
   },
   {
@@ -14704,7 +14893,7 @@
     "lat": -33614.1796875,
     "lng": 22480.037109375,
     "alt": -420.270263671875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC19"
+    "other_pipe": 19
   },
   {
     "name": "PipesystemNewDLC19",
@@ -14713,7 +14902,7 @@
     "lat": -31866.4375,
     "lng": 18459.4375,
     "alt": -2803.29541015625,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC16_2167"
+    "other_pipe": 2167
   },
   {
     "name": "PipesystemNewDLC2",
@@ -14722,7 +14911,7 @@
     "lat": -39630.97265625,
     "lng": 1548.9307861328125,
     "alt": 5275.92578125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC3"
+    "other_pipe": 3
   },
   {
     "name": "PipesystemNewDLC2_Middle",
@@ -14731,7 +14920,7 @@
     "lat": -12769.98046875,
     "lng": 56546.48046875,
     "alt": 671.1775512695312,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_Start",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:PipeCap2"
   },
   {
@@ -14741,7 +14930,7 @@
     "lat": -35944.9765625,
     "lng": 2373.036376953125,
     "alt": 1909.189453125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC3_End",
@@ -14759,7 +14948,7 @@
     "lat": -1150.75,
     "lng": 36981.75390625,
     "alt": 2538.18017578125,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC6",
+    "other_pipe": 6,
     "nearest_cap": "DLC2_Complete:PipeCap4_2"
   },
   {
@@ -14769,7 +14958,7 @@
     "lat": 2415.970947265625,
     "lng": 30174.87890625,
     "alt": 5459.419921875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC5_3570"
+    "other_pipe": 3570
   },
   {
     "name": "PipesystemNewDLC7_3581",
@@ -14778,7 +14967,7 @@
     "lat": -11389.6220703125,
     "lng": 57514.05859375,
     "alt": 4687.990234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC8"
+    "other_pipe": 8
   },
   {
     "name": "PipesystemNewDLC8",
@@ -14787,7 +14976,7 @@
     "lat": -10963.87890625,
     "lng": 57091.01953125,
     "alt": 4687.990234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC7_3581"
+    "other_pipe": 3581
   },
   {
     "name": "PipesystemNewDLC9_2017",
@@ -14796,7 +14985,7 @@
     "lat": -2155.849365234375,
     "lng": -59503.16796875,
     "alt": 2302.79638671875,
-    "other_pipe": "DLC2_Complete:RainbowTownShortcutPipe"
+    "other_pipe": 0
   },
   {
     "name": "PipesystemNewDLC_334",
@@ -14805,7 +14994,7 @@
     "lat": -49338.26171875,
     "lng": 55098.828125,
     "alt": 1986.86865234375,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC10"
+    "other_pipe": 10
   },
   {
     "name": "PipesystemNewDLC_BathToSecretLavaAreaToBath1",
@@ -14814,7 +15003,7 @@
     "lat": 1614.123046875,
     "lng": 10273.6982421875,
     "alt": 3074.8310546875,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNewDLC_BathToSecretLavaAreaToBath2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC_CombatExitPipe",
@@ -14823,7 +15012,7 @@
     "lat": -20788.62890625,
     "lng": -32291.802734375,
     "alt": 5625.8564453125,
-    "other_pipe": "DLC2_Complete:PipeToAreaBoss2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC_Start",
@@ -14832,7 +15021,7 @@
     "lat": -12820.93359375,
     "lng": 55579.390625,
     "alt": 670.0,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_Start",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:PipeCap2"
   },
   {
@@ -14842,7 +15031,7 @@
     "lat": -33236.0,
     "lng": 17410.0,
     "alt": 842.0,
-    "other_pipe": "DLC2_Complete:Area1_FastTravelPipe",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:A1FastTravelPipeCap2"
   },
   {
@@ -14852,7 +15041,7 @@
     "lat": -33236.0,
     "lng": 17984.0,
     "alt": 842.0,
-    "other_pipe": "DLC2_Complete:Area2ShortcutPipe",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:A2FastTravelPipeCap2"
   },
   {
@@ -14862,7 +15051,7 @@
     "lat": -33236.0,
     "lng": 18543.0,
     "alt": 842.0,
-    "other_pipe": "DLC2_Complete:DLC3_upstairsPipe",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:A3FastTravelPipeCap3"
   },
   {
@@ -14872,7 +15061,7 @@
     "lat": -33236.0,
     "lng": 19089.0,
     "alt": 842.0,
-    "other_pipe": "DLC2_Complete:Pipesystem_Area4",
+    "other_pipe": 4,
     "nearest_cap": "DLC2_Complete:A4FastTravelPipeCap4"
   },
   {
@@ -14882,7 +15071,7 @@
     "lat": -31966.03125,
     "lng": 20665.326171875,
     "alt": -456.35546875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_CombatExitPipe",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:A5FastTravelPipe_ExitCombatFinale"
   },
   {
@@ -14892,7 +15081,7 @@
     "lat": -33236.0,
     "lng": 19643.0,
     "alt": 842.0,
-    "other_pipe": "DLC2_Complete:RainbowTownShortcutPipe",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Complete:A5FastTravelPipeCap5"
   },
   {
@@ -14902,7 +15091,7 @@
     "lat": -20467.703125,
     "lng": -67755.71875,
     "alt": 9166.0439453125,
-    "other_pipe": "DLC2_Complete:PipeToAreaSpecial"
+    "other_pipe": 0
   },
   {
     "name": "PlayerStart_1",
@@ -14921,6 +15110,7 @@
     "alt": -72.95669555664062,
     "is_in_shop": true,
     "can_be_picked_up": false,
+    "price_type": 0,
     "cost": 200,
     "actors": [
       "DLC2_Complete:GiveAchievementDLC18"
@@ -14934,6 +15124,7 @@
     "lng": 16443.494140625,
     "alt": -57.282127380371094,
     "can_be_picked_up": false,
+    "price_type": 0,
     "cost": 100,
     "actors": [
       "DLC2_Complete:GiveAchievementDLC17"
@@ -18301,7 +18492,7 @@
     "lat": -16200.4560546875,
     "lng": 59717.27734375,
     "alt": 3980.403564453125,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_426",
@@ -18310,7 +18501,7 @@
     "lat": -12756.4208984375,
     "lng": 65203.9609375,
     "alt": 3278.85791015625,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_428",
@@ -18319,7 +18510,7 @@
     "lat": -13849.5703125,
     "lng": 61255.49609375,
     "alt": 10265.8046875,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_430",
@@ -18328,7 +18519,7 @@
     "lat": -10266.8232421875,
     "lng": 57378.828125,
     "alt": 726.0514526367188,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_432",
@@ -18337,7 +18528,7 @@
     "lat": -11364.00390625,
     "lng": 56679.44921875,
     "alt": 1848.478271484375,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_471",
@@ -18346,7 +18537,7 @@
     "lat": -7507.99462890625,
     "lng": 61151.1640625,
     "alt": 3815.596923828125,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_560",
@@ -18355,7 +18546,7 @@
     "lat": -6826.0,
     "lng": 59955.0,
     "alt": 4196.00048828125,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "ValveCarriable4",
@@ -18364,7 +18555,7 @@
     "lat": -10631.638671875,
     "lng": 62274.234375,
     "alt": 443.014404296875,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "ValveCarriable_1976",
@@ -18373,7 +18564,7 @@
     "lat": -15603.2978515625,
     "lng": 61870.984375,
     "alt": 430.830322265625,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "BallButton2_2",
@@ -18406,7 +18597,7 @@
     "lat": -20417.4140625,
     "lng": -29262.650390625,
     "alt": 6795.0,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_FinalBoss:BossPuzzle0_Glowline",
       "DLC2_FinalBoss:BossPuzzle0_Door2"
@@ -18419,7 +18610,7 @@
     "lat": -24898.080078125,
     "lng": -23653.373046875,
     "alt": 7199.80517578125,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_FinalBoss:BossPuzzle3_ButtonGlowline"
     ]
@@ -18439,7 +18630,7 @@
     "lat": -24798.21875,
     "lng": -21756.060546875,
     "alt": 5759.98876953125,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "Chest_2",
@@ -18448,7 +18639,7 @@
     "lat": -18593.673828125,
     "lng": -26222.0078125,
     "alt": 8395.099609375,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "Coin2",
@@ -19388,7 +19579,7 @@
     "lat": -20815.33203125,
     "lng": -29347.435546875,
     "alt": 6087.65087890625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "BossPuzzleEnd2_KeyLockPlastic",
@@ -19397,7 +19588,7 @@
     "lat": -22898.40234375,
     "lng": -28363.3671875,
     "alt": 6087.65087890625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "BossPuzzleEnd3_KeyLockPlastic",
@@ -19406,7 +19597,7 @@
     "lat": -22095.98828125,
     "lng": -26576.89453125,
     "alt": 6087.65087890625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "Boss_Key1",
@@ -19415,7 +19606,7 @@
     "lat": -18492.396484375,
     "lng": -26333.28515625,
     "alt": 7249.45556640625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "Boss_Key2",
@@ -19424,7 +19615,7 @@
     "lat": -22192.962890625,
     "lng": -25779.326171875,
     "alt": 6049.45556640625,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "Boss_Key3",
@@ -19433,7 +19624,7 @@
     "lat": -25142.982421875,
     "lng": -25289.48828125,
     "alt": 7255.0,
-    "color": "ButtonColor::NewEnumerator3"
+    "color": 3
   },
   {
     "name": "BossPuzzle3_MatchBox",
@@ -19451,7 +19642,9 @@
     "lng": 4344.3271484375,
     "alt": 1780.5892333984375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "hits_taken": 3,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick166",
@@ -19461,7 +19654,9 @@
     "lng": 4343.66064453125,
     "alt": 2080.590087890625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "hits_taken": 10,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick185",
@@ -19471,7 +19666,8 @@
     "lng": 4343.3779296875,
     "alt": 2380.589599609375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick187",
@@ -19626,7 +19822,7 @@
     "lat": -9792.423828125,
     "lng": -5053.1416015625,
     "alt": 3239.46875,
-    "other_pipe": "DLC2_FinalBoss:BossArea_BaronPipe2"
+    "other_pipe": 2
   },
   {
     "name": "BossArea_BaronPipe2",
@@ -19635,7 +19831,7 @@
     "lat": -19427.09765625,
     "lng": -30353.6875,
     "alt": 7000.56689453125,
-    "other_pipe": "DLC2_FinalBoss:BossArea_BaronPipe1",
+    "other_pipe": 1,
     "nearest_cap": "DLC2_FinalBoss:PipeCap12_2"
   },
   {
@@ -19700,7 +19896,7 @@
     "lat": -284105.0,
     "lng": 621.0,
     "alt": 9564.8876953125,
-    "spawns": "BuyTranslocator_Fake_C"
+    "spawns": 0
   },
   {
     "name": "Door33_968",
@@ -19824,7 +20020,7 @@
     "lat": -284030.0,
     "lng": -2077.0,
     "alt": 9147.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer",
+    "other_pipe": 0,
     "nearest_cap": "DLC2_Area0:PipeCap10_2"
   },
   {
@@ -20655,7 +20851,7 @@
     "lat": -290017.5,
     "lng": -2067.0,
     "alt": 10764.1484375,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "ValveCarriable_Orange",
@@ -20664,7 +20860,7 @@
     "lat": -286630.25,
     "lng": 1408.9046630859375,
     "alt": 9887.1015625,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "ValveCarriable_Purple",
@@ -20673,7 +20869,7 @@
     "lat": -284053.03125,
     "lng": 15.205077171325684,
     "alt": 9785.2578125,
-    "color": "EPipeColour::NewEnumerator2"
+    "color": 2
   },
   {
     "name": "ValveSlot2_2",
@@ -20682,7 +20878,7 @@
     "lat": -290014.9375,
     "lng": -2064.678955078125,
     "alt": 10688.0,
-    "color": "EPipeColour::NewEnumerator5",
+    "color": 5,
     "actors": [
       "DLC2_Area0:DoorAnna_2",
       "DLC2_Area0:Talk_Foreman_Intro",
@@ -20699,7 +20895,7 @@
     "lat": -284052.21875,
     "lng": 14.705077171325684,
     "alt": 9785.34375,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "Bones_2",
@@ -20753,7 +20949,7 @@
     "lat": -1669.7728271484375,
     "lng": -16777.35546875,
     "alt": 3019.99951171875,
-    "spawns": "BuyHealthRegenMax+1_C"
+    "spawns": 0
   },
   {
     "name": "Chest4_2",
@@ -20780,7 +20976,7 @@
     "lat": 1305.5433349609375,
     "lng": 7011.2158203125,
     "alt": -577.216796875,
-    "spawns": "BP_BuyGunCapacity+3shots_C"
+    "spawns": 0
   },
   {
     "name": "SecretLavaArea_Chest02",
@@ -20789,7 +20985,7 @@
     "lat": 6816.96044921875,
     "lng": -1548.90771484375,
     "alt": 286.0,
-    "spawns": "BP_BuyBoomeraxePenetration_C"
+    "spawns": 0
   },
   {
     "name": "SecretLavaArea_Chest04",
@@ -20816,7 +21012,7 @@
     "lat": 11609.4189453125,
     "lng": -1078.1513671875,
     "alt": 2536.85595703125,
-    "spawns": "BP_BuyGunDamage+100pct_C"
+    "spawns": 0
   },
   {
     "name": "SecretLavaArea_Chest08",
@@ -20843,7 +21039,7 @@
     "lat": 720.5151977539062,
     "lng": -4530.2333984375,
     "alt": 2486.6982421875,
-    "spawns": "BuyCritChance+5_C"
+    "spawns": 0
   },
   {
     "name": "SecretLavaArea_Chest11",
@@ -20861,7 +21057,7 @@
     "lat": 2662.931640625,
     "lng": -14628.369140625,
     "alt": 714.7802734375,
-    "spawns": "BP_PurchaseHealth+1_C"
+    "spawns": 0
   },
   {
     "name": "SecretLavaArea_Chest12_6",
@@ -21907,7 +22103,8 @@
     "lat": -32.317893981933594,
     "lng": -851.3427734375,
     "alt": 768.17529296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 3
   },
   {
     "name": "MinecraftBrick102",
@@ -21916,7 +22113,8 @@
     "lat": 1006.221435546875,
     "lng": 8394.4326171875,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick103",
@@ -21925,7 +22123,8 @@
     "lat": 1006.7858276367188,
     "lng": 8194.4326171875,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick104",
@@ -21934,7 +22133,8 @@
     "lat": 6360.9921875,
     "lng": -35.20418167114258,
     "alt": 32.784423828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick105",
@@ -21943,7 +22143,8 @@
     "lat": 6112.279296875,
     "lng": -35.20167922973633,
     "alt": -20.786865234375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick106",
@@ -21952,7 +22153,8 @@
     "lat": 6360.9921875,
     "lng": 214.7623748779297,
     "alt": -56.501220703125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick107",
@@ -21961,7 +22163,9 @@
     "lat": 6112.279296875,
     "lng": 214.64524841308594,
     "alt": -38.64404296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 3,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick108_7",
@@ -21970,7 +22174,8 @@
     "lat": -32.317893981933594,
     "lng": -851.3427734375,
     "alt": 968.17529296875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick109",
@@ -21980,7 +22185,8 @@
     "lng": -35.20613479614258,
     "alt": -218.91796875,
     "coins_in_gold": 1,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick10_15",
@@ -21998,7 +22204,8 @@
     "lat": 808.479248046875,
     "lng": 8394.4326171875,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick110",
@@ -22008,7 +22215,8 @@
     "lng": -35.20363235473633,
     "alt": -272.489013671875,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick111",
@@ -22018,7 +22226,8 @@
     "lng": 214.7604217529297,
     "alt": -308.203369140625,
     "coins_in_gold": 2,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick112",
@@ -22036,7 +22245,8 @@
     "lat": 6612.89404296875,
     "lng": -35.20887756347656,
     "alt": -128.727783203125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick114",
@@ -22045,7 +22255,8 @@
     "lat": 6612.93896484375,
     "lng": -287.6285705566406,
     "alt": -199.719482421875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick115",
@@ -22054,7 +22265,8 @@
     "lat": 9089.2060546875,
     "lng": 785.38330078125,
     "alt": 1576.8359375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 4
   },
   {
     "name": "MinecraftBrick116",
@@ -22081,7 +22293,9 @@
     "lat": 809.0436401367188,
     "lng": 8194.4326171875,
     "alt": 400.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 2,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick13",
@@ -22090,7 +22304,8 @@
     "lat": 809.0436401367188,
     "lng": 8194.4326171875,
     "alt": 200.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 1
   },
   {
     "name": "MinecraftBrick14",
@@ -22100,7 +22315,8 @@
     "lng": -1036.774169921875,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick15",
@@ -22110,7 +22326,8 @@
     "lng": -1031.9373779296875,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick16",
@@ -22120,7 +22337,8 @@
     "lng": -1284.3804931640625,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick17",
@@ -22130,7 +22348,8 @@
     "lng": -1281.599853515625,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick18",
@@ -22140,7 +22359,8 @@
     "lng": -1533.368408203125,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick19",
@@ -22150,7 +22370,8 @@
     "lng": -1531.4810791015625,
     "alt": 458.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick20",
@@ -22160,7 +22381,8 @@
     "lng": -1781.9954833984375,
     "alt": 404.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick21",
@@ -22170,7 +22392,8 @@
     "lng": -1781.0157470703125,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick22",
@@ -22180,7 +22403,8 @@
     "lng": -2031.0078125,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick23_36",
@@ -22190,7 +22414,8 @@
     "lng": -1286.5533447265625,
     "alt": 458.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick24",
@@ -22200,7 +22425,8 @@
     "lng": -1536.30859375,
     "alt": 404.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick25",
@@ -22210,7 +22436,8 @@
     "lng": -1787.1046142578125,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick26",
@@ -22220,7 +22447,8 @@
     "lng": -2035.93603515625,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick27",
@@ -22230,7 +22458,8 @@
     "lng": -1286.46435546875,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick28",
@@ -22240,7 +22469,8 @@
     "lng": -1536.2264404296875,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick29",
@@ -22250,7 +22480,8 @@
     "lng": -1786.079345703125,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick291_2",
@@ -22269,7 +22500,8 @@
     "lng": -787.8240966796875,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick3",
@@ -22279,7 +22511,8 @@
     "lng": -782.8720092773438,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick31",
@@ -22289,7 +22522,8 @@
     "lng": -1036.888427734375,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick313",
@@ -22343,7 +22577,8 @@
     "lat": 6612.99560546875,
     "lng": -285.4269104003906,
     "alt": 305.213134765625,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 3
   },
   {
     "name": "MinecraftBrick37_47",
@@ -22370,7 +22605,8 @@
     "lat": 6864.50537109375,
     "lng": -35.47187805175781,
     "alt": 67.573486328125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 1
   },
   {
     "name": "MinecraftBrick40",
@@ -22398,7 +22634,8 @@
     "lng": 8020.4892578125,
     "alt": 3687.0341796875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick429",
@@ -22408,7 +22645,8 @@
     "lng": 7942.8408203125,
     "alt": 3987.0341796875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick42_83",
@@ -22418,7 +22656,8 @@
     "lng": -1036.774169921875,
     "alt": 169.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick430",
@@ -22428,7 +22667,8 @@
     "lng": 8020.4892578125,
     "alt": 3987.0341796875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick43_52",
@@ -22474,7 +22714,8 @@
     "lng": -1031.9373779296875,
     "alt": 187.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick48_85",
@@ -22484,7 +22725,8 @@
     "lng": -1284.3804931640625,
     "alt": 187.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick49_86",
@@ -22494,7 +22736,8 @@
     "lng": -1281.599853515625,
     "alt": 169.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick4_10",
@@ -22503,7 +22746,8 @@
     "lat": -2194.51220703125,
     "lng": 7659.328125,
     "alt": 988.81201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 1
   },
   {
     "name": "MinecraftBrick50_87",
@@ -22513,7 +22757,8 @@
     "lng": -1533.368408203125,
     "alt": 169.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick51",
@@ -22523,7 +22768,8 @@
     "lng": -3762.46826171875,
     "alt": 458.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick55",
@@ -22533,7 +22779,8 @@
     "lng": -4012.690673828125,
     "alt": 404.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick56",
@@ -22543,7 +22790,8 @@
     "lng": -4263.923828125,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick57",
@@ -22553,7 +22801,8 @@
     "lng": -4512.61669921875,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick58",
@@ -22563,7 +22812,8 @@
     "lng": -3762.80908203125,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick59",
@@ -22573,7 +22823,8 @@
     "lng": -4012.782958984375,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick5_5",
@@ -22592,7 +22843,8 @@
     "lng": -787.8240966796875,
     "alt": 187.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick60",
@@ -22602,7 +22854,8 @@
     "lng": -4262.93017578125,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick61",
@@ -22612,7 +22865,8 @@
     "lng": -4512.5888671875,
     "alt": 404.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick62_8",
@@ -22622,7 +22876,8 @@
     "lng": -2760.75048828125,
     "alt": 422.28564453125,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick63",
@@ -22632,7 +22887,8 @@
     "lng": -3010.67919921875,
     "alt": 404.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick64",
@@ -22642,7 +22898,8 @@
     "lng": -3260.9013671875,
     "alt": 422.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick65",
@@ -22652,7 +22909,8 @@
     "lng": -3509.964111328125,
     "alt": 404.142822265625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick66",
@@ -22662,7 +22920,8 @@
     "lng": -2760.77587890625,
     "alt": 440.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick67",
@@ -22672,7 +22931,8 @@
     "lng": -3010.60888671875,
     "alt": 422.142822265625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick68",
@@ -22682,7 +22942,8 @@
     "lng": -3259.9375,
     "alt": 439.857177734375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick69",
@@ -22692,7 +22953,8 @@
     "lng": -3510.041259765625,
     "alt": 421.857177734375,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick7",
@@ -22702,7 +22964,8 @@
     "lng": -782.8720092773438,
     "alt": 169.0,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick70",
@@ -22712,7 +22975,8 @@
     "lng": -3762.46826171875,
     "alt": 205.99951171875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick74",
@@ -22721,7 +22985,8 @@
     "lat": 2631.942138671875,
     "lng": -3762.59033203125,
     "alt": 187.99951171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick75",
@@ -22731,7 +22996,8 @@
     "lng": -4012.573974609375,
     "alt": 187.99951171875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick78",
@@ -22741,7 +23007,8 @@
     "lng": -2760.54736328125,
     "alt": 170.28515625,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick79",
@@ -22751,7 +23018,8 @@
     "lng": -3010.39453125,
     "alt": 151.99951171875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick8",
@@ -22770,7 +23038,8 @@
     "lng": -3260.7080078125,
     "alt": 169.99951171875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick81",
@@ -22779,7 +23048,8 @@
     "lat": 2881.781982421875,
     "lng": -3509.760986328125,
     "alt": 152.142333984375,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick84",
@@ -22788,7 +23058,8 @@
     "lat": 2632.0908203125,
     "lng": -3259.7578125,
     "alt": 187.856689453125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick85",
@@ -22798,7 +23069,8 @@
     "lng": -3509.851806640625,
     "alt": 169.856689453125,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick87",
@@ -22825,7 +23097,8 @@
     "lat": 8107.900390625,
     "lng": 6228.39453125,
     "alt": -2715.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick9",
@@ -22861,7 +23134,8 @@
     "lat": -2479.64990234375,
     "lng": 7764.189453125,
     "alt": 912.50732421875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 1
   },
   {
     "name": "MinecraftBrick93",
@@ -22871,7 +23145,8 @@
     "lng": 7942.8408203125,
     "alt": 3687.0341796875,
     "hits_to_break": 20,
-    "is_obsidian": true
+    "is_obsidian": true,
+    "brick_type": 1
   },
   {
     "name": "MinecraftBrick94",
@@ -22889,7 +23164,11 @@
     "lat": 8963.63671875,
     "lng": 819.0269165039062,
     "alt": 1160.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 2,
+    "actors": [
+      "DLC2_SecretLavaArea:SecretLavaArea_RelayLadder"
+    ]
   },
   {
     "name": "MinecraftBrick96",
@@ -22916,7 +23195,8 @@
     "lat": 809.0445556640625,
     "lng": 7994.4326171875,
     "alt": 600.0,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 4
   },
   {
     "name": "MinecraftBrick99",
@@ -22934,7 +23214,8 @@
     "lat": -2194.51220703125,
     "lng": 7659.328125,
     "alt": 788.81201171875,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "hits_taken": 4
   },
   {
     "name": "MinecraftBrick_AttachedToStalagmite1",
@@ -22971,6 +23252,22 @@
     "lng": -9518.91796875,
     "alt": 1997.17236328125,
     "hits_to_break": 7
+  },
+  {
+    "name": "MinecraftBrickRespawnable10",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 6033.103515625,
+    "lng": -750.179931640625,
+    "alt": -65.0
+  },
+  {
+    "name": "MinecraftBrickRespawnable2_5",
+    "type": "MinecraftBrickRespawnable_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 6033.103515625,
+    "lng": -750.179931640625,
+    "alt": 265.0
   },
   {
     "name": "PedestalButton10",
@@ -23023,8 +23320,7 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 3305.47607421875,
     "lng": -280.1111755371094,
-    "alt": 797.051025390625,
-    "other_cap": "DLC2_SecretLavaArea:PipeCap11"
+    "alt": 797.051025390625
   },
   {
     "name": "PipeCap11",
@@ -23032,8 +23328,7 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 2748.60791015625,
     "lng": -964.6672973632812,
-    "alt": 2625.2578125,
-    "other_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
+    "alt": 2625.2578125
   },
   {
     "name": "PipeCap_FastTravelLavaToBeam1",
@@ -23041,8 +23336,7 @@
     "area": "DLC2_SecretLavaArea",
     "lat": 2676.927734375,
     "lng": 9448.2138671875,
-    "alt": -7585.2919921875,
-    "other_cap": "DLC2_SecretLavaArea:PipeCap_FastTravelLavaToBeam2"
+    "alt": -7585.2919921875
   },
   {
     "name": "PipeCap_FastTravelLavaToBeam2",
@@ -23050,8 +23344,7 @@
     "area": "DLC2_SecretLavaArea",
     "lat": -22388.76171875,
     "lng": 16856.8203125,
-    "alt": -2829.70068359375,
-    "other_cap": "DLC2_SecretLavaArea:PipeCap_FastTravelLavaToBeam1"
+    "alt": -2829.70068359375
   },
   {
     "name": "PipesystemNew39",
@@ -23060,7 +23353,7 @@
     "lat": 2748.17138671875,
     "lng": -961.5007934570312,
     "alt": 2460.0,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe1",
+    "other_pipe": 1,
     "nearest_cap": "DLC2_SecretLavaArea:PipeCap11"
   },
   {
@@ -23070,7 +23363,7 @@
     "lat": 10191.171875,
     "lng": -3894.28955078125,
     "alt": 2904.20458984375,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_GetCarryPipe_TeleportPipe"
+    "other_pipe": 0
   },
   {
     "name": "Secret_DrainWater_TeleportPipe1",
@@ -23079,7 +23372,7 @@
     "lat": 10816.677734375,
     "lng": 5672.96826171875,
     "alt": -945.0032958984375,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe6"
+    "other_pipe": 6
   },
   {
     "name": "Secret_GetCarryPipe_TeleportPipe",
@@ -23088,7 +23381,7 @@
     "lat": 8960.6259765625,
     "lng": -1678.115966796875,
     "alt": 1740.47265625,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNew_4"
+    "other_pipe": 4
   },
   {
     "name": "Secret_TeleportPipe1",
@@ -23097,7 +23390,7 @@
     "lat": 3949.585693359375,
     "lng": 19.36597442626953,
     "alt": 940.0185546875,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNew39",
+    "other_pipe": 39,
     "nearest_cap": "DLC2_SecretLavaArea:Area1_SecretArea_TeleportPipeCap1"
   },
   {
@@ -23107,7 +23400,7 @@
     "lat": 2874.1748046875,
     "lng": 5304.390625,
     "alt": 179.0185546875,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe3"
+    "other_pipe": 3
   },
   {
     "name": "Secret_TeleportPipe3",
@@ -23116,7 +23409,7 @@
     "lat": 3133.619140625,
     "lng": 4935.88037109375,
     "alt": -2491.081298828125,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_TeleportPipe2"
+    "other_pipe": 2
   },
   {
     "name": "Secret_TeleportPipe6",
@@ -23125,7 +23418,7 @@
     "lat": 10821.8154296875,
     "lng": 5673.66845703125,
     "alt": -2012.6494140625,
-    "other_pipe": "DLC2_SecretLavaArea:Secret_DrainWater_TeleportPipe1"
+    "other_pipe": 1
   },
   {
     "name": "PipesystemNewDLC_BathToSecretLavaAreaToBath2",
@@ -23134,7 +23427,7 @@
     "lat": 585.74365234375,
     "lng": 7443.4892578125,
     "alt": 180.625732421875,
-    "other_pipe": "DLC2_Complete:PipesystemNewDLC_BathToSecretLavaAreaToBath1"
+    "other_pipe": 1
   },
   {
     "name": "PipesystemNewDLC_FastTravelLavaToBeam1",
@@ -23143,7 +23436,7 @@
     "lat": 3448.9765625,
     "lng": 9152.3671875,
     "alt": -7087.57666015625,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNewDLC_FastTravelLavaToBeam2",
+    "other_pipe": 2,
     "nearest_cap": "DLC2_SecretLavaArea:PipeCap_FastTravelLavaToBeam1"
   },
   {
@@ -23153,7 +23446,7 @@
     "lat": -23284.6796875,
     "lng": 17185.609375,
     "alt": -2970.29345703125,
-    "other_pipe": "DLC2_SecretLavaArea:PipesystemNewDLC_FastTravelLavaToBeam1",
+    "other_pipe": 1,
     "nearest_cap": "DLC2_SecretLavaArea:PipeCap_FastTravelLavaToBeam2"
   },
   {
@@ -23181,7 +23474,7 @@
     "lat": 4967.49951171875,
     "lng": 8333.4755859375,
     "alt": -7631.91162109375,
-    "color": "EPipeColour::NewEnumerator1"
+    "color": 1
   },
   {
     "name": "ValveSlot_2",
@@ -23190,7 +23483,7 @@
     "lat": 4922.91259765625,
     "lng": 8243.8955078125,
     "alt": -7577.89404296875,
-    "color": "EPipeColour::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_SecretLavaArea:Relay_OpenFastTravelSecretLavaAreaToBeamTutorial"
     ]
@@ -23302,7 +23595,7 @@
     "lat": -40196.91796875,
     "lng": -71553.59375,
     "alt": 5540.91748046875,
-    "color": "ButtonColor::NewEnumerator7",
+    "color": 7,
     "actors": [
       "DLC2_PostRainbow:Glowline5_2",
       "DLC2_PostRainbow:TeslaCoil_9"
@@ -23327,7 +23620,7 @@
     "lat": -40085.16015625,
     "lng": -52634.6953125,
     "alt": 9966.7490234375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_PostRainbow:Glowline_2",
       "DLC2_PostRainbow:Door2_3",
@@ -23365,7 +23658,7 @@
     "lat": -38640.95703125,
     "lng": -52441.38671875,
     "alt": 9966.7490234375,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_PostRainbow:Glowline12_5",
       "DLC2_PostRainbow:DoorInverted5_6"
@@ -23378,7 +23671,7 @@
     "lat": -47579.515625,
     "lng": -46959.875,
     "alt": 5590.12841796875,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_PostRainbow:Glowline21_2",
       "DLC2_PostRainbow:DoorInverted3_2"
@@ -23391,7 +23684,7 @@
     "lat": -45626.140625,
     "lng": -58457.5546875,
     "alt": 9884.7646484375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "DLC2_PostRainbow:DoorInverted4",
       "DLC2_PostRainbow:LampDiode8_2"
@@ -23404,7 +23697,7 @@
     "lat": -37815.9921875,
     "lng": -57130.1328125,
     "alt": 9908.7919921875,
-    "color": "ButtonColor::NewEnumerator6",
+    "color": 6,
     "actors": [
       "DLC2_PostRainbow:Glowline22_8",
       "DLC2_PostRainbow:JailDoor_4"
@@ -23434,7 +23727,7 @@
     "lat": -48125.10546875,
     "lng": -48496.8125,
     "alt": 5605.970703125,
-    "spawns": "CoinBig_C"
+    "spawns": 0
   },
   {
     "name": "Coin10_10",
@@ -24376,7 +24669,8 @@
     "lat": -39991.55078125,
     "lng": -61156.7265625,
     "alt": 11472.673828125,
-    "hits_to_break": 16
+    "hits_to_break": 16,
+    "brick_type": 3
   },
   {
     "name": "MinecraftBrick4",
@@ -24385,7 +24679,8 @@
     "lat": -39717.59375,
     "lng": -61077.0703125,
     "alt": 11472.673828125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "MinecraftBrick5",
@@ -24394,7 +24689,8 @@
     "lat": -39443.5390625,
     "lng": -60997.38671875,
     "alt": 11472.673828125,
-    "hits_to_break": 7
+    "hits_to_break": 7,
+    "brick_type": 4
   },
   {
     "name": "MinecraftBrick_2",
@@ -24403,7 +24699,8 @@
     "lat": -40265.375,
     "lng": -61236.3515625,
     "alt": 11472.673828125,
-    "hits_to_break": 11
+    "hits_to_break": 11,
+    "brick_type": 2
   },
   {
     "name": "PedestalButton10_5",
@@ -24553,7 +24850,7 @@
     "lat": -39467.86328125,
     "lng": -53929.92578125,
     "alt": 5190.4228515625,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew3_5",
@@ -24562,7 +24859,7 @@
     "lat": -41000.0390625,
     "lng": -71331.84375,
     "alt": 11042.857421875,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew6"
+    "other_pipe": 6
   },
   {
     "name": "PipesystemNew4_2",
@@ -24571,7 +24868,7 @@
     "lat": -43297.078125,
     "lng": -70577.5,
     "alt": 4932.72705078125,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5",
+    "other_pipe": 5,
     "nearest_cap": "DLC2_PostRainbow:PipeCap2_2"
   },
   {
@@ -24581,7 +24878,7 @@
     "lat": -37744.7890625,
     "lng": -57149.6328125,
     "alt": 4853.21533203125,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5"
+    "other_pipe": 5
   },
   {
     "name": "PipesystemNew6",
@@ -24590,7 +24887,7 @@
     "lat": -44440.8984375,
     "lng": -55234.1953125,
     "alt": 3695.21044921875,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew3_5"
+    "other_pipe": 5
   },
   {
     "name": "PipesystemNew_2",
@@ -24599,7 +24896,7 @@
     "lat": -39725.625,
     "lng": -53630.5078125,
     "alt": 5169.57275390625,
-    "other_pipe": "DLC2_PostRainbow:PipesystemNew2"
+    "other_pipe": 2
   },
   {
     "name": "RedGuy10",
@@ -24870,7 +25167,7 @@
     "lat": 21059.283203125,
     "lng": 9276.5419921875,
     "alt": 20986.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew_IntoSewer2",
@@ -24879,7 +25176,7 @@
     "lat": 19590.291015625,
     "lng": 9693.0283203125,
     "alt": 20986.0,
-    "other_pipe": "DLC2_Area0_Below:PipesystemNew_IntoSewer"
+    "other_pipe": 0
   },
   {
     "name": "RedGuy10",
@@ -25369,7 +25666,7 @@
     "lat": 25024.05078125,
     "lng": 15319.908203125,
     "alt": 19551.0,
-    "color": "EPipeColour::NewEnumerator4"
+    "color": 4
   },
   {
     "name": "Door13",

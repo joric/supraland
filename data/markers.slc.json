@@ -1388,7 +1388,7 @@
     "lat": 13332.2998046875,
     "lng": -1928.4378662109375,
     "alt": 2417.905517578125,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Jumppad11"
     ]
@@ -1400,7 +1400,7 @@
     "lat": 6129.5673828125,
     "lng": 11492.6572265625,
     "alt": 2315.054931640625,
-    "color": "ButtonColor::NewEnumerator3",
+    "color": 3,
     "actors": [
       "Crash:MoveMesh11_2",
       "Crash:Simple_rock_132"
@@ -1427,7 +1427,7 @@
     "lat": -6858.1083984375,
     "lng": 36143.69140625,
     "alt": 360.2218017578125,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Jumppad5_2",
       "Crash:Glowline41_5"
@@ -1476,7 +1476,7 @@
     "lat": 13048.1728515625,
     "lng": 24803.875,
     "alt": 2626.345458984375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Jumppad14"
     ]
@@ -1488,7 +1488,7 @@
     "lat": -9471.89453125,
     "lng": -7256.365234375,
     "alt": -3641.2890625,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Glowline47_2",
       "Crash:DoorLego8"
@@ -1513,7 +1513,7 @@
     "lat": -10249.8134765625,
     "lng": 65996.2734375,
     "alt": 13632.94921875,
-    "color": "ButtonColor::NewEnumerator2",
+    "color": 2,
     "actors": [
       "Crash:MetalBall3",
       "Crash:Glowline59_14"
@@ -1539,7 +1539,7 @@
     "lat": -9650.1689453125,
     "lng": 43762.83203125,
     "alt": 240.7220458984375,
-    "color": "ButtonColor::NewEnumerator5",
+    "color": 5,
     "actors": [
       "Crash:Door26_2",
       "Crash:Glowline68_5"
@@ -1552,7 +1552,7 @@
     "lat": 420.60791015625,
     "lng": 35419.890625,
     "alt": 820.687255859375,
-    "color": "ButtonColor::NewEnumerator5",
+    "color": 5,
     "actors": [
       "Crash:Glowline3_2",
       "Crash:Jumppad_2"
@@ -1636,7 +1636,7 @@
     "lat": 4209.140625,
     "lng": 37944.30859375,
     "alt": -2326.363525390625,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Door21_2"
     ]
@@ -1660,7 +1660,7 @@
     "lat": 10403.4990234375,
     "lng": 45005.19140625,
     "alt": -1963.877197265625,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:Jumppad29",
       "Crash:Glowline75_9"
@@ -1673,7 +1673,7 @@
     "lat": -17742.955078125,
     "lng": -5616.50830078125,
     "alt": 121.3615493774414,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:MoveMesh29",
       "Crash:Wall_400x627",
@@ -1700,7 +1700,7 @@
     "lat": -1741.478271484375,
     "lng": 41704.6328125,
     "alt": -2118.058349609375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:WoodBlockLift_2",
       "Crash:Glowline89_5"
@@ -1713,7 +1713,7 @@
     "lat": -3828.91015625,
     "lng": 43526.0234375,
     "alt": -1200.843505859375,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:MoveMesh41_2",
       "Crash:Wood_block_27"
@@ -1739,7 +1739,7 @@
     "lat": -8295.4345703125,
     "lng": 54283.1171875,
     "alt": 2498.1611328125,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:PipeCap_2"
     ]
@@ -1764,7 +1764,7 @@
     "lat": -6090.71875,
     "lng": 27568.7421875,
     "alt": -607.03173828125,
-    "color": "ButtonColor::NewEnumerator3",
+    "color": 3,
     "actors": [
       "Crash:Door3_2"
     ]
@@ -1790,7 +1790,7 @@
     "lat": -1694.068115234375,
     "lng": -1778.9466552734375,
     "alt": -121.62134552001953,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:MoveMesh4_8",
       "Crash:Wood_block_183",
@@ -1804,7 +1804,7 @@
     "lat": -6531.5400390625,
     "lng": -1468.9901123046875,
     "alt": -222.99295043945312,
-    "color": "ButtonColor::NewEnumerator3",
+    "color": 3,
     "actors": [
       "Crash:Minium",
       "Crash:Glowline18",
@@ -1844,7 +1844,7 @@
     "lat": -3540.010498046875,
     "lng": 6740.275390625,
     "alt": -1561.8104248046875,
-    "color": "ButtonColor::NewEnumerator1",
+    "color": 1,
     "actors": [
       "Crash:MoveMesh49_2",
       "Crash:SM_Fence_3"
@@ -2076,7 +2076,7 @@
     "lat": 16094.1943359375,
     "lng": -4490.00439453125,
     "alt": 1179.5394287109375,
-    "spawns": "BuyWalletx15_C"
+    "spawns": 0
   },
   {
     "name": "Chest119_2",
@@ -2085,7 +2085,7 @@
     "lat": -2214.8349609375,
     "lng": 55521.76171875,
     "alt": 537.5179443359375,
-    "spawns": "BuyForceCubeBeam_C"
+    "spawns": 0
   },
   {
     "name": "Chest11_2",
@@ -2094,7 +2094,7 @@
     "lat": 5446.6142578125,
     "lng": 37349.2265625,
     "alt": -107.74044036865234,
-    "spawns": "BuyShowHealthbar_C"
+    "spawns": 0
   },
   {
     "name": "Chest12_5",
@@ -2103,7 +2103,7 @@
     "lat": -7659.13525390625,
     "lng": 41877.31640625,
     "alt": 219.0546875,
-    "spawns": "BuySmashdownRadius+_C"
+    "spawns": 0
   },
   {
     "name": "Chest13_2",
@@ -2112,7 +2112,7 @@
     "lat": 10272.833984375,
     "lng": -5264.703125,
     "alt": 1530.1470947265625,
-    "spawns": "BuyHealth+15_C"
+    "spawns": 0
   },
   {
     "name": "Chest14",
@@ -2121,7 +2121,7 @@
     "lat": 10272.833984375,
     "lng": -5099.8310546875,
     "alt": 1534.45361328125,
-    "spawns": "BuyHealthRegenMax15_C"
+    "spawns": 0
   },
   {
     "name": "Chest15_2",
@@ -2130,7 +2130,7 @@
     "lat": -711.4050903320312,
     "lng": 5893.91650390625,
     "alt": 95.51234436035156,
-    "spawns": "BuyNumberRising_C"
+    "spawns": 0
   },
   {
     "name": "Chest16_2",
@@ -2139,7 +2139,7 @@
     "lat": -6696.26416015625,
     "lng": 40916.78125,
     "alt": -622.9281005859375,
-    "spawns": "BuyGunRefireRate50_C"
+    "spawns": 0
   },
   {
     "name": "Chest18_2",
@@ -2148,7 +2148,7 @@
     "lat": 2732.5478515625,
     "lng": 36309.80078125,
     "alt": 686.169189453125,
-    "spawns": "BuySmashdownDamage+3_C"
+    "spawns": 0
   },
   {
     "name": "Chest20",
@@ -2157,7 +2157,7 @@
     "lat": 6158.10107421875,
     "lng": 37856.36328125,
     "alt": 1580.4462890625,
-    "spawns": "BuySmashdownDamage+3_C"
+    "spawns": 0
   },
   {
     "name": "Chest21_2",
@@ -2166,7 +2166,7 @@
     "lat": -3565.517578125,
     "lng": 7141.90185546875,
     "alt": -1515.2947998046875,
-    "spawns": "BuyTranslocatorDamagex3_C"
+    "spawns": 0
   },
   {
     "name": "Chest22",
@@ -2175,7 +2175,7 @@
     "lat": 2885.389892578125,
     "lng": 3338.64013671875,
     "alt": 719.2843017578125,
-    "spawns": "BuyGunRefireRate50_C"
+    "spawns": 0
   },
   {
     "name": "Chest24",
@@ -2184,7 +2184,7 @@
     "lat": 3120.079345703125,
     "lng": 3302.072021484375,
     "alt": 716.5054321289062,
-    "spawns": "BuyHealthRegenMax15_C"
+    "spawns": 0
   },
   {
     "name": "Chest25_6",
@@ -2193,7 +2193,7 @@
     "lat": -9030.11328125,
     "lng": 44304.60546875,
     "alt": 258.0674743652344,
-    "spawns": "BuySmashdownDamage+3_C"
+    "spawns": 0
   },
   {
     "name": "Chest28_9",
@@ -2202,7 +2202,7 @@
     "lat": -14529.28125,
     "lng": 27868.373046875,
     "alt": -507.9334716796875,
-    "spawns": "BuyHealth+5_C"
+    "spawns": 0
   },
   {
     "name": "Chest29_12",
@@ -2211,7 +2211,7 @@
     "lat": -13596.2919921875,
     "lng": 34281.875,
     "alt": 16.556396484375,
-    "spawns": "BuyHealth+2_C"
+    "spawns": 0
   },
   {
     "name": "Chest2_5",
@@ -2220,7 +2220,7 @@
     "lat": -345.537109375,
     "lng": 47847.48046875,
     "alt": 944.1328735351562,
-    "spawns": "BuyWalletx2_C"
+    "spawns": 0
   },
   {
     "name": "Chest30_15",
@@ -2229,7 +2229,7 @@
     "lat": -2695.05517578125,
     "lng": 39753.6015625,
     "alt": 978.2976684570312,
-    "spawns": "BuyHealth+5_C"
+    "spawns": 0
   },
   {
     "name": "Chest31_18",
@@ -2238,7 +2238,7 @@
     "lat": -12675.3642578125,
     "lng": 48910.04296875,
     "alt": 2925.927490234375,
-    "spawns": "BuyHealth+5_C"
+    "spawns": 0
   },
   {
     "name": "Chest32_21",
@@ -2247,7 +2247,7 @@
     "lat": -8638.0927734375,
     "lng": 43841.66796875,
     "alt": 90.33992004394531,
-    "spawns": "BuySmashdownDamage+1_C"
+    "spawns": 0
   },
   {
     "name": "Chest33_24",
@@ -2256,7 +2256,7 @@
     "lat": 3458.637939453125,
     "lng": 32053.0703125,
     "alt": 999.6883544921875,
-    "spawns": "BuySmashdownDamage+3_C"
+    "spawns": 0
   },
   {
     "name": "Chest34_27",
@@ -2265,7 +2265,7 @@
     "lat": -4111.29541015625,
     "lng": 45474.1484375,
     "alt": -484.3470153808594,
-    "spawns": "BuySmashdownDamage+1_C"
+    "spawns": 0
   },
   {
     "name": "Chest35_30",
@@ -2274,7 +2274,7 @@
     "lat": -312.454345703125,
     "lng": 34350.79296875,
     "alt": -2696.89990234375,
-    "spawns": "BuyGunAltDamagex2_C"
+    "spawns": 0
   },
   {
     "name": "Chest36_33",
@@ -2283,7 +2283,7 @@
     "lat": -4616.7138671875,
     "lng": 9948.3955078125,
     "alt": -1516.2109375,
-    "spawns": "BuyGunAltDamagex2_C"
+    "spawns": 0
   },
   {
     "name": "Chest37_36",
@@ -2292,7 +2292,7 @@
     "lat": 11243.51953125,
     "lng": -130.99945068359375,
     "alt": 3023.717529296875,
-    "spawns": "BuyGunAltDamagex2_C"
+    "spawns": 0
   },
   {
     "name": "Chest38_39",
@@ -2301,7 +2301,7 @@
     "lat": 10751.73046875,
     "lng": -2339.823974609375,
     "alt": 1332.194580078125,
-    "spawns": "BuyGunAltDamagex2_C"
+    "spawns": 0
   },
   {
     "name": "Chest39_42",
@@ -2310,7 +2310,7 @@
     "lat": 16231.7138671875,
     "lng": 45006.79296875,
     "alt": 1524.0516357421875,
-    "spawns": "BuyHealth+5_C"
+    "spawns": 0
   },
   {
     "name": "Chest3_2",
@@ -2319,7 +2319,7 @@
     "lat": -4660.42431640625,
     "lng": 23504.736328125,
     "alt": -794.0892944335938,
-    "spawns": "BuyHealthRegenMax15_C"
+    "spawns": 0
   },
   {
     "name": "Chest40",
@@ -2328,7 +2328,7 @@
     "lat": 14051.2509765625,
     "lng": 43748.18359375,
     "alt": 1524.0516357421875,
-    "spawns": "BuyHealthRegenMax5_C"
+    "spawns": 0
   },
   {
     "name": "Chest41_46",
@@ -2337,7 +2337,7 @@
     "lat": 7627.6201171875,
     "lng": 45868.1484375,
     "alt": -1044.4412841796875,
-    "spawns": "BuyHealthRegenSpeed_C"
+    "spawns": 0
   },
   {
     "name": "Chest42_49",
@@ -2346,7 +2346,7 @@
     "lat": -18660.33203125,
     "lng": 55482.3828125,
     "alt": 972.832763671875,
-    "spawns": "BuyHealthRegenSpeed_C"
+    "spawns": 0
   },
   {
     "name": "Chest43_52",
@@ -2355,7 +2355,7 @@
     "lat": 9741.689453125,
     "lng": 40798.20703125,
     "alt": -1105.8056640625,
-    "spawns": "BuyHealth+2_C"
+    "spawns": 0
   },
   {
     "name": "Chest44_55",
@@ -2364,7 +2364,7 @@
     "lat": -6318.294921875,
     "lng": 56186.50390625,
     "alt": 2695.764404296875,
-    "spawns": "BuySmashdownDamage+1_C"
+    "spawns": 0
   },
   {
     "name": "Chest45_2",
@@ -2373,7 +2373,7 @@
     "lat": -17753.068359375,
     "lng": 30992.19140625,
     "alt": 114.38147735595703,
-    "spawns": "BuyTranslocatorDamagex3_C"
+    "spawns": 0
   },
   {
     "name": "Chest46_5",
@@ -2382,7 +2382,7 @@
     "lat": -8534.9931640625,
     "lng": 40648.38671875,
     "alt": 244.9840087890625,
-    "spawns": "BuyTranslocatorDamagex3_C"
+    "spawns": 0
   },
   {
     "name": "Chest4_2",
@@ -2391,7 +2391,7 @@
     "lat": 15697.39453125,
     "lng": -9384.943359375,
     "alt": 2203.329345703125,
-    "spawns": "BuySmashdownDamage+3_C"
+    "spawns": 0
   },
   {
     "name": "Chest5_2",
@@ -2400,7 +2400,7 @@
     "lat": 2977.30322265625,
     "lng": 38915.07421875,
     "alt": -2236.359619140625,
-    "spawns": "BuyGun1_C"
+    "spawns": 0
   },
   {
     "name": "Chest6_2",
@@ -2409,7 +2409,7 @@
     "lat": 2653.248291015625,
     "lng": 3309.1591796875,
     "alt": 732.0569458007812,
-    "spawns": "BuyHealth+15_C"
+    "spawns": 0
   },
   {
     "name": "Chest7_2",
@@ -2418,7 +2418,7 @@
     "lat": 2459.70263671875,
     "lng": 7699.14306640625,
     "alt": -1165.341064453125,
-    "spawns": "BuyGunAlt_C"
+    "spawns": 0
   },
   {
     "name": "Chest8_2",
@@ -2427,7 +2427,7 @@
     "lat": 6220.0068359375,
     "lng": 9336.2060546875,
     "alt": 2472.301513671875,
-    "spawns": "BuyWalletx15_C"
+    "spawns": 0
   },
   {
     "name": "Chest9_2",
@@ -2436,7 +2436,7 @@
     "lat": 6084.83984375,
     "lng": 25805.306640625,
     "alt": -1321.84765625,
-    "spawns": "BuyStats_C"
+    "spawns": 0
   },
   {
     "name": "Chest_2",
@@ -2445,7 +2445,7 @@
     "lat": 4383.1689453125,
     "lng": 38385.80078125,
     "alt": -2279.52880859375,
-    "spawns": "BuyForceBeam_C"
+    "spawns": 0
   },
   {
     "name": "Coin10_9",
@@ -6205,7 +6205,7 @@
     "lat": -4020.472412109375,
     "lng": 6788.603515625,
     "alt": -1699.3790283203125,
-    "other_pipe": "Crash:PipesystemNew11"
+    "other_pipe": 11
   },
   {
     "name": "PipesystemNew11",
@@ -6214,7 +6214,7 @@
     "lat": -2886.613525390625,
     "lng": 7747.9345703125,
     "alt": 166.4151153564453,
-    "other_pipe": "Crash:PipesystemNew14"
+    "other_pipe": 14
   },
   {
     "name": "PipesystemNew12_2",
@@ -6223,7 +6223,7 @@
     "lat": 9357.791015625,
     "lng": 40524.953125,
     "alt": -1987.2265625,
-    "other_pipe": "Crash:PipesystemNew19"
+    "other_pipe": 19
   },
   {
     "name": "PipesystemNew13_2",
@@ -6232,7 +6232,7 @@
     "lat": -4179.44677734375,
     "lng": 45594.05859375,
     "alt": -1147.593017578125,
-    "other_pipe": "Crash:PipesystemNew20"
+    "other_pipe": 20
   },
   {
     "name": "PipesystemNew14",
@@ -6241,7 +6241,7 @@
     "lat": -1349.330322265625,
     "lng": 11031.1787109375,
     "alt": 643.8033447265625,
-    "other_pipe": "Crash:PipesystemNew11"
+    "other_pipe": 11
   },
   {
     "name": "PipesystemNew15_2",
@@ -6250,7 +6250,7 @@
     "lat": -5756.5283203125,
     "lng": -6391.9970703125,
     "alt": -3310.516845703125,
-    "other_pipe": "Crash:PipesystemNew18"
+    "other_pipe": 18
   },
   {
     "name": "PipesystemNew16",
@@ -6259,7 +6259,7 @@
     "lat": -5171.66259765625,
     "lng": -6391.9970703125,
     "alt": -3328.49658203125,
-    "other_pipe": "Crash:PipesystemNew18"
+    "other_pipe": 18
   },
   {
     "name": "PipesystemNew17",
@@ -6268,7 +6268,7 @@
     "lat": -4524.11767578125,
     "lng": -6391.9970703125,
     "alt": -3350.7080078125,
-    "other_pipe": "Crash:PipesystemNew18"
+    "other_pipe": 18
   },
   {
     "name": "PipesystemNew18",
@@ -6277,7 +6277,7 @@
     "lat": -7871.3740234375,
     "lng": -7543.84326171875,
     "alt": -1323.410888671875,
-    "other_pipe": "Crash:PipesystemNew18"
+    "other_pipe": 18
   },
   {
     "name": "PipesystemNew19",
@@ -6286,7 +6286,7 @@
     "lat": 10152.8408203125,
     "lng": 41108.609375,
     "alt": -322.2944641113281,
-    "other_pipe": "Crash:PipesystemNew12_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew2",
@@ -6295,7 +6295,7 @@
     "lat": -12879.640625,
     "lng": 45776.578125,
     "alt": -82.48126220703125,
-    "other_pipe": "Crash:PipesystemNew_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew20",
@@ -6304,7 +6304,7 @@
     "lat": -4179.44677734375,
     "lng": 45594.05859375,
     "alt": -109.74856567382812,
-    "other_pipe": "Crash:PipesystemNew13_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew21_2",
@@ -6313,7 +6313,7 @@
     "lat": -6993.09423828125,
     "lng": 54857.61328125,
     "alt": 336.3084411621094,
-    "other_pipe": "Crash:PipesystemNew22_5",
+    "other_pipe": 5,
     "nearest_cap": "Crash:PipeCap5_5"
   },
   {
@@ -6323,7 +6323,7 @@
     "lat": -6284.51953125,
     "lng": 55715.75390625,
     "alt": 704.7681884765625,
-    "other_pipe": "Crash:PipesystemNew21_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew23_2",
@@ -6332,7 +6332,7 @@
     "lat": -17585.740234375,
     "lng": 43423.76171875,
     "alt": 124.17230224609375,
-    "other_pipe": "Crash:PipesystemNew24"
+    "other_pipe": 24
   },
   {
     "name": "PipesystemNew24",
@@ -6341,7 +6341,7 @@
     "lat": -17585.740234375,
     "lng": 43768.76171875,
     "alt": 70.72064208984375,
-    "other_pipe": "Crash:PipesystemNew23_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNew25",
@@ -6350,7 +6350,7 @@
     "lat": 9987.1748046875,
     "lng": 46627.05078125,
     "alt": -2268.685302734375,
-    "other_pipe": "Crash:PipesystemNew26"
+    "other_pipe": 26
   },
   {
     "name": "PipesystemNew26",
@@ -6359,7 +6359,7 @@
     "lat": 14910.1953125,
     "lng": 47438.171875,
     "alt": -1465.6490478515625,
-    "other_pipe": "Crash:PipesystemNew25"
+    "other_pipe": 25
   },
   {
     "name": "PipesystemNew3_2",
@@ -6368,7 +6368,7 @@
     "lat": -6319.666015625,
     "lng": 1761.0826416015625,
     "alt": -151.43313598632812,
-    "other_pipe": "Crash:PipesystemNew4"
+    "other_pipe": 4
   },
   {
     "name": "PipesystemNew4",
@@ -6377,7 +6377,7 @@
     "lat": -6141.619140625,
     "lng": 1837.845703125,
     "alt": 577.0473022460938,
-    "other_pipe": "Crash:PipesystemNew5"
+    "other_pipe": 5
   },
   {
     "name": "PipesystemNew5",
@@ -6386,7 +6386,7 @@
     "lat": -6319.666015625,
     "lng": 2746.856201171875,
     "alt": -151.43313598632812,
-    "other_pipe": "Crash:PipesystemNew4"
+    "other_pipe": 4
   },
   {
     "name": "PipesystemNew6",
@@ -6395,7 +6395,7 @@
     "lat": -6514.7568359375,
     "lng": -2028.81298828125,
     "alt": -113.03692626953125,
-    "other_pipe": "Crash:PipesystemNew8"
+    "other_pipe": 8
   },
   {
     "name": "PipesystemNew7",
@@ -6404,7 +6404,7 @@
     "lat": -6504.17236328125,
     "lng": -2912.019287109375,
     "alt": 714.8199462890625,
-    "other_pipe": "Crash:PipesystemNew9"
+    "other_pipe": 9
   },
   {
     "name": "PipesystemNew8",
@@ -6413,7 +6413,7 @@
     "lat": -6502.84765625,
     "lng": -2085.76904296875,
     "alt": -111.75312042236328,
-    "other_pipe": "Crash:PipesystemNew6"
+    "other_pipe": 6
   },
   {
     "name": "PipesystemNew9",
@@ -6422,7 +6422,7 @@
     "lat": -6502.84765625,
     "lng": -2454.94921875,
     "alt": 295.3083190917969,
-    "other_pipe": "Crash:PipesystemNew7"
+    "other_pipe": 7
   },
   {
     "name": "PipesystemNew_2",
@@ -6431,7 +6431,7 @@
     "lat": -12127.0205078125,
     "lng": 43278.01171875,
     "alt": -351.6873779296875,
-    "other_pipe": "Crash:PipesystemNew2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC2",
@@ -6440,7 +6440,7 @@
     "lat": 16600.419921875,
     "lng": 22102.123046875,
     "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC3",
@@ -6449,7 +6449,7 @@
     "lat": 16668.33984375,
     "lng": 21291.962890625,
     "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC4",
@@ -6458,7 +6458,7 @@
     "lat": 16668.33984375,
     "lng": 21663.66015625,
     "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC5",
@@ -6467,7 +6467,7 @@
     "lat": 16668.33984375,
     "lng": 22034.736328125,
     "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC6_2",
@@ -6476,7 +6476,7 @@
     "lat": -5072.5244140625,
     "lng": -992.0934448242188,
     "alt": 110.49958801269531,
-    "other_pipe": "Crash:PipesystemNewDLC6_2"
+    "other_pipe": 2
   },
   {
     "name": "PipesystemNewDLC7",
@@ -6485,7 +6485,7 @@
     "lat": -5217.47998046875,
     "lng": -990.3453979492188,
     "alt": 502.5618896484375,
-    "other_pipe": "Crash:PipesystemNewDLC8"
+    "other_pipe": 8
   },
   {
     "name": "PipesystemNewDLC8",
@@ -6494,7 +6494,7 @@
     "lat": -5549.33935546875,
     "lng": -1985.43017578125,
     "alt": 3029.458740234375,
-    "other_pipe": "Crash:PipesystemNewDLC7"
+    "other_pipe": 7
   },
   {
     "name": "PipesystemNewDLC_2",
@@ -6503,7 +6503,7 @@
     "lat": 16730.67578125,
     "lng": 20609.82421875,
     "alt": 2474.070068359375,
-    "other_pipe": "Crash:PipesystemNewDLC2"
+    "other_pipe": 2
   },
   {
     "name": "PlayerStart_2",
