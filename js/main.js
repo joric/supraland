@@ -517,23 +517,17 @@ function loadMap() {
           if (o.type == 'PlayerStart' && !playerMarker) {
             icon = mapId=='siu' ? 'player_blue' : 'player_red';
             playerStart = [o.lat, o.lng, o.alt];
+            let title = 'PlayerPosition';
             let t = new L.LatLng(o.lat, o.lng);
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
             }
-            playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon,42), zIndexOffset: 10000, draggable: false, title: Math.round(t.lat)+', '+Math.round(t.lng), alt:'playerMarker'})
+            playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon,42), zIndexOffset: 10000, draggable: false, title: title, alt:'playerMarker'})
             .bindPopup()
-            .on('moveend', function(e) {
-              let marker = e.target;
-              let t = marker.getLatLng();
-              settings.playerPosition = [t.lat, t.lng, 0];
-              saveSettings();
-              e.target._icon.title = Math.round(t.lat)+', '+Math.round(t.lng)
-            })
             .on('popupopen', function(e) {
                 let marker = e.target;
-                let t = marker.getLatLng();
-                t = {name:'playerPosition', lat:Math.round(t.lat), lng:Math.round(t.lng)};
+                let p = settings.playerPosition;
+                let t = {name: marker.options.title, lat:p[0], lng:p[1], alt:p[2]};
                 marker.setPopupContent(JSON.stringify(t, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;'));
                 marker.openPopup();
             }).addTo(map)
