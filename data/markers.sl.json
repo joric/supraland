@@ -956,6 +956,7 @@
       "TutorialButtons16_17011",
       "EnemySpawn154",
       "TriggerVolume61",
+      "PlayerForceLook",
       "QuestActivator_2"
     ]
   },
@@ -15466,8 +15467,8 @@
     "lng": -47552.078125,
     "alt": 724.4636840820312,
     "actors": [
-      "Red_brick_2781",
-      "Door76"
+      "Door76",
+      "Red_brick_2781"
     ]
   },
   {
@@ -15611,8 +15612,8 @@
     "lng": 7112.92529296875,
     "alt": 969.1436157226562,
     "actors": [
-      "LegoDoor",
-      "RedGuyEvent2_569"
+      "RedGuyEvent2_569",
+      "LegoDoor"
     ]
   },
   {
@@ -23387,7 +23388,10 @@
     "area": "Map",
     "lat": 51723.37890625,
     "lng": -68887.1328125,
-    "alt": 632.8060302734375
+    "alt": 632.8060302734375,
+    "actors": [
+      "Door85_2564"
+    ]
   },
   {
     "name": "TriggerVolume101",
@@ -23395,7 +23399,12 @@
     "area": "Map",
     "lat": 12643.19140625,
     "lng": 50304.43359375,
-    "alt": 3112.067138671875
+    "alt": 3112.067138671875,
+    "actors": [
+      "DoorStone5",
+      "DoorStone",
+      "Jumppad95"
+    ]
   },
   {
     "name": "TriggerVolume102_5",
@@ -23403,7 +23412,10 @@
     "area": "Map",
     "lat": 38285.05078125,
     "lng": 26225.173828125,
-    "alt": 3040.346435546875
+    "alt": 3040.346435546875,
+    "actors": [
+      "RedGuyEvent9_3"
+    ]
   },
   {
     "name": "TriggerVolume104_8",
@@ -23411,7 +23423,10 @@
     "area": "Map",
     "lat": 22423.240234375,
     "lng": 82018.8828125,
-    "alt": 3408.86279296875
+    "alt": 3408.86279296875,
+    "actors": [
+      "RedGuyEvent17_2"
+    ]
   },
   {
     "name": "TriggerVolume105",
@@ -23419,7 +23434,10 @@
     "area": "Map",
     "lat": 23631.80859375,
     "lng": 80805.28125,
-    "alt": 2430.357421875
+    "alt": 2430.357421875,
+    "actors": [
+      "MusicChangeVolume37_2"
+    ]
   },
   {
     "name": "TriggerVolume106",
@@ -23427,7 +23445,13 @@
     "area": "Map",
     "lat": 23628.5703125,
     "lng": 80184.0234375,
-    "alt": 2615.171875
+    "alt": 2615.171875,
+    "actors": [
+      "RedGuyEvent18",
+      "CutSceneMode_2",
+      "PipeCap26",
+      "PipeCap27"
+    ]
   },
   {
     "name": "TriggerVolume107_17",
@@ -23443,7 +23467,10 @@
     "area": "Map",
     "lat": 4382.44091796875,
     "lng": 82251.8984375,
-    "alt": 7032.1689453125
+    "alt": 7032.1689453125,
+    "actors": [
+      "CutSceneMode_2"
+    ]
   },
   {
     "name": "TriggerVolume109_20",
@@ -23451,7 +23478,12 @@
     "area": "Map",
     "lat": 15459.1494140625,
     "lng": 81628.796875,
-    "alt": 4426.17236328125
+    "alt": 4426.17236328125,
+    "actors": [
+      "RedGuyEvent19",
+      "TriggeredBlockingVolume2_2",
+      "MusicChangeVolume40"
+    ]
   },
   {
     "name": "TriggerVolume110",
@@ -23459,7 +23491,11 @@
     "area": "Map",
     "lat": 13890.5078125,
     "lng": 81902.6875,
-    "alt": 4426.17236328125
+    "alt": 4426.17236328125,
+    "actors": [
+      "RedGuyEvent20",
+      "TriggeredBlockingVolume3"
+    ]
   },
   {
     "name": "TriggerVolume111",
@@ -23467,7 +23503,11 @@
     "area": "Map",
     "lat": 12310.20703125,
     "lng": 81859.6953125,
-    "alt": 4426.17236328125
+    "alt": 4426.17236328125,
+    "actors": [
+      "RedGuyEvent21",
+      "TriggeredBlockingVolume4"
+    ]
   },
   {
     "name": "TriggerVolume112",
@@ -23475,7 +23515,11 @@
     "area": "Map",
     "lat": 10468.4658203125,
     "lng": 81875.3125,
-    "alt": 4426.17236328125
+    "alt": 4426.17236328125,
+    "actors": [
+      "RedGuyEvent22",
+      "TriggeredBlockingVolume5"
+    ]
   },
   {
     "name": "TriggerVolume113",
@@ -23483,7 +23527,12 @@
     "area": "Map",
     "lat": 8999.9580078125,
     "lng": 82706.5,
-    "alt": 4515.30908203125
+    "alt": 4515.30908203125,
+    "actors": [
+      "RedGuyEvent23",
+      "TriggeredBlockingVolume6",
+      "TriggeredBlockingVolume19"
+    ]
   },
   {
     "name": "TriggerVolume114",
@@ -23491,7 +23540,11 @@
     "area": "Map",
     "lat": 7520.88232421875,
     "lng": 82861.46875,
-    "alt": 5155.8017578125
+    "alt": 5155.8017578125,
+    "actors": [
+      "RedGuyEvent24",
+      "TriggeredBlockingVolume7"
+    ]
   },
   {
     "name": "TriggerVolume117",
@@ -23499,7 +23552,11 @@
     "area": "Map",
     "lat": -24686.025390625,
     "lng": 13464.2568359375,
-    "alt": 1240.1806640625
+    "alt": 1240.1806640625,
+    "actors": [
+      "DestroyObjectsOnTrigger19_2",
+      "RedGuy111"
+    ]
   },
   {
     "name": "TriggerVolume118_2",
@@ -23507,7 +23564,10 @@
     "area": "Map",
     "lat": -3635.1162109375,
     "lng": 71004.5703125,
-    "alt": 5560.91259765625
+    "alt": 5560.91259765625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume119",
@@ -23515,7 +23575,10 @@
     "area": "Map",
     "lat": -2767.678955078125,
     "lng": 72378.0859375,
-    "alt": 5560.91259765625
+    "alt": 5560.91259765625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume120",
@@ -23523,7 +23586,10 @@
     "area": "Map",
     "lat": -4165.7333984375,
     "lng": 73418.703125,
-    "alt": 5278.0830078125
+    "alt": 5278.0830078125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume121",
@@ -23531,7 +23597,10 @@
     "area": "Map",
     "lat": -5605.64208984375,
     "lng": 74765.0,
-    "alt": 5278.0830078125
+    "alt": 5278.0830078125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume122",
@@ -23539,7 +23608,10 @@
     "area": "Map",
     "lat": -7693.564453125,
     "lng": 73416.34375,
-    "alt": 5509.27978515625
+    "alt": 5509.27978515625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume123",
@@ -23547,7 +23619,10 @@
     "area": "Map",
     "lat": -8431.28125,
     "lng": 72238.9375,
-    "alt": 5509.27978515625
+    "alt": 5509.27978515625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume124",
@@ -23555,7 +23630,10 @@
     "area": "Map",
     "lat": -8970.1796875,
     "lng": 75124.3046875,
-    "alt": 5509.27978515625
+    "alt": 5509.27978515625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume125",
@@ -23563,7 +23641,10 @@
     "area": "Map",
     "lat": -10492.0048828125,
     "lng": 72065.28125,
-    "alt": 5526.60009765625
+    "alt": 5526.60009765625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume128",
@@ -23571,7 +23652,10 @@
     "area": "Map",
     "lat": -5876.638671875,
     "lng": 68366.2109375,
-    "alt": 5290.4755859375
+    "alt": 5290.4755859375,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume129",
@@ -23579,7 +23663,10 @@
     "area": "Map",
     "lat": -4681.125,
     "lng": 67727.53125,
-    "alt": 5560.912109375
+    "alt": 5560.912109375,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume130",
@@ -23587,7 +23674,10 @@
     "area": "Map",
     "lat": -8241.3740234375,
     "lng": 68542.8203125,
-    "alt": 5443.435546875
+    "alt": 5443.435546875,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume132",
@@ -23595,7 +23685,10 @@
     "area": "Map",
     "lat": -7413.40771484375,
     "lng": 70070.9375,
-    "alt": 5560.912109375
+    "alt": 5560.912109375,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume133",
@@ -23603,7 +23696,10 @@
     "area": "Map",
     "lat": -7143.27197265625,
     "lng": 64755.28125,
-    "alt": 5709.53564453125
+    "alt": 5709.53564453125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume134",
@@ -23611,7 +23707,10 @@
     "area": "Map",
     "lat": -4185.6650390625,
     "lng": 63420.50390625,
-    "alt": 5966.5087890625
+    "alt": 5966.5087890625,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume135",
@@ -23619,7 +23718,10 @@
     "area": "Map",
     "lat": -3442.15771484375,
     "lng": 64595.82421875,
-    "alt": 6085.0859375
+    "alt": 6085.0859375,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume136",
@@ -23627,7 +23729,10 @@
     "area": "Map",
     "lat": -4560.31591796875,
     "lng": 77897.0546875,
-    "alt": 5278.0830078125
+    "alt": 5278.0830078125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume137",
@@ -23635,7 +23740,10 @@
     "area": "Map",
     "lat": -3253.033203125,
     "lng": 75258.359375,
-    "alt": 5408.41845703125
+    "alt": 5408.41845703125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume138",
@@ -23643,7 +23751,10 @@
     "area": "Map",
     "lat": -6654.77734375,
     "lng": 75727.859375,
-    "alt": 5408.41845703125
+    "alt": 5408.41845703125,
+    "actors": [
+      "Fatty_2"
+    ]
   },
   {
     "name": "TriggerVolume139_3",
@@ -23651,7 +23762,10 @@
     "area": "Map",
     "lat": 475.26556396484375,
     "lng": 81510.984375,
-    "alt": 5376.04248046875
+    "alt": 5376.04248046875,
+    "actors": [
+      "MusicChangeVolume44"
+    ]
   },
   {
     "name": "TriggerVolume141_2",
@@ -23659,7 +23773,10 @@
     "area": "Map",
     "lat": -6606.28759765625,
     "lng": 79599.8828125,
-    "alt": 6386.04248046875
+    "alt": 6386.04248046875,
+    "actors": [
+      "MusicChangeVolume38_2"
+    ]
   },
   {
     "name": "TriggerVolume142_5",
@@ -23675,7 +23792,11 @@
     "area": "Map",
     "lat": -5665.6318359375,
     "lng": 46798.95703125,
-    "alt": 5817.19580078125
+    "alt": 5817.19580078125,
+    "actors": [
+      "TeslaCoil27",
+      "LampOn82"
+    ]
   },
   {
     "name": "TriggerVolume148",
@@ -23683,7 +23804,10 @@
     "area": "Map",
     "lat": 8132.5302734375,
     "lng": 82839.109375,
-    "alt": 4935.2841796875
+    "alt": 4935.2841796875,
+    "actors": [
+      "MusicChangeVolume44"
+    ]
   },
   {
     "name": "TriggerVolume149_2",
@@ -23691,7 +23815,10 @@
     "area": "Map",
     "lat": -21876.697265625,
     "lng": 7596.35400390625,
-    "alt": 1149.842529296875
+    "alt": 1149.842529296875,
+    "actors": [
+      "RedGuyEvent25"
+    ]
   },
   {
     "name": "TriggerVolume150",
@@ -23699,7 +23826,10 @@
     "area": "Map",
     "lat": 1157.64453125,
     "lng": 7148.40625,
-    "alt": 159.112060546875
+    "alt": 159.112060546875,
+    "actors": [
+      "RedGuyEvent26"
+    ]
   },
   {
     "name": "TriggerVolume151_6",
@@ -23707,7 +23837,10 @@
     "area": "Map",
     "lat": -26996.99609375,
     "lng": -21493.732421875,
-    "alt": 95.2470703125
+    "alt": 95.2470703125,
+    "actors": [
+      "RedGuyEvent27"
+    ]
   },
   {
     "name": "TriggerVolume153",
@@ -23715,7 +23848,10 @@
     "area": "Map",
     "lat": -31364.607421875,
     "lng": 3395.30810546875,
-    "alt": 10.28997802734375
+    "alt": 10.28997802734375,
+    "actors": [
+      "TutorialButtons15_14640"
+    ]
   },
   {
     "name": "TriggerVolume154",
@@ -23723,7 +23859,10 @@
     "area": "Map",
     "lat": -24435.9609375,
     "lng": -1941.19873046875,
-    "alt": -2045.254638671875
+    "alt": -2045.254638671875,
+    "actors": [
+      "TutorialButtons4"
+    ]
   },
   {
     "name": "TriggerVolume161_2",
@@ -23731,7 +23870,11 @@
     "area": "Map",
     "lat": 54110.91796875,
     "lng": -36217.71875,
-    "alt": 2699.6884765625
+    "alt": 2699.6884765625,
+    "actors": [
+      "Jumppad60",
+      "CarrotJumppadButtonBlock"
+    ]
   },
   {
     "name": "TriggerVolume163_2",
@@ -23739,7 +23882,10 @@
     "area": "Map",
     "lat": 25690.1484375,
     "lng": 52825.30859375,
-    "alt": 1797.2850341796875
+    "alt": 1797.2850341796875,
+    "actors": [
+      "Door138"
+    ]
   },
   {
     "name": "TriggerVolume17",
@@ -23747,7 +23893,11 @@
     "area": "Map",
     "lat": -32478.525390625,
     "lng": -1664.77734375,
-    "alt": -2076.14111328125
+    "alt": -2076.14111328125,
+    "actors": [
+      "TutorialButtons3",
+      "TutorialButtons_18"
+    ]
   },
   {
     "name": "TriggerVolume170",
@@ -23755,7 +23905,10 @@
     "area": "Map",
     "lat": 12513.681640625,
     "lng": 50368.56640625,
-    "alt": 3112.067138671875
+    "alt": 3112.067138671875,
+    "actors": [
+      "TutorialButtons35"
+    ]
   },
   {
     "name": "TriggerVolume18",
@@ -23763,7 +23916,10 @@
     "area": "Map",
     "lat": -22533.001953125,
     "lng": 19325.25390625,
-    "alt": -860.0748901367188
+    "alt": -860.0748901367188,
+    "actors": [
+      "Door29"
+    ]
   },
   {
     "name": "TriggerVolume182_2",
@@ -23779,7 +23935,10 @@
     "area": "Map",
     "lat": -36048.19921875,
     "lng": -1749.7003173828125,
-    "alt": 14.7808837890625
+    "alt": 14.7808837890625,
+    "actors": [
+      "ShowBigBoy2"
+    ]
   },
   {
     "name": "TriggerVolume3",
@@ -23787,7 +23946,10 @@
     "area": "Map",
     "lat": -33489.80859375,
     "lng": -2064.092041015625,
-    "alt": -1898.6806640625
+    "alt": -1898.6806640625,
+    "actors": [
+      "ShowBigBoy2"
+    ]
   },
   {
     "name": "TriggerVolume31_29",
@@ -23795,7 +23957,10 @@
     "area": "Map",
     "lat": 28697.125,
     "lng": 6173.12255859375,
-    "alt": 11.423660278320312
+    "alt": 11.423660278320312,
+    "actors": [
+      "BallistaRadius2_2247"
+    ]
   },
   {
     "name": "TriggerVolume32",
@@ -23803,7 +23968,10 @@
     "area": "Map",
     "lat": 29223.744140625,
     "lng": 10655.2490234375,
-    "alt": 36.92808532714844
+    "alt": 36.92808532714844,
+    "actors": [
+      "BallistaRadius2_2247"
+    ]
   },
   {
     "name": "TriggerVolume33",
@@ -23811,7 +23979,10 @@
     "area": "Map",
     "lat": 25572.900390625,
     "lng": 7487.82861328125,
-    "alt": 1022.6614990234375
+    "alt": 1022.6614990234375,
+    "actors": [
+      "BallistaRadius2_2247"
+    ]
   },
   {
     "name": "TriggerVolume4",
@@ -23819,7 +23990,10 @@
     "area": "Map",
     "lat": -32537.041015625,
     "lng": 1415.636962890625,
-    "alt": 24.565093994140625
+    "alt": 24.565093994140625,
+    "actors": [
+      "ShowBigBoy2"
+    ]
   },
   {
     "name": "TriggerVolume51_2",
@@ -23827,7 +24001,11 @@
     "area": "Map",
     "lat": -1848.9989013671875,
     "lng": -17159.828125,
-    "alt": -549.06787109375
+    "alt": -549.06787109375,
+    "actors": [
+      "RedGuyEvent4_2",
+      "ShowBigBoy4"
+    ]
   },
   {
     "name": "TriggerVolume53_6",
@@ -23835,7 +24013,10 @@
     "area": "Map",
     "lat": 10455.64453125,
     "lng": 22088.255859375,
-    "alt": 808.6358642578125
+    "alt": 808.6358642578125,
+    "actors": [
+      "RisingBeam4"
+    ]
   },
   {
     "name": "TriggerVolume54_8",
@@ -23843,7 +24024,10 @@
     "area": "Map",
     "lat": 17486.009765625,
     "lng": 21539.9375,
-    "alt": 1117.344482421875
+    "alt": 1117.344482421875,
+    "actors": [
+      "ShowBigBoy"
+    ]
   },
   {
     "name": "TriggerVolume57_2",
@@ -23851,7 +24035,10 @@
     "area": "Map",
     "lat": -32767.244140625,
     "lng": 1930.78857421875,
-    "alt": -432.0
+    "alt": -432.0,
+    "actors": [
+      "RedGuyEvent8"
+    ]
   },
   {
     "name": "TriggerVolume58",
@@ -23867,7 +24054,10 @@
     "area": "Map",
     "lat": -32882.9453125,
     "lng": -1598.0345458984375,
-    "alt": -1898.6806640625
+    "alt": -1898.6806640625,
+    "actors": [
+      "PipeCap10_2"
+    ]
   },
   {
     "name": "TriggerVolume61",
@@ -23875,7 +24065,10 @@
     "area": "Map",
     "lat": -8307.271484375,
     "lng": 13830.9814453125,
-    "alt": -457.7048645019531
+    "alt": -457.7048645019531,
+    "actors": [
+      "PlayerForceLook"
+    ]
   },
   {
     "name": "TriggerVolume62_4",
@@ -23883,7 +24076,10 @@
     "area": "Map",
     "lat": -2065.75048828125,
     "lng": -16133.5263671875,
-    "alt": -785.841064453125
+    "alt": -785.841064453125,
+    "actors": [
+      "Door38_1990"
+    ]
   },
   {
     "name": "TriggerVolume65_2",
@@ -23891,7 +24087,10 @@
     "area": "Map",
     "lat": -45193.85546875,
     "lng": -35188.6953125,
-    "alt": -506.174072265625
+    "alt": -506.174072265625,
+    "actors": [
+      "Door108"
+    ]
   },
   {
     "name": "TriggerVolume66_5",
@@ -23899,7 +24098,11 @@
     "area": "Map",
     "lat": -24561.83203125,
     "lng": -35202.12109375,
-    "alt": -458.6051025390625
+    "alt": -458.6051025390625,
+    "actors": [
+      "DestroyObjectsOnTrigger3_5",
+      "RedGuy44_2282"
+    ]
   },
   {
     "name": "TriggerVolume67_2",
@@ -23939,7 +24142,10 @@
     "area": "Map",
     "lat": 38354.70703125,
     "lng": 26238.82421875,
-    "alt": 3076.64111328125
+    "alt": 3076.64111328125,
+    "actors": [
+      "ShowBigBoy3"
+    ]
   },
   {
     "name": "TriggerVolume80_2",
@@ -23947,7 +24153,10 @@
     "area": "Map",
     "lat": 858.0,
     "lng": 48195.0,
-    "alt": 3073.0
+    "alt": 3073.0,
+    "actors": [
+      "TaskGoldCounter_2"
+    ]
   },
   {
     "name": "TriggerVolume81_2",
@@ -23963,7 +24172,10 @@
     "area": "Map",
     "lat": 3709.638671875,
     "lng": 42312.421875,
-    "alt": 1693.8748779296875
+    "alt": 1693.8748779296875,
+    "actors": [
+      "Door121_2"
+    ]
   },
   {
     "name": "TriggerVolume86_2",
@@ -23987,7 +24199,10 @@
     "area": "Map",
     "lat": -6815.48193359375,
     "lng": -31614.6484375,
-    "alt": -1043.057861328125
+    "alt": -1043.057861328125,
+    "actors": [
+      "RedGuyEvent16"
+    ]
   },
   {
     "name": "TriggerVolume97",
@@ -23995,7 +24210,10 @@
     "area": "Map",
     "lat": -8865.0,
     "lng": -19770.0,
-    "alt": -1345.0
+    "alt": -1345.0,
+    "actors": [
+      "ShowBigBoy4"
+    ]
   },
   {
     "name": "TriggerVolume98",
@@ -24003,7 +24221,10 @@
     "area": "Map",
     "lat": -17991.779296875,
     "lng": -5338.603515625,
-    "alt": 1570.0
+    "alt": 1570.0,
+    "actors": [
+      "ShowBigBoy4"
+    ]
   },
   {
     "name": "TriggerVolume99",
@@ -24011,7 +24232,10 @@
     "area": "Map",
     "lat": -27765.52734375,
     "lng": -14698.796875,
-    "alt": 1570.0
+    "alt": 1570.0,
+    "actors": [
+      "ShowBigBoy4"
+    ]
   },
   {
     "name": "UpgradeHappiness2_2",

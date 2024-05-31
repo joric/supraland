@@ -10642,8 +10642,8 @@
     "lng": 22270.150390625,
     "alt": 3853.4931640625,
     "actors": [
-      "Metalset1_SteelPoleRound_27",
-      "Gears_2"
+      "Gears_2",
+      "Metalset1_SteelPoleRound_27"
     ]
   },
   {
@@ -20235,7 +20235,10 @@
     "area": "DLC2_Complete",
     "lat": -48014.55078125,
     "lng": 46237.46875,
-    "alt": 461.9168701171875
+    "alt": 461.9168701171875,
+    "actors": [
+      "QuestActivator-Area4-1"
+    ]
   },
   {
     "name": "TriggerVolume3",
@@ -20243,7 +20246,10 @@
     "area": "DLC2_Complete",
     "lat": -48841.734375,
     "lng": 45239.5,
-    "alt": 586.6885986328125
+    "alt": 586.6885986328125,
+    "actors": [
+      "QuestActivator-Area4-1"
+    ]
   },
   {
     "name": "TriggerVolume8_2",
@@ -20251,7 +20257,11 @@
     "area": "DLC2_Complete",
     "lat": 23447.5234375,
     "lng": 15738.8271484375,
-    "alt": 4141.74169921875
+    "alt": 4141.74169921875,
+    "actors": [
+      "Introcredits_2",
+      "BP_Kill_Em_All2_2"
+    ]
   },
   {
     "name": "TriggerVolume_2",
@@ -20259,7 +20269,10 @@
     "area": "DLC2_Complete",
     "lat": -56294.7265625,
     "lng": 55762.9765625,
-    "alt": 5755.57666015625
+    "alt": 5755.57666015625,
+    "actors": [
+      "DoorLego_2"
+    ]
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_424",
@@ -21954,7 +21967,40 @@
     "area": "DLC2_FinalBoss",
     "lat": -20840.05078125,
     "lng": -26664.017578125,
-    "alt": 6575.0
+    "alt": 6575.0,
+    "actors": [
+      "BossArea_InEncounter_Counter",
+      "BossArea_InEncounter_Relay",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator"
+    ]
   },
   {
     "name": "BossArea_InEncounter_Volume2_6",
@@ -21962,7 +22008,40 @@
     "area": "DLC2_FinalBoss",
     "lat": -21007.94140625,
     "lng": -23893.509765625,
-    "alt": 6875.0
+    "alt": 6875.0,
+    "actors": [
+      "BossArea_InEncounter_Counter",
+      "BossArea_InEncounter_Relay",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator"
+    ]
   },
   {
     "name": "Trigger_MakeSureBossExists1",
@@ -21970,7 +22049,41 @@
     "area": "DLC2_FinalBoss",
     "lat": -19126.939453125,
     "lng": -23003.298828125,
-    "alt": 6165.81982421875
+    "alt": 6165.81982421875,
+    "actors": [
+      "Relay_PlayerLaunchedToBossLanded",
+      "Relay_StartBoss_MakeSureBossExists",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator",
+      "SetLastCheckpoint3_2"
+    ]
   },
   {
     "name": "Trigger_MakeSureBossExists2",
@@ -21978,7 +22091,39 @@
     "area": "DLC2_FinalBoss",
     "lat": -21273.5390625,
     "lng": -26471.126953125,
-    "alt": 7020.81982421875
+    "alt": 7020.81982421875,
+    "actors": [
+      "Relay_StartBoss_MakeSureBossExists",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator"
+    ]
   },
   {
     "name": "BuyQuintupleJump",
@@ -22961,7 +23106,10 @@
     "area": "DLC2_Area0",
     "lat": -283935.84375,
     "lng": -994.0,
-    "alt": 10006.046875
+    "alt": 10006.046875,
+    "actors": [
+      "StartPrinceTourEvent"
+    ]
   },
   {
     "name": "TriggerVolume11_InitialFog",
@@ -22969,7 +23117,10 @@
     "area": "DLC2_Area0",
     "lat": -290161.9375,
     "lng": -2371.97314453125,
-    "alt": 10636.2509765625
+    "alt": 10636.2509765625,
+    "actors": [
+      "FogChanger_A0_Initial"
+    ]
   },
   {
     "name": "TriggerVolume3",
@@ -22977,7 +23128,14 @@
     "area": "DLC2_Area0",
     "lat": -288600.84375,
     "lng": -1880.0,
-    "alt": 10676.046875
+    "alt": 10676.046875,
+    "actors": [
+      "Door38",
+      "Door39",
+      "KingEvent1",
+      "QueenEvent1",
+      "Spectator6Event"
+    ]
   },
   {
     "name": "TriggerVolume4",
@@ -22985,7 +23143,10 @@
     "area": "DLC2_Area0",
     "lat": -287985.84375,
     "lng": -930.0,
-    "alt": 10462.046875
+    "alt": 10462.046875,
+    "actors": [
+      "Spectator7Event"
+    ]
   },
   {
     "name": "TriggerVolume5",
@@ -22993,7 +23154,10 @@
     "area": "DLC2_Area0",
     "lat": -284737.09375,
     "lng": -806.6566162109375,
-    "alt": 9922.046875
+    "alt": 9922.046875,
+    "actors": [
+      "StartPrinceTourEvent"
+    ]
   },
   {
     "name": "TriggerVolume7",
@@ -23001,7 +23165,10 @@
     "area": "DLC2_Area0",
     "lat": -283914.84375,
     "lng": -1420.0,
-    "alt": 10006.046875
+    "alt": 10006.046875,
+    "actors": [
+      "StartPrinceTourEvent"
+    ]
   },
   {
     "name": "TriggerVolume9",
@@ -23009,7 +23176,10 @@
     "area": "DLC2_Area0",
     "lat": -283258.53125,
     "lng": 264.0,
-    "alt": 9827.046875
+    "alt": 9827.046875,
+    "actors": [
+      "StartPrinceTourEvent"
+    ]
   },
   {
     "name": "TriggerVolume_2",
@@ -23017,7 +23187,16 @@
     "area": "DLC2_Area0",
     "lat": -289570.5625,
     "lng": -2166.5,
-    "alt": 10686.046875
+    "alt": 10686.046875,
+    "actors": [
+      "QuestActivator_2",
+      "Spectator2Event",
+      "Spectator1Event",
+      "Spectator5Event",
+      "Spectator9Event",
+      "Spectator8Event",
+      "Talk_ComplimentDoor"
+    ]
   },
   {
     "name": "TriggerVolume_Fog1",
@@ -28247,7 +28426,10 @@
     "area": "DLC2_Area0_Below",
     "lat": 24879.939453125,
     "lng": 14877.5673828125,
-    "alt": 4642.16015625
+    "alt": 4642.16015625,
+    "actors": [
+      "DisableFallCollision"
+    ]
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_0",

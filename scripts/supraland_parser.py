@@ -97,6 +97,7 @@ actions = {
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
     'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open','ActionsOnOpen',
     'openWhenPlayerEnters', 'UniqueActorBeginOverlap',
+    'Objects', # used by TriggerVolume_C in SL/SLC
 }
 
 def camel_to_snake(s):
