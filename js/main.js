@@ -400,7 +400,7 @@ function loadMap() {
           let icon = c && c.icon || defaultIcon;
           let layer = c && c.layer || defaultLayer;
           let color = getMarkerColor(o);
-          let radius = 7; // polyline dots
+          let radius = 6; // polyline dots
 
           // check if layer id really exists in layers
           layer = layers[layer] ? layer : defaultLayer;
