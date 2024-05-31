@@ -713,7 +713,23 @@ window.markItemFound = function (id, found=true, save=true) {
 }
 
 function markItems() {
-  for (const[id,value] of Object.entries(settings.markedItems)) {
+  let marked = settings.markedItems;
+
+  // extend markedItems to nested actors
+  for (layer of Object.values(layers)) {
+    for (marker of Object.values(layer._layers)) {
+      if (marker.options.o && settings.markedItems[marker.options.alt]) {
+        if (actors = marker.options.o.actors) {
+          for (name of actors) {
+            // add parent area if actor lacks area prefix
+            marked[ name.includes(':') ? name : (marker.options.o.area + ':' + name) ] = true;
+          }
+        }
+      }
+    }
+  }
+
+  for (const[id,value] of Object.entries(marked)) {
     var divs = document.querySelectorAll('*[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.add('found');
@@ -830,6 +846,7 @@ window.loadSaveFile = function () {
     //setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(settings.markedItems).length + ' items')},250);
     console.log('Marked ' + Object.keys(settings.markedItems).length + ' items');
 
+    markItems(); // just to make sure to update all nested actions
     saveSettings();
 
     ready = true;
