@@ -12989,6 +12989,7 @@
     "lat": -11914.76171875,
     "lng": -24982.04296875,
     "alt": -1269.9053955078125,
+    "relative_velocity_flag": false,
     "velocity": {
       "x": 0.0,
       "y": -3000.0,
@@ -13273,6 +13274,7 @@
     "lat": -28726.1171875,
     "lng": -39562.5390625,
     "alt": 1590.470458984375,
+    "relative_velocity_flag": false,
     "velocity": {
       "x": 0.0,
       "y": -3000.0,
@@ -13317,6 +13319,7 @@
     "alt": -266.2233581542969,
     "relative_velocity": 6000.0,
     "allow_stomp": true,
+    "relative_velocity_flag": false,
     "velocity": {
       "x": 2550.0,
       "y": 5200.0,
@@ -13719,6 +13722,7 @@
     "lat": -27533.306640625,
     "lng": 3068.1103515625,
     "alt": 820.3421630859375,
+    "relative_velocity_flag": false,
     "velocity": {
       "x": 0.0,
       "y": 600.0,
@@ -15459,8 +15463,8 @@
     "lng": -47552.078125,
     "alt": 724.4636840820312,
     "actors": [
-      "Red_brick_2781",
-      "Door76"
+      "Door76",
+      "Red_brick_2781"
     ]
   },
   {
@@ -15604,8 +15608,8 @@
     "lng": 7112.92529296875,
     "alt": 969.1436157226562,
     "actors": [
-      "LegoDoor",
-      "RedGuyEvent2_569"
+      "RedGuyEvent2_569",
+      "LegoDoor"
     ]
   },
   {

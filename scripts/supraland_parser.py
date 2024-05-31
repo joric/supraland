@@ -88,13 +88,13 @@ properties = [
     'HitsToBreak','bObsidian', 'HitsTaken', 'BrickType', # Minecraftbrick_C
     'AllowEnemyProjectiles','RequiresPurpleShot?', # Button_C
     'Color', 'OriginalColor', # Seed_C/*Flower_C/Keycard*_C (0 - white, 1 - yellow, 2 - red, 5 - green)
-    'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity','CenterActor', # jumpppad_c
+    'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity?', 'CenterActor', # jumpppad_c
 ]
 
 actions = {
     'OpenWhenTake','Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
-    'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy',
+    'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open',
 }
 
 def camel_to_snake(s):
@@ -214,7 +214,15 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                                 actors.append(optArea(area, k, v))
                                 if key in objects and level<5:
                                     get_actors(objects[key], level+1)
+
             get_actors(o)
+
+            # investifate Relay_C links, namely FinalBossQuest_4
+            if o.get('Properties',{}).get('PropogateToRelaysInOtherMaps'):
+                b = ':'.join((t['AssetPathName'].split('.').pop(),t['SubPathString'].split('.').pop()))
+                actors.append(b)
+                get_actors(objects[b])
+
             optKey(data[-1], 'actors', actors or None)
 
 
