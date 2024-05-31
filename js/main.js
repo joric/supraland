@@ -11,6 +11,7 @@ let reloading;
 let settings;
 let mapCenter;
 let mapParam = {};
+let objects = {};
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -374,9 +375,8 @@ function loadMap() {
     fetch('data/markers.'+mapId+'.json')
       .then((response) => response.json())
       .then((j) => {
-        let objects = {};
         let titles = {};
-
+        objects = {};
         // collect objects for cross-references
         for (o of j) {
           let id = o.area + ':' + o.name;
@@ -700,6 +700,12 @@ window.markItemFound = function (id, found=true, save=true) {
       div.classList.remove('found');
     }
   });
+  
+  // mark/unmark all nested actors also
+  for (actor of getActors(id)) {
+    
+  }
+
 
   if (found) {
     settings.markedItems[id] = true;
@@ -707,33 +713,46 @@ window.markItemFound = function (id, found=true, save=true) {
     delete settings.markedItems[id];
   }
 
+  markActors(id, found);
+
   if (save) {
     saveSettings();
   }
 }
 
-function markItems() {
-  let marked = settings.markedItems;
-
-  // extend markedItems to nested actors
-  for (layer of Object.values(layers)) {
-    for (marker of Object.values(layer._layers)) {
-      if (marker.options.o && settings.markedItems[marker.options.alt]) {
-        if (actors = marker.options.o.actors) {
-          for (name of actors) {
-            // add parent area if actor lacks area prefix
-            marked[ name.includes(':') ? name : (marker.options.o.area + ':' + name) ] = true;
-          }
-        }
+function getActors(id) {
+  actors = []
+  if (o = objects[id]) {
+    if (o.actors) {
+      for (actor of o.actors) {
+        // add parent area if actor lacks area prefix
+        actors.push(actor.includes(':') ? actor : (o.area + ':' + actor));
       }
     }
   }
+  return actors;
+}
 
-  for (const[id,value] of Object.entries(marked)) {
+function markActors(id, found) {
+  for (actor of getActors(id)) {
+    var divs = document.querySelectorAll('*[alt="' + actor + '"]');
+    [].forEach.call(divs, function(div) {
+      if (found) {
+        div.classList.add('found');
+      } else {
+        div.classList.remove('found');
+      }
+    });
+  }
+}
+
+function markItems() {
+  for (id of Object.keys(settings.markedItems)) {
     var divs = document.querySelectorAll('*[alt="' + id + '"]');
     [].forEach.call(divs, function(div) {
       div.classList.add('found');
     });
+    markActors(id, true);
   }
 
   // filter by settings.searchText. caching is unreliable, just perform a full search here
@@ -816,7 +835,8 @@ window.loadSaveFile = function () {
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
-            markItemFound(area + ':' + name, true, false);
+            let id = area + ':' + name;
+            settings.markedItems[id] = true;
           }
         }
       }
@@ -846,7 +866,7 @@ window.loadSaveFile = function () {
     //setTimeout(function(){alert('Loaded successfully. Marked ' + Object.keys(settings.markedItems).length + ' items')},250);
     console.log('Marked ' + Object.keys(settings.markedItems).length + ' items');
 
-    markItems(); // just to make sure to update all nested actions
+    markItems();
     saveSettings();
 
     ready = true;
