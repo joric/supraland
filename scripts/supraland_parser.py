@@ -86,7 +86,7 @@ properties = [
     'IsInShop','canBePickedUp', 'PriceType', # BP_UnlockMap_C, etc.
     'Coins','CoinsInGold','Cost','Value', # Chest_C
     'HitsToBreak','bObsidian', 'HitsTaken', 'BrickType', # Minecraftbrick_C
-    'AllowEnemyProjectiles','RequiresPurpleShot?', # Button_C
+    'AllowEnemyProjectiles','RequiresPurpleShot?', 'ButtonType', 'Shape', # Button_C
     'Color', 'OriginalColor', # Seed_C/*Flower_C/Keycard*_C (0 - white, 1 - yellow, 2 - red, 5 - green)
     'RelativeVelocity', 'AllowStomp', 'DisableMovementInAir', 'RelativeVelocity?', 'CenterActor', # jumpppad_c
 ]
