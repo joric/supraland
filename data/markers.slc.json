@@ -5509,8 +5509,8 @@
     "lng": 37816.90625,
     "alt": -189.0847625732422,
     "actors": [
-      "crate14",
-      "TutorialButtons18_2"
+      "TutorialButtons18_2",
+      "crate14"
     ]
   },
   {
@@ -5554,8 +5554,8 @@
     "lng": 43867.2578125,
     "alt": 1320.2569580078125,
     "actors": [
-      "Wood_block_143",
-      "Glowline9_18"
+      "Glowline9_18",
+      "Wood_block_143"
     ]
   },
   {
@@ -5577,11 +5577,11 @@
     "lng": 37520.0,
     "alt": -1490.0,
     "actors": [
-      "Concrette_Paving32",
       "EffectTriggerable_2",
       "EffectTriggerable2",
       "EffectTriggerable3",
-      "Glowline76_2"
+      "Glowline76_2",
+      "Concrette_Paving32"
     ]
   },
   {
@@ -5592,8 +5592,8 @@
     "lng": 24078.138671875,
     "alt": -223.019287109375,
     "actors": [
-      "Wood_block_135",
-      "Glowline13_2"
+      "Glowline13_2",
+      "Wood_block_135"
     ]
   },
   {
@@ -5637,8 +5637,8 @@
     "lng": 42332.95703125,
     "alt": 487.5684814453125,
     "actors": [
-      "Wood_block_89",
-      "Glowline6_11"
+      "Glowline6_11",
+      "Wood_block_89"
     ]
   },
   {

@@ -895,6 +895,8 @@
     "lng": 26345.0,
     "alt": 1166.0,
     "requires_purple_shot_flag": true,
+    "achievement_flag": true,
+    "achievement_name": "CoinsBack",
     "actors": [
       "Door105",
       "BlueGuyGuardingMoney",
@@ -909,6 +911,7 @@
     "lng": 26727.0,
     "alt": 1390.0,
     "requires_purple_shot_flag": true,
+    "achievement_name": "CoinsBack",
     "actors": [
       "Door102"
     ]
@@ -921,6 +924,7 @@
     "lng": 25062.0,
     "alt": 1052.0,
     "requires_purple_shot_flag": true,
+    "achievement_name": "CoinsBack",
     "actors": [
       "Door102"
     ]
@@ -932,6 +936,7 @@
     "lat": -40463.7109375,
     "lng": -25099.982421875,
     "alt": 417.6410217285156,
+    "achievement_name": "None, None, None, None",
     "actors": [
       "CounterTimerTrigger2_2",
       "Door106"
@@ -967,6 +972,7 @@
     "lat": -40463.7109375,
     "lng": -26042.3046875,
     "alt": 417.6410217285156,
+    "achievement_name": "None, None, None, None",
     "actors": [
       "CounterTimerTrigger2_2",
       "Door106"
@@ -979,6 +985,7 @@
     "lat": -40789.73046875,
     "lng": -25591.244140625,
     "alt": 417.6413269042969,
+    "achievement_name": "None, None, None, None",
     "actors": [
       "CounterTimerTrigger2_2",
       "Door106"
@@ -991,6 +998,7 @@
     "lat": -40105.3203125,
     "lng": -25591.244140625,
     "alt": 417.6387023925781,
+    "achievement_name": "None, None, None, None",
     "actors": [
       "CounterTimerTrigger2_2",
       "Door106"
@@ -1003,6 +1011,8 @@
     "lat": -17469.6953125,
     "lng": 42007.40234375,
     "alt": 1730.24658203125,
+    "achievement_flag": true,
+    "achievement_name": "YellowShot",
     "actors": [
       "RingColorer7_3"
     ]
@@ -1026,6 +1036,8 @@
     "lat": -40127.2890625,
     "lng": -28656.234375,
     "alt": -199.8069305419922,
+    "achievement_flag": true,
+    "achievement_name": "Freed_from_Prison",
     "actors": [
       "Door114"
     ]
@@ -1277,6 +1289,8 @@
     "lat": -39728.25390625,
     "lng": -27643.025390625,
     "alt": -974.18359375,
+    "achievement_flag": true,
+    "achievement_name": "Freed_from_Prison",
     "actors": [
       "CousinRot",
       "TutorialButtons17"
@@ -23446,6 +23460,8 @@
     "lat": 23628.5703125,
     "lng": 80184.0234375,
     "alt": 2615.171875,
+    "achievement_flag": true,
+    "achievement_name": "ThroughPipe",
     "actors": [
       "RedGuyEvent18",
       "CutSceneMode_2",
@@ -23784,7 +23800,9 @@
     "area": "Map",
     "lat": -6548.0,
     "lng": 99771.0,
-    "alt": 13733.0
+    "alt": 13733.0,
+    "achievement_flag": true,
+    "achievement_name": "InvisibleWall"
   },
   {
     "name": "TriggerVolume147",
@@ -24025,6 +24043,8 @@
     "lat": 17486.009765625,
     "lng": 21539.9375,
     "alt": 1117.344482421875,
+    "achievement_flag": true,
+    "achievement_name": "Infiltrated",
     "actors": [
       "ShowBigBoy"
     ]
@@ -24126,7 +24146,9 @@
     "area": "Map",
     "lat": 39556.59765625,
     "lng": 27171.03125,
-    "alt": 3144.67236328125
+    "alt": 3144.67236328125,
+    "achievement_flag": true,
+    "achievement_name": "BlueKing"
   },
   {
     "name": "TriggerVolume71_8",
@@ -24134,7 +24156,9 @@
     "area": "Map",
     "lat": 39556.59765625,
     "lng": 25175.083984375,
-    "alt": 3144.67236328125
+    "alt": 3144.67236328125,
+    "achievement_flag": true,
+    "achievement_name": "BlueKing"
   },
   {
     "name": "TriggerVolume74_2",
@@ -24164,7 +24188,9 @@
     "area": "Map",
     "lat": 3790.321044921875,
     "lng": 46505.6484375,
-    "alt": 2763.76953125
+    "alt": 2763.76953125,
+    "achievement_flag": true,
+    "achievement_name": "FliesBeam"
   },
   {
     "name": "TriggerVolume82_2",
@@ -24183,7 +24209,9 @@
     "area": "Map",
     "lat": 15493.4306640625,
     "lng": 51516.40625,
-    "alt": 3044.225830078125
+    "alt": 3044.225830078125,
+    "achievement_flag": true,
+    "achievement_name": "FireFlies"
   },
   {
     "name": "TriggerVolume92_2",
@@ -24191,7 +24219,9 @@
     "area": "Map",
     "lat": 26135.576171875,
     "lng": 48288.32421875,
-    "alt": 1594.514404296875
+    "alt": 1594.514404296875,
+    "achievement_flag": true,
+    "achievement_name": "GreenMoonDoor"
   },
   {
     "name": "TriggerVolume94_2",

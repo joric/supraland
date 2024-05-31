@@ -1,5 +1,21 @@
 [
   {
+    "name": "Anvil2_3",
+    "type": "Anvil_C",
+    "area": "DLC2_Complete",
+    "lat": -46690.0,
+    "lng": 38863.0,
+    "alt": 726.2919311523438
+  },
+  {
+    "name": "Anvil4_2",
+    "type": "Anvil_C",
+    "area": "DLC2_Complete",
+    "lat": -29656.037109375,
+    "lng": 24391.212890625,
+    "alt": 1728.9361572265625
+  },
+  {
     "name": "BallButton",
     "type": "BallButton_C",
     "area": "DLC2_Complete",
@@ -22052,6 +22068,7 @@
     "alt": 6165.81982421875,
     "actors": [
       "Relay_PlayerLaunchedToBossLanded",
+      "SetLastCheckpoint3_2",
       "Relay_StartBoss_MakeSureBossExists",
       "FinalBossQuest_4",
       "BossArea_Relay_OpenDoorAfterReturn",
@@ -22081,8 +22098,7 @@
       "BossArea_HideLastBaronAndOpenPipe_Relay",
       "NPC_BossBaronFinal1",
       "PipeCap12_2",
-      "BossArea_OpenAFastTravelToBossArea_Relay_propogator",
-      "SetLastCheckpoint3_2"
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator"
     ]
   },
   {
