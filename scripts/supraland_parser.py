@@ -76,6 +76,7 @@ starts_with = {
     'Pipesystem','Buy','BP_Buy','BP_Purchase','BP_Unlock', 'Purchase','Upgrade','Button','Smallbutton','Coin',
     'Lighttrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key','ProjectileShooter',
     'MinecraftBrick', # can be MinecraftBrick_C and MinecraftBrickRespawnable_C
+    'BP_TriggerVolume_C', # opens pipes in SIU
 }
 
 ends_with = {
@@ -95,6 +96,7 @@ actions = {
     'OpenWhenTake','Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
     'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open','ActionsOnOpen',
+    'openWhenPlayerEnters',
 }
 
 def camel_to_snake(s):
