@@ -76,11 +76,11 @@ starts_with = {
     'Pipesystem','Buy','BP_Buy','BP_Purchase','BP_Unlock', 'Purchase','Upgrade','Button','Smallbutton','Coin',
     'Lighttrigger','LotsOfCoins','EnemySpawn','Destroyable','BP_Pickaxe','Door','Key','ProjectileShooter',
     'MinecraftBrick', # can be MinecraftBrick_C and MinecraftBrickRespawnable_C
-    'BP_TriggerVolume_C', # opens pipes in SIU
 }
 
 ends_with = {
     'Chest_C','Button_C','Lever_C','Meat_C','Loot_C','Detector_C','Door_C','Flower_C','Coin_C','Guy_C',
+    'TriggerVolume_C', # opens pipes in SIU
 }
 
 properties = [

@@ -10642,8 +10642,8 @@
     "lng": 22270.150390625,
     "alt": 3853.4931640625,
     "actors": [
-      "Gears_2",
-      "Metalset1_SteelPoleRound_27"
+      "Metalset1_SteelPoleRound_27",
+      "Gears_2"
     ]
   },
   {
@@ -20230,6 +20230,38 @@
     "alt": 1014.994140625
   },
   {
+    "name": "TriggerVolume2_2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Complete",
+    "lat": -48014.55078125,
+    "lng": 46237.46875,
+    "alt": 461.9168701171875
+  },
+  {
+    "name": "TriggerVolume3",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Complete",
+    "lat": -48841.734375,
+    "lng": 45239.5,
+    "alt": 586.6885986328125
+  },
+  {
+    "name": "TriggerVolume8_2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Complete",
+    "lat": 23447.5234375,
+    "lng": 15738.8271484375,
+    "alt": 4141.74169921875
+  },
+  {
+    "name": "TriggerVolume_2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Complete",
+    "lat": -56294.7265625,
+    "lng": 55762.9765625,
+    "alt": 5755.57666015625
+  },
+  {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_424",
     "type": "ValveCarriable_C",
     "area": "DLC2_Complete",
@@ -21507,9 +21539,9 @@
       "z": 0.9150053262710571
     },
     "target": {
-      "x": -22793.92919804156,
-      "y": -19229.83731085062,
-      "z": 5773.7006197352075
+      "x": -22740.070420905948,
+      "y": -18981.44090050459,
+      "z": 6158.970264184437
     }
   },
   {
@@ -21915,6 +21947,38 @@
     "lng": -22845.5078125,
     "alt": 6086.6845703125,
     "color": 0
+  },
+  {
+    "name": "BossArea_InEncounter_Volume1_5",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -20840.05078125,
+    "lng": -26664.017578125,
+    "alt": 6575.0
+  },
+  {
+    "name": "BossArea_InEncounter_Volume2_6",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21007.94140625,
+    "lng": -23893.509765625,
+    "alt": 6875.0
+  },
+  {
+    "name": "Trigger_MakeSureBossExists1",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -19126.939453125,
+    "lng": -23003.298828125,
+    "alt": 6165.81982421875
+  },
+  {
+    "name": "Trigger_MakeSureBossExists2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -21273.5390625,
+    "lng": -26471.126953125,
+    "alt": 7020.81982421875
   },
   {
     "name": "BuyQuintupleJump",
@@ -22890,6 +22954,126 @@
     "lat": -287538.3125,
     "lng": -2000.2119140625,
     "alt": 11510.1943359375
+  },
+  {
+    "name": "TriggerVolume10",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -283935.84375,
+    "lng": -994.0,
+    "alt": 10006.046875
+  },
+  {
+    "name": "TriggerVolume11_InitialFog",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -290161.9375,
+    "lng": -2371.97314453125,
+    "alt": 10636.2509765625
+  },
+  {
+    "name": "TriggerVolume3",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -288600.84375,
+    "lng": -1880.0,
+    "alt": 10676.046875
+  },
+  {
+    "name": "TriggerVolume4",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -287985.84375,
+    "lng": -930.0,
+    "alt": 10462.046875
+  },
+  {
+    "name": "TriggerVolume5",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -284737.09375,
+    "lng": -806.6566162109375,
+    "alt": 9922.046875
+  },
+  {
+    "name": "TriggerVolume7",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -283914.84375,
+    "lng": -1420.0,
+    "alt": 10006.046875
+  },
+  {
+    "name": "TriggerVolume9",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -283258.53125,
+    "lng": 264.0,
+    "alt": 9827.046875
+  },
+  {
+    "name": "TriggerVolume_2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -289570.5625,
+    "lng": -2166.5,
+    "alt": 10686.046875
+  },
+  {
+    "name": "TriggerVolume_Fog1",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -286950.0,
+    "lng": -1294.0,
+    "alt": 11216.0
+  },
+  {
+    "name": "TriggerVolume_Fog2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -286950.0,
+    "lng": -1294.0,
+    "alt": 11216.0
+  },
+  {
+    "name": "TriggerVolume_NoRocks1",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -287990.0,
+    "lng": -1294.0,
+    "alt": 10444.0
+  },
+  {
+    "name": "TriggerVolume_NoRocks2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -286508.0,
+    "lng": 1108.0,
+    "alt": 10444.0
+  },
+  {
+    "name": "TriggerVolume_NoRocks3",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -283006.0,
+    "lng": 1498.0,
+    "alt": 10529.0
+  },
+  {
+    "name": "TriggerVolume_NoRocks4",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -285681.0,
+    "lng": -2757.0,
+    "alt": 10444.0
+  },
+  {
+    "name": "TriggerVolume_NoRocks5",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0",
+    "lat": -285681.0,
+    "lng": 171.0,
+    "alt": 10444.0
   },
   {
     "name": "ValveCarriable_288",
@@ -28056,6 +28240,14 @@
     "alt": 19556.3359375,
     "color": 3,
     "original_color": 3
+  },
+  {
+    "name": "TriggerVolume6_2",
+    "type": "TriggerVolume_C",
+    "area": "DLC2_Area0_Below",
+    "lat": 24879.939453125,
+    "lng": 14877.5673828125,
+    "alt": 4642.16015625
   },
   {
     "name": "MinecraftBrick_GEN_VARIABLE_ValveCarriable_C_CAT_0",
