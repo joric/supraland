@@ -94,7 +94,7 @@ properties = [
 actions = {
     'OpenWhenTake','Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
-    'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open',
+    'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open','ActionsOnOpen',
 }
 
 def camel_to_snake(s):
@@ -208,12 +208,13 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             def get_actors(o,level=0):
                 for action in actions:
                     if a := o.get('Properties',{}).get(action):
-                        for d in [a] if type(a) is dict else a:
-                            if type(d) is dict and 'OuterIndex' in d and 'ObjectName' in d:
-                                key = ':'.join((k:= d['OuterIndex']['Outer'],v:= d['ObjectName']))
-                                actors.append(optArea(area, k, v))
-                                if key in objects and level<5:
-                                    get_actors(objects[key], level+1)
+                        for d in [a] if type(a) is dict else a if type(a) is list else []:
+                            for b in ([d[x] for x in d.keys()] if action=='ActionsOnOpen' else [d]):
+                                if type(b) is dict and 'OuterIndex' in b and 'ObjectName' in b:
+                                    key = ':'.join((k:= b['OuterIndex']['Outer'],v:= b['ObjectName']))
+                                    actors.append(optArea(area, k, v))
+                                    if key in objects and level<6:
+                                        get_actors(objects[key], level+1)
 
             get_actors(o)
 

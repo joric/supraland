@@ -19963,7 +19963,38 @@
     "lng": -29420.947265625,
     "alt": 5995.0,
     "actors": [
-      "BossPuzzleEnd1_Relay"
+      "BossPuzzleEnd1_Relay",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator",
+      "BossPuzzleEnd1_Glowline",
+      "BossPuzzleEnd1_SetLastCheckpoint"
     ]
   },
   {
@@ -19974,7 +20005,38 @@
     "lng": -28386.798828125,
     "alt": 5995.0,
     "actors": [
-      "BossPuzzleEnd2_Relay"
+      "BossPuzzleEnd2_Relay",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator",
+      "BossPuzzleEnd2_Glowline",
+      "BossPuzzleEnd2_SetLastCheckpoint"
     ]
   },
   {
@@ -19985,7 +20047,38 @@
     "lng": -26541.45703125,
     "alt": 5995.0,
     "actors": [
-      "BossPuzzleEnd3_Relay"
+      "BossPuzzleEnd3_Relay",
+      "FinalBossQuest_4",
+      "BossArea_Relay_OpenDoorAfterReturn",
+      "BossFrontDoor",
+      "Relay_Boss_FrontDoor_EnableSlowWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorPostBoss",
+      "PushVolume_FrontDoor_PostBoss1",
+      "PushVolume_FrontDoor_PostBoss2",
+      "PushVolume_FrontDoor_PostBoss3",
+      "Relay_Boss_FrontDoor_DisableStrongWind",
+      "TriggeredBlockingVolume_2",
+      "BossArea_PushVolume_FrontDoorFast",
+      "NS_Wind_AirFlow_FrontDoorEntrance",
+      "Relay_OpenBossPuzzleDoorsAfterCelebration",
+      "BossPuzzle2_Door1",
+      "BossPuzzle1_Door",
+      "BossPuzzle0_Door1",
+      "BossPuzzle2_Door2",
+      "BossPuzzle0_Door2",
+      "DestroyObjectsOnTrigger18_2",
+      "BP_PlayerBlockVolume3",
+      "BP_PlayerBlockVolume2",
+      "BP_PlayerBlockVolume_2",
+      "BP_PlayerBlockVolume4",
+      "BossArea_HideLastBaronAndOpenPipe_Relay",
+      "NPC_BossBaronFinal1",
+      "PipeCap12_2",
+      "BossArea_OpenAFastTravelToBossArea_Relay_propogator",
+      "BossPuzzleEnd3_Glowline",
+      "BossPuzzleEnd3_SetLastCheckpoint"
     ]
   },
   {
@@ -22279,7 +22372,10 @@
     "alt": 980.12353515625,
     "actors": [
       "Secret_Rotator",
-      "RelayGlowLineForASecond"
+      "RelayGlowLineForASecond",
+      "Glowline78_2",
+      "RelayGlowLineForASecond_Off",
+      "Glowline78_2"
     ]
   },
   {
@@ -23411,7 +23507,22 @@
     "hits_to_break": 7,
     "hits_taken": 2,
     "actors": [
-      "SecretLavaArea_RelayLadder"
+      "SecretLavaArea_RelayLadder",
+      "SecretLavaArea_MoveMeshLadder",
+      "SecretLavaArea_WalkableBlock",
+      "MinecraftBrick95_2",
+      "SecretLavaArea_RelayLadder",
+      "SecretLavaArea_MoveMeshLadder",
+      "SecretLavaArea_WalkableBlock",
+      "MinecraftBrick95_2",
+      "SecretLavaArea_RelayLadder",
+      "SecretLavaArea_MoveMeshLadder",
+      "SecretLavaArea_WalkableBlock",
+      "MinecraftBrick95_2",
+      "SecretLavaArea_RelayLadder",
+      "MinecraftBrick115",
+      "MinecraftBrick115",
+      "MinecraftBrick115"
     ]
   },
   {
@@ -23728,7 +23839,9 @@
     "alt": -7577.89404296875,
     "color": 1,
     "actors": [
-      "Relay_OpenFastTravelSecretLavaAreaToBeamTutorial"
+      "Relay_OpenFastTravelSecretLavaAreaToBeamTutorial",
+      "PipeCap_FastTravelLavaToBeam1",
+      "PipeCap_FastTravelLavaToBeam2"
     ]
   },
   {
@@ -25950,7 +26063,10 @@
     "alt": 7850.966796875,
     "actors": [
       "Door45",
-      "Relay_2"
+      "Relay_2",
+      "LockedOutMan_RedGuyEvent",
+      "LockedOutMan_RedGuyEvent",
+      "Talk3_2"
     ]
   },
   {
