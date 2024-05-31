@@ -425,7 +425,7 @@ function loadMap() {
               let layer = 'jumppads';
               if (r = o.direction) {
                 let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
-                if ( Math.sqrt(Math.pow(o.lat-o.target.y,2)+Math.pow(o.lat-o.target.y,2))>radius) {
+                if ( Math.sqrt(Math.pow(o.lat-o.target.y,2)+Math.pow(o.lat-o.target.y,2))<radius) {
                   L.polylineDecorator(line,{
                     patterns:[{offset:'100%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {fillOpacity: 1, weight:0,
                       color: color, interactive: true, alt: alt, title: ' ',
