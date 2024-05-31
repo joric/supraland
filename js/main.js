@@ -171,6 +171,8 @@ function loadMap() {
     settings.center = [map.getCenter().lat, map.getCenter().lng]; // avoid circular refs here
     settings.zoom = map.getZoom();
     saveSettings();
+    updatePolylines();
+    markItems();
   });
 
   map.on('baselayerchange', function(e) {
@@ -187,11 +189,9 @@ function loadMap() {
 
   function updatePolylines() {
     // set alt for polylines (attributes are not populated to paths)
-    for (const layerObj of Object.values(layers)) {
-      for (const m of Object.values(layerObj._layers)) {
-        if (p = m._path) {
-          p.setAttribute('alt', m.options.alt);
-        }
+    for (const m of Object.values(map._layers)) {
+      if (p = m._path) {
+        p.setAttribute('alt', m.options.alt);
       }
     }
   }
@@ -400,6 +400,7 @@ function loadMap() {
           let icon = c && c.icon || defaultIcon;
           let layer = c && c.layer || defaultLayer;
           let color = getMarkerColor(o);
+          let radius = 7; // polyline dots
 
           // check if layer id really exists in layers
           layer = layers[layer] ? layer : defaultLayer;
@@ -423,7 +424,12 @@ function loadMap() {
             if (o.target) {
               let layer = 'jumppads';
               if (r = o.direction) {
-                L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
+                let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
+                L.polylineDecorator(line,{
+                  patterns:[{offset:'100%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {fillOpacity: 1, weight:0,
+                    color: color, interactive: true, alt: alt, title: ' ',
+                  }})}],
+                }).addTo(map);
               }
             }
           }
@@ -452,14 +458,14 @@ function loadMap() {
           if (o.type.startsWith('Pipesystem')) {
             let layer = 'pipesys';
             let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // move marker to cap, if exists
-            L.circleMarker([a.lat, a.lng], {title: title, o:o, alt: (o.nearest_cap ? alt : ''), radius: 5, fillOpacity: 1, weight: 0, fillColor: color})
+            L.circleMarker([a.lat, a.lng], {title: title, o:o, alt: (o.nearest_cap ? alt : ''), radius: radius, fillOpacity: 1, weight: 0, fillColor: color})
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
           }
 
           // add jumppad marker as circle
           if (o.type == 'Jumppad_C') {
             let layer = 'jumppads';
-            L.circleMarker([o.lat, o.lng], {title: title, o:o, alt: alt, radius: 5, fillOpacity: 1, weight: 0, fillColor: color})
+            L.circleMarker([o.lat, o.lng], {title: title, o:o, alt: alt, radius: radius, fillOpacity: 1, weight: 0, fillColor: color})
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
           }
 
