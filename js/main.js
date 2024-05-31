@@ -348,7 +348,7 @@ function loadMap() {
           if (!o.x) {
             continue;
           }
-          let d = Math.pow(  Math.pow(o.x-x, 2) + Math.pow(o.y-y, 2), 0.5);
+          let d = Math.sqrt( Math.pow(o.x-x, 2) + Math.pow(o.y-y, 2));
           if (d<dist) {
             dist = d;
             res = o;
@@ -425,11 +425,13 @@ function loadMap() {
               let layer = 'jumppads';
               if (r = o.direction) {
                 let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
-                L.polylineDecorator(line,{
-                  patterns:[{offset:'100%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {fillOpacity: 1, weight:0,
-                    color: color, interactive: true, alt: alt, title: ' ',
-                  }})}],
-                }).addTo(layers[layer]);
+                if ( Math.sqrt(Math.pow(o.lat-o.target.y,2)+Math.pow(o.lat-o.target.y,2))>radius) {
+                  L.polylineDecorator(line,{
+                    patterns:[{offset:'100%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {fillOpacity: 1, weight:0,
+                      color: color, interactive: true, alt: alt, title: ' ',
+                    }})}],
+                  }).addTo(layers[layer]);
+                }
               }
             }
           }
