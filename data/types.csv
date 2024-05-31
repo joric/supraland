@@ -162,9 +162,6 @@ Shell_C,shell,collectable
 DeadHero_C,hero_placeholder,collectable
 EnemySpawner_C,,
 Enemyspawner2_C,,
-SnappyPipe,pipe,pipecaps
-CarryPipe_C,pipe,pipecaps
-PipeCap_C,pipe,pipecaps
 Juicer_C,bucket,misc
 Lever_C,lever,misc
 Button_C,button,misc
@@ -222,3 +219,9 @@ RedGuy_C,guy,misc
 BP_UnlockMap_C,map,upgrades
 MinecraftBrick_C,brick,misc
 MinecraftBrickRespawnable_C,brick,misc
+SnappyPipe,pipe,misc
+CarryPipe_C,pipe,misc
+PipeCap_C,pipe_cap,misc
+Pipesystem_C,pipe,pipesys
+PipesystemNew_C,pipe,pipesys
+PipesystemNewDLC_C,pipe,pipesys

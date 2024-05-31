@@ -430,7 +430,7 @@ function loadMap() {
 
           // pipe line. pipes without the caps cannnot be marked, so alt tag is unset
           if (o.type.startsWith('Pipesystem')) {
-            let layer = 'pipecaps';
+            let layer = 'pipesys';
             if (p = objects[o.other_pipe]) {
               let a = (c=objects[o.nearest_cap]) ? c : o;
               let b = (c=objects[p.nearest_cap]) ? c : p;
@@ -450,7 +450,7 @@ function loadMap() {
 
           // add pipe marker as circle
           if (o.type.startsWith('Pipesystem')) {
-            let layer = 'pipecaps';
+            let layer = 'pipesys';
             let a = (c=o.nearest_cap) && (c=objects[c]) ? c : o; // move marker to cap, if exists
             L.circleMarker([a.lat, a.lng], {title: title, o:o, alt: (o.nearest_cap ? alt : ''), radius: 5, fillOpacity: 1, weight: 0, fillColor: color})
                .addTo(layers[layer]).bindPopup(text).on('popupopen', onPopupOpen).on('contextmenu',onContextMenu);
@@ -464,7 +464,7 @@ function loadMap() {
           }
 
           // we don't have to list all known classes in types.csv anymore, just blacklist some of them
-          if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'PipeCap_C', 'GoldNugget_C'].includes(o.type)) {
+          if (['Jumppillow_C','EnemySpawner_C','GoldBlock_C', 'Jumppad_C', 'GoldNugget_C'].includes(o.type)) {
             continue;
           }
 
