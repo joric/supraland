@@ -429,7 +429,7 @@ function loadMap() {
                   patterns:[{offset:'100%', repeat: 0, symbol: L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {fillOpacity: 1, weight:0,
                     color: color, interactive: true, alt: alt, title: ' ',
                   }})}],
-                }).addTo(map);
+                }).addTo(layers[layer]);
               }
             }
           }
