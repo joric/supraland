@@ -96,7 +96,7 @@ actions = {
     'OpenWhenTake','Actor','Actors','ActivateActors','Actor To Move','More Actors to Turn On','ActorsToActivate',
     'Actors to Open','Actors To Enable/Disable','ObjectsToInvert','ActivateThese','Actors to Activate',
     'ActorsToOpen','ObjectsToDestroy','OpenOnDestroy','ActorsToOpenOnOpen','PostTownCelebration_Open','ActionsOnOpen',
-    'openWhenPlayerEnters',
+    'openWhenPlayerEnters', 'UniqueActorBeginOverlap',
 }
 
 def camel_to_snake(s):
@@ -226,6 +226,8 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
                 actors.append(b)
                 get_actors(objects[b])
 
+            # looks like we hit a wall here, UniqueActorBeginOverlap of BP_TriggerVolume_C is empty in UE4Parse
+            # but has an invocation list in FModel. Related issue https://github.com/MinshuG/pyUE4Parse/issues/22
             optKey(data[-1], 'actors', actors or None)
 
 
