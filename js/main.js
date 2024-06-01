@@ -201,6 +201,9 @@ function loadMap() {
     updatePolylines();
     markItems();
     saveSettings();
+
+    // let's maybe clear search on layer change just to avoid confusion
+    clearFilter();
   });
 
   map.on('overlayremove', function(e) {
