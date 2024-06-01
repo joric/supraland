@@ -444,25 +444,14 @@ function loadMap() {
               let a = (c=objects[o.nearest_cap]) ? c : o;
               let b = (c=objects[p.nearest_cap]) ? c : p;
               let line = L.polyline([[b.lat, b.lng],[a.lat, a.lng]], {title:' ', alt: alt, color: color, interactive: false}).addTo(layers[layer]);
-
-                L.Symbol.ReverseArrow = L.Symbol.ArrowHead.extend({
-                  buildSymbol: function(dirPoint, latLngs, map, index, total) {
-                    dirPoint.heading += 180;
-                    return L.Symbol.ArrowHead.prototype.buildSymbol.call(this, dirPoint, latLngs, map, index, total);
-                  }
-                });
-                L.Symbol.reverseArrow = function (options) {
-                    return new L.Symbol.ReverseArrow(options);
-                };
-
                 if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>radius) {
                   let offset = -10;
                   //console.log(offset);
                   L.polylineDecorator(line,{
                     patterns:[{
                       offset:radius, repeat: 0,
-                      symbol: L.Symbol.reverseArrow({
-                        pixelSize: radius*2,
+                      symbol: L.Symbol.arrowHead({
+                        pixelSize: radius*2, headAngle: -290,
                         pathOptions: {fillOpacity: 1, weight:0, color: color, interactive: true, alt: alt}
                       })
                     }],
