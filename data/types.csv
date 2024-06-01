@@ -228,4 +228,5 @@ PipesystemNew_C,pipe,pipesys
 PipesystemNewDLC_C,pipe,pipesys
 TriggerVolume_C,trigger_volume,misc
 BP_TriggerVolume_C,trigger_volume,misc
-
+Lighttrigger_C,light_trigger,misc
+Lighttrigger2_C,light_trigger,misc
