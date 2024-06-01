@@ -683,6 +683,10 @@ function loadMap() {
   }
 
   loadLayers();
+
+  // redraw paths on dragging
+  map.getRenderer(map).options.padding = 100;
+
 } // end of loadmap
 
 function reloadMap(id) {
