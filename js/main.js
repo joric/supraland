@@ -443,21 +443,20 @@ function loadMap() {
               alt = ((o.nearest_cap || p.nearest_cap)? alt : '');
               let a = (c=objects[o.nearest_cap]) ? c : o;
               let b = (c=objects[p.nearest_cap]) ? c : p;
+              // polylineDecorator doesn't support end arrow offset in pixels so we use start offset, reverse the line and reverse the arrow
               let line = L.polyline([[b.lat, b.lng],[a.lat, a.lng]], {title:' ', alt: alt, color: color, interactive: false}).addTo(layers[layer]);
-                if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>radius) {
-                  let offset = -10;
-                  //console.log(offset);
-                  L.polylineDecorator(line,{
-                    patterns:[{
-                      offset:radius, repeat: 0,
-                      symbol: L.Symbol.arrowHead({
-                        pixelSize: radius*2, headAngle: -290,
-                        pathOptions: {fillOpacity: 1, weight:0, color: color, interactive: true, alt: alt}
-                      })
-                    }],
-                  }).addTo(layers[layer]);
-                }
-
+              if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>radius) {
+                let offset = -10;
+                L.polylineDecorator(line,{
+                  patterns:[{
+                    offset:radius, repeat: 0,
+                    symbol: L.Symbol.arrowHead({
+                      pixelSize: radius*2, headAngle: -290,
+                      pathOptions: {fillOpacity: 1, weight:0, color: color, interactive: true, alt: alt}
+                    })
+                  }],
+                }).addTo(layers[layer]);
+              }
             }
           }
 
