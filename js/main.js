@@ -684,8 +684,8 @@ function loadMap() {
 
   loadLayers();
 
-  // redraw paths on dragging
-  map.getRenderer(map).options.padding = 100;
+  // redraw paths on dragging (sets % of padding around viewport, may be performance issue)
+  map.getRenderer(map).options.padding = 1;
 
 } // end of loadmap
 
