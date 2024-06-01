@@ -427,7 +427,7 @@ function loadMap() {
                 let line = L.polyline([[o.lat, o.lng],[o.target.y,o.target.x]], {title:' ', alt:alt, color: color, interactive: false}).addTo(layers[layer]);
                 if ( Math.sqrt(Math.pow(o.lat-o.target.y,2)+Math.pow(o.lng-o.target.x,2))>radius) {
                   L.polylineDecorator(line,{patterns:[{offset:'100%', repeat: 0, symbol:
-                    L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {opacity:1, fillOpacity:1, weight:0, color: color, interactive: false, alt: alt}})}]}).addTo(layers[layer]);
+                    L.Symbol.arrowHead({pixelSize:radius*2, pathOptions: {opacity:1, fillOpacity:1, weight:0, color: color, interactive: false, title:' ', alt: alt}})}]}).addTo(layers[layer]);
                 }
               }
             }
@@ -444,7 +444,7 @@ function loadMap() {
               let line = L.polyline([[b.lat, b.lng],[a.lat, a.lng]], {title:' ', alt: alt, color: color, interactive: false}).addTo(layers[layer]);
               if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>radius) {
                 L.polylineDecorator(line,{patterns:[{offset:radius,repeat:0,symbol:
-                  L.Symbol.arrowHead({pixelSize:radius*2, headAngle: -290,pathOptions:{opacity:1, fillOpacity:1, weight:0, color: color, interactive: false, alt: alt}})}],}).addTo(layers[layer]);
+                  L.Symbol.arrowHead({pixelSize:radius*2, headAngle: -290,pathOptions:{opacity:1, fillOpacity:1, weight:0, color: color, interactive: false, title:' ', alt: alt}})}],}).addTo(layers[layer]);
               }
             }
           }
@@ -454,11 +454,12 @@ function loadMap() {
             let layer = 'misc';
             let color = 'white';
             let opacity = 0.5;
+            let alt = '';
             for (actor of o.actors) {
               if (p = (objects[actor] || objects[o.area +':' + actor])) { // actors have optional area prefix
-                let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:'', opacity: opacity, weight: 2, color: color, interactive: false}).addTo(layers[layer]);
+                let line = L.polyline([[o.lat, o.lng],[p.lat, p.lng]], {title:' ', alt:alt, opacity: opacity, weight: 2, color: color, interactive: false}).addTo(layers[layer]);
                 L.polylineDecorator(line,{patterns:[{offset:'50%',repeat:0,symbol:
-                  L.Symbol.arrowHead({pixelSize:radius*2,pathOptions:{opacity:opacity, fillOpacity:opacity, weight:0, color: color, interactive: false, alt: alt}})}],}).addTo(layers[layer]);
+                  L.Symbol.arrowHead({pixelSize:radius*2,pathOptions:{opacity:opacity, fillOpacity:opacity, weight:0, color: color, interactive: false, title:' ', alt:alt}})}],}).addTo(layers[layer]);
               }
             }
           }
