@@ -12,6 +12,7 @@ let settings;
 let mapCenter;
 let mapParam = {};
 let objects = {};
+let searchControl;
 
 var maps = {
   // data taken from the MapWorld* nodes
@@ -780,7 +781,7 @@ function markItems() {
 
   // filter by settings.searchText. caching is unreliable, just perform a full search here
   let lookup = {}
-  if (settings.searchText) {
+  if (settings.searchText && searchControl) {
     for (const o of Object.values(searchControl._filterData(settings.searchText, searchControl._recordsFromLayer()))) {
       lookup[o.layer.options.alt] = true;
       // reveal layers on filter
