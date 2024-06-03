@@ -66,7 +66,7 @@ marker_types = {
   'GoldNugget_C', 'Jumppillow_C', 'MoonTake_C', 'Plumbus_C','Stone_C', 'ValveCarriable_C',
   'ValveSlot_C', 'Valve_C','MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C',
   'Supraball_C','Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','Sponge_C','Juicer_C','Seed_C',
-  'Anvil_C',
+  'Anvil_C','Map_C',
   # slc
   'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
@@ -223,7 +223,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
 
             get_actors(o)
 
-            # investifate Relay_C links, namely FinalBossQuest_4
+            # investigate Relay_C links, namely FinalBossQuest_4
             if o.get('Properties',{}).get('PropogateToRelaysInOtherMaps'):
                 b = ':'.join((t['AssetPathName'].split('.').pop(),t['SubPathString'].split('.').pop()))
                 actors.append(b)
