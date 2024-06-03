@@ -446,7 +446,7 @@ function loadMap() {
               let b = (c=objects[p.nearest_cap]) ? c : p;
               // polylineDecorator doesn't support end arrow offset so we use start offset, reverse the line and reverse the arrow using headAngle
               let line = L.polyline([[b.lat, b.lng],[a.lat, a.lng]], {title:' ', alt: alt, color: color, interactive: false}).addTo(layers[layer]);
-              if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>1000) { // could not filter in screen-space
+              if ((dist = Math.sqrt(Math.pow(o.lat-b.lat,2)+Math.pow(o.lng-b.lng,2)))>1000) { // how to filter in screen-space? endOffset?
                 L.polylineDecorator(line,{patterns:[{offset:radius,repeat:0,symbol:
                   L.Symbol.arrowHead({pixelSize:radius*2, headAngle: -290,pathOptions:{opacity:1, fillOpacity:1, weight:0, color: color, interactive: false, title:' ', alt: alt}})}],}).addTo(layers[layer]);
               }
