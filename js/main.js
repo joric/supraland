@@ -492,7 +492,13 @@ function loadMap() {
             continue;
           }
 
-          if (o.type.endsWith('Chest_C')) { icon = 'chest'; layer = 'closedChest'};
+          if (o.type.endsWith('Chest_C')) {
+            icon = 'chest'; layer = 'closedChest'
+            if (!o.spawns && !o.coins) {
+              // if the chest spawns nothing, it's probably health+1, see "Chest31_9005"
+              o.spawns = 'BP_PurchaseHealth+1_C';
+            }
+          };
 
 
           if (['guy','flower','seed','keycard'].includes(icon)) {
