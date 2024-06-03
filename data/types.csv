@@ -230,3 +230,4 @@ TriggerVolume_C,trigger_volume,misc
 BP_TriggerVolume_C,trigger_volume,misc
 Lighttrigger_C,trigger_light,misc
 Lighttrigger2_C,trigger_light,misc
+BuyHeartLuck_C,heart,upgrades
