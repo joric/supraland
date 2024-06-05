@@ -547,6 +547,8 @@ function loadMap() {
             let t = new L.LatLng(o.lat, o.lng);
             if (p = settings.playerPosition) {
               t = new L.LatLng(p[0], p[1]);
+            } else {
+              settings.playerPosition = playerStart;
             }
             playerMarker = L.marker([t.lat, t.lng], {icon: getIcon(icon,42), zIndexOffset: 10000, draggable: false, title: title, alt:'playerMarker'})
             .bindPopup()
