@@ -651,6 +651,12 @@ function loadMap() {
             [].forEach.call(divs, function(div) {
               div.addEventListener('click', function (e) { clickItem(e.target.innerText); e.preventDefault(); })
               div.addEventListener('dblclick', function (e) { clickItem(e.target.innerText, true); e.preventDefault(); })
+              // mark discovered items grey
+              if (loc = searchControl._getLocation(div.innerText)) {
+                if (settings.markedItems[loc.layer.options.alt]) {
+                  div.style.color = '#bbb';
+                }
+              }
             })
           }, 1500)
         }
