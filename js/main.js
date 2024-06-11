@@ -874,6 +874,11 @@ window.loadSaveFile = function () {
           let name = x.split(".").pop();
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
+
+            // ok this is weird but looks like Shell2_1957 appears as shell2_1957 in the save file
+            // so we better capitalize class names here
+            name = name.charAt(0).toUpperCase() + name.slice(1);
+
             let id = area + ':' + name;
             found = true;
 
