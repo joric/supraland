@@ -875,7 +875,19 @@ window.loadSaveFile = function () {
           let area = x.split("/").pop().split('.')[0];
           if (name != "None") {
             let id = area + ':' + name;
-            settings.markedItems[id] = true;
+            found = true;
+
+            // a little hack here about volcano spawners (EnemySpawn3_C, graves layer)
+            // they are activated in ThingsToActivate but destroyed only in ThingsToOpenForever
+            if (o = objects[id]) {
+              if (o.type=='EnemySpawn3_C') {
+                found = section=='ThingsToOpenForever';
+              }
+            }
+
+            if (found) {
+              settings.markedItems[id] = true;
+            }
           }
         }
       }
