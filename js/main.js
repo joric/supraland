@@ -888,6 +888,12 @@ window.loadSaveFile = function () {
               if (o.type=='EnemySpawn3_C') {
                 found = section=='ThingsToOpenForever';
               }
+              // another hack, DeadHeroIndy opens at ThingsToOpenForever
+              // but doesn't count as 100% until it arrives at ThingsToActivate
+              // it's barely visible (red on red) but the found flag gives it up
+              if (name == 'DeadHeroIndy') {
+                found = section=='ThingsToActivate';
+              }
             }
 
             if (found) {
