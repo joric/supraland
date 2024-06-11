@@ -204,7 +204,7 @@ function loadMap() {
     saveSettings();
 
     // let's maybe clear search on layer change just to avoid confusion
-    clearFilter();
+    // clearFilter(); // can't really do that, search also opens layers
   });
 
   map.on('overlayremove', function(e) {
@@ -629,6 +629,7 @@ function loadMap() {
           saveSettings();
           markItems();
           this._input.select();
+          clickItem(this._input.value, false);
         }
 
         document.querySelector('.search-cancel').addEventListener('click', clearFilter);
