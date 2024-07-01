@@ -593,7 +593,7 @@ function loadMap(id) {
 function getViewURL() {
   let base = window.location.href.replace(/#.*$/,'');
   let v = map.getView();
-  let vars = {mapId:mapId, lat:Math.round(v.center[1]), lng:Math.round(v.center[0]), zoom:v.zoom, pitch:v.pitch, bearing: v.bearing};
+  let vars = {mapId:mapId, lat:Math.round(v.center[1]), lng:Math.round(v.center[0]), zoom:Math.round(v.zoom), pitch:Math.round(v.pitch), bearing: Math.round(v.bearing)};
   return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
