@@ -351,14 +351,13 @@ function loadMarkers(j) {
 
       points.push({x:x, y:y, z:z})
 
-      if (last_z>z) {
-        if (o.target) {
-          if (o.target.z>z) break;
-        } else {
-          if (o.alt>0 && z<0) break;
-          if (o.alt<0 && z<o.alt) break;
-        }
+      let h = (o.target && o.target.z) || o.alt;
+      let dist = Math.sqrt(Math.pow(x-x0,2)+Math.pow(y-y0,2)+Math.pow(z-z0,2));
+
+      if (last_z>z && (vertical || (h>z && dist>250)) && (!horizontal || dist>5000)) {
+        break;
       }
+
       last_z = z;
     }
 
