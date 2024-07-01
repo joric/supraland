@@ -629,11 +629,21 @@ function updateAll(e, show=true, type=null) {
         let id = o.area + ':' + o.name;
         let found = settings.markedItems[id];
         show && !(found && hideFound && !alwaysVisible(marker)) ? marker.show() : marker.hide();
+
+        if (layerName == 'markers') {
+          if (show) {
+            o.spawns ? delete settings.hiddenItems[o.spawns] : delete settings.hiddenItems[o.type];
+          } else {
+            o.spawns ? settings.hiddenItems[o.spawns] = true : settings.hiddenItems[o.type] = true;
+          }
+        }
+
       }
     }
   }
 
-  show && !type && markItems();
+  saveSettings();
+  markItems();
 
   return false;
 }
@@ -653,7 +663,8 @@ function markItems() {
       let id = o.area +':'+ o.name;
       let found = settings.markedItems[id];
 
-      let hidden = settings.track[o.type]==false;
+      let hidden = settings.track[o.type]==false || ( settings.hiddenItems[o.type]==true ||  settings.hiddenItems[o.spawns]==true);
+
       hidden || (found && hideFound && !alwaysVisible(marker)) ? marker.hide() : marker.show();
 
       if (layerName == 'markers') {
@@ -665,6 +676,18 @@ function markItems() {
       }
     }
   }
+
+  //console.log(settings.hiddenItems);
+
+  // mark html items
+  [].forEach.call(document.querySelectorAll('#categories .item'), function(div) {
+    if (settings.hiddenItems[div.alt]==true) {
+      div.classList.add('hidden');
+    } else {
+      div.classList.remove('hidden');
+    }
+  });
+
 
   // add progress track to the sidebar
   let ul = document.querySelector('#progress');
@@ -904,6 +927,7 @@ window.onload = function(event) {
     localData[id].markedItems = localData[id].markedItems || {};
     localData[id].searchText = localData[id].searchText || '';
     localData[id].track = localData[id].track || {'Chest_C':true, 'Coin_C':false};
+    localData[id].hiddenItems = localData[id].hiddenItems || {};
   }
 
   settings = localData[mapId];
