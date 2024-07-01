@@ -726,7 +726,7 @@ function markItems() {
     c3.innerHTML = 'x';
     c3.onclick = function(e) { // removeTrack
       let type = e.target.parentNode.alt;
-      if (confirm('Are you sure to delete this category?')) {
+      if (confirm('Are you sure you want to delete this category?')) {
         delete settings.track[type];
         saveSettings();
         markItems();
@@ -773,7 +773,7 @@ function unmarkItems() {
 }
 
 function unmarkAll() {
-  if (confirm('Are you sure to unmark all items?')) {
+  if (confirm('Are you sure you want to unmark all items?')) {
     unmarkItems();
     saveSettings();
   }
