@@ -858,7 +858,7 @@ function loadSaveFile(e) {
           p = o.value['Translation'].value;
         }
         if (p && p.x && p.y) {
-          settings.playerPosition = [p.y, p.x, p.z];
+          settings.playerPosition = [p.x, p.y, p.z];
           if (playerMarker) {
             playerMarker.setCoordinates(settings.playerPosition);
           }
