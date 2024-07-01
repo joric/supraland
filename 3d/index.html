@@ -889,9 +889,6 @@ function toggleNav(e) { let input = document.querySelector('#search-input'); tog
 function toggleVisibility(a) { [].forEach.call(a, function(e) { toggleClass(document.querySelector(e), 'collapsed'); }) }
 
 window.onload = function(event) {
-
-  mapId = mapParam.mapId || localData.mapId || 'sl';
-
   if (location.hash.length>1) {
     for (const s of location.hash.slice(1).split('&')) {
       let [k,v] = s.split('=');
@@ -899,6 +896,7 @@ window.onload = function(event) {
     }
   }
 
+  mapId = mapParam.mapId || localData.mapId || 'sl';
 
   for (id in maps) {
     var title = maps[id].title;
