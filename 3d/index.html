@@ -116,6 +116,7 @@ let mapId = null;
 let types = {};
 let playerMarker = null;
 let playerStart = [0,0,0];
+let mapParam = {};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -565,6 +566,20 @@ function loadMap(id) {
   let compassControl = new maptalks.control.Compass({position  : 'bottom-right'}).addTo(map)
   ._compass.onclick = (e)=>map.getBearing()==0 && map.animateTo({ pitch: map.getPitch()==0 ? defaultPitch : 0 })
 
+  // context menu
+  var options = {
+    'items'  : [
+      { item: 'Copy Map View URL', click: function () { copyToClipboard(getViewURL()); } },
+    ]
+  };
+  map.setMenu(options);
+
+  if (mapParam.lat && mapParam.lng) {
+    let view = {center : [mapParam.lat, mapParam.lng], zoom : mapParam.zoom, pitch : mapParam.pitch, bearing : mapParam.bearing };
+    map.setView(view);
+    mapParam = {};
+  }
+
   fetch('data/markers.'+mapId+'.json')
   .then(r => r.json())
   .then(j => {
@@ -573,6 +588,13 @@ function loadMap(id) {
   .catch(e=>{
     console.log(e);
   });
+}
+
+function getViewURL() {
+  let base = window.location.href.replace(/#.*$/,'');
+  let v = map.getView();
+  let vars = {mapId:mapId, lat:Math.round(v.center[0]), lng:Math.round(v.center[1]), zoom:v.zoom, pitch:v.pitch, bearing: v.bearing};
+  return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
 function saveSettings() {
@@ -868,7 +890,15 @@ function toggleVisibility(a) { [].forEach.call(a, function(e) { toggleClass(docu
 
 window.onload = function(event) {
 
-  mapId = localData.mapId || 'sl';
+  mapId = mapParam.mapId || localData.mapId || 'sl';
+
+  if (location.hash.length>1) {
+    for (const s of location.hash.slice(1).split('&')) {
+      let [k,v] = s.split('=');
+      mapParam[k] = v;
+    }
+  }
+
 
   for (id in maps) {
     var title = maps[id].title;
