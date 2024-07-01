@@ -683,6 +683,7 @@ function markItems() {
       let type = e.target.parentNode.alt;
       if (confirm('Are you sure to delete this category?')) {
         delete settings.track[type];
+        saveSettings();
         markItems();
       }
     }
@@ -703,6 +704,7 @@ function toggleItem(e) {
 function toggleTrack(e) {
   e.preventDefault();
   let id = e.target.alt;
+  if (!id) return;
   settings.track[id] = !settings.track[id];
   saveSettings();
   return updateAll(e, e.target.classList.contains('hidden'), id);
