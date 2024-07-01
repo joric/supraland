@@ -208,6 +208,9 @@ function humanReadable(type) {
   return s;
 }
 
+const cmpNum = (a,b)=> b[1]!=a[1] ? (b[1]-a[1]) : a[0].localeCompare(b[0]);
+const cmpAlphaNum = (a,b) => a[0].localeCompare(b[0], 'en', { numeric: true });
+
 function loadMarkers(j) {
 
   let lookup = {};
@@ -395,9 +398,7 @@ function loadMarkers(j) {
   let ul = document.querySelector('#categories');
   ul.innerHTML = '';
 
-  let cmp = (a,b)=> b[1]!=a[1] ? (b[1]-a[1]) : a[0].localeCompare(b[0]) ; // order by count, name
-
-  for ([name,count,type] of items.sort()) {
+  for ([name,count,type] of items.sort(cmpAlphaNum)) {
     let li = document.createElement('li');
     li.className = "item";
     li.alt = type;
@@ -443,7 +444,7 @@ function loadMarkers(j) {
     items.push([humanReadable(type),type]);
   }
 
-  for ([name,type] of items.sort()) {
+  for ([name,type] of items.sort(cmpAlphaNum)) {
     let opt = document.createElement('option');
     opt.value = type;
     opt.innerHTML = name;
@@ -647,7 +648,7 @@ function markItems() {
   let ul = document.querySelector('#progress');
   ul.innerHTML = '';
 
-  for (type of Object.keys(settings.track).sort()) {
+  for (type of Object.keys(settings.track).sort(cmpAlphaNum)) {
     let name = humanReadable(type);
 
     let li = document.createElement('li');
