@@ -208,7 +208,7 @@
   "Lift1_C": {"icon": "lift", "layer": "misc", "fa": "elevator", "bg":"goldenrod", "name": "Lift 1"},
   "Sponge_C": {"icon": "sponge", "layer": "items", "fa": "cube", "bg": "goldenrod", "name": "Sponge"},
   "SpongeBig_C": {"icon": "sponge", "layer": "items", "fa": "cube", "bg": "goldenrod"},
-  "Sponge_Large_C": {"icon": "sponge", "layer": "items", "fa": "cube", "bg": "goldenrod", "name": "Sponge Large"},
+  "Sponge_Large_C": {"icon": "sponge", "layer": "items", "fa": "cube", "bg": "goldenrod", "name": "Sponge"},
   "Supraball_C": {"icon": "supraball", "layer": "misc", "fa": "baseball", "bg": "goldenrod", "name": "Supraball"},
   "Seed_C": {"icon": "seed", "layer": "misc", "fa": "seedling", "bg": "forestgreen", "name": "Seed"},
   "RingColorerFlower_C": {"icon": "flower", "layer": "misc", "fa": "spa", "bg": "forestgreen", "name": "Flower"},
