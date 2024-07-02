@@ -919,16 +919,18 @@ window.onload = function(event) {
     }
   }
 
-  mapId = mapParam.mapId || localData.mapId || 'sl';
-
   for (id in maps) {
-    var title = maps[id].title;
     localData[id] = localData[id] || {};
     localData[id].markedItems = localData[id].markedItems || {};
     localData[id].searchText = localData[id].searchText || '';
     localData[id].track = localData[id].track || {'Chest_C':true, 'Coin_C':false};
     localData[id].hiddenItems = localData[id].hiddenItems || {};
+    if (location.hash.slice(1) == id) {
+      mapId = id;
+    }
   }
+
+  mapId = mapId || mapParam.mapId || localData.mapId || 'sl';
 
   settings = localData[mapId];
 
