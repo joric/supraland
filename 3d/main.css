@@ -219,7 +219,6 @@ a:hover { text-decoration: underline; }
 
 #categories .category-item .icon {
   text-align: left;
-  padding-right: 5px;
 }
 
 #categories .category-item .title {
@@ -254,7 +253,6 @@ a:hover { text-decoration: underline; }
   display: inline-block;
   flex: 1;
   text-align: left;
-  width: 25px;
 }
 
 #user-panel .progress-item .title {
@@ -341,5 +339,7 @@ a:hover { text-decoration: underline; }
   flex: 1 1 auto;
 }
 
-
+.icon {
+  padding-right: 5px;
+}
 
