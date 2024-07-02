@@ -40,8 +40,8 @@
     </div>
     <hr/>
     <div class="button-panel"><span id="show-all" onclick="showAll()">Show All</span><span id="hide-all" onclick="hideAll()">Hide All</span></div>
-    <hr/>
-    <div class="search-input-wrapper input-group" style=" display: none;">
+
+    <div class="search-input-wrapper input-group" style="display: none;">
       <div class="input-group-prepend">
         <button id="search-close" type="button" class="btn">x</button>
       </div>
@@ -50,10 +50,14 @@
         <button id="search-submit" type="button" class="btn">Search</button>
       </div>
     </div>
-    <div class="categories-wrapper">
-      <ul id="categories" class="items">
+
+    <hr/>
+
+    <div id="categories-wrapper">
+      <ul id="categories">
       </ul>
     </div>
+
   </div>
 </div>
 
@@ -64,24 +68,30 @@
     <hr/>
       <span id="toggle-found" class="button-toggle"><i class="icon fa fa-eye"></i>Found Locations</span>
     <hr/>
-    <div class="progress-item-wrapper">
-      <ul id="progress" class="items">
-      </ul>
+
+    <div id="user-panel">
+      <div class="category-progress">
+      </div>
+
+      <div class="button-panel" id="track-category-button">
+        <span id="track-category" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">Track Category +</span>
+      </div>
+
+      <div id="track-category-panel" class="button-panel collapsed">
+        <select id="track-categories" class="form-control"><option>Select a Category</option></select>
+        <button class="btn" onclick="addTrack(this)">Track Category</button>
+        <button class="btn" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">x</button>
+      </div>
+
+      <hr/>
+
+      <div class="button-panel">
+        <input id="file" type='file' hidden/>
+        <span onclick="openLoadFileDialog()" style="btn">Load Game</span>
+        <span onclick="unmarkAll()" style="btn">Unmark All</span>
+      </div>
     </div>
-    <div class="button-panel" id="track-category-button">
-      <span id="track-category" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">Track Category +</span>
-    </div>
-    <div id="track-category-panel" class="button-panel collapsed">
-      <select id="track-categories" class="form-control"><option>Select a Category</option></select>
-      <button class="btn" onclick="addTrack(this)">Track Category</button>
-      <button class="btn" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">x</button>
-    </div>
-    <hr/>
-    <div class="button-panel">
-      <input id="file" type='file' hidden/>
-      <span onclick="openLoadFileDialog()" style="btn">Load Game</span>
-      <span onclick="unmarkAll()" style="btn">Unmark All</span>
-    </div>
+
   </div>
 </div>
 
@@ -209,260 +219,25 @@ function humanReadable(type) {
   return s;
 }
 
+function setClass(e, set, c) { set ? e.classList.add(c) : e.classList.remove(c);}
+function toggleClass(e, c) { if (e.classList.contains(c)) { e.classList.remove(c); return false; } else { e.classList.add(c); return true; }}
+function toggleNav(e) { let input = document.querySelector('#search-input'); toggleClass(e.parentElement, 'closed') ? input.blur() : input.focus();}
+function toggleVisibility(a) { [].forEach.call(a, function(e) { toggleClass(document.querySelector(e), 'collapsed'); }) }
+
 const cmpNum = (a,b)=> b[1]!=a[1] ? (b[1]-a[1]) : a[0].localeCompare(b[0]);
 const cmpAlphaNum = (a,b) => a[0].localeCompare(b[0], 'en', { numeric: true });
-
-function loadMarkers(j) {
-
-  let lookup = {};
-  let counters = {};
-
-  for (const o of j) {
-
-    if (o.type=='PlayerStart') {
-      playerStart = [o.lng, o.lat, o.alt];
-      if (!settings.playerPosition) {
-        settings.playerPosition = playerStart;
-      }
-    }
-
-    if (!types[o.type]) continue;
-
-    let c = {x:o.lng, y:o.lat, z:o.alt};
-
-    // skip markers out of bounds (e.g. start area in siu)
-    let [left,top,right,bottom] = mapBounds;
-    if (! (c.x>left && c.x<right && c.y>top && c.y<bottom )) {
-      continue;
-    }
-
-    if (types[o.type] && [undefined,'misc'].includes(types[o.type].layer)) continue;
-
-    // create marker
-    let id = o.area + ':' + o.name;
-    let bg = null;
-    let fg = null;
+const capitalize = s => s[0].toUpperCase()+s.slice(1);
 
 
-    if (o.color) {
-      let colors = {1:'goldenrod',2:'red',3:'dodgerblue',4:'orchid',5:'green',6:'orange'};
-      if (color = colors[o.color || o.original_color]) {
-        bg = color;
-      }
-    }
+function getViewURL() {
+  let base = window.location.href.replace(/#.*$/,'');
+  let v = map.getView();
+  let vars = {mapId:mapId, lat:Math.round(v.center[1]), lng:Math.round(v.center[0]), zoom:Math.round(v.zoom), pitch:Math.round(v.pitch), bearing: Math.round(v.bearing)};
+  return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
+}
 
-    if (o.type == 'Jumppad_C') {
-      bg = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
-    }
-
-    let spawns = o.spawns;
-
-    if (o.type == 'Chest_C' && !o.spawns) {
-      o.spawns = 'Coin_C';
-    }
-
-    let type = o.spawns || o.type;
-
-    let marker = new maptalks.Marker([c.x, c.y, c.z], {
-      properties: o,
-      symbol: markerSymbol(type, bg, fg),
-    }).addTo(markerLayer);
-
-    let title = humanReadable(o.spawns || o.type);
-
-    new maptalks.ui.ToolTip(title,{}).addTo(marker);
-
-    counters[type] = (counters[type] || 0)+1;
-
-    let popup = marker.setInfoWindow({autoCloseOn: 'click'})
-    .on('click',e=>{
-      let o = e.target.properties;
-      //o._coordinates = e.target.getCoordinates();
-      let title = humanReadable(o.spawns || o.type);
-      let content = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-      e.target._infoWindow.setTitle(title);
-      e.target._infoWindow.setContent(content);
-    })
-    .on('contextmenu', e=> {
-      let o = e.target.properties;
-      let id = o.area + ':' + o.name;
-      settings.markedItems[id] = !settings.markedItems[id];
-      markItems();
-    })
-
-    lookup[o.area + ':' + o.name] = marker; // lookup for lines
-  }
-
-  if (settings.playerPosition && !playerMarker) {
-    let o = {'type':'playerPosition', 'name':'Player Position' };
-    playerMarker = new maptalks.Marker(settings.playerPosition, {
-        properties: o,
-        symbol: markerSymbol(o.type, mapId=='siu' ? 'dodgerblue' : 'red'),
-    }).addTo(markerLayer);
-    new maptalks.ui.ToolTip('Player Position',{}).addTo(playerMarker);
-  }
-
-  // jumppads
-  let targets = [];
-  for (marker of map.getLayer('markers')._geoList) {
-    let o = marker.properties;
-
-    if (o.type != 'Jumppad_C') continue;
-    if (!o.direction) continue;
-
-    let points = [];
-    let c = marker.getCoordinates();
-    let color = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
-
-    let d = o.direction;
-
-    let vertical = d.x==0 && d.y==0 && d.z==1;
-    let horizontal = Math.abs(d.z) < 0.00002;
-
-    let x1 = c.x;
-    let y1 = c.y;
-    let z1 = c.z;
-
-    let k = o.relative_velocity || 1000;
-
-    let vx = -o.direction.x * k;
-    let vy = -o.direction.y * k;
-    let vz = o.direction.z * k;
-
-    if (o.velocity && o.allow_stomp) {
-      vx = o.velocity.x;
-      vy = o.velocity.y;
-      vz = o.velocity.z;
-    }
-
-    let x = x0 = c.x;
-    let y = y0 = c.y;
-    let z = z0 = c.z;
-
-    let dt = 0.01;
-    let g = 9.8;
-    let m = 95;
-
-    let last_z = z;
-
-    points.push({x:x, y:y, z:z})
-
-    for (let t=0;t<20;t+=dt) {
-      vz -= g * m * dt;
-      x += vx * dt;
-      y += vy * dt;
-      z += vz * dt;
-
-      points.push({x:x, y:y, z:z})
-
-      let h = (o.target && o.target.z) || o.alt;
-      let dist = Math.sqrt(Math.pow(x-x0,2)+Math.pow(y-y0,2)+Math.pow(z-z0,2));
-
-      if (last_z>z && (vertical || (h>z && dist>250)) && (!horizontal || dist>5000)) {
-        break;
-      }
-
-      last_z = z;
-    }
-
-    points = simplify(points, 10); // https://github.com/maptalks/maptalks.js/issues/2331
-    if (points.length>1) {
-      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
-      if (!vertical) {
-        targets.push([o, points.pop()]);
-      }
-    }
-  }
-
-  // add target points here (altitude markers), can't create them in the main loop
-  for ([o, point] of targets) {
-    new maptalks.Marker(point, {properties: o, symbol:{}}).addTo(markerLayer);
-  }
-
-  // add pipes
-  for (marker of map.getLayer('markers')._geoList) {
-    let o = marker.properties;
-    if (!o.type.startsWith('Pipesystem')) continue;
-    if (o.other_pipe && (target = lookup[o.other_pipe])) {
-      let color = types[o.type] && types[o.type].color || 'yellowgreen';
-      let points = [marker.getCoordinates(), target.getCoordinates()];
-      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
-    }
-  }
-
-  // add categories to the sidebar
-  let items = [];
-  for ([type, count] of Object.entries(counters)) {
-    items.push([humanReadable(type),count,type]);
-  }
-
-  let ul = document.querySelector('#categories');
-  ul.innerHTML = '';
-
-  for ([name,count,type] of items.sort(cmpAlphaNum)) {
-    let li = document.createElement('li');
-    li.className = "item";
-    li.alt = type;
-    li.title = name + ' (' + type + ')';
-    li.onclick = toggleItem;
-
-    let c0 = document.createElement('span');
-    c0.className = 'icon';
-
-    let fa = (types[type] && types[type].fa) || 'circle-question';
-    c0.classList.add('fa');
-    c0.classList.add('fa-'+fa);
-    //c0.setAttribute('data-fa-transform','left-5');
-
-    let c1 = document.createElement('span');
-    c1.innerHTML = name;
-    c1.className = 'title';
-
-    let c2 = document.createElement('span');
-    c2.innerHTML = count;
-    c2.className = 'count';
-
-    li.appendChild(c0);
-    li.appendChild(c1);
-    li.appendChild(c2);
-    ul.appendChild(li);
-  }
-
-  // add category list (tracked categories) to sidebar
-  let sel = document.querySelector('#track-category-panel > select');
-  sel.innerHTML = '';
-
-  let opt = document.createElement('option');
-  opt.innerHTML = 'Select a Category';
-  opt.value = '';
-  sel.appendChild(opt);
-
-  items = [];
-  type = 'Chest_C';
-  items.push([humanReadable(type),type]);
-
-  for ([type,count] of Object.entries(counters)) {
-    items.push([humanReadable(type),type]);
-  }
-
-  for ([name,type] of items.sort(cmpAlphaNum)) {
-    let opt = document.createElement('option');
-    opt.value = type;
-    opt.innerHTML = name;
-    opt.title = name + ' (' + type + ')';
-    sel.appendChild(opt);
-  }
-
-  setTimeout(function() {
-    if (enableAltitude && autoAltitude) {
-      markerLayer.setOptions({enableAltitude: map.getPitch()!=0});
-      lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
-    }
-  },500);
-
-  setClass(document.querySelector('#toggle-found'),settings.toggleFound,'hidden');
-
-  markItems();
+function saveSettings() {
+  localStorage.setItem(localDataName, JSON.stringify(localData));
 }
 
 function loadMap(id) {
@@ -590,62 +365,283 @@ function loadMap(id) {
   });
 }
 
-function getViewURL() {
-  let base = window.location.href.replace(/#.*$/,'');
-  let v = map.getView();
-  let vars = {mapId:mapId, lat:Math.round(v.center[1]), lng:Math.round(v.center[0]), zoom:Math.round(v.zoom), pitch:Math.round(v.pitch), bearing: Math.round(v.bearing)};
-  return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
-}
+function loadMarkers(j) {
 
-function saveSettings() {
-  localStorage.setItem(localDataName, JSON.stringify(localData));
-}
+  let lookup = {};
+  let counters = {};
 
-function showAll(e) { updateAll(e, true); }
-function hideAll(e) { updateAll(e, false); }
+  for (const o of j) {
 
-function updateAll(e, show=true, type=null) {
-  let hideFound = document.querySelector('#toggle-found').classList.contains('hidden');
-  let alwaysVisible = marker=>marker.properties.type=='Jumppad_C' || marker.properties.type.startsWith('Pipesystem');
-
-  lookup = {};
-
-  if (type) {
-    let div = e.target;
-    lookup[type] = div;
-    show ? setClass(div, false, 'hidden') : setClass(div, true, 'hidden');
-  } else {
-    for (div of document.querySelectorAll('#categories .item')) {
-      lookup[div.alt] = div;
-      show ? setClass(div, false, 'hidden') : setClass(div, true, 'hidden');
+    if (o.type=='PlayerStart') {
+      playerStart = [o.lng, o.lat, o.alt];
+      if (!settings.playerPosition) {
+        settings.playerPosition = playerStart;
+      }
     }
+
+    if (!types[o.type]) continue;
+
+    let c = {x:o.lng, y:o.lat, z:o.alt};
+
+    // skip markers out of bounds (e.g. start area in siu)
+    let [left,top,right,bottom] = mapBounds;
+    if (! (c.x>left && c.x<right && c.y>top && c.y<bottom )) {
+      continue;
+    }
+
+    if (types[o.type] && [undefined].includes(types[o.type].group)) continue;
+
+    // create marker
+    let id = o.area + ':' + o.name;
+    let bg = null;
+    let fg = null;
+
+
+    if (o.color) {
+      let colors = {1:'goldenrod',2:'red',3:'dodgerblue',4:'orchid',5:'green',6:'orange'};
+      if (color = colors[o.color || o.original_color]) {
+        bg = color;
+      }
+    }
+
+    if (o.type == 'Jumppad_C') {
+      bg = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
+    }
+
+    let spawns = o.spawns;
+
+    if (o.type == 'Chest_C' && !o.spawns) {
+      o.spawns = 'Coin_C';
+    }
+
+    let type = o.spawns || o.type;
+
+    let marker = new maptalks.Marker([c.x, c.y, c.z], {
+      properties: o,
+      symbol: markerSymbol(type, bg, fg),
+    }).addTo(markerLayer);
+
+    let title = humanReadable(o.spawns || o.type);
+
+    new maptalks.ui.ToolTip(title,{}).addTo(marker);
+
+    let popup = marker.setInfoWindow({autoCloseOn: 'click'})
+    .on('click',e=>{
+      let o = e.target.properties;
+      //o._coordinates = e.target.getCoordinates();
+      let title = humanReadable(o.spawns || o.type);
+      let content = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+      e.target._infoWindow.setTitle(title);
+      e.target._infoWindow.setContent(content);
+    })
+    .on('contextmenu', e=> {
+      let o = e.target.properties;
+      let id = o.area + ':' + o.name;
+      settings.markedItems[id] = !settings.markedItems[id];
+      markItems();
+    })
+
+    lookup[o.area + ':' + o.name] = marker; // lookup for lines
+
+    let group = types[type].group || 'misc';
+    counters[group] = counters[group] || {};
+    counters[group][type] = (counters[group][type] || 0) + 1;
   }
 
-  // update markers
-  for (layerName of ['markers','lines']) {
-    for (marker of map.getLayer(layerName)._geoList) {
-      let o = marker.properties;
-      if (div = (lookup[ o.type ] || lookup[ o.spawns ]) ) {
-        let id = o.area + ':' + o.name;
-        let found = settings.markedItems[id];
-        show && !(found && hideFound && !alwaysVisible(marker)) ? marker.show() : marker.hide();
+  if (settings.playerPosition && !playerMarker) {
+    let o = {'type':'playerPosition', 'name':'Player Position' };
+    playerMarker = new maptalks.Marker(settings.playerPosition, {
+        properties: o,
+        symbol: markerSymbol(o.type, mapId=='siu' ? 'dodgerblue' : 'red'),
+    }).addTo(markerLayer);
+    new maptalks.ui.ToolTip('Player Position',{}).addTo(playerMarker);
+  }
 
-        if (layerName == 'markers') {
-          if (show) {
-            o.spawns ? delete settings.hiddenItems[o.spawns] : delete settings.hiddenItems[o.type];
-          } else {
-            o.spawns ? settings.hiddenItems[o.spawns] = true : settings.hiddenItems[o.type] = true;
-          }
-        }
+  // jumppads
+  let targets = [];
+  for (marker of map.getLayer('markers')._geoList) {
+    let o = marker.properties;
 
+    if (o.type != 'Jumppad_C') continue;
+    if (!o.direction) continue;
+
+    let points = [];
+    let c = marker.getCoordinates();
+    let color = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
+
+    let d = o.direction;
+
+    let vertical = d.x==0 && d.y==0 && d.z==1;
+    let horizontal = Math.abs(d.z) < 0.00002;
+
+    let x1 = c.x;
+    let y1 = c.y;
+    let z1 = c.z;
+
+    let k = o.relative_velocity || 1000;
+
+    let vx = -o.direction.x * k;
+    let vy = -o.direction.y * k;
+    let vz = o.direction.z * k;
+
+    if (o.velocity && o.allow_stomp) {
+      vx = o.velocity.x;
+      vy = o.velocity.y;
+      vz = o.velocity.z;
+    }
+
+    let x = x0 = c.x;
+    let y = y0 = c.y;
+    let z = z0 = c.z;
+
+    let dt = 0.01;
+    let g = 9.8;
+    let m = 95;
+
+    let last_z = z;
+
+    points.push({x:x, y:y, z:z})
+
+    for (let t=0;t<20;t+=dt) {
+      vz -= g * m * dt;
+      x += vx * dt;
+      y += vy * dt;
+      z += vz * dt;
+
+      points.push({x:x, y:y, z:z})
+
+      let h = (o.target && o.target.z) || o.alt;
+      let dist = Math.sqrt(Math.pow(x-x0,2)+Math.pow(y-y0,2)+Math.pow(z-z0,2));
+
+      if (last_z>z && (vertical || (h>z && dist>250)) && (!horizontal || dist>5000)) {
+        break;
+      }
+
+      last_z = z;
+    }
+
+    points = simplify(points, 10); // https://github.com/maptalks/maptalks.js/issues/2331
+    if (points.length>1) {
+      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+      if (!vertical) {
+        targets.push([o, points.pop()]);
       }
     }
   }
 
-  saveSettings();
-  markItems();
+  // add target points here (altitude markers), can't create them in the main loop
+  for ([o, point] of targets) {
+    new maptalks.Marker(point, {properties: o, symbol:{}}).addTo(markerLayer);
+  }
 
-  return false;
+  // add pipes
+  for (marker of map.getLayer('markers')._geoList) {
+    let o = marker.properties;
+    if (!o.type.startsWith('Pipesystem')) continue;
+    if (o.other_pipe && (target = lookup[o.other_pipe])) {
+      let color = types[o.type] && types[o.type].color || 'yellowgreen';
+      let points = [marker.getCoordinates(), target.getCoordinates()];
+      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+    }
+  }
+
+  let ul = document.querySelector('#categories');
+  ul.innerHTML = '';
+
+  let groups = Object.keys(counters);
+  let weight = x=>({'collectable':100,'coins':90,'items':-99, 'weapons':80, 'stats':6, 'upgrades': 7, 'travel': 85, 'graves':-10, 'misc':-100}[x] || 0);
+
+  for (group of groups.sort( (a,b)=> weight(b)-weight(a) || cmpAlphaNum(a,b)) ) {
+    let header = document.createElement('div');
+    header.innerHTML = capitalize(group);
+    header.className = 'header';
+    header.alt = group;
+    header.onclick = toggleGroup;
+
+    ul.appendChild(header);
+
+    let div = document.createElement('div');
+    div.className = 'group-categories';
+    ul.appendChild(div);
+
+    let items = [];
+    for ([type, count] of Object.entries(counters[group])) {
+      items.push([humanReadable(type),count,type]);
+    }
+
+    for ([name,count,type] of items.sort(cmpAlphaNum)) {
+      let li = document.createElement('div');
+      li.className = 'item';
+      li.classList.add('category-item');
+      li.alt = type;
+      li.title = name + ' (' + type + ')';
+      li.onclick = toggleItem;
+
+      let c0 = document.createElement('span');
+      c0.className = 'icon';
+
+      let fa = (types[type] && types[type].fa) || 'circle-question';
+      c0.classList.add('fa');
+      c0.classList.add('fa-'+fa);
+      //c0.setAttribute('data-fa-transform','left-5');
+
+      let c1 = document.createElement('span');
+      c1.innerHTML = name;
+      c1.className = 'title';
+
+      let c2 = document.createElement('span');
+      c2.innerHTML = count;
+      c2.className = 'bubble';
+
+      li.appendChild(c0);
+      li.appendChild(c1);
+      li.appendChild(c2);
+      div.appendChild(li);
+    }
+  }
+
+
+  // build category selector
+  let sel = document.querySelector('#track-category-panel > select');
+  sel.innerHTML = '';
+
+  let opt = document.createElement('option');
+  opt.innerHTML = 'Select a Category';
+  opt.value = '';
+  sel.appendChild(opt);
+
+  items = [];
+  type = 'Chest_C';
+  items.push([humanReadable(type),type]);
+
+  for (group of Object.keys(counters)) {
+    for ([type,count] of Object.entries(counters[group])) {
+      items.push([humanReadable(type),type]);
+    }
+  }
+
+  for ([name,type] of items.sort(cmpAlphaNum)) {
+    let opt = document.createElement('option');
+    opt.value = type;
+    opt.innerHTML = name;
+    opt.title = name + ' (' + type + ')';
+    sel.appendChild(opt);
+  }
+
+  // tracking added later in markItems
+  // (...)
+
+
+  setTimeout(function() {
+    if (enableAltitude && autoAltitude) {
+      markerLayer.setOptions({enableAltitude: map.getPitch()!=0});
+      lineLayer.setOptions({enableAltitude: map.getPitch()!=0});
+    }
+  },500);
+
+  setClass(document.querySelector('#toggle-found'),settings.toggleFound,'hidden');
+
+  markItems();
 }
 
 function markItems() {
@@ -690,14 +686,19 @@ function markItems() {
 
 
   // add progress track to the sidebar
-  let ul = document.querySelector('#progress');
-  ul.innerHTML = '';
+  let base = document.querySelector('.category-progress');
+  base.innerHTML = '';
 
   for (type of Object.keys(settings.track).sort(cmpAlphaNum)) {
     let name = humanReadable(type);
 
-    let li = document.createElement('li');
-    li.className = "item";
+    let div = document.createElement('div');
+    div.className = 'progress-item-wrapper';
+    base.append(div);
+
+    let li = document.createElement('div');
+    li.className = 'item';
+    li.classList.add('progress-item');
     li.alt = type;
     li.title = name + ' (' + type + ')';
     li.onclick = toggleTrack;
@@ -718,14 +719,21 @@ function markItems() {
     c1.innerHTML = name;
 
     let c2 = document.createElement('span');
-    c2.className = 'count';
+    c2.className = 'counter';
     c2.innerHTML = (marked[type] || 0) + '/' + (total[type] || 0);
 
-    let c3 = document.createElement('span');
-    c3.className = 'remove';
+    // add progress bar here
+    // (...)
+
+    let c3 = document.createElement('div');
+    c3.className = 'progress-item-remove';
     c3.innerHTML = 'x';
+    c3.alt = type;
     c3.onclick = function(e) { // removeTrack
-      let type = e.target.parentNode.alt;
+      let type = e.target.alt;
+
+      console.log(type);
+
       if (confirm('Are you sure you want to delete this category?')) {
         delete settings.track[type];
         saveSettings();
@@ -736,14 +744,67 @@ function markItems() {
     li.appendChild(c0);
     li.appendChild(c1);
     li.appendChild(c2);
-    li.appendChild(c3);
-    ul.appendChild(li);
+    div.appendChild(li);
+    div.appendChild(c3);
   }
 }
 
+function showAll(e) { toggleItems(e, true, document.querySelectorAll('#categories .category-item')); }
+function hideAll(e) { toggleItems(e, false, document.querySelectorAll('#categories .category-item')); }
+
 function toggleItem(e) {
   e.preventDefault();
-  return updateAll(e, e.target.classList.contains('hidden'), e.target.alt);
+  return e.target.alt && toggleItems(e, e.target.classList.contains('hidden'), [e.target]);
+}
+
+function toggleGroup(e) {
+  e.preventDefault();
+
+  // check siblings, if all visible set show to false else true
+  let show = false;
+  let divs = e.target.nextSibling.querySelectorAll('.category-item');
+  [].forEach.call(divs,function(e) {
+    if (e.classList.contains('hidden')) show = true;
+  });
+
+  return e.target.alt && toggleItems(e, show, divs);
+}
+
+function toggleItems(e, show, parent) {
+  let hideFound = document.querySelector('#toggle-found').classList.contains('hidden');
+  let alwaysVisible = marker=>marker.properties.type=='Jumppad_C' || marker.properties.type.startsWith('Pipesystem');
+
+  lookup = {};
+  for (div of parent) {
+    lookup[div.alt] = div;
+    show ? setClass(div, false, 'hidden') : setClass(div, true, 'hidden');
+  }
+
+  // update markers
+  for (layerName of ['markers','lines']) {
+    for (marker of map.getLayer(layerName)._geoList) {
+      let o = marker.properties;
+      if (div = (lookup[ o.type ] || lookup[ o.spawns ]) ) {
+        let id = o.area + ':' + o.name;
+        let found = settings.markedItems[id];
+        show && !(found && hideFound && !alwaysVisible(marker)) ? marker.show() : marker.hide();
+
+        if (layerName == 'markers') {
+          if (show) {
+            o.spawns ? delete settings.hiddenItems[o.spawns] : delete settings.hiddenItems[o.type];
+          } else {
+            o.spawns ? settings.hiddenItems[o.spawns] = true : settings.hiddenItems[o.type] = true;
+          }
+        }
+
+      }
+    }
+  }
+
+  saveSettings();
+  markItems();
+
+  return false;
 }
 
 function toggleTrack(e) {
@@ -752,7 +813,7 @@ function toggleTrack(e) {
   if (!id) return;
   settings.track[id] = !settings.track[id];
   saveSettings();
-  return updateAll(e, e.target.classList.contains('hidden'), id);
+  return toggleItems(e, e.target.classList.contains('hidden'), [e.target]);
 }
 
 
@@ -904,12 +965,6 @@ function loadSaveFile(e) {
     reader.readAsArrayBuffer(file);
   }
 }
-
-
-function setClass(e, set, c) { set ? e.classList.add(c) : e.classList.remove(c);}
-function toggleClass(e, c) { if (e.classList.contains(c)) { e.classList.remove(c); return false; } else { e.classList.add(c); return true; }}
-function toggleNav(e) { let input = document.querySelector('#search-input'); toggleClass(e.parentElement, 'closed') ? input.blur() : input.focus();}
-function toggleVisibility(a) { [].forEach.call(a, function(e) { toggleClass(document.querySelector(e), 'collapsed'); }) }
 
 window.onload = function(event) {
   if (location.hash.length>1) {
