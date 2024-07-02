@@ -462,71 +462,89 @@ function loadMarkers(j) {
   for (marker of map.getLayer('markers')._geoList) {
     let o = marker.properties;
 
-    if (o.type != 'Jumppad_C') continue;
-    if (!o.direction) continue;
+    if (o.type == 'Jumppad_C') {
+      if (!o.direction) continue;
 
-    let points = [];
-    let c = marker.getCoordinates();
-    let color = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
+      let points = [];
+      let c = marker.getCoordinates();
+      let color = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
 
-    let d = o.direction;
+      let d = o.direction;
 
-    let vertical = d.x==0 && d.y==0 && d.z==1;
-    let horizontal = Math.abs(d.z) < 0.00002;
+      let vertical = d.x==0 && d.y==0 && d.z==1;
+      let horizontal = Math.abs(d.z) < 0.00002;
 
-    let x1 = c.x;
-    let y1 = c.y;
-    let z1 = c.z;
+      let x1 = c.x;
+      let y1 = c.y;
+      let z1 = c.z;
 
-    let k = o.relative_velocity || 1000;
+      let k = o.relative_velocity || 1000;
 
-    let vx = -o.direction.x * k;
-    let vy = -o.direction.y * k;
-    let vz = o.direction.z * k;
+      let vx = -o.direction.x * k;
+      let vy = -o.direction.y * k;
+      let vz = o.direction.z * k;
 
-    if (o.velocity && o.allow_stomp) {
-      vx = o.velocity.x;
-      vy = o.velocity.y;
-      vz = o.velocity.z;
-    }
+      if (o.velocity && o.allow_stomp) {
+        vx = o.velocity.x;
+        vy = o.velocity.y;
+        vz = o.velocity.z;
+      }
 
-    let x = x0 = c.x;
-    let y = y0 = c.y;
-    let z = z0 = c.z;
+      let x = x0 = c.x;
+      let y = y0 = c.y;
+      let z = z0 = c.z;
 
-    let dt = 0.01;
-    let g = 9.8;
-    let m = 95;
+      let dt = 0.01;
+      let g = 9.8;
+      let m = 95;
 
-    let last_z = z;
-
-    points.push({x:x, y:y, z:z})
-
-    for (let t=0;t<20;t+=dt) {
-      vz -= g * m * dt;
-      x += vx * dt;
-      y += vy * dt;
-      z += vz * dt;
+      let last_z = z;
 
       points.push({x:x, y:y, z:z})
 
-      let h = (o.target && o.target.z) || o.alt;
-      let dist = Math.sqrt(Math.pow(x-x0,2)+Math.pow(y-y0,2)+Math.pow(z-z0,2));
+      for (let t=0;t<20;t+=dt) {
+        vz -= g * m * dt;
+        x += vx * dt;
+        y += vy * dt;
+        z += vz * dt;
 
-      if (last_z>z && (vertical || (h>z && dist>250)) && (!horizontal || dist>5000)) {
-        break;
+        points.push({x:x, y:y, z:z})
+
+        let h = (o.target && o.target.z) || o.alt;
+        let dist = Math.sqrt(Math.pow(x-x0,2)+Math.pow(y-y0,2)+Math.pow(z-z0,2));
+
+        if (last_z>z && (vertical || (h>z && dist>250)) && (!horizontal || dist>5000)) {
+          break;
+        }
+
+        last_z = z;
       }
 
-      last_z = z;
-    }
+      points = simplify(points, 10); // https://github.com/maptalks/maptalks.js/issues/2331
+      if (points.length>1) {
+        new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+        if (!vertical) {
+          targets.push([o, points.pop()]);
+        }
+      }
+    } else if (o.type.startsWith('Pipesystem')) { // add pipes
 
-    points = simplify(points, 10); // https://github.com/maptalks/maptalks.js/issues/2331
-    if (points.length>1) {
-      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
-      if (!vertical) {
-        targets.push([o, points.pop()]);
+      if (o.other_pipe && (target = lookup[o.other_pipe])) {
+        let color = types[o.type] && types[o.type].color || 'yellowgreen';
+        let points = [marker.getCoordinates(), target.getCoordinates()];
+        new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
+      }
+
+    } else if (o.actors) { // add actor links
+      for (actor of o.actors) {
+        if (target = (lookup[actor] || lookup[o.area +':' + actor])) { // actors have optional area prefix
+          let color = 'white';
+          let points = [marker.getCoordinates(), target.getCoordinates()];
+          new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: 1}}).addTo(lineLayer);
+        }
       }
     }
+
   }
 
   // add target points here (altitude markers), can't create them in the main loop
@@ -534,16 +552,6 @@ function loadMarkers(j) {
     new maptalks.Marker(point, {properties: o, symbol:{}}).addTo(markerLayer);
   }
 
-  // add pipes
-  for (marker of map.getLayer('markers')._geoList) {
-    let o = marker.properties;
-    if (!o.type.startsWith('Pipesystem')) continue;
-    if (o.other_pipe && (target = lookup[o.other_pipe])) {
-      let color = types[o.type] && types[o.type].color || 'yellowgreen';
-      let points = [marker.getCoordinates(), target.getCoordinates()];
-      new maptalks.LineString(points,{arrowStyle:arrowStyle, properties:o, symbol:{lineColor: color, lineWidth: lineWidth}}).addTo(lineLayer);
-    }
-  }
 
   let ul = document.querySelector('#categories');
   ul.innerHTML = '';
