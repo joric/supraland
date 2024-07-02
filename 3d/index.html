@@ -414,6 +414,14 @@ function loadMarkers(j) {
       o.spawns = 'Coin_C';
     }
 
+    if (o.type.startsWith('MinecraftBrick')) {
+      if (color = {1:'purple', 2:'lightgrey', 3:'lightblue', 4:'goldenrod'}[o.brick_type||0]) {
+        bg = color;
+      } else if (o.coins_in_gold) {
+        bg = 'goldenrod';
+      }
+    }
+
     let type = o.spawns || o.type;
 
     let marker = new maptalks.Marker([c.x, c.y, c.z], {
