@@ -214,7 +214,7 @@
   "RingColorerFlower_C": {"icon": "flower", "group": "items", "fa": "spa", "bg": "forestgreen", "name": "Flower"},
   "Trash_C": {"icon": "trash", "group": "items", "fa": "sack-xmark", "bg": "darkslategrey", "name": "Trash"},
   "MatchBox_C": {"icon": "matchbox", "group": "items", "fa": "mattress-pillow", "bg": "peru", "name": "Match Box"},
-  "PhysicalCoin_C": {"icon": "coin", "group": "coins", "fa": "coins", "bg": "orange", "name": "Physical Coin"},
+  "PhysicalCoin_C": {"icon": "coin", "group": "coins", "fa": "certificate", "bg": "orange", "name": "Physical Coin"},
   "RedGuy_C": {"icon": "guy", "group": "misc", "fa": "person", "bg": "red", "name": "NPC"},
   "BP_UnlockMap_C": {"icon": "map", "group": "stats", "fa": "compass", "bg": "deepskyblue", "name": "Map"},
   "MinecraftBrick_C": {"icon": "brick", "group": "items", "fa":"cube", "bg": "grey", "name": "Minecraft Brick"},
