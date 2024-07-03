@@ -570,7 +570,7 @@ function loadMarkers(j) {
   ul.innerHTML = '';
 
   let groups = Object.keys(counters);
-  let weight = x=>({'collectable':100,'coins':90,'items':-99, 'weapons':80, 'stats':6, 'upgrades': 7, 'travel': 85, 'graves':-10, 'misc':-100}[x] || 0);
+  let weight = x=>({'collectable':100,'coins':90,'items':-99, 'weapons':80, 'stats':6, 'upgrades': 7, 'teleports': 85, 'graves':-10, 'misc':-100}[x] || 0);
 
   for (group of groups.sort( (a,b)=> weight(b)-weight(a) || cmpAlphaNum(a,b)) ) {
     let header = document.createElement('div');
