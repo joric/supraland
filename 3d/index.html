@@ -999,7 +999,7 @@ window.onload = function(event) {
     localData[id].markedItems = localData[id].markedItems || {};
     localData[id].searchText = localData[id].searchText || '';
     localData[id].track = localData[id].track || {'Chest_C':true, 'Coin_C':false};
-    localData[id].activeItems = localData[id].activeItems || {};
+    localData[id].activeItems = localData[id].activeItems || {'playerPosition':true};
     if (location.hash.slice(1) == id) {
       mapId = id;
     }
