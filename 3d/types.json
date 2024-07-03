@@ -162,7 +162,7 @@
   "Shell_C": {"icon": "shell", "group": "collectable", "fa": "shrimp", "bg": "darkgoldenrod", "name": "Shell"},
   "EnemySpawner_C": {"group": "misc", "icon": "spawner", "fa": "skull", "bg": "grey", "name": "Enemy Spawner"},
   "EnemySpawner2_C": {"group": "misc", "icon": "spawner", "fa": "skull", "bg": "grey", "name": "Enemy Spawner 2"},
-  "Juicer_C": {"icon": "bucket", "group": "items", "fa": "bucket", "bg": "grey", "name": "Juicer"},
+  "Juicer_C": {"icon": "bucket", "group": "misc", "fa": "bucket", "bg": "grey", "name": "Juicer"},
   "Lever_C": {"icon": "lever", "group": "misc", "fa": "rotate", "bg": "grey", "name": "Lever"},
   "Button_C": {"icon": "button", "group": "misc", "fa": "toggle-off", "bg": "grey", "name": "Button"},
   "ButtonFloor_C": {"icon": "button_floor", "group": "misc", "fa": "toggle-off", "bg": "grey", "name": "Button Floor"},
