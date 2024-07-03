@@ -728,6 +728,7 @@ function markItems() {
     li.onclick = toggleTrack;
 
     if (!visible[type]) {
+    //if (!settings.track[type]) {
       li.classList.add('hidden');
     }
 
@@ -794,9 +795,18 @@ function toggleGroup(e) {
   return e.target.alt && toggleItems(e, show, divs);
 }
 
+function toggleTrack(e) {
+  e.preventDefault();
+  let id = e.target.alt;
+  settings.track[id] = !settings.track[id];
+  saveSettings();
+  return toggleItems(e, e.target.classList.contains('hidden'), [e.target]);
+}
+
 function toggleItems(e, show, parent) {
   let hideFound = document.querySelector('#toggle-found').classList.contains('hidden');
   let alwaysVisible = marker=>marker.properties.type=='Jumppad_C' || marker.properties.type.startsWith('Pipesystem');
+  let chest = parent.length==1 && parent[0].alt == 'Chest_C';
 
   lookup = {};
   for (div of parent) {
@@ -820,9 +830,9 @@ function toggleItems(e, show, parent) {
 
         if (layerName == 'markers') {
           if (show) {
-            o.spawns ? settings.activeItems[o.spawns] = true : settings.activeItems[o.type] = true;
+            (!chest && o.spawns)? settings.activeItems[o.spawns] = true : settings.activeItems[o.type] = true;
           } else {
-            o.spawns ? delete settings.activeItems[o.spawns] : delete settings.activeItems[o.type];
+            (!chest && o.spawns) ? delete settings.activeItems[o.spawns] : delete settings.activeItems[o.type];
           }
         }
 
@@ -835,16 +845,6 @@ function toggleItems(e, show, parent) {
 
   return false;
 }
-
-function toggleTrack(e) {
-  e.preventDefault();
-  let id = e.target.alt;
-  if (!id) return;
-  settings.track[id] = !settings.track[id];
-  saveSettings();
-  return toggleItems(e, e.target.classList.contains('hidden'), [e.target]);
-}
-
 
 function addTrack(e) {
   let sel = document.querySelector('#track-category-panel > select');
