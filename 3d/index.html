@@ -727,8 +727,8 @@ function markItems() {
     li.title = name + ' (' + type + ')';
     li.onclick = toggleTrack;
 
-    if (!visible[type]) {
-    //if (!settings.track[type]) {
+    //if (!visible[type]) {
+    if (!settings.track[type]) {
       li.classList.add('hidden');
     }
 
