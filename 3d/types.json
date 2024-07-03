@@ -215,7 +215,7 @@
   "Trash_C": {"icon": "trash", "group": "items", "fa": "sack-xmark", "bg": "darkslategrey", "name": "Trash"},
   "MatchBox_C": {"icon": "matchbox", "group": "items", "fa": "mattress-pillow", "bg": "peru", "name": "Match Box"},
   "PhysicalCoin_C": {"icon": "coin", "group": "coins", "fa": "coins", "bg": "orange", "name": "Physical Coin"},
-  "RedGuy_C": {"icon": "guy", "group": "items", "fa": "person", "bg": "red", "name": "Red Guy"},
+  "RedGuy_C": {"icon": "guy", "group": "items", "fa": "person", "bg": "red", "name": "The Guy"},
   "BP_UnlockMap_C": {"icon": "map", "group": "stats", "fa": "compass", "bg": "deepskyblue", "name": "Map"},
   "MinecraftBrick_C": {"icon": "brick", "group": "collectable", "fa":"cube", "bg": "grey", "name": "Minecraft Brick"},
   "MinecraftBrickRespawnable_C": {"icon": "brick", "group": "misc", "fa":"cube", "bg": "grey", "name": "Respawnable Brick"},
