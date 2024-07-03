@@ -680,7 +680,7 @@ function markItems() {
       let id = o.area +':'+ o.name;
       let found = settings.markedItems[id];
 
-      let hidden = settings.track[o.type]==false || ( settings.hiddenItems[o.type]==true ||  settings.hiddenItems[o.spawns]==true);
+      let hidden = settings.track[o.type]==false || ( !settings.activeItems[o.type] && !settings.activeItems[o.spawns]);
 
       hidden || (found && hideFound && !alwaysVisible(marker)) ? marker.hide() : marker.show();
 
@@ -695,14 +695,12 @@ function markItems() {
     }
   }
 
-  //console.log(settings.hiddenItems);
-
   // mark html items
   [].forEach.call(document.querySelectorAll('#categories .item'), function(div) {
-    if (settings.hiddenItems[div.alt]==true) {
-      div.classList.add('hidden');
-    } else {
+    if (settings.activeItems[div.alt]==true) {
       div.classList.remove('hidden');
+    } else {
+      div.classList.add('hidden');
     }
   });
 
@@ -813,9 +811,9 @@ function toggleItems(e, show, parent) {
 
         if (layerName == 'markers') {
           if (show) {
-            o.spawns ? delete settings.hiddenItems[o.spawns] : delete settings.hiddenItems[o.type];
+            o.spawns ? settings.activeItems[o.spawns] = true : settings.activeItems[o.type] = true;
           } else {
-            o.spawns ? settings.hiddenItems[o.spawns] = true : settings.hiddenItems[o.type] = true;
+            o.spawns ? delete settings.activeItems[o.spawns] : delete settings.activeItems[o.type];
           }
         }
 
@@ -1001,7 +999,7 @@ window.onload = function(event) {
     localData[id].markedItems = localData[id].markedItems || {};
     localData[id].searchText = localData[id].searchText || '';
     localData[id].track = localData[id].track || {'Chest_C':true, 'Coin_C':false};
-    localData[id].hiddenItems = localData[id].hiddenItems || {};
+    localData[id].activeItems = localData[id].activeItems || {};
     if (location.hash.slice(1) == id) {
       mapId = id;
     }
