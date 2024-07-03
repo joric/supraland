@@ -171,7 +171,7 @@ function markerSymbol2(type, _bg, _fg) {
     if (t.bg) bg = t.bg;
     if (t.fg) fg = t.fg;
   } else {
-    if (type == 'playerPosition') {
+    if (type == 'PlayerPosition') {
       icon = 'face-smile';
     }
   }
@@ -374,6 +374,13 @@ function loadMarkers(j) {
 
   let lookup = {};
   let counters = {};
+  let popupOnClick = e=>{
+    let o = e.target.properties;
+    let title = humanReadable(o.spawns || o.type);
+    let content = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+    e.target._infoWindow.setTitle(title);
+    e.target._infoWindow.setContent(content);
+  };
 
   for (const o of j) {
 
@@ -438,15 +445,7 @@ function loadMarkers(j) {
 
     new maptalks.ui.ToolTip(title,{}).addTo(marker);
 
-    let popup = marker.setInfoWindow({autoCloseOn: 'click'})
-    .on('click',e=>{
-      let o = e.target.properties;
-      //o._coordinates = e.target.getCoordinates();
-      let title = humanReadable(o.spawns || o.type);
-      let content = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-      e.target._infoWindow.setTitle(title);
-      e.target._infoWindow.setContent(content);
-    })
+    marker.setInfoWindow({autoCloseOn: 'click'}).on('click', popupOnClick)
     .on('contextmenu', e=> {
       let o = e.target.properties;
       let id = o.area + ':' + o.name;
@@ -462,11 +461,12 @@ function loadMarkers(j) {
   }
 
   if (settings.playerPosition && !playerMarker) {
-    let o = {'type':'playerPosition', 'name':'Player Position' };
+    let o = {'type':'PlayerPosition', 'name':'Player Position' };
     playerMarker = new maptalks.Marker(settings.playerPosition, {
         properties: o,
         symbol: markerSymbol(o.type, mapId=='siu' ? 'dodgerblue' : 'red'),
-    }).addTo(markerLayer);
+    }).addTo(markerLayer)
+    playerMarker.setInfoWindow({autoCloseOn: 'click'}).on('click',popupOnClick);
     new maptalks.ui.ToolTip('Player Position',{}).addTo(playerMarker);
   }
 
@@ -999,7 +999,7 @@ window.onload = function(event) {
     localData[id].markedItems = localData[id].markedItems || {};
     localData[id].searchText = localData[id].searchText || '';
     localData[id].track = localData[id].track || {'Chest_C':true, 'Coin_C':false};
-    localData[id].activeItems = localData[id].activeItems || {'playerPosition':true};
+    localData[id].activeItems = localData[id].activeItems || {'PlayerPosition':true};
     if (location.hash.slice(1) == id) {
       mapId = id;
     }
