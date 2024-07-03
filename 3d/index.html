@@ -801,6 +801,11 @@ function toggleItems(e, show, parent) {
   lookup = {};
   for (div of parent) {
     lookup[div.alt] = div;
+
+    if (div.alt=='Chest_C') {
+      lookup['BP_MonsterChest_C'] = div; // 139 + 3 = 142
+    }
+
     show ? setClass(div, false, 'hidden') : setClass(div, true, 'hidden');
   }
 
