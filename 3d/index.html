@@ -680,7 +680,7 @@ function markItems() {
       let id = o.area +':'+ o.name;
       let found = settings.markedItems[id];
 
-      let hidden = settings.track[o.type]==false || ( !settings.activeItems[o.type] && !settings.activeItems[o.spawns]);
+      let hidden = !settings.activeItems[o.type] && !settings.activeItems[o.spawns];
 
       hidden || (found && hideFound && !alwaysVisible(marker)) ? marker.hide() : marker.show();
 
