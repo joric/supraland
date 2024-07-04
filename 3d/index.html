@@ -420,12 +420,6 @@ function loadMarkers(j) {
       bg = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
     }
 
-    let spawns = o.spawns;
-
-    if (o.type == 'Chest_C' && !o.spawns) {
-      spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
-    }
-
     if (o.type.startsWith('MinecraftBrick')) {
       if (color = {1:'purple', 2:'lightgrey', 3:'lightblue', 4:'goldenrod'}[o.brick_type||0]) {
         bg = color;
@@ -434,11 +428,16 @@ function loadMarkers(j) {
       }
     }
 
-    let type = spawns || o.type;
+    let type = o.spawns || o.type;
+
+    let spawns = o.spawns;
+    if (o.type == 'Chest_C' && !o.spawns) {
+      spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
+    }
 
     let marker = new maptalks.Marker([c.x, c.y, c.z], {
       properties: o,
-      symbol: markerSymbol(type, bg, fg),
+      symbol: markerSymbol(spawns || o.type, bg, fg),
     }).addTo(markerLayer);
 
     let title = humanReadable(type);
