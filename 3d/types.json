@@ -122,7 +122,7 @@
   "BuyWalletx2_C": {"group": "upgrades", "fa": "wallet", "bg": "sienna", "name": "Max Coins x2"},
   "Chest_C": {"group": "closedChest", "icon": "chest", "fa": "toolbox", "bg": "dimgrey", "name": "Chest"},
   "CoinBig_C": {"group": "coins", "icon": "coin", "fa": "certificate", "bg": "orange", "name": "Big Coin"},
-  "CoinRed_C": {"group": "coins", "icon": "coinRed", "fa": "coins", "bg": "red", "name": "Red Coin"},
+  "CoinRed_C": {"group": "coins", "icon": "coinRed", "fa": "sun", "bg": "red", "name": "Red Coin"},
   "Coin_C": {"group": "coins", "icon": "coin", "fa": "sun", "bg": "orange", "name": "Coin"},
   "StolenCoins_C": {"group": "coins", "icon": "coin", "fa": "coins", "bg": "orange"},
   "DeadHero_C": {"group": "collectable", "icon": "hero_placeholder", "fa": "face-dizzy", "bg": "tomato", "name": "Dead Hero"},
