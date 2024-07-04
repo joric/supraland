@@ -423,7 +423,7 @@ function loadMarkers(j) {
     let spawns = o.spawns;
 
     if (o.type == 'Chest_C' && !o.spawns) {
-      o.spawns = 'Coin_C';
+      spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
     }
 
     if (o.type.startsWith('MinecraftBrick')) {
@@ -434,14 +434,14 @@ function loadMarkers(j) {
       }
     }
 
-    let type = o.spawns || o.type;
+    let type = spawns || o.type;
 
     let marker = new maptalks.Marker([c.x, c.y, c.z], {
       properties: o,
       symbol: markerSymbol(type, bg, fg),
     }).addTo(markerLayer);
 
-    let title = humanReadable(o.spawns || o.type);
+    let title = humanReadable(type);
 
     new maptalks.ui.ToolTip(title,{}).addTo(marker);
 
