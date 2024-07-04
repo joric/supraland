@@ -1,5 +1,5 @@
 {
-  "BP_A3_StrengthQuest_C": {"icon": "strong", "group": "misc", "name": "Strong"},
+  "BP_A3_StrengthQuest_C": {"icon": "strong", "group": "misc", "fa": "dumbbell", "bg": "grey", "name": "Strong"},
   "BP_BoneDetector_C": {"icon": "upgrades", "group": "stats", "fa": "magnifying-glass-plus", "bg": "red", "name": "Bone Detector"},
   "BP_BuyBeamElasticity_C": {"group": "upgrades", "fa": "bolt", "bg": "orchid", "name": "Beam elasticity"},
   "BP_BuyBoomerAxe_C": {"group": "upgrades", "fa": "gun", "bg": "red", "name": "Throw Pickaxe"},
@@ -11,7 +11,7 @@
   "BP_BuyGunDamage+100pct_C": {"group": "upgrades", "icon": "gun_damage", "fa": "gun", "bg": "red", "name": "Gun damage +100%"},
   "BP_BuyGunDuration+2s_C": {"group": "upgrades", "icon": "gun_upgrade", "fa": "gun", "bg": "red", "name": "Stun duration + {duration}"},
   "BP_BuyGunRechargeTime-50pct_C": {"group": "upgrades", "icon": "gun_upgrade", "fa": "gun", "bg": "red", "name": "Reload time -{percentage}%"},
-  "BP_CookableMeat_C": {"group": "misc", "icon": "meat", "name": "Cookable Meat"},
+  "BP_CookableMeat_C": {"group": "misc", "icon": "meat", "fa": "drumstick-bite", "bg":"chocolate", "name": "Cookable Meat"},
   "BP_DoubleHealthLoot_C": {"group": "upgrades", "icon": "health", "fa": "heart-circle-plus", "bg": "red", "name": "Double Health"},
   "BP_EngagementCup_Base_C": {"group": "collectable", "icon": "trophy", "fa": "trophy", "bg": "goldenrod", "name": "Engagement Trophy"},
   "BP_MonsterChest_C": {"group": "collectable", "icon": "chest", "fa": "toolbox", "bg": "grey", "name": "Monster Chest"},
@@ -146,7 +146,7 @@
   "Purchase_IronPickaxe_C": {"icon": "pickaxe_metal", "group": "weapons", "fa": "hammer", "bg": "lightgrey", "name": "Iron Pickaxe"},
   "Purchase_StonePickaxe_C": {"icon": "pickaxe_stone", "group": "weapons", "fa": "hammer", "bg": "grey", "name": "Stone Pickaxe"},
   "Purchase_WoodPickaxe_C": {"icon": "pickaxe_wood", "group": "weapons", "fa": "hammer", "bg": "chocolate", "name": "Wooden Pickaxe"},
-  "Purchase_SlumHouse1_C": {"icon": "awesome", "group": "misc"},
+  "Purchase_SlumHouse1_C": {"icon": "awesome", "group": "misc", "name": "Slum House"},
   "Scrap_C": {"icon": "scrap", "group": "collectable", "fa": "gear", "bg": "darkslategray", "name": "Scrap"},
   "SlumBurningQuest_C": {"icon": "upgrades", "group": "misc"},
   "SpawnEnemy3_C": {"name": "Spawn Enemy 3"},
@@ -191,7 +191,7 @@
   "DoorInverted_C": {"icon": "door-closed", "group": "misc", "fa": "door-closed", "bg": "grey", "name": "Door Inverted"},
   "DoorPhysical_C": {"icon": "door-closed", "group": "misc", "fa": "door-closed", "bg": "grey", "name": "Door Physical"},
   "BP_ElevatorDoor_C": {"icon": "door-closed", "group": "misc", "fa": "door-closed", "bg": "grey", "name": "Elevator Door"},
-  "BP_Fix_A4_CombatArenaDoor_C": {"icon": "door-closed", "group": "misc", "name": "Combat Arena Door"},
+  "BP_Fix_A4_CombatArenaDoor_C": {"icon": "door-closed", "group": "misc", "fa": "door-closed", "bg": "grey", "name": "Combat Arena Door"},
   "SwingingDoor_C": {"icon": "door-closed", "group": "misc", "fa": "door-closed", "bg": "grey", "name": "Swinging Door"},
   "SwingingDoorResetVolume_C": {"icon": "door-closed", "group": "misc", "fa": "cube", "bg": "black", "name": "Swinging Door Reset Volume"},
   "Battery_C": {"icon": "battery", "group": "items", "fa": "battery-full", "bg": "darkorange", "name": "Battery"},
@@ -226,7 +226,7 @@
   "PipesystemNew_C": {"icon": "pipe", "group": "teleports", "fa": "circle-chevron-down", "bg": "yellowgreen", "name": "New Pipe"},
   "PipesystemNewDLC_C": {"icon": "pipe", "group": "teleports", "fa": "circle-chevron-down", "bg": "yellowgreen", "name": "New Pipe DLC"},
   "TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume"},
-  "BP_TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume"},
+  "BP_TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume BP"},
   "Lighttrigger_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger"},
   "Lighttrigger2_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger 2"}
 }
