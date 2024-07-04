@@ -84,7 +84,7 @@
   "BuyQuintupleJump_C": {"group": "upgrades", "icon": "triple_jump", "fa": "bolt", "bg": "limegreen", "name": "Quintuple Jump"},
   "BuyShieldBreaker_C": {"group": "upgrades", "icon": "shield_breaker", "fa": "shield-halved", "bg": "red", "name": "Shield Breaker"},
   "BuyShowHealthbar_C": {"group": "stats", "icon": "see_enemy_health", "fa": "bars-progress", "bg": "red", "name": "Health Bar"},
-  "BuyShowProgress_C": {"group": "upgrades", "fa": "star", "bg": "goldenrod", "name": "Awesome-Meter"},
+  "BuyShowProgress_C": {"group": "stats", "fa": "star", "bg": "goldenrod", "name": "Awesome-Meter"},
   "BuySilentFeet_C": {"group": "upgrades", "icon": "silent_shoes", "fa": "socks", "bg": "red", "name": "Silent feet"},
   "BuySmashdownDamage+100_C": {"group": "upgrades", "icon": "stomp_damage", "fa": "socks", "bg": "cadetblue"},
   "BuySmashdownDamage+1_C": {"group": "upgrades", "icon": "stomp_damage", "fa": "socks", "bg": "cadetblue", "name": "Stomp Damage +1"},
