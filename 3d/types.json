@@ -227,6 +227,6 @@
   "PipesystemNewDLC_C": {"icon": "pipe", "group": "teleports", "fa": "circle-chevron-down", "bg": "yellowgreen", "name": "New Pipe DLC"},
   "TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume"},
   "BP_TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume"},
-  "Lighttrigger_C": {"icon": "trigger_light", "group": "misc", "fa": "cube", "bg": "black", "name": "Lighttrigger"},
-  "Lighttrigger2_C": {"icon": "trigger_light", "group": "misc", "fa": "cube", "bg": "black", "name": "Lighttrigger 2"}
+  "Lighttrigger_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger"},
+  "Lighttrigger2_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger 2"}
 }
