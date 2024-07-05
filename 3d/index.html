@@ -220,7 +220,7 @@ function humanReadable(type) {
     s = s.replace('BP_Purchase','').replace('BP_','').replace('BP_Buy','').replace('Purchase_','').replace('Buy','').replace(/_C$/,'')
     s = s.replace(/([A-Z]+|[\d]+)/g, ' $1').replace(/^ /, ''); // camel case to space-separated
   }
-  s = s.replace(/[-+]*\{.+\}(%*)/,''); // remove {} formatting
+  s = s.replace(/ [+-]*\{.+\}(%*)/,''); // remove {} formatting
   return s;
 }
 
@@ -503,7 +503,10 @@ function loadMarkers(j) {
       symbol: markerSymbol(spawns || o.type, bg, fg),
     }).addTo(markerLayer);
 
-    let title = humanReadable(type);
+    let title = humanReadable(o.type);
+    if (o.spawns || o.coins) {
+      title +=  ' (' + (o.spawns ? humanReadable(o.spawns) : o.coins + ' coins') + ')';
+    }
 
     new maptalks.ui.ToolTip(title,{}).addTo(marker);
 
