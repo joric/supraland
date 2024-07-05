@@ -426,7 +426,7 @@ function loadMarkers(j) {
     let value = found ? 'checked' : '';
 
     let controls = document.createElement('div');
-    controls.innerHTML = '<input type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'")><label for="'+markerId+'">Found</label>';
+    controls.innerHTML = '<input class="form-control" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'")><label class="form-control" for="'+markerId+'">Found</label>';
 
     content.appendChild(text);
     content.appendChild(expander);

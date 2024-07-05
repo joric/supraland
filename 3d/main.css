@@ -430,3 +430,8 @@ a:hover { text-decoration: underline; }
   opacity: 100%;
 }
 
+.form-control {
+  cursor: pointer;
+}
+
+
