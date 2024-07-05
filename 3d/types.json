@@ -233,8 +233,10 @@
   "CarrotPhysical_C": {"icon": "carrot", "group": "items", "fa": "carrot", "bg": "orange", "name" : "Carrot" },
   "RingColorer_C": {"icon": "colorer", "group": "misc", "fa": "paintbrush", "bg": "grey", "name" : "Ring Colorer" },
   "RespawnActor_C": {"icon": "question", "group": "misc", "fa": "circle-question", "bg": "grey", "name" : "Respawn Actor" },
-  "CarryStones_Heavy_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "grey", "name": "Stone"},
+  "CarryStones_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "grey", "name": "Carry Stones"},
+  "CarryStones_Heavy_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "grey", "name": "Heavy Stones"},
   "BP_CarryBox_C": {"icon": "box", "group": "items", "fa": "box", "bg": "grey", "name": "Carry Box"},
   "FlowerDLC2_C": {"icon": "flower", "group": "items", "fa": "spa", "bg": "forestgreen", "name": "Flower DLC2"},
-  "GoldNugget_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "goldenrod", "name": "Gold Nugget"}
+  "GoldNugget_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "goldenrod", "name": "Gold Nugget"},
+  "Crystal_C": {"group": "items", "icon": "stone", "fa": "gem", "bg": "crimson", "name": "Crystal"}
 }

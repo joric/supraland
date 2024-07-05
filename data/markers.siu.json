@@ -2485,6 +2485,24 @@
     "alt": 1878.814453125
   },
   {
+    "name": "CarryStones_Heavy2",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_Complete",
+    "lat": -44217.09375,
+    "lng": -6050.39794921875,
+    "alt": 2653.6767578125,
+    "color": 7
+  },
+  {
+    "name": "CarryStones_Heavy_2",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_Complete",
+    "lat": -41262.8515625,
+    "lng": -3135.181884765625,
+    "alt": 1875.91455078125,
+    "color": 7
+  },
+  {
     "name": "Chest10_11",
     "type": "Chest_C",
     "area": "DLC2_Complete",
@@ -22368,6 +22386,60 @@
     "spawns": "BuyTranslocator_Fake_C"
   },
   {
+    "name": "Crystal24",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -283498.0,
+    "lng": 523.5,
+    "alt": 9948.140625,
+    "color": 1
+  },
+  {
+    "name": "Crystal25",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -287099.0,
+    "lng": -1967.5,
+    "alt": 10366.40625,
+    "color": 1
+  },
+  {
+    "name": "Crystal26",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -287039.4375,
+    "lng": 771.4277954101562,
+    "alt": 10202.59375,
+    "color": 1
+  },
+  {
+    "name": "Crystal27",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -288069.65625,
+    "lng": -2230.0771484375,
+    "alt": 10350.40625,
+    "color": 1
+  },
+  {
+    "name": "Crystal7_2",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -283457.0,
+    "lng": -199.5,
+    "alt": 10089.5078125,
+    "color": 1
+  },
+  {
+    "name": "crystalls_crystall241",
+    "type": "Crystal_C",
+    "area": "DLC2_Area0",
+    "lat": -290118.0,
+    "lng": -80.5,
+    "alt": 10571.375,
+    "color": 1
+  },
+  {
     "name": "Door33_968",
     "type": "Door3_C",
     "area": "DLC2_Area0",
@@ -23596,6 +23668,62 @@
       "MoveMeshDoor2",
       "Cartoon_plank_12"
     ]
+  },
+  {
+    "name": "CarryStones_Heavy1",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 7644.69873046875,
+    "lng": -1584.8138427734375,
+    "alt": 889.107421875
+  },
+  {
+    "name": "CarryStones_Heavy2",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 3802.36279296875,
+    "lng": -809.5053100585938,
+    "alt": 967.26953125
+  },
+  {
+    "name": "CarryStones_Heavy3",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 3558.72119140625,
+    "lng": -366.0082092285156,
+    "alt": 967.26953125
+  },
+  {
+    "name": "CarryStones_Heavy4",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2515.05712890625,
+    "lng": -449.1109924316406,
+    "alt": 777.789306640625
+  },
+  {
+    "name": "CarryStones_Heavy5",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 5662.97607421875,
+    "lng": 6104.7109375,
+    "alt": -3021.446044921875
+  },
+  {
+    "name": "CarryStones_Heavy6",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -2613.180419921875,
+    "lng": 6084.0244140625,
+    "alt": 1521.08984375
+  },
+  {
+    "name": "CarryStones_Heavy_2",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 4473.876953125,
+    "lng": 5415.1875,
+    "alt": -2972.789306640625
   },
   {
     "name": "Chest2_2",
@@ -26610,6 +26738,14 @@
     "lat": -43401.4453125,
     "lng": -52984.97265625,
     "alt": 9688.857421875
+  },
+  {
+    "name": "CarryStones_Heavy_4",
+    "type": "CarryStones_Heavy_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42992.390625,
+    "lng": -71325.171875,
+    "alt": 5599.5712890625
   },
   {
     "name": "Chest2_2",
