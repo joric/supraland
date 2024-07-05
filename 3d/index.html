@@ -414,6 +414,11 @@ function loadMarkers(j) {
 
     let data = document.createElement('div');
     data.className = 'collapsed';
+
+    if (player = o.type=='PlayerPosition') {
+      o._coordinates = e.target.getCoordinates();
+    }
+
     data.innerHTML = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
 
     let expander = document.createElement('div');
@@ -424,14 +429,15 @@ function loadMarkers(j) {
     let markerId = o.area + ':' + o.name;
     let found = settings.markedItems[markerId]==true
     let value = found ? 'checked' : '';
+    let disabled = player ? 'disabled' : '';
 
     let controls = document.createElement('div');
-    controls.innerHTML = '<input class="form-control" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'")><label class="form-control" for="'+markerId+'">Found</label>';
+    controls.innerHTML = '<input class="form-control" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control" for="'+markerId+'">Found</label>';
 
     content.appendChild(text);
     content.appendChild(expander);
     content.appendChild(data);
-    o.type!='PlayerPosition' && content.appendChild(controls);
+    content.appendChild(controls);
 
     popup.appendChild(wrapper);
     wrapper.appendChild(content);
