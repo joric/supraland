@@ -370,16 +370,79 @@ function loadMap(id) {
   });
 }
 
+function toggleMarked(id) {
+  settings.markedItems[id] = !settings.markedItems[id];
+  markItems();
+  saveSettings();
+}
+
 function loadMarkers(j) {
 
   let lookup = {};
   let counters = {};
+
   let popupOnClick = e=>{
     let o = e.target.properties;
-    let title = humanReadable(o.spawns || o.type);
-    let content = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-    e.target._infoWindow.setTitle(title);
-    e.target._infoWindow.setContent(content);
+
+    let popup = document.createElement('div')
+    popup.className = 'popup';
+
+    let wrapper = document.createElement('div')
+    wrapper.className = 'popup-content-wrapper';
+
+    let content = document.createElement('div')
+    content.className = 'popup-content';
+
+    let tipContainer = document.createElement('div')
+    tipContainer.className = 'popup-tip-container';
+
+    let tip = document.createElement('div')
+    tip.className = 'popup-tip';
+
+    let close = document.createElement('a')
+    close.className = 'popup-close-button';
+    close.innerHTML = '&times;';
+    close.onclick = ()=> {  e.target._infoWindow.hide(); };
+
+    let title = '<b>' + humanReadable(o.type) + '</b>';
+    if (o.spawns || o.coins) {
+      title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + ' coins');
+    }
+
+    let text = document.createElement('div');
+    text.innerHTML = title;
+
+    let data = document.createElement('div');
+    data.className = 'collapsed';
+    data.innerHTML = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+
+    let expander = document.createElement('div');
+    expander.className = 'expander';
+    expander.innerHTML = '...';
+    expander.onclick = ()=>{  toggleClass(data,'collapsed');  }
+
+    let markerId = o.area + ':' + o.name;
+    let found = settings.markedItems[markerId]==true
+    let value = found ? 'checked' : '';
+
+    let controls = document.createElement('div');
+    controls.innerHTML = '<input type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'")><label for="'+markerId+'">Found</label>';
+
+    content.appendChild(text);
+    content.appendChild(expander);
+    content.appendChild(data);
+    o.type!='PlayerPosition' && content.appendChild(controls);
+
+    popup.appendChild(wrapper);
+    wrapper.appendChild(content);
+    popup.appendChild(tipContainer);
+    tipContainer.appendChild(tip);
+    popup.appendChild(close); // I have no idea how to close window, onclick doesn't fire
+
+    e.target._infoWindow.setOptions({custom: true, dy: -12});
+    e.target._infoWindow.setContent(popup);
+
+    //e.target._infoWindow.setContent(title);
   };
 
   for (const o of j) {
@@ -449,8 +512,7 @@ function loadMarkers(j) {
       if (mouseMoved) return;
       let o = e.target.properties;
       let id = o.area + ':' + o.name;
-      settings.markedItems[id] = !settings.markedItems[id];
-      markItems();
+      toggleMarked(id);
     })
 
     lookup[o.area + ':' + o.name] = marker; // lookup for lines
