@@ -406,7 +406,7 @@ function loadMarkers(j) {
 
     let title = '<b>' + humanReadable(o.type) + '</b>';
     if (o.spawns || o.coins) {
-      title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + ' coins');
+      title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + (o.coins<2 ? ' coin' : ' coins'));
     }
 
     let text = document.createElement('div');
@@ -505,7 +505,7 @@ function loadMarkers(j) {
 
     let title = humanReadable(o.type);
     if (o.spawns || o.coins) {
-      title +=  ' (' + (o.spawns ? humanReadable(o.spawns) : o.coins + ' coins') + ')';
+      title +=  ' (' + (o.spawns ? humanReadable(o.spawns) : o.coins + (o.coins<2 ? ' coin' : ' coins')) + ')';
     }
 
     new maptalks.ui.ToolTip(title,{}).addTo(marker);
