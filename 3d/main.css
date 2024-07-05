@@ -422,7 +422,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   text-align: right;
   padding-top: 2px;
-  padding-bottom: 2px;
+  margin-bottom: 12px;
   opacity: 85%;
 }
 
