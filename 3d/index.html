@@ -544,7 +544,7 @@ function loadMarkers(j) {
 
     lookup[o.area + ':' + o.name] = marker; // lookup for lines
 
-    let group = types[type].group || 'misc';
+    let group = (types[type] && types[type].group) || 'misc';
 
     if (group!='chests') {
       counters[group] = counters[group] || {};

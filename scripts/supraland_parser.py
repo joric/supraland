@@ -66,7 +66,7 @@ marker_types = {
   'GoldNugget_C', 'Jumppillow_C', 'MoonTake_C', 'Plumbus_C','Stone_C', 'ValveCarriable_C',
   'ValveSlot_C', 'Valve_C','MatchBox_C','Shell_C','BarrelClosed_Blueprint_C','MetalBall_C',
   'Supraball_C','Key_C','KeyLock_C','KeycardColor_C','PipeCap_C','Sponge_C','Juicer_C','Seed_C',
-  'Anvil_C','Map_C',
+  'Anvil_C','Map_C','NomNomFlies_C','CarrotPhysical_C','RingColorer_C','RespawnActor_C',
   # slc
   'Scrap_C','TalkingSpeaker_C','Sponge_Large_C',
   # siu
@@ -208,6 +208,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             optKey(data[-1], 'spawns', p.get('Spawnthing',{}).get('ObjectName'))
             optKey(data[-1], 'other_pipe', pipes.get(':'.join((area,o['Name']))))
             optKey(data[-1], 'custom_color', optColor(p.get('CustomColor')))
+            optKey(data[-1], 'spawns', p.get('Class',{}).get('ObjectName'))
 
             actors = []
             def get_actors(o,level=0):

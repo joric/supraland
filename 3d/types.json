@@ -228,5 +228,13 @@
   "TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume"},
   "BP_TriggerVolume_C": {"icon": "trigger_volume", "group": "misc", "fa": "cube", "bg": "black", "name": "Trigger Volume BP"},
   "Lighttrigger_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger"},
-  "Lighttrigger2_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger 2"}
+  "Lighttrigger2_C": {"icon": "trigger_light", "group": "misc", "fa": "lightbulb", "bg": "grey", "name": "Lighttrigger 2"},
+  "NomNomFlies_C": {"icon": "nomnomflies", "group": "items", "fa": "bug", "bg": "orchid", "name" : "Nom Nom Flies" },
+  "CarrotPhysical_C": {"icon": "carrot", "group": "items", "fa": "carrot", "bg": "orange", "name" : "Carrot" },
+  "RingColorer_C": {"icon": "colorer", "group": "misc", "fa": "paintbrush", "bg": "grey", "name" : "Ring Colorer" },
+  "RespawnActor_C": {"icon": "question", "group": "misc", "fa": "circle-question", "bg": "grey", "name" : "Respawn Actor" },
+  "CarryStones_Heavy_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "grey", "name": "Stone"},
+  "BP_CarryBox_C": {"icon": "box", "group": "items", "fa": "box", "bg": "grey", "name": "Carry Box"},
+  "FlowerDLC2_C": {"icon": "flower", "group": "items", "fa": "spa", "bg": "forestgreen", "name": "Flower DLC2"},
+  "GoldNugget_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "goldenrod", "name": "Gold Nugget"}
 }
