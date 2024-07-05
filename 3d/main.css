@@ -434,4 +434,15 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
 }
 
+.controls .icon {
+  float: right;
+  width: 24px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.controls .disabled {
+  opacity: 30%;
+  cursor: default;
+}
 

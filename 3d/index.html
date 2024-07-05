@@ -132,6 +132,7 @@ let types = {};
 let playerMarker = null;
 let playerStart = [0,0,0];
 let mapParam = {};
+let urls = {};
 
 let maps = {
   // data taken from the MapWorld* nodes
@@ -360,6 +361,18 @@ function loadMap(id) {
     mapParam = {};
   }
 
+  fetch('data/ytdata.'+mapId+'.json')
+  .then(r => r.json())
+  .then(j => {
+    urls = {};
+    for (o of j) {
+      urls[o.area + ':' + o.name] = 'https://youtu.be/'+o.yt_video+'?t='+o.yt_start;
+    }
+  })
+  .catch(e=>{
+    console.log(e);
+  });
+
   fetch('data/markers.'+mapId+'.json')
   .then(r => r.json())
   .then(j => {
@@ -428,11 +441,16 @@ function loadMarkers(j) {
 
     let markerId = o.area + ':' + o.name;
     let found = settings.markedItems[markerId]==true
-    let value = found ? 'checked' : '';
-    let disabled = player ? 'disabled' : '';
+    let value = found ? ' checked' : '';
+    let disabled = player ? ' disabled' : '';
+
+    let checkbox = '<input class="form-control '+disabled+'" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control'+disabled+'" for="'+markerId+'">Found</label>';
+
+    let url = urls[o.area + ':' + o.name];
+    let youtube = (url ? '<a href="'+url+'" target=_blank title="'+url+'">' : '')+'<i class="icon fa-brands fa-youtube '+(url ? '':'disabled')+'"></i>'+(url ? '</a>':'');
 
     let controls = document.createElement('div');
-    controls.innerHTML = '<input class="form-control" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control" for="'+markerId+'">Found</label>';
+    controls.innerHTML = '<div class="controls">' + checkbox + youtube + '</div>';
 
     content.appendChild(text);
     content.appendChild(data);
