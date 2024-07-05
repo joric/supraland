@@ -424,7 +424,7 @@ function loadMarkers(j) {
     let expander = document.createElement('div');
     expander.className = 'expander';
     expander.innerHTML = '<hr/>';
-    expander.onclick = ()=>{  settings.debugMode = !toggleClass(data,'collapsed');  }
+    expander.onclick = ()=>{  settings.debugMode = !toggleClass(data,'collapsed');  saveSettings(); }
 
     let markerId = o.area + ':' + o.name;
     let found = settings.markedItems[markerId]==true
