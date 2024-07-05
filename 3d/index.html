@@ -419,7 +419,7 @@ function loadMarkers(j) {
       o._coordinates = e.target.getCoordinates();
     }
 
-    data.innerHTML = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;') + '<hr/>';
+    data.innerHTML = '<hr/>'+JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
 
     let expander = document.createElement('div');
     expander.className = 'expander';
@@ -435,8 +435,8 @@ function loadMarkers(j) {
     controls.innerHTML = '<input class="form-control" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control" for="'+markerId+'">Found</label>';
 
     content.appendChild(text);
-    content.appendChild(expander);
     content.appendChild(data);
+    content.appendChild(expander);
     content.appendChild(controls);
 
     popup.appendChild(wrapper);
