@@ -416,6 +416,12 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
   font-size: 15px;
   text-align: right;
-  float: top;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  opacity: 85%;
+}
+
+.expander:hover {
+  opacity: 100%;
 }
 

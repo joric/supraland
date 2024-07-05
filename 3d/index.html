@@ -418,7 +418,7 @@ function loadMarkers(j) {
 
     let expander = document.createElement('div');
     expander.className = 'expander';
-    expander.innerHTML = '...';
+    expander.innerHTML = '<hr/>';
     expander.onclick = ()=>{  toggleClass(data,'collapsed');  }
 
     let markerId = o.area + ':' + o.name;
