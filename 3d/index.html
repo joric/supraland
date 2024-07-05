@@ -519,8 +519,10 @@ function loadMarkers(j) {
 
     let group = types[type].group || 'misc';
 
-    counters[group] = counters[group] || {};
-    counters[group][type] = (counters[group][type] || 0) + 1;
+    if (group!='chests') {
+      counters[group] = counters[group] || {};
+      counters[group][type] = (counters[group][type] || 0) + 1;
+    }
   }
 
   if (settings.playerPosition && !playerMarker) {
