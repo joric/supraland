@@ -419,7 +419,7 @@ function loadMarkers(j) {
       o._coordinates = e.target.getCoordinates();
     }
 
-    data.innerHTML = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+    data.innerHTML = JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;') + '<hr/>';
 
     let expander = document.createElement('div');
     expander.className = 'expander';
