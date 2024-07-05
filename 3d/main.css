@@ -394,7 +394,7 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 }
 
-.popup-close-button, .popup-close-button:hover {
+.popup-close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -410,6 +410,11 @@ a:hover { text-decoration: underline; }
   background: 0 0;
   cursor: pointer;
   opacity: 75%;
+}
+
+.popup-close-button:hover {
+  text-decoration: none;
+  opacity: 100%;
 }
 
 .expander {
