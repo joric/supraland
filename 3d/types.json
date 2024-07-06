@@ -208,7 +208,7 @@
   "Sponge_C": {"icon": "sponge", "group": "items", "fa": "disease", "bg": "goldenrod", "name": "Sponge"},
   "SpongeBig_C": {"icon": "sponge", "group": "items", "fa": "disease", "bg": "goldenrod"},
   "Sponge_Large_C": {"icon": "sponge", "group": "items", "fa": "disease", "bg": "goldenrod", "name": "Sponge"},
-  "Supraball_C": {"icon": "supraball", "group": "misc", "fa": "baseball", "bg": "goldenrod", "name": "Supraball"},
+  "Supraball_C": {"icon": "supraball", "group": "items", "fa": "baseball", "bg": "goldenrod", "name": "Supraball"},
   "Seed_C": {"icon": "seed", "group": "items", "fa": "seedling", "bg": "forestgreen", "name": "Seed"},
   "RingColorerFlower_C": {"icon": "flower", "group": "misc", "fa": "spa", "bg": "forestgreen", "name": "Flower"},
   "Trash_C": {"icon": "trash", "group": "items", "fa": "sack-xmark", "bg": "darkslategrey", "name": "Trash"},
