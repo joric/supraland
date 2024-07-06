@@ -237,5 +237,6 @@
   "BP_CarryBox_C": {"icon": "box", "group": "items", "fa": "box", "bg": "grey", "name": "Carry Box"},
   "FlowerDLC2_C": {"icon": "flower", "group": "misc", "fa": "spa", "bg": "forestgreen", "name": "Flower DLC2"},
   "GoldNugget_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "goldenrod", "name": "Gold Nugget"},
-  "Crystal_C": {"group": "misc", "icon": "stone", "fa": "gem", "bg": "crimson", "name": "Crystal"}
+  "Crystal_C": {"group": "misc", "icon": "stone", "fa": "gem", "bg": "crimson", "name": "Crystal"},
+  "RingRusty_C": {"group": "items", "icon": "ring", "fa": "ring", "bg": "goldenrod", "name": "Rusty Ring"}
 }
