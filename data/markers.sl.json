@@ -16810,8 +16810,8 @@
     "lng": -47552.078125,
     "alt": 724.4636840820312,
     "actors": [
-      "Door76",
-      "Red_brick_2781"
+      "Red_brick_2781",
+      "Door76"
     ]
   },
   {
@@ -16955,8 +16955,8 @@
     "lng": 7112.92529296875,
     "alt": 969.1436157226562,
     "actors": [
-      "RedGuyEvent2_569",
-      "LegoDoor"
+      "LegoDoor",
+      "RedGuyEvent2_569"
     ]
   },
   {
@@ -22782,7 +22782,7 @@
   },
   {
     "name": "RingRusty10",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 55256.48046875,
     "lng": -67850.28125,
@@ -22790,7 +22790,7 @@
   },
   {
     "name": "RingRusty11",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 41786.57421875,
     "lng": -54039.90234375,
@@ -22798,7 +22798,7 @@
   },
   {
     "name": "RingRusty12",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 52686.7734375,
     "lng": -68606.8046875,
@@ -22806,7 +22806,7 @@
   },
   {
     "name": "RingRusty13",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 56269.8046875,
     "lng": -43832.2890625,
@@ -22814,7 +22814,7 @@
   },
   {
     "name": "RingRusty14",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 43805.984375,
     "lng": -64183.47265625,
@@ -22822,7 +22822,7 @@
   },
   {
     "name": "RingRusty15",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": -34506.45703125,
     "lng": -3472.741455078125,
@@ -22830,7 +22830,7 @@
   },
   {
     "name": "RingRusty16",
-    "type": "Purchase_StonePickaxe_C",
+    "type": "_Pickaxe_C",
     "area": "Map",
     "lat": 54870.359375,
     "lng": -68521.4609375,

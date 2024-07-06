@@ -204,7 +204,7 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             if game=='sl' and o['Name'].startswith('RingRusty'):
                 for i in range(10,16+1):
                     if o['Name']=='RingRusty'+str(i):
-                        o['Type'] = 'Purchase_StonePickaxe_C';
+                        o['Type'] = '_Pickaxe_C'; # special type, an item
 
             data.append({'name':o['Name'], 'type':o['Type'], 'area':area })
 
