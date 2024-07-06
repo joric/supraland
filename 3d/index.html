@@ -771,7 +771,7 @@ function loadMarkers(j) {
     if (marker = lookup[mapParam.markerId]) {
       let o = marker.properties;
       marker.show();
-      map.animateTo({center: marker.getCoordinates()});
+      map.animateTo({center: marker.getCoordinates(), zoom: 5});
       popupOnClick({target: marker});
       marker.openInfoWindow();
     }
