@@ -120,7 +120,7 @@
   "BuyUpgradeGraveNum_C": {"group": "stats", "fa": "square-poll-horizontal", "bg": "red", "name": "See Grave Count"},
   "BuyWalletx15_C": {"group": "upgrades", "fa": "wallet", "bg": "sienna", "name": "Max Coins x1.5"},
   "BuyWalletx2_C": {"group": "upgrades", "fa": "wallet", "bg": "sienna", "name": "Max Coins x2"},
-  "Chest_C": {"group": "chests", "icon": "chest", "fa": "toolbox", "bg": "dimgrey", "name": "Chest"},
+  "Chest_C": {"group": "collectable", "icon": "chest", "fa": "toolbox", "bg": "dimgrey", "name": "Chest"},
   "CoinBig_C": {"group": "coins", "icon": "coin", "fa": "certificate", "bg": "orange", "name": "Big Coin"},
   "CoinRed_C": {"group": "coins", "icon": "coinRed", "fa": "sun", "bg": "red", "name": "Red Coin"},
   "Coin_C": {"group": "coins", "icon": "coin", "fa": "sun", "bg": "orange", "name": "Coin"},
