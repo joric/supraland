@@ -231,7 +231,7 @@
   "NomNomFlies_C": {"icon": "nomnomflies", "group": "misc", "fa": "bug", "bg": "orchid", "name" : "Nom Nom Flies" },
   "CarrotPhysical_C": {"icon": "carrot", "group": "misc", "fa": "carrot", "bg": "darkorange", "name" : "Carrot" },
   "RingColorer_C": {"icon": "colorer", "group": "actors", "fa": "paintbrush", "bg": "grey", "name" : "Ring Colorer" },
-  "RespawnActor_C": {"icon": "question", "group": "misc", "fa": "circle-question", "bg": "grey", "name" : "Respawn Actor" },
+  "RespawnActor_C": {"icon": "question", "group": "actors", "fa": "circle-question", "bg": "grey", "name" : "Respawn Actor" },
   "CarryStones_C": {"icon": "stone", "group": "misc", "fa": "gem", "bg": "grey", "name": "Carry Stones"},
   "CarryStones_Heavy_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "grey", "name": "Heavy Stones"},
   "BP_CarryBox_C": {"icon": "box", "group": "items", "fa": "box", "bg": "grey", "name": "Carry Box"},
