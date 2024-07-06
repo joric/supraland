@@ -769,11 +769,8 @@ function loadMarkers(j) {
 
   markItems();
 
-  console.log(mapParam.markerId);
-
   if (mapParam.markerId) {
     if (marker = lookup[mapParam.markerId]) {
-      console.log('marker found', marker);
       let o = marker.properties;
       marker.show();
       map.animateTo({center: marker.getCoordinates(), zoom: 5});
