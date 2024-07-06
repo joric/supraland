@@ -160,7 +160,7 @@ function loadMap() {
       maxNativeZoom: 4,
       nativeZooms: [0, 1, 2, 3, 4],
       bounds: mapBounds,
-      attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a>',
+      attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Supraland</a> | <a href="https://joric.github.io/supraland/3d/" target="_blank">3D Map</a>',
   };
 
   let layerControl = L.control.layers({}, {}, {
