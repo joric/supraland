@@ -1115,7 +1115,6 @@ function loadSaveFile(e) {
 window.onload = function(event) {
   if (location.hash.length>1) {
     for (const s of location.hash.slice(1).split(/&amp;|&/)) {
-      console.log(s);
       let [k,v] = s.split('=');
       mapParam[k] = decodeURIComponent(v);
     }
