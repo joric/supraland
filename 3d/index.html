@@ -769,14 +769,12 @@ function loadMarkers(j) {
   markItems();
 
   // marker link
-  if (mapParam.markerId) {
-    if (marker = lookup[mapParam.markerId]) {
-      let o = marker.properties;
-      marker.show();
-      map.animateTo({center: marker.getCoordinates(), zoom:(mapParam.zoom||5), pitch:(mapParam.pitch||0), bearing:(mapParam.bearing||0)});
-      popupOnClick({target: marker});
-      marker.openInfoWindow();
-    }
+  if (marker = lookup[mapParam.markerId]) {
+    let o = marker.properties;
+    marker.show();
+    map.animateTo({center: marker.getCoordinates(), zoom:(mapParam.zoom||5), pitch:(mapParam.pitch||0), bearing:(mapParam.bearing||0)});
+    popupOnClick({target: marker});
+    marker.openInfoWindow();
   }
 
   mapParam = {}; // critical to reload map properly
