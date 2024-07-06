@@ -254,8 +254,6 @@ function getMarkerURL(markerId) {
 function copyMarkerURL(markerId) {
   let url = getMarkerURL(markerId);
   copyToClipboard(url);
-  document.getElementById('alert').classList.remove('closed');
-  setTimeout(function(e){ document.getElementById('alert').classList.add('closed') },1500);
 }
 
 function saveSettings() {
@@ -995,7 +993,8 @@ function copyToClipboard(text) {
   input.select();
   document.execCommand('copy');
   input.parentNode.removeChild(input);
-  console.log(text + ' copied to clipboard');
+  document.getElementById('alert').classList.remove('closed');
+  setTimeout(function(e){ document.getElementById('alert').classList.add('closed') },1500);
 }
 
 function openLoadFileDialog() {
