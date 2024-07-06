@@ -20206,6 +20206,542 @@
     "alt": 3271.39208984375
   },
   {
+    "name": "SecretFound10",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -46085.26171875,
+    "lng": 47644.171875,
+    "alt": 1256.3743896484375
+  },
+  {
+    "name": "SecretFound11",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -60195.5703125,
+    "lng": 42206.6640625,
+    "alt": 3296.29345703125
+  },
+  {
+    "name": "SecretFound12_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -29341.27734375,
+    "lng": -49201.09375,
+    "alt": 17809.201171875
+  },
+  {
+    "name": "SecretFound13_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36549.68359375,
+    "lng": -467.2493896484375,
+    "alt": 1807.4281005859375
+  },
+  {
+    "name": "SecretFound14_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 6654.39501953125,
+    "lng": 25836.103515625,
+    "alt": 3119.48583984375
+  },
+  {
+    "name": "SecretFound15_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36362.0,
+    "lng": -1037.0,
+    "alt": 3423.0
+  },
+  {
+    "name": "SecretFound16",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 7895.9521484375,
+    "lng": 29596.673828125,
+    "alt": 3657.2421875
+  },
+  {
+    "name": "SecretFound17_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -51677.4609375,
+    "lng": -1170.9578857421875,
+    "alt": 2803.417236328125
+  },
+  {
+    "name": "SecretFound18_12",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -9947.0966796875,
+    "lng": 56161.83984375,
+    "alt": 2167.204833984375
+  },
+  {
+    "name": "SecretFound19",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 6063.5029296875,
+    "lng": 29439.740234375,
+    "alt": 3657.2421875
+  },
+  {
+    "name": "SecretFound20",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -46752.9921875,
+    "lng": 3477.7109375,
+    "alt": 2963.47021484375
+  },
+  {
+    "name": "SecretFound21_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 8282.7177734375,
+    "lng": 26911.12109375,
+    "alt": 5626.0
+  },
+  {
+    "name": "SecretFound23_8",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -35751.0,
+    "lng": 1367.0,
+    "alt": 1976.0
+  },
+  {
+    "name": "SecretFound24",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -42616.16796875,
+    "lng": 52410.84375,
+    "alt": 2235.12890625
+  },
+  {
+    "name": "SecretFound25_14",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36335.0,
+    "lng": -1784.0,
+    "alt": 5151.0
+  },
+  {
+    "name": "SecretFound26_17",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36582.0,
+    "lng": -989.0,
+    "alt": 4731.0
+  },
+  {
+    "name": "SecretFound27_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 2186.806884765625,
+    "lng": 36150.265625,
+    "alt": 2652.957763671875
+  },
+  {
+    "name": "SecretFound28_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -42637.17578125,
+    "lng": 3423.029052734375,
+    "alt": 2592.612060546875
+  },
+  {
+    "name": "SecretFound29_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -35655.76953125,
+    "lng": 8568.908203125,
+    "alt": 2000.409423828125
+  },
+  {
+    "name": "SecretFound2_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 11488.22265625,
+    "lng": 10692.06640625,
+    "alt": 3302.83447265625
+  },
+  {
+    "name": "SecretFound30_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 9809.162109375,
+    "lng": 35272.71875,
+    "alt": 6602.24658203125
+  },
+  {
+    "name": "SecretFound31_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -46516.46484375,
+    "lng": 44897.375,
+    "alt": 2183.47119140625
+  },
+  {
+    "name": "SecretFound32_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -44921.203125,
+    "lng": 2869.344482421875,
+    "alt": 4415.02978515625
+  },
+  {
+    "name": "SecretFound33_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -30370.72265625,
+    "lng": 23716.154296875,
+    "alt": -222.46519470214844
+  },
+  {
+    "name": "SecretFound34",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -61889.9765625,
+    "lng": 49836.796875,
+    "alt": 3409.64013671875
+  },
+  {
+    "name": "SecretFound35_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -47984.125,
+    "lng": 34324.66796875,
+    "alt": -456.757080078125
+  },
+  {
+    "name": "SecretFound37_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -39580.0,
+    "lng": 2509.0,
+    "alt": 2019.0
+  },
+  {
+    "name": "SecretFound38_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -60875.0,
+    "lng": 50216.0,
+    "alt": 2802.71826171875
+  },
+  {
+    "name": "SecretFound39",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -47119.09375,
+    "lng": 42713.0625,
+    "alt": -503.7373046875
+  },
+  {
+    "name": "SecretFound3_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -10490.5009765625,
+    "lng": 70784.34375,
+    "alt": 4267.4814453125
+  },
+  {
+    "name": "SecretFound40",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -63653.2734375,
+    "lng": 55413.4140625,
+    "alt": 1670.4171142578125
+  },
+  {
+    "name": "SecretFound41",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -51067.6484375,
+    "lng": 39930.02734375,
+    "alt": -346.374267578125
+  },
+  {
+    "name": "SecretFound42",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -49928.046875,
+    "lng": 35020.75,
+    "alt": 1772.2828369140625
+  },
+  {
+    "name": "SecretFound43_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -56268.7890625,
+    "lng": 58689.359375,
+    "alt": 3141.862060546875
+  },
+  {
+    "name": "SecretFound44_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -24537.0,
+    "lng": 27374.0,
+    "alt": 1584.0
+  },
+  {
+    "name": "SecretFound45",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -4486.2216796875,
+    "lng": -47104.2578125,
+    "alt": 7620.7265625
+  },
+  {
+    "name": "SecretFound46_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36833.21484375,
+    "lng": -35405.0859375,
+    "alt": 24065.287109375
+  },
+  {
+    "name": "SecretFound47",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -6930.03564453125,
+    "lng": -42176.4296875,
+    "alt": 7306.1982421875
+  },
+  {
+    "name": "SecretFound48",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -5189.576171875,
+    "lng": -48132.9453125,
+    "alt": 10362.7080078125
+  },
+  {
+    "name": "SecretFound49_3",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -11158.7275390625,
+    "lng": -59885.8046875,
+    "alt": 7932.6240234375
+  },
+  {
+    "name": "SecretFound4_3",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -5012.9462890625,
+    "lng": 63914.0546875,
+    "alt": 8558.2890625
+  },
+  {
+    "name": "SecretFound5",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -12972.45703125,
+    "lng": 56790.7265625,
+    "alt": 1590.0
+  },
+  {
+    "name": "SecretFound50_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -20622.693359375,
+    "lng": 25223.6015625,
+    "alt": 2795.16455078125
+  },
+  {
+    "name": "SecretFound51_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 11262.3193359375,
+    "lng": 27609.666015625,
+    "alt": 3940.227294921875
+  },
+  {
+    "name": "SecretFound52_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -9497.05078125,
+    "lng": 64431.18359375,
+    "alt": 668.0
+  },
+  {
+    "name": "SecretFound53_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -19111.513671875,
+    "lng": 58235.23828125,
+    "alt": 483.0353088378906
+  },
+  {
+    "name": "SecretFound54_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -6316.68994140625,
+    "lng": 59086.65234375,
+    "alt": 3204.27685546875
+  },
+  {
+    "name": "SecretFound55_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -11412.4619140625,
+    "lng": 18720.490234375,
+    "alt": 7230.88720703125
+  },
+  {
+    "name": "SecretFound56",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -36281.09765625,
+    "lng": 404.02459716796875,
+    "alt": 4412.0
+  },
+  {
+    "name": "SecretFound57_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -6941.00048828125,
+    "lng": 17401.6953125,
+    "alt": 6090.951171875
+  },
+  {
+    "name": "SecretFound58_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -26439.046875,
+    "lng": 17936.3671875,
+    "alt": -2254.8017578125
+  },
+  {
+    "name": "SecretFound59_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -13041.015625,
+    "lng": 64404.74609375,
+    "alt": 433.9417419433594
+  },
+  {
+    "name": "SecretFound6",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -4419.28857421875,
+    "lng": 66294.8359375,
+    "alt": 8558.2890625
+  },
+  {
+    "name": "SecretFound60_15",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -47759.0,
+    "lng": 46141.0,
+    "alt": 2251.0
+  },
+  {
+    "name": "SecretFound61_18",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -48076.0,
+    "lng": 43775.0,
+    "alt": 497.0
+  },
+  {
+    "name": "SecretFound62_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -24492.75,
+    "lng": 18381.3984375,
+    "alt": -2709.133544921875
+  },
+  {
+    "name": "SecretFound65",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -33226.77734375,
+    "lng": -44364.140625,
+    "alt": 9995.3681640625
+  },
+  {
+    "name": "SecretFound67",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -15306.005859375,
+    "lng": -31451.986328125,
+    "alt": 22546.384765625
+  },
+  {
+    "name": "SecretFound68",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -19466.82421875,
+    "lng": -40725.05859375,
+    "alt": 10511.0380859375
+  },
+  {
+    "name": "SecretFound69_3",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -13140.7080078125,
+    "lng": -60388.25,
+    "alt": 10861.7177734375
+  },
+  {
+    "name": "SecretFound7",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -46964.0,
+    "lng": -4480.4091796875,
+    "alt": 1773.0
+  },
+  {
+    "name": "SecretFound70_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -33273.21875,
+    "lng": -58103.96875,
+    "alt": 11928.2890625
+  },
+  {
+    "name": "SecretFound71_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -26877.310546875,
+    "lng": -56485.0,
+    "alt": 15136.4306640625
+  },
+  {
+    "name": "SecretFound72_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -8545.8193359375,
+    "lng": -38100.01171875,
+    "alt": 16128.892578125
+  },
+  {
+    "name": "SecretFound8",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -37685.96875,
+    "lng": -2524.361328125,
+    "alt": 1755.0
+  },
+  {
+    "name": "SecretFound9_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": -32480.912109375,
+    "lng": 31404.07421875,
+    "alt": 3882.29931640625
+  },
+  {
+    "name": "SecretFound_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Complete",
+    "lat": 16675.119140625,
+    "lng": 24574.0390625,
+    "alt": 5646.2880859375
+  },
+  {
     "name": "SlumBurningQuest_3",
     "type": "SlumBurningQuest_C",
     "area": "DLC2_Complete",
@@ -22192,6 +22728,54 @@
     "lng": -22845.5078125,
     "alt": 6086.6845703125,
     "color": 0
+  },
+  {
+    "name": "SecretFound22_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18574.16015625,
+    "lng": -26325.4765625,
+    "alt": 8650.6455078125
+  },
+  {
+    "name": "SecretFound36_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -18557.548828125,
+    "lng": -27821.361328125,
+    "alt": 6215.5859375
+  },
+  {
+    "name": "SecretFound63",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -23442.13671875,
+    "lng": -23257.65625,
+    "alt": 8672.91015625
+  },
+  {
+    "name": "SecretFound64",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -14639.79296875,
+    "lng": -27817.875,
+    "alt": 6551.05908203125
+  },
+  {
+    "name": "SecretFound66",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -25097.32421875,
+    "lng": -24588.634765625,
+    "alt": 8249.4443359375
+  },
+  {
+    "name": "SecretFound_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_FinalBoss",
+    "lat": -24775.64453125,
+    "lng": -21660.93359375,
+    "alt": 5933.626953125
   },
   {
     "name": "BossArea_InEncounter_Volume1_5",
@@ -26322,6 +26906,94 @@
     "original_color": 2
   },
   {
+    "name": "SecretFound2",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 15456.525390625,
+    "lng": -440.26641845703125,
+    "alt": 2103.5546875
+  },
+  {
+    "name": "SecretFound23_1",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2446.77880859375,
+    "lng": -692.9080810546875,
+    "alt": 3972.80712890625
+  },
+  {
+    "name": "SecretFound24",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 581.0523071289062,
+    "lng": -4473.6142578125,
+    "alt": 2739.0
+  },
+  {
+    "name": "SecretFound25",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2742.431396484375,
+    "lng": 345.32086181640625,
+    "alt": 3798.8291015625
+  },
+  {
+    "name": "SecretFound3_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -2906.50390625,
+    "lng": -11382.6591796875,
+    "alt": 1638.4755859375
+  },
+  {
+    "name": "SecretFound4",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 15325.0166015625,
+    "lng": 374.7338562011719,
+    "alt": 1352.09619140625
+  },
+  {
+    "name": "SecretFound5_8",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 2742.189453125,
+    "lng": -14656.146484375,
+    "alt": 839.271484375
+  },
+  {
+    "name": "SecretFound6_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 11353.66015625,
+    "lng": -942.5520629882812,
+    "alt": 2690.32421875
+  },
+  {
+    "name": "SecretFound7_4",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -3633.646728515625,
+    "lng": 3975.51513671875,
+    "alt": 958.124267578125
+  },
+  {
+    "name": "SecretFound8_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": 5114.22265625,
+    "lng": 8350.5771484375,
+    "alt": -7453.29638671875
+  },
+  {
+    "name": "SecretFound_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_SecretLavaArea",
+    "lat": -6221.77294921875,
+    "lng": -1381.02294921875,
+    "alt": 2478.5673828125
+  },
+  {
     "name": "ValveCarriable_2",
     "type": "ValveCarriable_C",
     "area": "DLC2_SecretLavaArea",
@@ -27630,9 +28302,9 @@
       "z": 0.6344125866889954
     },
     "target": {
-      "x": -50652.92430948082,
-      "y": -41227.976288819686,
-      "z": 6104.401647691464
+      "x": -51490.62267237177,
+      "y": -40573.52105388278,
+      "z": 5108.342033183615
     }
   },
   {
@@ -28145,6 +28817,62 @@
     "lng": -56385.61328125,
     "alt": 9849.212890625,
     "color": 1
+  },
+  {
+    "name": "SecretFound2_4",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42251.859375,
+    "lng": -52619.12109375,
+    "alt": 7152.2880859375
+  },
+  {
+    "name": "SecretFound3_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -44498.9765625,
+    "lng": -53126.4609375,
+    "alt": 5617.2197265625
+  },
+  {
+    "name": "SecretFound4_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -48101.6875,
+    "lng": -49133.99609375,
+    "alt": 16368.634765625
+  },
+  {
+    "name": "SecretFound5_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -43427.46484375,
+    "lng": -68790.0234375,
+    "alt": 11270.935546875
+  },
+  {
+    "name": "SecretFound6_8",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -45040.23046875,
+    "lng": -73202.859375,
+    "alt": 9450.365234375
+  },
+  {
+    "name": "SecretFound7_11",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -42785.4609375,
+    "lng": -54801.86328125,
+    "alt": 10495.8076171875
+  },
+  {
+    "name": "SecretFound_5",
+    "type": "SecretFound_C",
+    "area": "DLC2_PostRainbow",
+    "lat": -47900.953125,
+    "lng": -48356.9140625,
+    "alt": 6085.283203125
   },
   {
     "name": "TalkingSpeaker_2",
@@ -29139,6 +29867,22 @@
     "lat": 2373.376953125,
     "lng": 3473.5615234375,
     "alt": 1345.9921875
+  },
+  {
+    "name": "SecretFound_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Menu_Splash",
+    "lat": -2673.81640625,
+    "lng": 4768.447265625,
+    "alt": 1513.098876953125
+  },
+  {
+    "name": "SecretFound_2",
+    "type": "SecretFound_C",
+    "area": "DLC2_Splash",
+    "lat": -2944.92431640625,
+    "lng": 7599.91357421875,
+    "alt": 1019.12353515625
   },
   {
     "name": "MatchBox_2",

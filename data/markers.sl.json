@@ -15057,9 +15057,9 @@
       "z": 0.4761623740196228
     },
     "target": {
-      "x": -277.9755394458771,
-      "y": -13161.29245853424,
-      "z": 536.0853730068469
+      "x": -3669.1475138664246,
+      "y": -16823.58035850525,
+      "z": 1328.2686380714547
     }
   },
   {
@@ -16232,9 +16232,9 @@
       "z": 0.41249987483024597
     },
     "target": {
-      "x": 4175.556640625,
-      "y": -27003.44287109375,
-      "z": 705.4548506836243
+      "x": 4223.556640625,
+      "y": -26899.44287109375,
+      "z": 735.234950683624
     }
   },
   {
@@ -22907,6 +22907,864 @@
     "lat": -9825.3896484375,
     "lng": -15712.447265625,
     "alt": -1443.1859130859375
+  },
+  {
+    "name": "SecretFound100",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -24688.833984375,
+    "lng": -2044.82373046875,
+    "alt": -1708.4539794921875
+  },
+  {
+    "name": "SecretFound101",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -26997.15234375,
+    "lng": 3099.687255859375,
+    "alt": -92.87954711914062
+  },
+  {
+    "name": "SecretFound102",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 27386.40234375,
+    "lng": 42892.5703125,
+    "alt": 1870.5870361328125
+  },
+  {
+    "name": "SecretFound103",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 35235.86328125,
+    "lng": 27701.060546875,
+    "alt": 2009.292236328125
+  },
+  {
+    "name": "SecretFound104",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 51254.77734375,
+    "lng": -44096.19921875,
+    "alt": 2571.23193359375
+  },
+  {
+    "name": "SecretFound105_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -22393.96484375,
+    "lng": -3541.282958984375,
+    "alt": -2044.3734130859375
+  },
+  {
+    "name": "SecretFound106_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 16387.615234375,
+    "lng": 45998.12109375,
+    "alt": 3363.074951171875
+  },
+  {
+    "name": "SecretFound107",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 59454.0078125,
+    "lng": -43679.296875,
+    "alt": 800.2211303710938
+  },
+  {
+    "name": "SecretFound10_9467",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -19321.962890625,
+    "lng": 4005.152099609375,
+    "alt": 122.45761108398438
+  },
+  {
+    "name": "SecretFound11_10121",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -22997.8125,
+    "lng": 4675.4970703125,
+    "alt": -2236.773681640625
+  },
+  {
+    "name": "SecretFound12_11042",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -21560.453125,
+    "lng": 23402.5859375,
+    "alt": -378.2500915527344
+  },
+  {
+    "name": "SecretFound13_11921",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -16436.3671875,
+    "lng": 23618.16796875,
+    "alt": 661.6295776367188
+  },
+  {
+    "name": "SecretFound14_410",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -24255.408203125,
+    "lng": 16209.0439453125,
+    "alt": 1808.787109375
+  },
+  {
+    "name": "SecretFound15_1304",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -30358.88671875,
+    "lng": 17585.119140625,
+    "alt": 231.42422485351562
+  },
+  {
+    "name": "SecretFound16_2183",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -35665.359375,
+    "lng": 15646.869140625,
+    "alt": -45.8143310546875
+  },
+  {
+    "name": "SecretFound17_3677",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -36863.66796875,
+    "lng": 17486.9921875,
+    "alt": 1875.08935546875
+  },
+  {
+    "name": "SecretFound18_4742",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -34408.69921875,
+    "lng": 15822.3466796875,
+    "alt": 4113.91015625
+  },
+  {
+    "name": "SecretFound19_5165",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -27763.513671875,
+    "lng": 29493.1171875,
+    "alt": 1844.274658203125
+  },
+  {
+    "name": "SecretFound20_5318",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -25273.474609375,
+    "lng": 24197.48046875,
+    "alt": 3137.111572265625
+  },
+  {
+    "name": "SecretFound21_7268",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -24816.76171875,
+    "lng": 24420.24609375,
+    "alt": 4061.96337890625
+  },
+  {
+    "name": "SecretFound22_8531",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -21866.19921875,
+    "lng": 16587.763671875,
+    "alt": 2429.70556640625
+  },
+  {
+    "name": "SecretFound23_8969",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -42887.7109375,
+    "lng": 3458.544189453125,
+    "alt": 930.879150390625
+  },
+  {
+    "name": "SecretFound24_9506",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -17140.3125,
+    "lng": 17601.54296875,
+    "alt": 1929.6500244140625
+  },
+  {
+    "name": "SecretFound25_10475",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 8049.703125,
+    "lng": -6175.11767578125,
+    "alt": 443.7037353515625
+  },
+  {
+    "name": "SecretFound26_584",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -25018.60546875,
+    "lng": 13619.3193359375,
+    "alt": 1171.140869140625
+  },
+  {
+    "name": "SecretFound27_1328",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -41002.02734375,
+    "lng": 1618.1427001953125,
+    "alt": 441.35906982421875
+  },
+  {
+    "name": "SecretFound28_509",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -19913.158203125,
+    "lng": 9117.453125,
+    "alt": 1168.501953125
+  },
+  {
+    "name": "SecretFound29_377",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -22704.466796875,
+    "lng": -26237.8046875,
+    "alt": -382.0616455078125
+  },
+  {
+    "name": "SecretFound2_296",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -24735.8828125,
+    "lng": -1865.1944580078125,
+    "alt": -1402.9827880859375
+  },
+  {
+    "name": "SecretFound30_989",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -17964.37109375,
+    "lng": -29150.384765625,
+    "alt": 804.1380615234375
+  },
+  {
+    "name": "SecretFound31_1004",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 3142.204833984375,
+    "lng": -21889.533203125,
+    "alt": -588.5587158203125
+  },
+  {
+    "name": "SecretFound32_2603",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -22455.36328125,
+    "lng": -23362.380859375,
+    "alt": 912.7786865234375
+  },
+  {
+    "name": "SecretFound33_3005",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -13432.5625,
+    "lng": -31418.212890625,
+    "alt": -13.190887451171875
+  },
+  {
+    "name": "SecretFound34_545",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -49352.1328125,
+    "lng": -49271.41796875,
+    "alt": -1779.3829345703125
+  },
+  {
+    "name": "SecretFound35",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -33324.5859375,
+    "lng": 23001.54296875,
+    "alt": -759.3535766601562
+  },
+  {
+    "name": "SecretFound36_474",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -25995.890625,
+    "lng": 2988.401123046875,
+    "alt": 2203.7275390625
+  },
+  {
+    "name": "SecretFound37",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -28425.10546875,
+    "lng": -1011.1136474609375,
+    "alt": -655.00048828125
+  },
+  {
+    "name": "SecretFound38",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 4177.2705078125,
+    "lng": -32807.66015625,
+    "alt": 1006.68408203125
+  },
+  {
+    "name": "SecretFound39",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -40298.2109375,
+    "lng": -57802.62109375,
+    "alt": -2244.983154296875
+  },
+  {
+    "name": "SecretFound3_990",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 58627.2578125,
+    "lng": -39318.99609375,
+    "alt": 3511.942626953125
+  },
+  {
+    "name": "SecretFound40",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 25654.830078125,
+    "lng": 7003.32763671875,
+    "alt": -2663.900146484375
+  },
+  {
+    "name": "SecretFound41_512",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 24044.345703125,
+    "lng": -27785.7421875,
+    "alt": 367.1033020019531
+  },
+  {
+    "name": "SecretFound42_368",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 44804.80078125,
+    "lng": -9467.19140625,
+    "alt": 581.1010131835938,
+    "achievement_name": "Momentum"
+  },
+  {
+    "name": "SecretFound43_1115",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 37380.91796875,
+    "lng": -49086.00390625,
+    "alt": 1596.4791259765625
+  },
+  {
+    "name": "SecretFound44_764",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 54560.66796875,
+    "lng": -68852.65625,
+    "alt": 785.4581298828125
+  },
+  {
+    "name": "SecretFound45",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 37230.23046875,
+    "lng": -50895.64453125,
+    "alt": 2649.1103515625
+  },
+  {
+    "name": "SecretFound46_509",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -29892.375,
+    "lng": -4064.5546875,
+    "alt": 1890.183349609375
+  },
+  {
+    "name": "SecretFound47_878",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -39195.21875,
+    "lng": -24809.57421875,
+    "alt": 49.869873046875
+  },
+  {
+    "name": "SecretFound48_1568",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -43494.5625,
+    "lng": -26174.478515625,
+    "alt": -544.6670532226562
+  },
+  {
+    "name": "SecretFound49",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -48303.765625,
+    "lng": -55400.4921875,
+    "alt": -786.3048706054688
+  },
+  {
+    "name": "SecretFound4_1232",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -32408.4921875,
+    "lng": -717.7722778320312,
+    "alt": 138.98968505859375
+  },
+  {
+    "name": "SecretFound50",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -44715.2421875,
+    "lng": -47066.6171875,
+    "alt": 1290.5703125
+  },
+  {
+    "name": "SecretFound51",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -27971.76953125,
+    "lng": 1920.8607177734375,
+    "alt": 21.50615692138672
+  },
+  {
+    "name": "SecretFound52",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 39467.05859375,
+    "lng": -35112.921875,
+    "alt": -4762.52880859375
+  },
+  {
+    "name": "SecretFound53",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 39711.98828125,
+    "lng": -58892.67578125,
+    "alt": 1796.9410400390625
+  },
+  {
+    "name": "SecretFound54",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 35889.74609375,
+    "lng": -52078.109375,
+    "alt": 1648.44873046875
+  },
+  {
+    "name": "SecretFound55",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 29974.828125,
+    "lng": 20264.064453125,
+    "alt": 1948.5521240234375
+  },
+  {
+    "name": "SecretFound56",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -16153.1982421875,
+    "lng": -29529.9453125,
+    "alt": 400.24603271484375
+  },
+  {
+    "name": "SecretFound57",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -26704.140625,
+    "lng": -29234.8203125,
+    "alt": -1306.51708984375
+  },
+  {
+    "name": "SecretFound58_966",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -11444.4453125,
+    "lng": 25758.9609375,
+    "alt": 951.8512573242188
+  },
+  {
+    "name": "SecretFound59_1685",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -51204.5,
+    "lng": -48552.7734375,
+    "alt": 1243.8411865234375
+  },
+  {
+    "name": "SecretFound5_2279",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -35603.0234375,
+    "lng": -1448.5557861328125,
+    "alt": 388.05084228515625
+  },
+  {
+    "name": "SecretFound60",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 59625.57421875,
+    "lng": -54285.28515625,
+    "alt": 1075.6337890625
+  },
+  {
+    "name": "SecretFound61_1681",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -18750.697265625,
+    "lng": -4693.29345703125,
+    "alt": 431.0279541015625
+  },
+  {
+    "name": "SecretFound62_742",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 39198.16015625,
+    "lng": -17761.49609375,
+    "alt": 368.9756164550781
+  },
+  {
+    "name": "SecretFound63",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 34129.98046875,
+    "lng": -5169.89306640625,
+    "alt": 2895.01025390625
+  },
+  {
+    "name": "SecretFound64",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 37114.11328125,
+    "lng": -52247.84765625,
+    "alt": 804.7213134765625
+  },
+  {
+    "name": "SecretFound65_758",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 43039.35546875,
+    "lng": -15886.8955078125,
+    "alt": 2571.48779296875
+  },
+  {
+    "name": "SecretFound66_2053",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 62821.04296875,
+    "lng": -64277.2421875,
+    "alt": 1591.253173828125
+  },
+  {
+    "name": "SecretFound67_4032",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -5236.5966796875,
+    "lng": -13082.3212890625,
+    "alt": 1123.19775390625
+  },
+  {
+    "name": "SecretFound68_4875",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -23901.869140625,
+    "lng": -2851.68896484375,
+    "alt": 1514.0042724609375
+  },
+  {
+    "name": "SecretFound69_6082",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -17453.08984375,
+    "lng": -34633.75,
+    "alt": 1766.470947265625
+  },
+  {
+    "name": "SecretFound6_4079",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -38488.2734375,
+    "lng": -2274.276611328125,
+    "alt": 175.25735473632812
+  },
+  {
+    "name": "SecretFound70_6681",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -16580.2890625,
+    "lng": -18218.087890625,
+    "alt": 1390.383544921875
+  },
+  {
+    "name": "SecretFound71_7540",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -38316.9765625,
+    "lng": -65447.25,
+    "alt": 3755.422119140625
+  },
+  {
+    "name": "SecretFound72_8375",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -27805.177734375,
+    "lng": -2695.91162109375,
+    "alt": 7978.5087890625
+  },
+  {
+    "name": "SecretFound73_9242",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -22267.732421875,
+    "lng": 12574.8076171875,
+    "alt": 1045.8662109375
+  },
+  {
+    "name": "SecretFound74_10037",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -7013.478515625,
+    "lng": 8663.6005859375,
+    "alt": 1424.9638671875
+  },
+  {
+    "name": "SecretFound75",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 40185.0,
+    "lng": -35514.0,
+    "alt": -2832.0
+  },
+  {
+    "name": "SecretFound76_3",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 39635.0,
+    "lng": -32072.0,
+    "alt": -2347.0
+  },
+  {
+    "name": "SecretFound77",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 35653.33984375,
+    "lng": -49905.55859375,
+    "alt": 1444.513916015625
+  },
+  {
+    "name": "SecretFound78_3",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -24612.27734375,
+    "lng": -20632.052734375,
+    "alt": -1603.232666015625
+  },
+  {
+    "name": "SecretFound79_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -37834.30078125,
+    "lng": -36187.375,
+    "alt": 1006.7403564453125
+  },
+  {
+    "name": "SecretFound7_5534",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -38971.9765625,
+    "lng": 1258.16064453125,
+    "alt": 386.3358459472656
+  },
+  {
+    "name": "SecretFound80",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 19407.583984375,
+    "lng": 19999.8125,
+    "alt": 852.0789184570312
+  },
+  {
+    "name": "SecretFound81",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 10498.099609375,
+    "lng": 40170.046875,
+    "alt": 3553.11083984375
+  },
+  {
+    "name": "SecretFound82_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 16437.482421875,
+    "lng": 38476.6796875,
+    "alt": 3339.455322265625
+  },
+  {
+    "name": "SecretFound83",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 25207.33984375,
+    "lng": 23880.728515625,
+    "alt": 1387.3509521484375
+  },
+  {
+    "name": "SecretFound84",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 13341.595703125,
+    "lng": 9477.759765625,
+    "alt": 1150.729736328125
+  },
+  {
+    "name": "SecretFound85",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 9842.775390625,
+    "lng": 54392.64453125,
+    "alt": 5707.16748046875
+  },
+  {
+    "name": "SecretFound86_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 32352.62890625,
+    "lng": 66929.515625,
+    "alt": 3231.605712890625
+  },
+  {
+    "name": "SecretFound87",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -10931.3984375,
+    "lng": 12934.947265625,
+    "alt": -559.0348510742188
+  },
+  {
+    "name": "SecretFound88",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 30087.97265625,
+    "lng": 8013.18359375,
+    "alt": 4213.83349609375
+  },
+  {
+    "name": "SecretFound89",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 29966.875,
+    "lng": 8055.92626953125,
+    "alt": 7008.7099609375
+  },
+  {
+    "name": "SecretFound8_7061",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -40126.36328125,
+    "lng": -2266.45068359375,
+    "alt": 703.1229248046875
+  },
+  {
+    "name": "SecretFound90",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 35506.19140625,
+    "lng": -52123.34375,
+    "alt": 3468.073974609375
+  },
+  {
+    "name": "SecretFound91_2",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -43152.60546875,
+    "lng": -51903.1875,
+    "alt": -397.9308166503906
+  },
+  {
+    "name": "SecretFound92_5",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -34213.37890625,
+    "lng": -55330.8046875,
+    "alt": 4353.52783203125
+  },
+  {
+    "name": "SecretFound93",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -44303.08984375,
+    "lng": -43879.25,
+    "alt": -1243.529052734375
+  },
+  {
+    "name": "SecretFound94",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -40456.58203125,
+    "lng": -28293.720703125,
+    "alt": -59.69035339355469
+  },
+  {
+    "name": "SecretFound95",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 45193.015625,
+    "lng": -26005.38671875,
+    "alt": 224.10260009765625
+  },
+  {
+    "name": "SecretFound96",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 51073.15625,
+    "lng": -5491.42919921875,
+    "alt": 680.8434448242188
+  },
+  {
+    "name": "SecretFound97",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -29169.154296875,
+    "lng": 22491.71484375,
+    "alt": -693.3218994140625
+  },
+  {
+    "name": "SecretFound98",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": 1161.222900390625,
+    "lng": 9548.6708984375,
+    "alt": 818.0374145507812
+  },
+  {
+    "name": "SecretFound99",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -59421.1015625,
+    "lng": -8199.23828125,
+    "alt": 676.630615234375
+  },
+  {
+    "name": "SecretFound9_8414",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -26789.251953125,
+    "lng": -1850.48193359375,
+    "alt": 1375.6741943359375
+  },
+  {
+    "name": "SecretFound_536",
+    "type": "SecretFound_C",
+    "area": "Map",
+    "lat": -23098.736328125,
+    "lng": -3638.16455078125,
+    "alt": -2146.86474609375,
+    "achievement_name": "Firepipe"
   },
   {
     "name": "Seed10",

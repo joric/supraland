@@ -239,5 +239,6 @@
   "GoldNugget_C": {"icon": "stone", "group": "items", "fa": "gem", "bg": "goldenrod", "name": "Gold Nugget"},
   "Crystal_C": {"group": "misc", "icon": "stone", "fa": "gem", "bg": "crimson", "name": "Crystal"},
   "RingRusty_C": {"group": "items", "icon": "ring", "fa": "ring", "bg": "goldenrod", "name": "Rusty Ring"},
-  "_Pickaxe_C": {"icon": "pickaxe_stone", "group": "items", "fa": "hammer", "bg": "grey", "name": "Pickaxe"}
+  "_Pickaxe_C": {"icon": "pickaxe_stone", "group": "items", "fa": "hammer", "bg": "grey", "name": "Pickaxe"},
+  "SecretFound_C": {"icon": "secret", "group": "misc", "fa": "user-secret", "bg": "grey", "name": "Secret Found"}
 }
