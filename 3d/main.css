@@ -440,6 +440,14 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
 }
 
+.controls > *{
+  opacity: 80%;
+}
+
+.controls > *:hover {
+  opacity: 100%;
+}
+
 .controls .icon {
   float: right;
   width: 24px;
@@ -450,5 +458,12 @@ a:hover { text-decoration: underline; }
 .controls .disabled {
   opacity: 30%;
   cursor: default;
+}
+
+.chain {
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+  margin-right: 16px;
 }
 

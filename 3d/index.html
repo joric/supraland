@@ -245,6 +245,17 @@ function getViewURL() {
   return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
+function getMarkerURL(markerId) {
+  let base = window.location.href.replace(/#.*$/,'');
+  let vars = {mapId:mapId, markerId: markerId};
+  return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
+}
+
+function copyMarkerURL(markerId) {
+  let url = getMarkerURL(markerId);
+  copyToClipboard(url);
+}
+
 function saveSettings() {
   localStorage.setItem(localDataName, JSON.stringify(localData));
 }
@@ -397,6 +408,20 @@ function loadMarkers(j) {
   let popupOnClick = e=>{
     let o = e.target.properties;
 
+    if (player = o.type=='PlayerPosition') {
+      o._coordinates = e.target.getCoordinates();
+    }
+
+    let markerId = (o.area ? o.area + ':' : '') + o.name;
+    let found = settings.markedItems[markerId]==true
+    let value = found ? ' checked' : '';
+    let disabled = player ? ' disabled' : '';
+
+    let title = '<b>' + humanReadable(o.type) + '</b>';
+    if (o.spawns || o.coins) {
+      title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + (o.coins<2 ? ' coin' : ' coins'));
+    }
+
     let popup = document.createElement('div')
     popup.className = 'popup';
 
@@ -417,20 +442,11 @@ function loadMarkers(j) {
     close.innerHTML = '&times;';
     close.onclick = ()=> {  e.target._infoWindow.hide(); };
 
-    let title = '<b>' + humanReadable(o.type) + '</b>';
-    if (o.spawns || o.coins) {
-      title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + (o.coins<2 ? ' coin' : ' coins'));
-    }
-
     let text = document.createElement('div');
     text.innerHTML = title;
 
     let data = document.createElement('div');
     data.className = settings.debugMode!=true ? 'collapsed' : '';
-
-    if (player = o.type=='PlayerPosition') {
-      o._coordinates = e.target.getCoordinates();
-    }
 
     data.innerHTML = '<hr/>'+JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
 
@@ -439,18 +455,13 @@ function loadMarkers(j) {
     expander.innerHTML = '<hr/>';
     expander.onclick = ()=>{  settings.debugMode = !toggleClass(data,'collapsed');  saveSettings(); }
 
-    let markerId = o.area + ':' + o.name;
-    let found = settings.markedItems[markerId]==true
-    let value = found ? ' checked' : '';
-    let disabled = player ? ' disabled' : '';
-
     let checkbox = '<input class="form-control '+disabled+'" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control'+disabled+'" for="'+markerId+'">Found</label>';
-
     let url = urls[o.area + ':' + o.name];
     let youtube = (url ? '<a href="'+url+'" target=_blank title="'+url+'">' : '')+'<i class="icon fa-brands fa-youtube '+(url ? '':'disabled')+'"></i>'+(url ? '</a>':'');
+    let chain = '<a class="chain" title="copy marker URL to clipboard" href="javascript:copyMarkerURL(\''+markerId+'\')"><i class="fa-solid fa-link"></i></a>';
 
     let controls = document.createElement('div');
-    controls.innerHTML = '<div class="controls">' + checkbox + youtube + '</div>';
+    controls.innerHTML = '<div class="controls">' + checkbox + youtube + chain + '</div>';
 
     content.appendChild(text);
     content.appendChild(data);
@@ -553,7 +564,7 @@ function loadMarkers(j) {
   }
 
   if (settings.playerPosition && !playerMarker) {
-    let o = {'type':'PlayerPosition', 'name':'Player Position' };
+    let o = {type:'PlayerPosition', name:'Player Position' };
     playerMarker = new maptalks.Marker(settings.playerPosition, {
         properties: o,
         symbol: markerSymbol(o.type, mapId=='siu' ? 'dodgerblue' : 'red'),
@@ -755,6 +766,17 @@ function loadMarkers(j) {
   setClass(document.querySelector('#toggle-found'),settings.toggleFound,'hidden');
 
   markItems();
+
+  if (mapParam.markerId) {
+    if (marker = lookup[mapParam.markerId]) {
+      let o = marker.properties;
+      marker.show();
+      map.animateTo({center: marker.getCoordinates()});
+      popupOnClick({target: marker});
+      marker.openInfoWindow();
+    }
+    mapParam = {};
+  }
 }
 
 function markItems() {
@@ -1091,7 +1113,7 @@ window.onload = function(event) {
   if (location.hash.length>1) {
     for (const s of location.hash.slice(1).split('&')) {
       let [k,v] = s.split('=');
-      mapParam[k] = v;
+      mapParam[k] = decodeURIComponent(v);
     }
   }
 
