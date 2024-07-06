@@ -236,13 +236,16 @@ a:hover { text-decoration: underline; }
 #user-panel .progress-item-wrapper {
   display: flex;
   padding-bottom: 6px;
+  width: 100%;
 }
 
 #user-panel .progress-item {
   cursor: pointer;
-  flex: 1;
-  text-align: left;
   padding-right: 5px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 90%;
 }
 
 #user-panel .progress-item > * {
@@ -250,16 +253,19 @@ a:hover { text-decoration: underline; }
 }
 
 #user-panel .progress-item .icon {
-  display: inline-block;
-  flex: 1;
   text-align: left;
 }
 
 #user-panel .progress-item .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #user-panel .progress-item .counter {
   float: right;
+  text-align: right;
+  flex: 1;
 }
 
 #user-panel .progress-item-remove {
