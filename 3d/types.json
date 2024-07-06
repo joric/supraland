@@ -1,5 +1,5 @@
 {
-  "BP_A3_StrengthQuest_C": {"icon": "strong", "group": "misc", "fa": "dumbbell", "bg": "grey", "name": "Strong"},
+  "BP_A3_StrengthQuest_C": {"icon": "strong", "group": "misc", "fa": "dumbbell", "bg": "grey", "name": "Strength Quest"},
   "BP_BoneDetector_C": {"icon": "upgrades", "group": "stats", "fa": "magnifying-glass-plus", "bg": "red", "name": "Bone Detector"},
   "BP_BuyBeamElasticity_C": {"group": "upgrades", "fa": "bolt", "bg": "orchid", "name": "Beam elasticity"},
   "BP_BuyBoomerAxe_C": {"group": "upgrades", "fa": "hammer", "bg": "red", "name": "Throw Pickaxe"},
