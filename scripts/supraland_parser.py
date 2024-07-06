@@ -196,6 +196,16 @@ def export_markers(game, cache_dir, marker_types=marker_types, marker_names=[]):
             if area in areas:
                 matrix  = areas[area] @ matrix
 
+            # some MetalBall_C are Anvils, do the replacement
+            if o['Type']=='MetalBall_C' and o.get('Properties',{}).get('Mesh?',{}).get('ObjectName')=='Anvil':
+                o['Type'] = 'Anvil_C';
+
+            # some RingRusty_C are pickaxes, cannot be determined by meshes
+            if game=='sl' and o['Name'].startswith('RingRusty'):
+                for i in range(10,16+1):
+                    if o['Name']=='RingRusty'+str(i):
+                        o['Type'] = 'Purchase_StonePickaxe_C';
+
             data.append({'name':o['Name'], 'type':o['Type'], 'area':area })
 
             t = matrix.to_translation()
