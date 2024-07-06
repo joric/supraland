@@ -99,7 +99,7 @@
 
   </div>
 </div>
-
+<div id="alert" class="closed">Copied To Clipboard</div>
 </body>
 </html>
 <script>
@@ -254,6 +254,8 @@ function getMarkerURL(markerId) {
 function copyMarkerURL(markerId) {
   let url = getMarkerURL(markerId);
   copyToClipboard(url);
+  document.getElementById('alert').classList.remove('closed');
+  setTimeout(function(e){ document.getElementById('alert').classList.add('closed') },1500);
 }
 
 function saveSettings() {
@@ -458,10 +460,10 @@ function loadMarkers(j) {
     let checkbox = '<input class="form-control '+disabled+'" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control'+disabled+'" for="'+markerId+'">Found</label>';
     let url = urls[o.area + ':' + o.name];
     let youtube = (url ? '<a href="'+url+'" target=_blank title="'+url+'">' : '')+'<i class="icon fa-brands fa-youtube '+(url ? '':'disabled')+'"></i>'+(url ? '</a>':'');
-    let chain = '<a class="chain" title="copy marker URL to clipboard" href="javascript:copyMarkerURL(\''+markerId+'\')"><i class="fa-solid fa-link"></i></a>';
+    let share = '<a class="chain" title="copy marker URL to clipboard" href="javascript:copyMarkerURL(\''+markerId+'\')"><i class="fa-solid fa-link"></i></a>';
 
     let controls = document.createElement('div');
-    controls.innerHTML = '<div class="controls">' + checkbox + youtube + chain + '</div>';
+    controls.innerHTML = '<div class="controls">' + checkbox + youtube + share + '</div>';
 
     content.appendChild(text);
     content.appendChild(data);
