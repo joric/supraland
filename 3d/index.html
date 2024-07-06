@@ -369,7 +369,6 @@ function loadMap(id) {
   if (mapParam.lat && mapParam.lng) {
     let view = {center : [mapParam.lng, mapParam.lat], zoom : mapParam.zoom, pitch : mapParam.pitch, bearing : mapParam.bearing };
     map.setView(view);
-    mapParam = {};
   }
 
   fetch('data/ytdata.'+mapId+'.json')
@@ -769,16 +768,18 @@ function loadMarkers(j) {
 
   markItems();
 
+  // marker link
   if (mapParam.markerId) {
     if (marker = lookup[mapParam.markerId]) {
       let o = marker.properties;
       marker.show();
-      map.animateTo({center: marker.getCoordinates(), zoom: 5});
+      map.animateTo({center: marker.getCoordinates(), zoom:(mapParam.zoom||5), pitch:(mapParam.pitch||0), bearing:(mapParam.bearing||0)});
       popupOnClick({target: marker});
       marker.openInfoWindow();
     }
-    mapParam = {};
   }
+
+  mapParam = {}; // critical to reload map properly
 }
 
 function markItems() {
