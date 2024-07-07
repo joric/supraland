@@ -177,18 +177,16 @@ function getItemColor(o, _type) {
 
   if (o.type == 'Jumppad_C') {
     bg = (o.allow_stomp || o.disable_movement_in_air==false) ? 'dodgerblue' : 'red';
-  }
-
-  if (o.type.startsWith('MinecraftBrick')) {
+  } else if (o.type.startsWith('MinecraftBrick')) {
     if (color = {1:'purple', 2:'lightgrey', 3:'lightblue', 4:'goldenrod'}[o.brick_type||0]) {
       bg = color;
     } else if (o.coins_in_gold) {
       bg = 'goldenrod';
     }
-  }
-
-  if (o.type.startsWith('Pipesystem')) {
+  } else if (o.type.startsWith('Pipesystem')) {
     bg = 'yellowgreen';
+  } else if (o.type == 'PlayerPosition') {
+    bg = mapId=='siu' ? 'dodgerblue' : 'red';
   }
 
   return bg;
@@ -581,7 +579,7 @@ function loadMarkers(j) {
     let o = {type:'PlayerPosition', name:'Player Position' };
     playerMarker = new maptalks.Marker(settings.playerPosition, {
         properties: o,
-        symbol: markerSymbol(o.type, mapId=='siu' ? 'dodgerblue' : 'red'),
+        symbol: markerSymbol(o.type, getItemColor(o)),
     }).addTo(markerLayer)
     playerMarker.setInfoWindow({autoCloseOn: 'click'}).on('click',popupOnClick);
     new maptalks.ui.ToolTip('Player Position',{}).addTo(playerMarker);
