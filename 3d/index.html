@@ -817,7 +817,7 @@ function markItems() {
         let type = settings.activeItems[o.spawns] ? o.spawns : o.type;
 
         // comment out if you do not want to display chests
-        marker.updateSymbol( markerSymbol(type, getItemColor(o, type)));
+        // marker.updateSymbol( markerSymbol(type, getItemColor(o, type))); // I hate this
 
         marker.updateSymbol({markerOpacity: found ? 0.5 : 1 });
         total[o.type] = (total[o.type] || 0) + 1;
