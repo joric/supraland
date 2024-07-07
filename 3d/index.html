@@ -1073,6 +1073,14 @@ function loadSaveFile(e) {
 
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
+        const propertyMap = {
+          PlayerDoubleHealth: "Map:Juicer2", 
+          PlayerDrankHealthPlusJuice: "Map:Juicer3", 
+          PlayerStrong: "Map:Juicer_286"
+        }
+        if(o.name && propertyMap[o.name]){
+          settings.markedItems[propertyMap[o.name]] = true;
+        }
         if (o.name != section) {
           continue;
         }
