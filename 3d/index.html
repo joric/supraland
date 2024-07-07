@@ -65,7 +65,7 @@
     </div>
 
     <hr/>
-    <span id="toggle-content" class="button-toggle"><i class="icon fa fa-eye"></i>Always Show Chest Contents</span>
+    <span id="toggle-content" class="button-toggle"><i class="icon fa fa-eye"></i>Chest Contents</span>
 
   </div>
 </div>
@@ -824,8 +824,8 @@ function markItems() {
           spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
         }
 
-        let type = settings.activeItems[spawns] ? spawns : (hideContent ? o.type : (spawns || o.type) );
-
+        //let type = settings.activeItems[spawns] ? spawns : (hideContent ? o.type : (spawns || o.type) ); // show content if allowed AND active
+        let type = hideContent ? o.type : (spawns || o.type); // show content if allowed
 
         marker.updateSymbol(markerSymbol(type, getItemColor(o, type)));
 
