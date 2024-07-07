@@ -1065,6 +1065,12 @@ function loadSaveFile(e) {
 
     //console.log(loadedSave);
 
+    let objects = {};
+    for (marker of map.getLayer('markers')._geoList) {
+      let o = marker.properties;
+      objects[o.area + ':' + o.name] = o;
+    }
+
     for (let section of ["ThingsToRemove", "ThingsToActivate", "ThingsToOpenForever"]) {
       for (o of loadedSave.Properties) {
         if (o.name != section) {
@@ -1083,11 +1089,10 @@ function loadSaveFile(e) {
             let id = area + ':' + name;
             found = true;
 
-            /*
             // a little hack here about volcano spawners (EnemySpawn3_C, graves layer)
             // they are activated in ThingsToActivate but destroyed only in ThingsToOpenForever
-            if (o = objects[id]) {
-              if (o.type=='EnemySpawn3_C') {
+            if (t = objects[id]) {
+              if (t.type=='EnemySpawn3_C') {
                 found = section=='ThingsToOpenForever';
               }
               // another hack, DeadHeroIndy opens at ThingsToOpenForever
@@ -1097,7 +1102,7 @@ function loadSaveFile(e) {
                 found = section=='ThingsToActivate';
               }
             }
-            */
+
             if (found) {
               settings.markedItems[id] = true;
             }
