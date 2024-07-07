@@ -43,6 +43,7 @@
       <a id="load_slc" class="map-link" href="javascript:loadMap('slc')">Supraland Crash</a>
       <a id="load_siu" class="map-link" href="javascript:loadMap('siu')">Supraland Six Inches Under</a>
     </div>
+
     <hr/>
     <div class="button-panel"><span id="show-all" onclick="showAll()">Show All</span><span id="hide-all" onclick="hideAll()">Hide All</span></div>
 
@@ -62,6 +63,9 @@
       <ul id="categories">
       </ul>
     </div>
+
+    <hr/>
+    <span id="toggle-content" class="button-toggle"><i class="icon fa fa-eye"></i>Always Show Chest Contents</span>
 
   </div>
 </div>
@@ -776,6 +780,7 @@ function loadMarkers(j) {
   },500);
 
   setClass(document.querySelector('#toggle-found'),settings.toggleFound,'hidden');
+  setClass(document.querySelector('#toggle-content'),settings.toggleContent,'hidden');
 
   markItems();
 
@@ -794,6 +799,7 @@ function loadMarkers(j) {
 function markItems() {
   // update markers
   let hideFound = document.querySelector('#toggle-found').classList.contains('hidden');
+  let hideContent = document.querySelector('#toggle-content').classList.contains('hidden');
   let alwaysVisible = marker=>marker.properties.type=='Jumppad_C' || marker.properties.type.startsWith('Pipesystem');
 
   let total = {};
@@ -813,13 +819,18 @@ function markItems() {
 
       if (layerName == 'markers') {
 
-        // if o.spawns is not marked as visible, use container image, else use spawn image
-        let type = settings.activeItems[o.spawns] ? o.spawns : o.type;
+        let spawns = o.spawns;
+        if (o.type == 'Chest_C' && !o.spawns) {
+          spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
+        }
 
-        // comment out if you do not want to display chests
-        // marker.updateSymbol( markerSymbol(type, getItemColor(o, type))); // I hate this
+        let type = settings.activeItems[spawns] ? spawns : (hideContent ? o.type : (spawns || o.type) );
+
+
+        marker.updateSymbol(markerSymbol(type, getItemColor(o, type)));
 
         marker.updateSymbol({markerOpacity: found ? 0.5 : 1 });
+
         total[o.type] = (total[o.type] || 0) + 1;
         marked[o.type] = (marked[o.type] || 0) + (found ? 1 : 0);
         visible[o.type] = (visible[o.type] || 0) + (hidden ? 0 : 1);
@@ -1242,6 +1253,13 @@ window.onload = function(event) {
     markItems();
     saveSettings();
   }
+
+  document.querySelector('#toggle-content').onclick = function(e) {
+    settings.toggleContent = toggleClass(e.target,'hidden');
+    markItems();
+    saveSettings();
+  }
+
 }
 
 </script>
