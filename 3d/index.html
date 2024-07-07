@@ -534,18 +534,18 @@ function loadMarkers(j) {
     // create marker
     let id = o.area + ':' + o.name;
     let fg = null;
-    let bg = getItemColor(o);
-
-    let type = o.spawns || o.type;
 
     let spawns = o.spawns;
     if (o.type == 'Chest_C' && !o.spawns) {
       spawns = o.coins>1 ? 'LotsOfCoins5_C' : 'Coin_C';
     }
 
+    let type = spawns || o.type
+    let bg = getItemColor(o, type);
+
     let marker = new maptalks.Marker([c.x, c.y, c.z], {
       properties: o,
-      symbol: markerSymbol(spawns || o.type, bg, fg),
+      symbol: markerSymbol(type, bg, fg),
     }).addTo(markerLayer);
 
     let title = humanReadable(o.type);
