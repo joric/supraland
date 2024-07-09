@@ -47,7 +47,18 @@
     <hr/>
     <div class="button-panel"><span id="show-all" onclick="showAll()">Show All</span><span id="hide-all" onclick="hideAll()">Hide All</span></div>
 
+    <div class="search-input-wrapper input-group" style="display: none;">
+      <div class="input-group-prepend">
+        <button id="search-close" type="button" class="btn">x</button>
+      </div>
+      <input id="search-input" class="form-control" type="text" placeholder="Search..."/>
+      <div class="input-group-append">
+        <button id="search-submit" type="button" class="btn">Search</button>
+      </div>
+    </div>
+
     <hr/>
+
     <div id="categories-wrapper">
       <ul id="categories">
       </ul>
@@ -251,7 +262,7 @@ function humanReadable(type) {
 
 function setClass(e, set, c) { set ? e.classList.add(c) : e.classList.remove(c);}
 function toggleClass(e, c) { if (e.classList.contains(c)) { e.classList.remove(c); return false; } else { e.classList.add(c); return true; }}
-function toggleNav(e) { let input = document.querySelector('#search-input'); toggleClass(e.parentElement, 'closed'); }
+function toggleNav(e) { let input = document.querySelector('#search-input'); toggleClass(e.parentElement, 'closed') ? input.blur() : input.focus();}
 function toggleVisibility(a) { [].forEach.call(a, function(e) { toggleClass(document.querySelector(e), 'collapsed'); }) }
 
 const cmpNum = (a,b)=> b[1]!=a[1] ? (b[1]-a[1]) : a[0].localeCompare(b[0]);
@@ -376,6 +387,7 @@ function loadMap(id) {
       //map.setOptions({heightFactor: 0.01});
     }
     saveSettings();
+    document.querySelector('#search-input').blur();
   });
 
   let compassControl = new maptalks.control.Compass({position  : 'bottom-right'}).addTo(map)
@@ -467,15 +479,10 @@ function loadMarkers(j) {
     let text = document.createElement('div');
     text.innerHTML = title;
 
-    let collapsible = document.createElement('div');
-    collapsible.className = 'collapsible';
-
     let data = document.createElement('div');
-    data.className = 'data';
-    settings.debugMode!=true && data.classList.add('collapsed');
+    data.className = settings.debugMode!=true ? 'collapsed' : '';
 
     data.innerHTML = '<hr/>'+JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-    collapsible.appendChild(data);
 
     let expander = document.createElement('div');
     expander.className = 'expander';
@@ -491,7 +498,7 @@ function loadMarkers(j) {
     controls.innerHTML = '<div class="controls">' + checkbox + youtube + share + '</div>';
 
     content.appendChild(text);
-    content.appendChild(collapsible);
+    content.appendChild(data);
     content.appendChild(expander);
     content.appendChild(controls);
 
@@ -499,9 +506,7 @@ function loadMarkers(j) {
     wrapper.appendChild(content);
     popup.appendChild(tipContainer);
     tipContainer.appendChild(tip);
-    popup.appendChild(close);
-
-    popup.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true);
+    popup.appendChild(close); // I have no idea how to close window, onclick doesn't fire
 
     e.target._infoWindow.setOptions({custom: true, dy: -12});
     e.target._infoWindow.setContent(popup);

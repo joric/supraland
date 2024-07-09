@@ -282,6 +282,10 @@ a:hover { text-decoration: underline; }
   color: white;
 }
 
+.collapsed {
+  display: none;
+}
+
 .item.hidden > * {
   visibility: visible;
   opacity: 50%;
@@ -482,17 +486,3 @@ a:hover { text-decoration: underline; }
 #alert.closed {
   transform: translateY(40px)
 }
-
-.collapsible {
-  overflow: hidden;
-}
-
-.data {
-  margin-top: 0;
-  transition: all .25s;
-}
-
-.collapsed {
-  margin-top: -100%;
-}
-
