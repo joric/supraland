@@ -448,6 +448,10 @@ a:hover { text-decoration: underline; }
   margin-left: 12px;
 }
 
+.popup-link > * {
+  pointer-events: none;
+}
+
 #popup-data-toggle {
   padding-top: 4px;
   margin-bottom: 8px;
