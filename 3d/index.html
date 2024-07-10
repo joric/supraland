@@ -104,6 +104,25 @@
   </div>
 </div>
 <div id="alert" class="closed">Copied To Clipboard</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content-wrapper">
+    <div class="popup-content">
+      <div id="popup-title">Popup Title</div>
+      <div id="popup-data" class="collapsed"></div>
+      <div id="popup-data-toggle" data-toggle="collapse" data-target="popup-data"><hr/></div>
+      <div class="popup-controls">
+        <input id="popup-found" type="checkbox">
+        <label for="popup-found">Found</label>
+        <a class="popup-link" id="popup-youtube-link" href="#" target="_blank" title="Youtube link"><i class="fa fa-brands fa-youtube"></i></a>
+        <a class="popup-link" id="popup-marker-link" href="#" target="_blank" title="Click to copy marker location to clipboard"><i class="fa fa-link"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="popup-tip-container"><div class="popup-tip"></div></div>
+  <a id="popup-close" class="popup-close-button">&times;</a>
+</div>
+
 </body>
 </html>
 <script>
@@ -286,11 +305,6 @@ function getMarkerURL(markerId) {
   return base +'#' + Object.entries(vars).map(e=>e[0]+'='+encodeURIComponent(e[1])).join('&');
 }
 
-function copyMarkerURL(markerId) {
-  let url = getMarkerURL(markerId);
-  copyToClipboard(url);
-}
-
 function saveSettings() {
   localStorage.setItem(localDataName, JSON.stringify(localData));
 }
@@ -441,77 +455,42 @@ function loadMarkers(j) {
 
   let popupOnClick = e=>{
     let o = e.target.properties;
+    let markerId = (o.area ? o.area + ':' : '') + o.name;
 
-    if (player = o.type=='PlayerPosition') {
+    if (isPlayerMarker = o.type=='PlayerPosition') {
       o._coordinates = e.target.getCoordinates();
     }
-
-    let markerId = (o.area ? o.area + ':' : '') + o.name;
-    let found = settings.markedItems[markerId]==true
-    let value = found ? ' checked' : '';
-    let disabled = player ? ' disabled' : '';
 
     let title = '<b>' + humanReadable(o.type) + '</b>';
     if (o.spawns || o.coins) {
       title +=  '<br/>' + (o.spawns ? humanReadable(o.spawns) : o.coins + (o.coins<2 ? ' coin' : ' coins'));
     }
 
-    let popup = document.createElement('div')
-    popup.className = 'popup';
+    let popup = document.querySelector('#popup').cloneNode(true);
 
-    let wrapper = document.createElement('div')
-    wrapper.className = 'popup-content-wrapper';
+    popup.querySelector('#popup-data-toggle').onclick = function() {
+      let data_id = popup.querySelector('#popup-data-toggle').getAttribute('data-target');
+      settings.debugMode = !toggleClass(document.querySelector('#'+data_id),'collapsed');
+      saveSettings();
+    };
 
-    let content = document.createElement('div')
-    content.className = 'popup-content';
+    popup.querySelector('#popup-title').innerHTML = title;
+    popup.querySelector('#popup-data').innerHTML = '<hr/>'+JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
+    popup.querySelector('#popup-found').checked = settings.markedItems[markerId]==true;
+    popup.querySelector('#popup-found').disabled = isPlayerMarker;
+    popup.querySelector('#popup-found').onclick = function() { toggleMarked(markerId) };
+    popup.querySelector('#popup-marker-link').href = getMarkerURL(markerId);
+    popup.querySelector('#popup-marker-link').onclick = function(e){ copyToClipboard(e.target.href); return false; }
+    popup.querySelector('#popup-youtube-link').href = urls[o.area + ':' + o.name];
+    popup.querySelector('#popup-close').onclick = function() {  e.target._infoWindow.hide(); };
 
-    let tipContainer = document.createElement('div')
-    tipContainer.className = 'popup-tip-container';
-
-    let tip = document.createElement('div')
-    tip.className = 'popup-tip';
-
-    let close = document.createElement('a')
-    close.className = 'popup-close-button';
-    close.innerHTML = '&times;';
-    close.onclick = ()=> {  e.target._infoWindow.hide(); };
-
-    let text = document.createElement('div');
-    text.innerHTML = title;
-
-    let data = document.createElement('div');
-    data.className = settings.debugMode!=true ? 'collapsed' : '';
-
-    data.innerHTML = '<hr/>'+JSON.stringify(o, null, 2).replaceAll('\n','<br>').replaceAll(' ','&nbsp;');
-
-    let expander = document.createElement('div');
-    expander.className = 'expander';
-    expander.innerHTML = '<hr/>';
-    expander.onclick = ()=>{  settings.debugMode = !toggleClass(data,'collapsed');  saveSettings(); }
-
-    let checkbox = '<input class="form-control '+disabled+'" type="checkbox" id="'+markerId+'" '+value+' onclick=toggleMarked("'+markerId+'") '+disabled+'><label class="form-control'+disabled+'" for="'+markerId+'">Found</label>';
-    let url = urls[o.area + ':' + o.name];
-    let youtube = (url ? '<a href="'+url+'" target=_blank title="'+url+'">' : '')+'<i class="icon fa-brands fa-youtube '+(url ? '':'disabled')+'"></i>'+(url ? '</a>':'');
-    let share = '<a class="chain" title="Copy marker location to clipboard" href="javascript:copyMarkerURL(\''+markerId+'\')"><i class="fa-solid fa-link"></i></a>';
-
-    let controls = document.createElement('div');
-    controls.innerHTML = '<div class="controls">' + checkbox + youtube + share + '</div>';
-
-    content.appendChild(text);
-    content.appendChild(data);
-    content.appendChild(expander);
-    content.appendChild(controls);
-
-    popup.appendChild(wrapper);
-    wrapper.appendChild(content);
-    popup.appendChild(tipContainer);
-    tipContainer.appendChild(tip);
-    popup.appendChild(close); // I have no idea how to close window, onclick doesn't fire
+    setClass(popup.querySelector('#popup-data'), settings.debugMode!=true, 'collapsed');
+    setClass(popup.querySelector('#popup-youtube-link'), isPlayerMarker, 'disabled');
 
     e.target._infoWindow.setOptions({custom: true, dy: -12});
     e.target._infoWindow.setContent(popup);
 
-    //e.target._infoWindow.setContent(title);
+    popup.addEventListener('contextmenu', function(e) { e.stopPropagation()}, true); // enable default context menu
   };
 
   for (const o of j) {
