@@ -113,9 +113,9 @@
       <div id="popup-data-toggle" data-toggle="collapse" data-target="popup-data"><hr/></div>
       <div class="popup-controls">
         <input id="popup-found" type="checkbox">
-        <label for="popup-found">Found</label>
+        <label for="popup-found" title="Toggle found">Found</label>
         <a class="popup-link" id="popup-youtube-link" href="#" target="_blank" title="Youtube link"><i class="fa fa-brands fa-youtube"></i></a>
-        <a class="popup-link" id="popup-marker-link" href="#" target="_blank" title="Click to copy marker location to clipboard"><i class="fa fa-link"></i></a>
+        <a class="popup-link" id="popup-marker-link" href="#" target="_blank" title="Copy marker location to clipboard"><i class="fa fa-link"></i></a>
       </div>
     </div>
   </div>
@@ -481,11 +481,11 @@ function loadMarkers(j) {
     popup.querySelector('#popup-found').onclick = function() { toggleMarked(markerId) };
     popup.querySelector('#popup-marker-link').href = getMarkerURL(markerId);
     popup.querySelector('#popup-marker-link').onclick = function(e){ copyToClipboard(e.target.href); return false; }
-    popup.querySelector('#popup-youtube-link').href = urls[o.area + ':' + o.name];
+    popup.querySelector('#popup-youtube-link').href = urls[markerId];
     popup.querySelector('#popup-close').onclick = function() {  e.target._infoWindow.hide(); };
 
     setClass(popup.querySelector('#popup-data'), settings.debugMode!=true, 'collapsed');
-    setClass(popup.querySelector('#popup-youtube-link'), isPlayerMarker, 'disabled');
+    setClass(popup.querySelector('#popup-youtube-link'), isPlayerMarker || !urls[markerId], 'disabled');
 
     e.target._infoWindow.setOptions({custom: true, dy: -12});
     e.target._infoWindow.setContent(popup);
