@@ -480,7 +480,7 @@ function loadMarkers(j) {
     popup.querySelector('#popup-found').disabled = isPlayerMarker;
     popup.querySelector('#popup-found').onclick = function() { toggleMarked(markerId) };
     popup.querySelector('#popup-marker-link').href = getMarkerURL(markerId);
-    popup.querySelector('#popup-marker-link').onclick = function(e){ copyToClipboard(e.target.href); return false; }
+    popup.querySelector('#popup-marker-link').onclick = function(e){ copyToClipboard(getMarkerURL(markerId)); return false; }
     popup.querySelector('#popup-youtube-link').href = urls[o.area + ':' + o.name];
     popup.querySelector('#popup-close').onclick = function() {  e.target._infoWindow.hide(); };
 
