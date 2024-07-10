@@ -783,7 +783,6 @@ function markItems() {
 
   let total = {};
   let marked = {};
-  let visible = {};
 
   for (layerName of ['markers','lines']) {
 
@@ -812,7 +811,11 @@ function markItems() {
 
         total[o.type] = (total[o.type] || 0) + 1;
         marked[o.type] = (marked[o.type] || 0) + (found ? 1 : 0);
-        visible[o.type] = (visible[o.type] || 0) + (hidden ? 0 : 1);
+
+        if(o.spawns){
+          total[o.spawns] = (total[o.spawns] || 0) + 1;
+          marked[o.spawns] = (marked[o.spawns] || 0) + (found ? 1 : 0);
+        }
 
       } else {
         marker.updateSymbol({lineOpacity: marked ? 0.5 : 1 });
@@ -847,8 +850,7 @@ function markItems() {
     li.title = name + ' (' + type + ')';
     li.onclick = toggleTrack;
 
-    if (!visible[type]) {
-    //if (!settings.track[type]) {
+    if (settings.activeItems[type]!=true) {
       li.classList.add('hidden');
     }
 
