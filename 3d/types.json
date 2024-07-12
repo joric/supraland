@@ -216,7 +216,7 @@
   "PhysicalCoin_C": {"icon": "coin", "group": "coins", "fa": "certificate", "bg": "orange", "name": "Physical Coin"},
   "RedGuy_C": {"icon": "guy", "group": "misc", "fa": "person", "bg": "red", "name": "NPC"},
   "BP_UnlockMap_C": {"icon": "map", "group": "stats", "fa": "compass", "bg": "deepskyblue", "name": "Map"},
-  "MinecraftBrick_C": {"icon": "brick", "group": "misc", "fa":"cube", "bg": "grey", "name": "Minecraft B/rick"},
+  "MinecraftBrick_C": {"icon": "brick", "group": "misc", "fa":"cube", "bg": "grey", "name": "Minecraft Brick"},
   "MinecraftBrickRespawnable_C": {"icon": "brick", "group": "misc", "fa":"cube", "bg": "grey", "name": "Respawnable Brick"},
   "SnappyPipe": {"icon": "pipe", "group": "items", "fa": "ring", "bg": "yellowgreen"},
   "CarryPipe_C": {"icon": "pipe", "group": "items", "fa": "ring", "bg": "yellowgreen", "name": "Carry Pipe"},
