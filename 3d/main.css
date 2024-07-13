@@ -482,3 +482,17 @@ a:hover { text-decoration: underline; }
 #alert.closed {
   transform: translateY(40px)
 }
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  #left-sidebar.closed {
+    transform: translateX(-220px)
+  }
+
+  #categories .group-categories {
+    column-count: 1;
+  }
+}
