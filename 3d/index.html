@@ -804,7 +804,8 @@ function markItems() {
         //let type = settings.activeItems[spawns] ? spawns : (hideContent ? o.type : (spawns || o.type) ); // show content if allowed AND active
         let type = hideContent ? o.type : (spawns || o.type); // show content if allowed
 
-        marker.updateSymbol(markerSymbol(type, getItemColor(o, type)));
+        // when we switch between chests/spawns we need to update markers (except empty symbols, i.e. altitude points)
+        Object.keys(marker._symbol)>0 && marker.updateSymbol(markerSymbol(type, getItemColor(o, type)));
 
         marker.updateSymbol({markerOpacity: found ? 0.5 : 1 });
 
