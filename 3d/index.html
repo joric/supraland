@@ -35,8 +35,10 @@
 <div id="left-sidebar" class="sidebar">
   <div class="sidebar-close" onclick="toggleNav(this)"><div class="container middle"><i class="triangle"></i></div></div>
   <div class="panel">
+    <div class="caption">
     <h2>Supraland Interactive Map</h2>
     <hr/>
+    </div>
     <div class="map-switcher-panel">
       <a id="load_sl" class="map-link selected" href="javascript:loadMap('sl')">Supraland</a>
       <a id="load_slc" class="map-link" href="javascript:loadMap('slc')">Supraland Crash</a>
@@ -102,6 +104,22 @@
 
   </div>
 </div>
+
+<div id="topbar" class="sidebar">
+<div class="top-panel">
+  <div class="mobile-container">
+    <div class="mobile-title">
+      <h2>Supraland</h2>
+    </div>
+    <div>
+      <button class="topbar-btn" id="toggle-left">Navigation</button>
+      <button class="topbar-btn" id="toggle-right">Progress</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
 <div id="alert" class="closed">Copied To Clipboard</div>
 
 <div id="popup" class="popup">
@@ -366,6 +384,10 @@ function loadMap(id) {
       //position  : 'top-right',
       position  : {bottom: 70, right: 20},
       zoomLevel : false,
+    },
+
+    attribution: {
+      content: '', position: {top: -50, left: 0},
     },
 
   });
@@ -1252,6 +1274,22 @@ window.onload = function(event) {
     settings.toggleContent = toggleClass(e.target,'hidden');
     markItems();
     saveSettings();
+  }
+
+  document.querySelector('#toggle-left').onclick = (e) => {
+    toggleClass(e.target, 'selected');
+    toggleClass(document.querySelector('#left-sidebar'), 'mobile');
+
+    setClass(document.querySelector('#toggle-right'), false, 'selected');
+    setClass(document.querySelector('#right-sidebar'), false, 'mobile');
+  }
+
+  document.querySelector('#toggle-right').onclick = (e) => {
+    toggleClass(e.target, 'selected');
+    toggleClass(document.querySelector('#right-sidebar'), 'mobile');
+
+    setClass(document.querySelector('#toggle-left'), false, 'selected');
+    setClass(document.querySelector('#left-sidebar'), false, 'mobile');
   }
 
 }
