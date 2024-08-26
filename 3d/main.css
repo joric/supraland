@@ -521,7 +521,7 @@ a:hover { text-decoration: underline; }
 
 .mobile-title {
   flex: 2 1 auto;
-  padding-top: 2px;
+  padding-top: 0px;
   padding-right: 5px;
 }
 
