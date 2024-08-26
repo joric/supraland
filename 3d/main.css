@@ -264,7 +264,7 @@ a:hover { text-decoration: underline; }
   text-align: right;
 }
 
-#user-panel .progress-item-remove {
+.progress-item-remove {
   border: 1px solid grey;
   align-self: center;
   cursor: pointer;
@@ -274,7 +274,7 @@ a:hover { text-decoration: underline; }
   color: grey;
 }
 
-#user-panel .progress-item-remove:hover {
+.progress-item-remove:hover {
   color: white;
 }
 
