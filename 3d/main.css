@@ -535,7 +535,33 @@ a:hover { text-decoration: underline; }
   background: dimgrey;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
+  #left-sidebar {
+    width: 180px;
+  }
+
+  #left-sidebar.closed {
+    transform: translateX(-180px)
+  }
+
+  #right-sidebar {
+    width: 180px;
+  }
+
+  #right-sidebar.closed {
+    transform: translateX(180px)
+  }
+
+  #categories .group-categories {
+    column-count: 1;
+  }
+  input::placeholder {
+        color: transparent;
+  }
+}
+
+
+@media (max-width: 500px) {
   .sidebar-close {
     display: none;
   }
