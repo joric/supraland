@@ -248,6 +248,10 @@ a:hover { text-decoration: underline; }
   pointer-events: none;
 }
 
+.progress-item-remove {
+  pointer-events: all;
+}
+
 .progress-item .icon {
   text-align: left;
 }
