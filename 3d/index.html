@@ -27,7 +27,6 @@
 <script src="simplify.js"></script>
 <link rel="stylesheet" href="main.css">
 
-<base href="../"></base>
 </head>
 <body>
 <div id="map"></div>
@@ -373,7 +372,7 @@ function loadMap(id) {
     },
     baseLayer: new maptalks.TileLayer('base', {
       maxAvailableZoom: 4,
-      urlTemplate: 'tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
+      urlTemplate: '../tiles/'+mapId+'/base/{z}/{x}/{y}.jpg',
       repeatWorld: false,
       tileSystem: [ 1, -1, left, top ],
       attribution: '<a href="https://github.com/joric/supraland" target="_blank">Joric\'s Maps</a>',
@@ -443,7 +442,7 @@ function loadMap(id) {
     map.setView(view);
   }
 
-  fetch('data/ytdata.'+mapId+'.json')
+  fetch('../data/ytdata.'+mapId+'.json')
   .then(r => r.json())
   .then(j => {
     urls = {};
@@ -455,7 +454,7 @@ function loadMap(id) {
     console.log(e);
   });
 
-  fetch('data/markers.'+mapId+'.json')
+  fetch('../data/markers.'+mapId+'.json')
   .then(r => r.json())
   .then(j => {
     loadMarkers(j);
@@ -1262,7 +1261,7 @@ window.onload = function(event) {
   }
 
   //let promises = ['data/types.json','data/gameClasses.json'].map(url=>fetch(url).then(r=>r.json()));
-  let promises = ['3d/types.json'].map(url=>fetch(url).then(r=>r.json()));
+  let promises = ['types.json'].map(url=>fetch(url).then(r=>r.json()));
   Promise.all(promises).then(values => {
     [types, classes] = values;
     loadMap(mapId);
