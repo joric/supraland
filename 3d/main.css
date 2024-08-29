@@ -328,6 +328,13 @@ a:hover { text-decoration: underline; }
   padding: 4px 0 4px 0;
 }
 
+.button-group {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .input-group-prepend {
 }
 

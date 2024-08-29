@@ -89,8 +89,10 @@
 
       <div id="track-category-panel" class="button-panel collapsed">
         <select id="track-categories" class="form-control"><option>Select a Category</option></select>
-        <button class="btn" onclick="addTrack(this)">Track Category</button>
-        <button class="btn" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">x</button>
+        <div class="button-group">
+          <button class="btn" onclick="addTrack(this)">Track Category</button>
+          <button class="btn" onclick="toggleVisibility(['#track-category-panel','#track-category-button'])">x</button>
+        </div>
       </div>
 
       <hr/>
@@ -1160,8 +1162,12 @@ window.onload = function(event) {
     }
   }
 
+  try {
   // clear location hash
-  history.pushState('', document.title, window.location.pathname + window.location.search);
+    history.pushState('', document.title, window.location.pathname + window.location.search);
+  } catch(error) {
+    console.log('handled error', error);
+  }
 
   for (id in maps) {
     localData[id] = localData[id] || {};
