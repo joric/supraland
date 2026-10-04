@@ -1,0 +1,68 @@
+{
+  "sl": {
+    "name": "Supraland",
+    "size": 175000,
+    "worlds": {
+      "default": {
+        "baseLayers": [
+          {
+            "bounds":{"left": -74500.0, "top": -89500.0, "right": 100500.0, "bottom": 85500.0},
+            "name": "base",
+            "urlTemplate": "tiles/sl/base/{z}/{x}/{y}.jpg",
+            "tileSize": 512,
+            "maxAvailableZoom": 4
+          }
+        ],
+        "markers": {
+          "url": "data/markers.sl.json",
+          "format": "simple"
+        }
+      }
+    }
+  },
+
+  "slc": {
+    "name": "Supraland: Crash",
+    "size": 90112,
+    "worlds": {
+      "default": {
+        "baseLayers": [
+          {
+            "bounds":{"left": -19065, "top": -45040.0, "right": 71047.0, "bottom": 45072.0},
+            "name": "base",
+            "urlTemplate": "tiles/slc/base/{z}/{x}/{y}.jpg",
+            "tileSize": 512,
+            "maxAvailableZoom": 4
+          }
+        ],
+        "markers": {
+          "url": "data/markers.slc.json",
+          "format": "simple"
+        }
+      }
+    }
+  },
+
+  "siu": {
+    "name": "Supraland: Six Inches Under",
+    "size": 147456,
+    "worlds": {
+      "default": {
+        "baseLayers": [
+          {
+            "bounds":{"left": -73728.0, "top": -92728.0, "right": 73728.0, "bottom": 54728.0, "alt": 10000},
+            "name": "base",
+            "urlTemplate": "tiles/siu/base/{z}/{x}/{y}.jpg",
+            "tileSize": 512,
+            "maxAvailableZoom": 4
+          }
+        ],
+        "markers": {
+          "url": "data/markers.siu.json",
+          "format": "simple"
+        }
+      }
+    }
+  }
+
+}
