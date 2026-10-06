@@ -4,11 +4,27 @@
     "size": 175000,
     "worlds": {
       "default": {
-        "baseLayers": [
+        "layers": [
           {
             "bounds":{"left": -74500.0, "top": -89500.0, "right": 100500.0, "bottom": 85500.0},
             "name": "base",
             "urlTemplate": "tiles/sl/base/{z}/{x}/{y}.jpg",
+            "tileSize": 512,
+            "maxAvailableZoom": 4
+          },
+          {
+            "bounds":{"left": -74500.0, "top": -89500.0, "right": 100500.0, "bottom": 85500.0},
+            "name": "pads",
+            "overlay": true,
+            "urlTemplate": "tiles/sl/pads/{z}/{x}/{y}.png",
+            "tileSize": 512,
+            "maxAvailableZoom": 4
+          },
+          {
+            "bounds":{"left": -74500.0, "top": -89500.0, "right": 100500.0, "bottom": 85500.0},
+            "name": "pipes",
+            "overlay": true,
+            "urlTemplate": "tiles/sl/pipes/{z}/{x}/{y}.png",
             "tileSize": 512,
             "maxAvailableZoom": 4
           }
